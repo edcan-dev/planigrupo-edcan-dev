@@ -231,7 +231,7 @@ height: 550px;
 
 .main__property-card__image {
     object-fit: fill;
-    background-image: url('../assets/images/propiedades-destacadas/location-hero-plaza-bella-mexiquense-full.jpg');
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/propiedades-destacadas/location-hero-plaza-bella-mexiquense-full.jpg');
     height: 410px;
     background-size: cover;
     transition: all .3s;
@@ -330,10 +330,10 @@ height: 550px;
 }
 
 .main__property-card__image--prop02 {
-    background-image: url(../assets/images/propiedades-destacadas/location-hero-plaza-bella-mexiquense-full.jpg);
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/propiedades-destacadas/location-hero-plaza-bella-mexiquense-full.jpg');
 }
 .main__property-card__image--prop03 {
-    background-image: url('../assets/images/propiedades-destacadas/cancun.jpg');
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/propiedades-destacadas/cancun.jpg');
 }
 
 .main__compromise > div {
@@ -396,16 +396,16 @@ height: 550px;
     background-position-y: -150px ;
 }
 .main__compromise__grid__item__img--img1 {
-    background-image: url(../assets/images/compromiso/fbcb060c9ad0a732df1e17682f3c4a56.jpeg);
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/compromiso/fbcb060c9ad0a732df1e17682f3c4a56.jpeg');
 }
 .main__compromise__grid__item__img--img2 {
-    background-image: url(../assets/images/compromiso/familia.jpeg);
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/compromiso/familia.jpeg');
 }
 .main__compromise__grid__item__img--img3 {
-    background-image: url(../assets/images/compromiso/clientes.jpeg);
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/compromiso/clientes.jpeg');
 }
 .main__compromise__grid__item__img--img4 {
-    background-image: url(../assets/images/compromiso/responsabilidad.jpeg);
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/compromiso/responsabilidad.jpeg');
 }
 .main__compromise__grid__item__text {
     padding-left: 30px;
@@ -508,16 +508,16 @@ height: 550px;
 
 }
 .tab__card__img--tab1 {
-    background-image: url(../assets/images/tabs/inversionistas.jpeg);
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/tabs/inversionistas.jpeg');
 }
 .tab__card__img--tab2 {
-    background-image: url(../assets/images/tabs/comercializacion.jpeg);
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/tabs/comercializacion.jpeg');
 }
 .tab__card__img--tab3 {
-    background-image: url(../assets/images/tabs/bolsa_de_trabajo.jpeg);
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/tabs/bolsa_de_trabajo.jpeg');
 }
 .tab__card__img--tab4 {
-    background-image: url(../assets/images/tabs/impacto_social.jpeg);
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/tabs/impacto_social.jpeg');
 }
 .tab__card__text > button {
     background-color: #0096A9;
