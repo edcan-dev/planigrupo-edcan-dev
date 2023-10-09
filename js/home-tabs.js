@@ -1,9 +1,14 @@
 document.querySelectorAll('.tab__selector')
     .forEach(selector => {
-        selector.addEventListener('click',()=> {
+        selector.addEventListener('click',(ev)=> {
+
+            document.querySelectorAll('.tab__selector').forEach(tabs => tabs.classList.remove('selected__tab'));
+            selector.classList.add('selected__tab');
+
             const selectorValue = selector.id;
 
             let newActiveTab;
+
 
             switch(selectorValue) {
                 case 'tab__selector--1':

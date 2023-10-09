@@ -36,6 +36,11 @@
     text-transform: uppercase;
     font-size: 11px;
     letter-spacing: 1px;
+    font-weight: 400;
+    color: #000;
+}
+.header__nav__item > a:hover {
+    font-weight: bold;
 }
 
 .header__nav__item > input {
@@ -92,6 +97,10 @@ height: 550px;
     margin-left: 100px;
     font-weight: 600;
     font-family: "Raleway" 600;
+    color: #000;
+    background-color: #FFF;
+    display: inline-block;
+    padding: 5px;
 }
 
 .main__hero__text__p-bar {
@@ -186,18 +195,33 @@ height: 550px;
     background-color: #F5F3F1;
 }
 
+.main__featured_properties {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .main__property-card {
     display: flex;
-    width: 100vw;
+    width: 60%;
+    height: 410px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    flex-wrap: wrap;
 }
 
 .property-card__container {
-    width: 60%;
+    width: 100%;
     height: 410px;
-    margin: 40px auto;
-    background-color: #0096A9;
     display: grid;
     grid-template-columns: 6.5fr 3.5fr;
+}
+
+.property__arrow {
+    cursor: pointer;
+    transition: all .2s;
+}
+.property__arrow:hover{
+    transform: scale(1.3);
 }
 
 .main__property-card__text {
@@ -206,9 +230,8 @@ height: 550px;
 }
 
 .main__property-card__image {
-    background-color: #0096A9;
     object-fit: fill;
-    background-image: url(../assets/images/propiedades-destacadas/Hipodromo2\ Edit.jpeg);
+    background-image: url('../assets/images/propiedades-destacadas/location-hero-plaza-bella-mexiquense-full.jpg');
     height: 410px;
     background-size: cover;
     transition: all .3s;
@@ -286,7 +309,7 @@ height: 550px;
 .main__all-properties {
     width: 100%;
     display: flex;
-    margin-bottom: 40px;
+    margin: 40px 0px;
 }
 
 .main__all-properties > a {
@@ -307,7 +330,10 @@ height: 550px;
 }
 
 .main__property-card__image--prop02 {
-    background-image: url(../assets/images/propiedades-destacadas/location-hero-plaza-bella-mexiquense-full.jpeg);
+    background-image: url(../assets/images/propiedades-destacadas/location-hero-plaza-bella-mexiquense-full.jpg);
+}
+.main__property-card__image--prop03 {
+    background-image: url('../assets/images/propiedades-destacadas/cancun.jpg');
 }
 
 .main__compromise > div {
@@ -431,6 +457,13 @@ height: 550px;
     list-style-type: none;
     padding: 5px 10px;
     cursor: pointer;
+
+    transition: all .3s;
+}
+
+.selected__tab {
+    background-color: #545859;
+    color: #FFF;
 }
 
 .tabs__card {
@@ -510,8 +543,8 @@ height: 550px;
     height: 100px;
     background-color: #F5F3F1;
     display: flex;
-    justify-content: center;
-
+    padding: 0 20px;    justify-content: space-between;
+    align-items: center;
 }
 
 .footer > span {
@@ -529,10 +562,12 @@ height: 550px;
 .footer > div {
     display: flex;
     flex-wrap: wrap;
-    height: 70px;
+    height: 35px;
+    align-items: center;
 }
-.footer > div > p {
+.footer > div > a {
     color: #545859;
+    text-decoration: none;
     text-align: center;
     font-family: Raleway;
     font-size: 10px;
@@ -544,4 +579,12 @@ height: 550px;
     display: inline;
     height: 15px;
     flex: 25%;
+
+    transition: all .3s;
+}
+.footer > div > a:hover {
+    color: #0096A9;
+}
+.footer__img {
+    height: 35px   
 }
