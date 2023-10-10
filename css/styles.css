@@ -13,6 +13,7 @@
 .header {
     display: flex;
     height: 80px;
+    width: 100%;
     min-height: 50px;
     padding-bottom: 0px;
     justify-content: space-around;
@@ -68,6 +69,7 @@
     top: 80px;
     bottom: 0;
     z-index: -1;
+    filter: brightness(.7)
 }
 
 .main__hero {
@@ -94,12 +96,12 @@ height: 550px;
 
 .main__hero__text__p-exp {
     margin: 10px 0;
-    margin-left: 100px;
+    margin-left: 200px;
     font-weight: 600;
     font-family: "Raleway" 600;
-    color: #000;
-    background-color: #FFF;
-    display: inline-block;
+    color: #ffffff;
+/*     background-color: #FFF;
+ */    display: inline-block;
     padding: 5px;
 }
 
@@ -119,7 +121,7 @@ height: 550px;
 .main__hero__text__p-gray {
     background-color: #8C827A;
     padding-left: 200px;
-    margin-right: 60vw;
+    margin-right: 40vw;
     transition: all .5s;
 }
 .main__hero__text__p-gray:hover {
@@ -139,6 +141,7 @@ height: 550px;
 }
 
 .main__row {
+    margin-top: 50px;
     display: flex;
     justify-content: space-around;
 }
@@ -178,26 +181,27 @@ height: 550px;
 
 .main__spliter {
     display: flex;
-    width: 100vw;
+    width: 100%;
     align-items: center;
-    background-color: #F5F3F1;
+    /* background-color: #F5F3F1; */
+    background-color: #545859;
     padding: 10px 30px;
 }
 
 .main__spliter__p {
-    color: #545859;
+    color: #fff;
     font-family: Barlow;
     font-size: 15px;
     font-style: normal; 
     font-weight: 500;
     line-height: 21.43px; /* 142.867% */
     letter-spacing: 1px;
-    background-color: #F5F3F1;
 }
 
 .main__featured_properties {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .main__property-card {
@@ -214,6 +218,7 @@ height: 550px;
     height: 410px;
     display: grid;
     grid-template-columns: 6.5fr 3.5fr;
+    margin-top: 40px;
 }
 
 .property__arrow {
@@ -225,8 +230,8 @@ height: 550px;
 }
 
 .main__property-card__text {
-    background-color: #F5F3F1;
     position: relative;
+    background-color: #F5F3F1; 
 }
 
 .main__property-card__image {
@@ -250,7 +255,6 @@ height: 550px;
     letter-spacing: 1px;
     text-transform: uppercase;
     background-color: #0096A9;
-    margin-top: 40px;
     padding-left: 40px;
 }
 
@@ -338,7 +342,6 @@ height: 550px;
 
 .main__compromise > div {
     height: 60px;
-    opacity: 0.9981;
     background-color: #F5F3F1;
 }
 .main__compromise__title {
@@ -348,7 +351,7 @@ height: 550px;
     height: 60px;
     background-color: #C04D00;
     transition: all .5s;
-    padding-left: 60px;
+    padding: 0px 40px;
     justify-content: center;
 }
 .main__compromise__title:hover {
@@ -408,7 +411,7 @@ height: 550px;
     background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/compromiso/responsabilidad.jpeg');
 }
 .main__compromise__grid__item__text {
-    padding-left: 30px;
+    padding:0px 30px;
 }
 .main__compromise__grid__item__text--secondary {
     background-color: #F5F3F1;
@@ -503,14 +506,15 @@ height: 550px;
 }
 
 .tab__card__img {
-    background-size: cover;
     background-position-y: -120px;
-
+    background-size: cover;
 }
 .tab__card__img--tab1 {
     background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/tabs/inversionistas.jpeg');
+    background-position-y: 0px;
 }
 .tab__card__img--tab2 {
+    background-position-y: 0px;
     background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/tabs/comercializacion.jpeg');
 }
 .tab__card__img--tab3 {
@@ -541,7 +545,7 @@ height: 550px;
 
 .footer {
     height: 100px;
-    background-color: #F5F3F1;
+    background-color: #cacaca;
     display: flex;
     padding: 0 20px;    justify-content: space-between;
     align-items: center;
@@ -587,4 +591,182 @@ height: 550px;
 }
 .footer__img {
     height: 35px   
+}
+
+.header__bars {
+    display: none;
+}
+
+/** DESKTOP */
+@media (max-width: 1400px) {
+    .main__hero__text__p-gray {
+        background-color: #8C827A;
+        padding-left: 200px;
+        margin-right: 30vw;
+        transition: all .5s;
+    }
+
+    
+}
+@media (max-width: 1200px) {
+
+    .header__nav__item--search {
+        display: none;
+    }
+
+    .header {
+        justify-content: space-between;
+    }
+    .header > div {
+        padding-left: 20px;
+    }
+
+
+    .main__hero__text__p-gray {
+        background-color: #8C827A;
+        padding-left: 200px;
+        margin-right: 10vw;
+        transition: all .3s;
+    }
+    .main__tabs {
+        margin-top: 600px;
+    }
+    .tab__card__img {
+        background-size: auto;
+    }
+    .tab__card__img--tab3 {
+        background-position-y: 0px;
+        background-size: cover;
+    }
+
+    .main__property-card {
+        width: 80vw;
+    }
+
+}
+@media (max-width: 1000px) {
+
+    .main__hero__text__p-gray {
+        background-color: #8C827A;
+        padding-left: 200px;
+        margin-right: 10vw;
+        transition: all .3s;
+    }
+    .main__tabs {
+        margin-top: 700px;
+    }
+
+    .main__row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .header__nav {
+        display: none;
+    }
+    .header__bars {
+        display: flex;
+        justify-content: center;
+        padding: 10px !important;
+        border-radius: 5px;
+        margin-left: 10px;
+    }
+    .header__bars:hover {
+        background-color: #97928A;
+    }
+    .main__property-card {
+        height: 450px;
+    }
+    .property-card__container {
+        height: 450px;
+    }
+}
+
+@media (max-width: 750px) {
+
+    .main__hero__text__p-gray {
+        background-color: #8C827A;
+        margin-right: 0vw;
+        padding-left: 50px;
+        transition: all .3s;
+    }
+    .main__hero__text__p-gray:hover {
+        padding-left: 50px;
+        margin-right: 0vw;
+    }
+
+    .main__hero__text__p-blue {
+        margin-left: 0;
+        padding-left: 50px;
+    }
+    .main__hero__text__p-blue:hover {
+        padding-left: 50px;
+    }
+
+    .main__row {
+        margin-top: 50px;
+    }
+
+    .main__tabs > div > ul {
+        flex-direction: column;
+    }
+
+    .main__tabs {
+        margin-top: 780px;
+    }
+
+    .main__hero__text__p-exp {
+        margin-left: 50px;
+    }
+
+    .main__property-card__text__desc {
+        display: none !important;
+    }
+    .main__property-card__text__contact {
+        display: none !important;
+    }
+
+    .property-card__container {
+        flex-direction: column;
+    }
+
+    .main__property-card__text {
+        width: 100%;
+    }
+
+
+}
+@media (max-width: 600px) {
+
+    .main__row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main__tabs {
+        margin-top: 900px;
+    }
+    .tabs__card  > div {
+        flex-direction: column;
+    }
+
+    .main__hero__text__p-bar {
+        font-size: 26px;
+    }
+
+    .main__hero__text__p-gray {
+        background-color: #00000000;
+    }
+    .main__hero__text__p-blue {
+        color: #fff;
+    }
+    
+    .main__compromise__grid__item__img {
+        display: none;
+    }
+    .main__compromise__grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4 1fr);
+    }
 }

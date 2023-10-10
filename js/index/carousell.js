@@ -3,9 +3,18 @@ document.querySelectorAll('.property__arrow')
         arrow.addEventListener('click',() => {
 
             if (arrow.classList.contains('property__arrow--previous')) {
-                scrollCarousell(-410);
+
+                scrollCarousell(
+                    window.innerWidth < 750 ?
+                    -450 :
+                    -410
+                );
             } else {
-                scrollCarousell(410);
+                scrollCarousell(
+                    window.innerWidth < 750 ?
+                    450 :
+                    410
+                );
             }
         });
     });
