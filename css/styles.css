@@ -394,7 +394,7 @@ height: 550px;
 }
 
 .main__compromise__grid__item__img {
-    height: 120px;
+    height: 100%;
     background-color: #0096A9;
     background-size: cover;
     background-position-y: -150px ;
@@ -420,24 +420,23 @@ height: 550px;
 .main__compromise__grid__item__text > span {
     color: #C04D00;
     text-align: justify;
-    font-family: Raleway;
-    font-size: 16px;
+    font-family: Barlow;
+    font-size: 18px;
     font-style: normal;
     font-weight: 700;
-    line-height: 25px; /* 156.25% */
+    line-height: 25px; /* 138.889% */
     letter-spacing: 1px;
     text-transform: uppercase;
 }
 .main__compromise__grid__item__text > p {
     color: #000;
     text-align: justify;
-    font-family: Fresca;
+    font-family: Raleway;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: 25px; /* 208.333% */
     letter-spacing: 1px;
-    text-transform: uppercase;
     margin-top: 10px;
 }
 .main__tabs {
@@ -449,10 +448,10 @@ height: 550px;
 
 .tab__selector {
     color: #545859;
-    font-family: Fjalla One;
+    font-family:  Barlow;
     font-size: 28px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: bold;
     line-height: 50px; /* 178.571% */
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -481,25 +480,22 @@ height: 550px;
 .tab__card__text > span {
     color: #C04D00;
     text-align: justify;
-    font-family: Raleway;
-    font-size: 16px;
+    font-family: Barlow;
+    font-size: 18px;
     font-style: normal;
     font-weight: 700;
-    line-height: 25px; /* 156.25% */
+    line-height: 25px; /* 138.889% */
     letter-spacing: 1px;
     text-transform: uppercase;
 }
 .tab__card__text > p {
     color: #000;
     text-align: justify;
-    font-family: Fresca;
+    font-family: Raleway;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: 25px; /* 208.333% */
-    letter-spacing: 1px;
-    text-transform: uppercase;
-
     margin-top: 20px;
 
 }
@@ -579,6 +575,10 @@ height: 550px;
 }
 
 /** DESKTOP */
+@media (max-width: 1472px) {
+    
+}
+
 @media (max-width: 1400px) {
     .main__hero__text__p-gray {
         background-color: #8C827A;
@@ -627,9 +627,6 @@ height: 550px;
         margin-right: 10vw;
         transition: all .3s;
     }
-    .main__tabs {
-        margin-top: 600px;
-    }
     .tab__card__img {
         background-size: auto;
     }
@@ -672,22 +669,25 @@ height: 550px;
     .carousell__card__text__more {
         right: 20px !important;
     }
-
 }
+@media (max-width: 1110px) {
+    
+
+    .main__compromise__grid__item__img {
+        height: 100%;
+    }
+}
+
 @media (max-width: 1000px) {
 
     .footer {
         flex-direction:column;
-        padding: 40px 10px;
-        background-color: #F5F3F1;
+        height: 200px;
+        padding: 10px;
     }
     .footer > span {
         margin: 20px;
     }
-    .footer > div {
-        margin: 20px;
-    }
-
     .main__hero__databursatil {
         display: none !important;
     }
@@ -702,9 +702,7 @@ height: 550px;
         margin-right: 10vw;
         transition: all .3s;
     }
-    .main__tabs {
-        margin-top: 620px !important;
-    }
+    
 
     .main__row {
         display: grid;
@@ -792,11 +790,6 @@ height: 550px;
     }
 
 }
-@media (max-width: 865px) {
-    .main__tabs {
-        margin-top: 720px !important;   
-    }
-}
 @media (max-width: 750px) {
 
     .qoute > div > p {
@@ -833,9 +826,6 @@ height: 550px;
         flex-direction: row;
     }
 
-    .main__tabs {
-        margin-top: 730px;
-    }
 
     .main__hero__text__p-exp {
         margin-left: 50px;
@@ -889,22 +879,11 @@ height: 550px;
         color: #fff;
     }
 }
-@media (max-width: 729px) {
-    .main__tabs {
-        margin-top: 820px !important;
-    }
-}
-@media (max-width: 720px) {
-    .main__tabs {
-        margin-top: 820px !important;
-    }
+
+@media (max-width: 730px) {
+    
     .tab__card__img--tab1 {
         background-position-x:-150px !important;
-    }
-}
-@media (max-width: 635px) {
-    .main__tabs {
-        margin-top: 920px !important;
     }
 }
 
@@ -938,9 +917,6 @@ height: 550px;
         flex-direction: column;
     }
 
-    .main__tabs {
-        margin-top: 620px !important;
-    }
     .tabs__card  > div {
         flex-direction: column;
     }
@@ -990,13 +966,8 @@ height: 550px;
     }
 
 }
-@media (max-width: 570px) {
-    .main__tabs {
-        margin-top: 720px !important;
-    }
-}
+
 @media (max-width: 550px) {
-    .main__tabs { margin-top: 730px; }
 
     .main__tabs > div > ul {
         flex-wrap: wrap;
@@ -1007,17 +978,8 @@ height: 550px;
 
 }
 
-@media (max-width: 482px) {
-    .main__tabs {
-        margin-top: 820px !important;
-    }
-}
-
 @media (max-width: 470px) {
-    .main__tabs {
-        margin-top: 820px !important;
-        
-    }
+
 
     .main__compromise__title {
         width: 50vw;
@@ -1028,11 +990,22 @@ height: 550px;
     .carousell__card__text__title > span {
         font-size: 22px !important;
     }
+    .tab__card__text > button {
+        position: absolute;
+        left: 40px;
+        bottom: 415px !important;
+    }
+    .tabs__card {
+        height: 700px;
+    }
 }
-@media (max-width: 390px) {
-    .main__tabs {
-        margin-top: 930px !important;
-        
+@media (max-width: 415px) {
+    
+    .tabs__card {
+        height: 720px;
+    }
+    .tab__card__text > button {
+        bottom: 420px !important;
     }
 }
 
@@ -1101,13 +1074,12 @@ height: 550px;
 .carousell__card__text__info > p {
     color: #000;
     text-align: justify;
-    font-family: Fresca;
+    font-family: 'Raleway';
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: 25px; /* 208.333% */
     letter-spacing: 1px;
-    text-transform: capitalize;
 }
 
 .carousell__card__text__more {
@@ -1188,7 +1160,7 @@ height: 550px;
 
     position: absolute;
     left: 40px;
-    bottom: 100px;
+    bottom: 40px;
 
     color: #FFF;
     text-align: justify;
@@ -1202,9 +1174,9 @@ height: 550px;
 }
 
 .qoute {
-    height: 300px;
+    height: max-content;
     align-items: center;
-    margin-top:  40px;
+    margin: 40px 0px;
 }
 
 .qoute > div {
@@ -1217,7 +1189,6 @@ height: 550px;
     padding-left: 40px;
     font-family: 'Raleway';
     font-size: 18px;
-    text-transform: capitalize;
     text-align: justify;
     line-height:50px;
 }
@@ -1278,6 +1249,7 @@ hr {
     font-family: 'Raleway' !important;
     text-transform: uppercase;
     letter-spacing: 1px !important;
+    text-align: center;
 }
 
 .main__hero__databursatil__item--3 {
@@ -1292,10 +1264,10 @@ hr {
     font-size: 16px;
     letter-spacing: 6px;
 }
-#actionDecimalValue {
+.actionDecimalValue {
     font-size: 20px !important;
 }
-#cbfisDecimalValue {
+.cbfisDecimalValue {
     font-size: 20px !important;
 }
 .main__hero__databursatil__item__value {
@@ -1320,4 +1292,84 @@ hr {
 
 .main__tabs > div > ul > li {
     font-size: 20px;
+}
+
+.footer {
+    background-color: #eae9e8;
+}
+
+
+@media (max-width: 1000px) {
+    
+    .main__databursatil__container--mobile {
+        display: flex !important;
+        padding: 40px;
+    }
+    
+    .main__hero__databursatil--mobile {
+        position: static;
+        margin: 0 auto;
+        display: grid !important;
+    }
+
+    .main__row {
+        margin-top: 0px;
+    }
+}
+@media (max-width: 750px) {
+
+    .main__databursatil__container--mobile {
+        padding: 40px 0px;
+    }
+}
+@media (max-width: 600px) {
+
+    .main__hero__databursatil--mobile {
+        transform: scale(.8);
+    }
+}
+
+/*
+MAIN TABS MARGIN
+*/
+
+@media (max-width: 1210px) {
+    .main__tabs {
+        margin-top: 620px;
+    }
+}
+@media (max-width: 948px) {
+    .main__tabs {
+        margin-top: 720px;
+    }
+}
+@media (max-width: 786px) {
+    .main__tabs {
+        margin-top: 820px;
+    }
+}
+@media (max-width: 690px) {
+    .main__tabs {
+        margin-top: 925px;
+    }
+}
+@media (max-width: 620px) {
+    .main__tabs {
+        margin-top: 720px;
+    }
+}
+@media (max-width: 517px) {
+    .main__tabs {
+        margin-top: 820px;
+    }
+}
+@media (max-width: 454px) {
+    .main__tabs {
+        margin-top: 920px;
+    }
+}
+@media (max-width: 400px) {
+    .main__tabs {
+        margin-top: 1025px;
+    }
 }
