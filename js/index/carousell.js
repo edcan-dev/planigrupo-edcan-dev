@@ -8,7 +8,7 @@ document.querySelectorAll('.property__arrow')
             const scrollValue = 
             window.innerWidth > 600 ? 
             window.innerWidth * .65 :
-            window.innerWidth * .75 ;
+            window.innerWidth * .65 ;
 
             if (arrow.classList.contains('property__arrow--previous')) {
 
