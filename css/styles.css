@@ -1332,7 +1332,9 @@ hr {
 /*
 MAIN TABS MARGIN
 */
-
+.main__tabs {
+    margin-top: 420px;
+}
 @media (max-width: 1210px) {
     .main__tabs {
         margin-top: 620px;
