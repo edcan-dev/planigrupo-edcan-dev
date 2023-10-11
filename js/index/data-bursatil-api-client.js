@@ -9,8 +9,8 @@
     const actionData = await actionResponse.json();
     const cbfisData = await cbfisResponse.json();
 
-    setValues(actionData.BMV.ultimo, '#actionIntValue', '#actionDecimalValue');
-    setValues(cbfisData.BMV.ultimo, '#cbfisIntValue', '#cbfisDecimalValue');
+    setValues(actionData.BMV.ultimo, '.actionIntValue', '.actionDecimalValue');
+    setValues(cbfisData.BMV.ultimo, '.cbfisIntValue', '.cbfisDecimalValue');
 }());
 
 function setValues(value, intElement, decElement) {
@@ -18,9 +18,10 @@ function setValues(value, intElement, decElement) {
     const intValue = Math.floor(value);
     const decimalValue = value - intValue;
 
-    document.querySelector(intElement).innerHTML = intValue
-    document.querySelector(decElement).innerHTML = 
-    clearDigits(decimalValue.toFixed(2))
+    document.querySelectorAll(intElement)
+        .forEach( element => element.innerHTML = intValue)
+    document.querySelectorAll(decElement)
+        .forEach( element => element.innerHTML = clearDigits(decimalValue.toFixed(2)))
 }
 
 function clearDigits( value ) {
