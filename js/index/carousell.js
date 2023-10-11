@@ -2,27 +2,31 @@ document.querySelectorAll('.property__arrow')
     .forEach(arrow => {
         arrow.addEventListener('click',() => {
 
+            const card = document.querySelector('.carousell__card')
+
+
+            const scrollValue = 
+            window.innerWidth > 600 ? 
+            window.innerWidth * .65 :
+            window.innerWidth * .75 ;
+
             if (arrow.classList.contains('property__arrow--previous')) {
 
                 scrollCarousell(
-                    window.innerWidth < 750 ?
-                    -450 :
-                    -410
-                );
-            } else {
-                scrollCarousell(
-                    window.innerWidth < 750 ?
-                    450 :
-                    410
-                );
+                        (scrollValue) * -1
+                    );
+                } else {
+                    scrollCarousell(
+                        scrollValue
+                    );
             }
         });
     });
 
 const scrollCarousell = ( value ) => {
-    document.querySelector('.main__property-card').scrollBy({
-        top: value,
+    document.querySelector('.carousell__container').scrollBy({
+        left: value,
         behavior: "smooth",
-        left: 0
+        top: 0
     })
 }
