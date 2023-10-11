@@ -669,6 +669,10 @@ height: 550px;
     .carousell__card__text__more {
         right: 20px !important;
     }
+
+    .tab__card__img {
+        background-position-x: -180px !important;
+    }
 }
 @media (max-width: 1110px) {
     
@@ -786,7 +790,7 @@ height: 550px;
         height: 100%;
     }
     .tab__card__img {
-        background-position-x: 0px !important;
+        background-position-x: -250px !important;
     }
 
 }
@@ -866,7 +870,7 @@ height: 550px;
         bottom: 480px !important;
     }
       .tab__card__img--tab1 {
-        background-position-x:-200px !important;
+        background-position-x:-150px !important;
     }
 
     .main__hero__text__p-bar {
@@ -967,7 +971,7 @@ height: 550px;
     }
 
     .tab__card__img--tab1 {
-        background-position-x:-200px !important;
+        background-position-x:-300px !important;
     }
 
 }
@@ -1179,9 +1183,9 @@ height: 550px;
 }
 
 .qoute {
+    width: 100%;
     height: max-content;
     align-items: center;
-    margin: 40px 0px;
 }
 
 .qoute > div {
@@ -1193,7 +1197,7 @@ height: 550px;
 .qoute > div > p {
     padding-left: 40px;
     font-family: 'Raleway';
-    font-size: 18px;
+    font-size: 14px;
     text-align: justify;
     line-height:50px;
 }
@@ -1340,9 +1344,35 @@ MAIN TABS MARGIN
 .main__tabs {
     margin-top: 420px;
 }
+
+@media (max-width: 1800px) {
+    .main__tabs {
+        margin-top: 550px;
+    }
+}
+@media (max-width: 1600px) {
+    .main__tabs {
+        margin-top: 530px;
+    }
+}
+@media (max-width: 1400px) {
+    .main__tabs {
+        margin-top: 530px;
+    }
+}
 @media (max-width: 1210px) {
     .main__tabs {
-        margin-top: 620px;
+        margin-top: 630px;
+    }
+}
+@media (max-width: 1200px) {
+    .main__tabs {
+        margin-top: 630px;
+    }
+}
+@media (max-width: 1000px) {
+    .main__tabs {
+        margin-top: 630px;
     }
 }
 @media (max-width: 948px) {
@@ -1379,4 +1409,15 @@ MAIN TABS MARGIN
     .main__tabs {
         margin-top: 1025px;
     }
+}
+
+.qoute > div > img {
+    display: flex;
+    filter: invert(37%) sepia(82%) saturate(1163%) hue-rotate(154deg) brightness(94%) contrast(101%);
+    line-height: 30px;
+    height: 30px !important;
+}
+.qoute > div {
+    display: flex;
+    align-items: center;
 }
