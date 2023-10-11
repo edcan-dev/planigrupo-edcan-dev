@@ -446,9 +446,7 @@ height: 550px;
 .main__tabs > div > ul {
     display: flex;
 }
-.main__tabs > div > ul {
-    display: flex;
-}
+
 .tab__selector {
     color: #545859;
     font-family: Fjalla One;
@@ -466,8 +464,8 @@ height: 550px;
 }
 
 .selected__tab {
-    background-color: #545859;
-    color: #FFF;
+    background-color: #F5F3F1;
+    color: #0096A9;
 }
 
 .tabs__card {
@@ -678,12 +676,24 @@ height: 550px;
 }
 @media (max-width: 1000px) {
 
+    .footer {
+        flex-direction:column;
+        padding: 40px 10px;
+        background-color: #F5F3F1;
+    }
+    .footer > span {
+        margin: 20px;
+    }
+    .footer > div {
+        margin: 20px;
+    }
+
     .main__hero__databursatil {
         display: none !important;
     }
 
     .qoute > div > p {
-        font-size: 20px !important;
+        font-size: 14px !important;
     }
 
     .main__hero__text__p-gray {
@@ -693,7 +703,7 @@ height: 550px;
         transition: all .3s;
     }
     .main__tabs {
-        margin-top: 740px;
+        margin-top: 620px !important;
     }
 
     .main__row {
@@ -782,7 +792,11 @@ height: 550px;
     }
 
 }
-
+@media (max-width: 865px) {
+    .main__tabs {
+        margin-top: 720px !important;   
+    }
+}
 @media (max-width: 750px) {
 
     .qoute > div > p {
@@ -816,11 +830,11 @@ height: 550px;
     }
 
     .main__tabs > div > ul {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .main__tabs {
-        margin-top: 750px;
+        margin-top: 730px;
     }
 
     .main__hero__text__p-exp {
@@ -875,14 +889,22 @@ height: 550px;
         color: #fff;
     }
 }
-
+@media (max-width: 729px) {
+    .main__tabs {
+        margin-top: 820px !important;
+    }
+}
 @media (max-width: 720px) {
     .main__tabs {
-        margin-top: 780px;
-
+        margin-top: 820px !important;
     }
     .tab__card__img--tab1 {
         background-position-x:-150px !important;
+    }
+}
+@media (max-width: 635px) {
+    .main__tabs {
+        margin-top: 920px !important;
     }
 }
 
@@ -917,7 +939,7 @@ height: 550px;
     }
 
     .main__tabs {
-        margin-top: 630px;
+        margin-top: 620px !important;
     }
     .tabs__card  > div {
         flex-direction: column;
@@ -968,13 +990,32 @@ height: 550px;
     }
 
 }
+@media (max-width: 570px) {
+    .main__tabs {
+        margin-top: 720px !important;
+    }
+}
 @media (max-width: 550px) {
     .main__tabs { margin-top: 730px; }
+
+    .main__tabs > div > ul {
+        flex-wrap: wrap;
+    }
+    .main__tabs > div > ul > li {
+        flex: 50% !important;
+    }
+
 }
+
+@media (max-width: 482px) {
+    .main__tabs {
+        margin-top: 820px !important;
+    }
+}
+
 @media (max-width: 470px) {
     .main__tabs {
-        margin-top: 880px;
-
+        margin-top: 820px !important;
         
     }
 
@@ -986,6 +1027,12 @@ height: 550px;
     }
     .carousell__card__text__title > span {
         font-size: 22px !important;
+    }
+}
+@media (max-width: 390px) {
+    .main__tabs {
+        margin-top: 930px !important;
+        
     }
 }
 
@@ -1060,7 +1107,7 @@ height: 550px;
     font-weight: 400;
     line-height: 25px; /* 208.333% */
     letter-spacing: 1px;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 .carousell__card__text__more {
@@ -1079,7 +1126,7 @@ height: 550px;
     font-weight: 400;
     line-height: 25px; /* 178.571% */
     letter-spacing: 1px;
-    text-transform: uppercase;
+    text-transform: lowercase;
     text-align: end;
 }
 .carousell__card__text__more > span {
@@ -1162,20 +1209,22 @@ height: 550px;
 
 .qoute > div {
     display: flex;
+    justify-content: center;
     padding: 40px;
 }
 
 .qoute > div > p {
     padding-left: 40px;
     font-family: 'Raleway';
-    font-size: 32px;
-    text-transform: uppercase;
+    font-size: 18px;
+    text-transform: capitalize;
     text-align: justify;
+    line-height:50px;
 }
 
 hr {
-    background-color: #545658;
-    height: 10px;
+    background-color: #545859;
+    height: 1px;
 }
 
 
@@ -1185,7 +1234,7 @@ hr {
     height: 150px;
     background-color: #61a60e;
     right: 80px;
-    bottom: 487.5px;
+    top: 480px;
     padding: 5px;
 
     display: grid;
@@ -1267,4 +1316,8 @@ hr {
     text-transform: uppercase;
     letter-spacing: 3px !important;
     color: #FFF;
+}
+
+.main__tabs > div > ul > li {
+    font-size: 20px;
 }
