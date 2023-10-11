@@ -678,6 +678,14 @@ height: 550px;
 }
 @media (max-width: 1000px) {
 
+    .main__hero__databursatil {
+        display: none !important;
+    }
+
+    .qoute > div > p {
+        font-size: 20px !important;
+    }
+
     .main__hero__text__p-gray {
         background-color: #8C827A;
         padding-left: 200px;
@@ -777,6 +785,10 @@ height: 550px;
 
 @media (max-width: 750px) {
 
+    .qoute > div > p {
+        font-size: 16px !important;
+    }
+
     .main__hero__text__p-gray {
         background-color: #8C827A;
         margin-right: 0vw;
@@ -851,6 +863,17 @@ height: 550px;
       .tab__card__img--tab1 {
         background-position-x:-200px !important;
     }
+
+    .main__hero__text__p-bar {
+        font-size: 26px;
+    }
+
+    .main__hero__text__p-gray {
+        background-color: #00000000;
+    }
+    .main__hero__text__p-blue {
+        color: #fff;
+    }
 }
 
 @media (max-width: 720px) {
@@ -864,6 +887,14 @@ height: 550px;
 }
 
 @media (max-width: 620px) {
+
+    .qoute > div > p {
+        padding-left: 20px !important;
+    }
+    .qoute > div > img {
+        height: 30px;
+    }
+
 
     .tabs__card {
         height: 600px;
@@ -1121,4 +1152,119 @@ height: 550px;
     line-height: 25px; /* 156.25% */
     letter-spacing: 1px;
     text-transform: uppercase;
+}
+
+.qoute {
+    height: 300px;
+    align-items: center;
+    margin-top:  40px;
+}
+
+.qoute > div {
+    display: flex;
+    padding: 40px;
+}
+
+.qoute > div > p {
+    padding-left: 40px;
+    font-family: 'Raleway';
+    font-size: 32px;
+    text-transform: uppercase;
+    text-align: justify;
+}
+
+hr {
+    background-color: #545658;
+    height: 10px;
+}
+
+
+.main__hero__databursatil {
+    position: absolute;
+    width: 500px;
+    height: 150px;
+    background-color: #61a60e;
+    right: 80px;
+    bottom: 487.5px;
+    padding: 5px;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.main__hero__databursatil__item {
+    display: flex;
+}
+
+.main__hero__databursatil__item--1 {
+    grid-area: 1 / 1 / 4 / 5;
+    justify-content: center;
+}
+
+.main__hero__databursatil__item--2 {
+    grid-area: 1 / 5 / 4 / 9;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.main__hero__databursatil__item--2 > span {
+    color: #FFF;
+    font-family: Fjalla One;
+    font-size: 16px;
+    letter-spacing: 6px;
+}
+#actionDecimalValue {
+    font-size: 20px !important;
+}
+.main__hero__databursatil__item__value {
+    font-size: 32px !important;
+    display: flex;
+    align-items: start;
+}
+.main__hero__databursatil__item__text {
+    font-size: 12px !important;
+    font-family: 'Raleway' !important;
+    text-transform: uppercase;
+    letter-spacing: 1px !important;
+}
+
+.main__hero__databursatil__item--3 {
+    grid-area: 1 / 9 / 4 / 13;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.main__hero__databursatil__item--3 > span {
+    color: #FFF;
+    font-family: Fjalla One;
+    font-size: 16px;
+    letter-spacing: 6px;
+}
+#actionDecimalValue {
+    font-size: 20px !important;
+}
+#cbfisDecimalValue {
+    font-size: 20px !important;
+}
+.main__hero__databursatil__item__value {
+    font-size: 32px !important;
+    display: flex;
+    align-items: start;
+}
+
+.main__hero__databursatil__item--4 {
+    grid-area: 4 / 1 / 5 / 13;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main__hero__databursatil__item--4 > p {
+    font-size: 14px !important;
+    font-family: 'Raleway' !important;
+    text-transform: uppercase;
+    letter-spacing: 3px !important;
+    color: #FFF;
 }
