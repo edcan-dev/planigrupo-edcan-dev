@@ -169,6 +169,7 @@ Responsive Design
         grid-column-gap: 0px;
         grid-row-gap: 0px;
         width: 80%;
+        margin-top: 150px;
     }
 
     .nosotros_info__grid__item--square > span {
@@ -346,11 +347,6 @@ li {
     .footer {
         margin-top: 250px;
     }
-
-    .lo_que_hacemos_info--responsive {
-        display: flex !important;
-    }
-    
 }
 @media (max-width: 1105px) {
     .main__row {
@@ -386,4 +382,147 @@ li {
     color: #0096A9 !important;
     font-weight: bolder !important;
     background-color: #FFF !important;
+}
+
+@media (max-width: 1000px) {
+
+
+    .main__hero__text__p-bar,.main__hero__text__p {
+        display: none;
+    }
+
+    .lo_que_hacemos_info {
+       display: none !important;
+    }
+    .lo_que_hacemos_info--responsive {
+        display: flex !important;
+        margin: 140px auto;
+        flex-direction: column;
+        width: 80%;
+        position: relative;
+        z-index: 1;
+    }
+
+    .main__hero {
+        height: 250px;
+    }
+    .main__hero__downbar {
+        top: 250px ;
+    }
+
+    .lo_que_hacemos_info--responsive div {
+        margin: 20px 0px;
+    }
+    .lo_que_hacemos_info--responsive div > p {
+        color: #727272;
+        font-family: Raleway;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; /* 142.857% */
+        letter-spacing: 1px;
+    }
+    .loque__ul--responsive {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .loque__ul--responsive > li {
+        color: #545859;
+        font-family: Barlow;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 50px; /* 277.778% */
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+    .loque__ul--responsive > img {
+        height: 30px
+    }
+
+    .loque__card--responsive > p {
+        color: #727272;
+    text-align: justify;
+    font-family:    Raleway;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 1px;
+    text-align: justify;
+    margin: 20px 0px;
+    }
+
+    .loque__list--responsive > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .loque__list--responsive > div > span {
+        color: #C04D00;
+        text-align: center;
+        font-family: Raleway;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 19.8px; /* 61.875% */
+        letter-spacing: 1px;
+        text-transform: uppercase;
+
+        margin: 5px 0;
+    }
+    .loque__list--responsive > div > p {
+        color: #97928A;
+        text-align: center;
+        font-family: Barlow;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 15.71px; /* 142.818% */
+        letter-spacing: 1px;
+        text-transform: uppercase;
+
+        margin: 5px 0;
+    }
+
+    .tabs___card--1 > .loque__bg-img--reponsive {
+        background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/desarrollo.png');
+    }
+    .tabs___card--2 > .loque__bg-img--reponsive {
+        background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/diseno.jpeg');
+    }
+    .tabs___card--3  > .loque__bg-img--reponsive {
+        background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/constr.png');
+    }
+    .tabs___card--4  > .loque__bg-img--reponsive {
+        background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/comer.jpeg');
+    }
+    .tabs___card--5 > .loque__bg-img--reponsive {
+        background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/061ef1c375cccd5b84d93e4dc0982eb0.jpeg');
+    }
+
+    .loque__bg-img--reponsive {
+        height: 200px;
+        background-size: cover;
+
+    }
+
+    .loque__bg {
+        display: inline !important;
+        position: absolute;
+        background-color: #F5F3F1;        
+        height: 600px;
+        width: 100%;
+        top: 1000px;
+        z-index: 0;
+        margin: 0 !important;
+    }
+
+}
+
+.loque__bg {
+    display: none;
 }
