@@ -1,19 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Fjalla+One&family=Fredoka&family=Fresca&family=Raleway:wght@400;600&display=swap');
 
+
+.main__hero {
+    background: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/Valores.jpg');
+    background-size: cover;
+}
 .main__hero__downbar {
     background-color: #0096A9;
     display: flex;
     position: relative;
     top: 450px;
     height: 100px;
-    width: 90%;
+    width: 100%;
 }
 .main__hero_downbar__text {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 40%;
     height: 100px;
-    padding-left: 20%;
+    padding-left: 25%;
 }
 .main__hero_downbar__text > span {
     color: #FFF;
@@ -39,5 +45,345 @@
 .main__hero_downbar__title {
     display: flex;
     width: 60%;
-    background-color: rgba(178, 180, 178);
+    background-color: #F5F3F1;
+    align-items: center;
+    padding-left: 40px;
+}
+.main__hero_downbar__title > h2 {
+    color: #545859;
+    font-family: Fjalla One;
+    font-size: 33.734px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px; /* 103.752% */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.nosotros_info {
+}
+
+.nosotros_info__grid {
+    margin: 60px auto;
+    width: 60%;
+    height: 400px;
+
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.nosotros_info__grid__item--1 {
+    grid-area: 1 / 1 / 4 / 25;
+
+    padding: 20px;
+}
+.nosotros_info__grid__item--1 > p {
+    color: #727272;
+    text-align: justify;
+    font-family: Raleway;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 1px;
+}
+
+.nosotros_info__grid__item--square {
+    padding: 20px 20px;    
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.nosotros_info__grid__item--square > span {
+    color: #C04D00;
+    font-family: Barlow;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 142.833% */
+    letter-spacing: 1px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-align: justify;
+
+}
+.nosotros_info__grid__item--square > p {
+    color: #727272;
+    font-family: Raleway;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 1px;
+    text-align: justify;
+
+}
+
+
+
+.nosotros_info__grid__item--2 {
+    grid-area: 4 / 1 / 13 / 9;
+}
+.nosotros_info__grid__item--2:after {
+    content: '';
+    width: 1px;
+    height: 100px;
+    background: #C04D00;
+    position: absolute;
+    top: 120px;
+    right: 0;
+}
+.nosotros_info__grid__item--3 { grid-area: 4 / 9 / 13 / 17; }
+.nosotros_info__grid__item--3:after {
+    content: '';
+    width: 1px;
+    height: 100px;
+    background: #C04D00;
+    position: absolute;
+    top: 120px;
+    right: 0;
+}
+.nosotros_info__grid__item--4 { grid-area: 4 / 17 / 13 / 25; }
+
+
+/*
+Responsive Design
+*/
+
+@media (max-width: 1000px) {
+    .main__hero__text__p-bar {
+        font-size: 28px;
+    }
+    .main__hero_downbar__text {
+        padding-left: 10%;
+    }
+
+    .nosotros_info__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        width: 80%;
+    }
+
+    .nosotros_info__grid__item--square > span {
+        margin: 20px 0px ;
+    }
+
+    .nosotros_info__grid__item--1 { grid-area: 1 / 1 / 2 / 2; }
+    .nosotros_info__grid__item--2 { grid-area: 2 / 1 / 3 / 2; }
+    .nosotros_info__grid__item--3 { grid-area: 3 / 1 / 4 / 2; }
+    .nosotros_info__grid__item--4 { grid-area: 4 / 1 / 5 / 2; }
+
+    .nosotros_info__grid__item--square {
+        padding: 10px;
+        margin: 0 auto;
+        width: 100% !important;
+
+
+    }
+    .nosotros_info__grid__item--1 {
+        padding: 0px;
+        margin: 0 auto;
+    }
+
+    .nosotros_info__grid__item--square:after {
+        display: none;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .footer {
+        margin-top: 400px !important ;
+    }
+    .main__hero__text__p-bar {
+        font-size: 20px;
+    }
+    .main__hero_downbar__text {
+        padding-left: 20px;
+    }
+    .main__hero_downbar__text > p {
+        font-size: 12px;
+    }
+    .main__hero_downbar__text > span {
+        font-size: 10px;
+    }
+}
+
+
+
+/* Lo que hacemos - Stylesheet */
+
+.lo_que_hacemos_info {
+    height: 450px;
+}
+
+.lo_que_hacemos_info--grid {
+    margin: 60px auto;
+    width: 60%;
+    height: 450px;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    grid-template-columns: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.lo_que_hacemos_info__item--1 {
+
+    padding: 20px;
+}
+.lo_que_hacemos_info__item--1 > p {
+    color: #727272;
+    text-align: justify;
+    font-family: Raleway;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 1px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.lo_que_hacemos_info__item--2 {
+    padding: 20px;
+}
+.lo_que_hacemos_info__item--2 > ul {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.lo_que_hacemos_info__item--2 > ul > li {
+    color: #545859;
+    font-family: Barlow;    
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px; /* 277.778% */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.lo_que_hacemos_info__item--2 > ul > img {
+    height: 20px;
+    border: solid rgb(212, 210, 210) 1px;
+}
+
+.lo-que-hacemos-card {
+    display: flex;
+    padding-top: 20px;
+    height: 300px;
+}
+.lo-que-hacemos-card__img {
+    width: 40%;
+
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/desarrollo.png');
+    background-size: cover;
+}
+.lo-que-hacemos-card__text {
+    width: 60%;
+    padding: 0px 0px 0px 20px;
+}
+.lo-que-hacemos-card__text > p {
+    color: #727272;
+    text-align: justify;
+    font-family: Raleway;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 1px;
+}
+.lo-que-hacemos-card__text > p > b{
+    font-weight: 1000;
+}
+
+.lo_que_hacemos_info--responsive {
+    display: none;
+
+}
+
+.main__row {
+    border-top: 1px solid #72727280 ;
+}
+
+
+
+
+
+
+
+
+/* Responsive Lo que hacemos */
+
+.footer--loque {
+    margin-top: 200px;
+}
+
+@media (max-width: 1280px) {
+    .footer {
+        margin-top: 120px;
+    }
+}
+@media (max-width: 1267px) {
+    .footer {
+        margin-top: 140px;
+    }
+}
+@media (max-width: 1155px) {
+    .main__row {
+        margin-top: 100px;
+    }
+    .footer {
+        margin-top: 250px;
+    }
+
+    .lo_que_hacemos_info--responsive {
+        display: flex !important;
+    }
+    
+}
+@media (max-width: 1105px) {
+    .main__row {
+        margin-top: 100px;
+    }
+    .footer {
+        margin-top: 270px;
+    }
+}
+@media (max-width: 1079px) {
+    .main__row {
+        margin-top: 100px;
+    }
+    .footer {
+        margin-top: 300px;
+    }
+}
+
+.tabs___card--2 > div > .lo-que-hacemos-card__img {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/diseno.jpeg');
+}
+.tabs___card--3 > div > .lo-que-hacemos-card__img {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/constr.png');
+}
+.tabs___card--4 > div > .lo-que-hacemos-card__img {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/comer.jpeg');
+}
+.tabs___card--5 > div > .lo-que-hacemos-card__img {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/061ef1c375cccd5b84d93e4dc0982eb0.jpeg');
+}
+
+.selected__tab {
+    color: #0096A9 !important;
+    font-weight: bolder !important;
+    background-color: #FFF !important;
 }

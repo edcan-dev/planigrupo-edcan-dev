@@ -615,7 +615,7 @@ height: 550px;
 
     .header {
         justify-content: space-between;
-    }`
+    }
     .header > a {
         padding-left: 20px;
     }
