@@ -40,7 +40,7 @@
 }
 
 .historia__card__item__img {
-    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/equipo/Carla%20Rangel.JPG');
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia/historia-ejemplo.jpeg');
 }
 
 
@@ -120,4 +120,13 @@
     height: 2px;
     width: 100%;
     top: 39%;
+}
+
+.historia__card--tab4,
+.historia__card--tab5 {
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 1400px;
+}
+.historia__card--tab5 > div > div > p {
+    font-size: 12px;
 }
