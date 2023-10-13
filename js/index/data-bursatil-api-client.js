@@ -1,8 +1,9 @@
 (async function fetchValue() {
-
-    /* const API_KEY = '22f0e2c0dd65d51cbecdc3dd4edb9b';
-     */const API_KEY = 'dev';
-
+    
+    const API_KEY = '22f0e2c0dd65d51cbecdc3dd4edb9b';
+    
+/*     const API_KEY = 'dev';
+ */
     const actionResponse = await fetch('https://api.databursatil.com/v1/precios?token=' + API_KEY + '&emisora_serie=PLANI*&bolsa=BMV');
 
     const cbfisResponse = await fetch('https://api.databursatil.com/v1/precios?token=' + API_KEY + '&emisora_serie=PLANICK12&bolsa=BMV');
