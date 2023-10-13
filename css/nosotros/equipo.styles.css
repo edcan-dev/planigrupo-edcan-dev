@@ -53,6 +53,9 @@
     background-color: #0096A9 ;
     text-align: center;
     height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .equipo__card__item__text__name > span {
     color: #FFF;
@@ -119,7 +122,11 @@ text-transform: uppercase;
     
     .footer--equipo {
         margin-top: 70px !important;
-    }   
+    }
+
+    .equipo__card__container {
+        height: 1100px;
+    }
 }
 
 

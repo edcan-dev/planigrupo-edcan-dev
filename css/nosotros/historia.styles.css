@@ -66,6 +66,7 @@
     line-height: 18.57px; /* 132.643% */
     letter-spacing: 1px;
     text-transform: uppercase;
+    text-align: justify;
 }
 
 .historia__timeline {
@@ -93,21 +94,31 @@
     font-weight: 400;
     line-height: 20px; /* 142.857% */
     letter-spacing: 1px;
+    transition: all .2s;
 }
 .historia__timeline__selector > img {
     width: 12px;
     filter: brightness(0) saturate(100%) invert(69%) sepia(69%) saturate(6%) hue-rotate(49deg) brightness(91%) contrast(93%);
+    transition: all .2s;
 }
 
 
+.historia__timeline__selector > p:hover {
+    color:#0096A9 ;
+}
+.historia__timeline__selector > img:hover {
+
+    width: 18px;
+    filter: brightness(0) saturate(100%) invert(41%) sepia(46%) saturate(7145%) hue-rotate(165deg) brightness(99%) contrast(101%);
+}
 
 .historia__timeline__selector--selected  > p {
     color: #0096A9;
 }
 
 .historia__timeline__selector--selected > img {
-    width: 12px;
-    filter: brightness(0) saturate(100%) invert(41%) sepia(46%) saturate(7145%) hue-rotate(165deg) brightness(99%) contrast(101%);
+    width: 24px;
+    filter: brightness(0) saturate(100%) invert(41%) sepia(46%) saturate(7145%) hue-rotate(165deg) brightness(99%) contrast(101%) opacity();
 }
 
 .historia__timeline__line{
@@ -125,11 +136,20 @@
 .historia__card--tab4,
 .historia__card--tab5 {
     grid-template-rows: 1fr 1fr 1fr;
-    height: 1400px;
+    height: 1100px;
 }
 .historia__card--tab5 > div > div > p {
     font-size: 12px;
 }
 
 .footer--historia {
+    margin-top: 80px !important;
+}
+
+@media (max-width: 400px) {
+    .historia__card {
+
+        grid-template-columns: 1fr;
+    }
+    
 }
