@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/nosotros/styles.css" />
+    <link rel="stylesheet" href="./css/portafolio/portafolio.styles.css" />
+    <link
+      rel="shortcut icon"
+      href="https://planigrupo.blob.core.windows.net/planigrupo/assets/favicon.png"
+      type="image/x-icon"
+    />
+    <title>Portafolio</title>
+    <script defer src="./js/hero-start-anim.js"></script>
+
+    <script  src="https://cdn.syncfusion.com/ej2/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
+    <script  src="https://cdn.syncfusion.com/ej2/ej2-svg-base/dist/global/ej2-svg-base.min.js"
+    type="text/javascript"></script>
+    <script  src="https://cdn.syncfusion.com/ej2/ej2-data/dist/global/ej2-data.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/ej2-maps/dist/global/ej2-maps.min.js"></script>
+    
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__bars">
+        <img
+          src="https://planigrupo.blob.core.windows.net/planigrupo/assets/bars-solid.svg"
+          height="40px"
+        />
+      </div>
+      <a href="./index.html">
+        <img
+          src="https://planigrupo.blob.core.windows.net/planigrupo/assets/logo.svg"
+          alt=""
+        />
+      </a>
+      <nav>
+        <ul class="header__nav">
+          <li class="header__nav__item dropdown">
+            <a class="dropbtn">Nosotros</a>
+            <div class="dropdown-content">
+              <a href="./nosotros.html">Nosotros</a>
+              <a href="./lo-que-hacemos.html">Lo que hacemos</a>
+              <a href="./equipo-ejecutivo.html">Equipo Ejecutivo</a>
+              <a href="./historia.html">Historia</a>
+            </div>
+          </li>
+          <li class="header__nav__item"><a href="">Portafolio</a></li>
+          <li class="header__nav__item"><a href="">Comercialización</a></li>
+          <li class="header__nav__item"><a href="">Inversionistas</a></li>
+          <li class="header__nav__item"><a href="">Asg</a></li>
+          <li class="header__nav__item"><a href="">Clientes</a></li>
+          <li class="header__nav__item"><a href="">Contacto</a></li>
+          <li class="header__nav__item header__nav__item--search">
+            <input type="text" placeholder="Buscar..." />
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="main__hero">
+        <video id="background-video" autoplay loop muted></video>
+        <div class="main__hero__text">
+          <p class="main__hero__text__p main__hero__text__p-exp">
+            <b>EXPERIENCIA</b>
+          </p>
+          <p class="main__hero__text__p-bar main__hero__text__p-gray">
+            UTILIZAMOS MATERIALES DE LA MÁS ALTA
+          </p>
+          <p class="main__hero__text__p-bar main__hero__text__p-blue">
+            CALIDAD PARA OFRECER A CLIENTES E INVERSIONISTAS
+          </p>
+          <p class="main__hero__text__p-bar main__hero__text__p-gray">
+            UN PRODUCTO FINAL INCOMPARABLE
+          </p>
+        </div>
+
+        <div class="main__hero__downbar">
+          <div class="main__hero_downbar__text">
+            <span>Conoce</span>
+            <p>Acerca de</p>
+            <p>GM Inmobiliaria</p>
+          </div>
+          <div class="main__hero_downbar__title">
+            <h2>Portafolio</h2>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div id='container'>
+            <div id='element'></div>
+          </div>
+      </section>
+
+      <!-- <section class="historia__section">
+
+
+        <div class="historia__timeline">
+
+          <div class="historia__timeline__line">
+            <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia/line.png">
+          </div>
+
+          <div 
+          class="historia__timeline__selector historia__timeline__selector--1 historia__timeline__selector--selected">
+            <img
+            src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia/selector.svg" alt="">
+            <p>INICIO</p>
+          </div>
+          <div class="historia__timeline__selector historia__timeline__selector--2">
+            <img  
+            src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia/selector.svg" alt="">
+            <p>1980</p>
+          </div>
+          <div class="historia__timeline__selector historia__timeline__selector--3">
+            <img  
+            src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia/selector.svg" alt="">
+            <p>1990</p>
+          </div>
+          <div class="historia__timeline__selector historia__timeline__selector--4">
+            <img  
+            src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia/selector.svg" alt="">
+            <p>2000</p>
+          </div>
+          <div class="historia__timeline__selector historia__timeline__selector--5">
+            <img  
+            src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia/selector.svg" alt="">
+            <p>2010</p>
+          </div>
+          <div class="historia__timeline__selector historia__timeline__selector--6">
+            <img  
+            src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia/selector.svg" alt="">
+            <p>2020</p>
+          </div>    
+        </div>
+
+
+
+        <div class="historia__card historia__card--tab1">
+
+          <div class="historia__card__item">          
+            <div class="historia__card__item__img">                 
+            </div>
+            <div class="historia__card__item__text">
+              <span>1975</span>
+              <p>Planigrupo fue fundada por Eduardo Bross Tatz.</p>
+            </div>
+          </div>
+          <div class="historia__card__item">          
+            <div class="historia__card__item__img">                 
+            </div>
+            <div class="historia__card__item__text">
+              <span>1978</span>
+              <p>Se construye la primera plaza para el municipio de Zapopan.</p>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="historia__card historia__card--tab2 inactive">
+
+          <div class="historia__card__item">          
+            <div class="historia__card__item__img">                 
+            </div>
+            <div class="historia__card__item__text">
+              <span>1982</span>
+              <p>Se construye la primera plaza de Planigrupo Fiesta Arboledas.</p>
+            </div>
+          </div>
+
+
+          <div class="historia__card__item">          
+            <div class="historia__card__item__img">                    
+            </div>
+            <div class="historia__card__item__text">
+              <span>1988</span>
+              <p>Se construye la plaza Fiesta Camelinas.</p>
+            </div>
+          </div>
+
+
+          <div class="historia__card__item">          
+            <div class="historia__card__item__img">                    
+            </div>
+            <div class="historia__card__item__text">
+              <span>1989</span>
+              <p>Se abren las oficinas en la Ciudad de México.</p>
+            </div>
+          </div>
+          
+        </div>
+
+      </section>
+       -->
+    </main>
+
+    <footer class="footer footer--equipo">
+      <span>
+        SIGUENOS EN <br />
+        NUESTRAS REDES
+      </span>
+
+      <div>
+        <a href=".">Nosotros</a>
+        <a href=".">Comercialización</a>
+        <a href=".">Noticias</a>
+        <a href=".">Contacto</a>
+        <a href=".">Inversionistas</a>
+        <a href=".">Asg</a>
+        <a href=".">Portafolio</a>
+        <a href=".">Ofertas de Empleo</a>
+      </div>
+      <img
+        src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/bolsamexicana-grey.png.png"
+        class="footer__img"
+      />
+    </footer>
+
+    <script src="./js/portafolio/syncfusion-map.js" type="module"></script>
+  </body>
+</html>

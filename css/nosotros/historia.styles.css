@@ -30,7 +30,6 @@
 .historia__card__item {
     display: flex;
     flex-direction: column;
-    background-color: antiquewhite;
 
 }
 
@@ -67,4 +66,58 @@
     line-height: 18.57px; /* 132.643% */
     letter-spacing: 1px;
     text-transform: uppercase;
+}
+
+.historia__timeline {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.historia__timeline__selector {
+    cursor: pointer;
+}
+
+.historia__timeline__selector {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.historia__timeline__selector > p {
+    color: #727272;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 1px;
+}
+.historia__timeline__selector > img {
+    width: 12px;
+    filter: brightness(0) saturate(100%) invert(69%) sepia(69%) saturate(6%) hue-rotate(49deg) brightness(91%) contrast(93%);
+}
+
+
+
+.historia__timeline__selector--selected  > p {
+    color: #0096A9;
+}
+
+.historia__timeline__selector--selected > img {
+    width: 12px;
+    filter: brightness(0) saturate(100%) invert(41%) sepia(46%) saturate(7145%) hue-rotate(165deg) brightness(99%) contrast(101%);
+}
+
+.historia__timeline__line{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.historia__timeline__line > img{
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top: 39%;
 }
