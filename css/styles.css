@@ -1421,3 +1421,85 @@ MAIN TABS MARGIN
     display: flex;
     align-items: center;
 }
+
+
+/* HOVER NAVBAR */
+
+/* Dropdown Button */
+.dropbtn {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 10px;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+    text-decoration: none;
+    font-family: 'Raleway';
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: #000;
+  }
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+
+
+  /* LOADING ANIMATIONS  */
+
+@media (min-width: 1000px) {
+
+    .main__hero__text__p-exp {
+        opacity: 0;
+        transition: all 2s;
+    }
+
+    .main__hero__text__p-gray { 
+        transition: all 2s cubic-bezier(0.215, 0.610, 0.355, 1) !important;
+        margin-left: -100vw;
+        margin-right: 100vw;
+    }
+    .main__hero__text__p-blue { 
+        transition: all 2.5s cubic-bezier(0.215, 0.610, 0.355, 1) !important;
+        margin-left: 100vw;
+        margin-right:-100vw;
+    }
+    
+    .main__hero__text__p-gray:hover {
+        margin-right: 0px !important;
+        padding-left: 200px !important;
+    }
+    
+    .main__hero__text__p-blue:hover {
+        margin-left: 0px !important;
+        padding-left: 200px !important; 
+    }
+    
+    .restored--bar {
+        transition: all .5s !important;
+    }
+}
