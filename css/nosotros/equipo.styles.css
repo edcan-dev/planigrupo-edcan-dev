@@ -1,0 +1,124 @@
+.equipo__section {
+    display: flex;
+    justify-content: center;
+}
+
+.equipo__card__container {
+    margin: 40px;
+    height: 700px;
+    width: 61%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 50px;
+    column-gap: 100px;
+
+}
+
+.equipo__card__item {
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+
+}
+.equipo__card__item__img {
+    height: 65%;
+    background-size: cover;
+}
+.equipo__card__item__img--2 {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/equipo/Carla%20Rangel.JPG');
+}
+.equipo__card__item__img--1 {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/equipo/Karime%20Garza.JPG');
+}
+.equipo__card__item__img--3 {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/equipo/Jos%C3%A9%20Ignacio%20Moreno.jpg');
+}
+.equipo__card__item__img--4 {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/equipo/Fernando%20Villarreal.jpg');
+}
+.equipo__card__item__img--5 {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/equipo/Adrian%20Araujo.jpg');
+}
+
+.equipo__card__item__text {
+    background-color: #F5F3F1;
+    height: 40%;
+
+}
+
+.equipo__card__item__text__name {
+    margin-top: 10px;
+    padding: 0 5px;
+    background-color: #0096A9 ;
+    text-align: center;
+    height: 50px;
+}
+.equipo__card__item__text__name > span {
+    color: #FFF;
+    font-family: Barlow;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px; /* 178.571% */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.equipo__card__item__text__info > span {
+    color: #000;
+font-family: Fredoka;
+font-size: 11px;
+font-style: normal;
+font-weight: 400;
+line-height: 25px; /* 227.273% */
+letter-spacing: 1px;
+text-transform: uppercase;
+
+}
+.equipo__card__item__text__info {
+    background-color: #F5F3F1;
+    padding: 0px 5px;
+}
+.equipo__card__item__text__info > p {
+    color: #C04D00;
+font-family: Fredoka;
+font-size: 11px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 227.273% */
+letter-spacing: 1px;
+text-transform: uppercase;
+
+}
+
+
+@media (max-width: 1150px) {
+    /* .equipo__card__item__text__name > span {
+        font-size: 12px;
+    }
+    .equipo__card__item__text__info > span {
+        font-size: 10px;
+        line-height: 10px;
+    }
+    .equipo__card__item__text__info > p {
+        font-size: 10px;
+        line-height: 10px;
+    } */
+
+    .equipo__card__container {
+        margin: 40px;
+        margin-top: 140px;
+        height: 900px;
+        width: 61%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap: 25px;
+        column-gap: 50px;
+    }
+}
+
+
+.footer--equipo {
+    margin-top: 0px;
+}

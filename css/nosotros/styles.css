@@ -266,8 +266,8 @@ li {
 }
 .lo_que_hacemos_info__item--2 > ul > li {
     color: #545859;
-    font-family: Barlow;    
-    font-size: 14px;
+    font-family: Fjalla One;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 50px; /* 277.778% */
@@ -327,7 +327,8 @@ li {
 /* Responsive Lo que hacemos */
 
 .footer--loque {
-    margin-top: 200px;
+    margin-top: 200px !important;
+    height: 200px;
 }
 
 @media (max-width: 1280px) {
@@ -363,7 +364,12 @@ li {
     .footer {
         margin-top: 300px;
     }
+    .footer--loque {
+        margin-top: 0px !important;
+        height: 200px;
+    }
 }
+
 
 .tabs___card--2 > div > .lo-que-hacemos-card__img {
     background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/diseno.jpeg');
@@ -396,7 +402,7 @@ li {
     }
     .lo_que_hacemos_info--responsive {
         display: flex !important;
-        margin: 140px auto;
+        margin: 140px auto 0px;
         flex-direction: column;
         width: 80%;
         position: relative;
@@ -431,7 +437,7 @@ li {
     }
     .loque__ul--responsive > li {
         color: #545859;
-        font-family: Barlow;
+        font-family: Fjalla One;
         font-size: 18px;
         font-style: normal;
         font-weight: 400;
@@ -505,9 +511,8 @@ li {
     }
 
     .loque__bg-img--reponsive {
-        height: 200px;
+        height: 300px;
         background-size: cover;
-
     }
 
     .loque__bg {
@@ -526,3 +531,15 @@ li {
 .loque__bg {
     display: none;
 }
+
+.selected__tab {
+    color: #C04D00 !important;
+}
+
+.main__row {
+    justify-content: space-around;
+}
+
+
+
+

@@ -9,6 +9,7 @@
   <link rel="shortcut icon" href="https://planigrupo.blob.core.windows.net/planigrupo/assets/favicon.png" type="image/x-icon">
   <script defer src="./js/index/carousell.js"></script>
   <script defer src="./js/index/home-tabs.js"></script>
+  <script defer src="./js/hero-start-anim.js"></script>
   <script defer src="./js/index/data-bursatil-api-client.js"></script>
 </head>
 
@@ -22,7 +23,15 @@
     </a>
     <nav>
       <ul class="header__nav">
-        <li class="header__nav__item"><a href="./nosotros.html">Nosotros</a> </li>
+        <li class="header__nav__item dropdown">
+          <a class="dropbtn">Nosotros</a>
+          <div class="dropdown-content">
+            <a href="./nosotros.html">Nosotros</a>
+            <a href="./lo-que-hacemos.html">Lo que hacemos</a>
+            <a href="./equipo-ejecutivo.html">Equipo Ejecutivo</a>
+            <a href="./historia.html">Historia</a>
+          </div>
+        </li>
         <li class="header__nav__item"><a href="">Portafolio</a> </li>
         <li class="header__nav__item"><a href="">Comercialización</a></li>
         <li class="header__nav__item"><a href="">Inversionistas</a></li>
@@ -35,7 +44,7 @@
   </header>
   <main class="main">
     <section class="main__hero">
-      <video id="background-video" autoplay loop muted
+      <video id="background-video" autoplay loop muted preload="metadata"
         poster="https://planigrupo.blob.core.windows.net/planigrupo/assets/videos/hero_video_01.mp4">
         <source src="https://planigrupo.blob.core.windows.net/planigrupo/assets/videos/hero_video_01.mp4"
           type="video/mp4">

@@ -1,0 +1,70 @@
+.historia__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.historia__timeline {
+    margin: 40px 0px 0px 0px;
+    height: 100px;
+    width: 60%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 30px;
+}
+
+.historia__card {
+    margin: 40px 0px;
+    height: 700px;
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 30px;
+}
+
+
+.historia__card__item {
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+
+}
+
+
+.historia__card__item__img {
+    height: 70%;
+    background-size: cover;
+}
+
+.historia__card__item__img {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/equipo/Carla%20Rangel.JPG');
+}
+
+
+.historia__card__item__text {
+    height: 30%;
+    background-color: white;
+}
+.historia__card__item__text > span {
+    color: #BE4D00;
+    font-family: Raleway;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 45.71px; /* 142.844% */
+    letter-spacing: 1px;
+}
+.historia__card__item__text > p {
+    color: #53575A;
+    font-family: Raleway;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18.57px; /* 132.643% */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
