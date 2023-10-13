@@ -874,7 +874,8 @@ height: 550px;
     }
 
     .main__hero__text__p-bar {
-        font-size: 26px;
+        font-size: 24px !important;
+        padding-left: 10px !important;
     }
 
     .main__hero__text__p-gray {
@@ -1484,7 +1485,7 @@ MAIN TABS MARGIN
         margin-right: 100vw;
     }
     .main__hero__text__p-blue { 
-        transition: all 2.5s cubic-bezier(0.215, 0.610, 0.355, 1) !important;
+        transition: all 2s cubic-bezier(0.215, 0.610, 0.355, 1) !important;
         margin-left: 100vw;
         margin-right:-100vw;
     }

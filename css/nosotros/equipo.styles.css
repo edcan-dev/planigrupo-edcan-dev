@@ -106,16 +106,20 @@ text-transform: uppercase;
     } */
 
     .equipo__card__container {
-        margin: 40px;
         margin-top: 140px;
         height: 900px;
         width: 61%;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-        row-gap: 25px;
+        row-gap: 50px;
         column-gap: 50px;
     }
+
+    
+    .footer--equipo {
+        margin-top: 70px !important;
+    }   
 }
 
 
