@@ -382,7 +382,7 @@ height: 550px;
 
 .main__compromise__grid {
     display: grid;
-    grid-template-columns: 3.5fr 6.5fr;
+    grid-template-columns: 1fr 11fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     padding: 10px 0;
     row-gap: 10px;
@@ -394,28 +394,31 @@ height: 550px;
 }
 
 .main__compromise__grid__item__img {
-    height: 100%;
-    background-color: #0096A9;
-    background-size: cover;
-    background-position-y: -150px ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: calc(50%);
+    filter: invert(33%) sepia(75%) saturate(5106%) hue-rotate(25deg) brightness(96%) contrast(101%);
 }
 .main__compromise__grid__item__img--img1 {
-    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/compromiso/fbcb060c9ad0a732df1e17682f3c4a56.jpeg');
+  background-image: url('../assets/png-icons/diversity.png');
 }
 .main__compromise__grid__item__img--img2 {
-    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/compromiso/familia.jpeg');
+    background-image: url('../assets/png-icons/family.png');
 }
 .main__compromise__grid__item__img--img3 {
-    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/compromiso/clientes.jpeg');
+    background-image: url('../assets/png-icons/costumer.png');
 }
 .main__compromise__grid__item__img--img4 {
-    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/compromiso/responsabilidad.jpeg');
+    background-image: url('../assets/png-icons/social-responsibility.png');
 }
 .main__compromise__grid__item__text {
     padding:0px 30px;
 }
 .main__compromise__grid__item__text--secondary {
     background-color: #F5F3F1;
+    padding-top: 5px;
+}
+.main__compromise__grid__item__text--primary {
 }
 .main__compromise__grid__item__text > span {
     color: #C04D00;
@@ -1219,18 +1222,30 @@ hr {
 
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
 
 .main__hero__databursatil__item {
     display: flex;
+    padding: 0px 10px
 }
+
 
 .main__hero__databursatil__item--1 {
     grid-area: 1 / 1 / 4 / 5;
     justify-content: center;
+    align-items: center;
+}
+.main__hero__databursatil__item--1:after {
+    content: '';
+    width: 1px;
+    height: 80%;
+    background: #ffffff;
+    position: absolute;
+    bottom: 10px;
+    left: 33%;
 }
 
 .main__hero__databursatil__item--2 {
@@ -1238,6 +1253,15 @@ hr {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+}
+.main__hero__databursatil__item--2:after {
+    content: '';
+    width: 1px;
+    height: 80%;
+    background: #fff;
+    position: absolute;
+    bottom: 10px;
+    left: 66%;
 }
 .main__hero__databursatil__item--2 > span {
     color: #FFF;
@@ -1280,7 +1304,7 @@ hr {
     font-size: 20px !important;
 }
 .main__hero__databursatil__item__value {
-    font-size: 32px !important;
+    font-size: 30px !important;
     display: flex;
     align-items: start;
 }
@@ -1335,6 +1359,13 @@ hr {
 
     .main__hero__databursatil--mobile {
         transform: scale(.8);
+    }
+
+    .main__databursatil__container--mobile > div > div > .main__hero__databursatil__item__value {
+        font-size: 26px !important;
+    }
+    .main__databursatil__container--mobile > div > div > .main__hero__databursatil__item__value > span {
+        font-size: 30px;
     }
 }
 
@@ -1416,10 +1447,16 @@ MAIN TABS MARGIN
     .main__hero__text__p-blue {
         padding-left: 20px !important;
         margin-left: 0px !important;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        text-align: center;
     }
     .main__hero__text__p-gray {
         margin-left: 10px !important;
         margin-right: 20px !important;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        text-align: center;
     }
     .main__hero {
         height: 300px;
@@ -1559,7 +1596,7 @@ MAIN TABS MARGIN
         position: fixed;
         top: 80px;
         height: 100%;
-        z-index: 3;
+        z-index: -1;
         display: flex;
     }
     .navbar__responsive__list {
@@ -1606,3 +1643,86 @@ MAIN TABS MARGIN
 }
 
 
+
+.main__plani__info--inv {
+    opacity: 0;
+}
+.main__plani__info {
+    display: flex;
+    height: 200px;
+}
+.main__plani__info__img {
+    background-image: url(https://planigrupo.blob.core.windows.net/planigrupo/assets/images/tabs/inversionistas.jpeg);
+    filter: invert();
+    background-size: cover;
+    width: 30%;
+}
+.main__plani__info__text {
+    background-color: #C04D00;
+    width: 70%;
+    padding: 40px;
+    transition: all 1s;
+
+}
+.main__plani__info__text {
+    background-color: #545859;
+    position: absolute;
+    width: 70%;
+    height: 200px;
+    left: 30%;
+    padding: 20px;
+    transition: all .2s;
+}
+
+.main__plani__info__text > span {
+    color: #ffffff;
+    font-family: Fjalla One;
+    font-size: 33.734px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.main__plani__info__text > p {
+    margin-top: 20px;
+ 
+    color: #F5F3F1;
+    font-family: Fjalla One;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 450px) {
+    .main__plani__info {
+        flex-direction: column;
+        height: 540px;
+        margin-top: 40px;
+        position: relative;
+    }
+    .main__plani__info__img {
+        height: 70%;
+        width: 100%;
+    }
+    .main__plani__info__text {
+        height: 30%;
+        width: 100%;
+        padding: 10px;
+        top: 70%;
+        left: 0%;
+    }
+    .main__plani__info__text > span {
+        font-size: 20px;
+    }
+    .main__plani__info__text > p {
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 10px;
+
+    }
+
+}
