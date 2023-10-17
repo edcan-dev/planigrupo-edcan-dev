@@ -95,9 +95,7 @@ var carouselObj = new ej.navigations.Carousel({
     }
   ],
   partialVisible: true,
-  autoPlay: true,
-  swipeMode: ej.navigations.CarouselSwipeMode.Mouse & ej.navigations.CarouselSwipeMode.Touch
-
+  autoPlay: true
 });
 carouselObj.appendTo("#carousel");
 
