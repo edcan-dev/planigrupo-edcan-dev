@@ -9,18 +9,52 @@
   <link rel="shortcut icon" href="https://planigrupo.blob.core.windows.net/planigrupo/assets/favicon.png" type="image/x-icon">
   <title>Nosotros - Planigrupo</title>
   <script defer src="./js/hero-start-anim.js"></script>
-  <script defer src="./js/home-tabs.js"></script>
-  <script defer src="./js/carousell.js"></script>
+  <script defer src="./js/sidebar.js"></script> 
 </head>
 
 <body>
 
+  <div id="sidebar-container">
+    <aside id="default-sidebar">
+
+      <nav class="navbar__responsive">
+        <ul class="navbar__responsive__list">
+          
+          <input class="navbar__responsive__search" type="search" placeholder="Buscar...">
+    
+    
+          <li class="header__nav__item" id="nav__item--nosotros">
+            <a class="">Nosotros</a>
+          </li>
+          <li class="header__nav__item">
+            <a href="./portafolio.html">Portafolio</a>
+          </li>
+          <li class="header__nav__item"><a href="">Comercialización</a></li>
+          <li class="header__nav__item"><a href="">Inversionistas</a></li>
+          <li class="header__nav__item"><a href="">Asg</a></li>
+          <li class="header__nav__item"><a href="">Clientes</a></li>
+          <li class="header__nav__item">
+            <a href="./contacto.html">Contacto</a>
+          </li>
+          
+        </ul>
+        
+        <ul class="navbar__responsive__list--second">
+          <div>
+            <li class="header__nav__item"><a href="./nosotros.html">Nosotros</a></li>
+            <li class="header__nav__item"><a href="./lo-que-hacemos.html">Lo que hacemos</a></li>
+            <li class="header__nav__item"><a href="./equipo-ejecutivo.html">Equipo Ejecutivo</a></li>
+            <li class="header__nav__item"><a href="./historia.html">Historia</a></li>
+        </ul>
+      </nav>
+    </aside>
+  </div>
   <header class="header">
     <div class="header__bars">
-      <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/bars-solid.svg" height="40px">
+      <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/bars-solid.svg" height="40px" />
     </div>
     <a href="./index.html">
-      <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/logo.svg" alt="">
+      <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/logo.svg" alt="" />
     </a>
     <nav>
       <ul class="header__nav">
@@ -33,13 +67,19 @@
             <a href="./historia.html">Historia</a>
           </div>
         </li>
-        <li class="header__nav__item"><a href="./portafolio.html">Portafolio</a> </li>
+        <li class="header__nav__item">
+          <a href="./portafolio.html">Portafolio</a>
+        </li>
         <li class="header__nav__item"><a href="">Comercialización</a></li>
         <li class="header__nav__item"><a href="">Inversionistas</a></li>
         <li class="header__nav__item"><a href="">Asg</a></li>
         <li class="header__nav__item"><a href="">Clientes</a></li>
-        <li class="header__nav__item"><a href="./contacto.html">Contacto</a></li>
-        <li class="header__nav__item header__nav__item--search "><input type="text" placeholder="Buscar..."></li>
+        <li class="header__nav__item">
+          <a href="./contacto.html">Contacto</a>
+        </li>
+        <li class="header__nav__item header__nav__item--search">
+          <input type="text" placeholder="Buscar..." />
+        </li>
       </ul>
     </nav>
   </header>
