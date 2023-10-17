@@ -1,0 +1,222 @@
+.e-carousel .e-carousel-navigators .e-next .e-btn:not(:disabled) .e-btn-icon,
+.e-carousel .e-carousel-navigators .e-previous .e-btn:not(:disabled) .e-btn-icon
+{
+    color: #C04D00;
+    font-size: 25px ;
+    margin: 0px;
+}
+
+.e-carousel.e-partial .e-carousel-slide-container{
+    padding: 0 20%;
+}
+
+.e-carousel .e-carousel-navigators {
+    top: 260px;
+    padding: 0px 20px;
+ }
+
+ .e-carousel .e-carousel-indicators.e-default .e-indicator-bar.e-active .e-indicator div {
+    background-color: #C04D00;
+    color: #0096A9;
+    border: none;
+ }
+
+.properties-carousel__item {
+    height: 450px;
+    width: 90%;
+    display: grid;
+    margin: 40px auto;
+    grid-template-columns: 5fr 5fr;
+}
+
+
+
+.properties-carousel__item__text {
+    display: flex;
+    background-color: #F5F3F1;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+
+
+.properties-carousel__item__text__title {
+    width: 100%;
+    background-color: #0096A9;
+    padding-left: 40px;
+}
+.properties-carousel__item__text__title > span {
+    background-color: #0096A9;
+    
+    color: #FFF;
+    font-family: Fjalla One;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px; 
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+.properties-carousel__item__text__location-date {
+    display: flex;
+    padding: 0px 40px;
+    margin-top: 20px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.properties-carousel__item__text__location-date {
+    color: #000;
+    font-family: Barlow;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;    
+}
+.properties-carousel__item__text__location-date :nth-child(2) {
+    color: #000;
+    font-family: Barlow;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.properties-carousel__item__text__desc {
+    padding: 0px 40px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.properties-carousel__item__text__desc > p {
+    color: #000;
+    text-align: justify;
+    font-family: Raleway;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; 
+    letter-spacing: 1px;
+    text-transform: uppercase;    
+}
+
+.properties-carousel__item__text__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 0px 40px;
+    margin-bottom: 20px;    
+}
+
+.properties-carousel__item__text__contact > span {
+    color: #000;
+    font-family: Barlow;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; 
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.properties-carousel__item__text__contact :nth-child(2) {
+    color: #000;
+    font-family: Raleway;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+
+.properties-carousel__item__img--1 {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/propiedades-destacadas/location-hero-plaza-bella-mexiquense-full.jpg');
+    background-size: cover;
+}
+.properties-carousel__item__img--2 {
+
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/propiedades-destacadas/cancun.jpg');
+    background-size: cover;
+}
+.properties-carousel__item__img--3 {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/propiedades-destacadas/ciudadela.jpg');
+    background-size: cover;
+}
+.properties-carousel__item__img--4 {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/propiedades-destacadas/uvgs.jpg');
+    background-size: cover;
+}
+
+
+@media (max-width: 480px) {
+    .e-carousel-slide-container {
+        padding: 20px !important;
+    }
+    .e-carousel-navigators {
+        display: none !important;
+    }
+}
+@media (max-width: 1000px) {
+
+    .properties-carousel__item {
+        margin-top: 10px;
+    }
+
+    .properties-carousel__item__text__title {
+        padding-left: 20px;
+    }
+
+    .properties-carousel__item__text__title > span {
+        background-color: #0096A9;
+        
+        color: #FFF;
+        font-family: Fjalla One;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 50px; 
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    .properties-carousel__item {
+        height: 600px;
+        display: flex;
+        width: 98%;
+        background-color: #FFF;
+        flex-direction: column;
+
+    }
+    .properties-carousel__item__text__desc {
+        display: none;
+
+    }
+
+    .properties-carousel__item__text__location-date {
+        flex-direction: column;
+        padding-left: 20px;
+    }
+
+    .properties-carousel__item__img {
+        height: 100%;
+    }
+
+    .properties-carousel__item__text__contact {
+        padding:  0px 20px;
+        align-items: start;
+    }
+
+    .properties-carousel {
+        background-color: #F5F3F1;
+    }
+}
