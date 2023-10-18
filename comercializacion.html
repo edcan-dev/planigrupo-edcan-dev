@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/styles.css">
-  <link rel="stylesheet" href="./css/nosotros/styles.css">
+  <link rel="stylesheet" href="./css/comercializacion/styles.css">
   <link rel="shortcut icon" href="https://planigrupo.blob.core.windows.net/planigrupo/assets/favicon.png" type="image/x-icon">
-  <title>Nosotros - Planigrupo</title>
+  <title>Comercialización - Planigrupo</title>
   <script defer src="./js/hero-start-anim.js"></script>
   <script defer src="./js/sidebar.js"></script> 
 </head>
@@ -29,7 +29,7 @@
           <li class="header__nav__item">
             <a href="./portafolio.html">Portafolio</a>
           </li>
-          <li class="header__nav__item"><a href="./comercializacion.html">Comercialización</a></li>
+          <li class="header__nav__item"><a href="">Comercialización</a></li>
           <li class="header__nav__item"><a href="">Inversionistas</a></li>
           <li class="header__nav__item"><a href="">Asg</a></li>
           <li class="header__nav__item"><a href="">Clientes</a></li>
@@ -70,7 +70,7 @@
         <li class="header__nav__item">
           <a href="./portafolio.html">Portafolio</a>
         </li>
-        <li class="header__nav__item"><a href="./comercializacion.html">Comercialización</a></li>
+        <li class="header__nav__item"><a href="">Comercialización</a></li>
         <li class="header__nav__item"><a href="">Inversionistas</a></li>
         <li class="header__nav__item"><a href="">Asg</a></li>
         <li class="header__nav__item"><a href="">Clientes</a></li>
@@ -86,68 +86,89 @@
 
   <main>
     <section class="main__hero">
-      <video id="background-video" autoplay loop muted>
+      <video id="background-video" autoplay loop muted preload="metadata"
+        poster="https://planigrupo.blob.core.windows.net/planigrupo/assets/videos/hero_comercializacion.mp4">
+        <source src="https://planigrupo.blob.core.windows.net/planigrupo/assets/videos/hero_comercializacion.mp4"
+          type="video/mp4" />
       </video>
       <div class="main__hero__text">
-        <p class="main__hero__text__p main__hero__text__p-exp"><b>Desarrollo</b></p>
-        <p class="main__hero__text__p-bar main__hero__text__p-gray">
-          UTILIZAMOS MATERIALES DE LA MÁS ALTA
-        </p>
-        <p class="main__hero__text__p-bar main__hero__text__p-blue">CALIDAD PARA OFRECER A CLIENTES E INVERSIONISTAS</p>
-        <p class="main__hero__text__p-bar main__hero__text__p-gray">UN PRODUCTO FINAL INCOMPARABLE</p>
+        <!-- 
+          <p class="main__hero__text__p main__hero__text__p-exp"><b>Desarrollo</b></p>
+          <p class="main__hero__text__p-bar main__hero__text__p-gray">
+            UTILIZAMOS MATERIALES DE LA MÁS ALTA
+          </p>
+        -->
+        <p class="main__hero__text__p-bar main__hero__text__p-blue">EXPLORA OPORTUNIDADES</p>
+        <p class="main__hero__text__p-bar main__hero__text__p-gray">DE COMERCIALIZACIÓN</p>
       </div>
   
       <div class="main__hero__downbar">
         <div class="main__hero_downbar__text">
           <span>Conoce</span>
           <p>
-            Acerca de
+            Comercialización
           </p>
-          <p>
-            GM Inmobiliaria
-          </p>
+          <!-- 
+            <p>
+              GM Inmobiliaria
+            </p>
+          -->
   
         </div>
         <div class="main__hero_downbar__title">
-          <h2>Nosotros</h2>
+          <h2>Comercialización</h2>
         </div>
       </div>
     </section>
-  
-    <section class="nosotros_info" id="nosotros_info">
-  
-      <div class="nosotros_info__grid">
-  
-        <div class="nosotros_info__grid__item--1">
-          <p>
-            Con 48 años de experiencia, en Planigrupo nos hemos posicionado como una empresa mexicana líder en el desarrollo, diseño, construcción, comercialización y administración de centros comerciales a nivel nacional. Somos una de las pocas en el país que es capaz de ver un proyecto inmobiliario de principio a fin, empezando con el diseño y terminando con la administración de cada centro comercial.
-          </p>
+
+    <section class="main__comer">
+      <aside class="main__comer__left">
+        <div class="main__comer__left__icon"> 
         </div>
-  
-        <div class="nosotros_info__grid__item--square nosotros_info__grid__item--2">
+        <div class="main__comer__left__text">
           <span>
-            NUESTRA MISIÓN
+            PLANIGRUPO
           </span>
           <p>
-            Crear valor para los inversionistas y clientes de nuestros centros comerciales a través de un equipo sólido de profesionistas que genere proyectos rentables y exitosos.
+            Brinda estabilidad y capacidad para inquilinos, donde se manejan mercados con un excelente flujo mensual, aumentando el valor de cada uno de ellos.
           </p>
         </div>
-  
-        <div class="nosotros_info__grid__item--square nosotros_info__grid__item--3">
-          <span>NUESTRA VISIÓN</span>
-          <p>
-            Ser líderes en el desarrollo y administración de centros comerciales, comprometidos siempre con los más altos estándares de calidad.
-          </p>
-  
+      </aside>
+      <article class="main__comer__right">
+      
+        <div class="main__comer__right__tab_selector">
+          <ul>
+            <div>
+              <li>Valiosas Ubicaciones</li>
+            </div>
+
+            <div>
+              <li>Visitantes</li>
+            </div>
+
+            <div>
+              <li>Tiendas Ancla</li>
+            </div>
+
+            <div>
+              <li>Espacios</li>
+            </div>
+
+            <div>
+              <li>Variedad</li>
+            </div>
+          </ul>
         </div>
-        <div class="nosotros_info__grid__item--square nosotros_info__grid__item--4">
-          <span>NUESTROS VALORES</span>
-          <p>Honestidad, Lealtad, Confianza, Respeto, Ética, Transparencia.</p>
+        <div class="main__comer__right__tab_content">
+          <p>Nuestras tiendas ancla incluyen marcas nacionales e internacionales reconocidas a nivel mundial, como Walmart, HEB, Cinépolis, Cinemex y Petco.</p>
+          <div class="main__comer__right__tab_content__img"></div>  
         </div>
-    
-      </div>
+
+      </article>
     </section>
-    
+
+
+
     <footer class="footer footer__nosotros">
 
       <span>
