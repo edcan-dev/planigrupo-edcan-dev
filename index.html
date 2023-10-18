@@ -22,7 +22,6 @@
   <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type="text/javascript"></script>
   <link rel="shortcut icon" href="https://planigrupo.blob.core.windows.net/planigrupo/assets/favicon.png"
     type="image/x-icon" />
-  <script defer src="./js/index/home-tabs.js"></script>
   <script defer src="./js/hero-start-anim.js"></script>
   <script defer src="./js/index/data-bursatil-api-client.js"></script>
   <script defer src="./js/index/syncfusion-carousel.js"></script>
@@ -30,6 +29,7 @@
   
   <script defer src="./js/sidebar.js"></script>
   <script defer src="./js/index/plani-info-slider.js"></script>
+  <script defer src="./js/index/home-tabs.js"></script>
 </head>
 
 <body>
@@ -39,16 +39,18 @@
       <nav class="navbar__responsive">
         <ul class="navbar__responsive__list">
           
-          <input class="navbar__responsive__search" type="search" placeholder="Buscar...">
-    
-    
+          <li>
+            <input class="navbar__responsive__search" type="search" placeholder="Buscar...">
+            <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/svgs/magnifying.svg">
+          </li>
           <li class="header__nav__item" id="nav__item--nosotros">
             <a class="">Nosotros</a>
           </li>
           <li class="header__nav__item">
             <a href="./portafolio.html">Portafolio</a>
           </li>
-          <li class="header__nav__item"><a href="./comercializacion.html">Comercialización</a></li>
+          <li class="header__nav__item" id="nav__item--comer">
+            <a>Comercialización</a></li>
           <li class="header__nav__item"><a href="">Inversionistas</a></li>
           <li class="header__nav__item"><a href="">Asg</a></li>
           <li class="header__nav__item"><a href="">Clientes</a></li>
@@ -64,6 +66,12 @@
             <li class="header__nav__item"><a href="./lo-que-hacemos.html">Lo que hacemos</a></li>
             <li class="header__nav__item"><a href="./equipo-ejecutivo.html">Equipo Ejecutivo</a></li>
             <li class="header__nav__item"><a href="./historia.html">Historia</a></li>
+        </ul>
+
+        <ul class="navbar__responsive__list--second--comer">
+          <div>
+            <li class="header__nav__item"><a href="./comercializacion.html">Comercialización</a></li>
+            <li class="header__nav__item"><a href="./oportunidades.html">Oportunidades</a></li>
         </ul>
       </nav>
     </aside>
@@ -89,7 +97,13 @@
         <li class="header__nav__item">
           <a href="./portafolio.html">Portafolio</a>
         </li>
-        <li class="header__nav__item"><a href="./comercializacion.html">Comercialización</a></li>
+        <li class="header__nav__item dropdown">
+          <a class="dropbtn">Comercialización</a>
+          <div class="dropdown-content">
+            <a href="./comercializacion.html">Comercialización</a>
+            <a href="./oportunidades.html">Oportunidades</a>
+          </div>
+        </li>
         <li class="header__nav__item"><a href="">Inversionistas</a></li>
         <li class="header__nav__item"><a href="">Asg</a></li>
         <li class="header__nav__item"><a href="">Clientes</a></li>
@@ -98,6 +112,7 @@
         </li>
         <li class="header__nav__item header__nav__item--search">
           <input type="text" placeholder="Buscar..." />
+          <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/svgs/magnifying.svg">
         </li>
       </ul>
     </nav>
@@ -397,7 +412,7 @@
           EXPERIENCIA
         </span>
         <p>
-          Contamos con más de 47 años de experiencia cambiando la manera de ver, diseñar y desarrollar centros comerciales.  
+          Contamos con más de 48 años de experiencia cambiando la manera de ver, diseñar y desarrollar centros comerciales.  
         </p>
       </div>
       <div class="main__plani__info__text main__plani__info__text--4 main__plani__info--inv">

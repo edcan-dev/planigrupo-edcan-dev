@@ -76,6 +76,8 @@ li {
 .main__comer__right {
     width: 70%;
     background-color: #EFEFED;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -111,12 +113,16 @@ li {
     margin-bottom: 20px;
 }
 
+.main__comer__right__tab_selector {
+    background-color: #FFF;
+}
+
 .main__comer__right__tab_selector > ul {
     display: flex;
     width: 100%;
     align-items: start;
 }
-.main__comer__right__tab_selector > ul div {
+.main__comer__right__tab_selector > ul > div {
     display: flex;
     width: 15%;
     height: 80px;
@@ -124,8 +130,10 @@ li {
     justify-content: center;
     padding: 0px 10px;
 
+    
+    cursor: pointer;
 }
-.main__comer__right__tab_selector > ul div > li {
+.main__comer__right__tab_selector > ul > div > li {
     color: #545859;
     text-align: center;
     font-family: Barlow;
@@ -135,4 +143,58 @@ li {
     letter-spacing: 1px;
     text-transform: uppercase;
     text-align: center;
+}
+
+.main__comer__right__tab_content > p {
+    padding: 40px;
+    background-color: #EFEFED;
+    color: #545859;
+    font-family: Raleway;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 178.571% */
+}
+
+.main__comer__right__tab_content__container {
+    position: relative;
+    height: 100%;
+}
+
+.main__comer__right__tab_content {
+    height: 100%;
+    background-size: cover;
+    background-position-y: top;
+
+    transition: all .5s;
+}
+
+.inactive {
+    opacity: 0.5 !important;
+}
+.active {
+    opacity: 1 !important;
+}
+
+.main__comer__right__tab_content--1 {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/comer-1.jpeg');
+}
+.main__comer__right__tab_content--2 {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/comer-2.jpeg');
+}
+.main__comer__right__tab_content--3 {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/comer-3.jpeg');
+    background-position-y: center;
+}
+.main__comer__right__tab_content--4 {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/comer-4.jpeg');
+    background-position-y: center;
+}
+.main__comer__right__tab_content--5 {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/comer-5.jpeg');
+    background-position-y: center;
+}
+
+.selected__tab {
+    background-color: #EFEFED;
 }
