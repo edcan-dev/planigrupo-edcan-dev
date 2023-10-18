@@ -1,78 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/nosotros/styles.css" />
-    <link rel="stylesheet" href="./css/nosotros/historia.styles.css" />
-    <link
-      rel="shortcut icon"
-      href="https://planigrupo.blob.core.windows.net/planigrupo/assets/favicon.png"
-      type="image/x-icon"
-    />
-    <title>Historia</title>
-    <script defer src="./js/carousell.js"></script>
-    <script defer src="./js/lo-que-hacemos/home-tabs.js"></script>
-    <script defer src="./js/hero-start-anim.js"></script>
-    <script defer src="./js/nosotros/historia.timeline.js"></script>
 
-    <script defer src="./js/sidebar.js"></script>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/nosotros/styles.css" />
+  <link rel="stylesheet" href="./css/nosotros/historia.styles.css" />
+  <link rel="shortcut icon" href="https://planigrupo.blob.core.windows.net/planigrupo/assets/favicon.png"
+    type="image/x-icon" />
+  <title>Historia</title>
+  <script defer src="./js/lo-que-hacemos/home-tabs.js"></script>
+  <script defer src="./js/hero-start-anim.js"></script>
+  <script defer src="./js/nosotros/historia.timeline.js"></script>
 
-  <body>
-    <div id="sidebar-container">
-      <aside id="default-sidebar">
-  
-        <nav class="navbar__responsive">
-          <ul class="navbar__responsive__list">
-            
-            <input class="navbar__responsive__search" type="search" placeholder="Buscar...">
-      
-      
-            <li class="header__nav__item" id="nav__item--nosotros">
-              <a class="">Nosotros</a>
-            </li>
-            <li class="header__nav__item">
-              <a href="./portafolio.html">Portafolio</a>
-            </li>
-            <li class="header__nav__item"><a href="">Comercialización</a></li>
-            <li class="header__nav__item"><a href="">Inversionistas</a></li>
-            <li class="header__nav__item"><a href="">Asg</a></li>
-            <li class="header__nav__item"><a href="">Clientes</a></li>
-            <li class="header__nav__item">
-              <a href="./contacto.html">Contacto</a>
-            </li>
-            
-          </ul>
-          
-          <ul class="navbar__responsive__list--second">
-            <div>
-              <li class="header__nav__item"><a href="./nosotros.html">Nosotros</a></li>
-              <li class="header__nav__item"><a href="./lo-que-hacemos.html">Lo que hacemos</a></li>
-              <li class="header__nav__item"><a href="./equipo-ejecutivo.html">Equipo Ejecutivo</a></li>
-              <li class="header__nav__item"><a href="./historia.html">Historia</a></li>
-          </ul>
-        </nav>
-      </aside>
-    </div>
-    <header class="header">
-      <div class="header__bars">
-        <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/bars-solid.svg" height="40px" />
-      </div>
-      <a href="./index.html">
-        <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/logo.svg" alt="" />
-      </a>
-      <nav>
-        <ul class="header__nav">
-          <li class="header__nav__item dropdown">
-            <a class="dropbtn">Nosotros</a>
-            <div class="dropdown-content">
-              <a href="./nosotros.html">Nosotros</a>
-              <a href="./lo-que-hacemos.html">Lo que hacemos</a>
-              <a href="./equipo-ejecutivo.html">Equipo Ejecutivo</a>
-              <a href="./historia.html">Historia</a>
-            </div>
+  <script defer src="./js/sidebar.js"></script>
+
+  <link href="https://cdn.syncfusion.com/ej2/23.1.36/ej2-base/styles/material.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.syncfusion.com/ej2/23.1.36/ej2-navigations/styles/material.css" rel="stylesheet"
+    type="text/css" />
+  <script src="https://cdn.syncfusion.com/ej2/23.1.36/dist/ej2.min.js" type="text/javascript"></script>
+  <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <div id="sidebar-container">
+    <aside id="default-sidebar">
+
+      <nav class="navbar__responsive">
+        <ul class="navbar__responsive__list">
+
+          <input class="navbar__responsive__search" type="search" placeholder="Buscar...">
+
+
+          <li class="header__nav__item" id="nav__item--nosotros">
+            <a class="">Nosotros</a>
           </li>
           <li class="header__nav__item">
             <a href="./portafolio.html">Portafolio</a>
@@ -84,380 +46,431 @@
           <li class="header__nav__item">
             <a href="./contacto.html">Contacto</a>
           </li>
-          <li class="header__nav__item header__nav__item--search">
-            <input type="text" placeholder="Buscar..." />
-          </li>
+
+        </ul>
+
+        <ul class="navbar__responsive__list--second">
+          <div>
+            <li class="header__nav__item"><a href="./nosotros.html">Nosotros</a></li>
+            <li class="header__nav__item"><a href="./lo-que-hacemos.html">Lo que hacemos</a></li>
+            <li class="header__nav__item"><a href="./equipo-ejecutivo.html">Equipo Ejecutivo</a></li>
+            <li class="header__nav__item"><a href="./historia.html">Historia</a></li>
         </ul>
       </nav>
-    </header>
-
-    <main>
-      <section class="main__hero">
-        <video id="background-video" autoplay loop muted></video>
-        <div class="main__hero__text">
-          <p class="main__hero__text__p main__hero__text__p-exp">
-            <b>EXPERIENCIA</b>
-          </p>
-          <p class="main__hero__text__p-bar main__hero__text__p-gray">
-            UTILIZAMOS MATERIALES DE LA MÁS ALTA
-          </p>
-          <p class="main__hero__text__p-bar main__hero__text__p-blue">
-            CALIDAD PARA OFRECER A CLIENTES E INVERSIONISTAS
-          </p>
-          <p class="main__hero__text__p-bar main__hero__text__p-gray">
-            UN PRODUCTO FINAL INCOMPARABLE
-          </p>
-        </div>
-
-        <div class="main__hero__downbar">
-          <div class="main__hero_downbar__text">
-            <span>Conoce</span>
-            <p>Acerca de</p>
-            <p>GM Inmobiliaria</p>
+    </aside>
+  </div>
+  <header class="header">
+    <div class="header__bars">
+      <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/bars-solid.svg" height="40px" />
+    </div>
+    <a href="./index.html">
+      <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/logo.svg" alt="" />
+    </a>
+    <nav>
+      <ul class="header__nav">
+        <li class="header__nav__item dropdown">
+          <a class="dropbtn">Nosotros</a>
+          <div class="dropdown-content">
+            <a href="./nosotros.html">Nosotros</a>
+            <a href="./lo-que-hacemos.html">Lo que hacemos</a>
+            <a href="./equipo-ejecutivo.html">Equipo Ejecutivo</a>
+            <a href="./historia.html">Historia</a>
           </div>
-          <div class="main__hero_downbar__title">
-            <h2>HISTORIA</h2>
-          </div>
-        </div>
-      </section>
+        </li>
+        <li class="header__nav__item">
+          <a href="./portafolio.html">Portafolio</a>
+        </li>
+        <li class="header__nav__item"><a href="">Comercialización</a></li>
+        <li class="header__nav__item"><a href="">Inversionistas</a></li>
+        <li class="header__nav__item"><a href="">Asg</a></li>
+        <li class="header__nav__item"><a href="">Clientes</a></li>
+        <li class="header__nav__item">
+          <a href="./contacto.html">Contacto</a>
+        </li>
+        <li class="header__nav__item header__nav__item--search">
+          <input type="text" placeholder="Buscar..." />
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-      <section class="historia__section">
-
-
-        <div class="historia__timeline">
-
-          <div class="historia__timeline__line">
-            <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia/line.png">
-          </div>
-
-          <div 
-          class="historia__timeline__selector historia__timeline__selector--1 historia__timeline__selector--selected">
-            <img
-            src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia/selector.svg" alt="">
-            <p>INICIO</p>
-          </div>
-          <div class="historia__timeline__selector historia__timeline__selector--2">
-            <img  
-            src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia/selector.svg" alt="">
-            <p>1980</p>
-          </div>
-          <div class="historia__timeline__selector historia__timeline__selector--3">
-            <img  
-            src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia/selector.svg" alt="">
-            <p>1990</p>
-          </div>
-          <div class="historia__timeline__selector historia__timeline__selector--4">
-            <img  
-            src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia/selector.svg" alt="">
-            <p>2000</p>
-          </div>
-          <div class="historia__timeline__selector historia__timeline__selector--5">
-            <img  
-            src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia/selector.svg" alt="">
-            <p>2010</p>
-          </div>
-          <div class="historia__timeline__selector historia__timeline__selector--6">
-            <img  
-            src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia/selector.svg" alt="">
-            <p>2020</p>
-          </div>    
-        </div>
-
-
-
-        <div class="historia__card historia__card--tab1">
-
-          <div class="historia__card__item">          
-            <div class="historia__card__item__img">                 
-            </div>
-            <div class="historia__card__item__text">
-              <span>1975</span>
-              <p>Planigrupo fue fundada por Eduardo Bross Tatz.</p>
-            </div>
-          </div>
-          <div class="historia__card__item">          
-            <div class="historia__card__item__img">                 
-            </div>
-            <div class="historia__card__item__text">
-              <span>1978</span>
-              <p>Se construye la primera plaza para el municipio de Zapopan.</p>
-            </div>
-          </div>
-
-        </div>
-
-
-        <div class="historia__card historia__card--tab2 inactive">
-
-          <div class="historia__card__item">          
-            <div class="historia__card__item__img">                 
-            </div>
-            <div class="historia__card__item__text">
-              <span>1982</span>
-              <p>Se construye la primera plaza de Planigrupo Fiesta Arboledas.</p>
-            </div>
-          </div>
-
-
-          <div class="historia__card__item">          
-            <div class="historia__card__item__img">                    
-            </div>
-            <div class="historia__card__item__text">
-              <span>1988</span>
-              <p>Se construye la plaza Fiesta Camelinas.</p>
-            </div>
-          </div>
-
-
-          <div class="historia__card__item">          
-            <div class="historia__card__item__img">                    
-            </div>
-            <div class="historia__card__item__text">
-              <span>1989</span>
-              <p>Se abren las oficinas en la Ciudad de México.</p>
-            </div>
-          </div>
-          
-        </div>
-
-
-        <div class="historia__card historia__card--tab3 inactive">
-
-          <div class="historia__card__item">          
-            <div class="historia__card__item__img">                    
-            </div>
-            <div class="historia__card__item__text">
-              <span>1992</span>
-              <p>Se construye Plaza Bella Pachuca</p>
-            </div>
-          </div>
-
-
-          <div class="historia__card__item">          
-            <div class="historia__card__item__img">                    
-            </div>
-            <div class="historia__card__item__text">
-              <span>1998</span>
-              <p>Se abren las oficinas en la ciudad de Monterrey.</p>
-            </div>
-          </div>
-          
-          
-          <div class="historia__card__item">          
-            <div class="historia__card__item__img">                    
-            </div>
-            <div class="historia__card__item__text">
-              <span>1999</span>
-              <p>Se construyen 5 HEBs Plaza Real Saltillo.</p>
-            </div>
-          </div>
-          
-        </div>
-
-
-        <div class="historia__card historia__card--tab4 inactive">
-
-          <div class="historia__card__item">          
-            <div class="historia__card__item__img">                    
-            </div>
-            <div class="historia__card__item__text">
-              <span>2000</span>
-              <p>Se construyen 5 HEBs más.</p>
-            </div>
-          </div>
-          
-          <div class="historia__card__item">          
-            <div class="historia__card__item__img">                    
-            </div>
-            <div class="historia__card__item__text">
-              <span>2001</span>
-              <p>Se construyen 4 HEBs más.</p>
-            </div>
-          </div>
-          
-          <div class="historia__card__item">          
-            <div class="historia__card__item__img">                    
-            </div>
-            <div class="historia__card__item__text">
-              <span>2002</span>
-              <p>Se construye Plaza Real Monterrey y Plaza Bella Anáhuac</p>
-            </div>
-          </div>
-          
-          <div class="historia__card__item">          
-            <div class="historia__card__item__img">                    
-            </div>
-            <div class="historia__card__item__text">
-              <span>2005</span>
-              <p>Se construyen Plaza Real Reynosa, Plaza Universidad y Super Plaza Las Haciendas.</p>
-            </div>
-          </div>
-          
-          <div class="historia__card__item">          
-            <div class="historia__card__item__img">                    
-            </div>
-            <div class="historia__card__item__text">
-              <span>2006</span>
-              <p>Se construyen Plaza Real San Luis, La Nogalera, Macroplaza Insurgentes y Plaza Bella Mexiquense.</p>
-            </div>
-          </div>
-
-          <div class="historia__card__item">          
-            <div class="historia__card__item__img">                    
-            </div>
-            <div class="historia__card__item__text">
-              <span>2007</span>
-              <p>Se construyen Pabellón Reforma Querétaro, Mérida y Plaza Monumental</p>
-            </div>
-          </div>
-
-          <div class="historia__card__item">          
-            <div class="historia__card__item__img">                    
-            </div>
-            <div class="historia__card__item__text">
-              <span>2008</span>
-              <p>Se construyen Plaza Bella Valladolid, Rio Bravo, Plaza Bella Ramos Arizpe. Se comienzan a administrar Gran Plaza Cancún y Plaza Palmira.</p>
-            </div>
-          </div>
-
-          <div class="historia__card__item">          
-            <div class="historia__card__item__img">                    
-            </div>
-            <div class="historia__card__item__text">
-              <span>2009</span>
-              <p>Se construyen Plaza Bella Oaxaca, Plaza Bella San Gaspar, Plaza Bella Huinalá, Plaza Bella Acuña, Plaza Bella La Palma, Macroplaza Los Héroes y Macroplaza Puerto Vallarta.</p>
-            </div>
-          </div>
-
-
-        </div>
-
-
-        <div class="historia__card historia__card--tab5 inactive">
-          <div class="historia__card__item">          
-            <div class="historia__card__item__img">                    
-            </div>
-            <div class="historia__card__item__text">
-              <span>2011</span>
-              <p>Se construyen Plaza Bella Los Almendros, Macroplaza Estadio y Plaza Bella Frontera.</p>
-            </div>
-          </div>
-
-          <div class="historia__card__item">          
-            <div class="historia__card__item__img">                    
-            </div>
-            <div class="historia__card__item__text">
-              <span>2012</span>
-              <p>Colocación de un programa de certificados de desarrollo (CKD). Se adquiere Paseo Santa Catarina y se comienza a administrar Mall Plaza Lincoln.</p>
-            </div>
-          </div>
-          
-          <div class="historia__card__item">          
-            <div class="historia__card__item__img">                    
-            </div>
-            <div class="historia__card__item__text">
-              <span>2013</span>
-              <p>Se construye Paseo Puebla, Suburbia Santa Catarina y Macroplaza Oaxaca. Se adquieren dos portafolios: uno de 9 centros comerciales y uno de 4 centros comerciales.</p>
-            </div>
-          </div>
-
-          <div class="historia__card__item">          
-            <div class="historia__card__item__img">                    
-            </div>
-            <div class="historia__card__item__text">
-              <span>2014</span>
-              <p>
-                Se construyen Macroplaza San Luis y Paseo Alcalde. Se adquieren las propiedades de Ensenada y Los Cabos y un portafolio de 9 centros comerciales.
-              </p>
-            </div>
-          </div>
-
-          <div class="historia__card__item">          
-            <div class="historia__card__item__img">                    
-            </div>
-            <div class="historia__card__item__text">
-              <span>2015</span>
-              <p>
-                Se construyen Paso Hipódromo y Paseo Solidaridad.
-              </p>
-            </div>
-          </div>
-          
-          <div class="historia__card__item">          
-            <div class="historia__card__item__img">                    
-            </div>
-            <div class="historia__card__item__text">
-              <span>2016</span>
-              <p>
-                Se construye Urban Village Garza Sada.
-              </p>
-            </div>
-          </div>
-          
-          <div class="historia__card__item">          
-            <div class="historia__card__item__img">                    
-            </div>
-            <div class="historia__card__item__text">
-              <span>2017</span>
-              <p>
-                Se adquieren las propiedades de Punto San Isidro y Punto Oriente.
-              </p>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="historia__card historia__card--tab6 inactive">
-
-          <div class="historia__card__item">          
-            <div class="historia__card__item__img">                    
-            </div>
-            <div class="historia__card__item__text">
-              <span>2023</span>
-              <p>
-                Se realiza la desinversión de activos PLANICK 12 -CKD y la adquisición del 100% de 11 propiedades.
-              </p>
-            </div>
-          </div>
-
-          <div class="historia__card__item">          
-            <div class="historia__card__item__img">                    
-            </div>
-            <div class="historia__card__item__text">
-              <span>2023</span>
-              <p>
-                Grupo México a través de Grupo Inmobiliario UPAS, S.A. de C.V. Adquiere el 95.47% de las Acciones de Planigrupo.
-              </p>
-            </div>
-          </div>
-
-        </div>
-
-
-
-      </section>
-    </main>
-
-    <footer class="footer footer--historia">
-      <span>
-        SIGUENOS EN <br />
-        NUESTRAS REDES
-      </span>
-
-      <div>
-        <a href=".">Nosotros</a>
-        <a href=".">Comercialización</a>
-        <a href=".">Noticias</a>
-        <a href=".">Contacto</a>
-        <a href=".">Inversionistas</a>
-        <a href=".">Asg</a>
-        <a href=".">Portafolio</a>
-        <a href=".">Ofertas de Empleo</a>
+  <main>
+    <section class="main__hero">
+      <video id="background-video" autoplay loop muted></video>
+      <div class="main__hero__text">
+        <p class="main__hero__text__p main__hero__text__p-exp">
+          <b>EXPERIENCIA</b>
+        </p>
+        <p class="main__hero__text__p-bar main__hero__text__p-gray">
+          UTILIZAMOS MATERIALES DE LA MÁS ALTA
+        </p>
+        <p class="main__hero__text__p-bar main__hero__text__p-blue">
+          CALIDAD PARA OFRECER A CLIENTES E INVERSIONISTAS
+        </p>
+        <p class="main__hero__text__p-bar main__hero__text__p-gray">
+          UN PRODUCTO FINAL INCOMPARABLE
+        </p>
       </div>
-      <img
-        src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/bolsamexicana-grey.png.png"
-        class="footer__img"
-      />
-    </footer>
-  </body>
+
+      <div class="main__hero__downbar">
+        <div class="main__hero_downbar__text">
+          <span>Conoce</span>
+          <p>Acerca de</p>
+          <p>GM Inmobiliaria</p>
+        </div>
+        <div class="main__hero_downbar__title">
+          <h2>HISTORIA</h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="historia__section">
+
+
+      <div class="historia__timeline">
+
+        <div class="historia__timeline__line">
+          <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia/line.png">
+        </div>
+
+        <div
+          class="historia__timeline__selector historia__timeline__selector--1 historia__timeline__selector--selected">
+          <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia/selector.svg"
+            alt="">
+          <p>INICIO</p>
+        </div>
+        <div class="historia__timeline__selector historia__timeline__selector--2">
+          <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia/selector.svg"
+            alt="">
+          <p>1980</p>
+        </div>
+        <div class="historia__timeline__selector historia__timeline__selector--3">
+          <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia/selector.svg"
+            alt="">
+          <p>1990</p>
+        </div>
+        <div class="historia__timeline__selector historia__timeline__selector--4">
+          <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia/selector.svg"
+            alt="">
+          <p>2000</p>
+        </div>
+        <div class="historia__timeline__selector historia__timeline__selector--5">
+          <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia/selector.svg"
+            alt="">
+          <p>2010</p>
+        </div>
+        <div class="historia__timeline__selector historia__timeline__selector--6">
+          <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia/selector.svg"
+            alt="">
+          <p>2020</p>
+        </div>
+      </div>
+
+
+
+      <div class="historia__card historia__card--tab1">
+
+        <div class="historia__card__item">
+          <div class="historia__card__item__img">
+          </div>
+          <div class="historia__card__item__text">
+            <span>1975</span>
+            <p>Planigrupo fue fundada por Eduardo Bross Tatz.</p>
+          </div>
+        </div>
+        <div class="historia__card__item">
+          <div class="historia__card__item__img">
+          </div>
+          <div class="historia__card__item__text">
+            <span>1978</span>
+            <p>Se construye la primera plaza para el municipio de Zapopan.</p>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="historia__card historia__card--tab2 inactive">
+
+        <div class="historia__card__item">
+          <div class="historia__card__item__img">
+          </div>
+          <div class="historia__card__item__text">
+            <span>1982</span>
+            <p>Se construye la primera plaza de Planigrupo Fiesta Arboledas.</p>
+          </div>
+        </div>
+
+
+        <div class="historia__card__item">
+          <div class="historia__card__item__img">
+          </div>
+          <div class="historia__card__item__text">
+            <span>1988</span>
+            <p>Se construye la plaza Fiesta Camelinas.</p>
+          </div>
+        </div>
+
+
+        <div class="historia__card__item">
+          <div class="historia__card__item__img">
+          </div>
+          <div class="historia__card__item__text">
+            <span>1989</span>
+            <p>Se abren las oficinas en la Ciudad de México.</p>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="historia__card historia__card--tab3 inactive">
+
+        <div class="historia__card__item">
+          <div class="historia__card__item__img">
+          </div>
+          <div class="historia__card__item__text">
+            <span>1992</span>
+            <p>Se construye Plaza Bella Pachuca</p>
+          </div>
+        </div>
+
+
+        <div class="historia__card__item">
+          <div class="historia__card__item__img">
+          </div>
+          <div class="historia__card__item__text">
+            <span>1998</span>
+            <p>Se abren las oficinas en la ciudad de Monterrey.</p>
+          </div>
+        </div>
+
+
+        <div class="historia__card__item">
+          <div class="historia__card__item__img">
+          </div>
+          <div class="historia__card__item__text">
+            <span>1999</span>
+            <p>Se construyen 5 HEBs Plaza Real Saltillo.</p>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="historia__card historia__card--tab4 inactive">
+
+        <div class="historia__card__item">
+          <div class="historia__card__item__img">
+          </div>
+          <div class="historia__card__item__text">
+            <span>2000</span>
+            <p>Se construyen 5 HEBs más.</p>
+          </div>
+        </div>
+
+        <div class="historia__card__item">
+          <div class="historia__card__item__img">
+          </div>
+          <div class="historia__card__item__text">
+            <span>2001</span>
+            <p>Se construyen 4 HEBs más.</p>
+          </div>
+        </div>
+
+        <div class="historia__card__item">
+          <div class="historia__card__item__img">
+          </div>
+          <div class="historia__card__item__text">
+            <span>2002</span>
+            <p>Se construye Plaza Real Monterrey y Plaza Bella Anáhuac</p>
+          </div>
+        </div>
+
+        <div class="historia__card__item">
+          <div class="historia__card__item__img">
+          </div>
+          <div class="historia__card__item__text">
+            <span>2005</span>
+            <p>Se construyen Plaza Real Reynosa, Plaza Universidad y Super Plaza Las Haciendas.</p>
+          </div>
+        </div>
+
+        <div class="historia__card__item">
+          <div class="historia__card__item__img">
+          </div>
+          <div class="historia__card__item__text">
+            <span>2006</span>
+            <p>Se construyen Plaza Real San Luis, La Nogalera, Macroplaza Insurgentes y Plaza Bella Mexiquense.</p>
+          </div>
+        </div>
+
+        <div class="historia__card__item">
+          <div class="historia__card__item__img">
+          </div>
+          <div class="historia__card__item__text">
+            <span>2007</span>
+            <p>Se construyen Pabellón Reforma Querétaro, Mérida y Plaza Monumental</p>
+          </div>
+        </div>
+
+        <div class="historia__card__item">
+          <div class="historia__card__item__img">
+          </div>
+          <div class="historia__card__item__text">
+            <span>2008</span>
+            <p>Se construyen Plaza Bella Valladolid, Rio Bravo, Plaza Bella Ramos Arizpe. Se comienzan a administrar
+              Gran Plaza Cancún y Plaza Palmira.</p>
+          </div>
+        </div>
+
+        <div class="historia__card__item">
+          <div class="historia__card__item__img">
+          </div>
+          <div class="historia__card__item__text">
+            <span>2009</span>
+            <p>Se construyen Plaza Bella Oaxaca, Plaza Bella San Gaspar, Plaza Bella Huinalá, Plaza Bella Acuña, Plaza
+              Bella La Palma, Macroplaza Los Héroes y Macroplaza Puerto Vallarta.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="historia__card historia__card--tab5 inactive">
+        <div class="historia__card__item">
+          <div class="historia__card__item__img">
+          </div>
+          <div class="historia__card__item__text">
+            <span>2011</span>
+            <p>Se construyen Plaza Bella Los Almendros, Macroplaza Estadio y Plaza Bella Frontera.</p>
+          </div>
+        </div>
+
+        <div class="historia__card__item">
+          <div class="historia__card__item__img">
+          </div>
+          <div class="historia__card__item__text">
+            <span>2012</span>
+            <p>Colocación de un programa de certificados de desarrollo (CKD). Se adquiere Paseo Santa Catarina y se
+              comienza a administrar Mall Plaza Lincoln.</p>
+          </div>
+        </div>
+
+        <div class="historia__card__item">
+          <div class="historia__card__item__img">
+          </div>
+          <div class="historia__card__item__text">
+            <span>2013</span>
+            <p>Se construye Paseo Puebla, Suburbia Santa Catarina y Macroplaza Oaxaca. Se adquieren dos portafolios: uno
+              de 9 centros comerciales y uno de 4 centros comerciales.</p>
+          </div>
+        </div>
+
+        <div class="historia__card__item">
+          <div class="historia__card__item__img">
+          </div>
+          <div class="historia__card__item__text">
+            <span>2014</span>
+            <p>
+              Se construyen Macroplaza San Luis y Paseo Alcalde. Se adquieren las propiedades de Ensenada y Los Cabos y
+              un portafolio de 9 centros comerciales.
+            </p>
+          </div>
+        </div>
+
+        <div class="historia__card__item">
+          <div class="historia__card__item__img">
+          </div>
+          <div class="historia__card__item__text">
+            <span>2015</span>
+            <p>
+              Se construyen Paso Hipódromo y Paseo Solidaridad.
+            </p>
+          </div>
+        </div>
+
+        <div class="historia__card__item">
+          <div class="historia__card__item__img">
+          </div>
+          <div class="historia__card__item__text">
+            <span>2016</span>
+            <p>
+              Se construye Urban Village Garza Sada.
+            </p>
+          </div>
+        </div>
+
+        <div class="historia__card__item">
+          <div class="historia__card__item__img">
+          </div>
+          <div class="historia__card__item__text">
+            <span>2017</span>
+            <p>
+              Se adquieren las propiedades de Punto San Isidro y Punto Oriente.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="historia__card historia__card--tab6 inactive">
+
+        <div class="historia__card__item">
+          <div class="historia__card__item__img">
+          </div>
+          <div class="historia__card__item__text">
+            <span>2023</span>
+            <p>
+              Se realiza la desinversión de activos PLANICK 12 -CKD y la adquisición del 100% de 11 propiedades.
+            </p>
+          </div>
+        </div>
+
+        <div class="historia__card__item">
+          <div class="historia__card__item__img">
+          </div>
+          <div class="historia__card__item__text">
+            <span>2023</span>
+            <p>
+              Grupo México a través de Grupo Inmobiliario UPAS, S.A. de C.V. Adquiere el 95.47% de las Acciones de
+              Planigrupo.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+
+
+    </section>
+
+
+    <section class="historia__section--resp">
+
+      <div id="element"></div>
+
+    </section>
+  </main>
+
+  <footer class="footer footer--historia">
+    <span>
+      SIGUENOS EN <br />
+      NUESTRAS REDES
+    </span>
+
+    <div>
+      <a href=".">Nosotros</a>
+      <a href=".">Comercialización</a>
+      <a href=".">Noticias</a>
+      <a href=".">Contacto</a>
+      <a href=".">Inversionistas</a>
+      <a href=".">Asg</a>
+      <a href=".">Portafolio</a>
+      <a href=".">Ofertas de Empleo</a>
+    </div>
+    <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/bolsamexicana-grey.png.png"
+      class="footer__img" />
+  </footer>
+</body>
+
 </html>
