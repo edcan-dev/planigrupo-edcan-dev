@@ -13,7 +13,6 @@ class InfoSlider {
 
 		setInterval(() => {
 
-			console.log(currentText);
 
 			if (currentText == 4) currentText = 0;
 
@@ -71,7 +70,7 @@ const infoSlider = new InfoSlider(
 			['EXPERIENCIA', 'Contamos con más de 47 años de experiencia cambiando la manera de ver, diseñar y desarrollar centros comerciales.'],
 			['Planigrupo En Números', 'Con más de 1,200 inquilinos distribuidos en aproximadamente 814,000 m2 de área rentable (GLA) en sus centros comerciales administrados, Planigrupo en el 2021 recibió más de 99.1 millones de visitantes.']
 		],
-		interval: 2000
+		interval: 5000
 	}
 );
 
