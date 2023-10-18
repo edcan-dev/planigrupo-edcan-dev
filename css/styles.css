@@ -397,19 +397,19 @@ height: 550px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position-x: calc(50%);
-    filter: invert(33%) sepia(75%) saturate(5106%) hue-rotate(25deg) brightness(96%) contrast(101%);
+    filter: invert(32%) sepia(7%) saturate(247%) hue-rotate(145deg) brightness(100%) contrast(90%);
 }
 .main__compromise__grid__item__img--img1 {
-  background-image: url('../assets/png-icons/diversity.png');
+  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/png-icons/diversity.png');
 }
 .main__compromise__grid__item__img--img2 {
-    background-image: url('../assets/png-icons/family.png');
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/png-icons/family.png');
 }
 .main__compromise__grid__item__img--img3 {
-    background-image: url('../assets/png-icons/costumer.png');
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/png-icons/costumer.png');
 }
 .main__compromise__grid__item__img--img4 {
-    background-image: url('../assets/png-icons/social-responsibility.png');
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/png-icons/social-responsibility.png');
 }
 .main__compromise__grid__item__text {
     padding:0px 30px;
@@ -1650,6 +1650,7 @@ MAIN TABS MARGIN
 .main__plani__info {
     display: flex;
     height: 200px;
+    margin-top: 40px;
 }
 .main__plani__info__img {
     background-image: url(https://planigrupo.blob.core.windows.net/planigrupo/assets/images/tabs/inversionistas.jpeg);

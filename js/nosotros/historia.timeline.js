@@ -64,6 +64,7 @@ function activateTab(tab) {
 
 
 var accordion = new ej.navigations.Accordion({
+  expandMode: 'Single',
   items: [
     {
       header: '2020 ',
