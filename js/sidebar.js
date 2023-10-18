@@ -27,5 +27,20 @@ onclick = function(ev) {
     activeTab = 'nosotros';
     ev.target.style.backgroundColor = '#D5D9DB';
     document.querySelector('.navbar__responsive__list--second').style.left = '50vw'
+    document.querySelector('.navbar__responsive__list--second--comer').style.left = '10%'
+  }
+}
+document.querySelector('#nav__item--comer').
+onclick = function(ev) {
+
+  if(activeTab == 'comer') {
+    activeTab = '';
+    ev.target.style.backgroundColor = '#FFF';
+    document.querySelector('.navbar__responsive__list--second--comer').style.left = '10%'
+  } else { 
+    activeTab = 'comer';
+    ev.target.style.backgroundColor = '#D5D9DB';
+    document.querySelector('.navbar__responsive__list--second--comer').style.left = '50vw'
+    document.querySelector('.navbar__responsive__list--second').style.left = '10%'
   }
 }
