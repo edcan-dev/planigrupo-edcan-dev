@@ -489,6 +489,8 @@
 
 .main__tabs>div>ul {
     display: flex;
+    width: 100%;
+    justify-content: space-around;
 }
 
 .tab__selector {
@@ -1936,6 +1938,7 @@ MAIN TABS MARGIN
 
     .footer {
         padding-top: 100px !important;
+        height: 300px;
     }
     .main__plani__info {
         flex-direction: column;

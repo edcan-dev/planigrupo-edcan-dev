@@ -1,0 +1,40 @@
+{
+    "properties": [
+        {
+            "propertyTitle": "PASEO Hipódromo",
+            "propertyLocation": "Area Metropolitana, CDMX",
+            "propertyStartDate": "DICIEMBRE 2017",
+            "propertyDescription": "Paseo Hipódromo es un centro comercial con un diseño acogedor, sobre una de las avenidas más transitadas en el área. Cuenta con Cinemex Platino, la perfecta opción de entretenimiento para toda la familia. Además, el lugar se distingue por sus diversas opciones gastronómicas. Por si fuera poco, es ideal para los amantes de las mascotas ya que cuenta también con Petco.",
+            "propertyContactName": "CONTACTO para COMERCIALIZACIÓN",
+            "propertyContactEmail": "comercial@Gminmobiliaria.com",
+            "propertyImageClass": "properties-carousel__item__img--1"
+        },
+        {
+            "propertyTitle": "GRAN PLAZA CANCÚN",
+            "propertyLocation": "Cancún, Quintana Roo",
+            "propertyStartDate": "OCTUBRE 2013",
+            "propertyDescription": "En este centro comercial podrás encontrar una gran variedad de tiendas para toda la familia. Podrás disfrutar de una gran diversidad gastronómica y comprar todo lo que necesites. Es el lugar ideal para pasar un buen día en compañía de amigos, en un entorno tranquilo y ambiente familiar.",
+            "propertyContactName": "CONTACTO para COMERCIALIZACIÓN",
+            "propertyContactEmail": "comercial@Gminmobiliaria.com",
+            "propertyImageClass": "properties-carousel__item__img--2"
+        },
+        {
+            "propertyTitle": "CIUDADELA URBAN VILLAGE",
+            "propertyLocation": "Guadalajara, Jalisco",
+            "propertyStartDate": "DICIEMBRE 2014",
+            "propertyDescription": "Este centro comercial es distinto los demás, ya que ofrece una amplia variedad de tiendas de calidad de todo tipo. Se encuentra en una zona estratégica de la ciudad. Cuenta con diversas áreas para recorrer en un ambiente fresco y natural tanto al aire libre como techadas.",
+            "propertyContactName": "CONTACTO para COMERCIALIZACIÓN",
+            "propertyContactEmail": "comercial@Gminmobiliaria.com",
+            "propertyImageClass": "properties-carousel__item__img--3"
+        },
+        {
+            "propertyTitle": "URBAN VILLAGE GARZA SADA",
+            "propertyLocation": "Monterrey, Nuevo León",
+            "propertyStartDate": "NOVIEMBRE 2017",
+            "propertyDescription": "Centro comercial con una arquitectura sofisticada donde se puede ir de compras o ir a comer en alguno de sus restaurantes. Un lugar moderno donde se puede encontrar de todo, incluyendo tiendas de ropa, restaurantes, supermercado, cafeterías y área de juegos para niños. Tiene una terraza que hará que quieras disfrutar todo el día con amigos.",
+            "propertyContactName": "CONTACTO para COMERCIALIZACIÓN",
+            "propertyContactEmail": "comercial@Gminmobiliaria.com",
+            "propertyImageClass": "properties-carousel__item__img--4"
+        }
+    ]
+}

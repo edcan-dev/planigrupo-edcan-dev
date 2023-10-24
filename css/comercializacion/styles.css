@@ -13,7 +13,7 @@
     justify-content: center;
     width: 40%;
     height: 100px;
-    padding-left: 25%;
+    padding-left: 15%;
 }
 .main__hero_downbar__text > span {
     color: #FFF;
@@ -197,4 +197,111 @@ li {
 
 .selected__tab {
     background-color: #EFEFED;
+}
+
+@media (max-width: 1500px) {
+    .main__comer__left {
+        padding: 80px;
+    }
+}
+@media (max-width: 1000px) {
+    .main__hero__downbar {
+        top: 250px
+    }
+    .main__hero_downbar__text {
+        padding-left: 40px;
+    }
+    
+    .main__comer {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    
+    .main__comer__right {
+        width: 100%;
+    }
+    .main__comer__right__tab_selector > ul > div {
+        flex-grow: 1;        
+    }
+
+
+    .main__comer__left {
+        display: flex;
+        padding: 20px;
+        width: 100%;
+    }
+    .main__comer__left__icon {
+        width: 100px;
+        height: 100%;
+        background-repeat: no-repeat;
+        margin-bottom: 0px;
+        background-position: center;
+    }
+    .main__comer__left__text {
+        padding-left: 20px;
+    }
+
+    .main__comer__right__tab_content__container {
+        height: 400px;
+    }
+
+    .footer__nosotros {
+        margin-top: 20px;
+    }   
+}
+
+@media (max-width: 750px) {
+    .main__comer {
+        margin-top: 180px;
+    }
+}
+@media (max-width: 450px) {
+    .main__comer {
+        margin-top: 150px;
+    }
+
+    .main__comer__left {
+        padding: 10px;
+    }
+    .main__comer__left__text {
+        width: 70%;
+        padding-left: 10px;
+    }
+
+    .main__comer__right__tab_selector > ul > div> li {
+        font-size: 11px;
+    }
+
+    .main__hero__downbar {
+        top: 330px ;
+    }
+    .main__hero_downbar__title {
+        padding-left: 10px;
+    }
+    .main__hero_downbar__title >  h2 {
+        font-size: 20px;
+    }
+
+    .footer--comer {
+        height: 350px !important;
+        padding-top: 150px !important;
+    }
+
+    .main__hero_downbar__text {
+        padding-right: 10px;
+    }
+    .main__hero_downbar__text > span {
+        font-size: 16px;
+        text-align: end;
+    }
+    .main__hero_downbar__text > p {
+    }
+
+    .main__comer__right__tab_content > p {
+        padding: 20px;
+    }
+
+    .main__hero__text {
+        padding-top: 160px;
+    }
 }

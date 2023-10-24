@@ -1,0 +1,29 @@
+{
+    "contents": [
+        {
+            "tabId": 1,
+            "tabTitle": "Información financiera",
+            "tabDescription": "Equipo directivo líder en el sector con más de 20 años de experiencia en la industria. El mejor gobierno corporativo con intereses económicos a favor de nuestros inversionistas.",
+            "tabImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/d5aa81a86a7b0d8049dd451096f50826.png"
+        },
+        {
+            "tabId": 2,
+            "tabTitle": "Gobierno Corporativo",
+            "tabDescription": "Nuestro gobierno corporativo está integrado por importantes figuras en el mundo del diseño, el desarrollo y la construcción de centros comerciales; encabezado por el Arq. Eduardo Bross Tatz.",
+            "tabImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/inversionistas/0b598c7cb118defadeeb291c9ba452a7.png"
+        },
+        {
+            "tabId": 3,
+            "tabTitle": "Comunicados de Prensa",
+            "tabDescription": "Para conocer más recientes comunicados de prensa. En los mismos hacemos del conocimiento de todos los interesados los resultados de nuestros informes financieros, entre otros.",
+            "tabImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/inversionistas/c47502c296186d2c4289c0de02e10a08.png"
+        },
+        {
+            "tabId": 4,
+            "tabTitle": "Cobertura de Analistas",
+            "tabDescription": "Planigrupo obtiene cobertura financiera de renombrados analistas, quienes constantemente dan su opinión, estimaciones y predicciones acerca del desempeño de nuestra empresa.",
+            "tabImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/inversionistas/36f4e82460312392261a9c77058a95e2.png"
+        }
+
+    ]
+}

@@ -609,6 +609,12 @@ li {
     font-family: 'Raleway';
     font-size: 14px !important;
 }
+.contacto__form__card__text > span {
+    font-family: 'Raleway';
+    font-size: 18px !important;
+    font-weight: 900;
+    color: #0096A9;
+}
 .contacto__form__card__text > p > b {
     font-family: 'Raleway';
     color: #0096A9;
@@ -682,4 +688,8 @@ li {
 .footer__contacto {
     margin:  0px;
 
+}
+
+.contacto__form__card__form--portfolio {
+    flex-direction: column;   
 }

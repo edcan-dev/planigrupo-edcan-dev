@@ -14,6 +14,9 @@
     <title>Portafolio</title>
     <script defer src="./js/hero-start-anim.js"></script>
 
+    <script defer type="module" src="./js/portafolio/properties-grid.js"></script>
+    <script src="./js/portafolio/syncfusion-map.js" type="module"></script>
+
     <script  src="https://cdn.syncfusion.com/ej2/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
     <script  src="https://cdn.syncfusion.com/ej2/ej2-svg-base/dist/global/ej2-svg-base.min.js"
     type="text/javascript"></script>
@@ -31,16 +34,18 @@
         <nav class="navbar__responsive">
           <ul class="navbar__responsive__list">
             
-            <input class="navbar__responsive__search" type="search" placeholder="Buscar...">
-      
-      
+            <li>
+              <input class="navbar__responsive__search" type="search" placeholder="Buscar...">
+              <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/svgs/magnifying.svg">
+            </li>
             <li class="header__nav__item" id="nav__item--nosotros">
               <a class="">Nosotros</a>
             </li>
             <li class="header__nav__item">
               <a href="./portafolio.html">Portafolio</a>
             </li>
-            <li class="header__nav__item"><a href="./comercializacion.html">Comercialización</a></li>
+            <li class="header__nav__item" id="nav__item--comer">
+              <a>Comercialización</a></li>
             <li class="header__nav__item"><a href="">Inversionistas</a></li>
             <li class="header__nav__item"><a href="">Asg</a></li>
             <li class="header__nav__item"><a href="">Clientes</a></li>
@@ -56,6 +61,12 @@
               <li class="header__nav__item"><a href="./lo-que-hacemos.html">Lo que hacemos</a></li>
               <li class="header__nav__item"><a href="./equipo-ejecutivo.html">Equipo Ejecutivo</a></li>
               <li class="header__nav__item"><a href="./historia.html">Historia</a></li>
+          </ul>
+  
+          <ul class="navbar__responsive__list--second--comer">
+            <div>
+              <li class="header__nav__item"><a href="./comercializacion.html">Comercialización</a></li>
+              <li class="header__nav__item"><a href="./oportunidades.html">Oportunidades</a></li>
           </ul>
         </nav>
       </aside>
@@ -81,7 +92,13 @@
           <li class="header__nav__item">
             <a href="./portafolio.html">Portafolio</a>
           </li>
-          <li class="header__nav__item"><a href="./comercializacion.html">Comercialización</a></li>
+          <li class="header__nav__item dropdown">
+            <a class="dropbtn">Comercialización</a>
+            <div class="dropdown-content">
+              <a href="./comercializacion.html">Comercialización</a>
+              <a href="./oportunidades.html">Oportunidades</a>
+            </div>
+          </li>
           <li class="header__nav__item"><a href="">Inversionistas</a></li>
           <li class="header__nav__item"><a href="">Asg</a></li>
           <li class="header__nav__item"><a href="">Clientes</a></li>
@@ -90,11 +107,11 @@
           </li>
           <li class="header__nav__item header__nav__item--search">
             <input type="text" placeholder="Buscar..." />
+            <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/svgs/magnifying.svg">
           </li>
         </ul>
       </nav>
     </header>
-
     <main>
       <section class="main__hero">
         <video id="background-video" autoplay loop muted></video>
@@ -125,113 +142,250 @@
         </div>
       </section>
 
+      <section class="portfolio__title">
+        <div>
+          <span>Portafolio</span>
+          <p>Nuestros centros comerciales se ubican estratégicamente en las zonas norte, centro y sur del territorio nacional, con presencia en 18 estados. La ubicación de cada propiedad se ha elegido cuidadosamente para maximizar la exposición a una población con un poder adquisitivo creciente.
+          </p>
+        </div>
+      </section>
+
       <section>
         <div id='container'>
             <div id='element'></div>
           </div>
       </section>
 
-      <!-- <section class="historia__section">
 
-
-        <div class="historia__timeline">
-
-          <div class="historia__timeline__line">
-            <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia/line.png">
-          </div>
-
-          <div 
-          class="historia__timeline__selector historia__timeline__selector--1 historia__timeline__selector--selected">
-            <img
-            src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia/selector.svg" alt="">
-            <p>INICIO</p>
-          </div>
-          <div class="historia__timeline__selector historia__timeline__selector--2">
-            <img  
-            src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia/selector.svg" alt="">
-            <p>1980</p>
-          </div>
-          <div class="historia__timeline__selector historia__timeline__selector--3">
-            <img  
-            src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia/selector.svg" alt="">
-            <p>1990</p>
-          </div>
-          <div class="historia__timeline__selector historia__timeline__selector--4">
-            <img  
-            src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia/selector.svg" alt="">
-            <p>2000</p>
-          </div>
-          <div class="historia__timeline__selector historia__timeline__selector--5">
-            <img  
-            src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia/selector.svg" alt="">
-            <p>2010</p>
-          </div>
-          <div class="historia__timeline__selector historia__timeline__selector--6">
-            <img  
-            src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia/selector.svg" alt="">
-            <p>2020</p>
-          </div>    
+      <section class="featured_properties">
+        <div class="featured_properties__title">
+          <span>Propiedades Destacadas</span>
+        </div>
+        <div class="featured_properties__text">
+          <p>
+            Contamos con propiedades estratégicamente ubicadas en las zonas comerciales más importantes del país. Ofrecemos la calidad Planigrupo desde Baja California hasta Quintana Roo.
+          </p>
         </div>
 
-
-
-        <div class="historia__card historia__card--tab1">
-
-          <div class="historia__card__item">          
-            <div class="historia__card__item__img">                 
-            </div>
-            <div class="historia__card__item__text">
-              <span>1975</span>
-              <p>Planigrupo fue fundada por Eduardo Bross Tatz.</p>
-            </div>
-          </div>
-          <div class="historia__card__item">          
-            <div class="historia__card__item__img">                 
-            </div>
-            <div class="historia__card__item__text">
-              <span>1978</span>
-              <p>Se construye la primera plaza para el municipio de Zapopan.</p>
-            </div>
-          </div>
-
-        </div>
-
-
-        <div class="historia__card historia__card--tab2 inactive">
-
-          <div class="historia__card__item">          
-            <div class="historia__card__item__img">                 
-            </div>
-            <div class="historia__card__item__text">
-              <span>1982</span>
-              <p>Se construye la primera plaza de Planigrupo Fiesta Arboledas.</p>
-            </div>
-          </div>
-
-
-          <div class="historia__card__item">          
-            <div class="historia__card__item__img">                    
-            </div>
-            <div class="historia__card__item__text">
-              <span>1988</span>
-              <p>Se construye la plaza Fiesta Camelinas.</p>
-            </div>
-          </div>
-
-
-          <div class="historia__card__item">          
-            <div class="historia__card__item__img">                    
-            </div>
-            <div class="historia__card__item__text">
-              <span>1989</span>
-              <p>Se abren las oficinas en la Ciudad de México.</p>
-            </div>
-          </div>
+        <div class="featured_properties__responsive-combo">
+          <span>Filtrar por</span>
           
+          <div>
+            <select name="" id="state-selector">
+              <option value="all">- Todas -</option>
+              <option value="Baja California">Baja California</option>
+              <option value="Baja California Sur">Baja California Sur</option>
+              <option value="Campeche">Campeche</option>
+              <option value="Chihuahua">Chihuahua</option>
+              <option value="Coahuila">Coahuila</option>
+              <option value="Hidalgo">Hidalgo</option>
+              <option value="Jalisco">Jalisco</option>
+              <option value="Mexico">Mexico</option>
+              <option value="Michoacan">Michoacan</option>
+              <option value="Nayarit">Nayarit</option>
+              <option value="Nuevo Leon">Nuevo Leon</option>
+              <option value="Oaxaca">Oaxaca</option>
+              <option value="Puebla">Puebla</option>
+              <option value="Sonora">Sonora</option>
+              <option value="San Luis Potosi">San Luis Potosi</option>
+              <option value="Tamaulipas">Tamaulipas</option>
+              <option value="Quintana Roo">Quintana Roo</option>
+              <option value="Queretaro">Queretaro</option>
+            </select>  
+          </div>
+          <div>
+            <select name="" id="">
+                <option disabled="" selected="" value="">Inquilinos</option>
+                Inquilinos										
+                <option value="">- Todas -</option>
+                <option value="5a Sec">5a Sec</option>
+                <option value="A&amp;Z">A&amp;Z</option>
+                <option value="Abuelitas Pizza">Abuelitas Pizza</option>
+                <option value="After">After</option>
+                <option value="Agacy Tallas Extras">Agacy Tallas Extras</option>
+                <option value="Aguakan">Aguakan</option>
+                <option value="Aldo Conti Italia">Aldo Conti Italia</option>
+                <option value="Alexan">Alexan</option>
+                <option value="American Collection">American Collection</option>
+                <option value="Amway">Amway</option>
+                <option value="Andry">Andry</option>
+                <option value="Antica Fabrica de Pan">Antica Fabrica de Pan</option>
+                <option value="Anytime Fitness">Anytime Fitness</option>
+                <option value="Applebees">Applebees</option><option value="Artesanos">Artesanos</option>
+                <option value="AT&amp;T">AT&amp;T</option>
+                <option value="Auto Zone">Auto Zone</option>
+                <option value="B Fashion">B Fashion</option>
+                <option value="B Hermanos">B Hermanos</option>
+                <option value="Banamex">Banamex</option>
+                <option value="Banco Azteca">Banco Azteca</option>
+                <option value="Banjos">Banjos</option>
+                <option value="Banorte">Banorte</option>
+                <option value="BBVA Bancomer">BBVA Bancomer</option>
+                <option value="Beautiskin">Beautiskin</option>
+                <option value="Beauty Foot">Beauty Foot</option>
+                <option value="Bellísima">Bellísima</option>
+                <option value="Bio Analisis Pasteur">Bio Analisis Pasteur</option>
+                <option value="Blitzer">Blitzer</option>
+                <option value="Bodega Aurrera">Bodega Aurrera</option>
+                <option value="Bodega Caban Spa">Bodega Caban Spa</option>
+                <option value="Bolerama Ilusion">Bolerama Ilusion</option>
+                <option value="Bostons Restaurant">Bostons Restaurant</option>
+                <option value="Boxers">Boxers</option>
+                <option value="Bubble Waffle Co">Bubble Waffle Co</option>
+                <option value="Buchakas">Buchakas</option>
+                <option value="Burger King">Burger King</option>
+                <option value="C&amp;A">C&amp;A</option>
+                <option value="Caban Spa">Caban Spa</option>
+                <option value="Café Riviera">Café Riviera</option>
+                <option value="Caliente Casino">Caliente Casino</option>
+                <option value="Canasta de Remacri">Canasta de Remacri</option>
+                <option value="Capa de Ozono">Capa de Ozono</option>
+                <option value="Carl" s="" jr'="">Carl's Jr</option>
+                <option value="Carnitas Michoacanas">Carnitas Michoacanas</option>
+                <option value="Centro Botanico El Girasol">Centro Botanico El Girasol</option>
+                <option value="Centro Optico Prefess">Centro Optico Prefess</option>
+                <option value="Chedraui">Chedraui</option><option value="Chili" s'="">Chili's</option>
+                <option value="Church" s="" chicken'="">Church's Chicken</option><option value="Churros las Vías">Churros las Vías</option><option value="Cinemex">Cinemex</option><option value="Cinemex Platino">Cinemex Platino</option><option value="Cinépolis">Cinépolis</option><option value="Citibanemex">Citibanemex</option><option value="Clínica de Ojos Cancún">Clínica de Ojos Cancún</option><option value="Co">Co</option><option value="Colcholandya">Colcholandya</option><option value="Colchones Atlas">Colchones Atlas</option><option value="Comex">Comex</option><option value="Compurepair">Compurepair</option><option value="Coppel">Coppel</option><option value="Costanzo Chocolateria">Costanzo Chocolateria</option><option value="Crazy Prices">Crazy Prices</option><option value="D-Uñas Nails &amp; Beauty">D-Uñas Nails &amp; Beauty</option><option value="DGales">DGales</option><option value="Dairy Queen">Dairy Queen</option><option value="Danny Yo">Danny Yo</option><option value="Dante">Dante</option><option value="Daylu">Daylu</option><option value="DC Laser">DC Laser</option><option value="Del Sol">Del Sol</option><option value="Dental Natura">Dental Natura</option><option value="Dental Natura">Dental Natura</option><option value="Dentalia">Dentalia</option><option value="Denti + Mas">Denti + Mas</option><option value="Derma Los Angeles">Derma Los Angeles</option><option value="Destroyer">Destroyer</option><option value="Detail">Detail</option><option value="Diva Fashion Forever">Diva Fashion Forever</option><option value="Divenza">Divenza</option><option value="Dominos">Dominos</option><option value="Donaire">Donaire</option><option value="El Agasajo">El Agasajo</option><option value="El Jaripeo">El Jaripeo</option><option value="El Porton">El Porton</option><option value="Elektra">Elektra</option><option value="Elite Lockers">Elite Lockers</option><option value="Europiel">Europiel</option><option value="Fajas Colombianas">Fajas Colombianas</option><option value="Famsa">Famsa</option><option value="Fantasías Miguel">Fantasías Miguel</option><option value="Farmville">Farmville</option><option value="Feet for Fit">Feet for Fit</option><option value="Felipe Fernandez">Felipe Fernandez</option><option value="Filipe Fernandez">Filipe Fernandez</option><option value="First Cash">First Cash</option><option value="Fitness 24 Horas">Fitness 24 Horas</option><option value="Flyers México">Flyers México</option><option value="Fonda China">Fonda China</option><option value="GALEX">GALEX</option><option value="Game Fix">Game Fix</option><option value="Gamers">Gamers</option><option value="Generation Store">Generation Store</option><option value="GNC">GNC</option><option value="Gobierno Del Estado de Hidalgo">Gobierno Del Estado de Hidalgo</option><option value="GOC">GOC</option><option value="Gogame">Gogame</option><option value="Gorditas Doña Maria">Gorditas Doña Maria</option><option value="Grupo Autofin Monterrey">Grupo Autofin Monterrey</option><option value="H Hamburgesas">H Hamburgesas</option><option value="Hang Ten">Hang Ten</option><option value="Harmon Hall">Harmon Hall</option><option value="HEB">HEB</option><option value="Home Depot">Home Depot</option><option value="Hong Kong Restaurante Chino">Hong Kong Restaurante Chino</option><option value="HSBC">HSBC</option><option value="Icon">Icon</option><option value="IHOP">IHOP</option><option value="Ilusion Bowl">Ilusion Bowl</option><option value="Impuls">Impuls</option><option value="Inbursa">Inbursa</option><option value="Incubo">Incubo</option><option value="INE">INE</option><option value="Innova Sport">Innova Sport</option><option value="Instituto Fonacot">Instituto Fonacot</option><option value="Inter Mobel">Inter Mobel</option><option value="Interlingua">Interlingua</option><option value="Italian Coffee">Italian Coffee</option><option value="Italika">Italika</option><option value="Izzi">Izzi</option><option value="Jack Bricks Food Hall">Jack Bricks Food Hall</option><option value="JCON">JCON</option><option value="JCV Fitness">JCV Fitness</option><option value="Johnny Rockets">Johnny Rockets</option><option value="Joyeria Karval">Joyeria Karval</option><option value="Juega + Jugueteria">Juega + Jugueteria</option><option value="Julio Cepeda">Julio Cepeda</option><option value="Kedaki">Kedaki</option><option value="KFC">KFC</option><option value="Kids In Motion">Kids In Motion</option><option value="Kidz n Kidz">Kidz n Kidz</option><option value="Kraken Barber Club">Kraken Barber Club</option><option value="Krispy Kreme">Krispy Kreme</option><option value="La Barberia">La Barberia</option><option value="La Capital del Empeño">La Capital del Empeño</option><option value="La Casa de los Abuelos">La Casa de los Abuelos</option><option value="La Creperia">La Creperia</option><option value="La Cueva de Chucho">La Cueva de Chucho</option><option value="La Cupula Mebleria">La Cupula Mebleria</option><option value="La Michoacana Natural">La Michoacana Natural</option><option value="La Parrilla Taquito">La Parrilla Taquito</option><option value="La Silla Tours">La Silla Tours</option><option value="La Tostada">La Tostada</option><option value="La Trattoria">La Trattoria</option><option value="Las Alitas">Las Alitas</option><option value="Las Quekas">Las Quekas</option><option value="Le Petit Paris">Le Petit Paris</option><option value="Ley">Ley</option><option value="Libertad Servicios Financieros">Libertad Servicios Financieros</option><option value="Little Ceasars">Little Ceasars</option><option value="Locura">Locura</option><option value="Loretta Joyas">Loretta Joyas</option><option value="Luxis Joyeria">Luxis Joyeria</option><option value="Macro Cell">Macro Cell</option><option value="Macrocel">Macrocel</option><option value="Marie">Marie</option><option value="Marti Outlet">Marti Outlet</option><option value="Más Vision">Más Vision</option><option value="Maxcell Reparation">Maxcell Reparation</option><option value="Mazarik">Mazarik</option><option value="McDonald" s'="">McDonald's</option><option value="Meik">Meik</option><option value="Men Hong">Men Hong</option><option value="Men" s="" factory'="">Men's Factory</option><option value="Men" s="" fashion'="">Men's Fashion</option><option value="Mexican Food">Mexican Food</option><option value="México Crea">México Crea</option><option value="Mi Gusto Es">Mi Gusto Es</option><option value="Mi Tienda del Ahorro">Mi Tienda del Ahorro</option><option value="MICHELLE">MICHELLE</option><option value="Miniso">Miniso</option><option value="Mirage Restaurantes">Mirage Restaurantes</option><option value="Mobilia Home">Mobilia Home</option><option value="Mobo Shop">Mobo Shop</option><option value="Modatelas">Modatelas</option><option value="Movistar">Movistar</option><option value="Mr. Fish">Mr. Fish</option><option value="Muebles Dico">Muebles Dico</option><option value="Multimarcas Promoda">Multimarcas Promoda</option><option value="Multiservicios Emporio">Multiservicios Emporio</option><option value="Mundo Joven">Mundo Joven</option><option value="Mundo Mágico">Mundo Mágico</option><option value="Nail Bar Beauty Lounge">Nail Bar Beauty Lounge</option><option value="Nikkori Sushi">Nikkori Sushi</option><option value="Nueve Lunas">Nueve Lunas</option><option value="Nutrisa">Nutrisa</option><option value="Nutrisa Es Bien Estar">Nutrisa Es Bien Estar</option><option value=""></option><option value="Office Max">Office Max</option><option value="Oh My Beauty">Oh My Beauty</option><option value="Opp" s="" jeans'="">Opp's Jeans</option><option value="Optica Americana">Optica Americana</option><option value="Óptica Espadas">Óptica Espadas</option><option value="Optica Full Vision">Optica Full Vision</option><option value="Optica Kristel">Optica Kristel</option><option value="Optica Platino">Optica Platino</option><option value="Opticas Devlyn">Opticas Devlyn</option><option value="Oriental Wok">Oriental Wok</option><option value="OXXO">OXXO</option><option value="Pago de tráfico y servicios">Pago de tráfico y servicios</option><option value="Palax Restaurante">Palax Restaurante</option><option value="Paleteria y Neveria Tocumbo">Paleteria y Neveria Tocumbo</option><option value="Parisina">Parisina</option><option value="Pensionissste">Pensionissste</option><option value="Perfumes y Esencias">Perfumes y Esencias</option><option value="Perugia">Perugia</option><option value="Petco">Petco</option><option value="Peter Piper Pizza">Peter Piper Pizza</option><option value="Petsmania">Petsmania</option><option value="Piel de Roble">Piel de Roble</option><option value="Pinal &amp; Zuazo">Pinal &amp; Zuazo</option><option value="Pizza Hut">Pizza Hut</option><option value="Pizzas Plaza">Pizzas Plaza</option><option value="Planet gim">Planet gim</option><option value="Planigrupo">Planigrupo</option><option value="Pockets Billiards &amp; Fun">Pockets Billiards &amp; Fun</option><option value="Prenda Mex">Prenda Mex</option><option value="Price Travel">Price Travel</option><option value="Pro1 Wash">Pro1 Wash</option><option value="Promueve">Promueve</option><option value="Purofresco">Purofresco</option><option value="Quarry Jeans &amp; Fashion">Quarry Jeans &amp; Fashion</option><option value="Radio Shack">Radio Shack</option><option value="Regalos Mexico">Regalos Mexico</option><option value="Renatta Cosmético">Renatta Cosmético</option><option value="Rent A Center">Rent A Center</option><option value="Restaurante Palax">Restaurante Palax</option><option value="Rockland">Rockland</option><option value="Sally Beauty Supply">Sally Beauty Supply</option><option value="Sam" s="" club'="">Sam's Club</option><option value="Sanborn" s'="">Sanborn's</option><option value="Sancho Panza restaurante">Sancho Panza restaurante</option><option value="Santa Clara">Santa Clara</option><option value="Santander Serfin">Santander Serfin</option><option value="Saxs Accessories">Saxs Accessories</option><option value="Scotiabank">Scotiabank</option><option value="Secrets Boutique">Secrets Boutique</option><option value="Shasa">Shasa</option><option value="Sierra Madre Brewing Co.">Sierra Madre Brewing Co.</option><option value="Silvia Carnevali">Silvia Carnevali</option><option value="Soriana">Soriana</option><option value="Sport World Cell">Sport World Cell</option><option value="Sporttenis">Sporttenis</option><option value="Starbucks Coffee">Starbucks Coffee</option><option value="Steren Shop Electronics">Steren Shop Electronics</option><option value="STERN">STERN</option><option value="Suburbia">Suburbia</option><option value="Subway">Subway</option><option value="Sun City">Sun City</option><option value="Super Colchones">Super Colchones</option><option value="Super Fitness">Super Fitness</option><option value="Super Salads">Super Salads</option><option value="Superama">Superama</option><option value="Surtidora">Surtidora</option><option value="Sweet Little">Sweet Little</option><option value="Swim Store">Swim Store</option><option value="Tapioca Go">Tapioca Go</option><option value="Telcel">Telcel</option><option value="TGI Fridays">TGI Fridays</option><option value="Thrifty Ice Cream">Thrifty Ice Cream</option><option value="Tienda Ley">Tienda Ley</option><option value="Tintorería Max">Tintorería Max</option><option value="Todo para sus Pies">Todo para sus Pies</option><option value="Todomoda">Todomoda</option><option value="Toks Restaurante">Toks Restaurante</option><option value="Tropic">Tropic</option><option value="Tu-tu Play">Tu-tu Play</option><option value="Ultrahogar">Ultrahogar</option><option value="Universidad Metropolitana de Monterrey">Universidad Metropolitana de Monterrey</option><option value="USA Shoes">USA Shoes</option><option value="Victorinox">Victorinox</option><option value="Vida Fitness">Vida Fitness</option><option value="Villarreal">Villarreal</option><option value="VIPS">VIPS</option><option value="Viva Pizza">Viva Pizza</option><option value="Vivo 47">Vivo 47</option><option value="Walmart">Walmart</option><option value="Win Fa">Win Fa</option><option value="Woolworth">Woolworth</option><option value="YAK">YAK</option><option value="Zapateria La Joya">Zapateria La Joya</option><option value="Zapatería Pequeños">Zapatería Pequeños</option><option value="Zapopan Unido">Zapopan Unido</option><option value="Zona Divertida">Zona Divertida</option>
+            
+            </select>          
+          </div>
+
+        </div>
+       
+
+
+        <div class="featured_properties__grid">
+        </div>
+      </section>
+
+      <section class="contacto__form">
+        <div class="contacto__form__card">
+          <div class="contacto__form__card__text">
+            <span>Pregúntenos sobre oportunidades de arrendamiento
+            </span>
+            <p>Av. Eugenio Garza Sada #3431
+              Urban Village Garza Sada, P1, local SA012,
+              Col. Arroyo Seco CP. 64740
+              Monterrey, Nuevo León.
+              O bien, escribe sobre el tema de tu interés aquí:</p>
+            </span>
+            <p>
+              Contacto:
+              <b>
+                (+52 81) 8335-1631
+              </b>
+              O bien, escribe sobre el tema de tu interés aquí:
+            </p>
+          </div>
+  
+          <form action="">
+  
+  
+            <div class="contacto__form__card__form">
+              <div class="contacto__form__card__form__container contacto__form__card__form__container--nombre">
+                <label for="nombre">*nombre</label>
+                <input type="text" name="nombre" id="nombre">
+              </div>
+
+              <div class="contacto__form__card__form__container contacto__form__card__form__container--compania">
+                <label for="compania">*compañía</label>
+                <input type="text" name="compania" id="compania">
+              </div>
+            </div>
+            
+            <div class="contacto__form__card__form">
+              <div class="contacto__form__card__form__container contacto__form__card__form__container--apellido">
+                <label for="apellido">*apellido</label>
+                <input type="text" name="apellido" id="apellido">
+              </div>
+
+              <div class="contacto__form__card__form__container contacto__form__card__form__container--email">
+                <label for="telefono">*telefono</label>
+                <input type="text" name="telefono" id="telefono">
+              </div>
+            </div>
+
+            <div class="contacto__form__card__form contacto__form__card__form--portfolio">
+              
+              <div class="contacto__form__card__form--portfolio--email">
+                <label for="email">*email</label>
+                <input type="email" name="telefono" id="email">
+              </div>
+
+              <div class="contacto__form__card__form--portfolio--personalidad">
+                <label for="personalidad-juridica">*personalidad juridica</label>
+<!--                 <input type="personalidad-juridica" name="telpersonalidad-juridica" id="personalidad-juridica">
+ -->                <select name="persona" id="persona">
+                  <option value="">Persona Fisica</option>
+                  <option value="">Persona Moral</option>
+                </select>
+              </div>
+
+              <div class="contacto__form__card__form--portfolio--comentarios">
+                <label for="comentarios">*comentarios</label>
+                <input type="comentarios" name="telcomentarios" id="comentarios">
+              </div>
+
+            </div>
+
+            <div class="contacto__form__card__form contacto__form__card__form--portfolio--propiedad">
+              
+              <div class="contacto__form__card__form--portfolio--personalidad">
+                <label for="personalidad-juridica">*propiedad</label>
+                  <select name="persona" id="persona">
+                      <option disabled="" selected="" value="">Propiedad</option>
+                      <option value="P119">Cancun Gran Plaza</option>
+                      <option value="P130">Centro Comercial Lopez Mateos</option>
+                      <option value="P131">Ciudadela UV</option>
+                      <option value="P101">El Paseo Santa Catarina</option>
+                      <option value="P109">La Nogalera</option>
+                      <option value="P134">Lago Real Centro Comercial</option>
+                      <option value="P133">Macroplaza Del Valle</option>
+                      <option value="2102">Macroplaza Estadio</option>
+                      <option value="P121">Macroplaza Insurgentes</option>
+                      <option value="P126">Macroplaza Oaxaca</option>
+                      <option value="P129">Macroplaza San Luis</option>
+                      <option value="P107">Mall Plaza Lincoln</option>
+                      <option value="P118">Palmira Plaza Comercial</option>
+                      <option value="P122">Paseo Alcalde</option>
+                      <option value="P123">Paseo Hipodromo</option>
+                      <option value="P103">Paseo Puebla</option>
+                      <option value="P135">Paseo Reforma</option>
+                      <option value="P138">Paseo San Juan</option>
+                      <option value="P110">Paseo Solidaridad</option>
+                      <option value="P106">Plaza Bella Anáhuac</option>
+                      <option value="P102">Plaza Bella Frontera</option>
+                      <option value="P105">Plaza Bella Huinala</option>
+                      <option value="P115">Plaza Bella Mexiquense</option>
+                      <option value="P111">Plaza Bella Ramos Arizpe</option>
+                      <option value="P113">Plaza Monumental</option>
+                      <option value="P112">Plaza Real Reynosa</option>
+                      <option value="P108">Plaza Real Saltillo</option>
+                      <option value="P117">Plaza Universidad</option>
+                      <option value="P132">Puerta de Hierro</option>
+                      <option value="P140">Punto Oriente</option>
+                      <option value="P139">Punto San Isidro</option>
+                      <option value="P136">Reynosa II</option>
+                      <option value="P114">Super Plaza las Haciendas</option>
+                      <option value="P125">Urban Village Garza Sada</option>
+                      <option value="P127">Walmart Ensenada</option>
+                      <option value="P128">Walmart San Jose del Cabo</option>					
+                    </select>
+              </div>
+
+              <div class="contacto__form__card__form contacto__form__card__form--submit">
+                <input type="submit" value="Enviar">
+              </div>
+            </div>
+
         </div>
 
+        </form>
+  
+  
+        </div>
       </section>
-       -->
+
     </main>
 
     <footer class="footer footer--equipo">
@@ -256,6 +410,5 @@
       />
     </footer>
 
-    <script src="./js/portafolio/syncfusion-map.js" type="module"></script>
   </body>
 </html>

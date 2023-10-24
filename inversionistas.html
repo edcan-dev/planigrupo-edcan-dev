@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <title>Home - Planigrupo</title>
+
+  <!-- Syncfusion Carousel -->
+  <link href="https://cdn.syncfusion.com/ej2/23.1.36/ej2-base/styles/material.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.syncfusion.com/ej2/23.1.36/ej2-buttons/styles/material.css" rel="stylesheet"
+    type="text/css" />
+  <link href="https://cdn.syncfusion.com/ej2/23.1.36/ej2-navigations/styles/material.css" rel="stylesheet"
+    type="text/css" />
+  <script src="https://cdn.syncfusion.com/ej2/23.1.36/ej2-base/dist/global/ej2-base.min.js"
+    type="text/javascript"></script>
+  <script src="https://cdn.syncfusion.com/ej2/23.1.36/ej2-buttons/dist/global/ej2-buttons.min.js"
+    type="text/javascript"></script>
+  <script src="https://cdn.syncfusion.com/ej2/23.1.36/ej2-navigations/dist/global/ej2-navigations.min.js"
+    type="text/javascript"></script>
+  <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type="text/javascript"></script>
+  <link rel="shortcut icon" href="https://planigrupo.blob.core.windows.net/planigrupo/assets/favicon.png"
+    type="image/x-icon" />
+  <script defer src="./js/hero-start-anim.js"></script>
+  <script defer src="./js/index/data-bursatil-api-client.js"></script>
+  <script defer type="module" src="./js/index/syncfusion-carousel.js"></script>
+  <link href="./css/index/carousel.style.css" rel="stylesheet" />
+
+  <script defer src="./js/sidebar.js"></script>
+  <script defer type="module" src="./js/index/plani-info-slider.js"></script>
+  <script defer src="./js/index/home-tabs.js"></script>
+
+  <link rel="stylesheet" href="./css/nosotros/styles.css">
+  <link rel="stylesheet" href="./css/inversionistas/inversionistas.styles.css">
+  <script defer src="./js/lo-que-hacemos/home-tabs.js"></script>
+  <script defer type="module" src="./js/inversionistas/tabs-component.js"></script>
+</head>
+
+<body>
+  <div id="sidebar-container">
+    <aside id="default-sidebar">
+
+      <nav class="navbar__responsive">
+        <ul class="navbar__responsive__list">
+
+          <li>
+            <input class="navbar__responsive__search" type="search" placeholder="Buscar...">
+            <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/svgs/magnifying.svg">
+          </li>
+          <li class="header__nav__item" id="nav__item--nosotros">
+            <a class="">Nosotros</a>
+          </li>
+          <li class="header__nav__item">
+            <a href="./portafolio.html">Portafolio</a>
+          </li>
+          <li class="header__nav__item" id="nav__item--comer">
+            <a>Comercialización</a>
+          </li>
+          <li class="header__nav__item"><a href="./inversionistas.html">Inversionistas</a></li>
+          <li class="header__nav__item"><a href="">Asg</a></li>
+          <li class="header__nav__item"><a
+              href="https://portaldeclientes.planigrupo.com/auth/realms/master/protocol/openid-connect/auth?client_id=estados-de-cuenta-id&redirect_uri=https%3A%2F%2Fportaldeclientes.planigrupo.com%2Fhome&state=a536db1e-fa15-48e7-91b4-f885b5c6791b&response_mode=fragment&response_type=code&scope=openid&nonce=7ad26bbc-8cfc-4064-a337-1cb175cc69f7">Clientes</a>
+          </li>
+          <li class="header__nav__item">
+            <a href="./contacto.html">Contacto</a>
+          </li>
+
+        </ul>
+
+        <ul class="navbar__responsive__list--second">
+          <div>
+            <li class="header__nav__item"><a href="./nosotros.html">Nosotros</a></li>
+            <li class="header__nav__item"><a href="./lo-que-hacemos.html">Lo que hacemos</a></li>
+            <li class="header__nav__item"><a href="./equipo-ejecutivo.html">Equipo Ejecutivo</a></li>
+            <li class="header__nav__item"><a href="./historia.html">Historia</a></li>
+        </ul>
+
+        <ul class="navbar__responsive__list--second--comer">
+          <div>
+            <li class="header__nav__item"><a href="./comercializacion.html">Comercialización</a></li>
+            <li class="header__nav__item"><a href="./oportunidades.html">Oportunidades</a></li>
+        </ul>
+      </nav>
+    </aside>
+  </div>
+  <header class="header">
+    <div class="header__bars">
+      <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/bars-solid.svg" height="40px" />
+    </div>
+    <a href="./index.html">
+      <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/logo.svg" alt="" />
+    </a>
+    <nav>
+      <ul class="header__nav">
+        <li class="header__nav__item dropdown">
+          <a class="dropbtn">Nosotros</a>
+          <div class="dropdown-content">
+            <a href="./nosotros.html">Nosotros</a>
+            <a href="./lo-que-hacemos.html">Lo que hacemos</a>
+            <a href="./equipo-ejecutivo.html">Equipo Ejecutivo</a>
+            <a href="./historia.html">Historia</a>
+          </div>
+        </li>
+        <li class="header__nav__item">
+          <a href="./portafolio.html">Portafolio</a>
+        </li>
+        <li class="header__nav__item dropdown">
+          <a class="dropbtn">Comercialización</a>
+          <div class="dropdown-content">
+            <a href="./comercializacion.html">Comercialización</a>
+            <a href="./oportunidades.html">Oportunidades</a>
+          </div>
+        </li>
+        <li class="header__nav__item"><a href="./inversionistas.html">Inversionistas</a></li>
+        <li class="header__nav__item"><a href="">Asg</a></li>
+        <li class="header__nav__item"><a
+            href="https://portaldeclientes.planigrupo.com/auth/realms/master/protocol/openid-connect/auth?client_id=estados-de-cuenta-id&redirect_uri=https%3A%2F%2Fportaldeclientes.planigrupo.com%2Fhome&state=a536db1e-fa15-48e7-91b4-f885b5c6791b&response_mode=fragment&response_type=code&scope=openid&nonce=7ad26bbc-8cfc-4064-a337-1cb175cc69f7">Clientes</a>
+        </li>
+        <li class="header__nav__item">
+          <a href="./contacto.html">Contacto</a>
+        </li>
+        <li class="header__nav__item header__nav__item--search">
+          <input type="text" placeholder="Buscar..." />
+          <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/svgs/magnifying.svg">
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="main__hero">
+      <video id="background-video" autoplay loop muted preload="metadata"
+        poster="https://planigrupo.blob.core.windows.net/planigrupo/assets/videos/hero_video_01.mp4">
+        <source src="https://planigrupo.blob.core.windows.net/planigrupo/assets/videos/hero_video_01.mp4"
+          type="video/mp4" />
+      </video>
+      <div class="main__hero__text">
+        <p class="main__hero__text__p main__hero__text__p-exp">
+          <b>EXPERIENCIA</b>
+        </p>
+        <p class="main__hero__text__p-bar main__hero__text__p-gray">
+          TENEMOS UNA EXCELENTE TRAYECTORIA
+        </p>
+        <p class="main__hero__text__p-bar main__hero__text__p-blue">
+          CON INVERSIONISTAS Y FONDOS DE PENSIONES
+        </p>
+        <p class="main__hero__text__p-bar main__hero__text__p-gray">
+          QUE RESPALDAN A PLANIGRUPO
+        </p>
+      </div>
+
+      <div class="main__hero__databursatil">
+        <div class="main__hero__databursatil__item main__hero__databursatil__item--1">
+          <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/plani_ticker_logo.png" height="110px" />
+        </div>
+        <div class="main__hero__databursatil__item main__hero__databursatil__item--2">
+          <span>PLANI</span>
+          <span class="main__hero__databursatil__item__value">$ <span class="actionIntValue"></span><span
+              class="actionDecimalValue"></span>
+          </span>
+          <span class="main__hero__databursatil__item__text">Valor de la acción</span>
+        </div>
+
+        <div class="main__hero__databursatil__item main__hero__databursatil__item--3">
+          <span>PLANICK</span>
+          <span class="main__hero__databursatil__item__value">$ <span class="cbfisIntValue"></span><span
+              class="cbfisDecimalValue"></span>
+          </span>
+          <span class="main__hero__databursatil__item__text">Valor de la CBFIS</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="main__databursatil__container--mobile">
+      <div class="main__hero__databursatil main__hero__databursatil--mobile">
+        <div class="main__hero__databursatil__item main__hero__databursatil__item--1">
+          <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/plani_ticker_logo.png" height="110px" />
+        </div>
+
+        <div class="main__hero__databursatil__item main__hero__databursatil__item--2">
+          <span>PLANI</span>
+          <span class="main__hero__databursatil__item__value">$ <span class="actionIntValue"></span><span
+              class="actionDecimalValue"></span>
+          </span>
+          <span class="main__hero__databursatil__item__text">Valor de la acción</span>
+        </div>
+
+        <div class="main__hero__databursatil__item main__hero__databursatil__item--3">
+          <span>PLANICK</span>
+          <span class="main__hero__databursatil__item__value">$ <span class="cbfisIntValue"></span><span
+              class="cbfisDecimalValue"></span>
+          </span>
+          <span class="main__hero__databursatil__item__text">Valor de la CBFIS</span>
+        </div>
+
+        <div class="main__hero__databursatil__item main__hero__databursatil__item--4">
+        </div>
+      </div>
+    </section>
+
+
+    <section class="lo_que_hacemos_info" id="nosotros_info">
+
+      <div class="lo_que_hacemos_info--grid">
+        <div class="lo_que_hacemos_info__item--2">
+          <ul>
+            <li id="tab__selector--1" class="tab__selector selected__tab">Visión Conjunto </li>
+            <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/pseudo.svg" alt="">
+            <li id="tab__selector--2" class="tab__selector">Información Financiera</li>
+            <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/pseudo.svg" alt="">
+            <li id="tab__selector--3" class="tab__selector">Gobierno Corporativo </li>
+            <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/pseudo.svg" alt="">
+            <li id="tab__selector--4" class="tab__selector">Comunicados de Prensa</li>
+            <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/pseudo.svg" alt="">
+            <li id="tab__selector--5" class="tab__selector">Cobertura de Analistas</li>
+          </ul>
+
+          <div class="lo-que-hacemos-card-container tabs___card tabs___card--1 active">
+            <div class="lo-que-hacemos-card">
+
+              <div class="lo-que-hacemos-card__text">
+                <span>Información para Inversionistas</span>
+                <p>
+                  En Planigrupo buscamos siempre crear valor para nuestros inversionistas, lográndolo mediante una
+                  cartera de propiedades de la más alta calidad y un incomparable servicio al cliente. Por ello somos
+                  una empresa líder una empresa líder en nuestra industria a nivel nacional y una de las preferidas por
+                  inversionistas a lo largo del país.
+                </p>
+              </div>
+            </div>
+
+            <section class="main__row">
+              <div class="main__row__item">
+                <b>~780,000</b>
+                <p>
+                  M2 DE GLA<br>PROPIAS Y ADMINISTRADA
+                </p>
+              </div>
+              <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/pseudo.svg" alt="">
+              <div class="main__row__item">
+                <b>93.4%</b>
+                <p>
+                  DE OCUPACIÓN<br>(PROPIAS Y ADMINISTRADA)
+                </p>
+              </div>
+              <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/pseudo.svg" alt="">
+              <div class="main__row__item">
+                <b>+2,000</b>
+                <p>
+                  CONTRATOS DE<br>ARRENDAMIENTO
+                </p>
+              </div>
+              <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/pseudo.svg" alt="">
+              <div class="main__row__item">
+                <b>75%</b>
+                <p>
+                  INQUILINOS<br>AAA
+                </p>
+              </div>
+              <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/pseudo.svg" alt="">
+              <div class="main__row__item">
+                <b>+26 MIL</b>
+                <p>
+                  VISITANTES AL 2T2023
+                </p>
+              </div>
+              <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/pseudo.svg" alt="">
+              <div class="main__row__item">
+                <b>70</b>
+                <p>
+                  PROYECTOS TOTALES <br>DESARROLLADOS
+                </p>
+              </div>
+        
+            </section>
+
+            <div class="icon_info__grid">
+              
+              <div class="icon_info__grid__item">
+                <img src="./assets/svgs/shield.svg" alt="">
+                <div class="icon_info__grid__item__text">
+                  <span>EXITOSA TRAYECTORIA COMPROBADA</span>
+                  <p>Con más de 70 proyectos desarrollados desde 1975, Planigrupo se ha distinguido por su exitosa trayectoria en la industria.</p>
+                </div>
+              </div>
+              <div class="icon_info__grid__item">
+                <img src="./assets/svgs/portfolio.svg" alt="">
+                <div class="icon_info__grid__item__text">
+                  <span>Portafolio de Alta Calidad</span>
+                  <p>Invertimos solo en los mejores proyectos, es por eso que nuestro portafolio es reconocido por nuestros inversionistas por su alta calidad.</p>
+                </div>
+              </div>
+              <div class="icon_info__grid__item">
+                <img src="./assets/svgs/portfolio.svg" alt="">
+                <div class="icon_info__grid__item__text">
+                  <span>Gobierno Corporativo de Primer Nivel</span>
+                  <p>Equipo directivo líder en el sector con más de 20 años de experiencia en la industria. El mejor gobierno corporativo con intereses económicos a favor de nuestros inversionistas.</p>
+                </div>
+              </div>
+              <div class="icon_info__grid__item">
+                <img src="./assets/svgs/portfolio.svg" alt="">
+                <div class="icon_info__grid__item__text">
+                  <span>Creando Valor</span>
+                  <p>Nuestros altos estándares de calidad, excelente portafolio y dirección de empresa hacen de Planigrupo la opción perfecta para inversionistas.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="vision_info_tabs">
+              <span>INFORMACIÓN PARA INVERSIONISTAS</span>
+
+              <div class="vision_info_tabs__container">
+                <div class="vision_info_tabs__container__selector tab-selector--container">
+                  
+                  <ul>
+                    <li id="tab-selector-1" class="tab-selector tab-selector--selected">Información financiera</li>
+                    <li id="tab-selector-2" class="tab-selector">Gobierno Corporativo</li>
+                    <li id="tab-selector-3" class="tab-selector">Comunicados de Prensa</li>
+                    <li id="tab-selector-4" class="tab-selector">Cobertura de Analistas</li>
+                  </ul>
+                
+                </div>
+
+                <div class="vision_info_tabs__container__content">
+                  <div>
+                    <div class="vision_info_tabs__container__content__text">
+                      <span>Información financiera</span>
+                      <p>Equipo directivo líder en el sector con más de 20 años de experiencia en la industria. El mejor gobierno corporativo con intereses económicos a favor de nuestros inversionistas.</p>
+                      <a href="">Ver mas</a>
+                    </div>
+                    <div class="vision_info_tabs__container__content__img"></div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+
+
+          <div class="lo-que-hacemos-card-container tabs___card tabs___card--2 inactive">
+            <div class="lo-que-hacemos-card">
+              <div class="lo-que-hacemos-card__img"></div>
+              <div class="lo-que-hacemos-card__text">
+                <p>
+                  El diseño de nuestras propiedades es una de las características que nos distingue, y nos separa del
+                  resto de los participantes en la industria.
+                  <br> <br>
+                  <b>
+                    ·
+                  </b>
+                  Diseño de vanguardia
+                  <b> <br>
+                    ·
+                  </b>
+                  Tomamos en consideración la ubicación de nuestros centros comerciales
+                  <b> <br>
+                    ·
+                  </b>
+                  Queremos que sean vistos como un estándar de diseño dentro de la comunidad
+                </p>
+              </div>
+            </div>
+            <section class="main__row">
+              <div class="main__row__item">
+                <b>+60</b>
+                <p>
+                  Proyectos diseñados que se han construido
+                </p>
+              </div>
+              <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/pseudo.svg" alt="">
+              <div class="main__row__item">
+                <b>+ 200,000</b>
+                <p>
+                  M2 diseñados y ejecutados en los últimos 36 meses
+                </p>
+              </div>
+              <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/pseudo.svg" alt="">
+              <div class="main__row__item">
+                <b>+ 60,000</b>
+                <p>
+                  M2 diseñados para re-desarrollo de proyectos
+                </p>
+              </div>
+            </section>
+          </div>
+
+
+          <div class="lo-que-hacemos-card-container tabs___card tabs___card--3 inactive">
+            <div class="lo-que-hacemos-card">
+              <div class="lo-que-hacemos-card__img"></div>
+              <div class="lo-que-hacemos-card__text">
+                <p>
+                  La construcción es una parte esencial de nuestra empresa. Siempre buscamos utilizar materiales de la
+                  más alta calidad para así poder siempre ofrecer, a clientes e inversionistas por igual, un producto
+                  final incomparable.
+                  <br>
+                  <br>
+                  A la fecha hemos construido más de 30 centros comerciales.
+                </p>
+              </div>
+            </div>
+            <section class="main__row">
+              <div class="main__row__item">
+                <b>1.5 Millones de</b>
+                <p>
+                  M2 construidos
+                </p>
+              </div>
+              <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/pseudo.svg" alt="">
+              <div class="main__row__item">
+                <b>100%</b>
+                <p>
+                  de proyectos entregados a tiempo
+                </p>
+              </div>
+              <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/pseudo.svg" alt="">
+              <div class="main__row__item">
+                <b>+57,000</b>
+                <p>
+                  Empleos directos generados
+                </p>
+              </div>
+            </section>
+          </div>
+
+
+          <div class="lo-que-hacemos-card-container tabs___card tabs___card--4 inactive">
+            <div class="lo-que-hacemos-card">
+              <div class="lo-que-hacemos-card__img"></div>
+              <div class="lo-que-hacemos-card__text">
+                <p>
+                  La comercialización es otra de las áreas en las que nos enfocamos. Dependiendo de cada desarrollo, e
+                  incluso antes de empezar el diseño y la construcción de los mismos, buscamos a los mejores
+                  arrendatarios para la zona.
+                  <br>
+                  <br>
+                  <b>·</b>Entre nuestros principales arrendatarios se encuentran tiendas ancla como <b>Walmart, Petco,
+                    Cinemex, HEB y Cinépolis.</b><br>
+                  <b>·</b>Ofrecemos una amplia variedad de tiendas y servicios en cada uno de nuestros centros
+                  comerciales.
+
+                </p>
+              </div>
+            </div>
+            <section class="main__row">
+              <div class="main__row__item">
+                <b>91.9%</b>
+                <p>
+                  De OCUPACIÓN
+                </p>
+              </div>
+              <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/pseudo.svg" alt="">
+              <div class="main__row__item">
+                <b>1200</b>
+                <p>
+                  clientes actuales
+                </p>
+              </div>
+              <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/pseudo.svg" alt="">
+              <div class="main__row__item">
+                <b>75%</b>
+                <p>
+                  inquilinos aaa
+                </p>
+              </div>
+            </section>
+          </div>
+
+
+          <div class="lo-que-hacemos-card-container tabs___card tabs___card--5 inactive">
+            <div class="lo-que-hacemos-card">
+              <div class="lo-que-hacemos-card__img"></div>
+              <div class="lo-que-hacemos-card__text">
+                <p>
+
+                  Mediante la administración de inmuebles, nos comprometemos al buen manejo y mantenimiento de nuestros
+                  centros comerciales durante la vida útil de los mismos.
+                  <br>
+                  <br>
+                  <b>·</b>Contamos con un equipo especializado<br>
+                  <b>·</b>Administramos nuestros propios inmuebles
+
+                </p>
+              </div>
+            </div>
+            <section class="main__row">
+              <div class="main__row__item">
+                <b>814,000</b>
+                <p>
+                  M2 de GLA
+                </p>
+              </div>
+              <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/pseudo.svg" alt="">
+              <div class="main__row__item">
+                <b>+2,100</b>
+                <p>
+                  locales totales
+                </p>
+              </div>
+              <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/pseudo.svg" alt="">
+              <div class="main__row__item">
+                <b>+129 millones</b>
+                <p>
+                  de visitantes al año
+                </p>
+              </div>
+            </section>
+          </div>
+
+
+
+
+        </div>
+    </section>
+
+    
+
+    <section class="lo_que_hacemos_info--responsive" id="nosotros_info">
+
+      <div>
+        <p>Somos expertos en el desarrollo, el diseño, la construcción, la comercialización y la administración de
+          centros comerciales. Contamos con equipos de especialistas en cada área que se aseguran de que siempre
+          mantengamos los más altos estándares de calidad en cada materia.</p>
+      </div>
+
+      <div>
+
+        <ul class="loque__ul--responsive">
+          <li id="tab__selector--1" class="tab__selector selected__tab">Desarrollo</li>
+          <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/pseudo.svg" alt="">
+          <li id="tab__selector--2" class="tab__selector">Diseño</li>
+          <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/pseudo.svg" alt="">
+          <li id="tab__selector--3" class="tab__selector">Construcción</li>
+          <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/pseudo.svg" alt="">
+          <li id="tab__selector--4" class="tab__selector">Comercialización</li>
+          <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/pseudo.svg" alt="">
+          <li id="tab__selector--5" class="tab__selector">Administración de propiedades</li>
+        </ul>
+      </div>
+
+      <div class="loque__card--responsive tabs___card tabs___card--1">
+        <p>
+          En los últimos 48 años hemos desarrollado más de 70 centros comerciales, sin embargo, nuestro crecimiento ha
+          sido exponencial. Tan solo en los últimos 5 años hemos desarrollado o adquirido 23 centros comerciales.
+          · Presencia en 18 estados de México.
+          · Centros comerciales estratégicamente ubicados en la zona norte, centro y sur del país.
+          · Portafolio de 780,000 (GLA) metros cuadrados de propiedades.
+        </p>
+
+        <hr>
+        <div class="loque__list--responsive">
+          <div>
+            <span>2 millones</span>
+            <p>M2 de GLA totales <br>desarrollados</p>
+          </div>
+        </div>
+
+        <div class="loque__list--responsive">
+          <div>
+            <span>70</span>
+            <p>Proyectos</p>
+          </div>
+        </div>
+
+        <div class="loque__list--responsive">
+          <div>
+            <span>$17,706 millones</span>
+            <p>Invertidos</p>
+          </div>
+        </div>
+
+        <div class="loque__bg-img--reponsive"></div>
+      </div>
+
+
+      <div class="loque__card--responsive tabs___card tabs___card--2 inactive">
+        <p>
+          El diseño de nuestras propiedades es una de las características que nos distingue, y nos separa del resto de
+          los participantes en la industria.
+          <br> <br>
+          <b>
+            ·
+          </b>
+          Diseño de vanguardia
+          <b> <br>
+            ·
+          </b>
+          Tomamos en consideración la ubicación de nuestros centros comerciales
+          <b> <br>
+            ·
+          </b>
+          Queremos que sean vistos como un estándar de diseño dentro de la comunidad
+        </p>
+        <hr>
+        <div class="loque__list--responsive">
+          <div>
+            <span>+60</span>
+            <p>PROYECTOS DISEÑADOS QUE SE HAN CONSTRUIDO
+              <br>desarrollados
+            </p>
+          </div>
+        </div>
+
+        <div class="loque__list--responsive">
+          <div>
+            <span>+ 200,000</span>
+            <p>M2 DISEÑADOS Y EJECUTADOS EN LOS ÚLTIMOS 36 MESES
+            </p>
+          </div>
+        </div>
+
+        <div class="loque__list--responsive">
+          <div>
+            <span>+ 60,000
+            </span>
+            <p>M2 DISEÑADOS PARA RE-DESARROLLO DE PROYECTOS</p>
+          </div>
+        </div>
+
+        <div class="loque__bg-img--reponsive"></div>
+      </div>
+
+
+      <div class="loque__card--responsive tabs___card tabs___card--3 inactive">
+        <p>
+          La construcción es una parte esencial de nuestra empresa. Siempre buscamos utilizar materiales de la más alta
+          calidad para así poder siempre ofrecer, a clientes e inversionistas por igual, un producto final incomparable.
+          <br>
+          <br>
+          A la fecha hemos construido más de 30 centros comerciales.
+        </p>
+        <hr>
+        <div class="loque__list--responsive">
+          <div>
+            <span>1.5 Millones de</span>
+            <p>M2 construidos</p>
+          </div>
+        </div>
+
+        <div class="loque__list--responsive">
+          <div>
+            <span>100%</span>
+            <p>de proyectos entregados a tiempo</p>
+          </div>
+        </div>
+
+        <div class="loque__list--responsive">
+          <div>
+            <span>+57,000</span>
+            <p>Empleos directos generados</p>
+          </div>
+        </div>
+
+        <div class="loque__bg-img--reponsive"></div>
+      </div>
+
+
+      <div class="loque__card--responsive tabs___card tabs___card--4 inactive">
+        <p>
+          La comercialización es otra de las áreas en las que nos enfocamos. Dependiendo de cada desarrollo, e incluso
+          antes de empezar el diseño y la construcción de los mismos, buscamos a los mejores arrendatarios para la zona.
+          <br>
+          <br>
+          <b>·</b>Entre nuestros principales arrendatarios se encuentran tiendas ancla como <b>Walmart, Petco, Cinemex,
+            HEB y Cinépolis.</b><br>
+          <b>·</b>Ofrecemos una amplia variedad de tiendas y servicios en cada uno de nuestros centros comerciales.
+
+        </p>
+
+        <hr>
+        <div class="loque__list--responsive">
+          <div>
+            <span>91.9%</span>
+            <p>DE OCUPACIÓN</p>
+          </div>
+        </div>
+
+        <div class="loque__list--responsive">
+          <div>
+            <span>+1,200</span>
+            <p>clientes actuales</p>
+          </div>
+        </div>
+
+        <div class="loque__list--responsive">
+          <div>
+            <span>75%</span>
+            <p>inquilinos aaa</p>
+          </div>
+        </div>
+
+        <div class="loque__bg-img--reponsive"></div>
+      </div>
+
+
+      <div class="loque__card--responsive tabs___card tabs___card--5 inactive">
+        <p>
+          Mediante la administración de inmuebles, nos comprometemos al buen manejo y mantenimiento de nuestros centros
+          comerciales durante la vida útil de los mismos.
+          <br>
+          <br>
+          <b>·</b>Contamos con un equipo especializado<br>
+          <b>·</b>Administramos nuestros propios inmuebles
+        </p>
+        <hr>
+        <div class="loque__list--responsive">
+          <div>
+            <span>814,000</span>
+            <p>M2 de GLA<br>desarrollados</p>
+          </div>
+        </div>
+
+        <div class="loque__list--responsive">
+          <div>
+            <span>+2,100</span>
+            <p>locales totales</p>
+          </div>
+        </div>
+
+        <div class="loque__list--responsive">
+          <div>
+            <span>+129 millones</span>
+            <p>
+              de visitantes al año
+            </p>
+          </div>
+        </div>
+
+        <div class="loque__bg-img--reponsive"></div>
+      </div>
+
+      <section class="main__tabs">
+        <section class="qoute">
+          <hr />
+          <div>
+            <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/quote-left-solid.svg" height="30px" />
+            <p>
+              Nos enfocamos en desarrollar, diseñar y construir centros
+              comerciales con la más alta calidad para que nuestros
+              inversionistas se sientan seguros, y nuestros visitantes se
+              sientan como en casa.
+            </p>
+          </div>
+          <hr />
+        </section>
+        <div>
+          <ul>
+            <li class="tab__selector selected__tab" id="tab__selector--1">
+              INVERSIONISTAS
+            </li>
+            <li class="tab__selector" id="tab__selector--2">
+              COMERCIALIZACIÓN
+            </li>
+            <li class="tab__selector" id="tab__selector--3">
+              BOLSA DE TRABAJO
+            </li>
+            <li class="tab__selector" id="tab__selector--4">IMPACTO SOCIAL</li>
+          </ul>
+        </div>
+
+        <div class="tabs__card tabs__card--1 active">
+          <div class="tab__card__text">
+            <span>CONOCE PLANIGRUPO</span>
+            <p>
+              Nuestra misión es crear valor para inversionistas, comunidades,
+              empleados y clientes de nuestros centros comerciales mediante una
+              oferta incomparable de propiedades de la más alta calidad,
+              rentables y exitosas.
+            </p>
+            <button>VER más</button>
+          </div>
+          <div class="tab__card__img tab__card__img--tab1"></div>
+        </div>
+
+        <div class="tabs__card tabs__card--2 inactive">
+          <div class="tab__card__text">
+            <span>CONVIÉRTETE EN NUESTRO SOCIO COMERCIAL</span>
+            <p>
+              Contamos con 36 propiedades en 18 estados de México, entre las
+              cuales se encuentra el espacio que estás buscando para tu negocio.
+              Déjanos sorprenderte con nuestra invaluable oferta que incluye la
+              presencia de prestigiosas marcas y propiedades premium a lo largo
+              del país con excelente atención al cliente.
+            </p>
+            <button>VER más</button>
+          </div>
+          <div class="tab__card__img tab__card__img--tab2"></div>
+        </div>
+
+        <div class="tabs__card tabs__card--3 inactive">
+          <div class="tab__card__text">
+            <span>ÚNETE AL EQUIPO</span>
+            <p>
+              Sé parte de un equipo que busca siempre ir a la vanguardia en la
+              industria. Buscamos a profesionistas que compartan nuestros
+              valores y nuestra pasión por satisfacer a nuestros inversionistas
+              y clientes. ¿Eres uno de ellos? Conoce más aquí.
+            </p>
+            <button>VER más</button>
+          </div>
+          <div class="tab__card__img tab__card__img--tab3"></div>
+        </div>
+
+        <div class="tabs__card tabs__card--4 inactive">
+          <div class="tab__card__text">
+            <span>IMPACTO SOCIAL</span>
+            <p>
+              Planigrupo está comprometido con las familias y los niños de
+              nuestra comunidad. Hacemos esfuerzos para asegurar su bienestar
+              mediante la creación de programas laborales, educativos y
+              ambientales.
+            </p>
+            <button>VER más</button>
+          </div>
+          <div class="tab__card__img tab__card__img--tab4"></div>
+        </div>
+      </section>
+
+  </main>
+
+  <footer class="footer">
+    <span>
+      SIGUENOS EN <br />
+      NUESTRAS REDES
+    </span>
+
+    <div>
+      <a href=".">Nosotros</a>
+      <a href=".">Comercialización</a>
+      <a href=".">Noticias</a>
+      <a href=".">Contacto</a>
+      <a href=".">Inversionistas</a>
+      <a href=".">Asg</a>
+      <a href=".">Portafolio</a>
+      <a href=".">Ofertas de Empleo</a>
+    </div>
+    <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/bolsamexicana-grey.png.png"
+      class="footer__img" />
+  </footer>
+</body>
+
+</html>
