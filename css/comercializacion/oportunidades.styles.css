@@ -1,0 +1,74 @@
+.main__hero__text {
+    padding-top: 150px;
+}
+
+.main__oportunities__text {
+    width: 70%;
+    margin: 100px auto;
+    background-color: #FFF;
+}
+.main__oportunities__text > span {
+    color: #0096A9;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19.8px; /* 110% */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.main__oportunities__text > p {
+    color: #727272;
+    text-align: justify;
+    font-family: Raleway;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 1px;
+}
+
+.control-container {
+    width: 90%;
+    margin: 0 auto;
+}
+.e-carousel-navigators {
+    top: 270px !important;
+}
+.e-next {
+    margin-left: 20px !important;
+}
+
+.main__hero {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/1429249ff1bfbf8778201bcc4844e449.jfif');
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+.properties-carousel__item {
+    height: 350px;
+    display: flex;
+    width: 98%;
+    background-color: #FFF;
+    flex-direction: column;
+}
+
+.properties-carousel__item__img {
+    height: 100%;
+}
+
+.properties-carousel__item__text {
+    height: 100px;
+    position: absolute;
+    background-color: #0096A9;
+    bottom: 0;
+    width: 98%;
+}
+
+
+.properties-carousel__item__text__desc {
+    display: none;
+}

@@ -1,3 +1,5 @@
+import slides from '../../data/index.plan-info.slider.json' assert {type: 'json'};
+
 class InfoSlider {
 	#data;
 	#interval
@@ -12,7 +14,6 @@ class InfoSlider {
 		let currentText = 1;
 
 		setInterval(() => {
-
 
 			if (currentText == 4) currentText = 0;
 
@@ -64,12 +65,7 @@ class InfoSlider {
 
 const infoSlider = new InfoSlider(
 	{
-		data: [
-			['PLANIGRUPO: CREANDO VALOR', 'SOMOS UNA EMPRESA MEXICANA LÍDER EN EL DESARROLLO, DISEÑO, CONSTRUCCIÓN, COMERCIALIZACIÓN Y ADMINISTRACIÓN DE CENTROS COMERCIALES A NIVEL NACIONAL.'],
-			['ENFOQUE', 'Nuestro enfoque principal es crear valor para nuestros inversionistas, socios, clientes y usuarios mediante una cartera de propiedades que les ofrezca una oferta invaluable con los más altos estándares de calidad.'],
-			['EXPERIENCIA', 'Contamos con más de 47 años de experiencia cambiando la manera de ver, diseñar y desarrollar centros comerciales.'],
-			['Planigrupo En Números', 'Con más de 1,200 inquilinos distribuidos en aproximadamente 814,000 m2 de área rentable (GLA) en sus centros comerciales administrados, Planigrupo en el 2021 recibió más de 99.1 millones de visitantes.']
-		],
+		data: slides.slides,
 		interval: 5000
 	}
 );

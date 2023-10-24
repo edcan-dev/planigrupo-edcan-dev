@@ -1,0 +1,263 @@
+{
+  "properties":
+  [
+    {
+      "propertyTitle": "Cancun Gran Plaza",
+      "propertyLocation": "CANCUN, QUINTANA ROO",
+      "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/Cncnfoto.png",
+      "propertyState":"Quintana Roo",
+      "propertyTenants": [
+        {
+          "tenantName": "",
+          "tenantIconUrl": ""
+        }
+      ]
+    },
+    {
+      "propertyTitle": "Centro Comercial Lopez Mateos",
+      "propertyLocation": "Cd. Juarez, Chihuahua",
+      "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-centro-comercial-lopez-mateos.jpg",
+      "propertyState":"Chihuahua",
+      "propertyTenants": []
+    },
+    {
+      "propertyTitle": "Ciudadela UV",
+      "propertyLocation": "Zapopan, Jalisco",
+      "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/Ciudadela-Urban-Village.jpg",
+      "propertyState":"Jalisco",
+      "propertyTenants": []
+    },
+    {
+      "propertyTitle": "EL PASEO SANTA CATARINA",
+      "propertyLocation": "Santa Catarina, Nuevo León",
+      "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-el-paseo-santa-catarina.jpg",
+      "propertyState": "Nuevo Leon",
+      "propertyTenants": []
+  },
+  {
+      "propertyTitle": "LA NOGALERA",
+      "propertyLocation": "Saltillo, Coahuila",
+      "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/La-Nogalera.jpeg",
+      "propertyState": "Coahuila",
+      "propertyTenants": []
+  },
+  {
+      "propertyTitle": "LAGO REAL CENTRO COMERCIAL",
+      "propertyLocation": "Bahia de Banderas, Nayarit",
+      "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-lago-real-centro-comercial.jpg",
+      "propertyState": "Nayarit",
+      "propertyTenants": []
+  },
+  {
+      "propertyTitle": "MACROPLAZA DEL VALLE",
+      "propertyLocation": "Mexicali, Baja California",
+      "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-macroplaza-del-valle2.jpg",
+      "propertyState": "Baja California",
+      "propertyTenants": []
+  },
+  {
+      "propertyTitle": "MACROPLAZA ESTADIO",
+      "propertyLocation": "Morelia, Michoacan",
+      "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-macroplaza-estadio.jpg",
+      "propertyState": "Michoacan",
+      "propertyTenants": []
+  },
+  {
+      "propertyTitle": "MACROPLAZA INSURGENTES",
+      "propertyLocation": "Tijuana, Baja California Norte",
+      "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-macroplaza-insurgentes.jpg",
+      "propertyState": "Baja California",
+      "propertyTenants": []
+  },
+  {
+      "propertyTitle": "MACROPLAZA OAXACA",
+      "propertyLocation": "Santa Lucia del Camino, Oaxaca",
+      "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-macroplaza-oaxaca.jpg",
+      "propertyState": "Oaxaca",
+      "propertyTenants": []
+  },
+  {
+      "propertyTitle": "MACROPLAZA SAN LUIS",
+      "propertyLocation": "San Luis, San Luis Potosí",
+      "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-macroplaza-san-luis.jpg",
+      "propertyState": "San Luis Potosi",
+      "propertyTenants": []
+  },
+  {
+      "propertyTitle": "MALL PLAZA LINCON",
+      "propertyLocation": "Monterrey, Nuevo León",
+      "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-mall-plaza-lincoln.jpg",
+      "propertyState": "Nuevo Leon",
+      "propertyTenants": []
+  },
+  {
+      "propertyTitle": "PALMIRA PLAZA COMERCIAL",
+      "propertyLocation": "Cd. Del Carmen, Campeche",
+      "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/Pamira3.png",
+      "propertyState": "Campeche",
+      "propertyTenants": []
+  },
+  {
+      "propertyTitle": "PASEO ALCALDE",
+      "propertyLocation": "Guadalajara, Jalisco",
+      "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-paseo-alcalde.jpg",
+      "propertyState": "Jalisco",
+      "propertyTenants": []
+  },
+  {
+      "propertyTitle": "PASEO HIPODRóMO",
+      "propertyLocation": "Naucalpan, Estado de México",
+      "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/Hipodromo-V1.png",
+      "propertyState": "Mexico",
+      "propertyTenants": []
+  },
+  {
+      "propertyTitle": "PASEO PUEBLA",
+      "propertyLocation": "Municipio de San Andrés Cholula",
+      "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-paseo-puebla.jpg",
+      "propertyState": "Puebla",
+      "propertyTenants": []
+  },
+  {
+      "propertyTitle": "PASEO REFORMA",
+      "propertyLocation": "Nuevo Laredo, Tamaulipas",
+      "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-paseo-reforma.jpg",
+      "propertyState": "Tamaulipas",
+      "propertyTenants": []
+  },
+  {
+      "propertyTitle": "PASEO SAN JUAN",
+      "propertyLocation": "San Juan del Río, Querétaro",
+      "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-paseo-san-juan.jpg",
+      "propertyState": "Queretaro",
+      "propertyTenants": []
+  },
+  {
+      "propertyTitle": "PASEO SOLIDARIDAD",
+      "propertyLocation": "Hermosillo, Sonora",
+      "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-paseo-solidaridad.jpg",
+      "propertyState": "Sonora",
+      "propertyTenants": []
+  },
+  {
+      "propertyTitle": "PLAZA BELLA ANáHUAC",
+      "propertyLocation": "Escobedo, Nuevo León",
+      "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-plaza-bella-anahuac.jpg",
+      "propertyState": "Nuevo Leon",
+      "propertyTenants": []
+  },
+  {
+      "propertyTitle": "PLAZA BELLA FRONTERA",
+      "propertyLocation": "Cd. Frontera,Coahuila",
+      "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-plaza-bella-frontera-1.jpg",
+      "propertyState": "Coahuila",
+      "propertyTenants": []
+  },
+  {
+      "propertyTitle": "PLAZA BELLA HUINALA",
+      "propertyLocation": "Apodaca, Nuevo León",
+      "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-plaza-bella-huinala.jpg",
+      "propertyState": "Nuevo Leon",
+      "propertyTenants": []
+  },
+  {
+      "propertyTitle": "PLAZA BELLA MEXIQUENSE",
+      "propertyLocation": "Tecámac, Estado de México",
+      "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-plaza-bella-mexiquense.jpg",
+      "propertyState": "Mexico",
+      "propertyTenants": []
+  },
+  {
+      "propertyTitle": "PLAZA BELLA RAMOS ARIZPE",
+      "propertyLocation": "Ramos Arizpe, Coahuila",
+      "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-plaza-bella-ramos-arizpe.jpg",
+      "propertyState": "Coahuila",
+      "propertyTenants": []
+  },
+  {
+      "propertyTitle": "PLAZA MONUMENTAL",
+      "propertyLocation": "Cd. Juarez, Chihuahua",
+      "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-plaza-monumental.jpg",
+      "propertyState": "Chihuahua",
+      "propertyTenants": []
+  },
+  {
+      "propertyTitle": "PLAZA REAL REYNOSA",
+      "propertyLocation": "Reynosa, Tamaulipas",
+      "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-plaza-real-reynosa.jpg",
+      "propertyState": "Tamaulipas",
+      "propertyTenants": []
+  },
+  {
+      "propertyTitle": "PLAZA REAL SALTILLO",
+      "propertyLocation": "Saltillo, Coauhuila",
+      "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-plaza-real-saltillo.jpg",
+      "propertyState": "Coahuila",
+      "propertyTenants": []
+  },
+  {
+      "propertyTitle": "PLAZA UNIVERSIDAD",
+      "propertyLocation": "Mineral Reforma, Hidalgo",
+      "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/IMG_0533-scaled.jpg",
+      "propertyState": "Hidalgo",
+      "propertyTenants": []
+  },
+  {
+      "propertyTitle": "PUERTA DE HIERRO",
+      "propertyLocation": "Pachuca, Hidalgo",
+      "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/IMG_0589-scaled.jpg",
+      "propertyState": "Hidalgo",
+      "propertyTenants": []
+  },
+  {
+      "propertyTitle": "PUNTO ORIENTE",
+      "propertyLocation": "Guadalajara, Jalisco",
+      "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-punto-oriente.jpg",
+      "propertyState": "Jalisco",
+      "propertyTenants": []
+  },
+  {
+      "propertyTitle": "PUNTO SAN ISIDRO",
+      "propertyLocation": "Zapopan, Jalisco",
+      "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-punto-san-isidro.jpg",
+      "propertyState": "Jalisco",
+      "propertyTenants": []
+  },
+  {
+      "propertyTitle": "REYNOSA II",
+      "propertyLocation": "Reynosa, Tamaulipas",
+      "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-reynosa-two.jpg",
+      "propertyState": "Tamaulipas",
+      "propertyTenants": []
+  },
+  {
+      "propertyTitle": "SUPER PLAZA LAS HACIENDAS",
+      "propertyLocation": "Cuautitlan Izcalli, Edo. Mex",
+      "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-super-plaza-las-haciendas.jpg",
+      "propertyState": "Mexico",
+      "propertyTenants": []
+  },
+  {
+      "propertyTitle": "Urban Village Garza Sada",
+      "propertyLocation": "Monterrey, Nuevo Leon",
+      "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/WEB.png",
+      "propertyState": "Nuevo Leon",
+      "propertyTenants": []
+  },
+  {
+      "propertyTitle": "Walmart Ensenada",
+      "propertyLocation": "Ensenada, Baja California",
+      "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-walmart-ensenada.jpg",
+      "propertyState": "Baja California",
+      "propertyTenants": []
+  },
+  {
+      "propertyTitle": "Walmart San Jose del Cabo",
+      "propertyLocation": "San Jose del, Baja California Sur",
+      "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-walmart-san-jose-del-cabo.jpg",
+      "propertyState": "Baja California Sur",
+      "propertyTenants": []
+  }
+    
+  ]
+}

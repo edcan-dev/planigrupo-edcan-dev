@@ -1,3 +1,467 @@
 #container {
     margin: 100px;
 }
+
+
+.contacto__form {
+    background-color: #FFF;
+    padding: 40px 0;
+}
+.contacto__form__card {
+    margin:  0 auto;
+    max-width: 950px;
+    background-color: #FFF;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,1);
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,1);
+}
+
+.contacto__form__card__text {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contacto__form__card__text > p {
+    font-family: 'Raleway';
+    font-size: 14px !important;
+
+    margin-top: 20px;
+    width: 50%;
+}
+.contacto__form__card__text > span {
+    font-family: 'Raleway';
+    font-size: 18px !important;
+    font-weight: 900;
+    color: #0096A9;
+    width: 100%;
+}
+.contacto__form__card__text > p > b {
+    font-family: 'Raleway';
+    color: #0096A9;
+    font-weight: bolder;
+}
+.contacto__form__card__form {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+}
+
+.contacto__form__card__form__container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-right: 40px ;
+}
+.contacto__form__card__form__container > label {
+    font-family: 'Barlow';
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase; 
+    font-weight: 700;  
+    color: #0096A9;
+    margin-bottom: 5px;
+}
+.contacto__form__card__form__container > input {
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ababab;
+    padding: 0px 5px;
+}
+.contacto__form__card__form__container > textarea {
+    height: 80px;
+    resize: none;
+    padding: 5px 5px;
+}
+
+.contacto__form__card__form__container--mensaje {
+    width: 100%;
+}
+.contacto__form__card__form__container--area {
+    width: 100%;
+}
+
+.contacto__form__card__form__container--area__radio-container {
+    display: flex;
+}
+.contacto__form__card__form__container--area__radio-container > label {
+    font-family: 'Raleway';
+    font-size: 14px !important;
+    margin-right: 15px;
+    margin-left: 5px;
+}
+
+.contacto__form__card__form--submit > input {
+    padding: 5px 10px;
+    font-family: 'Raleway';
+    font-size: 14px !important;
+
+}
+
+.footer__contacto {
+    margin:  0px;
+
+}
+
+
+
+.contacto__form__card__form--portfolio {
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 150px;
+    justify-content: space-between;
+}
+
+.contacto__form__card__form--portfolio--email {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-right: 40px;
+}
+.contacto__form__card__form--portfolio--personalidad {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-right: 40px;
+}
+.contacto__form__card__form--portfolio--comentarios {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-right: 40px;
+}
+
+.contacto__form__card__form--portfolio--email > label {
+    font-family: 'Barlow';
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase; 
+    font-weight: 700;  
+    color: #0096A9;
+    margin-bottom: 5px;
+}
+.contacto__form__card__form--portfolio--personalidad > label {
+    font-family: 'Barlow';
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase; 
+    font-weight: 700;  
+    color: #0096A9;
+    margin-bottom: 5px;
+}
+.contacto__form__card__form--portfolio--comentarios > label {
+    font-family: 'Barlow';
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase; 
+    font-weight: 700;  
+    color: #0096A9;
+    margin-bottom: 5px;
+}
+.contacto__form__card__form--portfolio--email > input {
+    box-sizing: border-box;
+    margin: 0;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ababab;
+    padding: 0px 5px;
+}
+.contacto__form__card__form--portfolio--personalidad > select {
+    box-sizing: border-box;
+    margin: 0;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ababab;
+    padding: 0px 5px;
+
+    padding: 5px 10px;
+    font-family: 'Raleway';
+    font-size: 14px !important;
+}
+.contacto__form__card__form--portfolio--comentarios > input {
+    box-sizing: border-box;
+    margin: 0;
+    height: 120px;
+    border-radius: 5px;
+    border: 1px solid #ababab;
+    padding: 0px 5px;
+}
+
+.contacto__form__card__form--portfolio--propiedad {
+    align-content: space-between;
+    width: 100%;
+}
+
+.contacto__form__card__form--submit {
+    align-items: end;
+    justify-content: end;
+    padding-right: 40px;
+}
+.contacto__form__card__form--submit {
+    align-items: end;
+    justify-content: end;
+    padding-right: 40px;
+}
+.contacto__form__card__form--submit > input {
+    height: 40px;
+}
+
+.featured_properties {
+    max-width: 950px;
+    margin: 40px auto;
+
+}
+
+.featured_properties__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 40px auto;
+    column-gap: 25px;
+    row-gap: 25px;
+}
+.featured_properties__grid__item {
+    background-color: #ababab;
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.featured_properties__grid__item__text {
+    background-color: #0096A9;
+    padding-left: 20px;
+    padding-top: 5px;
+    border-radius: 5px;
+    height: 60px;
+}
+.featured_properties__grid__item__text > span {
+    color: #FFF;
+    font-family: Barlow;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.featured_properties__grid__item__text > p {
+    color: #FFF;
+    font-family: Fredoka;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.featured_properties__title > span {
+    color: #0096A9;
+    text-align: justify;
+    font-family: Barlow;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.featured_properties__text > p {
+    color: #000;
+    text-align: justify;
+    font-family: Raleway;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+
+.featured_properties__responsive-combo {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.featured_properties__responsive-combo > span {
+    color: #0096A9;
+    text-align: justify;
+    font-family: Barlow;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.featured_properties__responsive-combo > div {
+    width: 48%;
+    display: flex;
+    height: 80px;
+
+}
+.featured_properties__responsive-combo > div > select {
+    width: 100%;
+
+    box-sizing: border-box;
+    margin: 0;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ababab;
+    padding: 0px 5px;
+
+    padding: 5px 10px;
+    font-family: 'Raleway';
+    font-size: 14px !important;
+}
+
+
+@media ( max-width: 450px) {
+
+    #container {
+        display: none;
+    }
+    .featured_properties {
+        margin-top: 100px;
+        padding: 40px 0px;
+        margin-bottom: 0px;
+    }
+
+    .featured_properties__title {
+        display: flex;
+        width: 300px;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .featured_properties__text {
+        display: flex;
+        width: 300px;
+        margin: 0 auto ;
+        margin-bottom: 20px;
+    }
+
+    .featured_properties__grid {
+
+        grid-template-columns: 1fr;
+        width: 300px;
+        margin-top: 30px;
+    }
+
+    .footer--equipo {
+        margin-top: 0pc !important;
+    }
+    .contacto__form {
+        padding: 0px ;
+    }
+
+    .featured_properties__responsive-combo {
+        display: flex;
+        flex-wrap: wrap;
+        width: 300px;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+    .featured_properties__responsive-combo > span {
+        color: #0096A9;
+        text-align: justify;
+        font-family: Barlow;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 25px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .featured_properties__responsive-combo > div {
+        width: 48%;
+        display: flex;
+        height: 80px;
+
+    }
+    .featured_properties__responsive-combo > div > select {
+        width: 100%;
+
+        box-sizing: border-box;
+        margin: 0;
+        height: 40px;
+        border-radius: 5px;
+        border: 1px solid #ababab;
+        padding: 0px 5px;
+    
+        padding: 5px 10px;
+        font-family: 'Raleway';
+        font-size: 14px !important;
+    }
+
+    .contacto__form__card__text > p {
+        width: 100%;
+    }
+}
+
+
+.portfolio__title {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.portfolio__title > div > span {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: #0096A9;
+    text-align: justify;
+    font-family: Barlow;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.portfolio__title > div > p {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: #000;
+    text-align: justify;
+    font-family: Raleway;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+#container {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}

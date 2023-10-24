@@ -1,53 +1,174 @@
 import { key } from './registration.js'
+import { propertiesGrid } from './properties-grid.js'
 
-import { mexico_map } from './mexico-datasource.js'
+/* import { mexico_map } from './mexico-datasource.js' */
+import { mexico_map } from './mexico_geogson.js'
 
 ej.base.registerLicense(key)
- 
- var map = new ej.maps.Maps({
-    /* titleSettings: {
-        text: 'Poc Planigrupo',
-    }, */
-    selectionSettings: {
+
+
+const states = [
+  "Baja California",
+  "Baja California Sur",
+  "Campeche",
+  "Chihuahua",
+  "Coahuila",
+  "Hidalgo",
+  "Jalisco",
+  "México",
+  "Michoacán",
+  "Nayarit",
+  "Nuevo León",
+  "Oaxaca",
+  "Puebla",
+  "Sonora",
+  "San Luis Potosí",
+  "Tamaulipas",
+  "Quintana Roo",
+  "San Luis Potosí",
+  "Querétaro"
+]
+
+const filtered = {...mexico_map}
+
+filtered.features = 
+mexico_map.features.filter(
+  (state) => states.includes(state.properties.name))
+
+var map = new ej.maps.Maps({
+  shapeSelected: function(args) {
+    var shape = (args.shapeData).name;
+    propertiesGrid.filterByStateFromMap(shape)
+  },
+  layers: [
+    {
+      shapeData: filtered,
+      dataSource: [
+        { "State": "Baja California", "Membership": "Permanent" },
+        { "State": "Baja California Sur", "Membership": "Permanent" },
+        { "State": "Campeche", "Membership": "Permanent" },
+        { "State": "Chihuahua", "Membership": "Permanent" },
+        { "State": "Coahuila", "Membership": "Permanent" },
+        { "State": "Hidalgo", "Membership": "Permanent" },
+        { "State": "Jalisco", "Membership": "Permanent" },
+        { "State": "México", "Membership": "Permanent" },
+        { "State": "Michoacán", "Membership": "Permanent" },
+        { "State": "México", "Membership": "Permanent" },
+        { "State": "Nayarit", "Membership": "Permanent" },
+        { "State": "Nuevo León", "Membership": "Permanent" },
+        { "State": "Oaxaca", "Membership": "Permanent" },
+        { "State": "Puebla", "Membership": "Permanent" },
+        { "State": "Sonora", "Membership": "Permanent" },
+        { "State": "San Luis Potosí", "Membership": "Permanent" },
+        { "State": "Tamaulipas", "Membership": "Permanent" },
+        { "State": "Quintana Roo", "Membership": "Permanent" },
+        { "State": "San Luis Potosí", "Membership": "Permanent" },
+        { "State": "Querétaro", "Membership": "Permanent" },
+      ],
+      shapePropertyPath: "name",
+      shapeDataPath: 'State',
+      highlightSettings: {
         enable: true,
-        fill: 'blue',
-        border: { color: 'white', width: 16}
-     },
-    zoomSettings:{
-        enable:false,
-        zoomFactor:1
-    },
-    centerPosition: {
-        latitude: 24.54244147012483,
-        longitude: -100.62646484375
-    },
-   layers: [{
+        fill: '#007689',
+        border: { color: 'white', width: 2 }
+      },
+      selectionSettings: {
+        enable: true,
+        fill: '#8C827A',
+        border: { color: 'white', width: 1 }
+
+      },
+      tooltipSettings: {
+        visible: true,
+        valuePath: 'name'
+      },
+      shapeSettings: {
+        fill: '#fff',
+
+        colorValuePath: 'Membership',
+        colorMapping: [
+          {
+            value: 'Permanent', color: '#0096A9'
+          },
+          {
+            value: 'Non-Permanent', color: '#316DB5'
+          }],
+
+        // Border de cada forma
+        border: {
+          color: '#DDD',
+          width: 1
+        }
+
+      }
+    }
+  ]
+});
+map.appendTo('#element');
+
+
+
+// #0096A9
+
+/* 
+zoomSettings:{
+    enable:false,
+    zoomFactor:1
+}, *//* 
+centerPosition: {
+    latitude: 24.54244147012483,
+    longitude: -100.62646484375
+}, */
+/* layers: [
+    {
         shapeData: mexico_map,
+        shapeDataPath: 'sta_name',
+        shapePropertyPath: 'sta_name',
         dataSource: [
-            {  "Country": "Mexico", "Mexico": "true"}
-        ],
-        shapePropertyPath: 'name',
-        shapeDataPath: 'Country',
-        highlightSettings: {
-            enable: true,
-            fill: '#0096A9',
-         },
-        shapeSettings: {
-            colorValuePath: 'Mexico',
-            colorMapping: [
             {
-                value: 'true', color: '#0096A9'
+                "State": "['Morelos']",
+                'color': '#007689',
+                data: { "sta_name": "Morelos",
+                'color': '#007689'}
             },
-            {
-                value: 'Non-Permanent', color: '##0096A9'
-            }],
+                {
+                    "State": "Oaxaca",
+                    'color': 'red',
+                    data: { "sta_name": "Oaxaca",
+                    'color': 'red'}
+                }
+            ],
+            shapePropertyPath: 'name',
+            shapeDataPath: 'Country',
+            highlightSettings: {
+                enable: true,
+                fill: '#0096A9',
+            },
+            selectionSettings: {
+                enable: true,
+                fill: '#0096A9',
+                border: { color: 'white', width: 1}
+         }
+         , 
+        shapeSettings: {
+            
             border: {
                 color: 'white',
                 width: 1
             }
-        }
-        }
-    ]
-});
-
-map.appendTo('#element');
+        },
+        tooltipSettings: {
+            visible: true,
+            valuePath: 'data.continent'
+        },
+        
+    }
+]
+*/
+/* ,
+    selectionSettings: {
+        enable: true,
+        fill: '#0096A9',
+        border: { color: 'white', width: 2}
+    },
+    */
