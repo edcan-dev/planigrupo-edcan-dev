@@ -296,6 +296,7 @@
     line-height: 25px;
     letter-spacing: 1px;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 
@@ -427,10 +428,9 @@
 
 
 .portfolio__title {
-    width: 80%;
+    width: 950px;
     margin: auto;
     margin-top: 50px;
-    margin-bottom: 50px;
 }
 .portfolio__title > div > span {
     box-sizing: border-box;
@@ -464,4 +464,12 @@
 #container {
     margin-top: 0px;
     margin-bottom: 0px;
+}
+
+.main__hero__downbar {
+    z-index: 2;
+    top: 0;
+}
+#element {
+    margin: 0 auto;
 }

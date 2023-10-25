@@ -40,9 +40,13 @@ var map = new ej.maps.Maps({
     var shape = (args.shapeData).name;
     propertiesGrid.filterByStateFromMap(shape)
   },
+  
+  height: '600px',
+  width: '900px',
   layers: [
+    
     {
-      shapeData: filtered,
+      shapeData: mexico_map,
       dataSource: [
         { "State": "Baja California", "Membership": "Permanent" },
         { "State": "Baja California Sur", "Membership": "Permanent" },
@@ -63,8 +67,56 @@ var map = new ej.maps.Maps({
         { "State": "Tamaulipas", "Membership": "Permanent" },
         { "State": "Quintana Roo", "Membership": "Permanent" },
         { "State": "San Luis Potosí", "Membership": "Permanent" },
-        { "State": "Querétaro", "Membership": "Permanent" },
-      ],
+        { "State": "Querétaro", "Membership": "Permanent" }
+/*         { "State": "Sinaloa", "Membership": "Non-Permanent" }
+ */      ],
+      shapePropertyPath: "name",
+      shapeDataPath: 'State',
+      shapeSettings: {
+        fill: '#eae9e8',
+        colorValuePath: 'Membership',
+        colorMapping: [
+          {
+            value: 'Permanent', color: '#0096A9'
+          },
+          {
+            value: 'Non-Permanent', color: '#316DB5'
+          }],
+
+        // Border de cada forma
+        border: {
+          color: '#DDD',
+          width: 1
+        }
+
+      }
+    },
+    {
+      shapeData: filtered,
+      type: 'subLayer',
+      dataSource: [
+        { "State": "Baja California", "Membership": "Permanent" },
+        { "State": "Baja California Sur", "Membership": "Permanent" },
+        { "State": "Campeche", "Membership": "Permanent" },
+        { "State": "Chihuahua", "Membership": "Permanent" },
+        { "State": "Coahuila", "Membership": "Permanent" },
+        { "State": "Hidalgo", "Membership": "Permanent" },
+        { "State": "Jalisco", "Membership": "Permanent" },
+        { "State": "México", "Membership": "Permanent" },
+        { "State": "Michoacán", "Membership": "Permanent" },
+        { "State": "México", "Membership": "Permanent" },
+        { "State": "Nayarit", "Membership": "Permanent" },
+        { "State": "Nuevo León", "Membership": "Permanent" },
+        { "State": "Oaxaca", "Membership": "Permanent" },
+        { "State": "Puebla", "Membership": "Permanent" },
+        { "State": "Sonora", "Membership": "Permanent" },
+        { "State": "San Luis Potosí", "Membership": "Permanent" },
+        { "State": "Tamaulipas", "Membership": "Permanent" },
+        { "State": "Quintana Roo", "Membership": "Permanent" },
+        { "State": "San Luis Potosí", "Membership": "Permanent" },
+        { "State": "Querétaro", "Membership": "Permanent" }
+/*         { "State": "Sinaloa", "Membership": "Non-Permanent" }
+ */      ],
       shapePropertyPath: "name",
       shapeDataPath: 'State',
       highlightSettings: {
@@ -83,7 +135,7 @@ var map = new ej.maps.Maps({
         valuePath: 'name'
       },
       shapeSettings: {
-        fill: '#fff',
+        fill: '#D22730',
 
         colorValuePath: 'Membership',
         colorMapping: [

@@ -24,12 +24,14 @@
     type="image/x-icon" />
   <script defer src="./js/hero-start-anim.js"></script>
   <script defer src="./js/index/data-bursatil-api-client.js"></script>
-  <script defer type="module" src="./js/index/syncfusion-carousel.js"></script>
   <link href="./css/index/carousel.style.css" rel="stylesheet" />
-  
+
   <script defer src="./js/sidebar.js"></script>
   <script defer type="module" src="./js/index/plani-info-slider.js"></script>
   <script defer src="./js/index/home-tabs.js"></script>
+
+  <link rel="stylesheet" href="css/components/synfusion-carousel.css">
+  <script defer type="module" src="./js/comer/oportunidades/syncfusion-carousel.js"></script>
 </head>
 
 <body>
@@ -38,7 +40,7 @@
 
       <nav class="navbar__responsive">
         <ul class="navbar__responsive__list">
-          
+
           <li>
             <input class="navbar__responsive__search" type="search" placeholder="Buscar...">
             <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/svgs/magnifying.svg">
@@ -50,16 +52,19 @@
             <a href="./portafolio.html">Portafolio</a>
           </li>
           <li class="header__nav__item" id="nav__item--comer">
-            <a>Comercialización</a></li>
+            <a>Comercialización</a>
+          </li>
           <li class="header__nav__item"><a href="./inversionistas.html">Inversionistas</a></li>
           <li class="header__nav__item"><a href="">Asg</a></li>
-          <li class="header__nav__item"><a href="https://portaldeclientes.planigrupo.com/auth/realms/master/protocol/openid-connect/auth?client_id=estados-de-cuenta-id&redirect_uri=https%3A%2F%2Fportaldeclientes.planigrupo.com%2Fhome&state=a536db1e-fa15-48e7-91b4-f885b5c6791b&response_mode=fragment&response_type=code&scope=openid&nonce=7ad26bbc-8cfc-4064-a337-1cb175cc69f7">Clientes</a></li>
+          <li class="header__nav__item"><a
+              href="https://portaldeclientes.planigrupo.com/auth/realms/master/protocol/openid-connect/auth?client_id=estados-de-cuenta-id&redirect_uri=https%3A%2F%2Fportaldeclientes.planigrupo.com%2Fhome&state=a536db1e-fa15-48e7-91b4-f885b5c6791b&response_mode=fragment&response_type=code&scope=openid&nonce=7ad26bbc-8cfc-4064-a337-1cb175cc69f7">Clientes</a>
+          </li>
           <li class="header__nav__item">
             <a href="./contacto.html">Contacto</a>
           </li>
-          
+
         </ul>
-        
+
         <ul class="navbar__responsive__list--second">
           <div>
             <li class="header__nav__item"><a href="./nosotros.html">Nosotros</a></li>
@@ -106,7 +111,9 @@
         </li>
         <li class="header__nav__item"><a href="./inversionistas.html">Inversionistas</a></li>
         <li class="header__nav__item"><a href="">Asg</a></li>
-        <li class="header__nav__item"><a href="https://portaldeclientes.planigrupo.com/auth/realms/master/protocol/openid-connect/auth?client_id=estados-de-cuenta-id&redirect_uri=https%3A%2F%2Fportaldeclientes.planigrupo.com%2Fhome&state=a536db1e-fa15-48e7-91b4-f885b5c6791b&response_mode=fragment&response_type=code&scope=openid&nonce=7ad26bbc-8cfc-4064-a337-1cb175cc69f7">Clientes</a></li>
+        <li class="header__nav__item"><a
+            href="https://portaldeclientes.planigrupo.com/auth/realms/master/protocol/openid-connect/auth?client_id=estados-de-cuenta-id&redirect_uri=https%3A%2F%2Fportaldeclientes.planigrupo.com%2Fhome&state=a536db1e-fa15-48e7-91b4-f885b5c6791b&response_mode=fragment&response_type=code&scope=openid&nonce=7ad26bbc-8cfc-4064-a337-1cb175cc69f7">Clientes</a>
+        </li>
         <li class="header__nav__item">
           <a href="./contacto.html">Contacto</a>
         </li>
@@ -119,9 +126,8 @@
   </header>
   <main class="main">
     <section class="main__hero">
-      <video id="background-video" autoplay loop muted preload="metadata"
-        poster="https://planigrupo.blob.core.windows.net/planigrupo/assets/videos/hero_video_01.mp4">
-        <source src="https://planigrupo.blob.core.windows.net/planigrupo/assets/videos/hero_video_01.mp4"
+      <video id="background-video" autoplay loop muted preload="auto">
+        <source src="https://planigrupo.blob.core.windows.net/planigrupo/assets/videos/hero_video_01.min.mp4"
           type="video/mp4" />
       </video>
       <div class="main__hero__text">
@@ -239,8 +245,13 @@
     </section>
     <section class="main__spliter">
       <p class="main__spliter__p">PROPIEDADES DESTACADAS</p>
-    </section>
+    </section><!-- 
     <section class="properties-carousel">
+      <div class="control-container">
+        <div id="carousel"></div>
+      </div>
+    </section> -->
+    <section class="oportunidades__carousel">
       <div class="control-container">
         <div id="carousel"></div>
       </div>
@@ -397,14 +408,16 @@
         <span>
           Planigrupo: Creando Valor
         </span>
-        <p>Somos una empresa mexicana líder en el desarrollo, diseño, construcción, comercialización y administración de centros comerciales a nivel nacional.</p>
+        <p>Somos una empresa mexicana líder en el desarrollo, diseño, construcción, comercialización y administración de
+          centros comerciales a nivel nacional.</p>
       </div>
 
       <div class="main__plani__info__text main__plani__info__text--2 main__plani__info--inv">
         <span>
           ENFOQUE
         </span>
-        <p>Nuestro enfoque principal es crear valor para nuestros inversionistas, socios, clientes y usuarios mediante una cartera de propiedades que les ofrezca una oferta invaluable con los más altos estándares de calidad.</p>
+        <p>Nuestro enfoque principal es crear valor para nuestros inversionistas, socios, clientes y usuarios mediante
+          una cartera de propiedades que les ofrezca una oferta invaluable con los más altos estándares de calidad.</p>
       </div>
 
       <div class="main__plani__info__text main__plani__info__text--3 main__plani__info--inv">
@@ -412,14 +425,16 @@
           EXPERIENCIA
         </span>
         <p>
-          Contamos con más de 48 años de experiencia cambiando la manera de ver, diseñar y desarrollar centros comerciales.  
+          Contamos con más de 48 años de experiencia cambiando la manera de ver, diseñar y desarrollar centros
+          comerciales.
         </p>
       </div>
       <div class="main__plani__info__text main__plani__info__text--4 main__plani__info--inv">
         <span>
           Planigrupo En Números
         </span>
-        <p>Con más de 1,200 inquilinos distribuidos en aproximadamente 814,000 m2 de área rentable (GLA) en sus centros comerciales administrados, Planigrupo en el 2021 recibió más de 99.1 millones de visitantes.</p>
+        <p>Con más de 1,200 inquilinos distribuidos en aproximadamente 814,000 m2 de área rentable (GLA) en sus centros
+          comerciales administrados, Planigrupo en el 2021 recibió más de 99.1 millones de visitantes.</p>
       </div>
 
     </section>
@@ -443,7 +458,7 @@
       <a href=".">Ofertas de Empleo</a>
     </div>
     <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/bolsamexicana-grey.png.png"
-      class="footer__img"/>
+      class="footer__img" />
   </footer>
 </body>
 
