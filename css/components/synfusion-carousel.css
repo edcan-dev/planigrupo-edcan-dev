@@ -1,0 +1,158 @@
+.oportunidades__carousel__div {
+    width: 950px;
+    height: 450px;
+    margin: 100px auto;
+}
+
+
+.oportunidades__carousel__item {
+       background-size: cover;
+       background-position-y: center;
+       background-position-x: center;
+       width: 100%;
+       height: 100%;
+       display: flex;
+       flex-direction: column-reverse;
+       box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
+       -webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
+       -moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
+    }
+
+.oportunidades__carousel__item__text__title {
+    height: 70px;
+    width: 950px;
+    background-color: #0096A999;
+    justify-content: space-between;
+}
+.oportunidades__carousel__item__text__title__item--title {
+    padding: 0px 20px;
+    height: 40px;
+}
+.oportunidades__carousel__item__text__title__item--desc {padding: 0px 20px; 
+    height: 30px;
+    background-color: #727272dd;
+}
+.oportunidades__carousel__item__text__title__item {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding: 0px 15px;
+    justify-content: space-between;
+
+    position: relative;
+
+    & span {
+        color: #FFF;
+        font-family: Fjalla One;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 19%;
+    }
+    & .title {
+        width: 30%;
+        justify-content: start;
+    }
+    & .comercializacion {
+        width: 32%;
+
+    }
+    & p {
+        color: #FFF;
+        font-family: Barlow;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        position: absolute;
+    }
+    & .contact {
+        left: 295px;
+    }
+    & .date {
+        left: 612px;
+    }
+    & .area {
+        left: 800px;
+    }
+}
+
+
+.oportunidades__carousel__item__text__desc {
+    height: 140px;
+    width: 950px;
+    background-color: #FFF;
+    display: flex;
+    padding: 15px;
+}
+
+.oportunidades__carousel__item__text__desc__item {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    & p {
+        color: #454545;
+        text-align: justify;
+        font-family: Raleway;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 1px;
+    }
+    & div {
+        width: 80px;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/cinemex.png');
+        background-position-y: center;        
+        margin-left: 20px;
+    }
+}
+
+.e-carousel.e-partial .e-carousel-slide-container {
+    padding: 0 24%;
+}
+
+@media(max-width: 2000px) {
+   
+    .e-carousel.e-partial .e-carousel-slide-container {
+        padding: 0 20%;
+    }
+}
+@media(max-width: 1700px) {
+   
+    .e-carousel.e-partial .e-carousel-slide-container {
+        padding: 0 15%;
+    }
+}
+@media(max-width: 1500px) {
+   
+    .e-carousel.e-partial .e-carousel-slide-container {
+        padding: 0 10%;
+    }
+}
+@media(max-width: 1300px) {
+   
+    .e-carousel.e-partial .e-carousel-slide-container {
+        padding: 0 9%;
+    }
+}
+@media(max-width: 1200px) {
+   
+    .e-carousel.e-partial .e-carousel-slide-container {
+        padding: 0 0%;
+    }
+}
+
+.control-container {
+    height: 600px;
+}
