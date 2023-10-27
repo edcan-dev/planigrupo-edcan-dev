@@ -972,6 +972,7 @@
     .main__hero__text__p-bar {
         font-size: 24px !important;
         padding-left: 10px !important;
+        text-align: start;
     }
 
     .main__hero__text__p-gray {
@@ -1622,6 +1623,8 @@ MAIN TABS MARGIN
     .main__hero__text__p-bar {
         line-height: 35px;
         letter-spacing: 0px;
+        text-align: start;
+
     }
 
     .main__hero__text__p-blue {
@@ -2091,6 +2094,32 @@ MAIN TABS MARGIN
         width: 80% !important;
     }
 
+    .main__hero__plani_info {
+        display: none !important;
+    }
+
+    .main__compromise__container__item__text {
+        width: 100%;
+        height: max-content;
+        padding: 10px 10px;
+        & p {
+            font-size: 12px;
+        }
+        & span {
+            margin-bottom: 10px;
+        }
+    }
+
+    .main__compromise__container {
+        width: 100%;
+    }
+    .main__compromise__container__item {
+        height: max-content;
+    }
+    .main__compromise__container__item__img {
+        display: none;
+    }
+
   }
 
 
@@ -2159,27 +2188,9 @@ MAIN TABS MARGIN
 
 @media (max-width: 500px) {
    
-    .main__compromise__container {
-        width: 100%;
-    }
-    .main__compromise__container__item {
-        height: max-content;
-    }
-    .main__compromise__container__item__img {
-        display: none;
-    }
+    
 
-    .main__compromise__container__item__text {
-        width: 100%;
-        height: max-content;
-        padding: 10px 10px;
-        & p {
-            font-size: 12px;
-        }
-        & span {
-            margin-bottom: 10px;
-        }
-    }
+    
 
     .main__tabs {
         margin-top: 800px !important;
@@ -2221,6 +2232,7 @@ MAIN TABS MARGIN
     }
 
     .main__hero__plani_info {
+        display: flex !important;
         top: 280px;
         align-items: center;
         z-index: -3;
@@ -2247,5 +2259,12 @@ MAIN TABS MARGIN
 
     .footer {
         padding-top: 50px !important;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .main__hero__text__p-bar {
+        text-align: start;
     }
 }
