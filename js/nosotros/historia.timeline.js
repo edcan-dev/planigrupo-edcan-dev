@@ -73,7 +73,7 @@ var accordion = new ej.navigations.Accordion({
       <div class="historia__card historia__card--tab6 historia__card--resp ">
 
         <div class="historia__card__item historia__card--resp__item">
-          <div class="historia__card__item__img historia__card--resp__item__img">
+          <div class="historia__card__item__img historia__card--resp__item__img historia__card__item__img--24">
           </div>  
           <div class="historia__card__item__text historia__card--resp__item__text">
             <span>2023</span>
@@ -84,7 +84,7 @@ var accordion = new ej.navigations.Accordion({
         </div>
 
         <div class="historia__card__item historia__card--resp__item">
-          <div class="historia__card__item__img historia__card--resp__item__img">
+          <div class="historia__card__item__img historia__card--resp__item__img historia__card__item__img--25">
           </div>
           <div class="historia__card__item__text historia__card--resp__item__text">
             <span>2023</span>
@@ -103,7 +103,7 @@ var accordion = new ej.navigations.Accordion({
       content: `
       <div class="historia__card historia__card--tab5 historia__card--resp">
         <div class="historia__card__item historia__card--resp__item">
-          <div class="historia__card__item__img historia__card--resp__item__img">
+          <div class="historia__card__item__img historia__card--resp__item__img historia__card__item__img--17">
           </div>
           <div class="historia__card__item__text historia__card--resp__item__text">
             <span>2011</span>
@@ -112,7 +112,7 @@ var accordion = new ej.navigations.Accordion({
         </div>
 
         <div class="historia__card__item historia__card--resp__item">
-          <div class="historia__card__item__img historia__card--resp__item__img">
+          <div class="historia__card__item__img historia__card--resp__item__img historia__card__item__img--18">
           </div>
           <div class="historia__card__item__text historia__card--resp__item__text">
             <span>2012</span>
@@ -122,7 +122,7 @@ var accordion = new ej.navigations.Accordion({
         </div>
 
         <div class="historia__card__item historia__card--resp__item">
-          <div class="historia__card__item__img historia__card--resp__item__img">
+          <div class="historia__card__item__img historia__card--resp__item__img historia__card__item__img--19">
           </div>
           <div class="historia__card__item__text historia__card--resp__item__text">
             <span>2013</span>
@@ -132,7 +132,7 @@ var accordion = new ej.navigations.Accordion({
         </div>
 
         <div class="historia__card__item historia__card--resp__item">
-          <div class="historia__card__item__img historia__card--resp__item__img">
+          <div class="historia__card__item__img historia__card--resp__item__img historia__card__item__img--20">
           </div>
           <div class="historia__card__item__text historia__card--resp__item__text">
             <span>2014</span>
@@ -144,7 +144,7 @@ var accordion = new ej.navigations.Accordion({
         </div>
 
         <div class="historia__card__item historia__card--resp__item">
-          <div class="historia__card__item__img historia__card--resp__item__img">
+          <div class="historia__card__item__img historia__card--resp__item__img historia__card__item__img--21">
           </div>
           <div class="historia__card__item__text historia__card--resp__item__text">
             <span>2015</span>
@@ -155,7 +155,7 @@ var accordion = new ej.navigations.Accordion({
         </div>
 
         <div class="historia__card__item historia__card--resp__item">
-          <div class="historia__card__item__img historia__card--resp__item__img">
+          <div class="historia__card__item__img historia__card--resp__item__img historia__card__item__img--22">
           </div>
           <div class="historia__card__item__text historia__card--resp__item__text">
             <span>2016</span>
@@ -166,7 +166,7 @@ var accordion = new ej.navigations.Accordion({
         </div>
 
         <div class="historia__card__item historia__card--resp__item">
-          <div class="historia__card__item__img historia__card--resp__item__img">
+          <div class="historia__card__item__img historia__card--resp__item__img historia__card__item__img--23">
           </div>
           <div class="historia__card__item__text historia__card--resp__item__text">
             <span>2017</span>
@@ -184,7 +184,7 @@ var accordion = new ej.navigations.Accordion({
       <div class="historia__card historia__card--tab4 historia__card--resp">
 
         <div class="historia__card__item historia__card--resp__item">
-          <div class="historia__card__item__img historia__card--resp__item__img">
+          <div class="historia__card__item__img historia__card--resp__item__img historia__card__item__img--9">
           </div>
           <div class="historia__card__item__text historia__card--resp__item__text">
             <span>2000</span>
@@ -193,7 +193,7 @@ var accordion = new ej.navigations.Accordion({
         </div>
 
         <div class="historia__card__item historia__card--resp__item">
-          <div class="historia__card__item__img historia__card--resp__item__img">
+          <div class="historia__card__item__img historia__card--resp__item__img historia__card__item__img--10">
           </div>
           <div class="historia__card__item__text historia__card--resp__item__text">
             <span>2001</span>
@@ -202,7 +202,7 @@ var accordion = new ej.navigations.Accordion({
         </div>
 
         <div class="historia__card__item historia__card--resp__item">
-          <div class="historia__card__item__img historia__card--resp__item__img">
+          <div class="historia__card__item__img historia__card--resp__item__img historia__card__item__img--11">
           </div>
           <div class="historia__card__item__text historia__card--resp__item__text">
             <span>2002</span>
@@ -211,7 +211,7 @@ var accordion = new ej.navigations.Accordion({
         </div>
 
         <div class="historia__card__item historia__card--resp__item">
-          <div class="historia__card__item__img historia__card--resp__item__img">
+          <div class="historia__card__item__img historia__card--resp__item__img historia__card__item__img--12">
           </div>
           <div class="historia__card__item__text historia__card--resp__item__text">
             <span>2005</span>
@@ -220,7 +220,7 @@ var accordion = new ej.navigations.Accordion({
         </div>
 
         <div class="historia__card__item historia__card--resp__item">
-          <div class="historia__card__item__img historia__card--resp__item__img">
+          <div class="historia__card__item__img historia__card--resp__item__img historia__card__item__img--13">
           </div>
           <div class="historia__card__item__text historia__card--resp__item__text">
             <span>2006</span>
@@ -229,7 +229,7 @@ var accordion = new ej.navigations.Accordion({
         </div>
 
         <div class="historia__card__item historia__card--resp__item">
-          <div class="historia__card__item__img historia__card--resp__item__img">
+          <div class="historia__card__item__img historia__card--resp__item__img historia__card__item__img--14">
           </div>
           <div class="historia__card__item__text historia__card--resp__item__text">
             <span>2007</span>
@@ -238,7 +238,7 @@ var accordion = new ej.navigations.Accordion({
         </div>
 
         <div class="historia__card__item historia__card--resp__item">
-          <div class="historia__card__item__img historia__card--resp__item__img">
+          <div class="historia__card__item__img historia__card--resp__item__img historia__card__item__img--15">
           </div>
           <div class="historia__card__item__text historia__card--resp__item__text">
             <span>2008</span>
@@ -248,7 +248,7 @@ var accordion = new ej.navigations.Accordion({
         </div>
 
         <div class="historia__card__item historia__card--resp__item">
-          <div class="historia__card__item__img historia__card--resp__item__img">
+          <div class="historia__card__item__img historia__card--resp__item__img historia__card__item__img--16">
           </div>
           <div class="historia__card__item__text historia__card--resp__item__text">
             <span>2009</span>
@@ -264,7 +264,7 @@ var accordion = new ej.navigations.Accordion({
       content: `
       <div class="historia__card historia__card--tab3 historia__card--resp">
         <div class="historia__card__item historia__card--resp__item">
-          <div class="historia__card__item__img historia__card--resp__item__img">
+          <div class="historia__card__item__img historia__card--resp__item__img historia__card__item__img--6">
           </div>
           <div class="historia__card__item__text historia__card--resp__item__text">
             <span>1992</span>
@@ -273,7 +273,7 @@ var accordion = new ej.navigations.Accordion({
         </div>
 
         <div class="historia__card__item historia__card--resp__item">
-          <div class="historia__card__item__img historia__card--resp__item__img"></div>
+          <div class="historia__card__item__img historia__card--resp__item__img historia__card__item__img--7"></div>
           <div class="historia__card__item__text historia__card--resp__item__text">  
             <span>1998</span>
           <p>Se abren las oficinas en la ciudad de Monterrey.</p>
@@ -282,7 +282,7 @@ var accordion = new ej.navigations.Accordion({
 
 
       <div class="historia__card__item historia__card--resp__item">
-        <div class="historia__card__item__img historia__card--resp__item__img">
+        <div class="historia__card__item__img historia__card--resp__item__img historia__card__item__img--8">
         </div>
         <div class="historia__card__item__text historia__card--resp__item__text">
           <span>1999</span>
@@ -299,7 +299,7 @@ var accordion = new ej.navigations.Accordion({
         <div class="historia__card historia__card--tab2 historia__card--resp">
 
         <div class="historia__card__item historia__card--resp__item">
-          <div class="historia__card__item__img historia__card--resp__item__img">
+          <div class="historia__card__item__img historia__card--resp__item__img historia__card__item__img--3">
           </div>
           <div class="historia__card__item__text historia__card--resp__item__text">
             <span>1982</span>
@@ -309,7 +309,7 @@ var accordion = new ej.navigations.Accordion({
 
 
         <div class="historia__card__item historia__card--resp__item">
-          <div class="historia__card__item__img historia__card--resp__item__img">
+          <div class="historia__card__item__img historia__card--resp__item__img historia__card__item__img--4">
           </div>
           <div class="historia__card__item__text historia__card--resp__item__text">
             <span>1988</span>
@@ -319,7 +319,7 @@ var accordion = new ej.navigations.Accordion({
 
 
         <div class="historia__card__item historia__card--resp__item">
-          <div class="historia__card__item__img historia__card--resp__item__img">
+          <div class="historia__card__item__img historia__card--resp__item__img historia__card__item__img--5">
           </div>
           <div class="historia__card__item__text historia__card--resp__item__text">
             <span>1989</span>
@@ -336,19 +336,20 @@ var accordion = new ej.navigations.Accordion({
       content: `
             <div class="historia__card historia__card--tab1 historia__card--resp">
               <div class="historia__card__item historia__card--resp__item">          
-                <div class="historia__card__item__img historia__card--resp__item__img ">                 
+                <div class="historia__card__item__img historia__card--resp__item__img historia__card__item__img--1">                 
                 </div>
                 <div class="historia__card__item__text historia__card--resp__item__text">
                   <span>1975</span>
                   <p>Planigrupo fue fundada por Eduardo Bross Tatz.</p>
                 </div>
               </div>
+
               <div class="historia__card__item historia__card--resp__item">          
-                <div class="historia__card__item__img historia__card--resp__item__img ">                 
+                <div class="historia__card__item__img historia__card--resp__item__img historia__card__item__img--2">                 
                 </div>
                 <div class="historia__card__item__text historia__card--resp__item__text">
-                  <span>1975</span>
-                  <p>Planigrupo fue fundada por Eduardo Bross Tatz.</p>
+                  <span>1978</span>
+                  <p>Se construye la primera plaza para el municipio de Zapopan.</p>
                 </div>
               </div>
             </div>
