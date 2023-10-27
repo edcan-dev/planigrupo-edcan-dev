@@ -2010,3 +2010,102 @@ MAIN TABS MARGIN
     top: 20px;
     z-index: 3;
 }
+
+.main__compromise__container {
+    width: 950px;
+    margin: 30px auto;
+}
+.main__compromise__container__item {
+    height: 120px;
+    display: flex;
+
+}
+.main__compromise__container__item--sec {
+    flex-direction: row-reverse;
+    background-color: #F5F3F1;
+}
+.main__compromise__container__item__img {
+    width: 15%;
+}
+.main__compromise__container__item__text {
+    width: 85%;
+
+    padding: 0px 15px;
+
+    & span {
+        color: #C04D00;
+        text-align: justify;
+        font-family: Barlow;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 25px; /* 138.889% */
+        letter-spacing: 1px;
+        text-transform: uppercase;    
+    }
+    & p {
+        color: #000;
+        text-align: justify;
+        font-family: Barlow;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px; /* 178.571% */
+        letter-spacing: 1px;
+        text-transform: uppercase;    
+    }
+
+}
+
+.main__compromise__container__item__img--1 {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/compromiso/WhatsApp_Image_2023-10-26_at_15.34.05-removebg-preview.png');
+    background-repeat: no-repeat ;
+    background-size: contain;
+    background-position-x: center;
+    margin: 20px;
+}
+.main__compromise__container__item__img--2 {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/compromiso/WhatsApp_Image_2023-10-26_at_15.34.05__1_-removebg-preview (1).png');
+    background-repeat: no-repeat ;
+    background-size: contain;
+    background-position-x: center;
+    margin: 20px;
+
+}
+.main__compromise__container__item__img--3 {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/compromiso/WhatsApp_Image_2023-10-26_at_15.34.05__2_-removebg-preview.png');
+    background-repeat: no-repeat ;
+    background-size: contain;
+    background-position-x: center;
+    margin: 20px;
+
+}
+.main__compromise__container__item__img--4 {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/compromiso/WhatsApp_Image_2023-10-26_at_15.34.05__3_-removebg-preview.png');
+    background-repeat: no-repeat ;
+    background-size: contain;
+    background-position-x: center;
+    margin: 20px;
+}
+
+
+@media (min-width: 1900px) {
+    .main__tabs {
+        margin-top: 600px;
+    }
+    
+}
+
+@media (max-width: 1000px) {
+    .oportunidades__carousel__item__text__title {
+      width: 100% !important;
+    }
+    .oportunidades__carousel__item__text__desc {
+      width: 100% !important;
+    }
+    
+    .oportunidades__carousel__item {   
+        width: 80% !important;
+    }
+
+  }

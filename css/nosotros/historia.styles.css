@@ -269,3 +269,90 @@
     height: 250px !important;
   }
 }
+
+
+.historia__card__item__img--1 {
+  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia/timeline-imgs/1-LogoPlanigrupo-1975.png');
+}
+.historia__card__item__img--2 {
+  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia/timeline-imgs/2 1978.jpg');
+}
+.historia__card__item__img--3 {
+  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia/timeline-imgs/3 1982.jpg');
+}
+.historia__card__item__img--4 {
+  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia/timeline-imgs/4 1988.jpg');
+}
+.historia__card__item__img--5 {
+  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia/timeline-imgs/5 1989.jpg');
+}
+.historia__card__item__img--6 {
+  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia/timeline-imgs/6 1992.jpg');
+}
+.historia__card__item__img--7 {
+  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia/timeline-imgs/7 1998.jpg');
+}
+.historia__card__item__img--8 {
+  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia/timeline-imgs/8 1999.png');
+}
+.historia__card__item__img--9 {
+  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia/timeline-imgs/9 2000.png');
+}
+
+.historia__card__item__img--11 {
+  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia/timeline-imgs/10 2022.png');
+}
+.historia__card__item__img--12 {
+  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia/timeline-imgs/11 2005.png');
+}
+.historia__card__item__img--13 {
+  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia/timeline-imgs/12 2006.png');
+}
+.historia__card__item__img--14 {
+  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia/timeline-imgs/13 2007.png');
+}
+.historia__card__item__img--15 {
+  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia/timeline-imgs/14 2008.png');
+}
+.historia__card__item__img--16 {
+  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia/timeline-imgs/15 2009.jpg');
+}
+.historia__card__item__img--17 {
+  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia/timeline-imgs/16 2011.jpg');
+}
+.historia__card__item__img--18 {
+  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia/timeline-imgs/17 2012.jpg');
+
+}
+.historia__card__item__img--19 {
+  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia/timeline-imgs/18 2013.jpg');
+}
+.historia__card__item__img--20 {
+  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia/timeline-imgs/19 2014.png');
+}
+.historia__card__item__img--21 {
+  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia/timeline-imgs/20 2015.JPG');
+}
+.historia__card__item__img--22 {
+  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia/timeline-imgs/21 2016.png');
+}
+.historia__card__item__img--22 {
+  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia/timeline-imgs/22 2017.png');
+}
+.historia__card__item__img--23 {
+  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia/timeline-imgs/23 2022.png');
+}
+.historia__card__item__img--24 {
+  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia/timeline-imgs/24 2023.jpg');
+}
+
+
+body > main > section.historia__section > div.historia__card.historia__card--tab5.active > div:nth-child(2) > div.historia__card__item__text > p {
+  font-size: 10px;
+}
+body > main > section.historia__section > div.historia__card.historia__card--tab5.active > div:nth-child(3) > div.historia__card__item__text > p {
+  font-size: 10px;
+}
+body > main > section.historia__section > div.historia__card.historia__card--tab5.active > div:nth-child(4) > div.historia__card__item__text > p {
+  font-size: 10px;
+}
