@@ -77,10 +77,10 @@ var map = new ej.maps.Maps({
         colorValuePath: 'Membership',
         colorMapping: [
           {
-            value: 'Permanent', color: '#0096A9'
+            value: 'Permanent', color: '#316DB5'
           },
           {
-            value: 'Non-Permanent', color: '#316DB5'
+            value: 'Non-Permanent', color: '# 0096A9'
           }],
 
         // Border de cada forma
@@ -126,7 +126,7 @@ var map = new ej.maps.Maps({
       },
       selectionSettings: {
         enable: true,
-        fill: '#8C827A',
+        fill: '#0096A9',
         border: { color: 'white', width: 1 }
 
       },
@@ -140,7 +140,7 @@ var map = new ej.maps.Maps({
         colorValuePath: 'Membership',
         colorMapping: [
           {
-            value: 'Permanent', color: '#0096A9'
+            value: 'Permanent', color: '#8C827A'
           },
           {
             value: 'Non-Permanent', color: '#316DB5'
