@@ -467,9 +467,43 @@
 }
 
 .main__hero__downbar {
-    z-index: 2;
+    z-index: 0;
     top: 0;
 }
 #element {
     margin: 0 auto;
+}
+
+
+@media (max-width: 500px) {
+    
+    
+    .portfolio__title {
+        width: 300px;
+        margin-top: 100px;
+        padding: 30px 0px 0px 0px;
+
+        & div {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            & span {
+                text-align: center;
+            }
+        }
+    }
+    
+    .main__hero__downbar {
+        top: 100px;
+    }
+
+    .featured_properties {
+        margin-top: 0px;   
+    }
+
+    .footer--equipo {
+        padding-top: 0px !important;
+        height: 200px;
+    }
 }

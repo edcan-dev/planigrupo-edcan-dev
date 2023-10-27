@@ -72,3 +72,21 @@
 .properties-carousel__item__text__desc {
     display: none;
 }
+
+@media (max-width: 400px) {
+    .footer {
+        margin-top: 0px !important;
+    }
+
+    .contacto__form__card {
+        padding: 5px;
+    }
+
+    .main__oportunities__text {
+        width: 90%; 
+    }
+
+    .contacto__form__card {
+        width: 90%;
+    }
+}
