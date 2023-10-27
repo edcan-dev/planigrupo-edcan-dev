@@ -1296,7 +1296,7 @@
     background-position-y: 0px;
 }
 
-.tab__card__text>button {
+.tab__card__text>a {
     background-color: #0096A9;
     padding: 5px;
     border: none;
@@ -1347,8 +1347,8 @@ hr {
     position: absolute;
     width: 500px;
     height: 150px;
-    background-color: #0095a955;
-    right: 80px;
+    background-color: #0095a9AA;
+    right: 0px;
     top: 480px;
     padding: 5px;
 
@@ -1892,46 +1892,29 @@ MAIN TABS MARGIN
     width: 30%;
 }
 
-.main__plani__info__text {
+/* .main__plani__info__text {
     background-color: #C04D00;
     width: 70%;
     padding: 40px;
     transition: all 1s;
 
-}
+} */
 
-.main__plani__info__text {
-    background-color: #545859;
+/* .main__plani__info__text {
     position: absolute;
     width: 70%;
     height: 200px;
     left: 30%;
     padding: 20px;
     transition: all .2s;
+} */
+
+.main__plani__info__text > span {
+
 }
 
-.main__plani__info__text>span {
-    color: #ffffff;
-    font-family: Fjalla One;
-    font-size: 33.734px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 35px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
+.main__plani__info__text > p {
 
-.main__plani__info__text>p {
-    margin-top: 20px;
-
-    color: #F5F3F1;
-    font-family: Raleway;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 35px;
-    letter-spacing: 1px;
-    text-align: justify;
 }
 
 @media (max-width: 450px) {
@@ -2089,7 +2072,7 @@ MAIN TABS MARGIN
 }
 
 
-@media (min-width: 1900px) {
+@media (max-width: 2000px) {
     .main__tabs {
         margin-top: 600px;
     }
@@ -2109,3 +2092,160 @@ MAIN TABS MARGIN
     }
 
   }
+
+
+  .main__hero__plani_info {
+    display: flex;
+    position: absolute;
+    width: 500px;
+    height: 550px;
+    right: 0px;
+    background-color: #F5F3F1;  
+
+    & .main__hero__plani_info__container {
+        background-color: #F5F3F1;
+        height: 400px;
+
+    }
+}
+
+.main__plani__info__text {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+    position: absolute;
+    width: 500px;
+    left: 0px;
+
+    transition: all .5s;
+}
+
+.main__plani__info__text > span {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: #C04D00;
+    text-align: justify;
+    font-family: Barlow;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;     
+}
+.main__plani__info__text > p {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: #000;
+    text-align: justify;
+    font-family: Raleway;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    margin-top: 20px;
+    text-align: center;     
+}
+.main__hero__plani_info__container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media (max-width: 500px) {
+   
+    .main__compromise__container {
+        width: 100%;
+    }
+    .main__compromise__container__item {
+        height: max-content;
+    }
+    .main__compromise__container__item__img {
+        display: none;
+    }
+
+    .main__compromise__container__item__text {
+        width: 100%;
+        height: max-content;
+        padding: 10px 10px;
+        & p {
+            font-size: 12px;
+        }
+        & span {
+            margin-bottom: 10px;
+        }
+    }
+
+    .main__tabs {
+        margin-top: 800px !important;
+    }
+
+
+    .oportunidades__carousel__item__text__desc {
+        display: none !important;
+    }
+
+    .oportunidades__carousel__item__text__title__item {
+
+        justify-items: center;
+
+        & .comercializacion {
+            display: none;
+        }
+        & .date {
+            display: none;
+        }
+        & .area {
+            display: none;
+        }
+        & .title {
+            width: 100% !important ;
+        }
+    }
+    .oportunidades__carousel__item__text__title__item--desc {
+        & .contact {
+            display: none;
+        }
+    }
+
+    .main__plani__info__text {
+        padding: 0px 0px;
+        left: 130px;
+        width: 350px;
+
+    }
+
+    .main__hero__plani_info {
+        top: 280px;
+        align-items: center;
+        z-index: -3;
+    }
+
+    .main__row {
+        margin-top: 90px;
+    }
+
+    .main__databursatil__container--mobile {
+        padding: 160px 0px
+    }
+
+    .tab__card__text {
+
+        & a {
+            bottom: 420px;
+            left: 20px;
+        }
+    }
+    .tabs__card {
+        height: 700px;
+    }
+
+    .footer {
+        padding-top: 50px !important;
+    }
+}
