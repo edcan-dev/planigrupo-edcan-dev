@@ -242,5 +242,9 @@
 } */
 
 .hero {
+
+    background-image: url(https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/foto-3.jpg);
+    background-size: cover;
+    background-position-y: center;
     
 }

@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Inversionistas - Planigrupo</title>
   <link rel="stylesheet" href="./css/styles.css" />
-<!-- 
   <!-- Syncfusion Carousel -->
   <link href="https://cdn.syncfusion.com/ej2/23.1.36/ej2-base/styles/material.css" rel="stylesheet" type="text/css" />
   <link href="https://cdn.syncfusion.com/ej2/23.1.36/ej2-buttons/styles/material.css" rel="stylesheet"
@@ -33,20 +31,17 @@
 
   <link rel="stylesheet" href="./css/nosotros/styles.css">
   <link rel="stylesheet" href="./css/inversionistas/inversionistas.styles.css">
-  <script defer src="./js/lo-que-hacemos/home-tabs.js"></script>
-  <script defer type="module" src="./js/inversionistas/tabs-component.js"></script> -->
 </head>
+
 
 <body>
   <div id="sidebar-container">
     <aside id="default-sidebar">
-
       <nav class="navbar__responsive">
         <ul class="navbar__responsive__list">
-
           <li>
             <input class="navbar__responsive__search" type="search" placeholder="Buscar...">
-            <img src="https://planigrupo.blob.cor`e.windows.net/planigrupo/assets/svgs/magnifying.svg">
+            <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/svgs/magnifying.svg">
           </li>
           <li class="header__nav__item" id="nav__item--nosotros">
             <a class="">Nosotros</a>
@@ -55,17 +50,13 @@
             <a href="./portafolio.html">Portafolio</a>
           </li>
           <li class="header__nav__item" id="nav__item--comer">
-            <a>Comercialización</a>
-          </li>
-          <li class="header__nav__item"><a href="./inversionistas.html">Inversionistas</a></li>
+            <a>Comercialización</a></li>
+          <li class="header__nav__item"><a href="">Inversionistas</a></li>
           <li class="header__nav__item"><a href="">Asg</a></li>
-          <li class="header__nav__item"><a
-              href="https://portaldeclientes.planigrupo.com/auth/realms/master/protocol/openid-connect/auth?client_id=estados-de-cuenta-id&redirect_uri=https%3A%2F%2Fportaldeclientes.planigrupo.com%2Fhome&state=a536db1e-fa15-48e7-91b4-f885b5c6791b&response_mode=fragment&response_type=code&scope=openid&nonce=7ad26bbc-8cfc-4064-a337-1cb175cc69f7">Clientes</a>
-          </li>
+          <li class="header__nav__item"><a href="">Clientes</a></li>
           <li class="header__nav__item">
             <a href="./contacto.html">Contacto</a>
           </li>
-
         </ul>
 
         <ul class="navbar__responsive__list--second">
@@ -75,7 +66,6 @@
             <li class="header__nav__item"><a href="./equipo-ejecutivo.html">Equipo Ejecutivo</a></li>
             <li class="header__nav__item"><a href="./historia.html">Historia</a></li>
         </ul>
-
         <ul class="navbar__responsive__list--second--comer">
           <div>
             <li class="header__nav__item"><a href="./comercializacion.html">Comercialización</a></li>
@@ -112,11 +102,9 @@
             <a href="./oportunidades.html">Oportunidades</a>
           </div>
         </li>
-        <li class="header__nav__item"><a href="./inversionistas.html">Inversionistas</a></li>
+        <li class="header__nav__item"><a href="">Inversionistas</a></li>
         <li class="header__nav__item"><a href="">Asg</a></li>
-        <li class="header__nav__item"><a
-            href="https://portaldeclientes.planigrupo.com/auth/realms/master/protocol/openid-connect/auth?client_id=estados-de-cuenta-id&redirect_uri=https%3A%2F%2Fportaldeclientes.planigrupo.com%2Fhome&state=a536db1e-fa15-48e7-91b4-f885b5c6791b&response_mode=fragment&response_type=code&scope=openid&nonce=7ad26bbc-8cfc-4064-a337-1cb175cc69f7">Clientes</a>
-        </li>
+        <li class="header__nav__item"><a href="">Clientes</a></li>
         <li class="header__nav__item">
           <a href="./contacto.html">Contacto</a>
         </li>
@@ -128,11 +116,49 @@
     </nav>
   </header>
 
-  <section class="hero">
+  <main>
+
+    <section class="main__hero">
+      <video id="background-video" autoplay loop muted preload="auto">
+        <source src="https://planigrupo.blob.core.windows.net/planigrupo/assets/videos/Hero 1 Real Saltillo.mp4"
+          type="video/mp4" />
+      </video>
+      <div class="main__hero__text">
+        <!-- 
+          <p class="main__hero__text__p main__hero__text__p-exp"><b>Desarrollo</b></p>
+          <p class="main__hero__text__p-bar main__hero__text__p-gray">
+            UTILIZAMOS MATERIALES DE LA MÁS ALTA
+          </p>
+        -->
+        <p class="main__hero__text__p-bar main__hero__text__p-blue">TENEMOS UNA EXXCELENTE TRAYECTORIA</p>
+        <p class="main__hero__text__p-bar main__hero__text__p-gray">CON INVERSIONES Y FONDOS DE PENSIONES</p>
+        <p class="main__hero__text__p-bar main__hero__text__p-blue">QUE RESPALDAN A GM INMOBILIARIA</p>
+      </div>
+  
+      <div class="main__hero__downbar">
+        <div class="main__hero_downbar__text">
+          <span>Conoce</span>
+          <p>
+            Inversionistas
+          </p>
+          <!-- 
+            <p>
+              GM Inmobiliaria
+            </p>
+          -->
+  
+        </div>
+        <div class="main__hero_downbar__title">
+          <h2>Inversionistas</h2>
+        </div>
+      </div>
+    </section>
+
     
-  </section>
 
-
+    
+    
+  </main>
   
   <footer class="footer">
     <span>
@@ -154,5 +180,6 @@
       class="footer__img" />
   </footer>
 </body>
+
 
 </html>
