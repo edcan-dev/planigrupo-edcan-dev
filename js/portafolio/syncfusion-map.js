@@ -19,6 +19,7 @@ const states = [
   "Michoacán",
   "Nayarit",
   "Nuevo León",
+  "Guerrero",
   "Oaxaca",
   "Puebla",
   "Sonora",
@@ -39,6 +40,7 @@ var map = new ej.maps.Maps({
   shapeSelected: function(args) {
     var shape = (args.shapeData).name;
     propertiesGrid.filterByStateFromMap(shape)
+    
   },
   
   height: '600px',
@@ -99,6 +101,7 @@ var map = new ej.maps.Maps({
         { "State": "Baja California Sur", "Membership": "Permanent" },
         { "State": "Campeche", "Membership": "Permanent" },
         { "State": "Chihuahua", "Membership": "Permanent" },
+        { "State": "Guerrero", "Membership": "Permanent" },
         { "State": "Coahuila", "Membership": "Permanent" },
         { "State": "Hidalgo", "Membership": "Permanent" },
         { "State": "Jalisco", "Membership": "Permanent" },

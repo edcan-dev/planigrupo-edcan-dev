@@ -119,13 +119,13 @@
 }
 
 .e-carousel.e-partial .e-carousel-slide-container {
-    padding: 0 24%;
+    padding: 0 5%;
 }
 
 @media(max-width: 2000px) {
    
     .e-carousel.e-partial .e-carousel-slide-container {
-        padding: 0 20%;
+        padding: 0 22%;
     }
 }
 @media(max-width: 1700px) {

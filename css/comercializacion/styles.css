@@ -110,7 +110,11 @@ li {
 .main__comer__left__icon {
     height: 60px;
     width: 60px;
-    background-image:  url'');
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/png-icons/centro-comercial.png');
+    filter: invert(36%) sepia(4%) saturate(400%) hue-rotate(145deg) brightness(93%) contrast(96%);
+
+
+    background-size: cover;
     margin-bottom: 20px;
 }
 
@@ -230,13 +234,15 @@ li {
         display: flex;
         padding: 20px;
         width: 100%;
+        justify-content: space-between;
     }
     .main__comer__left__icon {
-        width: 100px;
-        height: 100%;
+        width: 80px;
+        height: 80px;
         background-repeat: no-repeat;
         margin-bottom: 0px;
         background-position: center;
+
     }
     .main__comer__left__text {
         padding-left: 20px;
