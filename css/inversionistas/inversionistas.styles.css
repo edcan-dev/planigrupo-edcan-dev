@@ -445,6 +445,18 @@
   height: 100px;
   width: 100px;
 }
+.inversionistas__tabs__tab--content__grid__item__svg--1 {
+  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/png-icons/inv01.jfif');
+}
+.inversionistas__tabs__tab--content__grid__item__svg--2 {
+  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/png-icons/inv02.jfif');
+}
+.inversionistas__tabs__tab--content__grid__item__svg--3 {
+  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/png-icons/inv03.jfif');
+}
+.inversionistas__tabs__tab--content__grid__item__svg--4 {
+  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/png-icons/inv04.jfif');
+}
 
 .inversionistas__tabs__tab--subtab__selector {
 

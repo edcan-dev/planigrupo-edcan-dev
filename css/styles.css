@@ -2000,9 +2000,11 @@ MAIN TABS MARGIN
 .main__compromise__container {
     width: 950px;
     margin: 30px auto;
+    display: flex;
+    height: 400px;
 }
 .main__compromise__container__item {
-    height: 120px;
+    height: 400px;
     display: flex;
 
 }

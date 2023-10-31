@@ -544,3 +544,25 @@
     background-size: 16px 80px;
     background-position-y: -32px;
 }
+.tenants_container {
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    width: 300px;
+    & ul {
+        & li {
+            padding-left: 10px;
+            background-color: #0096A9;
+
+
+            color: #FFF;
+            font-family: Barlow;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 25px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+    }
+}
