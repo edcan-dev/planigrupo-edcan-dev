@@ -14,6 +14,6 @@ document.querySelectorAll('.main__hero__text__p-blue')
         bar.style.marginLeft = '100px';
     })
 
-document.querySelector('.main__hero__text__p-exp').style.opacity = '1';
+// document.querySelector('.main__hero__text__p-exp').style.opacity = '1';
 
 setTimeout(() => document.querySelectorAll('.main__hero__text__p-bar').forEach(bar => bar.classList.add('restored--bar')), 1000)

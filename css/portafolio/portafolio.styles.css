@@ -24,6 +24,7 @@
 .contacto__form__card__text {
     display: flex;
     flex-wrap: wrap;
+    justify-content: end;
 }
 
 .contacto__form__card__text > p {
@@ -41,9 +42,6 @@
     width: 100%;
 }
 .contacto__form__card__text > p > b {
-    font-family: 'Raleway';
-    color: #0096A9;
-    font-weight: bolder;
 }
 .contacto__form__card__form {
     width: 100%;
@@ -506,4 +504,43 @@
         padding-top: 0px !important;
         height: 200px;
     }
+}
+
+.cfcSocial {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 16px;
+    margin-top: 6px;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+.socialIconTwitter {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    background: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/png-icons/gnimbo_icons.png');
+    background-repeat: no-repeat;
+    background-size: 16px 80px;
+    background-position-y: 0;
+}
+.socialIconFacebook {
+    position: relative;
+    margin-left: 8px;
+    width: 16px;
+    height: 16px;
+    background: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/png-icons/gnimbo_icons.png');
+    background-repeat: no-repeat;
+    background-size: 16px 80px;
+    background-position-y: -16px;
+}
+.socialIconLinkdin {
+    position: relative;
+    margin-left: 8px;
+    width: 16px;
+    height: 16px;
+    background: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/png-icons/gnimbo_icons.png');
+    background-repeat: no-repeat;
+    background-size: 16px 80px;
+    background-position-y: -32px;
 }

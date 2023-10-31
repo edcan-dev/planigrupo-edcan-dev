@@ -27,7 +27,6 @@
 
   <!-- Synfusion Carousel-->
   <script defer type="module" src="./js/comer/oportunidades/syncfusion-carousel.js"></script>
-  <link href="./css/components/synfusion-carousel.css" rel="stylesheet"/>
   <!-- Synfusion Carousel-->
   <link href="./css/index/carousel.style.css" rel="stylesheet" />
   
@@ -36,7 +35,8 @@
   <script defer src="./js/index/home-tabs.js"></script>
   
   <link rel="stylesheet" href="./css/contacto/contacto.styles.css">
-  <link href="./css/comercializacion/oportunidades.styles.css" rel="stylesheet"/>
+  <link href="./css/comercializacion/oportunidades.styles.css" rel="stylesheet" />
+  <link href="./css/components/synfusion-carousel.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -45,7 +45,7 @@
 
       <nav class="navbar__responsive">
         <ul class="navbar__responsive__list">
-          
+
           <li>
             <input class="navbar__responsive__search" type="search" placeholder="Buscar...">
             <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/svgs/magnifying.svg">
@@ -57,16 +57,19 @@
             <a href="./portafolio.html">Portafolio</a>
           </li>
           <li class="header__nav__item" id="nav__item--comer">
-            <a>Comercialización</a></li>
+            <a>Comercialización</a>
+          </li>
           <li class="header__nav__item"><a href="./inversionistas.html">Inversionistas</a></li>
           <li class="header__nav__item"><a href="">Asg</a></li>
-          <li class="header__nav__item"><a href="https://portaldeclientes.planigrupo.com/auth/realms/master/protocol/openid-connect/auth?client_id=estados-de-cuenta-id&redirect_uri=https%3A%2F%2Fportaldeclientes.planigrupo.com%2Fhome&state=a536db1e-fa15-48e7-91b4-f885b5c6791b&response_mode=fragment&response_type=code&scope=openid&nonce=7ad26bbc-8cfc-4064-a337-1cb175cc69f7">Clientes</a></li>
+          <li class="header__nav__item"><a
+              href="https://portaldeclientes.planigrupo.com/auth/realms/master/protocol/openid-connect/auth?client_id=estados-de-cuenta-id&redirect_uri=https%3A%2F%2Fportaldeclientes.planigrupo.com%2Fhome&state=a536db1e-fa15-48e7-91b4-f885b5c6791b&response_mode=fragment&response_type=code&scope=openid&nonce=7ad26bbc-8cfc-4064-a337-1cb175cc69f7">Clientes</a>
+          </li>
           <li class="header__nav__item">
             <a href="./contacto.html">Contacto</a>
           </li>
-          
+
         </ul>
-        
+
         <ul class="navbar__responsive__list--second">
           <div>
             <li class="header__nav__item"><a href="./nosotros.html">Nosotros</a></li>
@@ -113,7 +116,9 @@
         </li>
         <li class="header__nav__item"><a href="./inversionistas.html">Inversionistas</a></li>
         <li class="header__nav__item"><a href="">Asg</a></li>
-        <li class="header__nav__item"><a href="https://portaldeclientes.planigrupo.com/auth/realms/master/protocol/openid-connect/auth?client_id=estados-de-cuenta-id&redirect_uri=https%3A%2F%2Fportaldeclientes.planigrupo.com%2Fhome&state=a536db1e-fa15-48e7-91b4-f885b5c6791b&response_mode=fragment&response_type=code&scope=openid&nonce=7ad26bbc-8cfc-4064-a337-1cb175cc69f7">Clientes</a></li>
+        <li class="header__nav__item"><a
+            href="https://portaldeclientes.planigrupo.com/auth/realms/master/protocol/openid-connect/auth?client_id=estados-de-cuenta-id&redirect_uri=https%3A%2F%2Fportaldeclientes.planigrupo.com%2Fhome&state=a536db1e-fa15-48e7-91b4-f885b5c6791b&response_mode=fragment&response_type=code&scope=openid&nonce=7ad26bbc-8cfc-4064-a337-1cb175cc69f7">Clientes</a>
+        </li>
         <li class="header__nav__item">
           <a href="./contacto.html">Contacto</a>
         </li>
@@ -141,17 +146,17 @@
         </p>
       </div>
 
-      
+
     </section>
 
 
-    
+
     <section class="main__spliter">
       <p class="main__spliter__p">OPORTUNIDADES DE COMERCIALIZACIÓN DESTACADAS</p>
     </section>
 
     <section class="oportunidades__carousel">
-<!-- 
+      <!-- 
       <div class="oportunidades__carousel__div">
 
         <div class="oportunidades__carousel__item">
@@ -206,39 +211,250 @@
     <section class="main__oportunities__text">
       <span>Conoce a Nuestros Inquilinos</span>
       <p>
-        Nuestros centros comerciales cuentan con más de 1,200 clientes de renombre, tanto nacionales como internacionales, entre los que destacan Walmart, HEB, The Home Depot, Cinemex y Cinépolis. Algunos de los cuales llevan comercializando con Planigrupo por más de 40 años.
+        Nuestros centros comerciales cuentan con más de 1,200 clientes de renombre, tanto nacionales como
+        internacionales, entre los que destacan Walmart, HEB, The Home Depot, Cinemex y Cinépolis. Algunos de los cuales
+        llevan comercializando con Planigrupo por más de 40 años.
       </p>
 
     </section>
 
     <section class="main__tenants__carousel">
-<!-- 
-      <div id="tenants_carousel"></div> -->
-
+      
       <div class="main__tenants__carousel__grid">
-        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--walmart">
+
+          <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--walmart">
+          </div>
+          <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--ley">
+          </div>
+
+
+
+
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--heb"></div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--bodega-aurrera"></div>
+
+
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--superama"></div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--mi-tienda"></div>
+
+
+
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--sams-club"></div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--cinemex"></div>
+
+
+
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--soriana"></div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--cinepolis"></div>
+
+
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--chedraui"></div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--the-home-depot"></div>
+
+
+
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--elektra">
         </div>
-        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--heb">
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--radio-shack">
         </div>
-        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--superama">
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--dico">
         </div>
-        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--sams-club">
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--famsa">
         </div>
-        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--soriana">
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--coppel">
         </div>
-        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--chedraui">
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--sanborns">
         </div>
-        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--ley">
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--suburbia">
         </div>
-        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--bodega-aurrera">
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--promoda">
         </div>
-        <div class="main__tenants__carousel__grid__item">
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--parisina">
         </div>
-        <div class="main__tenants__carousel__grid__item">
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--del-sol">
         </div>
-        <div class="main__tenants__carousel__grid__item">
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--modatelas">
         </div>
-        <div class="main__tenants__carousel__grid__item">
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--petco">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--santander">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--banorte">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--citibanamex">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--hsbc">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--scotiabank">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--first-cash">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--office-depot">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--office-max">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--innova-sport">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--sally">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--super-fitness">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--caliente-casino">
+        </div>
+
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--yak">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--pockets">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--auto-zone">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--telcel">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--att">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--movistar">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--starbucks">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--ihop">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--johny-rockets">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--tgi-fridays">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--bostons-restaurant">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--toks-restaurant">
+        </div>
+
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--chilis">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--peter-piper-pizza">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--carls-jr">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--burger-king">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--kfc">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--mcdonalds">
+        </div>
+          <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--walmart">
+          </div>
+          <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--ley">
+          </div>
+
+
+
+
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--heb"></div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--bodega-aurrera"></div>
+
+
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--superama"></div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--mi-tienda"></div>
+
+
+
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--sams-club"></div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--cinemex"></div>
+
+
+
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--soriana"></div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--cinepolis"></div>
+
+
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--chedraui"></div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--the-home-depot"></div>
+
+
+
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--elektra">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--radio-shack">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--dico">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--famsa">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--coppel">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--sanborns">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--suburbia">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--promoda">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--parisina">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--del-sol">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--modatelas">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--petco">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--santander">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--banorte">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--citibanamex">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--hsbc">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--scotiabank">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--first-cash">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--office-depot">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--office-max">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--innova-sport">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--sally">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--super-fitness">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--caliente-casino">
+        </div>
+
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--yak">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--pockets">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--auto-zone">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--telcel">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--att">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--movistar">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--starbucks">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--ihop">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--johny-rockets">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--tgi-fridays">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--bostons-restaurant">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--toks-restaurant">
+        </div>
+
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--chilis">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--peter-piper-pizza">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--carls-jr">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--burger-king">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--kfc">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--mcdonalds">
         </div>
       </div>
 
@@ -279,7 +495,7 @@
               <input type="text" name="compania" id="compania">
             </div>
           </div>
-          
+
 
           <div class="contacto__form__card__form">
             <div class="contacto__form__card__form__container contacto__form__card__form__container--nombre">
@@ -292,10 +508,10 @@
               <input type="text" name="compania" id="compania">
             </div>
           </div>
-          
-  
+
+
           <div class="contacto__form__card__form contacto__form__card__form--portfolio">
-            
+
             <div class="contacto__form__card__form--portfolio--email">
               <label for="email">*email</label>
               <input type="email" name="telefono" id="email">
@@ -303,8 +519,8 @@
 
             <div class="contacto__form__card__form--portfolio--personalidad">
               <label for="personalidad-juridica">*personalidad juridica</label>
-<!--                 <input type="personalidad-juridica" name="telpersonalidad-juridica" id="personalidad-juridica">
--->                <select name="persona" id="persona">
+              <!--                 <input type="personalidad-juridica" name="telpersonalidad-juridica" id="personalidad-juridica">
+--> <select name="persona" id="persona">
                 <option value="">Persona Fisica</option>
                 <option value="">Persona Moral</option>
               </select>
@@ -318,48 +534,48 @@
           </div>
 
           <div class="contacto__form__card__form contacto__form__card__form--portfolio--propiedad">
-            
+
             <div class="contacto__form__card__form--portfolio--personalidad">
               <label for="personalidad-juridica">*propiedad</label>
-                <select name="persona" id="persona">
-                    <option disabled="" selected="" value="">Propiedad</option>
-                    <option value="P119">Cancun Gran Plaza</option>
-                    <option value="P130">Centro Comercial Lopez Mateos</option>
-                    <option value="P131">Ciudadela UV</option>
-                    <option value="P101">El Paseo Santa Catarina</option>
-                    <option value="P109">La Nogalera</option>
-                    <option value="P134">Lago Real Centro Comercial</option>
-                    <option value="P133">Macroplaza Del Valle</option>
-                    <option value="2102">Macroplaza Estadio</option>
-                    <option value="P121">Macroplaza Insurgentes</option>
-                    <option value="P126">Macroplaza Oaxaca</option>
-                    <option value="P129">Macroplaza San Luis</option>
-                    <option value="P107">Mall Plaza Lincoln</option>
-                    <option value="P118">Palmira Plaza Comercial</option>
-                    <option value="P122">Paseo Alcalde</option>
-                    <option value="P123">Paseo Hipodromo</option>
-                    <option value="P103">Paseo Puebla</option>
-                    <option value="P135">Paseo Reforma</option>
-                    <option value="P138">Paseo San Juan</option>
-                    <option value="P110">Paseo Solidaridad</option>
-                    <option value="P106">Plaza Bella Anáhuac</option>
-                    <option value="P102">Plaza Bella Frontera</option>
-                    <option value="P105">Plaza Bella Huinala</option>
-                    <option value="P115">Plaza Bella Mexiquense</option>
-                    <option value="P111">Plaza Bella Ramos Arizpe</option>
-                    <option value="P113">Plaza Monumental</option>
-                    <option value="P112">Plaza Real Reynosa</option>
-                    <option value="P108">Plaza Real Saltillo</option>
-                    <option value="P117">Plaza Universidad</option>
-                    <option value="P132">Puerta de Hierro</option>
-                    <option value="P140">Punto Oriente</option>
-                    <option value="P139">Punto San Isidro</option>
-                    <option value="P136">Reynosa II</option>
-                    <option value="P114">Super Plaza las Haciendas</option>
-                    <option value="P125">Urban Village Garza Sada</option>
-                    <option value="P127">Walmart Ensenada</option>
-                    <option value="P128">Walmart San Jose del Cabo</option>					
-                  </select>
+              <select name="persona" id="persona">
+                <option disabled="" selected="" value="">Propiedad</option>
+                <option value="P119">Cancun Gran Plaza</option>
+                <option value="P130">Centro Comercial Lopez Mateos</option>
+                <option value="P131">Ciudadela UV</option>
+                <option value="P101">El Paseo Santa Catarina</option>
+                <option value="P109">La Nogalera</option>
+                <option value="P134">Lago Real Centro Comercial</option>
+                <option value="P133">Macroplaza Del Valle</option>
+                <option value="2102">Macroplaza Estadio</option>
+                <option value="P121">Macroplaza Insurgentes</option>
+                <option value="P126">Macroplaza Oaxaca</option>
+                <option value="P129">Macroplaza San Luis</option>
+                <option value="P107">Mall Plaza Lincoln</option>
+                <option value="P118">Palmira Plaza Comercial</option>
+                <option value="P122">Paseo Alcalde</option>
+                <option value="P123">Paseo Hipodromo</option>
+                <option value="P103">Paseo Puebla</option>
+                <option value="P135">Paseo Reforma</option>
+                <option value="P138">Paseo San Juan</option>
+                <option value="P110">Paseo Solidaridad</option>
+                <option value="P106">Plaza Bella Anáhuac</option>
+                <option value="P102">Plaza Bella Frontera</option>
+                <option value="P105">Plaza Bella Huinala</option>
+                <option value="P115">Plaza Bella Mexiquense</option>
+                <option value="P111">Plaza Bella Ramos Arizpe</option>
+                <option value="P113">Plaza Monumental</option>
+                <option value="P112">Plaza Real Reynosa</option>
+                <option value="P108">Plaza Real Saltillo</option>
+                <option value="P117">Plaza Universidad</option>
+                <option value="P132">Puerta de Hierro</option>
+                <option value="P140">Punto Oriente</option>
+                <option value="P139">Punto San Isidro</option>
+                <option value="P136">Reynosa II</option>
+                <option value="P114">Super Plaza las Haciendas</option>
+                <option value="P125">Urban Village Garza Sada</option>
+                <option value="P127">Walmart Ensenada</option>
+                <option value="P128">Walmart San Jose del Cabo</option>
+              </select>
             </div>
 
             <div class="contacto__form__card__form contacto__form__card__form--submit">
@@ -398,7 +614,7 @@
       <a href=".">Ofertas de Empleo</a>
     </div>
     <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/bolsamexicana-grey.png.png"
-      class="footer__img"/>
+      class="footer__img" />
   </footer>
 </body>
 

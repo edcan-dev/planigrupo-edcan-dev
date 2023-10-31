@@ -92,6 +92,9 @@
 }
 
 
+.contacto__form__card {
+    width: 950px;
+}
 
 
 
@@ -101,25 +104,42 @@
 
 .main__tenants__carousel {
     margin-bottom: 50px;
+
 }
 
 .main__tenants__carousel__grid {
     margin: 0 auto;
     width: 950px;
-    height: 220px;
+    height: 250px;
+    padding-top: 10px;
 
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* 
     grid-template-columns:repeat(6, 1fr);
-    grid-template-rows:repeat(2, 1fr);
-    row-gap: 20px;
+    grid-template-rows:repeat(2, 1fr); */
     column-gap: 20px;
-    
+    row-gap: 20px;
+    overflow-x: hidden;
+
 }
+
+/* .main__tenants__carousel__grid > div {
+    display: flex;
+    flex-direction: column;
+    height: 220px;
+    justify-content: space-between;
+}
+ */
 .main__tenants__carousel__grid__item {
     display: flex;
     width: 140px;
     height: 100px;
 
+
+/*     margin-right: 20px;
+ */
 
     box-shadow: -1px -1px 9px 0px rgba(0,0,0,0.5);
     -webkit-box-shadow: -1px -1px 9px 0px rgba(0,0,0,0.5);
@@ -129,7 +149,28 @@
     background-position-y: center;
     background-position-x: center;
     background-repeat: no-repeat;
+
+    animation: carousel;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
+
+.main__tenants__carousel:hover {
+    animation-play-state: paused;
+}
+
+@keyframes carousel {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-180vw);
+    }
+    
+}
+
+
 .main__tenants__carousel__grid__item--walmart {
     background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/walmart.png');
 }
@@ -154,6 +195,157 @@
 .main__tenants__carousel__grid__item--bodega-aurrera {
     background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/bodega-aurrera.png');
 }
-.main__tenants__carousel__grid__item-- -tienda {
-    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/mi-tienda.png');
+.main__tenants__carousel__grid__item--mi-tienda {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/mi-tienda-del-ahorro.png');
 }
+.main__tenants__carousel__grid__item--cinemex {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/cinemex.png');
+}
+.main__tenants__carousel__grid__item--cinepolis {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/cinepolis.png');
+}
+.main__tenants__carousel__grid__item--the-home-depot {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/the-home-depot.png');
+}
+.main__tenants__carousel__grid__item--elektra {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/elektra.png');
+}
+.main__tenants__carousel__grid__item--radio-shack {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/radio-shack.png');
+}
+.main__tenants__carousel__grid__item--dico {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/dico.png');
+}
+.main__tenants__carousel__grid__item--famsa {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/famsa.png');
+}
+.main__tenants__carousel__grid__item--coppel {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/coppel.png');
+}
+.main__tenants__carousel__grid__item--sanborns {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/sanborns.png');
+}
+.main__tenants__carousel__grid__item--suburbia {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/suburbia.png');
+}
+.main__tenants__carousel__grid__item--promoda {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/promoda.png');
+}
+.main__tenants__carousel__grid__item--parisina {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/parisina.png');
+}
+.main__tenants__carousel__grid__item--del-sol {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/del-sol.png');
+}
+.main__tenants__carousel__grid__item--modatelas {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/modatelas.png');
+}
+.main__tenants__carousel__grid__item--petco {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/petco.png');
+}
+.main__tenants__carousel__grid__item--santander {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/santander.png');
+}
+.main__tenants__carousel__grid__item--banorte {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/banorte.png');
+}
+.main__tenants__carousel__grid__item--citibanamex {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/citibanamex.png');
+}
+.main__tenants__carousel__grid__item--citibanamex {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/citibanamex.png');
+}
+.main__tenants__carousel__grid__item--hsbc {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/hsbc.png');
+}
+.main__tenants__carousel__grid__item--scotiabank {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/scotiabank.png');
+}
+.main__tenants__carousel__grid__item--first-cash {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/first-cash.png');
+}
+.main__tenants__carousel__grid__item--office-depot {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/office-depot.png');
+}
+.main__tenants__carousel__grid__item--office-max {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/office-max.png');
+}
+.main__tenants__carousel__grid__item--innova-sport {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/innova-sport.png');
+}
+.main__tenants__carousel__grid__item--sally {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/sally.png');
+}
+.main__tenants__carousel__grid__item--super-fitness {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/super-fitness.png');
+}
+.main__tenants__carousel__grid__item--caliente-casino {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/caliente-casino.png');
+}
+.main__tenants__carousel__grid__item--yak {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/yak.png');
+}
+.main__tenants__carousel__grid__item--pockets {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/pockets.png');
+}
+.main__tenants__carousel__grid__item--auto-zone {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/auto-zone.png');
+}
+.main__tenants__carousel__grid__item--telcel {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/telcel.png');
+}
+.main__tenants__carousel__grid__item--att {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/att.png');
+}
+.main__tenants__carousel__grid__item--movistar {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/movistar.png');
+}
+.main__tenants__carousel__grid__item--starbucks {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/starbucks.png');
+}
+.main__tenants__carousel__grid__item--ihop {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/ihop.png');
+}
+.main__tenants__carousel__grid__item--johny-rockets {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/johnny-rockets.png');
+}
+.main__tenants__carousel__grid__item--tgi-fridays {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/tgi-fridays.png');
+}
+.main__tenants__carousel__grid__item--bostons-restaurant {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/bostons-restaurant.png');
+}
+.main__tenants__carousel__grid__item--toks-restaurant {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/toks-restaurant.png');
+}
+.main__tenants__carousel__grid__item--chilis {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/chilis.png');
+}
+.main__tenants__carousel__grid__item--peter-piper-pizza {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/peter-piper-pizza.png');
+}
+.main__tenants__carousel__grid__item--carls-jr {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/carls-jr.png');
+}
+.main__tenants__carousel__grid__item--burger-king {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/burger-king.png');
+}
+.main__tenants__carousel__grid__item--kfc {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/kfc.png');
+}
+.main__tenants__carousel__grid__item--mcdonalds {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/mcdonalds.png');
+}
+
+@media (max-width: 1000px) {
+
+    .main__tenants__carousel__grid {
+        width: 90%;
+    }
+
+}
+
+/*
+.e-carousel.e-partial .e-carousel-slide-container {
+    padding: 0 10%;  
+}*/

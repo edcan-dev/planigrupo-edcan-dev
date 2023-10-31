@@ -13,6 +13,9 @@
     height: 100px;
     width: 100%;
 }
+.main__hero__downbar--red {
+    background-color: #d7282f;
+}
 .main__hero_downbar__text {
     display: flex;
     flex-direction: column;

@@ -1,7 +1,9 @@
+/* 
 .lo_que_hacemos_info--grid {
     width: 75%;
     grid-template-rows: 1fr;
     height: max-content;
+    margin-bottom: 0px;
 }
 
 .lo_que_hacemos_info {
@@ -18,7 +20,7 @@
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
-    line-height: 19.8px; /* 110% */
+    line-height: 19.8px;
     letter-spacing: 1px;
     text-transform: uppercase;
     display: flex;
@@ -60,7 +62,7 @@
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
-    line-height: 19.8px; /* 110% */
+    line-height: 19.8px;
     letter-spacing: 1px;
     text-transform: uppercase;    
 }
@@ -70,7 +72,7 @@
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 20px; /* 142.857% */
+    line-height: 20px; 
     letter-spacing: 1px;
 
     text-align: justify;
@@ -82,7 +84,8 @@
     width: 100%;
     position: absolute;
     left: 0;
-    margin-top: 100px;
+    margin-top: 0px;
+    padding-top: 50px;
 
 }
 
@@ -92,7 +95,7 @@
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
-    line-height: 50px; /* 110% */
+    line-height: 50px; 
     letter-spacing: 1px;
     text-transform: uppercase;
     
@@ -161,7 +164,7 @@
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
-    line-height: 20px; /* 142.857% */
+    line-height: 20px; 
     letter-spacing: 1px;
     margin-bottom: 20px;
     display: inline-block;
@@ -172,7 +175,7 @@
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 20px; /* 142.857% */
+    line-height: 20px; 
     letter-spacing: 1px;
     text-transform: uppercase;
     
@@ -193,7 +196,7 @@
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 20px; /* 142.857% */
+    line-height: 20px;
     letter-spacing: 1px;
 }
 
@@ -203,4 +206,1299 @@
 
 .main__hero {
     background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/foto-3.jpg');
+}
+
+.vision_info_tabs__hr {
+    margin-bottom: 50px;
+}
+
+.main__contact_section {
+    display: flex;
+    height: 1000px;
+    background-color: #0096A9;
+}
+
+.selected__tab {
+    color: #0096A9 !important;
+}
+.tab__selector:hover{
+    color: #0096A9 !important;
+}
+.tab__selector {
+    color: #545859;
+    font-family: Raleway !important;
+    font-size: 14px !important;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px; 
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+
+.main__hero__downbar {
+    width: calc( 100% - 500px);
+} */
+
+.main__hero_downbar__text {
+  padding-left: 40px;
+}
+
+.inversionistas__tabs__tab-selector {
+  width: 1200px;
+
+  height: 50px;
+  margin: 40px auto;
+
+  & ul {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+
+    & .tab-selector--selected {
+      color: #C04D00;
+    }
+
+    & .tab-selector--splitter {
+      height: fit-content;
+    }
+
+    & .tab-selector--splitter:after {
+      content: '';
+      width: 2px;
+      height: 20px;
+      top: -10px;
+      background: gray;
+      position: absolute;
+    }
+
+    & li {
+      position: relative;
+      color: #545859;
+      font-family: Barlow;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 25px;
+      /* 263.158% */
+      letter-spacing: 1px;
+      text-transform: uppercase;
+
+      cursor: pointer;
+
+      /*             background-color: #C04D00;
+ */
+
+      border-right: #C04D00;
+    }
+
+
+  }
+}
+
+.inversionistas__tabs__tab--content--container {
+  position: relative;
+}
+
+.inversionistas__tabs__tab--content {
+  width: 100%;
+}
+
+.inversionistas__tabs__tab--content__text {
+  max-width: 1200px;
+  margin: 0 auto 40px;
+
+  & span {
+    color: #C04D00;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19.8px;
+    /* 110% */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+
+  & p {
+    color: #727272;
+    text-align: justify;
+    font-family: Raleway;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 142.857% */
+    letter-spacing: 1px;
+  }
+
+}
+
+.inversionistas__tabs__tab--content__row {
+  min-width: 1200px;
+  width: 100%;
+
+  display: flex;
+
+  margin: 40px 0px;
+
+  & .inversionistas__tabs__tab--content__row__item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    justify-content: space-evenly;
+  }
+
+  & .inversionistas__tabs__tab--content__row__item>span {
+    color: #C04D00;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19.8px;
+    /* 61.875% */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  & .inversionistas__tabs__tab--content__row__item>p {
+    color: #97928A;
+    text-align: center;
+    font-family: Barlow;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 15.71px;
+    /* 142.818% */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  & .inversionistas__tabs__tab--content__row__splitter {
+    height: fit-content;
+    width: 1px;
+    height: 80px;
+    background-color: #545859;
+  }
+
+}
+
+.inversionistas__tabs__tab--content__grid {
+  margin: 0 auto;
+  margin-bottom: 80px;
+  width: 1200px;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 40px;
+  row-gap: 40px;
+}
+
+
+.inversionistas__tabs__tab--content__grid__item {
+  display: flex;
+  height: 100px;
+  width: 100%;
+
+  justify-content: space-between;
+
+}
+
+.inversionistas__tabs__tab--content__grid__item__text {
+  display: inline-block;
+  width: 360px;
+
+  & span {
+    color: #C04D00;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19.8px;
+    /* 110% */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  & p {
+    color: #727272;
+    font-family: Raleway;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 142.857% */
+    letter-spacing: 1px;
+  }
+}
+
+.inversionistas__tabs__tab--content__grid__item__svg {
+  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/svgs/Group%2015.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100px;
+}
+
+.inversionistas__tabs__tab--subtab__selector {
+
+  width: 1200px;
+  margin: 0 auto;
+
+  & span {
+    color: #C04D00;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19.8px;
+    /* 110% */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 40px;
+  }
+
+  & ul {
+    display: flex;
+    width: calc(1200px - 40%);
+    height: 70px;
+    justify-content: space-between;
+
+    & li {
+      padding: 15px 20px;
+      color: #545859;
+      text-align: center;
+      font-family: Barlow;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      letter-spacing: 1px;
+      text-transform: capitalize;
+      cursor: pointer;
+    }
+
+    & .splitter {
+      padding: 0;
+      display: flex;
+      width: 1px;
+      height: 70px;
+      background-color: #EFEFED;
+    }
+
+    & .selected {
+      background-color: #EFEFED;
+    }
+  }
+}
+
+.inversionistas__tabs__tab--subtab {
+  margin-bottom: 40px;
+}
+
+.inversionistas__tabs__tab--subtab__content {
+  width: 100%;
+  background: #EFEFED;
+}
+
+article {
+  width: 1200px;
+  height: 280px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.invisible {
+  opacity: 0 !important;
+}
+
+.inversionistas__tabs__tab--subtab__content__card {
+  width: 1200px;
+  height: 280px;
+  margin: 0 auto;
+  opacity: 1;
+
+  display: flex;
+  position: absolute;
+
+  & .inversionistas__tabs__tab--subtab__content__card__text {
+    display: inline-block;
+    width: 60%;
+    padding: 20px 0;
+    position: relative;
+
+    & span {
+      display: flex;
+      margin-bottom: 20px;
+      color: #C04D00;
+      text-align: center;
+      font-family: Barlow;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 20px;
+      /* 142.857% */
+      letter-spacing: 1px;
+    }
+
+    & p {
+      color: #727272;
+      font-family: Raleway;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      /* 142.857% */
+      letter-spacing: 1px;
+    }
+
+    & a {
+      color: #0096A9;
+      font-family: Raleway;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      /* 142.857% */
+      letter-spacing: 1px;
+
+      position: absolute;
+      bottom: 15px;
+    }
+
+
+  }
+
+  & .inversionistas__tabs__tab--subtab__content__card__img {
+    width: 40%;
+    background-size: cover;
+  }
+
+  & .inversionistas__tabs__tab--subtab__content__card__img--1 {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/d5aa81a86a7b0d8049dd451096f50826.png');
+  }
+
+  & .inversionistas__tabs__tab--subtab__content__card__img--2 {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/inversionistas/0b598c7cb118defadeeb291c9ba452a7.png');
+  }
+
+  & .inversionistas__tabs__tab--subtab__content__card__img--3 {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/inversionistas/c47502c296186d2c4289c0de02e10a08.png');
+  }
+
+  & .inversionistas__tabs__tab--subtab__content__card__img--4 {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/inversionistas/36f4e82460312392261a9c77058a95e2.png');
+  }
+}
+
+.inversionistas__tabs__tab--content__contact {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.inversionistas__tabs__tab--content__contact__card {
+  width: 50%;
+  background-color: #EFEFED;
+
+  & .title__container {
+    background-color: #0096A9;
+    padding-left: 10px;
+  }
+
+  & .title__container--second {
+    background-color: #FFF;
+    padding-left: 10px;
+  }
+  & div {
+    padding: 10px 20px;
+  }
+
+  & div>span {
+    color: #FFF;
+    font-family: Fjalla One;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    /* 178.571% */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  & div>p>b {
+    color: #000;
+    font-family: Barlow;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+    /* 178.571% */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  & div>p {
+    color: #000;
+    text-align: justify;
+    font-family: Raleway;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    /* 208.333% */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  & div>.number {
+    color: #C04D00;
+  }
+
+  & .text__container {
+    background-color: #FFF;
+    padding-left: 40px;
+  }
+
+}
+
+.inversionistas__tabs__tab--content__contact__card--second {
+  background-color: #C04D00;
+  width: 100%;
+  display: flex;
+}
+
+
+.inversionistas__tabs__tab--content--2 {
+  width: 100%;
+  height: max-content;
+
+
+  & .section--title {
+    margin: 0 auto 40px;
+    width: 1200px;
+
+    & span {
+      color: #C04D00;
+      font-family: Raleway;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 19.8px;
+      /* 110% */
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    & p {
+      color: #727272;
+      text-align: justify;
+      font-family: Raleway;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      /* 142.857% */
+      letter-spacing: 1px;
+    }
+  }
+
+  & .section--table {
+    width: 100%;
+    background-color: #EFEFED;
+    padding: 40px 0px;
+
+    & .container {
+      width: 1200px;
+      margin: 0 auto;
+    }
+
+
+    & span {
+      color: #C04D00;
+      font-family: Raleway;
+      font-size: 19px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 19.8px;
+      /* 104.211% */
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      display: flex;
+      margin-bottom: 40px;
+    }
+
+    & table {
+
+      margin-bottom: 40px;
+
+      width: 100%;
+
+      & tr {
+        width: 100%;
+        display: flex;
+        height: 50PX;
+      }
+
+      & .col {
+        width: 11%;
+      }
+
+      & .col-1st {
+        width: 33%;
+      }
+
+      & .tr--head {
+        background: #8c8279;
+
+        & th {
+          color: #FFF;
+          text-align: justify;
+          font-family: Raleway;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 50px;
+          /* 142.857% */
+          letter-spacing: 1px;
+          text-align: center;
+
+        }
+      }
+
+      & .tr--body {
+        & td {
+          color: #545859;
+          text-align: justify;
+          font-family: Raleway;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 50px;
+          /* 142.857% */
+          letter-spacing: 1px;
+          text-align: center;
+
+        }
+      }
+
+      & .tr--body--secondary {
+        background-color: rgba(178, 180, 178, 0.40);
+      }
+    }
+
+    & .table_description {
+      & p {
+        color: #727272;
+        text-align: justify;
+        font-family: Raleway;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        /* 153.846% */
+        letter-spacing: 1px;
+      }
+    }
+
+  }
+
+  & .section--docs {
+
+    & .grid_container {
+      margin: 0 auto;
+      width: 1200px;
+      display: grid;
+      grid-template-columns: 3fr 7fr;
+      padding-top: 40px;
+      margin-bottom: 40px;
+
+
+      & .docs_container {
+
+        border-right: #727272 1px solid;
+
+
+        & span {
+          color: #C04D00;
+          font-family: Raleway;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 19.8px;
+          /* 110% */
+          letter-spacing: 1px;
+          text-transform: uppercase;
+
+          display: inline-block;
+          height: 50px;
+        }
+
+        & ul>li {
+          color: #727272;
+          text-align: justify;
+          font-family: Raleway;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 50px;
+          /* 133.333% */
+          letter-spacing: 1px;
+
+          height: 50px;
+
+
+        }
+
+        & ul>li:hover {
+          color: #0096A9;
+        }
+
+        .selected {
+          font-weight: 600;
+        }
+
+        & .tab_selector--info-finan {
+          cursor: pointer;
+        }
+
+      }
+
+      & .table_container {
+        padding: 40px 0px 40px 80px;
+        position: relative;
+        overflow-y: scroll;
+
+        & .tab_content {
+          position: absolute;
+          width: calc(100% - 80px);
+          opacity: 1;
+
+          & thead>tr {
+            background-color: #0096A9;
+            height: 50px;
+
+            & th {
+              padding-left: 20px;
+
+              color: #FFF;
+              text-align: justify;
+              font-family: Raleway;
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 20px;
+              /* 111.111% */
+              letter-spacing: 1px;
+            }
+          }
+
+          & tbody>tr {
+            height: 50px;
+            background-color: #EFEFED;
+
+            & td>div {
+              display: flex;
+              width: 100%;
+              justify-content: space-between;
+              padding: 0px 20px;
+
+              & p {
+                color: #53575A;
+                text-align: justify;
+                font-family: Raleway;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px;
+                /* 142.857% */
+                letter-spacing: 1px;
+              }
+
+              & a {
+                color: #53575A;
+                text-align: justify;
+                font-family: Raleway;
+                font-size: 10px;
+                font-style: normal;
+                font-weight: 900;
+                text-decoration: noneb;
+                line-height: 20px;
+                /* 200% */
+                letter-spacing: 1px;
+                text-transform: capitalize;
+              }
+            }
+          }
+
+          .secondary {
+            background-color: #DADAD8;
+          }
+        }
+
+        & .tabs_content--2 {
+          opacity: .0;
+        }
+
+      }
+
+    }
+  }
+}
+
+
+.inversionistas__tabs__tab--content--3 {
+
+  .gobierno_section {
+    width: 1200px;
+    margin: 40px auto;
+
+    & span {
+      color: #C04D00;
+      font-family: Raleway;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 19.8px;
+      /* 110% */
+      letter-spacing: 1px;
+      text-transform: uppercase;
+
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+
+    & p {
+      color: #000;
+      text-align: justify;
+      font-family: Raleway;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      /* 142.857% */
+      letter-spacing: 1px;
+    }
+
+  }
+
+  & span {
+    color: #C04D00;
+    font-family: Raleway;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19.8px;
+    /* 132% */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    display: flex;
+    width: 1200px;
+    margin: 0 auto 20px;
+
+  }
+
+  .gobierno_grid {
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 3fr 7fr;
+
+    & .gobierno_grid__selectors {
+      border-right: #545859 solid 1px;
+      padding-right: 40px;
+      height: 500px;
+
+
+      & ul>li {
+        color: #727272;
+        text-align: justify;
+        font-family: Raleway;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        /* 133.333% */
+        letter-spacing: 1px;
+
+        height: 50px;
+        line-height: 50px;
+        padding-left: 20px;
+        cursor: pointer;
+      }
+
+      & ul>.selected {
+        background-color: #dadada;
+
+      }
+
+      & .gobierno_grid__tab_content {
+        background-color: #8c8279;
+
+      }
+      
+
+    }
+
+    & .gobierno_grid__tab_content {
+      padding-left: 40px;
+      height: 500px;
+      width: 100%;
+    }
+    & .gobierno_grid__tab_content--1 {
+      overflow-y: scroll;
+    }
+
+  }
+
+  .gobierno_download {
+
+    & .anchor__container {
+      width: calc( 1200px);
+      margin: 120px auto 40px;
+
+      & div {
+        margin-left: 30%;
+        display: flex;
+        height: 50px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 20px;
+        background: #DADAD8;
+
+        & p {
+          color: #53575A;
+          text-align: justify;
+          font-family: Raleway;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 20px; /* 142.857% */
+          letter-spacing: 1px;
+          text-transform: capitalize;
+        }
+        & a {
+          color: #53575A;
+          text-align: justify;
+          font-family: Raleway;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 20px; /* 142.857% */
+          letter-spacing: 1px;
+          text-transform: capitalize;
+          text-decoration: none;
+        }
+      }
+      & .secondary {
+        background-color: #F5F3F1;;
+      }
+    }
+  }
+  .title__container__span {
+    margin-bottom: 0;
+  }
+}
+
+.inversionistas__tabs__tab--content--4 {
+
+  background-color: #F5F3F1;
+  padding-top: 20px;
+  & .comunicados_container {
+
+    width: 1200px;
+    margin: 0 auto 40px;
+
+    & span {
+      color: #C04D00;
+      font-family: Raleway;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 19.8px; /* 110% */
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+    & p {
+      color: #000;
+      text-align: justify;
+      font-family: Raleway;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px; /* 142.857% */
+      letter-spacing: 1px;  
+    }
+  }
+
+  & .tab_decade__selector {
+    width: 1200px;
+    margin: 0 auto 40px;
+    display: flex;
+
+    & div {
+      background-color: #DADAD8;
+      padding: 10px 20px;
+
+      & p {
+        color: #53575A;
+        text-align: justify;
+        font-family: Raleway;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 1000;
+        line-height: 20px; /* 133.333% */
+        letter-spacing: 1px;
+      }
+    }
+  }
+  & .tab_decade__grid {
+    width: 1200px;
+    margin: 0 auto 40px;
+
+    display: grid;
+
+    grid-template-rows: repeat(2, 1fr);
+
+    row-gap: 40px;
+
+    & .tab_decade__grid__row {
+      display: flex;
+      justify-content: space-between;
+      
+      & .tab_decade__grid__item {
+        width: 220px;
+        height: 400px;
+        background-color: #FFF;
+
+        padding: 15px;
+
+        & span {
+          color: #C04D00;
+          text-align: center;
+          font-family: Raleway;
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 19.8px; /* 61.875% */
+          letter-spacing: 1px;
+          text-transform: uppercase;
+
+          display: inline-block;
+          margin-bottom: 15px; 
+        }
+
+
+        & .tab_decade__grid__item__img {
+          width: 100%;
+          height: 50%;
+          margin-bottom: 15px;
+          background-color: #444;
+        }
+        & .tab_decade__grid__item__select {
+          width: 100%;
+          background-color: #DADAD8;
+          height: 30px;
+          margin-bottom: 5px;
+          position: relative;
+          display: flex;
+
+          
+          color: #53575A;
+          text-align: justify;
+          font-family: Raleway;
+          font-size: 9px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 40px; /* 222.222% */
+          letter-spacing: 1px;
+
+          & li {
+            background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/svgs/carousel-icon.svg');
+            filter: invert(42%) sepia(86%) saturate(4334%) hue-rotate(163deg) brightness(96%) contrast(104%);
+            width: 20px;
+            height: 10px;
+            background-size: cover;
+            position: absolute;
+            right: 5px;
+            top: 15px;
+            transform: rotate(270deg);
+          }
+
+        }
+
+      }
+    }
+
+
+    
+
+  }
+}
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #FFF;
+  color: #444;
+  cursor: pointer;
+  height: 50px;
+  padding-left: 20px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  position: relative;
+
+  & p {
+    color: #53575A;
+    text-align: justify;
+    font-family: Raleway;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 1px;
+    text-transform: capitalize;  
+  }
+  & small {
+    color: #53575A;
+    text-align: justify;
+    font-family: Raleway;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 200% */
+    letter-spacing: 1px;
+    text-transform: capitalize;  
+  }
+  & li {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/svgs/carousel-icon.svg');
+    filter: invert(42%) sepia(86%) saturate(4334%) hue-rotate(163deg) brightness(96%) contrast(104%);
+    width: 20px;
+    height: 10px;
+    background-size: cover;
+    position: absolute;
+    right: 20px;
+    top:18px;
+    transform: rotate(270deg);
+  }
+}
+.accordion.active > li {
+  rotate: 90deg;
+  filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(84deg) brightness(97%) contrast(103%);
+}
+
+
+.active, .accordion:hover {
+  transform: rotate(0deg);
+}
+
+.panel {
+  padding: 0 20px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  
+  & p {
+    color: #53575A;
+    text-align: justify;
+    font-family: Raleway;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; 
+    letter-spacing: 1px;
+    margin: 20px 0;
+  }
+}                                                 
+/* 
+
+.dropdown-content {
+  top: 20px;
+
+  & a {
+    padding: 0px 10px;
+  }
+}
+
+.dropbtn {
+
+  width: 100%;
+  padding: 0px 10px !important;
+
+  background-color: #DADAD8;
+  padding: 0px;
+  color: #53575A;
+  text-align: justify;
+  font-family: Raleway;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.dropbtn:hover {
+  background-color: #727272;
+  color: #FFF;
+}
+*/
+.comunicados_contact {
+  background-color: #FFF;
+  padding-top: 80px;
+}
+
+.inversionistas__tabs__tab--content__contact--comunicados {
+  margin-bottom: 80px;
+}
+
+.inversionistas__tabs__tab--content--5 {
+  background-color: #F5F3F1;
+
+  & .title-container {
+
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 20px;
+    margin-bottom: 40px;
+    & span {
+      color: #C04D00;
+      font-family: Raleway;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 19.8px; /* 110% */
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+    & p {
+      color: #000;
+      text-align: justify;
+      font-family: Raleway;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px; /* 142.857% */
+      letter-spacing: 1px;
+    }
+
+  }
+  & .grid-container {
+    width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    padding-bottom: 40px; 
+
+    & .grid_tab_selector {
+
+      padding-right: 80px;
+      border-right: #DADAD8 solid 1px;
+
+      & span {
+        color: #C04D00;
+        font-family: Raleway;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 19.8px; /* 132% */
+        letter-spacing: 1px;
+        text-transform: uppercase;
+
+        display: inline-block;
+        margin-bottom: 10px;
+      }
+      & ul {
+        width: 100%;
+
+        & .selected {
+          background-color: rgba(178, 180, 178, 0.20);;
+        }
+
+        & li {
+
+          height: 50px;
+          color: #53575A;
+          text-align: justify;
+          font-family: Raleway;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 50px; /* 133.333% */
+          letter-spacing: 1px;
+
+          padding-left: 20px;
+
+        }
+      }
+
+
+
+    }
+
+    & .grid_tab_content {
+      padding-left: 80px;
+      padding-top: 40px;
+
+      & ul {
+        & li {
+          height: 50px;
+          display: flex;
+          padding: 0px 20px;
+          
+          justify-content: space-between;
+
+          background-color: #DADAD8;
+          color: #53575A;
+          text-align: justify;
+          font-family: Raleway;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 20px; /* 142.857% */
+          letter-spacing: 1px;
+          text-transform: capitalize;
+
+          & p {
+            line-height: 50px;
+          }
+          & a {
+            line-height: 50px;
+            text-decoration: none;
+            font-weight: 800;
+          }
+
+        }
+        & .secondary {
+          background-color: #F5F3F1;
+        }
+      }
+
+
+    }
+
+    
+  }
+  & .contact__cotainer {
+    background-color: #FFF;
+    padding: 120px 0 40px;
+    
+  }
 }

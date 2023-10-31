@@ -67,6 +67,11 @@ class PropertiesGrid {
         document.getElementById('state-selector').value = clearedStateFromMap
 
         this.render(filteredProperties)
+
+        window.scrollTo({
+            top: '920',
+            behavior: 'smooth'
+          });
     }
     #clearStateName( state ) {
         return state.replace('á','a').replace('é','e').replace('í','i').replace('ó','o').replace('ú','u')
