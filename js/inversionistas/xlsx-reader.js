@@ -1,5 +1,4 @@
-
-const xslxPath = '../../data/inversionistas_input.xlsx'
+const xslxPath = './../../data/inversionistas_input.xlsx';
 const response = await fetch(xslxPath);
 
 const xlsx = await response.blob();

@@ -56,9 +56,7 @@ class PropertiesGrid {
      */
     filterByStateFromMap(stateFromMap) {
 
-
         const clearedStateFromMap = this.#clearStateName(stateFromMap);
-
 
         const filteredProperties = clearedStateFromMap !== 'all'
         ? this.#properties.filter(property => property.propertyState == clearedStateFromMap)
@@ -68,13 +66,29 @@ class PropertiesGrid {
 
         this.render(filteredProperties)
 
+        this.renderTenantContainer(filteredProperties);
+
         /* window.scrollTo({
             top: '920',
             behavior: 'smooth'
           }); */
     }
+
     #clearStateName( state ) {
         return state.replace('á','a').replace('é','e').replace('í','i').replace('ó','o').replace('ú','u')
+    }
+    renderTenantContainer( filteredProperties ) {
+
+        const tenantsContainer = document.querySelector('.tenants_container > ul');
+        tenantsContainer.innerHTML = ''
+
+        filteredProperties.forEach(property => {
+
+            const li = document.createElement('li');
+            li.innerHTML = property.propertyTitle
+            tenantsContainer.appendChild(li)
+            
+        });
     }
 }
 

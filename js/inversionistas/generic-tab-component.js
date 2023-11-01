@@ -34,3 +34,5 @@ class GenericTabsComponent {
 const genericTabsComponent = new GenericTabsComponent('.gobierno-tab__selector', '.gobierno-tab__content').initialize();
 
 const coberturaTabs = new GenericTabsComponent('.tab__selector--cobertura','.tab__content--cobertura').initialize();
+
+const responsiveSection1TabsComponent = new GenericTabsComponent('.inver_tabs--selector','.inver_tabs_content').initialize();
