@@ -2275,3 +2275,123 @@ MAIN TABS MARGIN
         text-align: start;
     }
 }
+
+.compromise {
+    width: 100%;
+
+    & .compromise__grid {
+        width: 950px;
+        height: 400px;
+        margin: 100px auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 40px;
+
+        & .compromise__grid__item {
+
+            & span {
+                color: #C04D00;
+                text-align: justify;
+                font-family: Barlow;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 25px; /* 138.889% */
+                letter-spacing: 1px;
+                text-transform: uppercase;  
+                display: inline-block;
+                margin-bottom: 20px;  
+            }
+            & p {
+                color: #000;
+                text-align: justify;
+                font-family: Raleway;
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 25px; /* 192.308% */
+                letter-spacing: 1px;
+                text-transform: uppercase;
+            }
+            & .p--first {
+                font-size: 10px;
+            }
+        }
+    }
+
+}
+
+.tabs__card {
+    height: 250px;
+    width: 950px;
+    margin: 0 auto;
+}
+
+
+.tab__card__text {
+    padding: 20px;
+
+    & p {
+        margin-top: 10px !important;
+    }
+    & span {
+        font-size: 16px !important;
+    }
+}
+
+.tab__card__text__a {
+    background-color: #0000 !important;
+    color: #0096A9 !important;
+    border-bottom: 1px solid #0096A9 !important;
+    text-decoration: none;
+    left: 20px !important;
+    bottom: 20px !important;
+
+}
+
+.main__tabs > div > ul {
+    margin: 0 auto;
+    width: 950px;
+}
+
+
+.compromise--responsive {
+    display: none;
+}
+
+.main__tabs {
+    margin-bottom: 40px ;
+}
+
+@media (max-width: 500px) {
+    .compromise__grid {
+        width: 100% !important;
+        margin: 50px auto !important;
+        padding: 0px 20px;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: 1fr !important;
+    }
+
+    .compromise__grid__item > span {
+        margin: 10px 0 !important;
+    }
+
+    .tabs__card {
+        width: 100% !important;
+        height: 500px !important;
+
+        & .tab__card__text {
+            height: 260px;
+        }
+        & .tab__card__text__a {
+            bottom: 260px !important;
+        }
+    }
+
+    .main__tabs > div > ul {
+        width: 100%;
+    }
+    .main__tabs {
+        margin-top: 900px !important;
+    }
+}
