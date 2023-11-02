@@ -85,7 +85,14 @@ class PropertiesGrid {
         filteredProperties.forEach(property => {
 
             const li = document.createElement('li');
-            li.innerHTML = property.propertyTitle
+
+            const namePElement = document.createElement('p');
+            namePElement.innerHTML = property.propertyTitle
+            namePElement.classList.add('tenant__name')
+            const locationPElement = document.createElement('p');
+            locationPElement.innerHTML = property.propertyLocation
+            li.appendChild(namePElement);
+            li.appendChild(locationPElement);
             tenantsContainer.appendChild(li)
             
         });
