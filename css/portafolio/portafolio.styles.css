@@ -550,19 +550,37 @@
     top: 10px;
     width: 250px;
     & ul {
+
         & li {
-            padding: 5px;
+            height: 50px;
+        }
+
+        & .tenant__name {
+            padding-left: 5px;
             background-color: #0096A9;
 
 
             color: #FFF;
-            font-family: Barlow;
-            font-size: 14px;
+            font-family: Raleway;
+            font-size: 12px;
             font-style: normal;
             font-weight: 700;
-            line-height: 25px;
             letter-spacing: 1px;
             text-transform: uppercase;
+            height: 25px;
+            line-height: 25px;
+
+        }
+        & p {
+            padding-left: 5px;
+            background-color: #FFF;
+            height: 25px;
+            line-height: 25px;
+            color: #8c827a;
+            font-family: Raleway;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 700;
         }
     }
 }

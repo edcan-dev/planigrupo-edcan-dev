@@ -1,0 +1,84 @@
+{
+  "id": 1,
+  "key_name": "cancun-plaza-plaza",
+  "name": "Cancun Gran Plaza", 
+  "location": "Cancun, Quintana Roo", 
+  "phone_number": "(998) 206 17 05", 
+  "website_url": "https://cancungranplaza.com.mx",
+  "logo_img_url": "https://planigrupo.com.mx/wp-content/uploads/2018/08/Logo-Cancun-Nuevo.png",
+  "hero_img_url": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/Cncnfoto.png",
+  "start_date": "May 16, 2006",
+  "usable_area": 26643,
+  "parking_spaces": 1008,
+  "about": "Walmart, Suburbia, Martí, Cinépolis entre otras marcas hacen de esta plaza una excelente opción para sus visitantes. Su zona de influencia es de 187,000 clientes potenciales, es decir poco más de 53,000 hogares. El ingreso anual por familia se estima en $198,000 al año. El ingreso anual del mercado es de alrededor de 10 mil millones de pesos.",
+  "tenants": [
+    {
+      "tenant_name": "cinepolis",
+      "tenant_img_url": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/cinepolis.png"
+    },
+    {
+      "tenant_name": "suburbia",
+      "tenant_img_url": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/suburbia.png"
+    },
+    {
+      "tenant_name": "sanborns",
+      "tenant_img_url": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/sanborns.png"
+    },
+    {
+      "tenant_name": "promoda",
+      "tenant_img_url": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/promoda.png"
+    },
+    {
+      "tenant_name": "walmart",
+      "tenant_img_url": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/walmart.png"
+    },
+    {
+      "tenant_name": "radio-shack",
+      "tenant_img_url": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/radio-shack.png"
+    },
+    {
+      "tenant_name": "telcel",
+      "tenant_img_url": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/telcel.png"
+    },
+    {
+      "tenant_name": "movistar",
+      "tenant_img_url": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/movistar.png"
+    },
+    {
+      "tenant_name": "att",
+      "tenant_img_url": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/att.png"
+    },
+    {
+      "tenant_name": "burger-king",
+      "tenant_img_url": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/burger-king.png"
+    },
+    {
+      "tenant_name": "kfc",
+      "tenant_img_url": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/kfc.png"
+    }
+  ],
+  "map_url": "https://planigrupo.com.mx/wp-content/uploads/2018/08/Directorio.png",
+  "key_indicators": {
+    "data": {
+      "total_surface": 61286,
+      "building_area": 42398,
+      "comercial": 26643,
+      "chlidren_playground": "Si",
+      "type": "Centro",
+      "pads": "Burger King and KFC",
+      "stores": 109,
+      "local_spaces": 1008
+    },
+    "tenants": {
+      "anchors": "Walmart, Cinepolis, Suburbia",
+      "featured_tenants": "Nutrisa, Devlyn, Radioshack, Ultra Hogar, Dico, Destroyer, Game Rush, Michelle, GNC, INE, Hang Ten, Mobo, Steren, Bellisima, BFashion, Shasa, Marti, Toda Moda, La Joya.",
+      "sub_anchors": "Sanborns, Promoda, Suburbia, Quarry Jeans & Fashion, La Casa de los Abuelos, Telcel",
+      "cinema": "Cinepolis, 14 theaters."
+    }
+
+  },
+  "contact": {
+    "address":"Av. Nichupté 18 51 77533 Cancún, Q.R. Mexico",
+    "phone_numbers": ["(998) 206 17 05","(998) 206 16 94"]
+  }
+}
