@@ -36,3 +36,9 @@ const genericTabsComponent = new GenericTabsComponent('.gobierno-tab__selector',
 const coberturaTabs = new GenericTabsComponent('.tab__selector--cobertura','.tab__content--cobertura').initialize();
 
 const responsiveSection1TabsComponent = new GenericTabsComponent('.inver_tabs--selector','.inver_tabs_content').initialize();
+
+const responseGlobalTabs = new GenericTabsComponent('.resp-tab-selector','.resp-tab-content').initialize();
+
+const responsiveSection2TabsComponent = new GenericTabsComponent('.second_section_tab--selector','.second_section_tab--content').initialize();
+
+const gobiernoRespTabsComponent = new GenericTabsComponent('.gobierno__tab__selector','.gobierno__tab__content').initialize();
