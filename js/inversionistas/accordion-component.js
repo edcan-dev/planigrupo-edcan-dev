@@ -17,3 +17,17 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+
+
+// RESPONSIVE SEC01 CONTENTS
+
+document.querySelector('.inver_select_list__selector')
+  .addEventListener('click', (ev) => {
+    ev.target.classList.toggle('selected');
+    ev.target.nextElementSibling.classList.toggle('active');
+  })
+document.querySelectorAll('.resp-carousel-selector')
+  .forEach(selector => selector.addEventListener('click',() => {
+    document.querySelector('.inver_select_list__content').classList.toggle('active')
+  }))
