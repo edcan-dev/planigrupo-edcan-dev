@@ -3,6 +3,7 @@
   [
     {
       "propertyTitle": "Cancun Gran Plaza",
+      "propertyKeyName": "cancun-plaza-plaza",
       "propertyLocation": "CANCUN, QUINTANA ROO",
       "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/Cncnfoto.png",
       "propertyState":"Quintana Roo",
@@ -15,6 +16,7 @@
     },
     {
       "propertyTitle": "Centro Comercial Lopez Mateos",
+      "propertyKeyName": "centro-comercial-lopez-mateos",
       "propertyLocation": "Cd. Juarez, Chihuahua",
       "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-centro-comercial-lopez-mateos.jpg",
       "propertyState":"Chihuahua",
@@ -22,6 +24,7 @@
     },
     {
       "propertyTitle": "Ciudadela UV",
+      "propertyKeyName": "ciudadela-uv",
       "propertyLocation": "Zapopan, Jalisco",
       "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/Ciudadela-Urban-Village.jpg",
       "propertyState":"Jalisco",
@@ -29,6 +32,7 @@
     },
     {
       "propertyTitle": "EL PASEO SANTA CATARINA",
+      "propertyKeyName": "el-paseo-santa-catarina",
       "propertyLocation": "Santa Catarina, Nuevo León",
       "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-el-paseo-santa-catarina.jpg",
       "propertyState": "Nuevo Leon",
@@ -36,6 +40,7 @@
   },
   {
       "propertyTitle": "LA NOGALERA",
+      "propertyKeyName": "la-nogalera",
       "propertyLocation": "Saltillo, Coahuila",
       "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/La-Nogalera.jpeg",
       "propertyState": "Coahuila",
@@ -43,6 +48,7 @@
   },
   {
       "propertyTitle": "LAGO REAL CENTRO COMERCIAL",
+      "propertyKeyName": "lago-real-centro-comercial",
       "propertyLocation": "Bahia de Banderas, Nayarit",
       "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-lago-real-centro-comercial.jpg",
       "propertyState": "Nayarit",
@@ -140,7 +146,7 @@
       "propertyTenants": []
   },
   {
-      "propertyTitle": "PLAZA BELLA ANáHUAC",
+      "propertyTitle": "PLAZA BELLA ANá ",
       "propertyLocation": "Escobedo, Nuevo León",
       "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-plaza-bella-anahuac.jpg",
       "propertyState": "Nuevo Leon",

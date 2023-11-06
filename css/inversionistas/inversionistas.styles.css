@@ -655,6 +655,7 @@ article {
         padding: 40px 0px 40px 80px;
         position: relative;
         overflow-y: scroll;
+        z-index: 100;
 
         & .tab_content {
           position: absolute;
@@ -728,7 +729,9 @@ article {
         }
 
       }
-
+      & .table_container.invisible {
+        z-index: -10;
+      }
     }
   }
 }
@@ -1922,4 +1925,50 @@ article {
 
   }
 
+}
+
+
+/* Accordion para Seccion 2 */
+.informacion-pdf-accordion--accordion {
+  background-color: #EFEFED;
+
+  & p {
+    font-weight: 400;
+  }
+}
+
+.informacion-pdf-accordion {
+  box-sizing: border-box;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0px !important;
+
+
+  & div {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    justify-content: space-between;
+    align-content: center; 
+    padding: 0px 20px;
+     & p {
+      margin: 0 !important;
+      line-height: 40px !important;
+      color: #53575A !important;
+    }
+     & a {
+      margin: 0 !important;
+      line-height: 40px !important;
+      font-weight: 400 !important;
+     }
+
+     & audio {
+      height: 30px !important;
+      width: 200px ;
+     }
+
+  }
 }

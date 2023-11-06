@@ -4,7 +4,6 @@ class PropertiesGrid {
     #properties;
     constructor(properties) {
         this.#properties = properties;
-
     }
 
     get properties() {
@@ -18,9 +17,10 @@ class PropertiesGrid {
 
         properties.forEach(property => {
 
-            const propertyElement = document.createElement('a');
-            propertyElement.href = 'https://google.com'
+            const propertyElement = document.createElement('div');
             propertyElement.classList.add(['featured_properties__grid__item']);
+
+            const keyName = this.#clearStateName(this.getKeyName(property.propertyTitle))
 
             propertyElement.style.backgroundImage = "url('" + property.propertyImageUrl + "')";
             
@@ -28,6 +28,7 @@ class PropertiesGrid {
                 <div class="featured_properties__grid__item__text">
                     <span>${ property.propertyTitle }</span>
                     <p>${ property.propertyLocation }</p>
+                    <p class="inactive">${ keyName }</p>
                 </div>
                 `
             container.append(propertyElement);
@@ -93,9 +94,17 @@ class PropertiesGrid {
             locationPElement.innerHTML = property.propertyLocation
             li.appendChild(namePElement);
             li.appendChild(locationPElement);
+            li.addEventListener('click',() => {
+                window.scrollBy({top: 1000, behavior: 'smooth'})
+            })
+            
             tenantsContainer.appendChild(li)
             
         });
+    }
+
+    getKeyName( name ) {
+        return name.toLowerCase().split(' ').join('-');
     }
 }
 
