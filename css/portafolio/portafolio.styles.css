@@ -242,6 +242,12 @@
     justify-content: end;
     border-radius: 5px;
     text-decoration: none;
+    
+    cursor: pointer;
+    transition: all .2s;
+}
+.featured_properties__grid__item:hover {
+    transform: scale(1.05);
 }
 .featured_properties__grid__item__text {
     background-color: #0096A9;
@@ -549,9 +555,15 @@
     right: 0px;
     top: 10px;
     width: 250px;
+
+    cursor: pointer;
     & ul {
 
         & li {
+            height: 50px;
+        }
+        & li:hover {
+            transform: scale(1.04);
             height: 50px;
         }
 
@@ -583,4 +595,9 @@
             font-weight: 700;
         }
     }
+}
+
+
+.e-dlg-center-center {
+    position: fixed !important ;
 }

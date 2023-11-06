@@ -100,8 +100,8 @@ class TabsComponent {
     }
 }
 
-const tabsComponent = new TabsComponent('.tab_selector--info-finan');
-tabsComponent.initialize();
+/* const tabsComponent = new TabsComponent('.tab_selector--info-finan');
+tabsComponent.initialize(); */
 
 
 const tabsComponent2 = new TabsComponent('.tab_selector--i');
