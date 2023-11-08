@@ -2289,8 +2289,13 @@ MAIN TABS MARGIN
 
         & .compromise__grid__item {
 
+            &  img {
+                display: flex;
+                margin: 0 auto 20px;
+                width: 100px;
+            }
             & span {
-                color: #C04D00;
+                color: #1f1a18;
                 text-align: justify;
                 font-family: Barlow;
                 font-size: 18px;
@@ -2312,9 +2317,6 @@ MAIN TABS MARGIN
                 line-height: 25px; /* 192.308% */
                 letter-spacing: 1px;
                 text-transform: uppercase;
-            }
-            & .p--first {
-                font-size: 10px;
             }
         }
     }
