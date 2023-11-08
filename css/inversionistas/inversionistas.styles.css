@@ -643,6 +643,7 @@ article {
 
         .selected {
           font-weight: 600;
+          color: #0096A9;
         }
 
         & .tab_selector--info-finan {

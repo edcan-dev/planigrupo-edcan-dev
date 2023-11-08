@@ -28,6 +28,9 @@ class PropertiesGrid {
                 <div class="featured_properties__grid__item__text">
                     <span>${ property.propertyTitle }</span>
                     <p>${ property.propertyLocation }</p>
+                    <div class="featured_properties__grid__item__contact">
+                        <img src='https://planigrupo.blob.core.windows.net/planigrupo/assets/png-icons/email.png'>
+                    </div>
                     <p class="inactive">${ keyName }</p>
                 </div>
                 `
@@ -37,6 +40,7 @@ class PropertiesGrid {
 
     init() {
         this.render(this.#properties)
+        if(window.innerWidth <= 1000 ) this.renderMobileStateCounter()
     }
 
     /**
@@ -83,28 +87,69 @@ class PropertiesGrid {
         const tenantsContainer = document.querySelector('.tenants_container > ul');
         tenantsContainer.innerHTML = ''
 
+        const headerLi = document.createElement('li')
+        const pHeader = document.createElement('p');
+        pHeader.innerHTML = 'Centros Comerciales';
+        pHeader.classList.add('tenant__name')
+        headerLi.appendChild(pHeader);
+        tenantsContainer.appendChild(headerLi);
+
         filteredProperties.forEach(property => {
 
             const li = document.createElement('li');
+            li.classList.add('tenant__name__item')
+            const div = document.createElement('div');
+            div.classList.add('tenant__name__item__text')
 
-            const namePElement = document.createElement('p');
-            namePElement.innerHTML = property.propertyTitle
-            namePElement.classList.add('tenant__name')
-            const locationPElement = document.createElement('p');
-            locationPElement.innerHTML = property.propertyLocation
-            li.appendChild(namePElement);
-            li.appendChild(locationPElement);
+            const pItem =document.createElement('p')
+            pItem.innerText = property.propertyTitle
+            const smallItem =document.createElement('small')
+            smallItem.innerHTML = property.propertyLocation;
+
+            div.appendChild(pItem)
+            div.appendChild(smallItem)
+
+            
+            const imgDiv = document.createElement('div');
+            imgDiv.classList.add('tenant__name__item__img')
+            imgDiv.style.backgroundImage = "url('" + property.propertyImageUrl + "')";
+
+            li.appendChild(div)
+            li.appendChild(imgDiv)
+
+            
             li.addEventListener('click',() => {
                 window.scrollBy({top: 1000, behavior: 'smooth'})
             })
-            
             tenantsContainer.appendChild(li)
             
         });
-    }
 
+        const footerLi = document.createElement('li');
+        footerLi.classList.add('tenant__container__footer')
+        footerLi.innerHTML ='Más Información';
+        const img = document.createElement('img')
+        img.src = 'https://planigrupo.blob.core.windows.net/planigrupo/assets/svgs/carousel-icon.svg'
+        footerLi.appendChild(img)
+
+        footerLi.addEventListener('click',() => {
+            window.scrollBy({top: 900, behavior: 'smooth'})
+        })
+
+        tenantsContainer.appendChild(footerLi)
+
+    }
     getKeyName( name ) {
         return name.toLowerCase().split(' ').join('-');
+    }
+    renderMobileStateCounter() {
+        console.log(this.#properties.length);
+        document.querySelector('.properties__counter__props__value').innerHTML = this.#properties.length;
+
+        let states = this.#properties.map(prop => prop.propertyState)
+        let filteredStates = [...new Set(states)]
+
+        document.querySelector('.properties__counter__states__value').innerHTML = filteredStates.length;
     }
 }
 
