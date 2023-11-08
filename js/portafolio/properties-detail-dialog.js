@@ -254,7 +254,7 @@ document.querySelector('#state-selector')
 async function initializeDetailDialog(keyName) {
   console.log(keyName);
 
-  const res = await fetch(`./../../data/property_detail/${keyName}.json`)
+  const res = await fetch(`https://edcan-dev.github.io/planigrupo-edcan-dev/data/property_detail/${keyName}.json`)
   const propertyDetail = await res.json();
 
   const propertyTenants = getTenantsElements(propertyDetail.tenants)
