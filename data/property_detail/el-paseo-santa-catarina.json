@@ -1,0 +1,86 @@
+{
+  "id": 4,
+  "key_name": "el-paseo-santa-catarina",
+  "name": "Centro Comercial Paseo Santa Catarina",
+  "location": "Santa Catarina,Nuevo León",
+  "phone_number": "(81) 11 33 88 35",
+  "website_url": "https://nuevoleon-paseosantacatarina.com.mx",
+  "logo_img_url": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/property_logo/location-logo-el-paseo-santa-catarina.png",
+  "hero_img_url": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-el-paseo-santa-catarina.jpg",
+  "start_date": "2006",
+  "usable_area": 37605,
+  "parking_spaces": 1439,
+  "about": "Es considerado como un centro comercial temático dado que su arquitectura y diseño asemeja un pueblo pequeño. Cuenta con jardínes y zonas de descanso que nuestros visitantes pueden aprovechar como zonas de paseo, es una plaza llena de vida gracias a la presencia de un centro universitario y sus prestigiosas marcas tanto de ropa como de restaurantes.",
+  "tenants": [
+    {
+      "tenant_name": "walmart",
+      "tenant_img_url": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/walmart.png"
+    },
+    {
+      "tenant_name": "cinemex",
+      "tenant_img_url": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/cinemex.png"
+    },
+    {
+      "tenant_name": "suburbia",
+      "tenant_img_url": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/suburbia.png"
+    },
+    {
+      "tenant_name": "delsol",
+      "tenant_img_url": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/del-sol.png"
+    },
+    {
+      "tenant_name": "office-depot",
+      "tenant_img_url": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/office-depot.png"
+    },
+    {
+      "tenant_name": "radio-shack",
+      "tenant_img_url": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/radio-shack.png"
+    },
+    {
+      "tenant_name": "telcel",
+      "tenant_img_url": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/telcel.png"
+    },
+    {
+      "tenant_name": "movistar",
+      "tenant_img_url": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/movistar.png"
+    },
+    {
+      "tenant_name": "chilis",
+      "tenant_img_url": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/chilis.png"
+    },
+    {
+      "tenant_name": "impuls",
+      "tenant_img_url": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/impuls.png"
+    },
+    {
+      "tenant_name": "banorte",
+      "tenant_img_url": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/banorte.png"
+    }
+  ],
+  "map_url": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/property_map/directorio-staCatarina.png",
+  "key_indicators": {
+    "data": {
+      "total_surface": 112568,
+      "building_area": 39808,
+      "comercial": 37605,
+      "entertainment": 6037.4,
+      "chlidren_playground": "Si",
+      "type": "Centro Comunitario",
+      "pads": "Suburbia, Office Depot, Los Generales, Banorte, El Costeñito, Chili´s",
+      "stores": 204,
+      "local_spaces": 1439
+    },
+    "tenants": {
+      "anchors": "Walmart, Cinemex",
+      "featured_tenants": "Telcel CSC, Movistar, Iusacell, Sally Beauty, GNC, Harmon Hall, Pasteleria Lety, Julio Cepeda.",
+      "sub_anchors": "Del Sol, Impuls, The Great Fitness, Telcel",
+      "cinema": "Cinemex"
+    },
+    "contact": {
+      "address": "Av. Industriales del Poniente #1050 Santa Catarina N.L.",
+      "phone_numbers": [
+        "(81) 11 33 88 35"
+      ]
+    }
+  }
+}
