@@ -2296,7 +2296,6 @@ MAIN TABS MARGIN
             }
             & span {
                 color: #1f1a18;
-                text-align: justify;
                 font-family: Barlow;
                 font-size: 18px;
                 font-style: normal;
@@ -2305,7 +2304,7 @@ MAIN TABS MARGIN
                 letter-spacing: 1px;
                 text-transform: uppercase;  
                 display: inline-block;
-                margin-bottom: 20px;  
+                margin: 0px auto 20px;  
             }
             & p {
                 color: #000;
