@@ -213,8 +213,7 @@ if (ele) {
   ele.style.visibility = "visible";
 } */
 
-
-async function initializeDetailDialog(keyName) {
+export async function initializeDetailDialog(keyName) {
   console.log(keyName);
 
   const res = await fetch(`https://edcan-dev.github.io/planigrupo-edcan-dev/data/property_detail/${keyName}.json`)
@@ -265,7 +264,6 @@ async function initializeDetailDialog(keyName) {
 
     <div class="detail__tab--selector">
       <ul>
-        <li id="detail__tab--selector--1" class="detail__tab--selector selected">MAPA DE PROPIEDAD</li>
         <li>|</li>
         <li id="detail__tab--selector--2" class="detail__tab--selector">INDICADORES CLAVE</li>
       </ul>
@@ -420,7 +418,8 @@ document.querySelector('.tenants_container')
 
     ele.addEventListener('click',(ev)=> {
       ev.stopPropagation()
-      console.log('clicked contacrt');
+      console.log(ele.nextElementSibling);
+      renderContact(ele.nextElementSibling.innerHTML)
     })
 
   })
@@ -464,4 +463,163 @@ const getTenantsElements = (tenants) => {
     `
   })
   return imgElements.join('')
+}
+
+export const renderContact = async (keyName) => {
+
+  
+  const res = await fetch(`https://edcan-dev.github.io/planigrupo-edcan-dev/data/property_detail/${keyName}.json`)
+  const propertyDetail = await res.json();
+
+
+  document.querySelector('#dialog_dialog-content').innerHTML = 
+  `
+  <div class="contacto__form__card">
+  <div class="contacto__form__card__text">
+  <!--        
+  <span style="font-size: 30px !important;">${ propertyDetail.email }
+          </span>
+          -->
+          <span>Pregúntenos sobre oportunidades de arrendamiento
+          </span>
+
+            <p>
+            Direccion <br>
+              <b>
+              ${ propertyDetail.contact.address }
+              </b>
+              <br>
+              O bien, escribe sobre el tema de tu interés aquí:</p>
+            
+            <p>
+              Contacto:
+              <br>      
+              <b>
+              ${ propertyDetail.contact.phone_numbers[0]}
+              <br>
+              ${ propertyDetail.contact.phone_numbers[1]}
+              </b>
+              <br>
+              O bien, escribe sobre el tema de tu interés aquí:
+            </p>
+
+            <div class="cfcSocial">
+              <div class="socialIconTwitter">
+                <a href="https://twitter.com/planigrupo"></a>
+              </div>
+              <div class="socialIconFacebook">
+                <a href=""></a>
+              </div>
+              <div class="socialIconLinkdin">
+                <a href="https://www.linkedin.com/company/planigrupo"></a>
+              </div>
+            </div>
+          </div>
+  
+          <form action="">
+  
+  
+            <div class="contacto__form__card__form">
+              <div class="contacto__form__card__form__container contacto__form__card__form__container--nombre">
+                <label for="nombre">*nombre</label>
+                <input type="text" name="nombre" id="nombre">
+              </div>
+
+              <div class="contacto__form__card__form__container contacto__form__card__form__container--compania">
+                <label for="compania">*compañía</label>
+                <input type="text" name="compania" id="compania">
+              </div>
+            </div>
+            
+            <div class="contacto__form__card__form">
+              <div class="contacto__form__card__form__container contacto__form__card__form__container--apellido">
+                <label for="apellido">*apellido</label>
+                <input type="text" name="apellido" id="apellido">
+              </div>
+
+              <div class="contacto__form__card__form__container contacto__form__card__form__container--email">
+                <label for="telefono">*telefono</label>
+                <input type="text" name="telefono" id="telefono">
+              </div>
+            </div>
+
+            <div class="contacto__form__card__form contacto__form__card__form--portfolio">
+              
+              <div class="contacto__form__card__form--portfolio--email">
+                <label for="email">*email</label>
+                <input type="email" name="telefono" id="email">
+              </div>
+
+              <div class="contacto__form__card__form--portfolio--personalidad">
+                <label for="personalidad-juridica">*personalidad juridica</label>
+<!--                 <input type="personalidad-juridica" name="telpersonalidad-juridica" id="personalidad-juridica">
+ -->                <select name="persona" id="persona">
+                  <option value="">Persona Fisica</option>
+                  <option value="">Persona Moral</option>
+                </select>
+              </div>
+
+              <div class="contacto__form__card__form--portfolio--comentarios">
+                <label for="comentarios">*comentarios</label>
+                <input type="comentarios" name="telcomentarios" id="comentarios">
+              </div>
+
+            </div>
+
+            <div class="contacto__form__card__form contacto__form__card__form--portfolio--propiedad">
+              
+              <div class="contacto__form__card__form--portfolio--personalidad">
+                <label for="personalidad-juridica">*propiedad</label>
+                  <select name="persona" id="persona">
+                      <option disabled="" selected="" value="">Propiedad</option>
+                      <option value="P119">Cancun Gran Plaza</option>
+                      <option value="P130">Centro Comercial Lopez Mateos</option>
+                      <option value="P131">Ciudadela UV</option>
+                      <option value="P101">El Paseo Santa Catarina</option>
+                      <option value="P109">La Nogalera</option>
+                      <option value="P134">Lago Real Centro Comercial</option>
+                      <option value="P133">Macroplaza Del Valle</option>
+                      <option value="2102">Macroplaza Estadio</option>
+                      <option value="P121">Macroplaza Insurgentes</option>
+                      <option value="P126">Macroplaza Oaxaca</option>
+                      <option value="P129">Macroplaza San Luis</option>
+                      <option value="P107">Mall Plaza Lincoln</option>
+                      <option value="P118">Palmira Plaza Comercial</option>
+                      <option value="P122">Paseo Alcalde</option>
+                      <option value="P123">Paseo Hipodromo</option>
+                      <option value="P103">Paseo Puebla</option>
+                      <option value="P135">Paseo Reforma</option>
+                      <option value="P138">Paseo San Juan</option>
+                      <option value="P110">Paseo Solidaridad</option>
+                      <option value="P106">Plaza Bella Anáhuac</option>
+                      <option value="P102">Plaza Bella Frontera</option>
+                      <option value="P105">Plaza Bella Huinala</option>
+                      <option value="P115">Plaza Bella Mexiquense</option>
+                      <option value="P111">Plaza Bella Ramos Arizpe</option>
+                      <option value="P113">Plaza Monumental</option>
+                      <option value="P112">Plaza Real Reynosa</option>
+                      <option value="P108">Plaza Real Saltillo</option>
+                      <option value="P117">Plaza Universidad</option>
+                      <option value="P132">Puerta de Hierro</option>
+                      <option value="P140">Punto Oriente</option>
+                      <option value="P139">Punto San Isidro</option>
+                      <option value="P136">Reynosa II</option>
+                      <option value="P114">Super Plaza las Haciendas</option>
+                      <option value="P125">Urban Village Garza Sada</option>
+                      <option value="P127">Walmart Ensenada</option>
+                      <option value="P128">Walmart San Jose del Cabo</option>					
+                    </select>
+              </div>
+
+              <div class="contacto__form__card__form contacto__form__card__form--submit">
+                <input type="submit" value="Enviar">
+              </div>
+            </div>
+
+        </form></div>
+  `
+  dialog.width = 900;
+  dialog.height = 600;
+  dialog.show();
+
 }

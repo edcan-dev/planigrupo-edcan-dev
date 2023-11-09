@@ -631,6 +631,8 @@
       }
     }
     & .tenant__container__footer:hover {
+      transform: scale(1.1);
+      transition: all .2s;
       & img {
         transform: rotate(360deg);
       }
@@ -1179,4 +1181,12 @@
 
 .e-btn {
   display: none !important;
+}
+
+.all_props {
+  cursor: pointer;
+}
+.all_props:hover {
+  transition: all .2s;
+  transform: scale(1.05);
 }
