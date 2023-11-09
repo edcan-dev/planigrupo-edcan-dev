@@ -1,4 +1,5 @@
-import json from '../../data/inversionistas.vision.tab-contents.json' assert {type: 'json'};
+const response = await fetch('../../data/inversionistas.vision.tab-contents.json')
+const json = await response.json();
 
 // class TabsComponent {
 //     constructor(

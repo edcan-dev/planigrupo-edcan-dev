@@ -1,4 +1,5 @@
-import jsonDatasource from '../../data/portfolio.properties.json' assert {type: 'json'};
+const response = await fetch('../../data/portfolio.properties.json')
+const jsonDatasource = await response.json();
 
 class PropertiesGrid {
     #properties;
