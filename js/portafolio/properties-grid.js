@@ -1,3 +1,4 @@
+import { initializeDetailDialog, renderContact } from './properties-detail-dialog.js'
 const response = await fetch('https://edcan-dev.github.io/planigrupo-edcan-dev/data/portfolio.properties.json')
 const jsonDatasource = await response.json();
 
@@ -14,6 +15,7 @@ class PropertiesGrid {
     render( properties ) {
         
         const container = document.querySelector('.featured_properties__grid');
+
         container.innerHTML = '';
 
         properties.forEach(property => {
@@ -39,9 +41,9 @@ class PropertiesGrid {
         });    
     }
 
-    init() {
+    init() {/* 
         this.render(this.#properties)
-        if(window.innerWidth <= 1000 ) this.renderMobileStateCounter()
+        if(window.innerWidth <= 1000 ) this.renderMobileStateCounter() */
     }
 
     /**
@@ -120,7 +122,6 @@ class PropertiesGrid {
 
             
             li.addEventListener('click',() => {
-                window.scrollBy({top: 1000, behavior: 'smooth'})
             })
             tenantsContainer.appendChild(li)
             
@@ -135,6 +136,7 @@ class PropertiesGrid {
 
         footerLi.addEventListener('click',() => {
             window.scrollBy({top: 900, behavior: 'smooth'})
+            document.querySelector('.featured_properties').classList.remove('inactive')
         })
 
         tenantsContainer.appendChild(footerLi)
@@ -186,3 +188,29 @@ export const propertiesGrid = new PropertiesGrid(jsonDatasource.properties)
 propertiesGrid.init();
 
 document.getElementById('state-selector').addEventListener('change',(ev) => propertiesGrid.filterByState(ev.target.value))
+
+document.querySelector('.all_props').addEventListener('click', () => {
+    document.querySelector('.featured_properties').classList.remove('inactive')
+
+    propertiesGrid.filterByState('all')
+    
+    document.querySelectorAll('.featured_properties__grid__item')
+    .forEach(item => {
+        item.addEventListener('click', async(ev) => {
+            console.log("clicked");
+            await initializeDetailDialog(ev.target.lastElementChild.lastElementChild.innerHTML)
+        })
+    })
+
+
+    document.querySelectorAll('.featured_properties__grid__item__contact')
+  .forEach(ele => {
+
+    ele.addEventListener('click',(ev)=> {
+      ev.stopPropagation()
+      console.log(ele.nextElementSibling);
+      renderContact(ele.nextElementSibling.innerHTML)
+    })
+
+  })
+})
