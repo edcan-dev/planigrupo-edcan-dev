@@ -14,6 +14,7 @@ class PropertiesGrid {
     render( properties ) {
         
         const container = document.querySelector('.featured_properties__grid');
+
         container.innerHTML = '';
 
         properties.forEach(property => {
@@ -39,9 +40,9 @@ class PropertiesGrid {
         });    
     }
 
-    init() {
+    init() {/* 
         this.render(this.#properties)
-        if(window.innerWidth <= 1000 ) this.renderMobileStateCounter()
+        if(window.innerWidth <= 1000 ) this.renderMobileStateCounter() */
     }
 
     /**
@@ -120,7 +121,6 @@ class PropertiesGrid {
 
             
             li.addEventListener('click',() => {
-                window.scrollBy({top: 1000, behavior: 'smooth'})
             })
             tenantsContainer.appendChild(li)
             
@@ -135,6 +135,7 @@ class PropertiesGrid {
 
         footerLi.addEventListener('click',() => {
             window.scrollBy({top: 900, behavior: 'smooth'})
+            document.querySelector('.featured_properties').classList.remove('inactive')
         })
 
         tenantsContainer.appendChild(footerLi)

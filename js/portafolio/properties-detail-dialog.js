@@ -9,7 +9,7 @@ var dialog = new ej.popups.Dialog({
   // overlayClick event handler
   overlayClick: onOverlayClick,
   // Dialog content
-  /*
+  
   content: `
   <section class="detail">
     <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/Cncnfoto.png" class="detail__hero__img">
@@ -181,8 +181,8 @@ var dialog = new ej.popups.Dialog({
       </div>
     </div>
   </section>
-  `,*/
-  content: '',
+  `,
+//  content: '',
 
   target: document.getElementById("dialog_container"),
   
@@ -207,49 +207,12 @@ function onOverlayClick() {
 }
 
 
-
+/* 
 var ele = document.getElementById('dialog_container');
 if (ele) {
   ele.style.visibility = "visible";
-}
+} */
 
-
-
-document.querySelectorAll('.featured_properties__grid__item')
-  .forEach(item => {
-    item.addEventListener('click', (ev) => {
-
-      initializeDetailDialog(ev.target.lastElementChild.lastElementChild.innerHTML)
-
-    })
-  })
-
-document.querySelector('.tenants_container')
-  .addEventListener('click', (ev) => {
-
-    document.querySelectorAll('.featured_properties__grid__item')
-      .forEach(item => {
-        item.addEventListener('click', (ev) => {
-
-            initializeDetailDialog(ev.target.lastElementChild.lastElementChild.innerHTML)
-
-        })
-      })
-
-  })
-document.querySelector('#state-selector')
-  .addEventListener('click', (ev) => {
-
-    document.querySelectorAll('.featured_properties__grid__item')
-      .forEach(item => {
-        item.addEventListener('click', (ev) => {
-
-          initializeDetailDialog(item.firstElementChild.lastElementChild.innerHTML)
-
-        })
-      })
-
-  })
 
 async function initializeDetailDialog(keyName) {
   console.log(keyName);
@@ -264,6 +227,7 @@ async function initializeDetailDialog(keyName) {
     <section class="detail">
     <img src="${ propertyDetail.hero_img_url }" class="detail__hero__img">
     </img>
+
     <div class="detail__hero__info">
       <div class="detail__hero__info--blue">
         <img src="${ propertyDetail.logo_img_url }">
@@ -286,6 +250,11 @@ async function initializeDetailDialog(keyName) {
         
       </div>
     </div>
+
+    <div class="detail__hero__close">
+    X
+    </div>
+
     <div class="detail__about">
       <span>ACERCA DE ${ propertyDetail.name }</span>
       <p>${ propertyDetail.about }</p>
@@ -423,12 +392,69 @@ async function initializeDetailDialog(keyName) {
     </div>
   </section>
     `;
-  dialog.show();
+    dialog.show();
+    document.querySelector('.detail__hero__close').addEventListener('click', () => {
+      dialog.hide()
+    })
   new GenericTabsComponent(
     '.detail__tab--selector',
     '.detail__tab--content'
   ).initialize();
 }
+
+
+
+document.querySelector('.tenants_container')
+  .addEventListener('click', (ev) => {
+
+    document.querySelectorAll('.featured_properties__grid__item')
+  .forEach(item => {
+    item.addEventListener('click', async(ev) => {
+      console.log("clicked");
+      await initializeDetailDialog(ev.target.lastElementChild.lastElementChild.innerHTML)
+    })
+  })
+
+  document.querySelectorAll('.featured_properties__grid__item__contact')
+  .forEach(ele => {
+
+    ele.addEventListener('click',(ev)=> {
+      ev.stopPropagation()
+      console.log('clicked contacrt');
+    })
+
+  })
+
+  })
+
+  document.querySelector('#state-selector')
+  .addEventListener('click', (ev) => {
+
+    document.querySelectorAll('.featured_properties__grid__item')
+  .forEach(item => {
+    item.addEventListener('click', async(ev) => {
+
+      await initializeDetailDialog(ev.target.lastElementChild.lastElementChild.innerHTML)
+
+    })
+  })
+
+  })
+
+  document.querySelectorAll('path')
+    .forEach(path => {
+      path.addEventListener('click', ()=> {
+        console.log('asdasdasd');
+        document.querySelectorAll('.featured_properties__grid__item')
+        .forEach(item => {
+          item.addEventListener('click', async (ev) => {
+            await initializeDetailDialog(ev.target.lastElementChild.lastElementChild.innerHTML)
+          })
+        })        
+      })
+    })
+
+
 
 const getTenantsElements = (tenants) => {
 
