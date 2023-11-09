@@ -1,4 +1,4 @@
-const response = await fetch('../../data/index.carousel.properties.json')
+const response = await fetch('https://edcan-dev.github.io/planigrupo-edcan-dev/data/index.carousel.properties.json')
 const jsonDatasource = response.json();
 const PropertyCard = (
   propertyTitle,
