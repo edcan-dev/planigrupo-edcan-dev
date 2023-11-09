@@ -1,4 +1,5 @@
-import slides from '../../data/index.plan-info.slider.json' assert {type: 'json'};
+const response = await fetch('../../data/index.plan-info.slider.json');
+const slides = response.json();
 
 class InfoSlider {
 	#data;

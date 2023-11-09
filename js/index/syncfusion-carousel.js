@@ -1,5 +1,5 @@
-import jsonDatasource from '../../data/index.carousel.properties.json' assert {type: 'json'};
-
+const response = await fetch('../../data/index.carousel.properties.json')
+const jsonDatasource = response.json();
 const PropertyCard = (
   propertyTitle,
   propertyLocation,
