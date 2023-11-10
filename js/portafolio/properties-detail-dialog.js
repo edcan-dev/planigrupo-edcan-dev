@@ -254,27 +254,7 @@ export async function initializeDetailDialog(keyName) {
     X
     </div>
 
-    <div class="detail__about">
-      <span>ACERCA DE ${ propertyDetail.name }</span>
-      <p>${ propertyDetail.about }</p>
-    </div>
-    <div class="detail__tenant__icons">
-      ${ propertyTenants }
-    </div>
-
-    <div class="detail__tab--selector">
-      <ul>
-        <li>|</li>
-        <li id="detail__tab--selector--2" class="detail__tab--selector">INDICADORES CLAVE</li>
-      </ul>
-
-    </div>
-
-    <div class="detail__tab--contents">
-    
-      <div id="detail__tab--content--1" class="detail__tab--content">
-
-      <div class="map__footer">
+    <div class="map__footer">
         <div class="map__footer__item">
           <span>${ propertyDetail.start_date }</span>
           <p>INICIO DE OPERACIONES</p>
@@ -288,6 +268,31 @@ export async function initializeDetailDialog(keyName) {
           <p>ESPACIOS DE ESTACIONAMIENTO</p>
         </div>
       </div>
+
+    <div class="detail__about">
+      <span>ACERCA DE ${ propertyDetail.name }</span>
+      <p>${ propertyDetail.about }</p>
+    </div>
+    <div class="detail__tenant__icons">
+      ${ propertyTenants }
+    </div>
+
+    <div class="detail__tab--selector">
+      <ul>
+        <li id="detail__tab--selector--1" class="detail__tab--selector selected">DIRECTORIO</li>
+        <li>|</li>
+        <li id="detail__tab--selector--2" class="detail__tab--selector">INDICADORES CLAVE</li>
+        <li>|</li>
+        <li id="detail__tab--selector--3" class="detail__tab--selector">MAPA</li>
+      </ul>
+
+    </div>
+
+    <div class="detail__tab--contents">
+    
+      <div id="detail__tab--content--1" class="detail__tab--content">
+
+      
 
       <img class="map" src="${ propertyDetail.map_url }"></img>
       

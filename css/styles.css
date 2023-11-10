@@ -2292,7 +2292,7 @@ MAIN TABS MARGIN
             &  img {
                 display: flex;
                 margin: 0 auto 20px;
-                width: 100px;
+                width: 50px;
             }
             & span {
                 color: #1f1a18;
