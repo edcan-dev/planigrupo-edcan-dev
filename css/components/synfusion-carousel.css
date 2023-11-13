@@ -85,6 +85,12 @@
 }
 
 
+.oportunidades__carousel__item__text__title__item > .title {
+    width: 30%;
+    justify-content: start;
+}
+
+
 .oportunidades__carousel__item__text__desc {
     height: 140px;
     width: 950px;

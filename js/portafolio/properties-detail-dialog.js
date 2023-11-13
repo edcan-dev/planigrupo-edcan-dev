@@ -182,7 +182,7 @@ var dialog = new ej.popups.Dialog({
     </div>
   </section>
   `,
-//  content: '',
+  content: '',
 
   target: document.getElementById("dialog_container"),
   
@@ -220,6 +220,8 @@ export async function initializeDetailDialog(keyName) {
   const propertyDetail = await res.json();
 
   const propertyTenants = getTenantsElements(propertyDetail.tenants)
+
+  console.log(propertyDetail.i_frame_src);
   
   document.querySelector('#dialog_dialog-content').innerHTML =
     `
@@ -390,7 +392,7 @@ export async function initializeDetailDialog(keyName) {
       </div>
 
       <div id="detail__tab--content--3" class="detail__tab--content inactive">
-        
+      <iframe src="${ propertyDetail.i_frame_src }" width="1100" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   </section>

@@ -38,6 +38,7 @@ mexico_map.features.filter(
 
 var map = new ej.maps.Maps({
   shapeSelected: function(args) {
+    console.log(args);
     var shape = (args.shapeData).name;
     propertiesGrid.filterByStateFromMap(shape)
     
@@ -161,68 +162,7 @@ var map = new ej.maps.Maps({
 map.appendTo('#element');
 
 
+console.log(
+);
 
-// #0096A9
-
-/* 
-zoomSettings:{
-    enable:false,
-    zoomFactor:1
-}, *//* 
-centerPosition: {
-    latitude: 24.54244147012483,
-    longitude: -100.62646484375
-}, */
-/* layers: [
-    {
-        shapeData: mexico_map,
-        shapeDataPath: 'sta_name',
-        shapePropertyPath: 'sta_name',
-        dataSource: [
-            {
-                "State": "['Morelos']",
-                'color': '#007689',
-                data: { "sta_name": "Morelos",
-                'color': '#007689'}
-            },
-                {
-                    "State": "Oaxaca",
-                    'color': 'red',
-                    data: { "sta_name": "Oaxaca",
-                    'color': 'red'}
-                }
-            ],
-            shapePropertyPath: 'name',
-            shapeDataPath: 'Country',
-            highlightSettings: {
-                enable: true,
-                fill: '#0096A9',
-            },
-            selectionSettings: {
-                enable: true,
-                fill: '#0096A9',
-                border: { color: 'white', width: 1}
-         }
-         , 
-        shapeSettings: {
-            
-            border: {
-                color: 'white',
-                width: 1
-            }
-        },
-        tooltipSettings: {
-            visible: true,
-            valuePath: 'data.continent'
-        },
-        
-    }
-]
-*/
-/* ,
-    selectionSettings: {
-        enable: true,
-        fill: '#0096A9',
-        border: { color: 'white', width: 2}
-    },
-    */
+document.getElementById('element_LayerIndex_1_shapeIndex_16_dataIndex_1').dispatchEvent(new Event('shapeSelected'))
