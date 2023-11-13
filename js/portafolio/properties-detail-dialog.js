@@ -216,12 +216,12 @@ if (ele) {
 export async function initializeDetailDialog(keyName) {
   console.log(keyName);
 
-  const res = await fetch(`https://edcan-dev.github.io/planigrupo-edcan-dev/data/property_detail/${keyName}.json`)
+  const res = await fetch(`https://edcan-dev.github.io/planigrupo-edcan-dev/data/property_detail/${keyName}.json`) 
+  // fetch(`./../../data/property_detail/${keyName}.json`).then(data => res = data).catch()
   const propertyDetail = await res.json();
 
   const propertyTenants = getTenantsElements(propertyDetail.tenants)
 
-  console.log(propertyDetail.i_frame_src);
   
   document.querySelector('#dialog_dialog-content').innerHTML =
     `
