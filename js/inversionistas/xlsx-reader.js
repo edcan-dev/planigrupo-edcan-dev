@@ -1,5 +1,5 @@
- const xslxPath = './../../data/inversionistas_input.xlsx';
-// const xslxPath = 'https://edcan-dev.github.io/planigrupo-edcan-dev/data/inversionistas_input.xlsx';
+//const xslxPath = './../../data/inversionistas_input.xlsx';
+const xslxPath = 'https://edcan-dev.github.io/planigrupo-edcan-dev/data/inversionistas_input.xlsx';
 const response = await fetch(xslxPath);
 
 const xlsx = await response.blob();
