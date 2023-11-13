@@ -576,7 +576,7 @@
           font-weight: 500;
           line-height: 12px;
           letter-spacing: 1px;
-          text-transform: capitalize;
+          text-transform: uppercase;
         }
         & small {
           color: #53575a;
@@ -587,7 +587,7 @@
           font-weight: 700;
           line-height: 10px; /* 200% */
           letter-spacing: 1px;
-          text-transform: capitalize;
+          text-transform: uppercase;
         }
       }
       & .tenant__name__item__img {
