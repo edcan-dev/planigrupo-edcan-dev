@@ -105,4 +105,4 @@ tabsComponent.initialize(); */
 
 
 const tabsComponent2 = new TabsComponent('.tab_selector--i');
-tabsComponent.initialize();
+tabsComponent2.initialize();
