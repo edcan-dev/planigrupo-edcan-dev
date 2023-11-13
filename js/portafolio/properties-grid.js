@@ -189,6 +189,7 @@ propertiesGrid.init();
 
 document.getElementById('state-selector').addEventListener('change',(ev) => propertiesGrid.filterByState(ev.target.value))
 
+/* ALL PROPERTIES
 document.querySelector('.all_props').addEventListener('click', () => {
     document.querySelector('.featured_properties').classList.remove('inactive')
 
@@ -213,4 +214,4 @@ document.querySelector('.all_props').addEventListener('click', () => {
     })
 
   })
-})
+})*/
