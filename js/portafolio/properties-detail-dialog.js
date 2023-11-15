@@ -160,7 +160,6 @@ var dialog = new ej.popups.Dialog({
             </div>
           </div>
 
-
           <div class="indicators__list__item--second">
             <div>
               <p>REPORTE</p>
