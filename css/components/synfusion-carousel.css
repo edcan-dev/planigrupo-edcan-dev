@@ -75,6 +75,7 @@
     }
     & .contact {
         left: 295px;
+        text-transform: lowercase;
     }
     & .date {
         left: 612px;

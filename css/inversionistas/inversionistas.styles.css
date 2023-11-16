@@ -19,7 +19,8 @@
     align-items: center;
 
     & .tab-selector--selected {
-      color: #C04D00;
+      color: #0096A9;
+      font-weight: bolder;
     }
 
     & .tab-selector--splitter {
@@ -41,7 +42,7 @@
       font-family: Barlow;
       font-size: 18px;
       font-style: normal;
-      font-weight: 700;
+      font-weight: 600;
       line-height: 25px;
       /* 263.158% */
       letter-spacing: 1px;
@@ -208,19 +209,19 @@
 }
 
 .inversionistas__tabs__tab--content__grid__item__svg--1 {
-  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/png-icons/inv01.jfif');
+  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/png-icons/inv01.png');
 }
 
 .inversionistas__tabs__tab--content__grid__item__svg--2 {
-  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/png-icons/inv02.jfif');
+  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/png-icons/inv02.png');
 }
 
 .inversionistas__tabs__tab--content__grid__item__svg--4 {
-  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/png-icons/inv03.jfif');
+  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/png-icons/inv03.png');
 }
 
 .inversionistas__tabs__tab--content__grid__item__svg--3 {
-  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/png-icons/inv04.jfif');
+  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/png-icons/inv04.png');
 }
 
 .inversionistas__tabs__tab--subtab__selector {
@@ -379,6 +380,10 @@ article {
   margin: 0 auto;
   display: flex;
   margin-bottom: 40px;
+
+  & .email {
+    text-transform: lowercase;
+  }
 }
 
 .inversionistas__tabs__tab--content__contact__card {
@@ -443,6 +448,10 @@ article {
   & .text__container {
     background-color: #FFF;
     padding-left: 40px;
+
+    & .email {
+      text-transform: lowercase;
+    }
   }
 
 }

@@ -568,7 +568,7 @@
       & .tenant__name__item__text {
         width: 70%;
         & p {
-          color: #53575a;
+          color: #0096a9;
           text-align: justify;
           font-family: Raleway;
           font-size: 12px;
@@ -587,7 +587,7 @@
           font-weight: 700;
           line-height: 10px; /* 200% */
           letter-spacing: 1px;
-          text-transform: uppercase;
+          text-transform: capitalize;
         }
       }
       & .tenant__name__item__img {
