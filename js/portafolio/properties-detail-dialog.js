@@ -213,9 +213,12 @@ if (ele) {
 } */
 
 export async function initializeDetailDialog(keyName) {
+
   console.log(keyName);
 
-  const res = await fetch(`https://edcan-dev.github.io/planigrupo-edcan-dev/data/property_detail/${keyName}.json`) 
+  //const res = await fetch(`https://edcan-dev.github.io/planigrupo-edcan-dev/data/property_detail/${keyName}.json`)
+  const url =  `../../data/property_detail/${keyName}.json`
+  const res = await fetch(url) 
   // fetch(`./../../data/property_detail/${keyName}.json`).then(data => res = data).catch()
   const propertyDetail = await res.json();
 
@@ -445,20 +448,6 @@ document.querySelector('.tenants_container')
   })
 
   })
-
-  document.querySelectorAll('path')
-    .forEach(path => {
-      path.addEventListener('click', ()=> {
-        console.log('asdasdasd');
-        document.querySelectorAll('.featured_properties__grid__item')
-        .forEach(item => {
-          item.addEventListener('click', async (ev) => {
-            await initializeDetailDialog(ev.target.lastElementChild.lastElementChild.innerHTML)
-          })
-        })        
-      })
-    })
-
 
 
 const getTenantsElements = (tenants) => {

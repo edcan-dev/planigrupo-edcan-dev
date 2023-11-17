@@ -1,5 +1,6 @@
 import { initializeDetailDialog, renderContact } from './properties-detail-dialog.js'
-const response = await fetch('https://edcan-dev.github.io/planigrupo-edcan-dev/data/portfolio.properties.json')
+// const response = await fetch('https://edcan-dev.github.io/planigrupo-edcan-dev/data/portfolio.properties.json')
+const response = await fetch('./../../data/portfolio.properties.json')
 const jsonDatasource = await response.json();
 
 class PropertiesGrid {
@@ -108,20 +109,53 @@ class PropertiesGrid {
             pItem.innerText = property.propertyTitle
             const smallItem =document.createElement('small')
             smallItem.innerHTML = property.propertyLocation;
+            pItem.innerText = property.propertyTitle
+            const keyNameText =document.createElement('small')
+            keyNameText.innerHTML = property.propertyKeyName;
+            keyNameText.style.display = 'none';
 
             div.appendChild(pItem)
             div.appendChild(smallItem)
+            div.appendChild(keyNameText)
 
             
             const imgDiv = document.createElement('div');
             imgDiv.classList.add('tenant__name__item__img')
             imgDiv.style.backgroundImage = "url('" + property.propertyImageUrl + "')";
 
+            const contactDiv = document.createElement('div')
+            contactDiv.classList.add('contact__div') 
+
+            contactDiv.style.width = '40px';
+            contactDiv.style.paddingTop = '10px'
+            contactDiv.style.paddingLeft = '7px'
+            contactDiv.style.backgroundColor = '#0096A9';
+            contactDiv.style.borderRadius = '5px'
+            contactDiv.style.marginLeft = '5px'
+            
+            const mail = document.createElement('li')
+            mail.classList.add(['fa-solid'])
+            mail.classList.add(['fa-envelope'])
+            mail.style.color = '#fff'
+            mail.style.fontSize = '20px'
+            mail.style.margin = '0 auto'
+
+            mail.addEventListener('click',(ev) => {
+                ev.stopPropagation()
+                renderContact(property.propertyKeyName)
+
+            })
+
+
+            contactDiv.appendChild(mail)
+
+
             li.appendChild(div)
             li.appendChild(imgDiv)
-
+            li.appendChild(contactDiv)
             
-            li.addEventListener('click',() => {
+            li.addEventListener('click',(ev) => {
+                initializeDetailDialog(property.propertyKeyName)
             })
             tenantsContainer.appendChild(li)
             

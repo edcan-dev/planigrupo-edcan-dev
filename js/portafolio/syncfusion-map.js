@@ -38,7 +38,6 @@ mexico_map.features.filter(
 
 var map = new ej.maps.Maps({
   shapeSelected: function(args) {
-    console.log(args);
     var shape = (args.shapeData).name;
     propertiesGrid.filterByStateFromMap(shape)
     
