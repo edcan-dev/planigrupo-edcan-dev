@@ -2396,7 +2396,7 @@ MAIN TABS MARGIN
         width: 100%;
     }
     .main__tabs {
-        margin-top: 900px !important;
+        margin-top: 1000px !important;
     }
 }
 
@@ -2590,4 +2590,8 @@ MAIN TABS MARGIN
     filter: invert(80%) sepia(60%) saturate(4%) hue-rotate(349deg) brightness(109%) contrast(87%);
     margin: 0 auto;
     font-size: 10px !important;
+}
+.svg__logo {
+    height: 30px;
+    filter: invert(33%) sepia(8%) saturate(191%) hue-rotate(145deg) brightness(97%) contrast(92%);
 }
