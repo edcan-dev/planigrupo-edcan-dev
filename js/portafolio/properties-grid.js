@@ -1,6 +1,6 @@
 import { initializeDetailDialog, renderContact } from './properties-detail-dialog.js'
-// const response = await fetch('https://edcan-dev.github.io/planigrupo-edcan-dev/data/portfolio.properties.json')
-const response = await fetch('./../../data/portfolio.properties.json')
+const response = await fetch('https://edcan-dev.github.io/planigrupo-edcan-dev/data/portfolio.properties.json')
+//const response = await fetch('./../../data/portfolio.properties.json')
 const jsonDatasource = await response.json();
 
 class PropertiesGrid {
