@@ -217,7 +217,8 @@ export async function initializeDetailDialog(keyName) {
   console.log(keyName);
 
   //const res = await fetch(`https://edcan-dev.github.io/planigrupo-edcan-dev/data/property_detail/${keyName}.json`)
-  const url =  `../../data/property_detail/${keyName}.json`
+  // const url =  `../../data/property_detail/${keyName}.json`
+  const url = `https://edcan-dev.github.io/planigrupo-edcan-dev/data/property_detail/${keyName}.json`;
   const res = await fetch(url) 
   // fetch(`./../../data/property_detail/${keyName}.json`).then(data => res = data).catch()
   const propertyDetail = await res.json();
