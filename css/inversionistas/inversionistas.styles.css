@@ -1308,9 +1308,8 @@ article {
           }
 
           & a {
+            font-size: 10px;
             line-height: 50px;
-            text-decoration: none;
-            font-weight: 800;
           }
 
         }
