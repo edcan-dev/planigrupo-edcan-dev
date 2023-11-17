@@ -597,7 +597,17 @@
         border-radius: 10px;
         margin-left: 5px;
       }
+
+      
+      & .contact__div:hover {
+        transform: scale(1.1);
+      }
     }
+    
+    & .tenant__name__item:hover {
+      transform: scale(1.05);
+    }
+
 
     & .tenant__container__footer {
       height: 25px;

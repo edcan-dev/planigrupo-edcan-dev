@@ -586,7 +586,7 @@
     align-items: center;
 }
 
-.footer>span {
+.footer>div>span {
     color: #333;
     font-family: Barlow;
     font-size: 14px;
@@ -597,6 +597,9 @@
     text-transform: uppercase;
 
     display: flex;
+}
+.footer>div>li {
+    list-style: none;
 }
 
 .footer>div {
@@ -2562,4 +2565,29 @@ MAIN TABS MARGIN
 
 .control-container {
     height: 600px;
+}
+
+.social__container {
+    display: flex;
+}
+.social__container__icons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.social__container__icons__icon {
+    display: flex;
+    background-color: #545859;
+    margin-left: 8px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    text-decoration: none;
+}
+.social__container__icons__icon__li {
+    filter: invert(80%) sepia(60%) saturate(4%) hue-rotate(349deg) brightness(109%) contrast(87%);
+    margin: 0 auto;
+    font-size: 10px !important;
 }
