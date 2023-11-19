@@ -2294,7 +2294,7 @@ MAIN TABS MARGIN
 
             &  img {
                 display: flex;
-                margin: 0 auto 20px;
+                margin: 20px auto 20px;
                 width: 50px;
             }
             & span {
@@ -2396,7 +2396,7 @@ MAIN TABS MARGIN
         width: 100%;
     }
     .main__tabs {
-        margin-top: 1000px !important;
+        margin-top: 1100px !important;
     }
 }
 
