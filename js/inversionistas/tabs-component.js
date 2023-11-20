@@ -116,8 +116,8 @@ class TabsComponent {
 }
 
 
-const tabsComponent = new TabsComponent('.subtab__tab', json.contents);
-tabsComponent.initialize();
+// const tabsComponent = new TabsComponent('.subtab__tab', json.contents);
+// tabsComponent.initialize();
 
 
 

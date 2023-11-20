@@ -44,3 +44,25 @@ const responseGlobalTabs = new GenericTabsComponent('.resp-tab-selector','.resp-
 const responsiveSection2TabsComponent = new GenericTabsComponent('.second_section_tab--selector','.second_section_tab--content').initialize();
 
 const gobiernoRespTabsComponent = new GenericTabsComponent('.gobierno__tab__selector','.gobierno__tab__content').initialize();
+
+const inversionistasSubtabs = new GenericTabsComponent('.subtab__tab','.inversionistas__tabs__tab--subtab__content__card').initialize();
+
+const informacionAnchorTabs = new GenericTabsComponent('.main_tab__selector','.inversionistas__tabs__tab--content').initialize();
+
+// Sincronizar selectores principales y subtabs
+const mainSelectors = document.querySelectorAll('.tab-selector'); 
+document.querySelectorAll('.main_tab__selector')
+    .forEach(selector => {
+        selector.addEventListener('click', (ev)=> {
+            const idCharArray = ev.target.id.split('');
+            const idNumber = idCharArray.pop();
+
+            const mainSelector = new Array(...mainSelectors).
+            find(ms => 
+                {
+                    ms.classList.remove('tab-selector--selected')
+                    return ms.id.includes(idNumber)
+                });
+            mainSelector.classList.add('tab-selector--selected')
+        })
+    })
