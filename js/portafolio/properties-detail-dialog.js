@@ -442,7 +442,7 @@ document.querySelector('.tenants_container')
     document.querySelectorAll('.featured_properties__grid__item')
   .forEach(item => {
     item.addEventListener('click', async(ev) => {
-
+      console.log(ev.target);
       await initializeDetailDialog(ev.target.lastElementChild.lastElementChild.innerHTML)
 
     })

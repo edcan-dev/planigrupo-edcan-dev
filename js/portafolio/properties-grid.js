@@ -42,10 +42,12 @@ class PropertiesGrid {
         });    
     }
 
-    init() {/* 
-        this.render(this.#properties)
-        if(window.innerWidth <= 1000 ) this.renderMobileStateCounter() */
-    }
+    init() {
+        if(window.innerWidth <= 1000 ) this.renderMobileStateCounter()
+        /* 
+    this.render(this.#properties)
+    */
+}
 
     /**
      * Render properties by state
@@ -223,29 +225,3 @@ propertiesGrid.init();
 
 document.getElementById('state-selector').addEventListener('change',(ev) => propertiesGrid.filterByState(ev.target.value))
 
-/* ALL PROPERTIES
-document.querySelector('.all_props').addEventListener('click', () => {
-    document.querySelector('.featured_properties').classList.remove('inactive')
-
-    propertiesGrid.filterByState('all')
-    
-    document.querySelectorAll('.featured_properties__grid__item')
-    .forEach(item => {
-        item.addEventListener('click', async(ev) => {
-            console.log("clicked");
-            await initializeDetailDialog(ev.target.lastElementChild.lastElementChild.innerHTML)
-        })
-    })
-
-
-    document.querySelectorAll('.featured_properties__grid__item__contact')
-  .forEach(ele => {
-
-    ele.addEventListener('click',(ev)=> {
-      ev.stopPropagation()
-      console.log(ele.nextElementSibling);
-      renderContact(ele.nextElementSibling.innerHTML)
-    })
-
-  })
-})*/

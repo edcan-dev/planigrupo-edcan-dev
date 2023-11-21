@@ -760,6 +760,10 @@
       }
     }
   }
+
+  .featured_properties__grid__item__contact {
+    display: none !important;
+  }
 }
 
 .detail {

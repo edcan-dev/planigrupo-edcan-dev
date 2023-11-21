@@ -144,13 +144,19 @@
   margin: 80px auto;
   width: 90%;
   max-width: 1000px;  
+
+  
+  box-shadow: -1px -1px 9px 0px rgba(0,0,0,0.5);
+  -webkit-box-shadow: -1px -1px 9px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: -1px -1px 9px 0px rgba(0,0,0,0.5);
+  padding: 40px 80px;
 }
 .section--4 > span {
   color: #D7282F;
   font-family: Barlow;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: bolder;
   line-height: 20px;
 
   display: inline-block;
@@ -161,7 +167,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 40px 80px;
 }
 
 .section--4 > form > .form__nombre {
@@ -345,20 +350,39 @@ input[type="file"] {
 .section--4 > form > .form__enviar {
   display: flex;
   width: 100%;
-  justify-content: end;
-  
+  justify-content: space-between;
 }
+.section--4 > form > .form__enviar > small {
+  display: flex;
+  color: #727272;
+  font-family: Raleway;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+.section--4 > form > .form__enviar > small > p {
+  font-size: 30px;
+  color: #d7282f;
+}
+
 .section--4 > form > .form__enviar > input {
   height: 35px;
   padding: 5px;
   width: 15%;
-  background-color: #EFEFED;
+  background-color: #d7282f;
   border-radius: 4px;
   border: 1px solid #ABABAB;
-  background: #FDFDFD;
   cursor: pointer;
+  color: #EFEFED;
+  box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.08);
 }
+.section--4 > form > .form__enviar > input:hover {
+  background-color: #9b1a1f;
 
+}
 
 
 
@@ -400,6 +424,7 @@ input[type="file"] {
 
   .section--4 {
     margin-bottom: 0px;
+    padding: 20px;
   }
 
   .section--4 > form {
@@ -425,4 +450,10 @@ input[type="file"] {
     margin-top: 40px !important;
   }
 
+}
+
+
+
+.footer {
+  margin-top: 40px !important;
 }

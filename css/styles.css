@@ -2365,6 +2365,7 @@ MAIN TABS MARGIN
 
 .main__tabs {
     margin-bottom: 40px ;
+    margin-top: 600px;
 }
 
 @media (max-width: 500px) {
