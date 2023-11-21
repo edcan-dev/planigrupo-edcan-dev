@@ -45,6 +45,15 @@
   <!-- Accordion Component -->
   <script defer type="module" src="js/inversionistas/accordion-component.js"></script>
   <script defer src="https://kit.fontawesome.com/c4df7659ff.js" crossorigin="anonymous"></script>
+
+
+  <!--style reference from the Calendar component-->
+  <link href="https://cdn.syncfusion.com/ej2/23.1.36/ej2-base/styles/material.css" rel="stylesheet">
+  <link href="https://cdn.syncfusion.com/ej2/23.1.36/ej2-buttons/styles/material.css" rel="stylesheet">
+  <link href="https://cdn.syncfusion.com/ej2/23.1.36/ej2-calendars/styles/material.css" rel="stylesheet">
+  <script src="https://cdn.syncfusion.com/ej2/23.1.36/dist/ej2.min.js" type="text/javascript"></script>
+  <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type ="text/javascript"></script>
+  <script defer src="js/inversionistas/calendar.js"></script>
 </head>
 
 
@@ -182,14 +191,14 @@
 
         <div class="inversionistas__tabs__tab--content__row__item">
           <span>~780,000</span>
-          <p>M2 DE GLA <br> PROPIAS Y ADMINISTRADA</p>
+          <p>M2 DE GLA <br> PROPIAS Y ADMINISTRADAS</p>
         </div>
 
         <div class="inversionistas__tabs__tab--content__row__splitter"></div>
 
         <div class="inversionistas__tabs__tab--content__row__item">
           <span>93.4%</span>
-          <p>DE OCUPACION <br> PROPIAS Y ADMINISTRADA</p>
+          <p>DE OCUPACION <br> PROPIAS Y ADMINISTRADAS</p>
         </div>
 
         <div class="inversionistas__tabs__tab--content__row__splitter"></div>
@@ -218,7 +227,7 @@
 
         <div class="inversionistas__tabs__tab--content__row__item">
           <span>93.4%</span>
-          <p>DE OCUPACION <br> PROPIAS Y ADMINISTRADA</p>
+          <p>DE OCUPACION <br> PROPIAS Y ADMINISTRADAS</p>
         </div>
 
 
@@ -1135,6 +1144,17 @@
                   </tr>
                 </tbody>
               </table>
+
+              <div id="tab_content--5" class="tab_content inactive">
+
+                <div id="container">
+                  <!--element which is going to render the Calendar-->
+                  <div id="element"></div>
+                </div>
+
+              </div>
+             <!--  <div id="tab_content--5" class="tab_content inactive">
+              </div> -->
 
               <table id="tab_content--8" class="tab_content inactive">
                 <thead>
@@ -2971,11 +2991,11 @@
         <ul>
           <li>
             <span class="span_title_text f-size-32">~780,000</span>
-            <p class="p_body_text--2">M2 DE GLA<br>PROPIAS Y ADMINISTRADA</p>
+            <p class="p_body_text--2">M2 DE GLA<br>PROPIAS Y ADMINISTRADAS</p>
           </li>
           <li>
             <span class="span_title_text f-size-32">93.4%</span>
-            <p class="p_body_text--2">DE OCUPACIÓN<br>(PROPIAS Y ADMINISTRADA)</p>
+            <p class="p_body_text--2">DE OCUPACIÓN<br>(PROPIAS Y ADMINISTRADAS)</p>
           </li>
           <li>
             <span class="span_title_text f-size-32">+2,000</span>
@@ -2987,7 +3007,7 @@
           </li>
           <li>
             <span class="span_title_text f-size-32"> +26.8 MILLONES</span>
-            <p class="p_body_text--2">VISITANTES AL 2T2023<br>(PROPIAS Y ADMINISTRADA)</p>
+            <p class="p_body_text--2">VISITANTES AL 2T2023<br>(PROPIAS Y ADMINISTRADAS)</p>
           </li>
           <li>
             <span class="span_title_text f-size-32">70</span>
