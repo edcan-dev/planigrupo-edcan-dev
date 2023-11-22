@@ -21,6 +21,8 @@ ej.base.enableRipple(true);
     //Sets the max.
     max: new Date(currentYear, month, 15),
     // Sets the value.
-    value: new Date(currentYear, month , 11)
+    value: new Date(currentYear, month , 11),
+    value: new Date(currentYear, month , 12),
+    value: new Date(currentYear, month , 13),
     });
     calendar.appendTo('#element');
