@@ -301,7 +301,7 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  margin: 0 auto;
+  margin: 40px auto 0px;
   justify-content: space-between;
 }
 .featured_properties__responsive-combo > span {
