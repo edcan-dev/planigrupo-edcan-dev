@@ -1,4 +1,5 @@
-const jsonResponse = await fetch('../../data/asg/actividades-data.json');
+// const jsonResponse = await fetch('../../data/asg/actividades-data.json');
+const jsonResponse = await fetch('https://edcan-dev.github.io/planigrupo-edcan-dev/data/asg/actividades-data.json');
 const actividades = await jsonResponse.json();
 
 const createGridItem = (json) => {
