@@ -19,4 +19,4 @@ class SliderComponent {
 
 }
 
-// const asu = new SliderComponent('.hero__text__content__p', 3000).initialize();
+const asu = new SliderComponent('.hero__text__content__p', 3000).initialize();
