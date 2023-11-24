@@ -36,6 +36,17 @@
     <script defer src="./js/asg/slider-component.js"></script>
     <script defer src="./js/asg/generic-tab-component.js"></script>
 
+    <!--style reference from the Calendar component-->
+  <link href="https://cdn.syncfusion.com/ej2/23.1.36/ej2-base/styles/material.css" rel="stylesheet">
+  <link href="https://cdn.syncfusion.com/ej2/23.1.36/ej2-buttons/styles/material.css" rel="stylesheet">
+  <link href="https://cdn.syncfusion.com/ej2/23.1.36/ej2-calendars/styles/material.css" rel="stylesheet">
+  <script src="https://cdn.syncfusion.com/ej2/23.1.36/dist/ej2.min.js" type="text/javascript"></script>
+  <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type ="text/javascript"></script>
+  <script defer src="js/asg/calendar.js"></script>
+
+  <!-- Actividades Grid -->
+  <script defer type="module" src="./js/asg/actividades-grid.js"></script>
+
   </head>
 
   <body>
@@ -234,25 +245,34 @@
           <div id="tabs__img" class="tabs__imgs">
           </div>
 
-        <!--
-        <div class="tab__selectors">
-          <ul>
-            <li>¿QUÉ ESTAMOS HACIENDO?</li>
-            <li>¿PARA QUÉ?</li>
-            <li>¿QUIÉNES PARTICIPARON?</li>
-            <li>MATERIALIDAD Y ESTRATEGIA ASG</li>
-          </ul>
-        </div>
-        <div class="tab__contents"></div>
-      -->
       </section>
 
       <section class="section--2">
         <div class="reports__container">
           <div class="reports__item reports__item--1">
+            
             <div class="reports__item__title_container">
               <span>DESCARGAR REPORTE ANUAL</span>
             </div>
+
+            <div class="reports__item__reports">
+
+              <div class="reports__item__reports__report">
+                <span>2022</span>
+                <a href="">Descargar</a>
+                <hr>
+              </div>
+
+
+              <div class="reports__item__reports__report">
+                <span>2021</span>
+                <a href="">Descargar</a>
+                <hr>
+              </div>
+
+
+            </div>
+          
               
           
           </div>
@@ -260,8 +280,86 @@
             <div class="reports__item__title_container">
               <span>CALENDARIO</span>
             </div>
+
+            <div class="reports__item__calendar">
+              <div class="calendar">
+              </div>
+
+              <div id="container">
+                <!--element which is going to render the Calendar-->
+                <div id="element"></div>
+              </div>
+
+            </div>
+
           </div>
         </div>
+      </section>
+
+
+      <section class="section--3">
+        <div class="actividades">
+          
+          <div class="actividades__title">
+            <span>ACTIVIDADES</span>
+          </div>
+
+          <div class="actividades__filters">
+            <div class="actividades__filters__filter">
+              <span>
+                Filtrar por:
+              </span>
+
+              <select name="" id="">
+                <option value="">Todas</option>
+                <option value="">Sociales</option>
+                <option value="">Ambientales</option>
+                <option value="">Corporativas</option>
+              </select>
+            </div>
+
+            <div class="actividades__filters__filter">
+              <span>
+                Año
+              </span>
+
+              <select name="" id="">
+                <option value="all">Todas</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+              </select>
+            </div>
+            
+          </div>
+
+          <div class="actividades__grid">
+
+          <!--
+            <div class="actividades__grid__item">
+              <div class="actividades__grid__item__title">
+                <p>
+                  Máquinas de Reciclaje-AIEn
+                </p>
+              </div>
+
+              <div class="actividades__grid__item__img">
+              </div>
+
+              <div class="actividades__grid__item__description">
+                <p>
+                  De enero-abril 2022 se reciclaron más de 300 mil botellas de plástico equivalentes a una reducción de 17,642 kg de CO2
+                </p>
+              </div>
+              
+              <div class="actividades__grid__item__a">
+                <a>VER MÁS</a>
+              </div>
+            </div>
+          -->
+
+        </div>
+
       </section>
 
 

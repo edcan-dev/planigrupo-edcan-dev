@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "name": "Máquinas de Reciclaje-AIEn",
+    "image_url": "https://planiesg.herokuapp.com/static/images/eventos_soc/Reciclar-para-ganar-abril-2022-1.png",
+    "description": "De enero-abril 2022 se reciclaron más de 300 mil botellas de plástico equivalentes a una reducción de 17,642 kg de CO2",
+    "date": "2022-06-17",
+    "category": "Ambientales"  
+  },
+  {
+    "id": 2,
+    "name": "Reconocimiento a CiudadelaUV por el banco de tapitas",
+    "image_url": "https://planiesg.herokuapp.com/static/images/eventos_soc/Banco-tapitas-Junio-Ciudadela.png",
+    "description": "Reconocimiento al Banco de Tapitas A.C por su participación en Programa de Recolección de Tapitas de plástico.",
+    "date": "2022-06-01",
+    "category": "Ambientales"  
+  },
+  {
+    "id": 3,
+    "name": "Reciclar para ganar. Alianza con grupo AIEn",
+    "image_url": "https://planiesg.herokuapp.com/static/images/eventos_soc/Reciclar-2022-324-botellas.png",
+    "description": "En lo que va del 2022 se han reciclado 324,448 botellas de plástico, una reducción de 17,642 kg de CO2",
+    "date": "2022-08-19",
+    "category": "Ambientales"
+  },
+  {
+    "id": 4,
+    "name": "Alianza Grupo Alen",
+    "image_url": "https://planiesg.herokuapp.com/static/images/eventos_soc/alianza_grupo_alen.png",
+    "description": "Se colocaron 2 máquinas de reciclaje en las plazas Urban Village Garza Sada y Plaza Real Saltillo",
+    "date": "2021-03-04",
+    "category": "Ambientales"
+  }
+]
