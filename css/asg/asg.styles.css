@@ -3,8 +3,9 @@
   height: 360px;
 }
 .hero__img {
-  background-image: url("https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/hero__img.jfif");
+  background-image: url("https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/oportunidades-properties/Cancun5.jpg");
   width: 70%;
+  background-size: cover;
 }
 .hero__text {
   width: 30%;
@@ -54,7 +55,7 @@
 }
 
 .section--1 {
-  min-height: 400px;
+  min-height:350px;
   width: 100%;
 
   margin-top: 40px;
@@ -115,14 +116,22 @@
   height: 100%;
 }
 .tab__contents > .asg_tab_content > .asg_tab_content__p > p {
-  color: #8b8d8f;
   font-family: Raleway;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
   line-height: 20px; /* 142.833% */
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+
+  color: #53575a;
   text-align: justify;
+  font-family: Raleway;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 1px;
+  
 }
 .tab__contents > .asg_tab_content > .asg_tab_content__anchor {
   width: 30%;
@@ -453,7 +462,7 @@ hr {
     flex-wrap: wrap;
   }
   .hero__img {
-    background-image: url("https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/hero__img.jfif");
+    background-image: url("https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/oportunidades-properties/Cancun5.jpg");
     background-size: cover;
     background-position-x: -50vw;
     width: 100%;
