@@ -35,7 +35,6 @@ const asgHomeTabs = new GenericTabsComponent(
 // Change ASG Home Image
 document.querySelectorAll(".asg_tab_selector").forEach((selector) => {
   selector.addEventListener("click", () => {
-    console.log(selector.id);
 
     let url = (() => {
       switch (selector.id) {
