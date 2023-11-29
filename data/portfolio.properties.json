@@ -3,7 +3,7 @@
   [
     {
       "propertyTitle": "Cancun Gran Plaza",
-      "propertyKeyName": "cancun-gran-plaza",
+      "propertyKeyName": "P119",
       "propertyLocation": "Cancun, Quintana Roo",
       "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/oportunidades-properties/Cancun5.jpg",
       "propertyState":"Quintana Roo",
@@ -16,7 +16,7 @@
     },
     {
       "propertyTitle": "Centro Comercial Lopez Mateos",
-      "propertyKeyName": "centro-comercial-lopez-mateos",
+      "propertyKeyName": "P130",
       "propertyLocation": "Cd. Juarez, Chihuahua",
       "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-centro-comercial-lopez-mateos.jpg",
       "propertyState":"Chihuahua",
@@ -24,7 +24,7 @@
     },
     {
       "propertyTitle": "Ciudadela UV",
-      "propertyKeyName": "ciudadela-uv",
+      "propertyKeyName": "P139",
       "propertyLocation": "Zapopan, Jalisco",
       "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/Ciudadela-Urban-Village.jpg",
       "propertyState":"Jalisco",
@@ -32,7 +32,7 @@
     },
     {
       "propertyTitle": "EL PASEO SANTA CATARINA",
-      "propertyKeyName": "el-paseo-santa-catarina",
+      "propertyKeyName": "P101",
       "propertyLocation": "Santa Catarina, Nuevo León",
       "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-el-paseo-santa-catarina.jpg",
       "propertyState": "Nuevo Leon",
@@ -40,7 +40,7 @@
   },
   {
       "propertyTitle": "LA NOGALERA",
-      "propertyKeyName": "la-nogalera",
+      "propertyKeyName": "P109",
       "propertyLocation": "Saltillo, Coahuila",
       "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/La-Nogalera.jpeg",
       "propertyState": "Coahuila",
@@ -48,7 +48,7 @@
   },
   {
       "propertyTitle": "LAGO REAL CENTRO COMERCIAL",
-      "propertyKeyName": "lago-real-centro-comercial",
+      "propertyKeyName": "P134",
       "propertyLocation": "Bahia de Banderas, Nayarit",
       "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-lago-real-centro-comercial.jpg",
       "propertyState": "Nayarit",
@@ -56,6 +56,7 @@
   },
   {
       "propertyTitle": "MACROPLAZA DEL VALLE",
+      "propertyKeyName": "P133",
       "propertyLocation": "Mexicali, Baja California",
       "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-macroplaza-del-valle2.jpg",
       "propertyState": "Baja California",
@@ -63,6 +64,7 @@
   },
   {
       "propertyTitle": "MACROPLAZA ESTADIO",
+      "propertyKeyName": "2102",
       "propertyLocation": "Morelia, Michoacan",
       "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-macroplaza-estadio.jpg",
       "propertyState": "Michoacan",
@@ -70,6 +72,7 @@
   },
   {
       "propertyTitle": "MACROPLAZA INSURGENTES",
+      "propertyKeyName": "P121",
       "propertyLocation": "Tijuana, Baja California Norte",
       "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-macroplaza-insurgentes.jpg",
       "propertyState": "Baja California",
@@ -77,6 +80,7 @@
   },
   {
       "propertyTitle": "MACROPLAZA OAXACA",
+      "propertyKeyName": "P126",
       "propertyLocation": "Santa Lucia del Camino, Oaxaca",
       "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-macroplaza-oaxaca.jpg",
       "propertyState": "Oaxaca",
@@ -84,6 +88,7 @@
   },
   {
       "propertyTitle": "MACROPLAZA SAN LUIS",
+      "propertyKeyName": "P129",
       "propertyLocation": "San Luis, San Luis Potosí",
       "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-macroplaza-san-luis.jpg",
       "propertyState": "San Luis Potosi",
@@ -91,6 +96,7 @@
   },
   {
       "propertyTitle": "MALL PLAZA LINCON",
+      "propertyKeyName": "P107",
       "propertyLocation": "Monterrey, Nuevo León",
       "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-mall-plaza-lincoln.jpg",
       "propertyState": "Nuevo Leon",
@@ -98,6 +104,7 @@
   },
   {
       "propertyTitle": "PALMIRA PLAZA COMERCIAL",
+      "propertyKeyName": "P118",
       "propertyLocation": "Cd. Del Carmen, Campeche",
       "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/Pamira3.png",
       "propertyState": "Campeche",
@@ -105,6 +112,7 @@
   },
   {
       "propertyTitle": "PASEO ALCALDE",
+      "propertyKeyName": "P122",
       "propertyLocation": "Guadalajara, Jalisco",
       "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-paseo-alcalde.jpg",
       "propertyState": "Jalisco",
@@ -112,6 +120,7 @@
   },
   {
       "propertyTitle": "PASEO HIPODRóMO",
+      "propertyKeyName": "P123",
       "propertyLocation": "Naucalpan, Estado de México",
       "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/Hipodromo-V1.png",
       "propertyState": "Mexico",
@@ -119,6 +128,7 @@
   },
   {
       "propertyTitle": "PASEO PUEBLA",
+      "propertyKeyName": "P123",
       "propertyLocation": "Municipio de San Andrés Cholula",
       "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-paseo-puebla.jpg",
       "propertyState": "Puebla",
@@ -126,6 +136,7 @@
   },
   {
       "propertyTitle": "PASEO REFORMA",
+      "propertyKeyName": "P135",
       "propertyLocation": "Nuevo Laredo, Tamaulipas",
       "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-paseo-reforma.jpg",
       "propertyState": "Tamaulipas",
@@ -133,6 +144,7 @@
   },
   {
       "propertyTitle": "PASEO SAN JUAN",
+      "propertyKeyName": "P138",
       "propertyLocation": "San Juan del Río, Querétaro",
       "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-paseo-san-juan.jpg",
       "propertyState": "Queretaro",
@@ -140,6 +152,7 @@
   },
   {
       "propertyTitle": "PASEO SOLIDARIDAD",
+      "propertyKeyName": "P110",
       "propertyLocation": "Hermosillo, Sonora",
       "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-paseo-solidaridad.jpg",
       "propertyState": "Sonora",
@@ -147,6 +160,7 @@
   },
   {
       "propertyTitle": "PLAZA BELLA ANá ",
+      "propertyKeyName": "P106",
       "propertyLocation": "Escobedo, Nuevo León",
       "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-plaza-bella-anahuac.jpg",
       "propertyState": "Nuevo Leon",
@@ -154,6 +168,7 @@
   },
   {
       "propertyTitle": "PLAZA BELLA FRONTERA",
+      "propertyKeyName": "P102",
       "propertyLocation": "Cd. Frontera,Coahuila",
       "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-plaza-bella-frontera-1.jpg",
       "propertyState": "Coahuila",
@@ -161,6 +176,7 @@
   },
   {
       "propertyTitle": "PLAZA BELLA HUINALA",
+      "propertyKeyName": "P105",
       "propertyLocation": "Apodaca, Nuevo León",
       "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-plaza-bella-huinala.jpg",
       "propertyState": "Nuevo Leon",
@@ -168,6 +184,7 @@
   },
   {
       "propertyTitle": "PLAZA BELLA MEXIQUENSE",
+      "propertyKeyName": "P115",
       "propertyLocation": "Tecámac, Estado de México",
       "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-plaza-bella-mexiquense.jpg",
       "propertyState": "Mexico",
@@ -175,6 +192,7 @@
   },
   {
       "propertyTitle": "PLAZA BELLA RAMOS ARIZPE",
+      "propertyKeyName": "P111",
       "propertyLocation": "Ramos Arizpe, Coahuila",
       "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-plaza-bella-ramos-arizpe.jpg",
       "propertyState": "Coahuila",
@@ -182,6 +200,7 @@
   },
   {
       "propertyTitle": "PLAZA MONUMENTAL",
+      "propertyKeyName": "P113",
       "propertyLocation": "Cd. Juarez, Chihuahua",
       "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-plaza-monumental.jpg",
       "propertyState": "Chihuahua",
@@ -189,6 +208,7 @@
   },
   {
       "propertyTitle": "PLAZA REAL REYNOSA",
+      "propertyKeyName": "P112",
       "propertyLocation": "Reynosa, Tamaulipas",
       "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-plaza-real-reynosa.jpg",
       "propertyState": "Tamaulipas",
@@ -196,6 +216,7 @@
   },
   {
       "propertyTitle": "PLAZA REAL SALTILLO",
+      "propertyKeyName": "P108",
       "propertyLocation": "Saltillo, Coauhuila",
       "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-plaza-real-saltillo.jpg",
       "propertyState": "Coahuila",
@@ -203,6 +224,7 @@
   },
   {
       "propertyTitle": "PLAZA UNIVERSIDAD",
+      "propertyKeyName": "P150",
       "propertyLocation": "Mineral Reforma, Hidalgo",
       "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/IMG_0533-scaled.jpg",
       "propertyState": "Hidalgo",
@@ -210,6 +232,7 @@
   },
   {
       "propertyTitle": "PUERTA DE HIERRO",
+      "propertyKeyName": "P132",
       "propertyLocation": "Pachuca, Hidalgo",
       "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/IMG_0589-scaled.jpg",
       "propertyState": "Hidalgo",
@@ -217,6 +240,7 @@
   },
   {
       "propertyTitle": "PUNTO ORIENTE",
+      "propertyKeyName": "P140",
       "propertyLocation": "Guadalajara, Jalisco",
       "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-punto-oriente.jpg",
       "propertyState": "Jalisco",
@@ -224,6 +248,7 @@
   },
   {
       "propertyTitle": "PUNTO SAN ISIDRO",
+      "propertyKeyName": "P139",
       "propertyLocation": "Zapopan, Jalisco",
       "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-punto-san-isidro.jpg",
       "propertyState": "Jalisco",
@@ -231,6 +256,7 @@
   },
   {
       "propertyTitle": "REYNOSA II",
+      "propertyKeyName": "P140",
       "propertyLocation": "Reynosa, Tamaulipas",
       "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-reynosa-two.jpg",
       "propertyState": "Tamaulipas",
@@ -238,6 +264,7 @@
   },
   {
       "propertyTitle": "SUPER PLAZA LAS HACIENDAS",
+      "propertyKeyName": "P114",
       "propertyLocation": "Cuautitlan Izcalli, Edo. Mex",
       "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-super-plaza-las-haciendas.jpg",
       "propertyState": "Mexico",
@@ -245,6 +272,7 @@
   },
   {
       "propertyTitle": "Urban Village Garza Sada",
+      "propertyKeyName": "P125",
       "propertyLocation": "Monterrey, Nuevo Leon",
       "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/WEB.png",
       "propertyState": "Nuevo Leon",
@@ -252,6 +280,7 @@
   },
   {
       "propertyTitle": "Walmart Ensenada",
+      "propertyKeyName": "P127",
       "propertyLocation": "Ensenada, Baja California",
       "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-walmart-ensenada.jpg",
       "propertyState": "Baja California",
@@ -259,6 +288,7 @@
   },
   {
       "propertyTitle": "Walmart San Jose del Cabo",
+      "propertyKeyName": "P128",
       "propertyLocation": "San Jose del, Baja California Sur",
       "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-walmart-san-jose-del-cabo.jpg",
       "propertyState": "Baja California Sur",

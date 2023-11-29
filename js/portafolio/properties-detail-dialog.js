@@ -1,4 +1,5 @@
-import { GenericTabsComponent } from './generic-tab-component.js'
+import { GenericTabsComponent } from "./generic-tab-component.js";
+import { getPropertyDetailByKey } from "./xlsx-reader.js";
 
 ej.base.enableRipple(true);
 
@@ -9,8 +10,8 @@ var dialog = new ej.popups.Dialog({
   // overlayClick event handler
   overlayClick: onOverlayClick,
   // Dialog content
-  
-  content: `
+
+  /* content: `
   <section class="detail">
     <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/Cncnfoto.png" class="detail__hero__img">
     </img>
@@ -180,61 +181,49 @@ var dialog = new ej.popups.Dialog({
       </div>
     </div>
   </section>
-  `,
-  content: '',
+  `, */
+  content: "",
 
   target: document.getElementById("dialog_container"),
-  
-  width: '1200px',
-  height: '700px',
-  
-  visible: false
+
+  width: "1200px",
+  height: "700px",
+
+  visible: false,
 });
 // Render initialized Dialog
-dialog.appendTo('#dialog');
-
+dialog.appendTo("#dialog");
 
 // Sample level code to handle the button click action
-document.getElementById('targetButton').onclick = function () {
+document.getElementById("targetButton").onclick = function () {
   // Call the show method to open the Dialog
   dialog.show();
-}
+};
 
 // Sample level code to hide the Dialog when click the Dialog overlay
 function onOverlayClick() {
   dialog.hide();
 }
 
-
-/* 
-var ele = document.getElementById('dialog_container');
-if (ele) {
-  ele.style.visibility = "visible";
-} */
-
 export async function initializeDetailDialog(keyName) {
+  const propertyDetail = await getPropertyDetailByKey(keyName);
 
-  console.log(keyName);
+  propertyDetail.forEach((promise) => {
+    promise.then((propertyDetail) => {
+      if (propertyDetail.id == keyName) {
 
-  //const res = await fetch(`https://edcan-dev.github.io/planigrupo-edcan-dev/data/property_detail/${keyName}.json`)
-  // const url =  `../../data/property_detail/${keyName}.json`
-  const url = `https://edcan-dev.github.io/planigrupo-edcan-dev/data/property_detail/${keyName}.json`;
-  const res = await fetch(url) 
-  // fetch(`./../../data/property_detail/${keyName}.json`).then(data => res = data).catch()
-  const propertyDetail = await res.json();
+        console.log(propertyDetail);
+        const propertyTenants = getTenantsElements(propertyDetail.tenants).join('');
+        console.log(propertyTenants)
 
-  const propertyTenants = getTenantsElements(propertyDetail.tenants)
-
-  
-  document.querySelector('#dialog_dialog-content').innerHTML =
-    `
+        document.querySelector("#dialog_dialog-content").innerHTML = `
     <section class="detail">
-    <img src="${ propertyDetail.hero_img_url }" class="detail__hero__img">
+    <img src="${ propertyDetail.heroImageUrl }" class="detail__hero__img">
     </img>
 
     <div class="detail__hero__info">
       <div class="detail__hero__info--blue">
-        <img src="${ propertyDetail.logo_img_url }">
+        <img src="${ propertyDetail.logoImageUrl }">
       </div>
       <div class="detail__hero__info--light--gray">
         <div>
@@ -245,11 +234,11 @@ export async function initializeDetailDialog(keyName) {
       <div class="detail__hero__info--gray">
         <div>
           <b>Teléfono</b>
-          <p>${ propertyDetail.phone_number }</p>
+          <p>${ propertyDetail.phoneNumber }</p>
         </div>
         <div>
           <b>Web</b>
-          <a href="${ propertyDetail.website_url }" >${ propertyDetail.website_url }</a>
+          <a href="${ propertyDetail.webSite }" >${ propertyDetail.webSite }</a>
         </div>
         
       </div>
@@ -261,22 +250,22 @@ export async function initializeDetailDialog(keyName) {
 
     <div class="map__footer">
         <div class="map__footer__item">
-          <span>${ propertyDetail.start_date }</span>
+          <span>${propertyDetail.startDate}</span>
           <p>INICIO DE OPERACIONES</p>
         </div>
         <div class="map__footer__item">
-        <span>${ propertyDetail.usable_area }</span>
+        <span>${ propertyDetail.rentableArea }</span>
         <p>AREA RENTABLE COMERCIAL</p>
         </div>
         <div class="map__footer__item map__footer__item--last">
-          <span>${ propertyDetail.parking_spaces }</span>
-          <p>ESPACIOS DE ESTACIONAMIENTO</p>
+          <span>${ propertyDetail.usedRate }</span>
+          <p>PORCENTAJE DE USO</p>
         </div>
       </div>
 
     <div class="detail__about">
       <span>ACERCA DE ${ propertyDetail.name }</span>
-      <p>${ propertyDetail.about }</p>
+      <p>${ propertyDetail.description }</p>
     </div>
     <div class="detail__tenant__icons">
       ${ propertyTenants }
@@ -299,8 +288,8 @@ export async function initializeDetailDialog(keyName) {
 
       
 
-      <img class="map" src="${ propertyDetail.map_url }"></img>
-      
+      <img class="map" src="${ propertyDetail.directoryImageUrl }"></img>
+
         
       </div>
 
@@ -314,15 +303,17 @@ export async function initializeDetailDialog(keyName) {
 
           <div class="indicators__list__item">
             <div>
-              <p> ${ propertyDetail.key_indicators.data.total_surface } </p>
+              <p> ${ propertyDetail.totalSurface } </p>
               <small>Superficie Total</small>
             </div>
+            <!--
             <div>
-              <p> ${ propertyDetail.key_indicators.data.building_area } </p>
-              <small>Construcción</small>
+            <p> ${ "AQUI VA CONS"} </p>
+            <small>Construcción</small>
             </div>
+            -->
             <div>
-              <p> ${ propertyDetail.key_indicators.data.comercial } </p>
+              <p> ${ propertyDetail.rentableArea } </p>
               <small>Comercial</small>
             </div>
           </div>
@@ -330,32 +321,25 @@ export async function initializeDetailDialog(keyName) {
 
           <div class="indicators__list__item--second">
             <div>
-              <p> ${ propertyDetail.key_indicators.data.pads }</p>
-              <small>Entretenimiento</small>
-            </div>
-            <div>
-              <p> ${ propertyDetail.key_indicators.data.chlidren_playground }</p>
+              <p> ${ propertyDetail.playground }</p>
               <small>Area de Juegos para Niños</small>
             </div>
             <div>
-              <p> ${ propertyDetail.key_indicators.data.type }</p>
+              <p> ${ propertyDetail.type }</p>
               <small>Tipo</small>
             </div>
           </div>
 
 
           <div class="indicators__list__item">
+            
             <div>
-              <p>${ propertyDetail.key_indicators.data.pads }</p>
-              <small>Pads</small>
-            </div>
-            <div>
-              <p>${ propertyDetail.key_indicators.data.stores }</p>
+              <p>${ propertyDetail.storesNumber }</p>
               <small>Tiendas</small>
             </div>
             <div>
-              <p>${ propertyDetail.parking_spaces }</p>
-              <small>Espacios de Estacionamiento</small>
+              <p>${propertyDetail.parking }</p>
+              <small>Estacionamiento</small>
             </div>
           </div>
 
@@ -369,11 +353,11 @@ export async function initializeDetailDialog(keyName) {
 
           <div class="indicators__list__item">
             <div>
-            <p>${ propertyDetail.key_indicators.tenants.anchors }</p>
+            <p>${'--ANCLAS--'}</p>
             <small>Anclas</small>
             </div>
             <div>
-            <p>${ propertyDetail.key_indicators.tenants.featured_tenants }</p>
+            <p>${'--ARRENDAMIENTOS--'}</p>
               <small>Arredamientos Importantes</small>
             </div>
           </div>
@@ -381,11 +365,11 @@ export async function initializeDetailDialog(keyName) {
 
           <div class="indicators__list__item--second">
             <div>
-            <p>${ propertyDetail.key_indicators.tenants.sub_anchors }</p>
+            <p>${'--SUB ANCLAS--'}</p>
               <small>Sub Anclas</small>
             </div>
             <div>
-            <p>${ propertyDetail.key_indicators.tenants.cinema }</p>
+            <p>${'--CINE--'}</p>
               <small>Complejo De Cine</small>
             </div>
           </div>
@@ -395,24 +379,27 @@ export async function initializeDetailDialog(keyName) {
       </div>
 
       <div id="detail__tab--content--3" class="detail__tab--content inactive">
-      <iframe src="${ propertyDetail.i_frame_src }" width="1100" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe src="${propertyDetail.iFrameSrc}" width="1100" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   </section>
     `;
-    dialog.show();
-    document.querySelector('.detail__hero__close').addEventListener('click', () => {
-      dialog.hide()
-    })
-  new GenericTabsComponent(
-    '.detail__tab--selector',
-    '.detail__tab--content'
-  ).initialize();
+        dialog.show();
+        document
+          .querySelector(".detail__hero__close")
+          .addEventListener("click", () => {
+            dialog.hide();
+          });
+        new GenericTabsComponent(
+          ".detail__tab--selector",
+          ".detail__tab--content"
+        ).initialize();
+      }
+    });
+  });
 }
 
-
-
-document.querySelector('.tenants_container')
+/* document.querySelector('.tenants_container')
   .addEventListener('click', (ev) => {
 
     document.querySelectorAll('.featured_properties__grid__item')
@@ -449,31 +436,27 @@ document.querySelector('.tenants_container')
   })
 
   })
-
+ */
 
 const getTenantsElements = (tenants) => {
+  return tenants.map((tenant) => {
 
-  const imgElements = tenants.map((tenant) => {
-    return `
-    <img class="detail__tenant__icons_item" src="${tenant.tenant_img_url}">
-    `
-  })
-  return imgElements.join('')
-}
+    const url = `https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/${tenant}.png`;
+    return `<img class="detail__tenant__icons_item" src="${url}">`;
+  });
+};
 
 export const renderContact = async (keyName) => {
-
-  
-  const res = await fetch(`https://edcan-dev.github.io/planigrupo-edcan-dev/data/property_detail/${keyName}.json`)
+  const res = await fetch(
+    `https://edcan-dev.github.io/planigrupo-edcan-dev/data/property_detail/${keyName}.json`
+  );
   const propertyDetail = await res.json();
 
-
-  document.querySelector('#dialog_dialog-content').innerHTML = 
-  `
+  document.querySelector("#dialog_dialog-content").innerHTML = `
   <div class="contacto__form__card">
   <div class="contacto__form__card__text">
   <!--        
-  <span style="font-size: 30px !important;">${ propertyDetail.email }
+  <span style="font-size: 30px !important;">${propertyDetail.email}
           </span>
           -->
           <span>Pregúntenos sobre oportunidades de arrendamiento
@@ -482,7 +465,7 @@ export const renderContact = async (keyName) => {
             <p>
             Direccion <br>
               <b>
-              ${ propertyDetail.contact.address }
+              ${propertyDetail.contact.address}
               </b>
               <br>
               O bien, escribe sobre el tema de tu interés aquí:</p>
@@ -491,9 +474,9 @@ export const renderContact = async (keyName) => {
               Contacto:
               <br>      
               <b>
-              ${ propertyDetail.contact.phone_numbers[0]}
+              ${propertyDetail.contact.phone_numbers[0]}
               <br>
-              ${ propertyDetail.contact.phone_numbers[1]}
+              ${propertyDetail.contact.phone_numbers[1]}
               </b>
               <br>
               O bien, escribe sobre el tema de tu interés aquí:
@@ -613,9 +596,8 @@ export const renderContact = async (keyName) => {
             </div>
 
         </form></div>
-  `
+  `;
   dialog.width = 900;
   dialog.height = 600;
   dialog.show();
-
-}
+};
