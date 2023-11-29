@@ -1,5 +1,5 @@
 //const xslxPath = './../../data/portafolio/plazas.xlsx';
-const xslxPath = 'https://edcan-dev.github.io/planigrupo-edcan-dev/data/inversionistas_input.xlsx';
+const xslxPath = 'https://edcan-dev.github.io/planigrupo-edcan-dev/data/portafolio/plazas.xlsx';
 
 const response = await fetch(xslxPath);
 
