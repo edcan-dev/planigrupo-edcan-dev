@@ -8,7 +8,7 @@
     grid-column-gap: 0px;
     grid-row-gap: 0px;   
 
-    padding: 120px 40px;
+    padding: 80px 40px;
     row-gap: 120px;
 }
 
@@ -17,6 +17,158 @@
 .grid_item:nth-child(3) { grid-area: 1 / 9 / 2 / 13; }
 .grid_item:nth-child(4) { grid-area: 2 / 3 / 3 / 7; }
 .grid_item:nth-child(5) { grid-area: 2 / 7 / 3 / 11; }
+
+.social_section--3 {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto 40px;    
+}
+.social_section--3 > p {
+    color: #727272;
+    font-family: Raleway;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 1px;
+    text-align: justify;
+}
+.social_section--3 > span {
+    color: #0096A9;
+    font-family: Barlow;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 22.86px; /* 127% */
+    letter-spacing: 2px;
+
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+
+.social_section--4 {
+    background-color: #EFEFED;
+    position: relative;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+.social_section--4 > .card__content {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    position: absolute;
+
+    transition: all .2s;
+}
+
+
+.social_section--4 > .card__content > .card__content__text {
+    width: 50%;
+    padding: 80px 80px 80px 0px;
+    display: flex;
+    align-items: center;
+}
+.social_section--4 > .card__content > .card__content__img {
+    width: 50%;
+    height: 300px;
+    background-color: #d9d9d9;
+    background-size: cover;
+}
+.social_section--4 > .card__content > .card__content__img--1 {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/social/tab-1.PNG');
+}
+.social_section--4 > .card__content > .card__content__img--2 {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/social/tab-2.PNG');
+}
+.social_section--4 > .card__content > .card__content__img--3 {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/social/tab-3.PNG');
+}
+.social_section--4 > .card__content > .card__content__img--4 {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/social/tab-4.PNG');
+}
+
+.social_section--4 > .card__content > .card__content__text > p {
+    color: #727272;
+    font-family: Raleway;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 1px;
+}
+
+
+.social_section--5 {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto 40px;    
+}
+.social_section--5 > p {
+    color: #727272;
+    font-family: Raleway;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 1px;
+    text-align: justify;
+}
+.social_section--5 > span {
+    color: #0096A9;
+    font-family: Barlow;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 22.86px; /* 127% */
+    letter-spacing: 2px;
+
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+
+.social_section--6 {
+    background-color: #F0F0F0;
+    display: flex;
+    height: 300px;
+}
+.social_section--6 > .social_tab__selectors {
+    width: 50%;
+    background-color: #EFEFED;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.social_section--6 > .social_tab__selectors > .social_tab__selector > span {
+    color: #D7282F;
+    text-align: center;
+    font-family: Barlow;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 22.86px; /* 142.875% */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.social_section--6 > .social_tab__selectors > .social_tab__selector {
+    height: 65px;
+    padding-left: calc((100svw - 1200px) / 2 );
+    display: flex;
+    align-items: center; 
+}
+
+.social_section--6 > .social_tab__selectors > .selected {
+    background-color: #D9D9D9;
+}
+
+.social_section--6 > .social_tab__contents {
+    width: 50%;
+    background-color: #D9D9D9;
+}
 
 
 @media (max-width: 1000px) {

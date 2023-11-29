@@ -24,7 +24,8 @@ class PropertiesGrid {
             const propertyElement = document.createElement('div');
             propertyElement.classList.add(['featured_properties__grid__item']);
 
-            const keyName = this.#clearStateName(this.getKeyName(property.propertyTitle))
+            //const keyName = this.#clearStateName(this.getKeyName(property.propertyTitle))
+            const keyName = property.propertyKeyName
 
             propertyElement.style.backgroundImage = "url('" + property.propertyImageUrl + "')";
             
@@ -38,6 +39,11 @@ class PropertiesGrid {
                     <p class="inactive">${ keyName }</p>
                 </div>
                 `
+            
+                propertyElement.addEventListener('click',() => {
+                    initializeDetailDialog(keyName)
+                })
+
             container.append(propertyElement);
         });    
     }
@@ -192,33 +198,6 @@ class PropertiesGrid {
     }
 }
 
-/* 
-class PropertiesGridItem {
-
-    #propertyTitle;
-    #propertyLocation;
-    #propertyimageUrl;
-    #propertyState;
-    #propertyTenants;
-
-    constructor( propertyTitle, propertyLocation, propertImageUrl, propertyState, propertyTenants) {
-        this.#propertyTitle = propertyTitle;
-        this.#propertyLocation = propertyLocation;
-        this.#propertyimageUrl = propertImageUrl;
-        this.#propertyState = propertyState;
-        this.#propertyTenants = propertyTenants;
-    }
-
-    get propertyimageUrl() {
-        return this.#propertyimageUrl
-    }
-    get propertyTitle() {
-        return this.#propertyTitle
-    }
-    get propertyLocation() {
-        return this.#propertyLocation
-    }
-} */
 
 export const propertiesGrid = new PropertiesGrid(jsonDatasource.properties)
 propertiesGrid.init();
