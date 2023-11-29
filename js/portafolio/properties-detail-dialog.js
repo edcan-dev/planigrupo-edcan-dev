@@ -254,7 +254,9 @@ export async function initializeDetailDialog(keyName) {
           <p>INICIO DE OPERACIONES</p>
         </div>
         <div class="map__footer__item">
-        <span>${ propertyDetail.rentableArea }</span>
+        <span>${ 
+          getFormattedUsableArea(propertyDetail.rentableArea)}
+        <small style="font-size: 16px;">m2</small></span>
         <p>AREA RENTABLE COMERCIAL</p>
         </div>
         <div class="map__footer__item map__footer__item--last">
@@ -601,3 +603,14 @@ export const renderContact = async (keyName) => {
   dialog.height = 600;
   dialog.show();
 };
+
+
+
+
+// Utils
+
+function getFormattedUsableArea( usableArea ) {
+  const arr = usableArea.toString().split('');
+  arr.splice(2,0 , ',')
+  return arr.join('');
+}
