@@ -470,12 +470,15 @@ hr {
 
 .actividades__grid__item__a {
   border: 1px solid #A5A6A8;
+  border: 1px solid #d7282f;
   background: #EFEFED;
+  background: #d7282f;
   width: fit-content;
 }
 
 .actividades__grid__item__a > a {
   color: #97928A;
+  color: #FFF;
   text-align: center;
   font-family: Raleway;
   font-size: 10px;
