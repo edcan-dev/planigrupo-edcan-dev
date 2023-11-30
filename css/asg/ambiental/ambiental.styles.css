@@ -45,9 +45,17 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
 
-    padding: 120px 80px;
+    padding: 80px 80px;
     row-gap: 120px;
     column-gap: 40px;
+}
+
+
+.amb_section--2 > .grid > .grid_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .amb_section--2 > .grid > .grid_item > p {
@@ -60,6 +68,28 @@
     line-height: 25px; /* 192.308% */
     letter-spacing: 1px;
     text-transform: uppercase;
+}
+.amb_section--2 > .grid > .grid_item > .grid_item__img {
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.amb_section--2 > .grid > .grid_item > .grid_item__img--1 {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/ambiental/icons/icon-1.jpeg');
+}
+.amb_section--2 > .grid > .grid_item > .grid_item__img--2 {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/ambiental/icons/icon-2.jpeg');}
+.amb_section--2 > .grid > .grid_item > .grid_item__img--3 {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/ambiental/icons/icon-3.jpeg');}
+.amb_section--2 > .grid > .grid_item > .grid_item__img--4 {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/ambiental/icons/icon-4.jpeg');}
+.amb_section--2 > .grid > .grid_item > .grid_item__img--5 {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/ambiental/icons/icon-5.jpeg');
+}
+.amb_section--2 > .grid > .grid_item > .grid_item__img--6 {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/ambiental/icons/icon-6.jpeg');
 }
 
 
