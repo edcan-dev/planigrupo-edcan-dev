@@ -1,3 +1,5 @@
+import { renderDetailDialog } from "./asg-detail-dialog.js";
+
 const renderGridItemFromRow = (row) => {
   const item = document.createElement("div");
   item.classList.add("actividades__grid__item");
@@ -59,11 +61,31 @@ const renderGridItemsFromRows = (rows) => {
     anchorContainerA.innerHTML = "VER MÁS";
     anchorContainer.appendChild(anchorContainerA);
 
+    
+    const idSmallContainer = document.createElement('small');
+    idSmallContainer.classList.add('inactive');
+    idSmallContainer.innerHTML = rows.indexOf(row) + 1;
+    
+    const detailData = {
+      title: row[1],
+      date: `${row[5]}-${row[4]}-${row[3]}`,
+      category : row[0],
+      description: row[9],
+      imgUrl: row[8]
+    }
+
+    anchorContainer.addEventListener('click',() => {
+      renderDetailDialog(detailData)
+    })
+    
+
     item.appendChild(titleContainer);
     item.appendChild(imgContainer);
     item.appendChild(descriptionContainer);
     item.appendChild(anchorContainer);
+    item.appendChild(idSmallContainer);
     document.querySelector(".actividades__grid").appendChild(item);
+
   });
 };
 
@@ -71,12 +93,12 @@ const clearGrid = () => {
   document.querySelector(".actividades__grid").innerHTML = "";
 };
 
-const xslxPath =
-  "https://edcan-dev.github.io/planigrupo-edcan-dev/data/asg/asg_actividades.xlsx";
+const xslxPath ="https://edcan-dev.github.io/planigrupo-edcan-dev/data/asg/asg_actividades.xlsx";
+//const xslxPath ="../../data/asg/asg_actividades.xlsx";
 const response = await fetch(xslxPath);
 const xlsx = await response.blob();
 
-let actividades = [];
+export let actividades = [];
 let filteredActividades = [];
 
 await readXlsxFile(xlsx, { sheet: 1 }).then(function (rows) {
