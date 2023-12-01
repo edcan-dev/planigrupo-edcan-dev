@@ -19,8 +19,6 @@ class SliderComponent {
             }
         })
 
-        console.log(cards.item(0));
-
 
         setInterval(() => {
             cards.forEach(card => card.classList.add('invisible'))

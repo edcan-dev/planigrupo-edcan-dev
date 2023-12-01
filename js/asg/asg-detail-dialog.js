@@ -13,7 +13,7 @@ ej.base.enableRipple(true);
 var dialog = new ej.popups.Dialog({
     isModal:true,
     overlayClick: onOverlayClick,
-    
+
     content: ``,
 
     target: document.getElementById("container"),
@@ -25,18 +25,14 @@ var dialog = new ej.popups.Dialog({
 // Render initialized Dialog
 dialog.appendTo('#dialog');
 
-// Sample level code to handle the button click action
-document.getElementById('targetButton').onclick = function() {
-    // Call the show method to open the Dialog
-    dialog.show();
-}
+
 
 // Sample level code to hide the Dialog when click the Dialog overlay
 function onOverlayClick() {
     dialog.hide();
 }
 
-export async function renderDetailDialog( { imgUrl, title, date, description, category } ) {
+export function renderDetailDialog( { imgUrl, title, date, description, category } ) {
 
     dialog.content = `
     <section class="detail__dialog">
@@ -78,7 +74,7 @@ export async function renderDetailDialog( { imgUrl, title, date, description, ca
       </section>
     `;
 
-    await dialog.show();
+    dialog.show();
 
     setTimeout(()=> {
         document.querySelector('.detail__dialog__close > button').onclick = () => {
@@ -90,25 +86,3 @@ export async function renderDetailDialog( { imgUrl, title, date, description, ca
 
 
 }
-
-
-
-
-
-
-/*
-var carouselObj = new ej.navigations.Carousel({
-                    interval: 2000,
-                    items: [
-                        { template: '<figure class="img-container"><img src="https://ej2.syncfusion.com/products/images/carousel/cardinal.png" alt="cardinal" style="height:100%;width:100%;" /><figcaption class="img-caption">Cardinal</figcaption></figure>' },
-                        { template: '<figure class="img-container"><img src="https://ej2.syncfusion.com/products/images/carousel/hunei.png" alt="kingfisher" style="height:100%;width:100%;" /><figcaption class="img-caption">Kingfisher</figcaption></figure>' },
-                        { template: '<figure class="img-container"><img src="https://ej2.syncfusion.com/products/images/carousel/costa-rica.png" alt="keel-billed-toucan" style="height:100%;width:100%;" /><figcaption class="img-caption">Keel-billed-toucan</figcaption></figure>' },
-                        { template: '<figure class="img-container"><img src="https://ej2.syncfusion.com/products/images/carousel/kaohsiung.png" alt="yellow-warbler" style="height:100%;width:100%;" /><figcaption class="img-caption">Yellow-warbler</figcaption></figure>' },
-                      { template: '<figure class="img-container"><img src="https://ej2.syncfusion.com/products/images/carousel/bee-eater.png" alt="bee-eater" style="height:100%;width:100%;" /><figcaption class="img-caption">Bee-eater</figcaption></figure>' }
-                    ]
-                  });
-                  carouselObj.appendTo("#carousel");    
-
-
-
-*/
