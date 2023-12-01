@@ -14,7 +14,43 @@ var dialog = new ej.popups.Dialog({
     isModal:true,
     overlayClick: onOverlayClick,
 
-    content: ``,
+    content: `<section class="detail__dialog">
+    
+    <!--
+    <div class="control-container">
+      <div id="carousel"></div>
+    </div>
+    -->
+    <div class="detail__dialog__img">
+    <img src="${ 'imgUrl' }">
+    </div>
+
+    <div class="detail__dialog__title">
+      <h5> ${ 'title' }</h5>
+    </div>
+
+    <div class="detail__dialog__date__category">
+
+      <div>
+        <i class="fa-regular fa-calendar-days" style="color: #000000;"></i>
+        <span>${ 'date' }</span>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-folder" style="color: #000000;"></i>
+        <span>${ 'category' }</span>
+      </div>
+
+    </div>
+    
+    <div class="detail__dialog__desc">
+      <p>${ 'description' }</p>
+    </div>
+
+    <div class="detail__dialog__close">
+      <button>Cerrar</button>
+    </div>
+  </section>`,
 
     target: document.getElementById("container"),
     // Dialog width
@@ -80,7 +116,7 @@ export function renderDetailDialog( { imgUrl, title, date, description, category
         document.querySelector('.detail__dialog__close > button').onclick = () => {
             dialog.hide();
         }
-    }, 200)
+    }, 100)
 
 
 
