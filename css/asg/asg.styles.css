@@ -469,11 +469,13 @@ hr {
 
 
 .actividades__grid__item__a {
-  border: 1px solid #A5A6A8;
-  border: 1px solid #d7282f;
   background: #EFEFED;
   background: #d7282f;
   width: fit-content;
+}
+.actividades__grid__item__a:hover {
+  transition: all .2s;
+  background-color: #8e0f14;
 }
 
 .actividades__grid__item__a > a {
@@ -616,4 +618,112 @@ hr {
     margin-top: 0px !important;
   }
 
+  .detail__dialog__img > img {
+    height: 350px !important;
+  }
+
+  .detail__dialog__date__category {
+    width: 100% !important;
+  }
+
+}
+
+
+#dialog {
+  max-height: 800px !important;
+}
+
+.detail__dialog {
+  box-shadow: -1px -3px 8px 0px rgba(0,0,0,0.5);
+  -webkit-box-shadow: -1px -3px 8px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: -1px -3px 8px 0px rgba(0,0,0,0.5);
+  padding: 40px;
+}
+.detail__dialog__img > img{
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+.detail__dialog__title {
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.detail__dialog__title > h5 {
+  color: #C04D00;
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: bolder;
+  line-height: 19.8px; /* 110% */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+
+.detail__dialog__date__category {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.detail__dialog__date__category > div > i {
+  color: #53575a !important;
+  margin-right: 10px;
+}
+
+.detail__dialog__date__category > div > span {
+  color: #545859;
+  font-family: Raleway;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 19.8px; /* 110% */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.detail__dialog__desc {
+  margin-top: 40px;  
+}
+.detail__dialog__desc > p {
+  color: #727272;
+  text-align: justify;
+  font-family: Raleway;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 1px;
+}
+
+.detail__dialog__close {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.detail__dialog__close > button {
+  background-color: #d7282f;
+
+  color: #97928A;
+  color: #FFF;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 14.29px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  line-height: 30px;
+  display: inline-block;
+  padding: 0px 20px;
+  cursor: pointer;
+  border: none;
+}
+.detail__dialog__close > button:hover {
+  transition: all .2s;
+  background-color: #8e0f14;
 }
