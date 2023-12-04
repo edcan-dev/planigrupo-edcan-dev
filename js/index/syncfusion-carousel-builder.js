@@ -45,7 +45,7 @@ const PropertyCard = (
   )
 }
 
-const customInterval = 3000;
+const customInterval = 7000;
 
 const items = jsonDatasource.properties.map(property => {
   return ({
@@ -66,6 +66,6 @@ const items = jsonDatasource.properties.map(property => {
 var carouselObj = new ej.navigations.Carousel({
   items: items,
   partialVisible: true,
-  autoPlay: true
+  autoPlay: true,
 });
 carouselObj.appendTo("#carousel");

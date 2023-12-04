@@ -123,7 +123,7 @@ var map = new ej.maps.Maps({
       shapeDataPath: 'State',
       highlightSettings: {
         enable: true,
-        fill: '#007689',
+        fill: '#66C0CB',
         border: { color: 'white', width: 2 }
       },
       selectionSettings: {

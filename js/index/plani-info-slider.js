@@ -1,4 +1,5 @@
-const response = await fetch('https://edcan-dev.github.io/planigrupo-edcan-dev/data/index.plan-info.slider.json');
+// const response = await fetch('https://edcan-dev.github.io/planigrupo-edcan-dev/data/index.plan-info.slider.json');
+const response = await fetch('../../data/index.plan-info.slider.json');
 const slides = response.json();
 
 class InfoSlider {

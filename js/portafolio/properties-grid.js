@@ -81,14 +81,10 @@ class PropertiesGrid {
 
         document.getElementById('state-selector').value = clearedStateFromMap
 
-        this.render(filteredProperties)
+        // this.render(filteredProperties)
 
         this.renderTenantContainer(filteredProperties);
-
-        /* window.scrollTo({
-            top: '920',
-            behavior: 'smooth'
-          }); */
+        
     }
 
     #clearStateName( state ) {

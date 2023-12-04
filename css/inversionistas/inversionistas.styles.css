@@ -197,6 +197,7 @@
     line-height: 20px;
     /* 142.857% */
     letter-spacing: 1px;
+    text-align: justify;
   }
 }
 
@@ -425,7 +426,7 @@ article {
     line-height: 25px;
     /* 178.571% */
     letter-spacing: 1px;
-    text-transform: uppercase;
+    text-transform: capitalize;
   }
 
   & div>p {
@@ -438,7 +439,7 @@ article {
     line-height: 25px;
     /* 208.333% */
     letter-spacing: 1px;
-    text-transform: uppercase;
+    text-transform: capitalize;
   }
 
   & div>.number {

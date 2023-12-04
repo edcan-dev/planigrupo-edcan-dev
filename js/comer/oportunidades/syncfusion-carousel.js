@@ -37,15 +37,15 @@ const PropertyCard = (
       <div class="oportunidades__carousel__item__text__title">
         <div class="oportunidades__carousel__item__text__title__item oportunidades__carousel__item__text__title__item--title">
           <span class="title">${ propertyTitle }</span>    
-          <span class="comercializacion">Contacto para comercializacion</span>
-          <span class="date">INAUGURACION</span>    
-          <span class="area">ESPACIO M2</span>    
+          <span class="comercializacion">${ propertyContactEmail }</span>
+          <span class="date">${ propertyStartDate }</span>    
+          <span class="area">${ propertyArea }</span>    
         </div>  
         <div class="oportunidades__carousel__item__text__title__item oportunidades__carousel__item__text__title__item--desc">
           <p class="name">${ propertyLocation }</p>    
-          <p class="contact">${ propertyContactEmail }</p>                
-          <p class="date">${ propertyStartDate }</p>   
-          <p class="area">${ propertyArea }</p>    
+          <p class="contact">${ 'Contacto para comercializacion' }</p>                
+          <p class="date">${ 'INAUGURACION' }</p>   
+          <p class="area">${ 'ESPACIO M2' }</p>    
         </div>
       </div>
 
