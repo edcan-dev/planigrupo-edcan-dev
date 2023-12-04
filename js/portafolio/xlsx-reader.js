@@ -18,6 +18,8 @@ class PropertyDetail {
   logoImageUrl;
   heroImageUrl;
 
+  address;
+
   startDate;
   rentableArea;
   portfolioPercentage
@@ -71,6 +73,7 @@ await readXlsxFile(xlsx, { sheet: 1 }).then(function(rows) {
     detail.id = row[0];
     detail.name = row[1];
     detail.location = `${row[3]}, ${row[2]}`;
+    detail.address = row[4 ]
     detail.startDate = row[7];
     detail.rentableArea = row[8];
     detail.portfolioPercentage = row[10];

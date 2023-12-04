@@ -11,177 +11,6 @@ var dialog = new ej.popups.Dialog({
   overlayClick: onOverlayClick,
   // Dialog content
 
-  /* content: `
-  <section class="detail">
-    <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/Cncnfoto.png" class="detail__hero__img">
-    </img>
-    <div class="detail__hero__info">
-      <div class="detail__hero__info--blue">
-        <img src="https://planigrupo.com.mx/wp-content/uploads/2018/08/Logo-Cancun-Nuevo.png">
-      </div>
-      <div class="detail__hero__info--light--gray">
-        <div>
-          <b>Ubicación</b>
-          <p>Ubicación</p>
-        </div>
-      </div>
-      <div class="detail__hero__info--gray">
-        <div>
-          <b>Teléfono</b>
-          <p>asdasd</p>
-        </div>
-        <div>
-          <b>Web</b>
-          <p>werwer</p>
-        </div>
-        
-      </div>
-    </div>
-    <div class="detail__about">
-      <span>ACERCA DE PROPERTY</span>
-      <p>Es considerado como un centro comercial temático dado que su arquitectura y diseño asemeja un pueblo pequeño. Cuenta con jardínes y zonas de descanso que nuestros visitantes pueden aprovechar como zonas de paseo, es una plaza llena de vida gracias a la presencia de un centro universitario y sus prestigiosas marcas tanto de ropa como de restaurantes.</p>
-    </div>
-    <div class="detail__tenant__icons">
-      <div class="detail__tenant__icons_item">img</div>
-      <div class="detail__tenant__icons_item">img</div>
-      <div class="detail__tenant__icons_item">img</div>
-      <div class="detail__tenant__icons_item">img</div>
-      <div class="detail__tenant__icons_item">img</div>
-      <div class="detail__tenant__icons_item">img</div>
-    </div>
-
-    <div class="detail__tab--selector">
-      <ul>
-        <li id="detail__tab--selector--1" class="detail__tab--selector">MAPA DE PROPIEDAD</li>
-        <li>|</li>
-        <li id="detail__tab--selector--2" class="detail__tab--selector selected">INDICADORES CLAVE</li>
-        <!--
-        <li>|</li>
-        <li id="detail__tab--selector--3" class="detail__tab--selector">CONTACTO</li>
-        -->
-
-      </ul>
-    </div>
-
-    <div class="detail__tab--contents">
-    
-      <div id="detail__tab--content--1" class="detail__tab--content inactive">
-
-      <div class="map__footer">
-        <div class="map__footer__item">
-          <span>0000</span>
-          <p>INICIO DE OPERACIONES</p>
-        </div>
-        <div class="map__footer__item">
-          <span>0000</span>
-          <p>AREA RENTABLE COMERCIAL</p>
-        </div>
-        <div class="map__footer__item map__footer__item--last">
-          <span>0000</span>
-          <p>ESPACIOS DE ESTACIONAMIENTO</p>
-        </div>
-      </div>
-
-      <img class="map" src="https://planigrupo.com.mx/wp-content/uploads/2018/08/Directorio.png"></img>
-      
-        
-      </div>
-
-      
-      <div id="detail__tab--content--2" class="detail__tab--content">
-
-        <div class="indicators__list">
-          <div class="indicators__list__header">
-            <span>DATOS</span>
-          </div>
-
-          <div class="indicators__list__item">
-            <div>
-              <p>REPORTE</p>
-              <small>Superficie Total</small>
-            </div>
-            <div>
-              <p>REPORTE</p>
-              <small>Construcción</small>
-            </div>
-            <div>
-              <p>REPORTE</p>
-              <small>Comercial</small>
-            </div>
-          </div>
-
-
-          <div class="indicators__list__item--second">
-            <div>
-              <p>REPORTE</p>
-              <small>Entretenimiento</small>
-            </div>
-            <div>
-              <p>REPORTE</p>
-              <small>Area de Juegos para Niños</small>
-            </div>
-            <div>
-              <p>REPORTE</p>
-              <small>Tipo</small>
-            </div>
-          </div>
-
-
-          <div class="indicators__list__item">
-            <div>
-              <p>REPORTE</p>
-              <small>Pads</small>
-            </div>
-            <div>
-              <p>REPORTE</p>
-              <small>Tiendas</small>
-            </div>
-            <div>
-              <p>REPORTE</p>
-              <small>Espacios de Estacionamiento</small>
-            </div>
-          </div>
-
-
-        </div>
-
-        <div class="indicators__list indicators__list--second">
-          <div class="indicators__list__header">
-            <span>INQUILINOS</span>
-          </div>
-
-          <div class="indicators__list__item">
-            <div>
-              <p>ANCLAS</p>
-              <small>Anclas</small>
-            </div>
-            <div>
-              <p>REPORTE</p>
-              <small>Arredamientos Importantes</small>
-            </div>
-          </div>
-
-          <div class="indicators__list__item--second">
-            <div>
-              <p>REPORTE</p>
-              <small>Sub Anclas</small>
-            </div>
-            <div>
-              <p>REPORTE</p>
-              <small>Complejo De Cine</small>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-      <div id="detail__tab--content--3" class="detail__tab--content inactive">
-        
-      </div>
-    </div>
-  </section>
-  `, */
   content: "",
 
   target: document.getElementById("dialog_container"),
@@ -449,12 +278,39 @@ const getTenantsElements = (tenants) => {
 };
 
 export const renderContact = async (keyName) => {
-  const res = await fetch(
-    `https://edcan-dev.github.io/planigrupo-edcan-dev/data/property_detail/${keyName}.json`
-  );
-  const propertyDetail = await res.json();
+  // const res = await fetch(`https://edcan-dev.github.io/planigrupo-edcan-dev/data/property_detail/${keyName}.json`);
+  //const propertyDetail = await res.json();
 
-  document.querySelector("#dialog_dialog-content").innerHTML = `
+  console.log(keyName);
+  const propertyDetail = await getPropertyDetailByKey(keyName);
+
+  const props = 
+  propertyDetail.map(async (promise) => {
+
+    let result;
+    await promise 
+      .then(async (property) => {
+        result = property
+      })
+
+      return result;
+  })
+  props.forEach(async(propPromise) => {
+    await propPromise.then(
+      property => {
+        if(property.id == keyName) {
+          defineContactInfo(property)
+          dialog.width = 900;
+          dialog.height = 600;
+          dialog.show();
+        }
+      }
+    )
+  })
+
+  function defineContactInfo(propertyDetail) {
+
+    document.querySelector("#dialog_dialog-content").innerHTML = `
   <div class="contacto__form__card">
   <div class="contacto__form__card__text">
   <!--        
@@ -467,7 +323,7 @@ export const renderContact = async (keyName) => {
             <p>
             Direccion <br>
               <b>
-              ${propertyDetail.contact.address}
+              ${propertyDetail.address}
               </b>
               <br>
               O bien, escribe sobre el tema de tu interés aquí:</p>
@@ -476,9 +332,7 @@ export const renderContact = async (keyName) => {
               Contacto:
               <br>      
               <b>
-              ${propertyDetail.contact.phone_numbers[0]}
-              <br>
-              ${propertyDetail.contact.phone_numbers[1]}
+              ${propertyDetail.phoneNumber}
               </b>
               <br>
               O bien, escribe sobre el tema de tu interés aquí:
@@ -551,45 +405,9 @@ export const renderContact = async (keyName) => {
               
               <div class="contacto__form__card__form--portfolio--personalidad">
                 <label for="personalidad-juridica">*propiedad</label>
-                  <select name="persona" id="persona">
-                      <option disabled="" selected="" value="">Propiedad</option>
-                      <option value="P119">Cancun Gran Plaza</option>
-                      <option value="P130">Centro Comercial Lopez Mateos</option>
-                      <option value="P131">Ciudadela UV</option>
-                      <option value="P101">El Paseo Santa Catarina</option>
-                      <option value="P109">La Nogalera</option>
-                      <option value="P134">Lago Real Centro Comercial</option>
-                      <option value="P133">Macroplaza Del Valle</option>
-                      <option value="2102">Macroplaza Estadio</option>
-                      <option value="P121">Macroplaza Insurgentes</option>
-                      <option value="P126">Macroplaza Oaxaca</option>
-                      <option value="P129">Macroplaza San Luis</option>
-                      <option value="P107">Mall Plaza Lincoln</option>
-                      <option value="P118">Palmira Plaza Comercial</option>
-                      <option value="P122">Paseo Alcalde</option>
-                      <option value="P123">Paseo Hipodromo</option>
-                      <option value="P103">Paseo Puebla</option>
-                      <option value="P135">Paseo Reforma</option>
-                      <option value="P138">Paseo San Juan</option>
-                      <option value="P110">Paseo Solidaridad</option>
-                      <option value="P106">Plaza Bella Anáhuac</option>
-                      <option value="P102">Plaza Bella Frontera</option>
-                      <option value="P105">Plaza Bella Huinala</option>
-                      <option value="P115">Plaza Bella Mexiquense</option>
-                      <option value="P111">Plaza Bella Ramos Arizpe</option>
-                      <option value="P113">Plaza Monumental</option>
-                      <option value="P112">Plaza Real Reynosa</option>
-                      <option value="P108">Plaza Real Saltillo</option>
-                      <option value="P117">Plaza Universidad</option>
-                      <option value="P132">Puerta de Hierro</option>
-                      <option value="P140">Punto Oriente</option>
-                      <option value="P139">Punto San Isidro</option>
-                      <option value="P136">Reynosa II</option>
-                      <option value="P114">Super Plaza las Haciendas</option>
-                      <option value="P125">Urban Village Garza Sada</option>
-                      <option value="P127">Walmart Ensenada</option>
-                      <option value="P128">Walmart San Jose del Cabo</option>					
-                    </select>
+                  <select name="propiedad" id="propiedad">
+                    <option selected value="${ keyName }">${ propertyDetail.name }</option>
+                  </select>
               </div>
 
               <div class="contacto__form__card__form contacto__form__card__form--submit">
@@ -599,9 +417,8 @@ export const renderContact = async (keyName) => {
 
         </form></div>
   `;
-  dialog.width = 900;
-  dialog.height = 600;
-  dialog.show();
+
+  }
 };
 
 
