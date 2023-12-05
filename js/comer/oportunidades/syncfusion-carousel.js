@@ -43,9 +43,9 @@ const PropertyCard = (
         </div>  
         <div class="oportunidades__carousel__item__text__title__item oportunidades__carousel__item__text__title__item--desc">
           <p class="name">${ propertyLocation }</p>    
-          <p class="contact">${ 'Contacto para comercializacion' }</p>                
-          <p class="date">${ 'INAUGURACION' }</p>   
-          <p class="area">${ 'ESPACIO M2' }</p>    
+          <p class="contact">${ 'Contacto para comercialización' }</p>                
+          <p class="date">${ 'Inauguración' }</p>   
+          <p class="area">${ 'Espacio M2' }</p>    
         </div>
       </div>
 
@@ -65,7 +65,7 @@ const PropertyCard = (
   return (container.outerHTML)
 }
 
-const customInterval = 3000;
+const customInterval = 10000;
 
 const items = jsonDatasource.properties.map(property => {
   return ({

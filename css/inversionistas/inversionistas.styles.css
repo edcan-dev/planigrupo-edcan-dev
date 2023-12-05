@@ -414,7 +414,6 @@ article {
     line-height: 50px;
     /* 178.571% */
     letter-spacing: 1px;
-    text-transform: uppercase;
   }
 
   & div>p>b {
@@ -439,7 +438,6 @@ article {
     line-height: 25px;
     /* 208.333% */
     letter-spacing: 1px;
-    text-transform: capitalize;
   }
 
   & div>.number {
@@ -808,6 +806,7 @@ article {
     display: grid;
 
     grid-template-columns: 3fr 7fr;
+    grid-template-columns: 1fr;
 
     & .gobierno_grid__selectors {
       border-right: #545859 solid 1px;
@@ -846,7 +845,7 @@ article {
     }
 
     & .gobierno_grid__tab_content {
-      padding-left: 40px;
+      padding-left: 0px;
       height: 500px;
       width: 100%;
     }
@@ -861,7 +860,7 @@ article {
 
     & .anchor__container {
       width: calc(1200px);
-      margin: 120px auto 40px;
+      margin: 80px auto 80px;
 
       & div {
         margin-left: 30%;
@@ -1067,7 +1066,7 @@ article {
   color: #444;
   cursor: pointer;
   height: 50px;
-  padding-left: 20px;
+  padding-left: 20px;  
   width: 100%;
   text-align: left;
   border: none;
@@ -1120,10 +1119,7 @@ article {
 }
 
 
-.active,
-.accordion:hover {
-  transform: rotate(0deg);
-}
+
 
 .panel {
   padding: 0 20px;
@@ -1311,6 +1307,7 @@ article {
           & a {
             font-size: 10px;
             line-height: 50px;
+            color: #53575A;
           }
 
         }
@@ -1987,4 +1984,13 @@ article {
 #element {
   width: 100% !important; 
   max-width: 100% !important; 
+}
+
+.title__container--2 > span {
+  font-size: 20px !important;
+  line-height: 30px !important;
+  text-transform: lowercase !important;
+}
+
+.title__container--2+div > p {
 }

@@ -526,6 +526,17 @@ li {
         margin: 0 !important;
         margin-top: -100px !important;
     }
+
+    .contacto__form__card {
+        width: 90% !important;
+        padding: 20px;
+    }
+    .contacto__form__card__form__container {
+        padding-right: 20px !important;
+    }
+    .footer {
+        margin-top: 0px !important;
+    }
 }
 
 .loque__bg {
@@ -603,6 +614,9 @@ li {
 
     display: flex;
     flex-direction: column;
+
+    padding-right: 0px !important;
+
 }
 
 .contacto__form__card__text > p {
@@ -626,6 +640,16 @@ li {
     margin-top: 20px;
 }
 
+.contacto__form__card__form__container--empresa > select {
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ababab;
+    padding: 0px 5px;
+
+    font-family: 'Raleway';
+    font-size: 14px !important;
+}
+
 .contacto__form__card__form__container {
     display: flex;
     flex-direction: column;
@@ -646,11 +670,18 @@ li {
     border-radius: 5px;
     border: 1px solid #ababab;
     padding: 0px 5px;
+
+    font-family: 'Raleway';
+    font-size: 14px ;
 }
 .contacto__form__card__form__container > textarea {
     height: 80px;
     resize: none;
-    padding: 5px 5px;
+    padding: 10px 10px;
+
+    
+    font-family: 'Raleway';
+    font-size: 14px ;
 }
 
 .contacto__form__card__form__container--email {
@@ -675,14 +706,13 @@ li {
 
 .contacto__form__card__form--submit {
     display: flex;
-    justify-content: end;
+    justify-content: space-around;
     padding-right: 40px;
 }
-.contacto__form__card__form--submit > input {
+.contacto__form__card__form--submit > input,.contacto__form__card__form--submit > label {
     padding: 5px 10px;
     font-family: 'Raleway';
     font-size: 14px !important;
-
 }
 
 .footer__contacto {
@@ -792,15 +822,14 @@ li {
 }
 
 .contacto__form__card__form--submit {
-    align-items: end;
-    justify-content: end;
+    justify-content: space-between;
     padding-right: 40px;
 }
-.contacto__form__card__form--submit {
-    align-items: end;
-    justify-content: end;
-    padding-right: 40px;
-}
+
 .contacto__form__card__form--submit > input {
     height: 40px;
+}
+.contacto__form__card__form--submit > label {
+    padding: 0px;
+    line-height: 40px;
 }
