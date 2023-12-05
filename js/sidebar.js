@@ -29,6 +29,26 @@ try {
       ).style.left = "10%";
     }
   };
+  
+  document.querySelector("#nav__item--asg").onclick = function (ev) {
+    if (activeTab == "asg") {
+      activeTab = "";
+      ev.target.style.backgroundColor = "#FFF";
+      document.querySelector(".navbar__responsive__list--second--asg").style.left =
+        "10%";
+    } else {
+      activeTab = "asg";
+      ev.target.style.backgroundColor = "#D5D9DB";
+      document.querySelector(".navbar__responsive__list--second--asg").style.left =
+        "50vw";
+      document.querySelector(
+        ".navbar__responsive__list--second"
+      ).style.left = "10%";
+      document.querySelector(
+        ".navbar__responsive__list"
+      ).style.left = "10%";
+    }
+  };
 
   document.querySelector("#nav__item--comer").onclick = function (ev) {
     if (activeTab == "comer") {
