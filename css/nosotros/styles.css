@@ -288,14 +288,14 @@ li {
     height: 300px;
 }
 .lo-que-hacemos-card__img {
-    width: 40%;
+    width: 60%;
 
     background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/desarrollo.png');
     background-size: cover;
 }
 .lo-que-hacemos-card__text {
-    width: 60%;
-    padding: 0px 0px 0px 20px;
+    width: 40%;
+    padding: 0px 0px 0px 40px;
 }
 .lo-que-hacemos-card__text > p {
     color: #727272;

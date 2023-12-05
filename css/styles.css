@@ -537,7 +537,6 @@
     line-height: 25px;
     /* 138.889% */
     letter-spacing: 1px;
-    text-transform: uppercase;
 
     position: relative;
 }
@@ -597,7 +596,6 @@
     font-weight: 400;
     line-height: 14.29px;
     /* 102.071% */
-    text-transform: uppercase;
 
     display: flex;
 }
@@ -608,7 +606,8 @@
 .footer>div {
     display: flex;
     flex-wrap: wrap;
-    height: 35px;
+    align-content: space-between;
+    height: 50px;
     align-items: center;
 }
 
@@ -2294,7 +2293,7 @@ MAIN TABS MARGIN
     width: 100%;
 
     & .compromise__grid {
-        width: 950px;
+        width: 1200px;
         height: 400px;
         margin: 100px auto;
         display: grid;
@@ -2329,7 +2328,9 @@ MAIN TABS MARGIN
                 font-weight: 400;
                 line-height: 25px; /* 192.308% */
                 letter-spacing: 1px;
-                text-transform: uppercase;
+            }
+            .familias {
+                line-height: 44px;
             }
         }
     }
@@ -2605,6 +2606,9 @@ MAIN TABS MARGIN
     border-radius: 50%;
     cursor: pointer;
     text-decoration: none;
+}
+.social__container__icons__icon:first-child {
+    margin-left: 0px;
 }
 .social__container__icons__icon__li {
     filter: invert(80%) sepia(60%) saturate(4%) hue-rotate(349deg) brightness(109%) contrast(87%);

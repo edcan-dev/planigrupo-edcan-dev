@@ -182,7 +182,8 @@ li {
 }
 
 .main__comer__right__tab_content--1 {
-    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/comer-1.jpeg');
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/oportunidades-properties/Cancun5.jpg');
+    background-position-y: center;
 }
 .main__comer__right__tab_content--2 {
     background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/comer-2.jpeg');
@@ -196,7 +197,7 @@ li {
     background-position-y: center;
 }
 .main__comer__right__tab_content--5 {
-    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/comer-5.jpeg');
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/gim.jpg');
     background-position-y: center;
 }
 
