@@ -410,10 +410,12 @@ hr {
 .section--3 > .actividades > .actividades__grid {
   margin-top: 40px;
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
   column-gap: 30px;
   row-gap: 30px;
+}
+.grid__tab__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .actividades__grid__item {
@@ -725,5 +727,45 @@ hr {
 }
 .detail__dialog__close > button:hover {
   transition: all .2s;
+  background-color: #8e0f14;
+}
+
+
+.actividades__grid__tab__selectors {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+}
+
+.actividades__grid__tab__selectors > ul {
+  display: flex;
+  margin-top: 40px;
+  justify-items: end;
+}
+.actividades__grid__tab__selectors > ul > li {
+  width: 50px;
+  height: 50px;
+  margin-left: 20px;
+
+  background-color: #d7282f;
+  color: #FFF;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  line-height: 50px;
+  display: inline-block;
+  padding: 0px 20px;
+  cursor: pointer;
+}
+.actividades__grid__tab__selectors > ul > li:hover {
+  background-color: #8e0f14;
+  transition: all .2s;
+}
+
+.actividades__grid__tab__selectors > ul > .selected {
   background-color: #8e0f14;
 }
