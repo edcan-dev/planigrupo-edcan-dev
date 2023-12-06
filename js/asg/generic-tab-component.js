@@ -27,6 +27,7 @@ class GenericTabsComponent {
   }
 }
 
+
 const asgHomeTabs = new GenericTabsComponent(
   ".asg_tab_selector",
   ".asg_tab_content"
