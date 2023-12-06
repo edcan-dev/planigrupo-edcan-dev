@@ -1992,5 +1992,140 @@ article {
   text-transform: lowercase !important;
 }
 
-.title__container--2+div > p {
+.event-types-component {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 0 20px;
+}
+.event-types-component-item > span {
+  color: #53575A;
+  text-align: justify;
+  font-family: Raleway;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+.event-info-component {
+  background-color: #EFEFEF;
+
+  margin: 20px 0px;
+  padding: 20px 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  min-height: 200px;
+  
+  transition: all .4s;
+}
+
+.event-info-component--hidden {
+  opacity: 0 !important;
+}
+
+.event-info-component > * {
+  opacity: 1 !important;
+  transition: all .2s;
+}
+
+
+.event-info-component-title > span {
+  color: #C04D00;
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 19.8px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: inline-block;
+
+  display: flex;
+  align-items: center;
+}
+
+.event-info-component-description > p {
+  color: #000;
+  text-align: justify;
+  font-family: Raleway;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
+
+.event-info-component-link {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.event-info-component-link > i {
+  color: #53575A !important;
+  font-size: x-large;
+}
+
+
+.event-info-component-link > a {
+  color: #53575A;
+  text-align: justify;
+  font-family: Raleway;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 900;
+  text-decoration: noneb;
+  line-height: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.event-info-component-file > a {
+  color: #53575A;
+  text-align: justify;
+  font-family: Raleway;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 900;
+  text-decoration: noneb;
+  line-height: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+
+.event-info-top-scroller {
+  display: flex;
+  justify-content: center;
+}
+
+.event-info-top-scroller > button {
+  background-color: #0096A9;
+
+  color: #EFEFED;
+  text-align: justify;
+  font-family: Raleway;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 5px;
+  line-height: 35px;
+  border-radius: 5px;
+  border: none;
+
+  cursor: pointer;
+}
+
+.event-info-stopper--hidden {
+  display: none;
+}
+.event-info-stopper {
+  display: block;
 }
