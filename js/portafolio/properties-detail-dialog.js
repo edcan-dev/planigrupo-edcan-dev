@@ -105,9 +105,9 @@ export async function initializeDetailDialog(keyName) {
     <div class="detail__tab--selector">
       <ul>
         <li id="detail__tab--selector--1" class="detail__tab--selector selected">DIRECTORIO</li>
-        <li>|</li>
+        <li class="detail__tab--selector--splitter">|</li>
         <li id="detail__tab--selector--2" class="detail__tab--selector">INDICADORES CLAVE</li>
-        <li>|</li>
+        <li class="detail__tab--selector--splitter">|</li>
         <li id="detail__tab--selector--3" class="detail__tab--selector">MAPA</li>
       </ul>
 

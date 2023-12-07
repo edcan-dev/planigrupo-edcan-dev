@@ -49,7 +49,11 @@ class PropertiesGrid {
     }
 
     init() {
-        if(window.innerWidth <= 1000 ) this.renderMobileStateCounter()
+        if(window.innerWidth <= 1000 ) {
+            console.dir('[MOBILE DETECTED]');
+            this.renderMobileStateCounter()
+            this.filterByState('all');
+        }
         /* 
     this.render(this.#properties)
     */
@@ -184,13 +188,33 @@ class PropertiesGrid {
         return name.toLowerCase().split(' ').join('-');
     }
     renderMobileStateCounter() {
-        console.log(this.#properties.length);
         document.querySelector('.properties__counter__props__value').innerHTML = this.#properties.length;
 
         let states = this.#properties.map(prop => prop.propertyState)
         let filteredStates = [...new Set(states)]
 
         document.querySelector('.properties__counter__states__value').innerHTML = filteredStates.length;
+    }
+
+    filterByTenant(readProperties, tenant) {
+
+        if(tenant == 'all') {
+            this.render(this.#properties)
+            return;
+        }
+        
+        const propertiesIds = readProperties.map( p => p.id);
+
+        console.log(propertiesIds);
+
+        const propsByTenant = this.#properties.filter(
+            prop => propertiesIds.includes(prop.propertyKeyName)
+        )
+        
+        console.log(propsByTenant);
+
+        this.render(propsByTenant)
+
     }
 }
 
