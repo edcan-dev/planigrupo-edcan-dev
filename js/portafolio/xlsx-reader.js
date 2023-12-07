@@ -1,3 +1,4 @@
+import {propertiesGrid } from './properties-grid.js';
 //const xslxPath = './../../data/portafolio/plazas.xlsx';
 const xslxPath = 'https://edcan-dev.github.io/planigrupo-edcan-dev/data/portafolio/plazas.xlsx';
 
@@ -27,6 +28,8 @@ class PropertyDetail {
   description;
     /**string[]*/
   tenants;
+    /**string[]*/
+  tenantsName;
 
   directoryImageUrl;
 
@@ -105,6 +108,7 @@ await readXlsxFile(xlsx, { sheet: 1 }).then(function(rows) {
     await readXlsxFile(xlsx, { sheet: 3 }).then(function(thirdPageRows) {
 
       let foundTenants = [];
+      let foundTenantsName = [];
 
       const startIndex = thirdPageRows.map(
         row =>  thirdPageRows.indexOf(
@@ -139,31 +143,35 @@ await readXlsxFile(xlsx, { sheet: 1 }).then(function(rows) {
 
 })
 
-propertiesArray[1].then(prop => console.info('[READ XLSX]'))
+propertiesArray[1].then(prop => {
+  console.info('[READ XLSX]')
+  configureTenantCombo(propertiesArray)
+})
 
 export async function getPropertyDetailByKey( key ) {
   console.log('FETCHING ' + key);
   return propertiesArray;
-  /* return propertiesArray.find(property => {
+}
+
+async function configureTenantCombo(props) {
+  document.querySelector('#tenant-selector')
+    .addEventListener('change',async (ev)=> {
+
+      const matchedIds =  [];
+      const value = ev.target.value;
 
 
-    const asu = property.then(data => {
+       await propertiesArray.forEach( async(promise) => {
+        await promise.then(
+          data => {
+            if(data.tenants.includes(value)) {
+              matchedIds.push(data);
+            }
+          }
+        )
+      })
 
-      console.log(data.id);
-      console.log(key);
-      
-      if(data.id == key) {
-        matchedProperty = data;
-        return data;
-      }
-    })
+      propertiesGrid.filterByTenant(matchedIds, value)
 
-    asu.then( je => console.log(je)) */
-
-/* 
-    if(matchedProperty !== undefined) {
-      return false;
-    } else {
-      return false;
-    } */
+  })
 }
