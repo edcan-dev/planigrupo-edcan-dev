@@ -66,7 +66,6 @@
     font-weight: 400;
     line-height: 25px; /* 192.308% */
     letter-spacing: 1px;
-    text-transform: uppercase;
 }
 .amb_section--2 > .grid > .grid_item > .grid_item__img {
     height: 100px;
@@ -76,19 +75,19 @@
 }
 
 .amb_section--2 > .grid > .grid_item > .grid_item__img--1 {
-    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/ambiental/icons/icon-1.jpeg');
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/png-icons/asg_icons/iconos%20asg%20amb-social/A_diversidad.png');
 }
 .amb_section--2 > .grid > .grid_item > .grid_item__img--2 {
-    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/ambiental/icons/icon-2.jpeg');}
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/png-icons/asg_icons/iconos%20asg%20amb-social/A_energia.png');}
 .amb_section--2 > .grid > .grid_item > .grid_item__img--3 {
-    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/ambiental/icons/icon-3.jpeg');}
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/png-icons/asg_icons/iconos%20asg%20amb-social/A_group-idea.png');}
 .amb_section--2 > .grid > .grid_item > .grid_item__img--4 {
-    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/ambiental/icons/icon-4.jpeg');}
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/png-icons/asg_icons/iconos%20asg%20amb-social/A_toxic-waste.png');}
 .amb_section--2 > .grid > .grid_item > .grid_item__img--5 {
-    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/ambiental/icons/icon-5.jpeg');
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/png-icons/asg_icons/iconos%20asg%20amb-social/A_ahorrar-agua.png');
 }
 .amb_section--2 > .grid > .grid_item > .grid_item__img--6 {
-    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/ambiental/icons/icon-6.jpeg');
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/png-icons/asg_icons/iconos%20asg%20amb-social/A_energia-hidroelectrica.png');
 }
 
 

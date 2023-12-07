@@ -187,6 +187,7 @@ li {
 }
 .main__comer__right__tab_content--2 {
     background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/comer-2.jpeg');
+    background-position-y: 100px;
 }
 .main__comer__right__tab_content--3 {
     background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/comer-3.jpeg');
@@ -198,7 +199,7 @@ li {
 }
 .main__comer__right__tab_content--5 {
     background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/gim.jpg');
-    background-position-y: center;
+    background-position-y: 100px;
 }
 
 .selected__tab {
@@ -261,6 +262,13 @@ li {
 @media (max-width: 750px) {
     .main__comer {
         margin-top: 180px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .main__comer__right__tab_content--2 {
+        background-position-x: 75%;
     }
 }
 @media (max-width: 450px) {

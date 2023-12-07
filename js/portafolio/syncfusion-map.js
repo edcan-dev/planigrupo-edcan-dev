@@ -4,8 +4,11 @@ import { propertiesGrid } from './properties-grid.js'
 /* import { mexico_map } from './mexico-datasource.js' */
 import { mexico_map } from './mexico_geogson.js'
 
-ej.base.registerLicense(key)
+// ej.base.registerLicense(key)
+ej.base.registerLicense('key')
 
+const screenElement = document.querySelector('.screen')
+screenElement.classList.add('screen-hidden')
 
 const states = [
   "Baja California",

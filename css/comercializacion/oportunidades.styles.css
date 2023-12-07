@@ -344,7 +344,22 @@
     }
 
 }
+.contacto__form__card__address__phone {
+    display: flex;
+}
+.contacto__form__card__address__phone > p {
+    width: 50%;padding-right: 40px;
 
+    font-family: "Raleway";
+    font-size: 14px !important;
+    margin-top: 20px;
+    width: 50%;
+
+}
+
+.contacto__form__card__form__container {
+    width: 100%;
+}
 /*
 .e-carousel.e-partial .e-carousel-slide-container {
     padding: 0 10%;  

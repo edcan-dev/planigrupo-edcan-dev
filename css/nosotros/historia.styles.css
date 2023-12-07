@@ -65,7 +65,6 @@
   line-height: 18.57px;
   /* 132.643% */
   letter-spacing: 1px;
-  text-transform: uppercase;
   text-align: justify;
 }
 
@@ -272,7 +271,9 @@
 
 
 .historia__card__item__img--1 {
-  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia_optimized/2023-1.png');
+  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia_optimized/2023-1.png');background-size: contain;
+  background-repeat: no-repeat ;
+  background-position-x: center;
 }
 .historia__card__item__img--2 {
   background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia_optimized/1978.png');
@@ -343,10 +344,14 @@
   background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia_optimized/2017.png');
 }
 .historia__card__item__img--23 {
-  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia_optimized/2023-1.png');
+  background-image: url('https://planigrupo.com.mx/wp-content/uploads/2018/09/2017.jpg');
 }
 .historia__card__item__img--24 {
   background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia_optimized/2023.png');
+}
+.historia__card__item__img--25 {
+  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia_optimized/gmi.jpg');
+  border: 1px solid #c0c0c0;
 }
 
 

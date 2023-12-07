@@ -182,7 +182,7 @@
 }
 
 .section--2 > .reports__container > .reports__item {
-  width: 50%;
+  width: 100%;
 }
 
 .section--2
@@ -287,8 +287,8 @@
   > .reports__item__reports
   > .reports__item__reports__report
   > a {
-  color: #53575a;
-  text-align: justify;
+  color: #FFF;
+  text-align: center;
   font-family: Raleway;
   font-size: 9px;
   font-style: normal;
@@ -302,7 +302,7 @@
   height: 30px;
   margin-bottom: 10px;
 
-  background-color: #dadad8;
+  background-color: #C04D00;
 }
 
 hr {
@@ -325,7 +325,6 @@ hr {
 
 .reports__item__calendar > #container > #element {
   max-width: 100% !important;
-  height: 440px;
 }
 
 .section--3 {

@@ -99,6 +99,6 @@ carouselObj.appendTo("#carousel");
 var tenantsCarouselObj = new ej.navigations.Carousel({
   items: items,
   partialVisible: true,
-  autoPlay: true
+  autoPlay: true,
 });
 tenantsCarouselObj.appendTo("#tenants_carousel");

@@ -320,20 +320,18 @@ export const renderContact = async (keyName) => {
           <span>Pregúntenos sobre oportunidades de arrendamiento
           </span>
 
-            <p>
-            Direccion <br>
-              <b>
+          <p>
+            <b>Dirección</b>
+            <br>
               ${propertyDetail.address}
-              </b>
-              <br>
-              O bien, escribe sobre el tema de tu interés aquí:</p>
-            
+            </br>
+            O bien, escribe sobre el tema de tu interés aquí:</p>
+  
             <p>
-              Contacto:
-              <br>      
               <b>
-              ${propertyDetail.phoneNumber}
-              </b>
+              Contacto:</b>
+              <br>      
+                ${propertyDetail.phoneNumber}
               <br>
               O bien, escribe sobre el tema de tu interés aquí:
             </p>
