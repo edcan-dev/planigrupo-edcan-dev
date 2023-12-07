@@ -68,7 +68,7 @@ class InfoSlider {
 const infoSlider = new InfoSlider(
 	{
 		data: slides.slides,
-		interval: 5000
+		interval: 10000
 	}
 );
 

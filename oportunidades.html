@@ -29,11 +29,11 @@
   <script defer type="module" src="./js/comer/oportunidades/syncfusion-carousel.js"></script>
   <!-- Synfusion Carousel-->
   <link href="./css/index/carousel.style.css" rel="stylesheet" />
-  
+
   <script defer src="./js/sidebar.js"></script>
   <script defer type="module" src="./js/index/plani-info-slider.js"></script>
   <script defer src="./js/index/home-tabs.js"></script>
-  
+
   <link rel="stylesheet" href="./css/contacto/contacto.styles.css">
   <link href="./css/comercializacion/oportunidades.styles.css" rel="stylesheet" />
   <link href="./css/components/synfusion-carousel.css" rel="stylesheet" />
@@ -87,7 +87,7 @@
             <li class="header__nav__item"><a href="./comercializacion.html">Comercialización</a></li>
             <li class="header__nav__item"><a href="./oportunidades.html">Oportunidades</a></li>
         </ul>
-        
+
         <ul class="navbar__responsive__list--second--asg">
           <div>
             <li class="header__nav__item">
@@ -143,7 +143,7 @@
         </li>
         <li class="header__nav__item"><a href="./inversionistas.html">Inversionistas</a></li>
         <!-- <li class="header__nav__item"><a href="./asg.html">Asg</a></li> -->
-        
+
         <li class="header__nav__item dropdown">
           <a class="dropbtn">ASG</a>
           <div class="dropdown-content">
@@ -258,13 +258,13 @@
     </section>
 
     <section class="main__tenants__carousel">
-      
+
       <div class="main__tenants__carousel__grid">
 
-          <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--walmart">
-          </div>
-          <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--ley">
-          </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--walmart">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--ley">
+        </div>
 
 
 
@@ -378,10 +378,10 @@
         </div>
         <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--mcdonalds">
         </div>
-          <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--walmart">
-          </div>
-          <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--ley">
-          </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--walmart">
+        </div>
+        <div class="main__tenants__carousel__grid__item main__tenants__carousel__grid__item--ley">
+        </div>
 
 
 
@@ -501,28 +501,52 @@
     </section>
 
     <section class="contacto__form">
+
+
       <div class="contacto__form__card">
         <div class="contacto__form__card__text">
           <span>Pregúntenos sobre oportunidades de arrendamiento
           </span>
-          <p>Av. Eugenio Garza Sada #3431
+
+          <div class="contacto__form__card__address__phone">
+
+            <p>
+              <b>Dirección</b>
+              <br>
+              
+            Av. Eugenio Garza Sada #3431
             Urban Village Garza Sada, P1, local SA012,
             Col. Arroyo Seco CP. 64740
             Monterrey, Nuevo León.
-            O bien, escribe sobre el tema de tu interés aquí:</p>
-          </span>
-          <p>
-            Contacto:
-            <b>
-              (+52 81) 8335-1631
-            </b>
+            </br>
             O bien, escribe sobre el tema de tu interés aquí:
           </p>
+
+          <p>
+            <b>
+              Contacto:</b>
+            <br>
+            (+52 81) 8335-1631
+            <br>
+            O bien, escribe sobre el tema de tu interés aquí:
+          </p>
+        </div>
+          
+          <div class="cfcSocial">
+            <div class="socialIconTwitter">
+              <a href="https://twitter.com/planigrupo"></a>
+            </div>
+            <div class="socialIconFacebook">
+              <a href=""></a>
+            </div>
+            <div class="socialIconLinkdin">
+              <a href="https://www.linkedin.com/company/planigrupo"></a>
+            </div>
+          </div>
         </div>
 
         <form action="">
 
-
           <div class="contacto__form__card__form">
             <div class="contacto__form__card__form__container contacto__form__card__form__container--nombre">
               <label for="nombre">*nombre</label>
@@ -535,19 +559,17 @@
             </div>
           </div>
 
-
           <div class="contacto__form__card__form">
-            <div class="contacto__form__card__form__container contacto__form__card__form__container--nombre">
-              <label for="nombre">*nombre</label>
-              <input type="text" name="nombre" id="nombre">
+            <div class="contacto__form__card__form__container contacto__form__card__form__container--apellido">
+              <label for="apellido">*apellido</label>
+              <input type="text" name="apellido" id="apellido">
             </div>
 
-            <div class="contacto__form__card__form__container contacto__form__card__form__container--compania">
-              <label for="compania">*compañía</label>
-              <input type="text" name="compania" id="compania">
+            <div class="contacto__form__card__form__container contacto__form__card__form__container--email">
+              <label for="telefono">*telefono</label>
+              <input type="text" name="telefono" id="telefono">
             </div>
           </div>
-
 
           <div class="contacto__form__card__form contacto__form__card__form--portfolio">
 
@@ -558,10 +580,10 @@
 
             <div class="contacto__form__card__form--portfolio--personalidad">
               <label for="personalidad-juridica">*personalidad juridica</label>
-              <!--                 <input type="personalidad-juridica" name="telpersonalidad-juridica" id="personalidad-juridica">
---> <select name="persona" id="persona">
-                <option value="">Persona Física</option>
-                <option value="">Persona Moral</option>
+
+              <select name="persona" id="persona">
+                <option value="Persona Fisica">Persona Fisica</option>
+                <option value="Persona Fisica">Persona Moral</option>
               </select>
             </div>
 
@@ -576,6 +598,7 @@
 
             <div class="contacto__form__card__form--portfolio--personalidad">
               <label for="personalidad-juridica">*propiedad</label>
+
               <select name="persona" id="persona">
                 <option disabled="" selected="" value="">Propiedad</option>
                 <option value="P119">Cancun Gran Plaza</option>
@@ -622,12 +645,10 @@
             </div>
           </div>
 
+        </form>
       </div>
 
-      </form>
 
-
-      </div>
     </section>
 
 
@@ -637,21 +658,21 @@
   </main>
 
   <footer class="footer">
-    
+
     <div class="social__container">
 
       <span style="margin-bottom: 10px;">
-        Síguenos en<br/>
-        nuestras redes    
+        Síguenos en<br />
+        nuestras redes
       </span>
 
       <div class="social__container__icons">
-        
+
         <a href="https://www.youtube.com/@grupomexico8955" class="social__container__icons__icon">
           <i class="social__container__icons__icon__li fa-brands fa-youtube" style="color: #000000; line-height: 20px;
           "></i>
         </a>
-        
+
         <a href="https://twitter.com/GMexico_oficial" class="social__container__icons__icon">
           <i class="social__container__icons__icon__li fa-brands fa-twitter" style="color: #000000; line-height: 20px;
           "></i>
@@ -671,7 +692,7 @@
       </div>
 
 
-    <!--   <li class="fa-brands fa-linkedin-in" style="color: #000000;"></li>    
+      <!--   <li class="fa-brands fa-linkedin-in" style="color: #000000;"></li>    
      -->
     </div>
 
