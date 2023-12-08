@@ -168,13 +168,13 @@
   height: 100px;
   width: 100%;
 
-  justify-content: space-between;
+  justify-content: space-around;
 
 }
 
 .inversionistas__tabs__tab--content__grid__item__text {
   display: inline-block;
-  width: 360px;
+  width: 380px;
 
   & span {
     color: #C04D00;
@@ -198,6 +198,10 @@
     /* 142.857% */
     letter-spacing: 1px;
     text-align: justify;
+    align-content: center;
+  }
+  & small {
+     font-size: 22px !important;
   }
 }
 
@@ -205,8 +209,9 @@
   background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/svgs/Group%2015.svg');
   background-size: contain;
   background-repeat: no-repeat;
-  height: 80px;
-  width: 80px;
+  height: 50px;
+  width: 50px;
+  background-position-y: center;
 }
 
 .inversionistas__tabs__tab--content__grid__item__svg--1 {

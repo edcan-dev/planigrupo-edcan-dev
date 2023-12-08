@@ -116,9 +116,11 @@ text-transform: uppercase;
         height: 900px;
         width: 61%;
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 350px;
+        
         grid-template-rows: repeat(6, 1fr);
         row-gap: 50px;
+        justify-content: center;
         column-gap: 50px;
         height: 1400px;
     }
@@ -133,4 +135,20 @@ text-transform: uppercase;
 
 .footer--equipo {
     margin-top: 0px;
+}
+
+
+@media (max-width: 1150px) {
+
+    .equipo__card__item {
+        height: 400px;
+    }
+
+    .footer {
+        margin-top: 1250px !important;
+    }
+    .gmi {
+        font-size: 12px !important;
+    }
+
 }

@@ -68,8 +68,8 @@
     letter-spacing: 1px;
 }
 .amb_section--2 > .grid > .grid_item > .grid_item__img {
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
     background-size: cover;
     margin-bottom: 20px;
 }
