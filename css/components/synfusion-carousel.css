@@ -5,9 +5,6 @@
 
     cursor: pointer;
 }
-.oportunidades__carousel__div{
-
-}
 
 
 .oportunidades__carousel__item {
@@ -163,8 +160,23 @@
     .e-carousel.e-partial .e-carousel-slide-container {
         padding: 0 0%;
     }
-}
 
-.control-container {
-    height: 600px;
+    .oportunidades__carousel__div {
+        width: 350px;
+        height: 280px;
+        margin: 100px auto;
+        cursor: pointer;
+    }
+
+    .e-carousel .e-carousel-items {
+        height: 400px;
+    }
+    .control-container {
+        height: 400px;
+    }
+    .oportunidades__carousel {
+        margin-top: -50px;
+        position: relative;
+        z-index: -1;
+    }
 }
