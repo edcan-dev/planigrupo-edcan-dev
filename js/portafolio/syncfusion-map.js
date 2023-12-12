@@ -7,9 +7,6 @@ import { mexico_map } from './mexico_geogson.js'
 // ej.base.registerLicense(key)
 ej.base.registerLicense('key')
 
-const screenElement = document.querySelector('.screen')
-screenElement.classList.add('screen-hidden')
-
 const states = [
   "Baja California",
   "Baja California Sur",
@@ -164,7 +161,5 @@ var map = new ej.maps.Maps({
 map.appendTo('#element');
 
 
-console.log(
-);
 
 document.getElementById('element_LayerIndex_1_shapeIndex_16_dataIndex_1').dispatchEvent(new Event('shapeSelected'))
