@@ -1,6 +1,6 @@
 import {propertiesGrid } from './properties-grid.js';
-const xslxPath = './../../data/portafolio/plazas.xlsx';
-//const xslxPath = 'https://edcan-dev.github.io/planigrupo-edcan-dev/data/portafolio/plazas.xlsx';
+//const xslxPath = './../../data/portafolio/plazas.xlsx';
+const xslxPath = 'https://edcan-dev.github.io/planigrupo-edcan-dev/data/portafolio/plazas.xlsx';
 
 const response = await fetch(xslxPath);
 
