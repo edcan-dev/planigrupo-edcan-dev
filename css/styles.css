@@ -1559,6 +1559,28 @@ MAIN TABS MARGIN
     .main__tabs {
         margin-top: 630px;
     }
+    .oportunidades__carousel__item__text__title__item {
+
+        justify-items: center;
+
+        & .comercializacion {
+            display: none;
+        }
+        & .date {
+            display: none;
+        }
+        & .area {
+            display: none;
+        }
+        & .title {
+            width: 100% !important ;
+        }
+    }
+    .oportunidades__carousel__item__text__title__item--desc {
+        & .contact {
+            display: none;
+        }
+    }
 }
 
 @media (max-width: 1000px) {
@@ -2108,12 +2130,12 @@ MAIN TABS MARGIN
 }
 
 @media (max-width: 1100px) {
-    .oportunidades__carousel__item__text__title {
+    /* .oportunidades__carousel__item__text__title {
       width: 100% !important;
     }
     .oportunidades__carousel__item__text__desc {
       width: 100% !important;
-    }
+    } */
     
     .oportunidades__carousel__item {   
 /*         width: 80% !important;
@@ -2213,11 +2235,8 @@ MAIN TABS MARGIN
 
 @media (max-width: 1000px) {
 
-    .oportunidades__carousel__item__text__desc {
-        display: none !important;
-    }
 
-    .oportunidades__carousel__item__text__title__item {
+    /* .oportunidades__carousel__item__text__title__item {
 
         justify-items: center;
 
@@ -2238,7 +2257,7 @@ MAIN TABS MARGIN
         & .contact {
             display: none;
         }
-    }
+    } */
 
 }
 @media (max-width: 500px) {
@@ -2292,10 +2311,14 @@ MAIN TABS MARGIN
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
 
     .main__hero__text__p-bar {
         text-align: start;
+    }
+
+    .oportunidades__carousel__item__text__desc {
+        display: none !important;
     }
 
 
@@ -2397,11 +2420,11 @@ MAIN TABS MARGIN
 }
 
 @media (max-width: 500px) {
-    .compromise__grid {
+     .compromise__grid {
         width: 100% !important;
         margin: 50px auto !important;
         padding: 0px 20px;
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr) !important;
         grid-template-columns: 1fr !important;
     }
 
@@ -2595,10 +2618,28 @@ MAIN TABS MARGIN
 }
 @media(max-width: 1200px) {
    
-    .e-carousel.e-partial .e-carousel-slide-container {
+    /* .e-carousel.e-partial .e-carousel-slide-container {
         padding: 0 0%;
+    } */
+
+    .oportunidades__carousel__item__text__title {
+        width: 100% !important;
+      }
+      .oportunidades__carousel__item__text__desc {
+        width: 100% !important;
+      }
+
+      .compromise__grid {
+        width: 100% !important;
+        margin: 50px auto !important;
+        padding: 0px 20px;
+        grid-template-rows: repeat(2, 1fr) !important;
+        grid-template-columns: repeat(2, 1fr) !important;
     }
+
 }
+
+
 
 .control-container {
     height: 600px;
@@ -2665,5 +2706,17 @@ MAIN TABS MARGIN
     .tab__card__img--tab1 {
         background-size: cover !important;
         background-position-x: 0px !important;
+    }
+
+    .social__container {
+        flex-direction: column;
+    }
+
+    .compromise__grid {
+        width: 100% !important;
+        margin: 50px auto !important;
+        padding: 0px 20px;
+        grid-template-rows: repeat(4, 1fr) !important;
+        grid-template-columns: 1fr !important;
     }
 }

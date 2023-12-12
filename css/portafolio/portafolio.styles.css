@@ -8,11 +8,11 @@
   padding: 40px 0;
 }
 .contacto__form__card {
-  margin: 0 auto;
-  margin-top: 40px;
+  margin: 40px auto;
   max-width: 950px;
   background-color: #fff;
   padding: 30px;
+  padding-right: 0px;
 
   display: flex;
   flex-direction: column;
@@ -21,11 +21,15 @@
   -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 1);
   -moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 1);
 }
+.contacto__form__card--dialog {
+  margin: 0px !important;
+}
 
 .contacto__form__card__text {
   display: flex;
   flex-wrap: wrap;
-  justify-content: end;
+  justify-content: space-between;
+  padding-right: 30px;
 }
 
 .contacto__form__card__text > p {
@@ -33,12 +37,10 @@
   font-size: 14px !important;
 
   margin-top: 20px;
-  width: 50%;
+  width: 47%;
 }
 
-.contacto__form__card__text > p:first-child {
-  width: 40%;
-}
+
 .contacto__form__card__text > span {
   font-family: "Raleway";
   font-size: 18px !important;
@@ -73,6 +75,9 @@
   border-radius: 5px;
   border: 1px solid #ababab;
   padding: 0px 5px;
+
+  font-family: "Raleway";
+  font-size: 14px !important;
 }
 .contacto__form__card__form__container > textarea {
   height: 80px;
@@ -121,25 +126,27 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
   padding-right: 40px;
 }
 .contacto__form__card__form--portfolio--personalidad {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
   padding-right: 40px;
 }
 .contacto__form__card__form--portfolio--comentarios {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
   padding-right: 40px;
 }
 
@@ -170,6 +177,19 @@
   color: #0096a9;
   margin-bottom: 5px;
 }
+.contacto__form__card__form--portfolio--comentarios > textarea {
+  box-sizing: border-box;
+  margin: 0;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #ababab;
+  padding: 10px 10px;
+  height: 100px;
+  font-family: "Raleway";
+  font-size: 14px !important;
+
+  resize: none;
+}
 .contacto__form__card__form--portfolio--email > input {
   box-sizing: border-box;
   margin: 0;
@@ -177,6 +197,8 @@
   border-radius: 5px;
   border: 1px solid #ababab;
   padding: 0px 5px;
+  font-family: "Raleway";
+  font-size: 14px !important;
 }
 .contacto__form__card__form--portfolio--personalidad > select {
   box-sizing: border-box;
@@ -202,6 +224,7 @@
 .contacto__form__card__form--portfolio--propiedad {
   align-content: space-between;
   width: 100%;
+  margin-top: 0px !important;
 }
 
 .contacto__form__card__form--submit {
@@ -523,7 +546,7 @@
   cursor: pointer;
   & ul {
     & li {
-      height: 50px;
+      height: 55px;
     }
 
     & .tenant__name {
@@ -571,7 +594,7 @@
         }
       }
       & .tenant__name__item__img {
-        width: 30%;
+        width: 25%;
         height: 100%;
         background-size: cover;
         border-radius: 10px;
@@ -1005,7 +1028,7 @@
           background-color: #dadad8;
 
           display: grid;
-          grid-template-columns: repeat(3, 1fr);
+          grid-template-columns: repeat(2, 1fr);
 
           justify-content: space-between;
           align-items: center;
@@ -1399,6 +1422,9 @@
     width: 100%;
     padding-right: 0px;
   }
+  .contacto__form__card__form--portfolio--propiedad {
+    margin-top: 0px;
+  }
 
   .contacto__form__card__form--portfolio--comentarios {
     display: none;
@@ -1437,4 +1463,8 @@
     padding: 0px 20px !important;
   }
 
+}
+
+.main__hero_downbar__text {
+  padding-left: 20%;
 }

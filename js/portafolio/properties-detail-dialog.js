@@ -37,9 +37,9 @@ function onOverlayClick() {
 export async function initializeDetailDialog(keyName) {
   const propertyDetail = await getPropertyDetailByKey(keyName);
 
-  propertyDetail.forEach((promise) => {
-    promise.then((propertyDetail) => {
-      if (propertyDetail.id == keyName) {
+  propertyDetail.forEach((propertyDetail) => {
+/*     promise.then((propertyDetail) => {
+ */      if (propertyDetail.id == keyName) {
 
         console.log(propertyDetail);
         const propertyTenants = getTenantsElements(propertyDetail.tenants).join('');
@@ -67,7 +67,7 @@ export async function initializeDetailDialog(keyName) {
         </div>
         <div>
           <b>Web</b>
-          <a href="${ propertyDetail.webSite }" >${ propertyDetail.webSite }</a>
+          <a target="_BLANK" href="${ propertyDetail.webSite }" >${ propertyDetail.webSite }</a>
         </div>
         
       </div>
@@ -89,7 +89,7 @@ export async function initializeDetailDialog(keyName) {
         <p>AREA RENTABLE COMERCIAL</p>
         </div>
         <div class="map__footer__item map__footer__item--last">
-          <span>${ propertyDetail.usedRate }</span>
+          <span>${ propertyDetail.usedRate * 100 + '%' }</span>
           <p>PORCENTAJE DE USO</p>
         </div>
       </div>
@@ -150,7 +150,7 @@ export async function initializeDetailDialog(keyName) {
           </div>
 
 
-          <div class="indicators__list__item--second">
+          <div class="indicators__list__item">
             <div>
               <p> ${ propertyDetail.playground }</p>
               <small>Area de Juegos para Niños</small>
@@ -184,23 +184,27 @@ export async function initializeDetailDialog(keyName) {
 
           <div class="indicators__list__item">
             <div>
-            <p>${'--ANCLAS--'}</p>
+            <p>${ propertyDetail.anchors }</p>
             <small>Anclas</small>
             </div>
             <div>
-            <p>${'--ARRENDAMIENTOS--'}</p>
+            <p>${ getFormattedTentants(propertyDetail.tenants).join(', ')}</p>
               <small>Arredamientos Importantes</small>
             </div>
           </div>
 
 
-          <div class="indicators__list__item--second">
+          <div class="indicators__list__item">
             <div>
-            <p>${'--SUB ANCLAS--'}</p>
+            <p>${
+              propertyDetail.subAnchors
+            /*   pickRandomElements(
+              getFormattedTentants(propertyDetail.tenants), 5).join(', ')
+             */}</p>
               <small>Sub Anclas</small>
             </div>
             <div>
-            <p>${'--CINE--'}</p>
+            <p>${ propertyDetail.cinema }</p>
               <small>Complejo De Cine</small>
             </div>
           </div>
@@ -226,8 +230,8 @@ export async function initializeDetailDialog(keyName) {
           ".detail__tab--content"
         ).initialize();
       }
-    });
-  });
+/*     });
+ */  });
 }
 
 /* document.querySelector('.tenants_container')
@@ -284,34 +288,19 @@ export const renderContact = async (keyName) => {
   console.log(keyName);
   const propertyDetail = await getPropertyDetailByKey(keyName);
 
-  const props = 
-  propertyDetail.map(async (promise) => {
-
-    let result;
-    await promise 
-      .then(async (property) => {
-        result = property
-      })
-
-      return result;
-  })
-  props.forEach(async(propPromise) => {
-    await propPromise.then(
-      property => {
-        if(property.id == keyName) {
-          defineContactInfo(property)
-          dialog.width = 900;
-          dialog.height = 600;
-          dialog.show();
-        }
-      }
-    )
+  propertyDetail.forEach(async(property) => {
+    if(property.id == keyName) {
+      defineContactInfo(property)
+      dialog.width = 900;
+      dialog.height = 600;
+      dialog.show();
+    }
   })
 
   function defineContactInfo(propertyDetail) {
 
     document.querySelector("#dialog_dialog-content").innerHTML = `
-  <div class="contacto__form__card">
+  <div class="contacto__form__card contacto__form__card--dialog">
   <div class="contacto__form__card__text">
   <!--        
   <span style="font-size: 30px !important;">${propertyDetail.email}
@@ -348,72 +337,85 @@ export const renderContact = async (keyName) => {
               </div>
             </div>
           </div>
+
+          <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8">
+        
+                  <div class="contacto__form__card__form">
+                    <div class="contacto__form__card__form__container contacto__form__card__form__container--nombre">
+                      <label for="nombre">*nombre</label>
+                      <!-- <input type="text" name="nombre" id="nombre">
+                       -->
+                      <input id="first_name" type="text" tabindex="0" name="first_name" required="">
+                    </div>
+      
+                    <div class="contacto__form__card__form__container contacto__form__card__form__container--compania">
+                      <label for="compania">*compañía</label>
+                      <input id="company" type="text" tabindex="1" name="company" required="">
+                    </div>
+                  </div>
+                  
+                  <div class="contacto__form__card__form">
+                    <div class="contacto__form__card__form__container contacto__form__card__form__container--apellido">
+                      <label for="apellido">*apellido</label>
+                      <input id="last_name" type="text" tabindex="0" name="last_name" required="">
+                    </div>
+      
+                    <div class="contacto__form__card__form__container contacto__form__card__form__container--email">
+                      <label for="telefono">*telefono</label>
+                      <input id="phone" type="tel" pattern="\d{10}" tabindex="3" name="phone" title="Debe tener 10 dígitos." required="">
+                    </div>
+                  </div>
+      
+                  <div class="contacto__form__card__form contacto__form__card__form--portfolio">
+                    
+                    <div class="contacto__form__card__form--portfolio--email">
+                      <label for="email">*email</label>
+                      <input id="email" type="email" tabindex="2" name="email" required="">
+                    </div>
+
+                    <div 
+                    id="responsive_comments"
+                    class="contacto__form__card__form--portfolio--email">
+                      <label for="email">*comentarios</label>
+                      <input type="email" name="telefono" id="email">
+                    </div>
+      
+                    <div class="contacto__form__card__form--portfolio--personalidad">
+                      <label for="personalidad-juridica">*personalidad juridica</label>
+                      <select id="00N5A00000HQFp4" name="00N5A00000HQFp4" tabindex="4" required="">
+                        <option disabled="" selected="" value="">Personalidad Jurídica</option>
+                        <option value="Persona Física">Persona Física</option>
+                        <option value="Persona Moral">Persona Moral</option>
+                      </select>
+                    </div>
+      
+                    <div class="contacto__form__card__form--portfolio--comentarios">
+                      <label for="comentarios">*comentarios</label>
+                      <textarea id="00Ni000000Dwzjf" tabindex="6" name="00Ni000000Dwzjf" cols="21" placeholder=""></textarea>
+                    </div>
+      
+                  </div>
+      
+                  <div class="contacto__form__card__form contacto__form__card__form--portfolio--propiedad">
+                    
+                    <div class="contacto__form__card__form--portfolio--personalidad">
+                      <label for="personalidad-juridica">*propiedad</label>
+
+                      <select id="00Ni000000Ekl2M" name="00Ni000000Ekl2M" tabindex="5" required="">
+                        <option selected value="${ keyName }">${ propertyDetail.name }</option>
+                      </select>
+
+                        
+                    </div>
+      
+                    <div class="contacto__form__card__form contacto__form__card__form--submit">
+                      <input type="submit" value="Enviar">
+                    </div>
+                  </div>
+      
+              </form>
   
-          <form action="">
-  
-  
-            <div class="contacto__form__card__form">
-              <div class="contacto__form__card__form__container contacto__form__card__form__container--nombre">
-                <label for="nombre">*nombre</label>
-                <input type="text" name="nombre" id="nombre">
-              </div>
-
-              <div class="contacto__form__card__form__container contacto__form__card__form__container--compania">
-                <label for="compania">*compañía</label>
-                <input type="text" name="compania" id="compania">
-              </div>
-            </div>
-            
-            <div class="contacto__form__card__form">
-              <div class="contacto__form__card__form__container contacto__form__card__form__container--apellido">
-                <label for="apellido">*apellido</label>
-                <input type="text" name="apellido" id="apellido">
-              </div>
-
-              <div class="contacto__form__card__form__container contacto__form__card__form__container--email">
-                <label for="telefono">*telefono</label>
-                <input type="text" name="telefono" id="telefono">
-              </div>
-            </div>
-
-            <div class="contacto__form__card__form contacto__form__card__form--portfolio">
-              
-              <div class="contacto__form__card__form--portfolio--email">
-                <label for="email">*email</label>
-                <input type="email" name="telefono" id="email">
-              </div>
-
-              <div class="contacto__form__card__form--portfolio--personalidad">
-                <label for="personalidad-juridica">*personalidad juridica</label>
-<!--                 <input type="personalidad-juridica" name="telpersonalidad-juridica" id="personalidad-juridica">
- -->                <select name="persona" id="persona">
-                  <option value="">Persona Fisica</option>
-                  <option value="">Persona Moral</option>
-                </select>
-              </div>
-
-              <div class="contacto__form__card__form--portfolio--comentarios">
-                <label for="comentarios">*comentarios</label>
-                <input type="comentarios" name="telcomentarios" id="comentarios">
-              </div>
-
-            </div>
-
-            <div class="contacto__form__card__form contacto__form__card__form--portfolio--propiedad">
-              
-              <div class="contacto__form__card__form--portfolio--personalidad">
-                <label for="personalidad-juridica">*propiedad</label>
-                  <select name="propiedad" id="propiedad">
-                    <option selected value="${ keyName }">${ propertyDetail.name }</option>
-                  </select>
-              </div>
-
-              <div class="contacto__form__card__form contacto__form__card__form--submit">
-                <input type="submit" value="Enviar">
-              </div>
-            </div>
-
-        </form></div>
+         </div>
   `;
 
   }
@@ -428,4 +430,16 @@ function getFormattedUsableArea( usableArea ) {
   const arr = usableArea.toString().split('');
   arr.splice(2,0 , ',')
   return arr.join('');
+}
+
+function getFormattedTentants(tenants) {
+  return tenants.map(str => {
+    //str = str.charAt(0).toUpperCase() + str.slice(1)
+    str = str.toUpperCase();
+    return str.replaceAll('-',' ')
+  })
+}
+function pickRandomElements(arr, count) {
+  const shuffledArray = arr.sort(() => Math.random() - 0.5); // Shuffle the array
+  return shuffledArray.slice(0, count); // Take the first 'count' elements
 }
