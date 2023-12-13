@@ -1,50 +1,331 @@
+:root {
+  --brigth-red: #D7282F;
+  --brown-red: #c04d00;
+}
 .amb_section--1 > .text > p:first-child {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 .amb_section--1 > .text > p {
-    max-width: 1200px;
-    margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 
-    text-align: justify;
+  text-align: justify;
 }
 
 .gobernanza_section--1 > div > ul {
-    display: flex;
-    flex-wrap: wrap;
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    margin-top: 40px;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  justify-content: space-between;
 }
 
 .gobernanza_section--1 > div > ul > li {
-    color: #53575A;
-    font-family: Barlow;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 50px; /* 277.778% */
-    letter-spacing: 1px;
-    text-transform: uppercase;
+  color: #53575a;
+  font-family: Barlow;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 50px; /* 277.778% */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  cursor: pointer;
 }
 .gobernanza_section--1 > div > ul > .selected {
-    color: #C04D00;
-    font-weight: 600;
+  color: var(--brown-red);
+  font-weight: 600;
+}
 
+.gobernanza_section--1 > #gober_asg_content--1 > div {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gobernanza_section--1 > #gober_asg_content--1 > div > p {
+  color: #727272;
+  text-align: justify;
+  font-family: Raleway;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  height: 30px; /* 142.857% */
+  letter-spacing: 1px;
+}
+
+.gobernanza_section--1 > #gober_asg_content--1 > #section--1__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 120px;
+  row-gap: 80px;
+  margin-bottom: 40px;
+}
+
+.gobernanza_section--1
+  > #gober_asg_content--1
+  > #section--1__grid
+  > .section--1__grid__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gobernanza_section--1
+  > #gober_asg_content--1
+  > #section--1__grid
+  > .section--1__grid__item
+  > img {
+  margin-bottom: 20px;
+}
+
+.gobernanza_section--1
+  > #gober_asg_content--1
+  > #section--1__grid
+  > .section--1__grid__item
+  > p {
+  color: #727272;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 166.667% */
+  letter-spacing: 1px;
+}
+
+.section--1__splitter {
+  margin: 0px !important;
+  height: 50px;
+  background-color: #b2b4b2;
+  width: 100% !important;
+  max-width: 100% !important;
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+}
+.section--1__splitter > span {
+  color: #fff;
+  font-family: Barlow;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21.43px; /* 142.867% */
+  letter-spacing: 1px;
+}
+
+.section--1__grid--2 {
+  background-color: #f0f0f0;
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+.section--1__grid--2 > div {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 80px 0px;
+}
+
+@media (max-width: 1000px) {
+  .section--1__grid--2 > div {
+    grid-template-columns: repeat(1, 1fr);
+    
+  }
+  #section--1__grid {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}
+
+.section--1__grid--2__item {
+  background-color: #fff;
+  padding: 20px 40px;
+  height: 220px;
+}
+
+.section--1__grid--2__item__number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section--1__grid--2__item__name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+.section--1__grid--2__item__name > p {
+  color: #0096a9;
+  font-family: Barlow;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 22.86px; /* 142.875% */
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.section--1__grid--2__item__number > span {
+  color: #97928a;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 500;
+}
+.section--1__grid--2__item__number > p {
+  color: #545859;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17.14px; /* 142.833% */
+}
+
+#gober_asg_content--2 {
+}
+
+.gober_asg_content--2__tabs__selector {
+  max-width: 750px;
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+}
+
+.gober_asg_content--second__tabs__selector__item {
+  color: #545859;
+  text-align: center;
+  font-family: Barlow;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22.86px; /* 142.875% */
+  letter-spacing: 1px;
+  border-bottom: 1px solid #DDDDDD;
+
+  cursor: pointer;
+}
+.gober_asg_content--second__tabs__selector__item:nth-child(2) {
+  border-left: 1px solid #DDDDDD;
+  border-right: 1px solid #DDDDDD;
+}
+.gober_asg_content--second__tabs__selector__item.selected{
+  color: var(--brigth-red);
+  background-color: #f0f0f0;
+  text-align: center;
+  font-family: Barlow;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 22.86px; /* 142.875% */
+  letter-spacing: 1px;
 }
 
 
-.gobernanza_section--1 > #tab_contents--1 > div {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    margin-bottom: 40px;
+.gober_asg_content--2__tabs__content--1--up {
+  max-width: 750px;
+  width: 90%;
+  margin: 40px auto 0px;
+}
+.gober_asg_content--2__tabs__content--1__text {
+  display: flex;
+  flex-direction: column;
+}
+.gober_asg_content--2__tabs__content--1__text--bottom {
+  margin-top: 40px;
+}
+.gober_asg_content--2__tabs__content--1__text > p {
+  color: #727272;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 1px;
+}
+.gober_asg_content--2__tabs__content--1__text > span {
+  color: #0096A9;
+  text-align: center;
+  font-family: Barlow;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px; /* 312.5% */
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
-.gobernanza_section--1 > #tab_contents--1 > div > p {
-    color: #727272;
+.gober_asg_content--2__tabs__content--1__text--bottom > p {
+  color: #0096A9;
+  text-align: center;
+  font-family: Barlow;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 357.143% */
+  letter-spacing: 1px;
+  text-transform: uppercase;  
+}
+.gober_asg_content--2__tabs__content--1__text--bottom > span {
+  line-height: 30px;
+}
+
+.gober_asg_content--2__tabs__content--1__icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gober_asg_content--2__tabs__content--1__icons__item {
+  width: 230px;
+}
+.gober_asg_content--2__tabs__content--1__icons__item--alone {
+  width: 750px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & img {
+    width: 230px !important;
+  }
+}
+.gober_asg_content--2__tabs__content--1__icons__item > img {
+  width: 100%;
+  padding: 40px;
+}
+.gober_asg_content--2__tabs__content--1__icons__item > p {
+  color: #727272;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 166.667% */
+  letter-spacing: 1px;
+}
+
+.gober_asg_content--3__download {
+  margin: 40px auto;
+  max-width: 750px;
+  width: 90%;
+}
+.gober_asg_content--3__download__item {
+  height: 60px ;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  background: #DADAD8;
+  & span {
+    color: #53575A;
     text-align: justify;
     font-family: Raleway;
     font-size: 14px;
@@ -52,120 +333,104 @@
     font-weight: 400;
     line-height: 20px; /* 142.857% */
     letter-spacing: 1px;
-}
-
-.gobernanza_section--1 > #tab_contents--1 > #section--1__grid {
-    
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 120px;
-    row-gap: 80px;
-    margin-bottom: 40px;
-}
-
-
-.gobernanza_section--1 > #tab_contents--1 > #section--1__grid > .section--1__grid__item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.gobernanza_section--1 > #tab_contents--1 > #section--1__grid > .section--1__grid__item > img {
-    margin-bottom: 20px;
-}
-
-.gobernanza_section--1 > #tab_contents--1 > #section--1__grid > .section--1__grid__item > p {
-    color: #727272;
-    text-align: center;
+    text-transform: capitalize;
+  }
+  & a {
+    color: #53575A;
+    text-align: justify;
     font-family: Raleway;
-    font-size: 12px;
+    font-size: 10px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 20px; /* 166.667% */
+    font-weight: bolder;
+    line-height: 20px; /* 200% */
     letter-spacing: 1px;
-} 
-
-
-.section--1__splitter {
-    margin:  0px !important;
-    height: 50px;
-    background-color: #B2B4B2;
-    width: 100% !important;
-    max-width: 100% !important;
-    display: flex;
-    align-items: center;
-    padding-left: 40px;
+    text-transform: capitalize;
+    text-decoration: none;
+  }
 }
-.section--1__splitter > span {
+.gober_asg_content--3__download__item:nth-child(2) {
+  background-color: #F5F3F1;
+}
+
+.gober_asg_content--3__imgText {
+  max-width: 1200px;
+  height: 450px;
+  width: 90%;
+  margin: 80px auto;
+  display: flex;
+}
+.gober_asg_content--3__imgText__img {
+  align-self: flex-end;
+  width: 40%;
+  height: 350px;
+  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/gobernanza/section3.png');
+  background-size: cover;
+  background-position-x: -80px;
+}
+.gober_asg_content--3__imgText__text {
+  width: 60%;
+  background: #B2B4B2;
+  padding: 40px 80px 40px 160px;
+  
+  & span {
     color: #FFF;
     font-family: Barlow;
-    font-size: 15px;
+    font-size: 18px;
     font-style: normal;
-    font-weight: 600;
-    line-height: 21.43px; /* 142.867% */
-    letter-spacing: 1px;   
-}
-
-.section--1__grid--2 {
-    background-color: #F0F0F0;
-    max-width: 100% !important;
-    width: 100% !important;
-    
-
-}
-
-.section--1__grid--2 > div {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    padding: 80px 0px;
-
-}
-.section--1__grid--2__item {
-    background-color: #FFF;
-    padding: 40px;
-}
-
-
-.section--1__grid--2__item__number {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.section--1__grid--2__item__name {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-}
-.section--1__grid--2__item__name > p {
-    color: #0096A9;
-    font-family: Barlow;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: bold;
-    line-height: 22.86px; /* 142.875% */
-    letter-spacing: 2px;
-    text-align: center;
-}
-
-.section--1__grid--2__item__number > span {
-    color: #97928A;
-    text-align: center;
+    font-weight: 700;
+    line-height: 35px; /* 194.444% */
+  }
+  & p {
+    color: #FFF;
     font-family: Raleway;
-    font-size: 52px;
-    font-style: normal;
-    font-weight: 500;
-}
-.section--1__grid--2__item__number > p {
-    color: #545859;
-    text-align: center;
-    font-family: Raleway;
-    font-size: 12px;
+    text-align: justify;
+    font-size: 13px;
     font-style: normal;
     font-weight: 400;
-    line-height: 17.14px; /* 142.833% */
+    line-height: 18.57px; /* 142.846% */
+  }
+  
 }
+
+@media (max-width: 1000px) {
+  .gober_asg_content--3__imgText {
+    flex-direction: column;
+    height: 675px;
+  }
+  .gober_asg_content--3__imgText__text {
+    padding: 20px;
+    width: 100%;
+  }
+  .gober_asg_content--3__imgText__img {
+    height: 600px;
+    width: 100%;
+    align-self: self-start;
+  }
+}
+
+.actividades__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.actividades__notFound {
+  background-color: #545859;
+  width: 100%;
+  border-radius: 5px;
+  height: 60px;
+  
+  & span {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: #FFF;
+    font-family: Barlow;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px; /* 194.444% */
+  }
+}
+/*
+https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/gobernanza/section3.png
+*/
