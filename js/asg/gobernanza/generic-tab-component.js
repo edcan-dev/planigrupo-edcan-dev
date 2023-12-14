@@ -37,4 +37,4 @@ const goberSubtabs = new GenericTabsComponent(
 
 const susSection2Subtabs = new GenericTabsComponent(
   '.susAsg_contSecond_topics__tabs__selectors',
-  '.susAsg_contSecond_topics__tabs__content').initialize();
+  '.susAsg_contSecond_topics__tabs__contents').initialize();
