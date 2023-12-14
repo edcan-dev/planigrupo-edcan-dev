@@ -210,25 +210,82 @@
 }
 
 
+
 .susAsg_cont2_topics__tabs__contents {
-  padding-left: 80px;
-  padding-top: 40px;
+  padding-left: 120px;
+  padding-top: 80px;
+}
+
+
+
+.susAsg_contSecond_topics__tabs__contents {
   display: flex;
 }
 
-
-
-
-
-.susAsg_contSecond_topics__tabs__contents__logo {
-  /* margin-top: 60px;
-   */height: 240px;
-  width: 240px;
-  z-index: 1;
-  background-image: url('https://play-lh.googleusercontent.com/ghh1cy-DOpjcm0rBhI1Fkj34VrhegXp4vt5cycc7Prq4--i_CHFUcoxpc-dsFJrsIg');
-  background-size: cover;
+.susAsg_contSecond_topics__tabs__contents {
+  width: 100% !important;
 }
 
+.susAsg_contSecond_topics__tabs__contents__logo {
+  width: 240px !important;
+  background-color: #0096A9;
+  height: 300px;
+  display: flex;
+}
+.susAsg_contSecond_topics__tabs__contents__logo > img {
+  width: 240px;
+  height: 240px;
+  align-self: end;
+}
+.susAsg_contSecond_topics__tabs__contents__table {
+  width: 100% !important;
+  display: flex;
+  flex-direction: column;
+}
+.susAsg_contSecond_topics__tabs__contents__table > thead {
+  background: #0096A9;
+  height: 60px;
+  & tr > th {
+    color: #FFF;
+    text-align: justify;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 111.111% */
+    letter-spacing: 2px;
+    padding: 20px;
+  }
+}
+.susAsg_contSecond_topics__tabs__contents__table > tbody {
+  display: flex;
+  flex-direction: column;
 
+  & tr {
+    height: 60px;
+
+    & td { 
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+      color: #53575A;
+      text-align: justify;
+      font-family: Raleway;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px; /* 142.857% */
+      letter-spacing: 1px;
+      height: 60px;
+      width: 100%;
+      text-transform: capitalize;
+
+      background-color: #F5F3F1;
+    }
+  }
+  & .secondary > td {
+    background-color: #DADAD8 !important;
+  }
+}
 /* https://play-lh.googleusercontent.com/ghh1cy-DOpjcm0rBhI1Fkj34VrhegXp4vt5cycc7Prq4--i_CHFUcoxpc-dsFJrsIg
  */
