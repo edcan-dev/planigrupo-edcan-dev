@@ -609,6 +609,7 @@ li {
 .contacto__form__card {
     margin:  0 auto;
     width: 70%;
+    max-width: 900px;
     background-color: #FFF;
     padding: 30px;
 
