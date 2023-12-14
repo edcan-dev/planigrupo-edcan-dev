@@ -74,7 +74,6 @@ if(localStorage.getItem('propertiesArray') != null) {
 
   const parsedArr = JSON.parse(arr);
 
-  console.log();
 
   propertiesArray = Array.from(parsedArr)
 

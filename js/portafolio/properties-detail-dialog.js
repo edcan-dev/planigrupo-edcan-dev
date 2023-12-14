@@ -89,7 +89,9 @@ export async function initializeDetailDialog(keyName) {
         <p>AREA RENTABLE COMERCIAL</p>
         </div>
         <div class="map__footer__item map__footer__item--last">
-          <span>${ propertyDetail.usedRate * 100 + '%' }</span>
+          <span>${
+            (propertyDetail.usedRate * 100) ==  100 ? (propertyDetail.usedRate * 100) + '%' : (propertyDetail.usedRate * 100).toPrecision(4) + '%'     
+          }</span>
           <p>PORCENTAJE DE USO</p>
         </div>
       </div>

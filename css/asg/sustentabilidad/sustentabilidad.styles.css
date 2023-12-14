@@ -104,7 +104,7 @@
 
 .susAsg_cont2__table > table > thead > tr {
   display: flex;
-  background: rgba(140, 130, 121, 0.60);
+  background-color: #0096A9;
 }
 .susAsg_cont2__table > table > tbody > tr {
   display: flex;
@@ -127,6 +127,8 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   height: 50px;
+
+  padding-left: 20px;
 }
 .susAsg_cont2__table > table > tbody > tr > td {
   flex: 1;
@@ -141,13 +143,15 @@
   min-height: 75px;
   text-align: justify;
   display: flex;
+  justify-content: center;
   align-items: center;
   padding-right: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
+  text-align: center;
 }
 
-.susAsg_cont2__table > table > tbody > tr > td:first-child {
+.susAsg_cont2__table > table > tbody > tr > td {
   padding-left: 20px;
 }
 
