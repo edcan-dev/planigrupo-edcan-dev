@@ -422,7 +422,7 @@ hr {
   padding: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 
@@ -442,6 +442,7 @@ hr {
   line-height: 18.57px; /* 142.846% */
   letter-spacing: 1px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .actividades__grid__item__img {
@@ -455,6 +456,7 @@ hr {
 
 .actividades__grid__item__description {
   margin-bottom: 10px;
+  height: 80px;
 }
 
 .actividades__grid__item__description > p {
@@ -738,7 +740,7 @@ hr {
 .actividades__grid__tab__selectors {
   display: flex;
   width: 100%;
-  justify-content: end;
+  justify-content: space-around;
 }
 
 .actividades__grid__tab__selectors > ul {

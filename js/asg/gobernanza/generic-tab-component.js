@@ -28,6 +28,11 @@ class GenericTabsComponent {
 }
 
 
+class GobernanzaTabComponent extends GenericTabsComponent {
+  
+
+}
+
 const goberTabs = new GenericTabsComponent('.gober_asg_selector','.gober_asg_content').initialize();
 
 const goberSubtabs = new GenericTabsComponent(
@@ -38,3 +43,8 @@ const goberSubtabs = new GenericTabsComponent(
 const susSection2Subtabs = new GenericTabsComponent(
   '.susAsg_contSecond_topics__tabs__selectors',
   '.susAsg_contSecond_topics__tabs__contents').initialize();
+
+const susSection3Subtabs = new GenericTabsComponent(
+  '.thirdSection__slider__selector',
+  '.thirdSection__slider__content'
+).initialize();
