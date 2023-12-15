@@ -1,7 +1,11 @@
-const response = await fetch('https://edcan-dev.github.io/planigrupo-edcan-dev/data/oportunidades.carousel.properties.json')
+import  * as propertyDetailDialogService  from "../../services/PropertDetailDialogService.js";
+import  { getPropertyDetailById }  from "../../portafolio/xlsx-reader.js";
+//const response = await fetch('https://edcan-dev.github.io/planigrupo-edcan-dev/data/oportunidades.carousel.properties.json')
+const response = await fetch('../data/oportunidades.carousel.properties.json')
 const jsonDatasource = await response.json();
 
 const PropertyCard = (
+  propertyId,
   propertyTitle,
   propertyLocation,
   propertyStartDate,
@@ -16,6 +20,7 @@ const PropertyCard = (
   const container = document.createElement('div');
 
   container.classList.add('oportunidades__carousel__div');
+  container.id = propertyId
   
   const item = document.createElement('div');
   item.classList.add('oportunidades__carousel__item');
@@ -70,6 +75,7 @@ const customInterval = 10000;
 const items = jsonDatasource.properties.map(property => {
   return ({
     template: PropertyCard(
+      property.propertyId,
       property.propertyTitle,
       property.propertyLocation,
       property.propertyStartDate,
@@ -102,3 +108,22 @@ var tenantsCarouselObj = new ej.navigations.Carousel({
   autoPlay: true,
 });
 tenantsCarouselObj.appendTo("#tenants_carousel");
+
+
+document.querySelectorAll('.oportunidades__carousel__div').
+forEach(div => {
+
+  div.addEventListener('click',(ev)=> {
+    ev.stopPropagation();
+    const propId = div.id;
+    const propertyDetail = getPropertyDetailById(propId)
+
+    console.log(propertyDetail);
+    propertyDetailDialogService.renderDetail(propertyDetail);  
+  })
+})
+/* 
+propertyDetailDialogService.renderDetail()*/
+function getPropertyDetailDialogContent() {
+  
+}

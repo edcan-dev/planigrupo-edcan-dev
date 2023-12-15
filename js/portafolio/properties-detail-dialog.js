@@ -23,19 +23,214 @@ var dialog = new ej.popups.Dialog({
 // Render initialized Dialog
 dialog.appendTo("#dialog");
 
-// Sample level code to handle the button click action
-document.getElementById("targetButton").onclick = function () {
-  // Call the show method to open the Dialog
-  dialog.show();
-};
+/* document.getElementById("targetButton").onclick = function () {
+ dialog.show();
+}; */
 
 // Sample level code to hide the Dialog when click the Dialog overlay
 function onOverlayClick() {
   dialog.hide();
 }
 
+export function renderIndexDetail(propertyDetail) {
+  console.log(propertyDetail);
+        const propertyTenants = getTenantsElements(propertyDetail.tenants).join('');
+        console.log(propertyTenants)
+
+        document.querySelector("#dialog_dialog-content").innerHTML = `
+    <section class="detail">
+    <img src="${ propertyDetail.heroImageUrl }" class="detail__hero__img">
+    </img>
+
+    <div class="detail__hero__info">
+      <div class="detail__hero__info--blue">
+        <img src="${ propertyDetail.logoImageUrl }">
+      </div>
+      <div class="detail__hero__info--light--gray">
+        <div>
+          <b>Ubicación</b>
+          <p>${ propertyDetail.location }</p>
+        </div>
+      </div>
+      <div class="detail__hero__info--gray">
+        <div>
+          <b>Teléfono</b>
+          <p>${ propertyDetail.phoneNumber }</p>
+        </div>
+        <div>
+          <b>Web</b>
+          <a target="_BLANK" href="${ propertyDetail.webSite }" >${ propertyDetail.webSite }</a>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="detail__hero__close">
+    X
+    </div>
+
+    <div class="map__footer">
+        <div class="map__footer__item">
+          <span>${propertyDetail.startDate}</span>
+          <p>INICIO DE OPERACIONES</p>
+        </div>
+        <div class="map__footer__item">
+        <span>${ 
+          getFormattedUsableArea(propertyDetail.rentableArea)}
+        <small style="font-size: 16px;">m2</small></span>
+        <p>AREA RENTABLE COMERCIAL</p>
+        </div>
+        <div class="map__footer__item map__footer__item--last">
+          <span>${
+            (propertyDetail.usedRate * 100) ==  100 ? (propertyDetail.usedRate * 100) + '%' : (propertyDetail.usedRate * 100).toPrecision(4) + '%'     
+          }</span>
+          <p>PORCENTAJE DE USO</p>
+        </div>
+      </div>
+
+    <div class="detail__about">
+      <span>ACERCA DE ${ propertyDetail.name }</span>
+      <p>${ propertyDetail.description }</p>
+    </div>
+    <div class="detail__tenant__icons">
+      ${ propertyTenants }
+    </div>
+
+    <div class="detail__tab--selector">
+      <ul>
+        <li id="detail__tab--selector--1" class="detail__tab--selector selected">DIRECTORIO</li>
+        <li class="detail__tab--selector--splitter">|</li>
+        <li id="detail__tab--selector--2" class="detail__tab--selector">INDICADORES CLAVE</li>
+        <li class="detail__tab--selector--splitter">|</li>
+        <li id="detail__tab--selector--3" class="detail__tab--selector">MAPA</li>
+      </ul>
+
+    </div>
+
+    <div class="detail__tab--contents">
+    
+      <div id="detail__tab--content--1" class="detail__tab--content">
+
+      
+
+      <img class="map" src="${ propertyDetail.directoryImageUrl }"></img>
+
+        
+      </div>
+
+      
+      <div id="detail__tab--content--2" class="detail__tab--content inactive">
+
+        <div class="indicators__list">
+          <div class="indicators__list__header">
+            <span>DATOS</span>
+          </div>
+
+          <div class="indicators__list__item">
+            <div>
+              <p> ${ propertyDetail.totalSurface } </p>
+              <small>Superficie Total</small>
+            </div>
+            <!--
+            <div>
+            <p> ${ "AQUI VA CONS"} </p>
+            <small>Construcción</small>
+            </div>
+            -->
+            <div>
+              <p> ${ propertyDetail.rentableArea } </p>
+              <small>Comercial</small>
+            </div>
+          </div>
+
+
+          <div class="indicators__list__item">
+            <div>
+              <p> ${ propertyDetail.playground }</p>
+              <small>Area de Juegos para Niños</small>
+            </div>
+            <div>
+              <p> ${ propertyDetail.type }</p>
+              <small>Tipo</small>
+            </div>
+          </div>
+
+
+          <div class="indicators__list__item">
+            
+            <div>
+              <p>${ propertyDetail.storesNumber }</p>
+              <small>Tiendas</small>
+            </div>
+            <div>
+              <p>${propertyDetail.parking }</p>
+              <small>Estacionamiento</small>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="indicators__list indicators__list--second">
+          <div class="indicators__list__header">
+            <span>INQUILINOS</span>
+          </div>
+
+          <div class="indicators__list__item">
+            <div>
+            <p>${ propertyDetail.anchors }</p>
+            <small>Anclas</small>
+            </div>
+            <div>
+            <p>${ getFormattedTentants(propertyDetail.tenants).join(', ')}</p>
+              <small>Arredamientos Importantes</small>
+            </div>
+          </div>
+
+
+          <div class="indicators__list__item">
+            <div>
+            <p>${
+              propertyDetail.subAnchors
+            /*   pickRandomElements(
+              getFormattedTentants(propertyDetail.tenants), 5).join(', ')
+             */}</p>
+              <small>Sub Anclas</small>
+            </div>
+            <div>
+            <p>${ propertyDetail.cinema }</p>
+              <small>Complejo De Cine</small>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div id="detail__tab--content--3" class="detail__tab--content inactive">
+      <iframe src="${propertyDetail.iFrameSrc}" width="1100" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+    `;
+        dialog.show();
+        document
+          .querySelector(".detail__hero__close")
+          .addEventListener("click", () => {
+            dialog.hide();
+          });
+        new GenericTabsComponent(
+          ".detail__tab--selector",
+          ".detail__tab--content"
+        ).initialize();
+  dialog.content = content
+  dialog.show()
+}
+
 export async function initializeDetailDialog(keyName) {
   const propertyDetail = await getPropertyDetailByKey(keyName);
+
+  console.log(propertyDetail);
 
   propertyDetail.forEach((propertyDetail) => {
 /*     promise.then((propertyDetail) => {

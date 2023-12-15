@@ -11,8 +11,8 @@
 }
 
 .e-carousel .e-carousel-navigators {
-    top: 260px;
-    padding: 0px 20px;
+    top: 260px !important;
+    padding: 0px 20px !important;
  }
 
  .e-carousel .e-carousel-indicators.e-default .e-indicator-bar.e-active .e-indicator div {

@@ -221,6 +221,7 @@ class PropertiesGrid {
 
 export const propertiesGrid = new PropertiesGrid(jsonDatasource.properties)
 propertiesGrid.init();
-
-document.getElementById('state-selector').addEventListener('change',(ev) => propertiesGrid.filterByState(ev.target.value))
+try{
+    document.getElementById('state-selector').addEventListener('change',(ev) => propertiesGrid.filterByState(ev.target.value))
+} catch(e) { }
 
