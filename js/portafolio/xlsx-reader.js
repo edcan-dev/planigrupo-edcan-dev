@@ -176,15 +176,22 @@ if(localStorage.getItem('propertiesArray') != null) {
 
 }
 
-const screenElement = document.querySelector('.screen')
-screenElement.classList.add('screen-hidden')
-configureTenantCombo(propertiesArray)
+try {
+  const screenElement = document.querySelector('.screen')
+  screenElement.classList.add('screen-hidden')
+  configureTenantCombo(propertiesArray)
+} catch(e) {
+}
 
 
 
 export async function getPropertyDetailByKey( key ) {
   console.log('FETCHING ' + key);
   return propertiesArray;
+}
+
+export function getPropertyDetailById(id) {
+  return propertiesArray.find(prop => prop.id === id)
 }
 
 async function configureTenantCombo(props) {

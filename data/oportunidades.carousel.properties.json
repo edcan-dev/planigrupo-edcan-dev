@@ -1,6 +1,7 @@
 {
     "properties": [
         {
+            "propertyId":"P119",
             "propertyTitle": "GRAN PLAZA CANCÚN",
             "propertyLocation": "Cancún, Quintana Roo",
             "propertyStartDate": "OCTUBRE 2013",
@@ -25,6 +26,7 @@
             ]
         },
         {
+            "propertyId":"P131",
             "propertyTitle": "CIUDADELA URBAN VILLAGE",
             "propertyLocation": "Guadalajara, Jalisco",
             "propertyStartDate": "DICIEMBRE 2014",
@@ -45,6 +47,7 @@
             ]
         },
         {
+            "propertyId":"P125",
             "propertyTitle": "URBAN VILLAGE GARZA SADA",
             "propertyLocation": "Monterrey, Nuevo León",
             "propertyStartDate": "NOVIEMBRE 2017",
@@ -65,6 +68,7 @@
             ]
         },
         {
+            "propertyId":"P123",
             "propertyTitle": "PASEO HIPÓDROMO",
             "propertyLocation": "Área Metropolitana CDMX",
             "propertyStartDate": "DICIEMBRE 2017",
@@ -85,6 +89,7 @@
             ]
         },
         {
+            "propertyId":"P118",
             "propertyTitle": "PLAZA PALMIRA",
             "propertyLocation": "Campeche, Cd. Del Carmen",
             "propertyStartDate": "SEPTIEMBRE 2009",
@@ -109,6 +114,7 @@
             ]
         },
         {
+            "propertyId":"P107",
             "propertyTitle": "MALL PLAZA LINCOLN",
             "propertyLocation": "Monterrey, Nuevo León",
             "propertyStartDate": "FEBRERO 2007",
@@ -133,6 +139,7 @@
             ]
         },
         {
+            "propertyId":"P119",
             "propertyTitle": "PLAZA BELLA MEXIQUENSE",
             "propertyLocation": "Estado de México, Tecamac",
             "propertyStartDate": "SEPTIEMBRE 2006",
@@ -157,6 +164,7 @@
             ]
         },
         {
+            "propertyId":"P105",
             "propertyTitle": "PLAZA BELLA HUINALÁ",
             "propertyLocation": "Nuevo León, Apodaca",
             "propertyStartDate": "AGOSTO 2009",

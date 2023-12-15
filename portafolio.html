@@ -637,7 +637,7 @@ Monterrey, Nuevo León.
                   </div>
                 </div>
         
-                <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" target="_blank">
+                <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
                   <input type="hidden" name="oid" value="00Di0000000cSTi">
                   <input type="hidden" name="retURL" value="https://edcan-dev.github.io/planigrupo-edcan-dev/portafolio.html">
                   
@@ -663,7 +663,11 @@ Monterrey, Nuevo León.
       
                     <div class="contacto__form__card__form__container contacto__form__card__form__container--email">
                       <label for="telefono">*telefono</label>
-                      <input id="phone" type="tel" pattern="\d{10}" tabindex="3" name="phone" title="Debe tener 10 dígitos y parentesis." required>
+                      <input id="phone" type="tel" 
+                      
+                pattern="^(\d{10}|\(\d{3}\)\s?\d{3}-\d{4}|(\+\d{2}\s?)?(\d{2}\s?)?\d{4}\s?\d{4})$"                        
+                      
+                      tabindex="3" name="phone" title="Debe tener 10 dígitos y parentesis." placeholder="1234512345" required>
                     </div>
                   </div>
       
