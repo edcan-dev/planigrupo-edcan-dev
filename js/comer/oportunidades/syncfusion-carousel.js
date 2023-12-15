@@ -1,7 +1,7 @@
 import  * as propertyDetailDialogService  from "../../services/PropertDetailDialogService.js";
 import  { getPropertyDetailById }  from "../../portafolio/xlsx-reader.js";
-//const response = await fetch('https://edcan-dev.github.io/planigrupo-edcan-dev/data/oportunidades.carousel.properties.json')
-const response = await fetch('../data/oportunidades.carousel.properties.json')
+const response = await fetch('https://edcan-dev.github.io/planigrupo-edcan-dev/data/oportunidades.carousel.properties.json')
+//const response = await fetch('../data/oportunidades.carousel.properties.json')
 const jsonDatasource = await response.json();
 
 const PropertyCard = (
