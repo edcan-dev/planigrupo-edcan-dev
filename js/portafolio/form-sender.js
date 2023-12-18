@@ -20,7 +20,7 @@ document.querySelector('.portfolioContactForm')
         body: formData,
       });
 
-      console.log(await response.json());
+      console.log(response.status);
 
       const alertContent = {
         title: 'Correo enviado!',
