@@ -360,7 +360,6 @@
 .contacto__form__card__form__container {
     width: 100%;
 }
-/*
-.e-carousel.e-partial .e-carousel-slide-container {
-    padding: 0 10%;  
-}*/
+#dialog_dialog-content {
+    padding: 0px ;  
+}

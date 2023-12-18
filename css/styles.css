@@ -3154,3 +3154,7 @@ MAIN TABS MARGIN
   .e-dlg-center-center {
     position: fixed !important;
   }
+
+  #dialog_dialog-content {
+    padding: 0px ;  
+  }
