@@ -15,6 +15,7 @@ document.querySelector('.portfolioContactForm')
 
       const response = await fetch(FORM_POST_URL , {
         method: "POST",
+        mode: "no-cors",
         // Set the FormData instance as the request body
         body: formData,
       });
@@ -53,5 +54,5 @@ function renderAlert( {title, text, icon } ) {
     icon,
     confirmButtonText: 'Continuar'
   })
-  
+
 }
