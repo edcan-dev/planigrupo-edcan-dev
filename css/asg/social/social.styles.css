@@ -16,12 +16,12 @@
     margin: 0px 40px;
 }
 
-.grid_item:nth-child(1) { grid-area: 1 / 1 / 2 / 5; }
+/* .grid_item:nth-child(1) { grid-area: 1 / 1 / 2 / 5; }
 .grid_item:nth-child(2) { grid-area: 1 / 5 / 2 / 9; }
 .grid_item:nth-child(3) { grid-area: 1 / 9 / 2 / 13; }
 .grid_item:nth-child(4) { grid-area: 2 / 3 / 3 / 7; }
 .grid_item:nth-child(5) { grid-area: 2 / 7 / 3 / 11; }
-
+ */
 .social_section--3 {
     width: 90%;
     max-width: 1200px;
