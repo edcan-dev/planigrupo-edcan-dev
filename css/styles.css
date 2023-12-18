@@ -396,6 +396,8 @@
     /* 100% */
     letter-spacing: 1px;
     text-transform: uppercase;
+    display: inline-block;
+    margin: 0;
 }
 
 .compromise__title__p2 {
@@ -408,6 +410,9 @@
     /* 110% */
     letter-spacing: 1px;
     text-transform: uppercase;
+
+    display: inline-block;
+    margin: 0;
 }
 
 .main__compromise__grid {
