@@ -46,8 +46,14 @@
   <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type ="text/javascript"></script>
 
   <!-- Actividades Grid -->
-  <script defer type="module" src="./js/asg/actividades-grid.js"></script>
   <script defer type="module" src="./js/asg/read-excel-file.min.js"></script>
+  <script defer type="module" src="./js/asg/services/XSLXActivitiesReaderService.js"></script>`
+  <script defer type="module" src="./js/asg/services/ActivitiesASGModal.js"></script>
+  <script defer type="module" src="./js/asg/social/services/ActivitiesGridService.js"></script>`
+  <!-- Dialog Custom Script -->
+  <link rel="stylesheet" href="./css/asg/ambiental/ambiental.styles.css">
+
+
 
   </head>
 
@@ -349,48 +355,49 @@
     
 
       <section class="section--3">
-        <!-- <div class="actividades">
-          
-          <div class="actividades__title">
-            <span>ACTIVIDADES</span>
+
+        <div class="thirdSection__title">
+          <span>ACTIVIDADES RELEVANTES</span>
+        </div>
+
+        <div class="thirdSection__carousel">
+
+          <div class="thirdSection__carousel__prev thirdSection__carousel__selector" id="prev">
           </div>
 
-          <div class="actividades__filters">
-            <div class="actividades__filters__filter">
-              <span>
-                Filtrar por:
-              </span>
+          <div class="thirdSection__carousel__container">
+            <div class="thirdSection__carousel__container__content">
+    <div class="thirdSection__carousel__container__content__item">
+        <div class="thirdSection__carousel__container__content__item__title">
+            <p>Máquinas de Reciclaje-AlEn</p>
+        </div>
+        <div class="thirdSection__carousel__container__content__item__image" style="background-image: url('https://reporteasg.com/download/multimedia.normal.b22b61ac01c80f3b.YmFuY2EgdmVyZGVfbm9ybWFsLndlYnA%3D.webp');"></div>
+    
+        <div class="thirdSection__carousel__container__content__item__description">
+        Descripcion de la actividad
+        </div>
 
-              <select id="category_select">
-                <option value="all">Todas</option>
-                <option value="Social">Sociales</option>
-                <option value="Ambiental">Ambientales</option>
-                <option value="Corporativas">Corporativas</option>
-              </select>
-            </div>
+    </div>
+    <div class="thirdSection__carousel__container__content__item">
+        <div class="thirdSection__carousel__container__content__item__title">
+            <p>Maquinas de Reciclaje-AlEn</p>
+        </div>
+        <div class="thirdSection__carousel__container__content__item__image" style="background-image: url('https://reporteasg.com/download/multimedia.normal.b22b61ac01c80f3b.YmFuY2EgdmVyZGVfbm9ybWFsLndlYnA%3D.webp');"></div>
 
-            <div class="actividades__filters__filter">
-              <span>
-                Año
-              </span>
+        <div class="thirdSection__carousel__container__content__item__description">
+        Descripcion de la actividad
+        </div>
 
-              <select id="year_select">
-                <option value="all">Todas</option>
-                <option value="2023">2023</option>
-                <option value="2022">2022</option>
-                <option value="2021">2021</option>
-                <option value="2020">2020</option>
-                <option value="2019">2019</option>
-                <option value="2018">2018</option>
-                <option value="2017">2017</option>
-              </select>
-            </div>
+    </div>
+    </div>
             
           </div>
 
-          <div class="actividades__grid">
+          <div class="thirdSection__carousel__next thirdSection__carousel__selector" id="next">
           </div>
-        </div> -->
+
+        </div>
+
 
       </section>
 
