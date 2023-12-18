@@ -203,6 +203,9 @@
     transform: rotate(270deg);
     cursor: pointer;
 }
+.thirdSection__carousel__prev:hover, .thirdSection__carousel__next:hover{
+    filter: invert(35%) sepia(63%) saturate(1795%) hue-rotate(158deg) brightness(97%) contrast(101%);
+}
 .thirdSection__carousel__next {
     background-image: url('../arrow.svg');
     width: 50px;

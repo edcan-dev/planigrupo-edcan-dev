@@ -1474,3 +1474,39 @@
   top: 260px !important;
   padding: 0px 20px !important;
 }
+
+
+.swal2-title {
+  color: #C04D00;
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 19.8px; /* 110% */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.swal2-html-container {
+  color: #000;
+  text-align: justify;
+  font-family: Raleway;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 1px; 
+}
+.swal2-confirm {
+
+  background-color: #0096a9 !important;
+
+  color: #000;
+  text-align: justify;
+  font-family: Raleway;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 1px; 
+}
