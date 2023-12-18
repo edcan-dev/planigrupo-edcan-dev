@@ -18,8 +18,6 @@
     padding: 40px 160px;
 }
 
-.amb_section--2 {
-}
 
 .amb_section--2 > .title_header {
     height: 40px;
@@ -96,7 +94,7 @@
     background-color: #545859;
     display: flex;
 
-    margin-top: 120px;
+    margin-top: 40px;
     
 }
 
@@ -163,4 +161,109 @@
         background-position-x: center;
     } 
     
+}
+
+
+.section--3 {
+}
+.section--3 > .thirdSection__title {
+
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    color: #D7282F;
+    text-align: center;
+    font-family: Barlow;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 22.86px; /* 142.875% */
+    letter-spacing: 1px;
+}
+
+.thirdSection__carousel {
+    height: 400px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.thirdSection__carousel__prev {
+    background-image: url('../arrow.svg');
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+    background-size: contain;
+    transform: rotate(270deg);
+    cursor: pointer;
+}
+.thirdSection__carousel__next {
+    background-image: url('../arrow.svg');
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+    background-size: contain;
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+
+.thirdSection__carousel__container {
+    width: calc(100% - 200px);
+    height: 100%;
+    position: relative;
+    
+}
+
+.thirdSection__carousel__container__content {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.thirdSection__carousel__container__content__item {
+    max-width: 500px;
+    width: 50%;
+    padding: 0px 25px;
+}
+.thirdSection__carousel__container__content__item__title {
+    display: inline-block;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    color: #BE4D00;
+    font-family: Raleway;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18.57px; /* 142.846% */
+    letter-spacing: 1px;
+}
+
+.thirdSection__carousel__container__content__item__image {
+    height: 220px;
+    width: 100%;
+    background-color: #0096A9;
+    background-image: url('https://reporteasg.com/download/multimedia.normal.b22b61ac01c80f3b.YmFuY2EgdmVyZGVfbm9ybWFsLndlYnA%3D.webp');
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.thirdSection__carousel__container__content__item__description {
+    color: #727272;
+    font-family: Raleway;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px; /* 125% */
+    letter-spacing: 1px;
+    min-height: 120px;
 }

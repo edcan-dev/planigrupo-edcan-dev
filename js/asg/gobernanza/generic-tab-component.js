@@ -25,6 +25,13 @@ class GenericTabsComponent {
       })
     );
   }
+ 
+  initializeWithPreviousAndNext() {
+    this.initialize();
+  
+  }
+  
+
 }
 
 
@@ -44,7 +51,9 @@ const susSection2Subtabs = new GenericTabsComponent(
   '.susAsg_contSecond_topics__tabs__selectors',
   '.susAsg_contSecond_topics__tabs__contents').initialize();
 
+
+
 const susSection3Subtabs = new GenericTabsComponent(
   '.thirdSection__slider__selector',
   '.thirdSection__slider__content'
-).initialize();
+).initializeWithPreviousAndNext();
