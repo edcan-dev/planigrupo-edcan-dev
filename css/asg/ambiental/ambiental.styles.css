@@ -148,7 +148,7 @@
         grid-template-rows: repeat(6, 1fr);
         grid-template-columns: 1fr;
         
-        padding: 40px; 
+        padding: 40px 120px; 
         row-gap: 40px;
     }
 
@@ -269,4 +269,24 @@
     line-height: 15px; /* 125% */
     letter-spacing: 1px;
     min-height: 120px;
+}
+
+
+@media (max-width: 1000px) {
+
+    .thirdSection__carousel__container {
+        height: 800px;
+    }
+    .thirdSection__carousel__container__content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .thirdSection__carousel__container__content__item {
+        width: 100%;
+    }
+
+    .section--3 {
+        height: 1000px;
+    }
+    
 }

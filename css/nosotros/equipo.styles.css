@@ -6,7 +6,8 @@
 .equipo__card__container {
     margin: 40px;
     height: 700px;
-    width: 61%;
+    width: 90%;
+    max-width: 1000px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -22,7 +23,7 @@
 
 }
 .equipo__card__item__img {
-    height: 65%;
+    height: 200px;
     background-size: cover;
 }
 .equipo__card__item__img--2 {
