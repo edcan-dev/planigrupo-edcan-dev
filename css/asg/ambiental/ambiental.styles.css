@@ -148,7 +148,7 @@
         grid-template-rows: repeat(6, 1fr);
         grid-template-columns: 1fr;
         
-        padding: 40px 120px; 
+        padding: 40px 40px; 
         row-gap: 40px;
     }
 
@@ -254,8 +254,7 @@
 .thirdSection__carousel__container__content__item__image {
     height: 220px;
     width: 100%;
-    background-color: #0096A9;
-    background-image: url('https://reporteasg.com/download/multimedia.normal.b22b61ac01c80f3b.YmFuY2EgdmVyZGVfbm9ybWFsLndlYnA%3D.webp');
+    background-color: #F0F0F0;
     background-size: cover;
     margin-bottom: 20px;
 }
@@ -276,6 +275,7 @@
 
     .thirdSection__carousel__container {
         height: 800px;
+        width: 70%;
     }
     .thirdSection__carousel__container__content {
         flex-direction: column;
@@ -283,10 +283,19 @@
     }
     .thirdSection__carousel__container__content__item {
         width: 100%;
+        padding: 0px;
     }
 
     .section--3 {
-        height: 1000px;
+        height: 800px;
+    }
+
+    .header {
+        top: 0px;
+    }
+
+    .thirdSection__carousel {
+        width: 100%;
     }
     
 }

@@ -64,7 +64,7 @@ function renderAmbientalActivitiesContent(arr) {
             <p>${arr[0].title}</p>
         </div>
         <div class="thirdSection__carousel__container__content__item__image"
-        style="background-image: url('https://reporteasg.com/download/multimedia.normal.b22b61ac01c80f3b.YmFuY2EgdmVyZGVfbm9ybWFsLndlYnA%3D.webp');"
+        style="background-image: url('${ arr[0].imageUrl }');"
         ></div>
     
         <div class="thirdSection__carousel__container__content__item__description">
@@ -77,7 +77,7 @@ function renderAmbientalActivitiesContent(arr) {
             <p>${arr[1].title}</p>
         </div>
         <div class="thirdSection__carousel__container__content__item__image"
-        style="background-image: url('https://reporteasg.com/download/multimedia.normal.b22b61ac01c80f3b.YmFuY2EgdmVyZGVfbm9ybWFsLndlYnA%3D.webp');"
+        style="background-image: url('${ arr[1].imageUrl }');"
         ></div>
 
         <div class="thirdSection__carousel__container__content__item__description">

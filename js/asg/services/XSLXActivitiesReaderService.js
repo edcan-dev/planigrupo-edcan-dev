@@ -1,5 +1,11 @@
-const xslxPath = "https://edcan-dev.github.io/planigrupo-edcan-dev/data/asg/actividades-final.xlsx";
-//const xslxPath = '../../../data/asg/actividades-final.xlsx'
+//const xslxPath = 
+
+console.log(window.location.href);
+
+const xslxPath = window.location.href.startsWith('https')
+  ? "https://edcan-dev.github.io/planigrupo-edcan-dev/data/asg/actividades-final.xlsx"
+  : '../../../data/asg/actividades-final.xlsx';
+
 
 const response = await fetch(xslxPath);
 const xlsx = await response.blob();
@@ -23,6 +29,7 @@ await readXlsxFile(xlsx, { sheet: 1 }).then(function (rows) {
   for (let index = 0; index < rows.length; index++) {
 
     const element = rows[index];
+    console.log(element);
 
     const activity = new Activity();
 

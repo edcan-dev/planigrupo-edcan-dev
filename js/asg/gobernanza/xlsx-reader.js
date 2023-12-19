@@ -1,5 +1,4 @@
 const xslxPath = "https://edcan-dev.github.io/planigrupo-edcan-dev/data/asg/asg_actividades.xlsx";
-//const xslxPath = '../../../data/asg/asg_gobernanza_actividades.xlsx'
 
 const response = await fetch(xslxPath);
 const xlsx = await response.blob();

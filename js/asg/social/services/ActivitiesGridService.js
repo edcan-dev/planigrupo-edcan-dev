@@ -64,7 +64,7 @@ function renderAmbientalActivitiesContent(arr) {
             <p>${arr[0].title}</p>
         </div>
         <div class="thirdSection__carousel__container__content__item__image"
-        style="background-image: url('https://reporteasg.com/download/multimedia.normal.b22b61ac01c80f3b.YmFuY2EgdmVyZGVfbm9ybWFsLndlYnA%3D.webp');"
+        style="background-image: url('${ arr[0].imageUrl }');"
         ></div>
     
         <div class="thirdSection__carousel__container__content__item__description">
@@ -77,7 +77,7 @@ function renderAmbientalActivitiesContent(arr) {
             <p>${arr[1].title}</p>
         </div>
         <div class="thirdSection__carousel__container__content__item__image"
-        style="background-image: url('https://reporteasg.com/download/multimedia.normal.b22b61ac01c80f3b.YmFuY2EgdmVyZGVfbm9ybWFsLndlYnA%3D.webp');"
+        style="background-image: url('${ arr[1].imageUrl }');"
         ></div>
 
         <div class="thirdSection__carousel__container__content__item__description">
@@ -108,14 +108,14 @@ document.querySelectorAll('.actividades__grid__item__a')
 })
 
 
-function getDialogGridItem({ title, description, id}) { 
+function getDialogGridItem({ title, description, id, imageUrl}) { 
   return `
   <div class="actividades__grid__item">
       <div class="actividades__grid__item__title">
           <p>${ title }</p>
       </div>
       <div class="actividades__grid__item__img"
-          style="background-image: url('https://reporteasg.com/download/multimedia.normal.b22b61ac01c80f3b.YmFuY2EgdmVyZGVfbm9ybWFsLndlYnA%3D.webp');
+          style="background-image: url('${ imageUrl }');
       "></div>
       <div class="actividades__grid__item__description">
           <p>
@@ -130,11 +130,11 @@ function getDialogGridItem({ title, description, id}) {
   `;
 }
 
-function getDialogContent({ title, dateString, category, description}) {
+function getDialogContent({ title, dateString, category, description, imageUrl }) {
   return `
   <section class="detail__dialog">
     <div class="detail__dialog__img">
-      <img src="https://reporteasg.com/download/multimedia.normal.b22b61ac01c80f3b.YmFuY2EgdmVyZGVfbm9ybWFsLndlYnA%3D.webp">
+      <img src="${ imageUrl }">
     </div>
     
     <div class="detail__dialog__title">
