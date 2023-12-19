@@ -160,8 +160,9 @@
 .tabs__imgs {
   grid-area: 2 / 9 / 7 / 13;
   background-image: url("https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/asg_que_estamos.PNG");
-  background-size: cover;
+  background-size: 170%;
   background-position-x: center;
+  background-position-y: center;
 }
 
 .tab__contents {
@@ -527,7 +528,7 @@ hr {
   .section--1 {
     margin-top: 60px;
     grid-template-columns: 1fr;
-    grid-template-rows: 200px 1fr 1fr;
+    grid-template-rows: 200px 300px 400px;
   }
 
   .section--1 > .tabs {
@@ -551,9 +552,8 @@ hr {
 
   .section--1 > .tab__contents > .asg_tab_content {
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     padding: 40px;
-    height: fit-content;
   }
   .section--1 > .tab__contents > .asg_tab_content > .asg_tab_content__p {
     width: 100%;
@@ -570,6 +570,7 @@ hr {
   .section--1 > .tabs__imgs {
     grid-area: 3 / 1 / 4 / 2;
     margin: 20px;
+    background-size: 160%;
   }
 
   .section--2 > .reports__container {

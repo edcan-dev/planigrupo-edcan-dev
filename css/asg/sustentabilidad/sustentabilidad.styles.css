@@ -70,11 +70,31 @@
 }
 .susAsg_cont2__icons__item__img {
   background-image: url("https://play-lh.googleusercontent.com/ghh1cy-DOpjcm0rBhI1Fkj34VrhegXp4vt5cycc7Prq4--i_CHFUcoxpc-dsFJrsIg");
-  width: 75%;
+  height: 50px;
   aspect-ratio: 1 / 1;
   background-size: cover;
   margin: 0 auto;
-  border: 1px solid black;
+}
+.susAsg_cont2__icons__item__img--1 {
+  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/sustentabilidad/sus01.jpg');
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-Y: center;
+}
+.susAsg_cont2__icons__item__img--2 {
+  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/sustentabilidad/sus02.jpg');
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-Y: center;
+}
+.susAsg_cont2__icons__item__img--3 {
+  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/sustentabilidad/sus03.jpg');
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-Y: center;
 }
 
 .susAsg_cont2__table {
@@ -551,6 +571,7 @@
   .thirdSection__slider__content {
     flex-wrap: wrap;
     flex-direction: column-reverse;
+    align-items: center;
   }
 
   .thirdSection__slider__selectors {
@@ -561,10 +582,15 @@
     width: 100%;
     padding: 40px 0px;
   }
+  
 
   .thirdSection__slider__content__img {
-    height: 250px;
+    height: 280px;
+    aspect-ratio: 1 / 1;
     margin: 0;
-    width: 100%;
+  }
+
+  .header {
+    top: 0px;
   }
 }
