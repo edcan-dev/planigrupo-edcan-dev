@@ -17,19 +17,44 @@
 
 
 .contentOne {
-  height: 40vw;
-  max-height: 500px;
+  height: 70lvh;
+  max-height: 600px;
   margin-bottom: 40px !important;
+  }
+
+.contentOne_text > p {
+  display: inline-block;
+  margin-bottom: 10px;
+    color: #727272;
+    text-align: justify;
+    font-family: Raleway;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 1px;
 }
+
+.contentOne__smallText {
+  margin-bottom: 20px;
+  color: #727272;
+  text-align: justify;
+  font-family: Raleway;
+  font-size: 11px !important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 181.818% */
+  letter-spacing: 1px;
+}
+
 .contentOne__img {
   background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/sustentabilidad/matriz_22_gm.png');
   width: 100%;
-  height: 100%;
+  height: 30vw;
   background-size: contain;
   background-repeat: no-repeat;
   background-position-x: center;
-
-  margin-bottom: 40px ;
+  margin-bottom: 10px;
 }
 
 .susAsg_cont2__icons {
@@ -69,28 +94,28 @@
   text-align: justify;
 }
 .susAsg_cont2__icons__item__img {
-  background-image: url("https://play-lh.googleusercontent.com/ghh1cy-DOpjcm0rBhI1Fkj34VrhegXp4vt5cycc7Prq4--i_CHFUcoxpc-dsFJrsIg");
+  background-image: url("https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/sustentabilidad/Identificacion.png");
   height: 50px;
   aspect-ratio: 1 / 1;
   background-size: cover;
   margin: 0 auto;
 }
 .susAsg_cont2__icons__item__img--1 {
-  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/sustentabilidad/sus01.jpg');
+  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/sustentabilidad/Identificacion.png');
   background-size: 50px;
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-Y: center;
 }
 .susAsg_cont2__icons__item__img--2 {
-  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/sustentabilidad/sus02.jpg');
+  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/sustentabilidad/Priorizacion.png');
   background-size: 50px;
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-Y: center;
 }
 .susAsg_cont2__icons__item__img--3 {
-  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/sustentabilidad/sus03.jpg');
+  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/sustentabilidad/Validacion.png');
   background-size: 50px;
   background-repeat: no-repeat;
   background-position-x: center;
@@ -108,6 +133,8 @@
   margin: 0 auto;
 
   & p {
+    display: inline-block;
+    margin-bottom: 20px;
     color: #727272;
     text-align: justify;
     font-family: Raleway;
