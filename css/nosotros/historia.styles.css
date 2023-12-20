@@ -32,7 +32,7 @@
 }
 
 .historia__card__item__img {
-  height: 70%;
+  height: 250px;
   background-size: cover;
 }
 
@@ -341,17 +341,24 @@
   background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia_optimized/2016.png');
 }
 .historia__card__item__img--22 {
-  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia_optimized/2017.png');
+  background-image: url('https://planigrupo.com.mx/wp-content/uploads/2018/09/2016.jpg');
 }
 .historia__card__item__img--23 {
   background-image: url('https://planigrupo.com.mx/wp-content/uploads/2018/09/2017.jpg');
 }
 .historia__card__item__img--24 {
   background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia_optimized/2023.png');
+  background-position-y:center ;
 }
 .historia__card__item__img--25 {
   background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia_optimized/gmi.jpg');
   border: 1px solid #c0c0c0;
+  background-position-y:center ;
+}
+.historia__card__item__img--26 {
+  background-image: url('https://planigrupo.com.mx/wp-content/uploads/2019/01/location-hero-paseo-alcalde-full.jpg');
+  border: 1px solid #c0c0c0;
+  background-position-y:center ;
 }
 
 
@@ -363,4 +370,50 @@ body > main > section.historia__section > div.historia__card.historia__card--tab
 }
 body > main > section.historia__section > div.historia__card.historia__card--tab5.active > div:nth-child(4) > div.historia__card__item__text > p {
   font-size: 10px;
+}
+
+@media (max-width: 1300px) {
+  .footer {
+    margin-top: 0px;
+  }
+}
+@media (max-width: 1000px) {
+  .carousel_section {
+    display: none;
+  }
+}
+
+.carousel_section {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.main-carousel {
+  width: 1200px ;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.carousel-cell {
+  width: 100%; /* full width */
+  height: 400px; /* height of carousel */
+  margin-right: 10px;
+}
+
+.carousel-cell__content {
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.carousel-cell__content__item {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.historia__card__item {
+  height:400px;
+  width: 50%;
+  max-width: 30%;
 }
