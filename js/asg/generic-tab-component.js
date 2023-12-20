@@ -40,13 +40,13 @@ document.querySelectorAll(".asg_tab_selector").forEach((selector) => {
     let url = (() => {
       switch (selector.id) {
         case "asg_tab_selector--1":
-          return "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/asg_que_estamos.PNG";
+          return "https://planiesg.herokuapp.com/static/images/corazones_rosas.jpg";
         case "asg_tab_selector--2":
-          return "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/asg_para_que.PNG";
+          return "https://planiesg.herokuapp.com/static/images/index/junta.jpg";
         case "asg_tab_selector--3":
-          return "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/asg_quienes.PNG";
+          return "https://planiesg.herokuapp.com/static/images/index/manos.jpg";
         case "asg_tab_selector--4":
-          return "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/asg_materialidad.PNG";
+          return "https://planiesg.herokuapp.com/static/images/index/materialidadl.jpeg";
         default:
           re;
       }
