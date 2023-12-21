@@ -6,6 +6,8 @@ class InfoSlider {
 	#data;
 	#interval
 
+	currentText = 1;
+	
 	constructor({ data, interval }) {
 		this.#data = data;
 		this.#interval = interval;
@@ -13,50 +15,81 @@ class InfoSlider {
 
 	configure() {
 
-		let currentText = 1;
+
 
 		setInterval(() => {
 
-			if (currentText == 4) currentText = 0;
+			if (this.currentText == 4) this.currentText = 0;
 
-			switch (currentText) {
-				case 0:
-					document.querySelectorAll('.main__plani__info__text').forEach(text => {
-						text.style.opacity = '0'
-						if (text.classList.contains('main__plani__info__text--1')) {
-							text.style.opacity = '100%'
-						}
-					})
-					break;
-				case 1:
-					document.querySelectorAll('.main__plani__info__text').forEach(text => {
-						text.style.opacity = '0'
-						if (text.classList.contains('main__plani__info__text--2')) {
-							text.style.opacity = '100%'
-						}
-					})
-					break;
-				case 2:
-					document.querySelectorAll('.main__plani__info__text').forEach(text => {
-						text.style.opacity = '0'
-						if (text.classList.contains('main__plani__info__text--3')) {
-							text.style.opacity = '100%'
-						}
-					})
-					break;
-				case 3:
-					document.querySelectorAll('.main__plani__info__text').forEach(text => {
-						text.style.opacity = '0'
-						if (text.classList.contains('main__plani__info__text--4')) {
-							text.style.opacity = '100%'
-						}
-					})
-					break;
-			}
+			this.#changeSliderContent(this.currentText)
 
-			currentText++;
+			this.currentText++;
 
 		}, this.#interval)
+
+		return this;
+	}
+
+	addSelectors() {
+		document.querySelectorAll('.slider__info')
+			.forEach(selector => {
+
+
+				selector.addEventListener('click', (ev)=> {
+
+					const id = ev.target.id;
+
+					let newCurrentText = id == 'slider__info_prev'
+					? this.currentText--
+					: this.currentText++;
+
+					if(newCurrentText > 2) this.currentText = 0
+
+					console.log(newCurrentText);
+
+					this.#changeSliderContent(newCurrentText)
+				})
+			})
+
+	}
+
+	#changeSliderContent(currentText) {
+
+		switch (currentText) {
+			case 0:
+				document.querySelectorAll('.main__plani__info__text').forEach(text => {
+					text.style.opacity = '0'
+					if (text.classList.contains('main__plani__info__text--1')) {
+						text.style.opacity = '100%'
+					}
+				})
+				break;
+			case 1:
+				document.querySelectorAll('.main__plani__info__text').forEach(text => {
+					text.style.opacity = '0'
+					if (text.classList.contains('main__plani__info__text--2')) {
+						text.style.opacity = '100%'
+					}
+				})
+				break;
+			case 2:
+				document.querySelectorAll('.main__plani__info__text').forEach(text => {
+					text.style.opacity = '0'
+					if (text.classList.contains('main__plani__info__text--3')) {
+						text.style.opacity = '100%'
+					}
+				})
+				break;
+			case 3:
+				document.querySelectorAll('.main__plani__info__text').forEach(text => {
+					text.style.opacity = '0'
+					if (text.classList.contains('main__plani__info__text--4')) {
+						text.style.opacity = '100%'
+					}
+				})
+				break;
+		}
+
 	}
 
 }
@@ -72,4 +105,4 @@ const infoSlider = new InfoSlider(
 	}
 );
 
-infoSlider.configure()
+infoSlider.configure().addSelectors()

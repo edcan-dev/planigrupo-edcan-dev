@@ -111,9 +111,8 @@
     <nav>
       <ul class="header__nav">
         <li class="header__nav__item dropdown">
-          <a class="dropbtn">Nosotros</a>
+          <a href="./nosotros.html" class="dropbtn">Nosotros</a>
           <div class="dropdown-content">
-            <a href="./nosotros.html">Nosotros</a>
             <a href="./lo-que-hacemos.html">Lo que hacemos</a>
             <a href="./equipo-ejecutivo.html">Equipo Ejecutivo</a>
             <a href="./historia.html">Historia</a>
@@ -123,9 +122,8 @@
           <a href="./portafolio.html">Portafolio</a>
         </li>
         <li class="header__nav__item dropdown">
-          <a class="dropbtn">Comercialización</a>
+          <a href="./comercializacion.html" class="dropbtn">Comercialización</a>
           <div class="dropdown-content">
-            <a href="./comercializacion.html">Comercialización</a>
             <a href="./oportunidades.html">Oportunidades</a>
           </div>
         </li>
@@ -133,9 +131,8 @@
         <!-- <li class="header__nav__item"><a href="./asg.html">Asg</a></li> -->
         
         <li class="header__nav__item dropdown">
-          <a class="dropbtn">ASG</a>
+          <a class="dropbtn" href="./asg.html">ASG</a>
           <div class="dropdown-content">
-            <a href="./asg.html">ASG</a>
             <a href="./asg-sustentabilidad.html">Sustentabilidad</a>
             <a href="./asg-ambiental.html">Ambiental</a>
             <a href="./asg-social.html">Social</a>
@@ -187,6 +184,12 @@
     </section>
 
     <section class="carousel_section">
+
+      <div class="carousel_section_title">
+        <span>
+          1975 - 1982
+        </span>
+      </div>
 
       <div class="carousel_container">
 
@@ -498,19 +501,62 @@
     </section>
 
     <script>
+    
     var elem = document.querySelector('.main-carousel');
-var flkty = new Flickity( elem, {
-  // options
-  cellAlign: 'left',
-  contain: true,
+    var flkty = new Flickity( elem, {
+      cellAlign: 'left',
+      contain: true,
+    });
+    var flkty = new Flickity( '.main-carousel', {
+    });
 
-});
 
-// element argument can be a selector string
-//   for an individual element
-var flkty = new Flickity( '.main-carousel', {
-  // options
-});
+    const title = document.querySelector('.carousel_section_title > span');
+
+    const titleDictionary = {
+      0: '1975-1982',
+      1: '1988-1992',
+      2: '1998-2000',
+      3: '2001-2005',
+      4: '2006-2008',
+      5: '2009-2012',
+      6: '2013-2015',
+      7: '2016-2023',
+      8: '2023',
+    }
+
+    document.querySelectorAll('.dot')
+      .forEach((dot, i, list) => {
+        
+        addClassNameListener(dot, () => {
+
+          let index;
+          list.forEach((e,i) => {
+            if(e.classList.contains('is-selected')) {
+              index = i;
+            }
+          })
+
+          title.innerHTML = titleDictionary[index]
+
+        })
+
+      })
+
+
+      function addClassNameListener(elem, callback) {
+      var lastClassName = elem.className;
+      window.setInterval( function() {   
+       var className = elem.className;
+        if (className !== lastClassName) {
+            callback();   
+            lastClassName = className;
+        }
+    },10);
+}
+
+
+
     </script>
 
     <section class="historia__section--resp">

@@ -1,6 +1,8 @@
 import { activitiesReaderService } from "../../services/XSLXActivitiesReaderService.js";
 import { activitiesASGModal } from "../../services/ActivitiesASGModal.js";
 
+const ASG_ACTIVITIES_DIRECTORY_URL = 'https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/imagenes-asg/';
+
 const activities = activitiesReaderService.getActivitiesByCategory("Ambiental");
 
 activities.forEach((activity) => {
@@ -18,6 +20,8 @@ document.querySelectorAll('.actividades__grid__item__a')
       const dialogContent = getDialogContent(activity);
 
       activitiesASGModal.renderASGActivityModal(dialogContent);
+
+
 
 
   })
@@ -46,12 +50,14 @@ function getDialogGridItem({ title, description, id, imageUrl }) {
   `;
 }
 
-function getDialogContent({ title, dateString, category, description, imageUrl}) {
+function getDialogContent({ title, dateString, category, description, imageUrl, specification, quantity}) {
+
   return `
   <section class="detail__dialog">
-    <div class="detail__dialog__img">
-      <img src="${ imageUrl }">
-    </div>
+
+    ${
+      getImageContent(title, specification, quantity, imageUrl)
+    }
     
     <div class="detail__dialog__title">
       <h5>${ title }</h5>
@@ -80,4 +86,48 @@ function getDialogContent({ title, dateString, category, description, imageUrl})
     </div>
   </section>
   `;
+}
+
+
+function getImageContent(title, specification, quantity, imageUrl) {
+  let content = '';
+
+  if(specification == 'Imágenes') {
+
+    let carouselItems = '';
+
+    for (let index = 1; index <= quantity; index++) {
+
+      let urlTitle = title.replaceAll(' ', '%20');
+      urlTitle = urlTitle.concat('%20');
+      const imageURL = ASG_ACTIVITIES_DIRECTORY_URL + urlTitle + `(${ index }).png`;
+      const jpg = imageURL.replace('.png','.jpg');
+      carouselItems +=
+      `
+      <div class="carousel-cell">
+          <img src="${ imageURL }" onerror="this.src='${ jpg }';">
+      </div>
+      `
+
+    }
+
+    content =
+    `
+    <div class="main-carousel" style="margin-bottom: 20px">
+      ${ carouselItems }
+    </div>
+    `;
+
+  } else {
+    content =
+    `
+    <div class="detail__dialog__img">
+      <img src="${ imageUrl }">
+      <a href="${ quantity }" target="_BLANK">Enlance al video</a>
+    </div>
+    `;
+  }
+
+  return content;
+
 }

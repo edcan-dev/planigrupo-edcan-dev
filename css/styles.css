@@ -2193,7 +2193,7 @@ MAIN TABS MARGIN
 .main__plani__info__text {
     display: flex;
     flex-direction: column;
-    padding: 0px 20px;
+    padding: 0px 80px;
     position: absolute;
     width: 500px;
     left: 0px;
@@ -2235,6 +2235,10 @@ MAIN TABS MARGIN
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.slider__info {
+    cursor: pointer;
 }
 
 
@@ -3158,3 +3162,21 @@ MAIN TABS MARGIN
   #dialog_dialog-content {
     padding: 0px ;  
   }
+
+
+.main__plani__info__selector {
+
+    position: relative;
+    color: #C04D00;
+    font-size: 35px;
+    margin: 0px;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.slider__info:hover {
+    font-size: 40px;
+}

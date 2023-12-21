@@ -231,7 +231,8 @@ Responsive Design
 
 .lo_que_hacemos_info--grid {
     margin: 60px auto;
-    width: 60%;
+    width: 100%;
+    max-width: 1000px;
     height: 450px;
     display: grid;
     grid-template-rows: 1fr 3fr;
@@ -269,7 +270,6 @@ li {
 }
 .lo_que_hacemos_info__item--2 > ul > li {
     color: #545859;
-    font-family:  ;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -282,16 +282,21 @@ li {
     border: solid rgb(212, 210, 210) 1px;
 }
 
+#nosotros_info > div > div.lo_que_hacemos_info__item--2 > div.lo-que-hacemos-card-container.tabs___card.tabs___card--3.active > div > div.lo-que-hacemos-card__img {
+    background-position-y: center;
+}
+
 .lo-que-hacemos-card {
     display: flex;
     padding-top: 20px;
-    height: 300px;
+    height: 400px;
 }
 .lo-que-hacemos-card__img {
-    width: 60%;
+    width: 50%;
 
     background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/desarrollo.png');
     background-size: cover;
+    background-position-y: bottom;
 }
 .lo-que-hacemos-card__text {
     width: 40%;
@@ -520,8 +525,8 @@ li {
     }
 
     .loque__bg {
-        display: inline !important;
-        position: absolute;
+/*         display: inline !important;
+ */        position: absolute;
         background-color: #F5F3F1;        
         height: 900px;
         width: 100%;
@@ -561,3 +566,13 @@ li {
     }
 }
 
+.footer {
+    margin-top: 400px !important;
+}
+@media ( max-width: 1000px) {
+    .footer {
+        margin-top: 0px !important;
+        z-index: -10;
+        position: relative;
+    }
+}

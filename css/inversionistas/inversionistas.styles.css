@@ -1,5 +1,7 @@
 .main__hero {
   background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/foto-3.jpg');
+  background-position-y: center;
+  background-position-x: center;
 }
 
 .main__hero_downbar__text {
@@ -805,7 +807,7 @@ article {
 
   .gobierno_grid {
     width: 1200px;
-    height: 500px;
+    min-height: 500px;
     margin: 0 auto;
 
     display: grid;
@@ -856,7 +858,7 @@ article {
     }
 
     & .gobierno_grid__tab_content--1 {
-      overflow-y: scroll;
+      overflow-y: hidden;
     }
 
   }
@@ -989,6 +991,8 @@ article {
     grid-template-rows: repeat(2, 1fr);
 
     row-gap: 40px;
+
+    padding-bottom: 40px;
 
     & .tab_decade__grid__row {
       display: flex;
@@ -1192,6 +1196,7 @@ article {
 
 .inversionistas__tabs__tab--content--5 {
   background-color: #F5F3F1;
+  margin-bottom: 40px;
 
   & .title-container {
 
@@ -2137,4 +2142,10 @@ article {
 }
 .event-info-stopper {
   display: block;
+}
+
+
+
+.footer {
+  margin-top: 80px !important;
 }
