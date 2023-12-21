@@ -20,6 +20,8 @@ class Activity {
   category;
   dateString;
   location;
+  specification;
+  quantity;
 }
 
 await readXlsxFile(xlsx, { sheet: 1 }).then(function (rows) {
@@ -39,6 +41,10 @@ await readXlsxFile(xlsx, { sheet: 1 }).then(function (rows) {
     activity.location = element[2];
     activity.dateString = `${element[3]}-${element[4]}-${element[5]}`;
     activity.imageUrl = element[9];
+
+    activity.specification = element[6];
+    activity.quantity = element[7];
+    
     activity.description = element[10]
 
     activities.push(activity);

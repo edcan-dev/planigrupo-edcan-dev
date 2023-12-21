@@ -47,7 +47,19 @@ class ActivitiesASGModal {
         
         await dialog.show();
 
-        setTimeout(() => {      
+        setTimeout(() => {    
+            
+            
+    var elem = document.querySelector('.main-carousel');
+    var flkty = new Flickity( elem, {
+      cellAlign: 'left',
+      contain: true
+    });
+
+    var flkty = new Flickity( '.main-carousel', {
+
+    });
+            
         document.querySelector('.detail__dialog__close')
         .addEventListener('click', (ev) => {
             dialog.hide();

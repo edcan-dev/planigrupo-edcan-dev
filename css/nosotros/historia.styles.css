@@ -417,3 +417,28 @@ body > main > section.historia__section > div.historia__card.historia__card--tab
   width: 50%;
   max-width: 30%;
 }
+
+.footer {
+  margin-top: 100px !important;
+}
+
+
+.carousel_section_title {
+
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+
+  & span {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: #be4d00;
+    font-family:  Barlow;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 45.71px;
+    letter-spacing: 1px;
+  }
+}

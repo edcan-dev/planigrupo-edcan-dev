@@ -492,7 +492,6 @@
 
   color: #727272;
   text-align: justify;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-family: Raleway;
   font-size: 14px;
   font-style: normal;
@@ -620,4 +619,18 @@
   .header {
     top: 0px;
   }
+}
+
+.main-carousel {
+  height: 500px;
+}
+
+.carousel-cell {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+.carousel-cell > img {
+  object-fit: cover;
+  width: 100%;
 }
