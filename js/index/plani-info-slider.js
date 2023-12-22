@@ -45,8 +45,8 @@ class InfoSlider {
 
 					if(newCurrentText > 2) this.currentText = 0
 
-					console.log(newCurrentText);
-
+/* 					console.log(newCurrentText);
+ */
 					this.#changeSliderContent(newCurrentText)
 				})
 			})

@@ -9,7 +9,6 @@ document.querySelector('.portfolioContactForm')
 
     const formData = new FormData(form)
 
-    console.log(Object.fromEntries(formData));
 
     try {
 
@@ -22,31 +21,43 @@ document.querySelector('.portfolioContactForm')
 
       console.log(response.status);
 
-      const alertContent = {
-        title: 'Correo enviado!',
-        text: 'El correo se ha enviado con éxito!',
-        icon: 'success'
+      if(response.status > 400) {
+        const alertContent = {
+          title: 'Error!',
+          text: 'Ocurrió un error al enviar el correo',
+          icon: 'error',
+        }      
+        renderAlert(alertContent);
+
+      } else {
+
+        const alertContent = {
+          title: 'Correo enviado!',
+          text: 'El correo se ha enviado con éxito!',
+          icon: 'success'
+        }
+        renderAlert(alertContent);
+        clearForm();
       }
-
-      renderAlert(alertContent);
-
 
     } catch (e) {
-
-      const alertContent = {
-        title: 'Error!',
-        text: 'Ocurrió un error al enviar el correo',
-        icon: 'error',
-      }
-
-      renderAlert(alertContent);
-
       console.error(e);
     }
 
 
   });
 
+function clearForm() {
+  document.getElementById('first_name').value = ''
+  document.getElementById('company').value = ''
+  document.getElementById('last_name').value = ''
+  document.getElementById('phone').value = ''
+  document.getElementById('phone').value = ''
+  document.getElementById('email').value = ''
+  document.getElementById('00N5A00000HQFp4').value = ''
+  document.getElementById('00Ni000000Dwzjf').value = ''
+  document.getElementById('00Ni000000Ekl2M').value = ''
+}
 function renderAlert( {title, text, icon } ) {
   Swal.fire({
     title,

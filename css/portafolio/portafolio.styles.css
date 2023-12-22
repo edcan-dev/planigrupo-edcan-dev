@@ -537,16 +537,20 @@
   background-size: 16px 80px;
   background-position-y: -32px;
 }
+
+#element > div.tenants_container > ul > li:nth-child(1) {
+  height: 40px;
+}
 .tenants_container {
   position: absolute;
   right: 0px;
-  top: 10px;
+  top: 0px;
   width: 280px;
 
   cursor: pointer;
   & ul {
     & li {
-      height: 55px;
+      height: 60px;
     }
 
     & .tenant__name {
@@ -560,7 +564,7 @@
       font-style: normal;
       font-weight: 700;
       letter-spacing: 1px;
-      line-height: 50px;
+      line-height: 40px;
       padding-left: 10px;
     }
     & .tenant__name__item {
@@ -570,6 +574,9 @@
 
       & .tenant__name__item__text {
         width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
         & p {
           color: #0096a9;
           text-align: justify;

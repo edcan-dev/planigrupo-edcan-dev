@@ -118,8 +118,8 @@ forEach(div => {
     const propId = div.id;
     const propertyDetail = getPropertyDetailById(propId)
 
-    console.log(propertyDetail);
-    propertyDetailDialogService.renderDetail(propertyDetail);  
+/*     console.log(propertyDetail);
+ */    propertyDetailDialogService.renderDetail(propertyDetail);  
   })
 })
 /* 
