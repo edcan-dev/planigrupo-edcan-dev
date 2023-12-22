@@ -3036,6 +3036,8 @@ MAIN TABS MARGIN
                 text-transform: capitalize;
               }
               & small {
+                display: inline-block;
+                margin-bottom: 10px;
                 color: #53575a;
                 text-align: justify;
                 font-family: Raleway;

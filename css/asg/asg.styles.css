@@ -179,7 +179,7 @@
 .section--2 > .reports__container {
   width: 90%;
   max-width: 1000px;
-  min-height: 500px;
+  min-height: 400px;
   margin: 0 auto;
 
   display: flex;
@@ -227,7 +227,7 @@
   > div.reports__item__reports {
   height: 440px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
@@ -240,7 +240,7 @@
   background-color: #f5f3f1;
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 30%;
   margin: 0 auto;
   padding: 40px;
 }
@@ -252,6 +252,7 @@
     display: flex;
     justify-content: center;
     background-image: url('./arrow.svg');
+    transform: rotate(-90deg);
     height: 20px;
     width: 30px;
     background-repeat: no-repeat;
@@ -262,7 +263,7 @@
   > .reports__item__reports
   > .reports__item__reports__arrow--reversed {
 
-    transform: rotate(180deg);
+    transform: rotate(90deg)
 }
 
 .section--2
@@ -505,6 +506,14 @@ hr {
 
 
 @media (max-width: 1000px) {
+
+  .section--2
+  > div
+  > div.reports__item.reports__item--1
+  > div.reports__item__reports {
+      flex-direction: column;
+    }
+
   .hero {
     padding-top: 80px;
     display: flex;
@@ -587,8 +596,8 @@ hr {
     > .reports__item--1
     > .reports__item__reports
     > .reports__item__reports__report {
-    width: 60%;
-    padding: 20px 40px;
+    width: 40%;
+    padding: 20px 20px;
   }
 
   .reports__item--2 > .reports__item__calendar {
@@ -794,4 +803,8 @@ hr {
 
 .actividades__grid__tab__selectors > ul > .selected {
   background-color: #8e0f14;
+}
+
+.footer {
+  margin-top: 0px !important;
 }

@@ -33,9 +33,7 @@ function onOverlayClick() {
 }
 
 export function renderIndexDetail(propertyDetail) {
-  console.log(propertyDetail);
         const propertyTenants = getTenantsElements(propertyDetail.tenants).join('');
-        console.log(propertyTenants)
 
         document.querySelector("#dialog_dialog-content").innerHTML = `
     <section class="detail">
@@ -128,8 +126,10 @@ export function renderIndexDetail(propertyDetail) {
 
           <div class="indicators__list__item">
             <div>
-              <p> ${ propertyDetail.totalSurface } </p>
               <small>Superficie Total</small>
+              <p>
+              ${ getFormattedUsableArea(propertyDetail.totalSurface) }
+              </p>
             </div>
             <!--
             <div>
@@ -138,20 +138,21 @@ export function renderIndexDetail(propertyDetail) {
             </div>
             -->
             <div>
-              <p> ${ propertyDetail.rentableArea } </p>
               <small>Comercial</small>
+              <p> ${ getFormattedUsableArea(propertyDetail.totalSurface) } </p>
+              </p>
             </div>
           </div>
 
 
           <div class="indicators__list__item">
             <div>
+            <small>Area de Juegos para Niños</small>
               <p> ${ propertyDetail.playground }</p>
-              <small>Area de Juegos para Niños</small>
             </div>
             <div>
-              <p> ${ propertyDetail.type }</p>
               <small>Tipo</small>
+              <p> ${ propertyDetail.type }</p>
             </div>
           </div>
 
@@ -159,12 +160,12 @@ export function renderIndexDetail(propertyDetail) {
           <div class="indicators__list__item">
             
             <div>
-              <p>${ propertyDetail.storesNumber }</p>
               <small>Tiendas</small>
+              <p>${ propertyDetail.storesNumber }</p>
             </div>
             <div>
-              <p>${propertyDetail.parking }</p>
               <small>Estacionamiento</small>
+              <p>${propertyDetail.parking }</p>
             </div>
           </div>
 
@@ -178,28 +179,30 @@ export function renderIndexDetail(propertyDetail) {
 
           <div class="indicators__list__item">
             <div>
-            <p>${ propertyDetail.anchors }</p>
             <small>Anclas</small>
+            <p>${ getFormattedTentants( propertyDetail.anchors) }</p>
             </div>
             <div>
+            <small>Arredamientos Importantes</small>
             <p>${ getFormattedTentants(propertyDetail.tenants).join(', ')}</p>
-              <small>Arredamientos Importantes</small>
             </div>
           </div>
 
 
           <div class="indicators__list__item">
             <div>
+            <small>Sub Anclas</small>
             <p>${
-              propertyDetail.subAnchors
+              getFormattedTentants(
+                propertyDetail.subAnchors
+              )
             /*   pickRandomElements(
               getFormattedTentants(propertyDetail.tenants), 5).join(', ')
              */}</p>
-              <small>Sub Anclas</small>
             </div>
             <div>
+            <small>Complejo De Cine</small>
             <p>${ propertyDetail.cinema }</p>
-              <small>Complejo De Cine</small>
             </div>
           </div>
 
@@ -241,180 +244,185 @@ export async function initializeDetailDialog(keyName) {
         console.log(propertyTenants)
 
         document.querySelector("#dialog_dialog-content").innerHTML = `
-    <section class="detail">
-    <img src="${ propertyDetail.heroImageUrl }" class="detail__hero__img">
-    </img>
-
-    <div class="detail__hero__info">
-      <div class="detail__hero__info--blue">
-        <img src="${ propertyDetail.logoImageUrl }">
-      </div>
-      <div class="detail__hero__info--light--gray">
-        <div>
-          <b>Ubicación</b>
-          <p>${ propertyDetail.location }</p>
-        </div>
-      </div>
-      <div class="detail__hero__info--gray">
-        <div>
-          <b>Teléfono</b>
-          <p>${ propertyDetail.phoneNumber }</p>
-        </div>
-        <div>
-          <b>Web</b>
-          <a target="_BLANK" href="${ propertyDetail.webSite }" >${ propertyDetail.webSite }</a>
-        </div>
-        
-      </div>
-    </div>
-
-    <div class="detail__hero__close">
-    X
-    </div>
-
-    <div class="map__footer">
-        <div class="map__footer__item">
-          <span>${propertyDetail.startDate}</span>
-          <p>INICIO DE OPERACIONES</p>
-        </div>
-        <div class="map__footer__item">
-        <span>${ 
-          getFormattedUsableArea(propertyDetail.rentableArea)}
-        <small style="font-size: 16px;">m2</small></span>
-        <p>AREA RENTABLE COMERCIAL</p>
-        </div>
-        <div class="map__footer__item map__footer__item--last">
-          <span>${
-            (propertyDetail.usedRate * 100) ==  100 ? (propertyDetail.usedRate * 100) + '%' : (propertyDetail.usedRate * 100).toPrecision(4) + '%'     
-          }</span>
-          <p>PORCENTAJE DE USO</p>
-        </div>
-      </div>
-
-    <div class="detail__about">
-      <span>ACERCA DE ${ propertyDetail.name }</span>
-      <p>${ propertyDetail.description }</p>
-    </div>
-    <div class="detail__tenant__icons">
-      ${ propertyTenants }
-    </div>
-
-    <div class="detail__tab--selector">
-      <ul>
-        <li id="detail__tab--selector--1" class="detail__tab--selector selected">DIRECTORIO</li>
-        <li class="detail__tab--selector--splitter">|</li>
-        <li id="detail__tab--selector--2" class="detail__tab--selector">INDICADORES CLAVE</li>
-        <li class="detail__tab--selector--splitter">|</li>
-        <li id="detail__tab--selector--3" class="detail__tab--selector">MAPA</li>
-      </ul>
-
-    </div>
-
-    <div class="detail__tab--contents">
+        <section class="detail">
+        <img src="${ propertyDetail.heroImageUrl }" class="detail__hero__img">
+        </img>
     
-      <div id="detail__tab--content--1" class="detail__tab--content">
-
-      
-
-      <img class="map" src="${ propertyDetail.directoryImageUrl }"></img>
-
-        
-      </div>
-
-      
-      <div id="detail__tab--content--2" class="detail__tab--content inactive">
-
-        <div class="indicators__list">
-          <div class="indicators__list__header">
-            <span>DATOS</span>
+        <div class="detail__hero__info">
+          <div class="detail__hero__info--blue">
+            <img src="${ propertyDetail.logoImageUrl }">
           </div>
-
-          <div class="indicators__list__item">
+          <div class="detail__hero__info--light--gray">
             <div>
-              <p> ${ propertyDetail.totalSurface } </p>
-              <small>Superficie Total</small>
-            </div>
-            <!--
-            <div>
-            <p> ${ "AQUI VA CONS"} </p>
-            <small>Construcción</small>
-            </div>
-            -->
-            <div>
-              <p> ${ propertyDetail.rentableArea } </p>
-              <small>Comercial</small>
+              <b>Ubicación</b>
+              <p>${ propertyDetail.location }</p>
             </div>
           </div>
-
-
-          <div class="indicators__list__item">
+          <div class="detail__hero__info--gray">
             <div>
-              <p> ${ propertyDetail.playground }</p>
-              <small>Area de Juegos para Niños</small>
+              <b>Teléfono</b>
+              <p>${ propertyDetail.phoneNumber }</p>
             </div>
             <div>
-              <p> ${ propertyDetail.type }</p>
-              <small>Tipo</small>
+              <b>Web</b>
+              <a target="_BLANK" href="${ propertyDetail.webSite }" >${ propertyDetail.webSite }</a>
             </div>
-          </div>
-
-
-          <div class="indicators__list__item">
             
-            <div>
-              <p>${ propertyDetail.storesNumber }</p>
-              <small>Tiendas</small>
-            </div>
-            <div>
-              <p>${propertyDetail.parking }</p>
-              <small>Estacionamiento</small>
-            </div>
           </div>
-
-
         </div>
-
-        <div class="indicators__list indicators__list--second">
-          <div class="indicators__list__header">
-            <span>INQUILINOS</span>
-          </div>
-
-          <div class="indicators__list__item">
-            <div>
-            <p>${ propertyDetail.anchors }</p>
-            <small>Anclas</small>
-            </div>
-            <div>
-            <p>${ getFormattedTentants(propertyDetail.tenants).join(', ')}</p>
-              <small>Arredamientos Importantes</small>
-            </div>
-          </div>
-
-
-          <div class="indicators__list__item">
-            <div>
-            <p>${
-              propertyDetail.subAnchors
-            /*   pickRandomElements(
-              getFormattedTentants(propertyDetail.tenants), 5).join(', ')
-             */}</p>
-              <small>Sub Anclas</small>
-            </div>
-            <div>
-            <p>${ propertyDetail.cinema }</p>
-              <small>Complejo De Cine</small>
-            </div>
-          </div>
-
+    
+        <div class="detail__hero__close">
+        X
         </div>
-
-      </div>
-
-      <div id="detail__tab--content--3" class="detail__tab--content inactive">
-      <iframe src="${propertyDetail.iFrameSrc}" width="1100" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-    </div>
-  </section>
+    
+        <div class="map__footer">
+            <div class="map__footer__item">
+              <span>${propertyDetail.startDate}</span>
+              <p>INICIO DE OPERACIONES</p>
+            </div>
+            <div class="map__footer__item">
+            <span>${ 
+              getFormattedUsableArea(propertyDetail.rentableArea)}
+            <small style="font-size: 16px;">m2</small></span>
+            <p>AREA RENTABLE COMERCIAL</p>
+            </div>
+            <div class="map__footer__item map__footer__item--last">
+              <span>${
+                (propertyDetail.usedRate * 100) ==  100 ? (propertyDetail.usedRate * 100) + '%' : (propertyDetail.usedRate * 100).toPrecision(4) + '%'     
+              }</span>
+              <p>PORCENTAJE DE USO</p>
+            </div>
+          </div>
+    
+        <div class="detail__about">
+          <span>ACERCA DE ${ propertyDetail.name }</span>
+          <p>${ propertyDetail.description }</p>
+        </div>
+        <div class="detail__tenant__icons">
+          ${ propertyTenants }
+        </div>
+    
+        <div class="detail__tab--selector">
+          <ul>
+            <li id="detail__tab--selector--1" class="detail__tab--selector selected">DIRECTORIO</li>
+            <li class="detail__tab--selector--splitter">|</li>
+            <li id="detail__tab--selector--2" class="detail__tab--selector">INDICADORES CLAVE</li>
+            <li class="detail__tab--selector--splitter">|</li>
+            <li id="detail__tab--selector--3" class="detail__tab--selector">MAPA</li>
+          </ul>
+    
+        </div>
+    
+        <div class="detail__tab--contents">
+        
+          <div id="detail__tab--content--1" class="detail__tab--content">
+    
+          
+    
+          <img class="map" src="${ propertyDetail.directoryImageUrl }"></img>
+    
+            
+          </div>
+    
+          
+          <div id="detail__tab--content--2" class="detail__tab--content inactive">
+    
+            <div class="indicators__list">
+              <div class="indicators__list__header">
+                <span>DATOS</span>
+              </div>
+    
+              <div class="indicators__list__item">
+                <div>
+                  <small>Superficie Total</small>
+                  <p>
+                  ${ getFormattedUsableArea(propertyDetail.totalSurface) }
+                  </p>
+                </div>
+                <!--
+                <div>
+                <p> ${ "AQUI VA CONS"} </p>
+                <small>Construcción</small>
+                </div>
+                -->
+                <div>
+                  <small>Comercial</small>
+                  <p> ${ getFormattedUsableArea(propertyDetail.totalSurface) } </p>
+                  </p>
+                </div>
+              </div>
+    
+    
+              <div class="indicators__list__item">
+                <div>
+                <small>Area de Juegos para Niños</small>
+                  <p> ${ propertyDetail.playground }</p>
+                </div>
+                <div>
+                  <small>Tipo</small>
+                  <p> ${ propertyDetail.type }</p>
+                </div>
+              </div>
+    
+    
+              <div class="indicators__list__item">
+                
+                <div>
+                  <small>Tiendas</small>
+                  <p>${ propertyDetail.storesNumber }</p>
+                </div>
+                <div>
+                  <small>Estacionamiento</small>
+                  <p>${propertyDetail.parking }</p>
+                </div>
+              </div>
+    
+    
+            </div>
+    
+            <div class="indicators__list indicators__list--second">
+              <div class="indicators__list__header">
+                <span>INQUILINOS</span>
+              </div>
+    
+              <div class="indicators__list__item">
+                <div>
+                <small>Anclas</small>
+                <p>${ getFormattedTentants( propertyDetail.anchors) }</p>
+                </div>
+                <div>
+                <small>Arredamientos Importantes</small>
+                <p>${ getFormattedTentants(propertyDetail.tenants).join(', ')}</p>
+                </div>
+              </div>
+    
+    
+              <div class="indicators__list__item">
+                <div>
+                <small>Sub Anclas</small>
+                <p>${
+                  getFormattedTentants(
+                    propertyDetail.subAnchors
+                  )
+                /*   pickRandomElements(
+                  getFormattedTentants(propertyDetail.tenants), 5).join(', ')
+                 */}</p>
+                </div>
+                <div>
+                <small>Complejo De Cine</small>
+                <p>${ propertyDetail.cinema }</p>
+                </div>
+              </div>
+    
+            </div>
+    
+          </div>
+    
+          <div id="detail__tab--content--3" class="detail__tab--content inactive">
+          <iframe src="${propertyDetail.iFrameSrc}" width="1100" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </section>
     `;
         dialog.show();
         document
@@ -632,7 +640,10 @@ function getFormattedUsableArea( usableArea ) {
 function getFormattedTentants(tenants) {
   return tenants.map(str => {
     //str = str.charAt(0).toUpperCase() + str.slice(1)
-    str = str.toUpperCase();
+    str = str.toLowerCase();
+    
+    str = str.charAt(0).toUpperCase() + str.slice(1);
+
     return str.replaceAll('-',' ')
   })
 }
