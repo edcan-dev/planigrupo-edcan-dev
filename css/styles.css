@@ -3024,6 +3024,9 @@ MAIN TABS MARGIN
   
             & div {
               padding: 10px 10px;
+              display: flex;
+              flex-direction: column;
+              height: 100%;
               & p {
                 color: #53575a;
                 text-align: justify;
@@ -3089,7 +3092,7 @@ MAIN TABS MARGIN
         }
   
         & .indicators__list--second {
-          padding-top: 80px;
+          padding-top: 50px !important;
           background-color: #f5f3f1;
         }
       }

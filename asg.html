@@ -39,14 +39,20 @@
     <link href="https://cdn.syncfusion.com/ej2/23.1.36/ej2-base/styles/material.css" rel="stylesheet">
     <link href="https://cdn.syncfusion.com/ej2/23.1.36/ej2-buttons/styles/material.css" rel="stylesheet">
     <link href="https://cdn.syncfusion.com/ej2/23.1.36/ej2-calendars/styles/material.css" rel="stylesheet">
-<!--     <script defer src="js/asg/calendar.js"></script>
- -->    
+
+    <!-- ASG CAROUSEL -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
     <!-- Actividades Grid -->
-    <script defer type="module" src="./js/asg/actividades-grid.js"></script>
     <script defer type="module" src="./js/asg/read-excel-file.min.js"></script>
+    <script defer type="module" src="./js/asg/services/XSLXActivitiesReaderService.js"></script>`
+    <script defer type="module" src="./js/asg/services/ActivitiesASGModal.js"></script>
+    <script defer type="module" src="./js/asg/services/ActivitiesGridService.js"></script>
+    <script defer type="module" src="./js/asg/services/ActivitiesPagingAndSortingService.js"></script>`
+    
     
     <!-- Dialog Custom Script -->
-    <script defer type="module" src="./js/asg/asg-detail-dialog.js"></script>
     <script defer src="./js/asg/generic-tab-component.js"></script>
     
     
@@ -357,7 +363,7 @@
                 <option value="all">Todas</option>
                 <option value="Social">Sociales</option>
                 <option value="Ambiental">Ambientales</option>
-                <option value="Corporativas">Corporativas</option>
+                <option value="Corporativa">Corporativas</option>
               </select>
             </div>
 
@@ -380,30 +386,14 @@
             
           </div>
 
-          <div class="actividades__grid">
+          <div
+            class="forthSection__grid"
+            style="
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            "
+          >
 
-          <!--
-            <div class="actividades__grid__item">
-              <div class="actividades__grid__item__title">
-                <p>
-                  Máquinas de Reciclaje-AIEn
-                </p>
-              </div>
-
-              <div class="actividades__grid__item__img">
-              </div>
-
-              <div class="actividades__grid__item__description">
-                <p>
-                  De enero-abril 2022 se reciclaron más de 300 mil botellas de plástico equivalentes a una reducción de 17,642 kg de CO2
-                </p>
-              </div>
-              
-              <div class="actividades__grid__item__a">
-                <a>VER MÁS</a>
-              </div>
-            </div>
-          -->
           </div>
 
         </div>

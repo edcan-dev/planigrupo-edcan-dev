@@ -1,9 +1,10 @@
-import { activitiesReaderService } from "../../services/XSLXActivitiesReaderService.js";
-import { activitiesASGModal } from "../../services/ActivitiesASGModal.js";
+import { activitiesReaderService } from "./XSLXActivitiesReaderService.js";
+import { activitiesASGModal } from "./ActivitiesASGModal.js";
 
 const ASG_ACTIVITIES_DIRECTORY_URL = 'https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/imagenes-asg/';
 
-let activities = activitiesReaderService.getActivitiesByCategory("Ambiental");
+let activities = activitiesReaderService.getActivities();
+
 
 activities.forEach((activity) => {
   const activityGridItem = getDialogGridItem(activity);
@@ -20,31 +21,73 @@ document.querySelectorAll('.actividades__grid__item__a')
       const dialogContent = getDialogContent(activity);
 
       activitiesASGModal.renderASGActivityModal(dialogContent);
-
-
-
-
   })
 })
 
 export function renderGrid(category) {
 
-  console.log(activities);
+    activities = activitiesReaderService.getActivities();
+    
+    console.log(activities);
+    
+    if(category != 'all') {
 
-   activities = activities.filter(activity => {
-    console.log(activity.category);
-    return activity.category == category
-  })
+        activities = activities.filter(activity => {
+            console.log(activity.category);
+            return activity.category == category
+        })
+    }
+        
+    document.querySelector(".forthSection__grid").innerHTML = ''
 
-  console.log(activities);
+    activities.forEach((activity) => {
+        const activityGridItem = getDialogGridItem(activity);
+        document.querySelector(".forthSection__grid").innerHTML += activityGridItem;
+    });
 
+    document.querySelectorAll('.actividades__grid__item__a')
+  .forEach(activityAnchor => {
+    activityAnchor.addEventListener('click',(ev) => {
+      const activityId = ev.target.parentElement.nextElementSibling.innerHTML;
+      const activity = activitiesReaderService.getActivityById(activityId);
 
-  document.querySelector(".forthSection__grid").innerHTML = undefined
+      const dialogContent = getDialogContent(activity);
 
-  activities.forEach((activity) => {
-    const activityGridItem = getDialogGridItem(activity);
-    document.querySelector(".forthSection__grid").innerHTML += activityGridItem;
-  });
+      activitiesASGModal.renderASGActivityModal(dialogContent);
+    })
+    })
+
+}
+
+export function renderGridByYear(year) {
+
+    activities = activitiesReaderService.getActivities();
+        
+    if(year != 'all') {
+
+        activities = activities.filter(activity => {
+            console.log(activity.year);
+            return activity.year == year
+        })
+    }
+        
+    document.querySelector(".forthSection__grid").innerHTML = ''
+
+    activities.forEach((activity) => {
+        const activityGridItem = getDialogGridItem(activity);
+        document.querySelector(".forthSection__grid").innerHTML += activityGridItem;
+    });
+
+    document.querySelectorAll('.actividades__grid__item__a')
+        .forEach(activityAnchor => {
+            activityAnchor.addEventListener('click',(ev) => {
+        const activityId = ev.target.parentElement.nextElementSibling.innerHTML;
+        const activity = activitiesReaderService.getActivityById(activityId);
+
+        const dialogContent = getDialogContent(activity);
+            activitiesASGModal.renderASGActivityModal(dialogContent);
+    })
+    })
 
 }
 

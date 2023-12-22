@@ -808,3 +808,13 @@ hr {
 .footer {
   margin-top: 0px !important;
 }
+
+.carousel-cell {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+.carousel-cell > img {
+  object-fit: cover;
+  width: 100%;
+}
