@@ -145,7 +145,7 @@ export function renderIndexDetail(propertyDetail) {
           </div>
 
 
-          <div class="indicators__list__item">
+          <div class="indicators__list__item" style="background-color: #f5f3f1">
             <div>
             <small>Area de Juegos para Niños</small>
               <p> ${ propertyDetail.playground }</p>
@@ -189,7 +189,7 @@ export function renderIndexDetail(propertyDetail) {
           </div>
 
 
-          <div class="indicators__list__item">
+          <div class="indicators__list__item" style="background-color: #f5f3f1">
             <div>
             <small>Sub Anclas</small>
             <p>${
@@ -353,7 +353,7 @@ export async function initializeDetailDialog(keyName) {
               </div>
     
     
-              <div class="indicators__list__item">
+              <div class="indicators__list__item" style="background-color: #f5f3f1">
                 <div>
                 <small>Area de Juegos para Niños</small>
                   <p> ${ propertyDetail.playground }</p>
@@ -397,7 +397,7 @@ export async function initializeDetailDialog(keyName) {
               </div>
     
     
-              <div class="indicators__list__item">
+              <div class="indicators__list__item" style="background-color: #f5f3f1">
                 <div>
                 <small>Sub Anclas</small>
                 <p>${

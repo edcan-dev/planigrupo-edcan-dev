@@ -19,6 +19,7 @@ class Activity {
   description;
   category;
   dateString;
+  year;
   location;
   specification;
   quantity;
@@ -47,6 +48,8 @@ await readXlsxFile(xlsx, { sheet: 1 }).then(function (rows) {
     
     activity.description = element[10]
 
+    activity.year = element[5]
+    
     activities.push(activity);
   }
   
