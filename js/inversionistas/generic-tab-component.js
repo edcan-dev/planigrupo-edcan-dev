@@ -66,3 +66,8 @@ document.querySelectorAll('.main_tab__selector')
             mainSelector.classList.add('tab-selector--selected')
         })
     })
+
+const comunicadosTabs = new GenericTabsComponent(
+    '.tab_decade__selector__item',
+    '.tab_decade__grid__row'
+).initialize();
