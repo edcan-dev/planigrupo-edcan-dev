@@ -1,5 +1,5 @@
-import  * as propertyDetailDialogService  from "../../services/PropertDetailDialogService.js";
-import  { getPropertyDetailById }  from "../../portafolio/xlsx-reader.js";
+/* import  * as propertyDetailDialogService  from "../../services/PropertDetailDialogService.js";
+import  { getPropertyDetailById }  from "../../portafolio/xlsx-reader.js"; */
 const response = await fetch('https://edcan-dev.github.io/planigrupo-edcan-dev/data/oportunidades.carousel.properties.json')
 //const response = await fetch('../data/oportunidades.carousel.properties.json')
 const jsonDatasource = await response.json();
@@ -110,20 +110,26 @@ var tenantsCarouselObj = new ej.navigations.Carousel({
 tenantsCarouselObj.appendTo("#tenants_carousel");
 
 
-document.querySelectorAll('.oportunidades__carousel__div').
-forEach(div => {
+if(localStorage.getItem('propertiesArray') != null) {
 
-  div.addEventListener('click',(ev)=> {
-    ev.stopPropagation();
-    const propId = div.id;
-    const propertyDetail = getPropertyDetailById(propId)
+  import('../../services/PropertDetailDialogService.js')
+  .then(m => {
 
-/*     console.log(propertyDetail);
- */    propertyDetailDialogService.renderDetail(propertyDetail);  
+    import("../../portafolio/xlsx-reader.js")
+      .then(m2 => {
+        
+        document.querySelectorAll('.oportunidades__carousel__div').
+        forEach(div => {
+          div.addEventListener('click',(ev)=> {
+            ev.stopPropagation();
+            const propId = div.id;
+            const propertyDetail = m2.getPropertyDetailById(propId)
+            m.renderDetail(propertyDetail);  
+          })
+        })
+
+      })
+
   })
-})
-/* 
-propertyDetailDialogService.renderDetail()*/
-function getPropertyDetailDialogContent() {
-  
+
 }

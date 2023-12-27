@@ -151,7 +151,7 @@
 }
 
 .main__row {
-    margin-top: 50px;
+    margin-top: 10px;
     display: flex;
     justify-content: space-around;
 }
@@ -198,7 +198,7 @@
     /* background-color: #F5F3F1; */
     background-color: #F5F3F1;
     padding: 10px 30px;
-    margin-top: 40px;
+    margin-top: 10px;
 }
 
 .main__spliter__p {
@@ -337,7 +337,7 @@
 .main__all-properties {
     width: 100%;
     display: flex;
-    margin: 40px 0px;
+    margin: 0px 0px 60px;
 }
 
 .main__all-properties>a {
@@ -548,14 +548,15 @@
 
 .tab__card__text>p {
     color: #000;
-    text-align: justify;
+    text-align: left;
     font-family: Raleway;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
-    line-height: 25px;
+    line-height: 20px;
     /* 208.333% */
     margin-top: 20px;
+    padding-right: 20px;
 
 }
 
@@ -1340,7 +1341,7 @@
 .qoute>div {
     display: flex;
     justify-content: center;
-    padding: 40px;
+    padding: 20px 40px;
 }
 
 .qoute>div>p {
@@ -2226,7 +2227,7 @@ MAIN TABS MARGIN
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 25px;
+    line-height: 20px;
     margin-top: 20px;
     text-align: center;     
 }
@@ -2341,8 +2342,8 @@ MAIN TABS MARGIN
 
     & .compromise__grid {
         width: 1200px;
-        height: 400px;
-        margin: 100px auto;
+        height: 300px;
+        margin: 60px auto 0px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         column-gap: 40px;
@@ -2369,13 +2370,14 @@ MAIN TABS MARGIN
             }
             & p {
                 color: #000;
-                text-align: justify;
+                text-align: left;
                 font-family: Raleway;
                 font-size: 13px;
                 font-style: normal;
                 font-weight: 400;
-                line-height: 25px; /* 192.308% */
+                line-height: 20px; /* 192.308% */
                 letter-spacing: 1px;
+                padding: 0px;
             }
             .familias {
                 line-height: 44px;
@@ -2651,7 +2653,7 @@ MAIN TABS MARGIN
 
 
 .control-container {
-    height: 600px;
+    height: 550px;
 }
 
 .social__container {
@@ -3184,4 +3186,78 @@ MAIN TABS MARGIN
 
 .slider__info:hover {
     font-size: 40px;
+}
+
+.main__tabs {
+    margin-top: 400px !important;
+    margin-bottom: 40px !important;
+}
+
+@media(max-width: 1200px) {
+    
+    .main__tabs {
+        margin-top: 550px !important;
+        margin-bottom: 40px !important;
+    }   
+}
+
+
+
+
+.languaje--selector {
+    position: absolute;
+    z-index: 10000;
+    right: 9vw;
+    top: 8px;
+
+    list-style: none;
+    color: #9b9999 ;
+    font-family: 'Raleway';
+    font-size: 10px;
+    margin: 0 20px 5px auto;
+    letter-spacing: 1px;
+
+    & li > b > a {
+        color: #9b9999 !important;  
+    }
+    & li  > a {
+        color: #9b9999 !important;  
+    }
+
+}
+
+@media(max-width: 1800px) {
+    .languaje--selector {
+        right: 8vw;
+    }
+}
+@media(max-width: 1700px) {
+    .languaje--selector {
+        right: 7vw;
+    }
+}
+@media(max-width: 1600px) {
+    .languaje--selector {
+        right: 6vw;
+    }
+}
+@media(max-width: 1500px) {
+    .languaje--selector {
+        right: 5vw;
+    }
+}
+@media(max-width: 1400px) {
+    .languaje--selector {
+        right: 4vw;
+    }
+}
+@media(max-width: 1300px) {
+    .languaje--selector {
+        right: 2vw;
+    }
+}
+@media(max-width: 1200px) {
+    .languaje--selector {
+        right: 0vw;
+    }
 }

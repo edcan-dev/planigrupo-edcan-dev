@@ -12,12 +12,16 @@
   text-align: justify;
 }
 
+.gobernanza_section--1__selectors {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 .gobernanza_section--1 > div > ul {
   display: flex;
   flex-wrap: wrap;
-  width: 80%;
-  max-width: 1200px;
-  margin: 0 auto;
+  width: 750px;
+  max-width: 90%;
   margin-bottom: 20px;
   margin-top: 40px;
   justify-content: space-between;
@@ -32,6 +36,7 @@
   line-height: 50px; /* 277.778% */
   letter-spacing: 1px;
   text-transform: uppercase;
+  list-style: none;
 
   cursor: pointer;
 }
@@ -431,6 +436,7 @@
     line-height: 60px; /* 194.444% */
   }
 }
+
 /*
 https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/gobernanza/section3.png
 */

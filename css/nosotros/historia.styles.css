@@ -65,7 +65,7 @@
   line-height: 18.57px;
   /* 132.643% */
   letter-spacing: 1px;
-  text-align: justify;
+  text-align: left;
 }
 
 .historia__timeline {
@@ -384,8 +384,8 @@ body > main > section.historia__section > div.historia__card.historia__card--tab
 }
 
 .carousel_section {
-  margin-top: 80px;
-  margin-bottom: 80px;
+  margin-top: 60px;
+  margin-bottom: 40px;
 }
 .main-carousel {
   width: 1200px ;
@@ -397,6 +397,14 @@ body > main > section.historia__section > div.historia__card.historia__card--tab
   width: 100%; /* full width */
   height: 400px; /* height of carousel */
   margin-right: 10px;
+}
+.carousel-cell--last > .carousel-cell__content__item {
+  justify-content: start;
+
+  
+  & .historia__card__item {
+    margin-right: 50px;
+  }
 }
 
 .carousel-cell__content {
@@ -420,6 +428,9 @@ body > main > section.historia__section > div.historia__card.historia__card--tab
 
 .footer {
   margin-top: 100px !important;
+}
+.footer--historia {
+  margin-top: 80px !important;
 }
 
 

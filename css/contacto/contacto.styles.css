@@ -729,8 +729,18 @@ li {
     width: 100%;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 150px;
+    min-height: 150px;
     justify-content: space-between;
+}
+
+.contacto__form__card__form--portfolio--email {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-right: 40px;
 }
 
 .contacto__form__card__form--portfolio--email {
@@ -761,6 +771,18 @@ li {
     padding-right: 40px;
 }
 
+/* @media (max-width: 1000px) {
+ */    .contacto__form__card__form--portfolio--email,.contacto__form__card__form--portfolio--personalidad,
+    .contacto__form__card__form--portfolio--comentarios {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-right: 20px;
+    }   
+/* } */
 .contacto__form__card__form--portfolio--email > label {
     font-family: 'Barlow';
     font-size: 16px;
@@ -833,4 +855,12 @@ li {
 .contacto__form__card__form--submit > label {
     padding: 0px;
     line-height: 40px;
+}
+
+
+@media (max-width: 1000px) {
+    .oportunidades__carousel {
+        margin-top: 20px !important;
+        margin-bottom: 40px !important;
+    }
 }

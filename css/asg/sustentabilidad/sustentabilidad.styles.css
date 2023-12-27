@@ -5,7 +5,7 @@
 
   & p {
     color: #727272;
-    text-align: justify;
+    text-align: left;
     font-family: Raleway;
     font-size: 14px;
     font-style: normal;
@@ -19,7 +19,7 @@
 .contentOne {
   height: 70lvh;
   max-height: 600px;
-  margin-bottom: 40px !important;
+  margin-bottom: 80px !important;
   }
 
 .contentOne_text > p {
@@ -60,7 +60,7 @@
 .susAsg_cont2__icons {
   width: 90%;
   max-width: 1200px;
-  margin: 40px auto 120px;
+  margin: 40px auto 60px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 120px;
@@ -91,7 +91,7 @@
   font-weight: 400;
   line-height: 20px; /* 153.846% */
   letter-spacing: 1px;
-  text-align: justify;
+  text-align: left;
 }
 .susAsg_cont2__icons__item__img {
   background-image: url("https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/sustentabilidad/Identificacion.png");
@@ -136,7 +136,7 @@
     display: inline-block;
     margin-bottom: 20px;
     color: #727272;
-    text-align: justify;
+    text-align: left;
     font-family: Raleway;
     font-size: 14px;
     font-style: normal;
@@ -271,9 +271,14 @@
   letter-spacing: 1px;
   height: 60px;
   cursor: pointer;
+  list-style: none;
+}
+.susAsg_cont2_topics__tabs__selectors__list > ul > li:hover {
+  color: #0096a9;
 }
 .susAsg_cont2_topics__tabs__selectors__list > ul > li.selected {
   font-weight: bolder;
+  color: #0096a9;
 }
 
 .susAsg_cont2_topics__tabs__contents {
@@ -358,7 +363,7 @@
 
   p {
     color: #727272;
-    text-align: justify;
+    text-align: left;
     font-family: Raleway;
     font-size: 14px;
     font-style: normal;
@@ -380,8 +385,8 @@
 
 .thirdSection__slider__selectors {
   position: absolute;
-  bottom: 0px;
-  left: 40px;
+  bottom: 10px;
+  left: 140px;
   z-index: 1;
 }
 
@@ -408,14 +413,18 @@
 .thirdSection__slider__content {
   display: flex;
   justify-content: space-between;
+  background: rgba(178, 180, 178, 0.20);
+  padding: 10px;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .thirdSection__slider__content__text {
   width: 50%;
-  padding: 40px 40px;
+  padding: 0px 10px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   & span {
     color: #0096a9;
     font-family: Barlow;
@@ -435,7 +444,7 @@
     font-weight: 400;
     line-height: 20px; /* 142.857% */
     letter-spacing: 1px;
-    text-align: justify;
+    text-align: left;
   }
 }
 
@@ -445,7 +454,6 @@
   height: 100%;
   background-repeat:repeat-y;
   background-size: cover;
-  margin-right: 40px;
 }
 
 
@@ -500,10 +508,6 @@
   letter-spacing: 1px;
 }
 
-.forthSection__grid > div {
-  background-color: #f0f0f0;
-
-}
 
 .actividades__grid__item {
   max-width: 1000px;
@@ -633,4 +637,8 @@
 .carousel-cell > img {
   object-fit: cover;
   width: 100%;
+}
+
+.thirdSection__slider__selector {
+  list-style: none;
 }
