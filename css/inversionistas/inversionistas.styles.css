@@ -964,12 +964,7 @@ article {
     margin: 0 auto 40px;
     display: flex;
 
-    & div {
-      background-color: #DADAD8;
-      padding: 10px 20px;
-
-      & p {
-        color: #53575A;
+    color: #53575A;
         text-align: justify;
         font-family: Raleway;
         font-size: 15px;
@@ -978,9 +973,22 @@ article {
         line-height: 20px;
         /* 133.333% */
         letter-spacing: 1px;
-      }
+        user-select: none;
+
+    & div {
+      padding: 10px 20px;
+
     }
   }
+
+  & .tab_decade__selector__item {
+    cursor: pointer;
+  }
+
+  & .tab_decade__selector > .selected {
+    background-color: #DADAD8;;
+  }
+
 
   & .tab_decade__grid {
     width: 1200px;
@@ -988,7 +996,7 @@ article {
 
     display: grid;
 
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
 
     row-gap: 40px;
 
@@ -1000,12 +1008,9 @@ article {
 
       & .tab_decade__grid__item {
         width: 220px;
-        height: 400px;
         background-color: #FFF;
 
-        padding: 20px;
-
-        
+        padding: 20px;        
 
 
         & .tab_decade__grid__item__img {
@@ -2166,6 +2171,17 @@ article {
   position: relative;
   margin-bottom: 10px;
 }
+.tab_decade__grid__item__list__item.selected {
+  background-color: #727272;
+
+  & div > span {
+    color: #FFF;
+  }
+  & div > i {
+    color: #FFF;
+  }
+}
+
 .tab_decade__grid__item__list__item > div {
   width: 100%;
   display: flex;
@@ -2184,6 +2200,7 @@ article {
   font-weight: 500;
   line-height: 20px; /* 222.222% */
   letter-spacing: 1px;
+  user-select: none;
 }
 .tab_decade__grid__item__list__item > div > i {
   color: #53575A;
@@ -2192,14 +2209,17 @@ article {
 
 .tab_decade__grid__item__list__item__content {
   position: absolute;
+  z-index: 1000;
   top: 30px;
   left: 0px;
   display: flex;
   flex-direction: column;
+  background-color: #fff;
 }
 .tab_decade__grid__item__list__item__content > a {
 
   display: inline-block;
+  padding: 0px 10px;
   height: 30px;
   width: 100%;
   border-top: 1px solid #dadada;
@@ -2213,4 +2233,12 @@ article {
   line-height: 30px; /* 222.222% */
   letter-spacing: 1px;
   text-decoration: none;
+}
+.tab_decade__grid__item__list__item__content > a:hover {
+  color: #0096A9;
+  font-weight: bold;
+}
+
+li {
+  list-style: none;
 }
