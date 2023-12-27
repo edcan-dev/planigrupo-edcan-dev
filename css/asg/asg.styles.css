@@ -9,6 +9,9 @@
   background-position-x: center;
   background-position-y: top;
 }
+.header {
+  z-index: 2;
+}
 .hero__text {
   width: 30%;
   background-color: #f5f3f1;
@@ -47,7 +50,7 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
-  line-height: 21.43px; /* 153.071% */
+  line-height: 20px; /* 153.071% */
   letter-spacing: 1px;
   padding: 0 40px;
 
