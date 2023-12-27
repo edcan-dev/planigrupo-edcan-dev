@@ -180,7 +180,10 @@ export function renderIndexDetail(propertyDetail) {
           <div class="indicators__list__item">
             <div>
             <small>Anclas</small>
-            <p>${ getFormattedTentants( propertyDetail.anchors) }</p>
+            <p>${
+                getFormattedTentants( propertyDetail.anchors)
+              
+            }</p>
             </div>
             <div>
             <small>Arredamientos Importantes</small>
@@ -639,12 +642,16 @@ function getFormattedUsableArea( usableArea ) {
 
 function getFormattedTentants(tenants) {
   return tenants.map(str => {
-    //str = str.charAt(0).toUpperCase() + str.slice(1)
-    str = str.toLowerCase();
-    
-    str = str.charAt(0).toUpperCase() + str.slice(1);
 
-    return str.replaceAll('-',' ')
+    try {
+      str = str.toLowerCase();
+      str = str.charAt(0).toUpperCase() + str.slice(1);
+      return str.replaceAll('-',' ')
+    } catch(e) {
+      console.log(e);
+      return '';
+    }
+
   })
 }
 function pickRandomElements(arr, count) {

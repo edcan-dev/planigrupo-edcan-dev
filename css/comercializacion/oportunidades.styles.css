@@ -4,7 +4,7 @@
 
 .main__oportunities__text {
     width: 70%;
-    margin: 50px auto;
+    margin: 54px auto;
     background-color: #FFF;
 }
 .main__oportunities__text > span {
@@ -103,7 +103,7 @@
 /* TENANTS CAROUSEL */
 
 .main__tenants__carousel {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 
 }
 
@@ -151,7 +151,7 @@
     background-repeat: no-repeat;
 
     animation: carousel;
-    animation-duration: 30s;
+    animation-duration: 45s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
@@ -362,4 +362,8 @@
 }
 #dialog_dialog-content {
     padding: 0px ;  
+}
+
+.main__spliter {
+    margin-top: 0px;
 }

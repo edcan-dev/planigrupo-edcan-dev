@@ -60,7 +60,7 @@
   min-height:350px;
   width: 100%;
 
-  margin-top: 40px;
+  margin-top: 60px;
 
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -126,12 +126,12 @@
   letter-spacing: 1px;
 
   color: #53575a;
-  text-align: justify;
+  text-align: left;
   font-family: Raleway;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
-  line-height: 25px;
+  line-height: 20px;
   letter-spacing: 1px;
   
 }
@@ -179,7 +179,7 @@
 .section--2 > .reports__container {
   width: 90%;
   max-width: 1000px;
-  min-height: 400px;
+  min-height: 300px;
   margin: 0 auto;
 
   display: flex;
@@ -225,7 +225,7 @@
   > div
   > div.reports__item.reports__item--1
   > div.reports__item__reports {
-  height: 440px;
+  height: 200px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -351,7 +351,7 @@ hr {
 }
 .section--3 .actividades > .actividades__title > span {
   display: inline-block;
-  margin: 0 auto;
+  margin: 0 auto 20px;
   color: #d7282f;
   text-align: center;
   font-family: Barlow;
@@ -365,6 +365,7 @@ hr {
 .section--3 .actividades > .actividades__filters {
   display: flex;
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .section--3 .actividades > .actividades__filters > .actividades__filters__filter {
@@ -435,7 +436,8 @@ hr {
   margin-bottom: 10px;
   height: 40px;
   display: flex;
-  align-items: center;
+  align-items: start;
+  padding-top: 5px;
 }
 
 .actividades__grid__item__title > p {
@@ -446,7 +448,7 @@ hr {
   font-weight: 700;
   line-height: 18.57px; /* 142.846% */
   letter-spacing: 1px;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
 }
 
@@ -478,17 +480,20 @@ hr {
 
 .actividades__grid__item__a {
   background: #EFEFED;
-  background: #d7282f;
-  width: fit-content;
+/*   background: #d7282f;
+ */  width: fit-content;
+ border: 1px solid #A5A6A8;
+background: #EFEFED;
 }
 .actividades__grid__item__a:hover {
   transition: all .2s;
-  background-color: #8e0f14;
+  background-color: #d7282f;
+  border: 1px solid #8e0f14;
 }
 
 .actividades__grid__item__a > a {
   color: #97928A;
-  color: #FFF;
+  /*   color: #FFF; */  
   text-align: center;
   font-family: Raleway;
   font-size: 10px;
@@ -500,8 +505,11 @@ hr {
   line-height: 30px;
   display: inline-block;
   padding: 0px 20px;
-
+  
   cursor: pointer;
+}
+.actividades__grid__item__a > a:hover {
+  color: #fff;
 }
 
 
