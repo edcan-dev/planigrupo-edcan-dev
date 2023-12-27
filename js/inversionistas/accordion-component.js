@@ -3,8 +3,19 @@ var i;
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
-    
-    this.classList.add('active');
+
+    for (let index = 0; index < array.length; index++) {
+      const element = array[index];
+      
+    }
+/* 
+    document.querySelectorAll('.accordion')
+    .forEach( acc =>{
+      var panel = acc.nextElementSibling;
+      panel.style.maxHeight = '0px';
+      });
+ */    
+    this.classList.toggle('active');
     var panel = this.nextElementSibling;
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
