@@ -552,6 +552,7 @@
   & ul {
     & li {
       height: 60px;
+      list-style: none;
     }
 
     & .tenant__name {
@@ -580,7 +581,7 @@
         justify-content: space-evenly;
         & p {
           color: #0096a9;
-          text-align: justify;
+          text-align: left;
           font-family: Raleway;
           font-size: 12px;
           font-style: normal;
@@ -591,7 +592,7 @@
         }
         & small {
           color: #53575a;
-          text-align: justify;
+          text-align: left;
           font-family: Raleway;
           font-size: 10px;
           font-style: normal;
