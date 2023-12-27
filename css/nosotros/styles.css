@@ -255,9 +255,9 @@ Responsive Design
     letter-spacing: 1px;
 }
 
-li {
+/* li {
     list-style-type: none;
-}
+} */
 
 .lo_que_hacemos_info__item--2 {
     padding: 20px;
@@ -290,6 +290,7 @@ li {
     display: flex;
     padding-top: 20px;
     height: 400px;
+    justify-content: space-between;
 }
 .lo-que-hacemos-card__img {
     width: 50%;
@@ -303,6 +304,19 @@ li {
     padding: 0px 0px 0px 40px;
 }
 .lo-que-hacemos-card__text > p {
+    color: #727272;
+    text-align: justify;
+    font-family: Raleway;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 1px;
+}
+.lo-que-hacemos-card__text > ul {
+    display: inline-block;
+    margin-top: 20px;
+    padding-left: 20px;
     color: #727272;
     text-align: justify;
     font-family: Raleway;
@@ -436,6 +450,24 @@ li {
         font-weight: 400;
         line-height: 20px; /* 142.857% */
         letter-spacing: 1px;
+    }
+    .lo_que_hacemos_info--responsive div > ul {
+        display: inline-block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-left: 20px;
+        color: #727272;
+        text-align: justify;
+        font-family: Raleway;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; /* 142.857% */
+        letter-spacing: 1px;
+    }
+
+    .loque__ul--responsive > img {
+        display: none;
     }
     .loque__ul--responsive {
         display: flex;
@@ -576,3 +608,5 @@ li {
         position: relative;
     }
 }
+
+
