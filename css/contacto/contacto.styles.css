@@ -864,3 +864,17 @@ li {
         margin-bottom: 40px !important;
     }
 }
+.main__hero_downbar__title {
+    position: relative;
+    left: 1500px; 
+    animation: startTitle 2s both;
+}
+
+@keyframes startTitle {
+    0%   {
+        left: 1500px;
+    }
+    100% {
+        left: 0px;
+    }
+}
