@@ -3260,4 +3260,30 @@ MAIN TABS MARGIN
     .languaje--selector {
         right: 0vw;
     }
+
+    .main__plani__info__selector {
+        display: none;
+    }
+
+    .main__tabs {
+        margin-top: 600px !important;
+    }
+}
+@media(max-width: 1000px) {
+
+    .main__tabs {
+        margin-top: 600px !important;
+    }
+}
+@media(max-width: 600px) {
+
+    .main__tabs {
+        margin-top: 700px !important;
+    }
+}
+@media(max-width: 500px) {
+
+    .main__tabs {
+        margin-top: 1000px !important;
+    }
 }
