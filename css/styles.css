@@ -3287,3 +3287,30 @@ MAIN TABS MARGIN
         margin-top: 1000px !important;
     }
 }
+
+
+
+.e-previous > button {
+    background-color: #C04D00 !important;
+    height: 50px !important;
+    width: 50px !important;
+
+    & span {
+        color: #fff !important;
+    }
+}
+.e-next > button:hover {
+    transform: scale(1.1);
+}
+.e-next > button {
+    background-color: #C04D00 !important;
+    height: 50px !important;
+    width: 50px !important;
+
+    & span {
+        color: #fff !important;
+    }
+}
+.e-next > button:hover {
+    transform: scale(1.1);
+}
