@@ -114,13 +114,13 @@ function getDialogGridItem({ title, description, id, imageUrl }) {
   `;
 }
 
-function getDialogContent({ title, dateString, category, description, imageUrl, specification, quantity}) {
+function getDialogContent({ title, dateString, category, description, imageUrl, specification, quantity, id}) {
 
   return `
   <section class="detail__dialog">
 
     ${
-      getImageContent(title, specification, quantity, imageUrl)
+      getImageContent(title, specification, quantity, imageUrl, id)
     }
     
     <div class="detail__dialog__title">
@@ -153,7 +153,10 @@ function getDialogContent({ title, dateString, category, description, imageUrl, 
 }
 
 
-function getImageContent(title, specification, quantity, imageUrl) {
+function getImageContent(title, specification, quantity, imageUrl, id) {
+
+  console.log(id);
+
   let content = '';
 
   if(specification == 'Imágenes') {
@@ -162,9 +165,9 @@ function getImageContent(title, specification, quantity, imageUrl) {
 
     for (let index = 1; index <= quantity; index++) {
 
-      let urlTitle = title.replaceAll(' ', '%20');
-      urlTitle = urlTitle.concat('%20');
-      const imageURL = ASG_ACTIVITIES_DIRECTORY_URL + urlTitle + `(${ index }).png`;
+
+      let urlTitle = `act${ id }-img${ index }`;      
+      const imageURL = ASG_ACTIVITIES_DIRECTORY_URL + urlTitle + `.png`;
       const jpg = imageURL.replace('.png','.jpg');
       carouselItems +=
       `
