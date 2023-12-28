@@ -32,7 +32,7 @@ await readXlsxFile(xlsx, { sheet: 1 }).then(function (rows) {
   for (let index = 0; index < rows.length; index++) {
 
     const element = rows[index];
-    console.log(element);
+//    console.log(element);
 
     const activity = new Activity();
 
