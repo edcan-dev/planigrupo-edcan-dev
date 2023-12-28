@@ -1,6 +1,10 @@
 .amb_section--2 {
     background-color: #fff;
 }
+
+.hero__img {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/gobernanza/responsabilidad_social.png') !important;
+}
 .amb_section--2 > .grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);

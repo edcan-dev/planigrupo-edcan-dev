@@ -2,14 +2,15 @@
   --brigth-red: #D7282F;
   --brown-red: #c04d00;
 }
-.amb_section--1 > .text > p:first-child {
-  margin-bottom: 20px;
+
+.hero__img {
+  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/gobernanza/plani-gobierno.png');
 }
 .amb_section--1 > .text > p {
   max-width: 1200px;
   margin: 0 auto;
 
-  text-align: justify;
+  text-align: left;
 }
 
 .gobernanza_section--1__selectors {
@@ -61,14 +62,17 @@
   line-height: 30px;
   height: 30px; /* 142.857% */
   letter-spacing: 1px;
+
+  display: inline-block;
+  margin-bottom: 40px;
 }
 
 .gobernanza_section--1 > #gober_asg_content--1 > #section--1__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  column-gap: 120px;
-  row-gap: 80px;
-  margin-bottom: 40px;
+  column-gap: 60px;
+  row-gap: 60px;
+  margin-bottom: 60px;
 }
 
 .gobernanza_section--1
@@ -85,7 +89,7 @@
   > #section--1__grid
   > .section--1__grid__item
   > img {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .gobernanza_section--1
@@ -136,7 +140,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  padding: 80px 0px;
+  padding: 60px 0px;
 }
 
 @media (max-width: 1000px) {
@@ -202,7 +206,7 @@
   max-width: 750px;
   width: 90%;
   display: flex;
-  margin: 0 auto;
+  margin: 40px auto;
 }
 
 .gober_asg_content--second__tabs__selector__item {
@@ -245,7 +249,7 @@
   flex-direction: column;
 }
 .gober_asg_content--2__tabs__content--1__text--bottom {
-  margin-top: 40px;
+  margin-top: 60px;
 }
 .gober_asg_content--2__tabs__content--1__text > p {
   color: #727272;
@@ -256,6 +260,8 @@
   font-weight: 400;
   line-height: 20px; /* 142.857% */
   letter-spacing: 1px;
+  display: inline-block;
+  margin-bottom: 20px;
 }
 .gober_asg_content--2__tabs__content--1__text > span {
   color: #0096A9;
@@ -440,3 +446,11 @@
 /*
 https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/gobernanza/section3.png
 */
+
+li {
+  list-style: none;
+}
+
+.section--3 {
+  margin-top: 40px;
+}
