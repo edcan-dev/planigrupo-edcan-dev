@@ -27,12 +27,23 @@
     <!-- ASG CUSTOM FILES -->
     <link rel="stylesheet" href="./css/asg/asg.styles.css">
     <script defer src="./js/asg/generic-tab-component.js"></script>
+    
+<!-- ASG CAROUSEL -->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
     <!-- Actividades Grid -->
     <script defer type="module" src="./js/asg/read-excel-file.min.js"></script>
+    <script defer type="module" src="./js/asg/ambiental/generic-tab-component.js"></script>
+
     <script defer type="module" src="./js/asg/services/XSLXActivitiesReaderService.js"></script>`
-    <script defer type="module" src="./js/asg/services/ActivitiesASGModal.js"></script>
-    <script defer type="module" src="./js/asg/ambiental/services/ActivitiesGridService.js"></script>`
+    <script defer type="module" src="./js/asg/services/ActivitiesASGModal.js"></script>`
+    <!-- Activities Service -->
+    <script defer type="module" src="./js/asg/sustentabilidad/services/ActivitiesGridService.js"></script>
+
     <!-- Dialog Custom Script -->
+    <link rel="stylesheet" href="./css/asg/gobernanza/gobernanza.styles.css">
+    <link rel="stylesheet" href="./css/asg/sustentabilidad/sustentabilidad.styles.css">
     <link rel="stylesheet" href="./css/asg/ambiental/ambiental.styles.css">
 
 
@@ -196,116 +207,144 @@
         </div>
       </section>
 
-      <section class="amb_section--2">
-        <div class="title_header">
-          <span>METAS 2023</span>
+      <section class="gobernanza_section--1">
+
+        <div class="gobernanza_section--1__selectors">
+          <ul>
+            <li id="gober_asg_selector--1" class="gober_asg_selector selected">
+              METAS 2024
+            </li>
+            <li class="splitter">|</li>
+            <li id="gober_asg_selector--2" class="gober_asg_selector">
+              ACTIVIDADES
+            </li>
+          </ul>
         </div>
-
-        <div class="grid">
-          <div class="grid_item">
-
-            <div class="grid_item__img grid_item__img--1">
-            </div>
-            <p>
-              Implementación de campañas de optimización de recursos para clientes, colaboradores y
-            proveedores.
-          </p>
-          </div>
-
-          <div class="grid_item">
-            <div class="grid_item__img grid_item__img--2">
-            </div>
-            <p>Optimizar el consumo de energia y agua en
-            nuestras propiedades.</p>
-          </div>
-          
-          <div class="grid_item">
-            <div class="grid_item__img grid_item__img--3">
-            </div>
-            <p>
-              Brindar talleres y pláticas, sobre la concientización ambiental a los colaboradores.
-            </p>
-          </div>
-          
-          <div class="grid_item">
-            <div class="grid_item__img grid_item__img--4">
-            </div>
-            <p>
-              Fortalecer la división de residuos de acuerdo a su tipo.
-            </p>
-          </div>
-          
-          <div class="grid_item">
-            <div class="grid_item__img grid_item__img--5">
-            </div>
-            <p>
-              Hacer alianzas con diversas organizaciones que persigan el cuidado ambiental para brindar apoyo económico y/o voluntariado.
-            </p>
-          </div>
-          
-          <div class="grid_item">
-            <div class="grid_item__img grid_item__img--6">
-            </div>
-            <p>
-              Aumentar el porcentaje de Plantas de Tratamiento de Aguas Residuales en nuestras propiedades.
-            </p>
-          </div>
-
-
-
-        </div>
-
       </section>
 
-      <section class="section--3">
-
-        <div class="thirdSection__title">
-          <span>ACTIVIDADES RELEVANTES</span>
-        </div>
-
-        <div class="thirdSection__carousel">
-
-          <div class="thirdSection__carousel__prev thirdSection__carousel__selector" id="prev">
+      <div class="ambi_asg_content" id="ambi_asg_content--1">
+        <section class="amb_section--2">
+        
+  
+          <div class="grid">
+            <div class="grid_item">
+  
+              <div class="grid_item__img grid_item__img--1">
+              </div>
+              <p>
+                Implementación de campañas de optimización de recursos para clientes, colaboradores y
+              proveedores.
+            </p>
+            </div>
+  
+            <div class="grid_item">
+              <div class="grid_item__img grid_item__img--2">
+              </div>
+              <p>Optimizar el consumo de energia y agua en
+              nuestras propiedades.</p>
+            </div>
+            
+            <div class="grid_item">
+              <div class="grid_item__img grid_item__img--3">
+              </div>
+              <p>
+                Brindar talleres y pláticas, sobre la concientización ambiental a los colaboradores.
+              </p>
+            </div>
+            
+            <div class="grid_item">
+              <div class="grid_item__img grid_item__img--4">
+              </div>
+              <p>
+                Fortalecer la división de residuos de acuerdo a su tipo.
+              </p>
+            </div>
+            
+            <div class="grid_item">
+              <div class="grid_item__img grid_item__img--5">
+              </div>
+              <p>
+                Hacer alianzas con diversas organizaciones que persigan el cuidado ambiental para brindar apoyo económico y/o voluntariado.
+              </p>
+            </div>
+            
+            <div class="grid_item">
+              <div class="grid_item__img grid_item__img--6">
+              </div>
+              <p>
+                Aumentar el porcentaje de Plantas de Tratamiento de Aguas Residuales en nuestras propiedades.
+              </p>
+            </div>
+  
+  
+  
           </div>
+  
+        </section>
+  
+        <section class="section--3">
+  
+          <div class="thirdSection__title">
+            <span>ACTIVIDADES RELEVANTES</span>
+          </div>
+  
+          <div class="thirdSection__carousel">
 
-          <div class="thirdSection__carousel__container">
-            <div class="thirdSection__carousel__container__content">
+            
+  
+            <div class="thirdSection__carousel__prev thirdSection__carousel__selector" id="prev">
+            </div>
+  
+            <div class="thirdSection__carousel__container">
+              <div class="thirdSection__carousel__container__content">
+                
+                <div class="thirdSection__carousel__container__content__item">
+                  <div class="thirdSection__carousel__container__content__item__title">
+                    <p>RECICLAJE DE 3.2  TONELADAS DE PLASTICO</p>
+                  </div>
+                  <div class="thirdSection__carousel__container__content__item__image" style="background-image: url('https://infinitoverde.com/wp-content/uploads/2023/06/volunteer-putting-plastic-bottles-bin.jpg');">
+                  </div>
+                  <div class="thirdSection__carousel__container__content__item__description">
+                    En Santa Catarina, Garza Sada y Plaza Real Saltillo a través de máquinas reclicladoras.
+                    Logrando una reducción de 56 tonaledas de emisiones de CO2
+                  </div>
+                  
+                </div>
               
-              <div class="thirdSection__carousel__container__content__item">
-                <div class="thirdSection__carousel__container__content__item__title">
-                  <p></p>
+                <div class="thirdSection__carousel__container__content__item">
+                  <div class="thirdSection__carousel__container__content__item__title">
+                    <p>RECAUDACIÓN DE 11 TONELADAS DE TAPITAS </p>
+                  </div>
+                  <div class="thirdSection__carousel__container__content__item__image" style="background-image: url('https://www.ucr.ac.cr/medios/fotos/2018/15bf5fcf50597d.jpg');">
+                  </div>
+                  <div class="thirdSection__carousel__container__content__item__description">
+                    Que equivalen a 19 toneladas de C02, que se dejaron de emitir al ambiente durante los últimos 14 meses.
+                  </div>
+                  
                 </div>
-                <div class="thirdSection__carousel__container__content__item__image">
-                </div>
-                <div class="thirdSection__carousel__container__content__item__description">
-
-                </div>
-                
+              
               </div>
-            
-              <div class="thirdSection__carousel__container__content__item">
-                <div class="thirdSection__carousel__container__content__item__title">
-                  <p></p>
-                </div>
-                <div class="thirdSection__carousel__container__content__item__image">
-                </div>
-                <div class="thirdSection__carousel__container__content__item__description">
-                </div>
-                
-              </div>
-            
+              
             </div>
-            
+  
+            <div class="thirdSection__carousel__next thirdSection__carousel__selector" id="next">
+            </div>
+  
           </div>
+  
+  
+        </section>
+  
 
-          <div class="thirdSection__carousel__next thirdSection__carousel__selector" id="next">
-          </div>
+      </div>
 
-        </div>
+      <div class="ambi_asg_content inactive" id="ambi_asg_content--2">        
 
+        <div class="forthSection__grid"></div>
 
-      </section>
+      </div>
 
+      
       <section>
         <div class="asg_banner_component">
           <div class="asg_banner_component__img">

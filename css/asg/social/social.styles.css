@@ -144,7 +144,7 @@
 }
 .social_section--6 > .social_tab__selectors {
     width: 50%;
-    background-color: #EFEFED;
+    background-color: #d9d9d9;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -170,14 +170,24 @@
 }
 
 .social_section--6 > .social_tab__selectors > .selected {
-    background-color: #D9D9D9;
+    background-color: #EFEFED;
 }
 
 .social_section--6 > .social_tab__contents {
     width: 50%;
-    background-color: #D9D9D9;
+    background-color: #EFEFED;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
 }
 
+.social_tab__content {
+
+}
+.social_tab__content > img {
+    object-fit: contain;
+    height: 100%;
+}
 
 @media (max-width: 1000px) {
     
@@ -247,4 +257,12 @@
 }
 .amb_section--2 > .grid > .grid_item > .grid_item__img--5 {
     background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/png-icons/asg_icons/iconos%20asg%20amb-social/S_marketplace-Comunity.png');
+}
+
+.section--3 {
+    margin-top: 40px !important; 
+}
+
+.gobernanza_section--1 > div > ul {
+    width: 400px !important;
 }

@@ -303,3 +303,7 @@
     }
     
 }
+
+.gobernanza_section--1 > div > ul {
+    width: 300px;
+}
