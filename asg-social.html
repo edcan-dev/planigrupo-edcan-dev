@@ -51,7 +51,19 @@
   <script defer type="module" src="./js/asg/services/ActivitiesASGModal.js"></script>
   <script defer type="module" src="./js/asg/social/services/ActivitiesGridService.js"></script>`
   <!-- Dialog Custom Script -->
+
+  <!-- ASG CAROUSEL -->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+
+  <script defer type="module" src="./js/asg/social/generic-tab-component.js"></script>`
+
+  <link rel="stylesheet" href="./css/asg/gobernanza/gobernanza.styles.css">
+  <link rel="stylesheet" href="./css/asg/sustentabilidad/sustentabilidad.styles.css">
   <link rel="stylesheet" href="./css/asg/ambiental/ambiental.styles.css">
+  <link rel="stylesheet" href="./css/asg/ambiental/ambiental.styles.css">
+
 
 
 
@@ -213,6 +225,25 @@
         </div>
       </section>
 
+      <section class="gobernanza_section--1">
+
+        <div class="gobernanza_section--1__selectors">
+          <ul>
+            <li id="gober_asg_selector--1" class="gober_asg_selector selected">
+              RESPONSABILIDAD SOCIAL            
+            </li>
+            <li class="splitter">|</li>
+            <li id="gober_asg_selector--2" class="gober_asg_selector">
+              ACTIVIDADES
+            </li>
+          </ul>
+        </div>
+      </section>
+      
+
+      <div class="ambi_asg_content" id="ambi_asg_content--1">
+
+        
       <section class="amb_section--2">
         <!-- <div class="title_header">
           <span>METAS 2024</span>
@@ -335,19 +366,35 @@
 
       <section class="social_section--6">
         <div class="social_tab__selectors">
-          <div class="social_tab__selector selected">
+
+          <div id="social_tab__selector--1"  class="social_tab__selector selected">
             <span>Distribución de personal por tipo de puesto</span>
           </div>
-          <div class="social_tab__selector">
+          
+          <div id="social_tab__selector--2" class="social_tab__selector" >
             <span>Junta Directiva por género</span>
           </div>
-          <div class="social_tab__selector">
+          
+          <div id="social_tab__selector--3" class="social_tab__selector">
             <span>Nuevas contrataciones por género</span>
           </div>
         </div>
 
 
         <div class="social_tab__contents">
+          
+          
+          <div id="social_tab__content--1" class="social_tab__content">
+            <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/social/social1.PNG" alt="">
+          </div>
+          
+          <div id="social_tab__content--2" class="social_tab__content inactive">
+            <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/social/social2.PNG" alt="">
+          </div>
+          
+          <div id="social_tab__content--3" class="social_tab__content inactive">
+            <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/social/social3.PNG" alt="">
+          </div>
 
         </div>
 
@@ -369,23 +416,24 @@
             <div class="thirdSection__carousel__container__content">
     <div class="thirdSection__carousel__container__content__item">
         <div class="thirdSection__carousel__container__content__item__title">
-            <p>Máquinas de Reciclaje-AlEn</p>
+            <p>Bailes realizados por personas de la tercera edad</p>
         </div>
-        <div class="thirdSection__carousel__container__content__item__image" style="background-image: url('https://reporteasg.com/download/multimedia.normal.b22b61ac01c80f3b.YmFuY2EgdmVyZGVfbm9ybWFsLndlYnA%3D.webp');"></div>
+        <div class="thirdSection__carousel__container__content__item__image" style="background-image: url('https://www.cepal.org/sites/default/files/news/images/fotomujeres2.jpg?timestamp=1421156225');"></div>
     
         <div class="thirdSection__carousel__container__content__item__description">
-        Descripcion de la actividad
+
+          En Paseo Santa Catarina, Mall Plaza Lincoln, Urban Village Garza Zada y Plaza Bella Anahuac, se realizaron por personas de la tercera edad.
         </div>
 
     </div>
     <div class="thirdSection__carousel__container__content__item">
         <div class="thirdSection__carousel__container__content__item__title">
-            <p>Maquinas de Reciclaje-AlEn</p>
+            <p>Productos realizados por mujeres</p>
         </div>
-        <div class="thirdSection__carousel__container__content__item__image" style="background-image: url('https://reporteasg.com/download/multimedia.normal.b22b61ac01c80f3b.YmFuY2EgdmVyZGVfbm9ybWFsLndlYnA%3D.webp');"></div>
+        <div class="thirdSection__carousel__container__content__item__image" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTf4NB9WkAuTlV52XDXwzbJVxqB_3cOxihSnhibbEPbfbUXb7ALBbCCVI2fyQDk142hPE&usqp=CAU');"></div>
 
         <div class="thirdSection__carousel__container__content__item__description">
-        Descripcion de la actividad
+          En Santa Catarina se adaptaron espacios en los que mujeres estuvieron vendiendo productos realizados por ellas par apromovar la independencia económica
         </div>
 
     </div>
@@ -400,6 +448,17 @@
 
 
       </section>
+
+      </div>
+    
+
+      <div class="ambi_asg_content inactive" id="ambi_asg_content--2">        
+
+        <div class="forthSection__grid"></div>
+
+      </div>
+
+
 
       <section>
         <div class="asg_banner_component">
