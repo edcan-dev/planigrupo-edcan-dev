@@ -922,6 +922,80 @@ article {
   }
 }
 
+& .comunicados_container {
+
+  max-width: 1200px;
+  margin: 0 auto 40px;
+
+  & span {
+    color: #C04D00;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19.8px;
+    /* 110% */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+
+  & p {
+    color: #000;
+    text-align: justify;
+    font-family: Raleway;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 142.857% */
+    letter-spacing: 1px;
+  }
+}
+
+& .tab_decade__selector {
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  display: flex;
+
+  color: #53575A;
+      text-align: justify;
+      font-family: Raleway;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 1000;
+      line-height: 20px;
+      /* 133.333% */
+      letter-spacing: 1px;
+      user-select: none;
+
+  & div {
+    padding: 10px 20px;
+
+  }
+}
+
+& .tab_decade__selector > .selected {
+  background-color: #DADAD8;;
+}
+
+& .tab_decade__grid__item__title {
+  color: #C04D00;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  /* 61.875% */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  display: inline-block;
+  margin-bottom: 25px;
+}
+
 .inversionistas__tabs__tab--content--4 {
 
   background-color: #F5F3F1;
@@ -1714,15 +1788,16 @@ article {
           & .table__header--resp {
 
             background-color: rgba(140, 130, 121, 0.60);
+            background-color: #0096A9;
             justify-content: space-around;
 
             & th {
               color: #FFF;
               text-align: justify;
               font-family: Raleway;
-              font-size: 12px;
+              font-size: 10px;
               font-style: normal;
-              font-weight: 500;
+              font-weight: bolder;
               line-height: 50px;
               letter-spacing: 1px;
               text-align: center;
@@ -1743,7 +1818,7 @@ article {
               color: #545859;
               text-align: justify;
               font-family: Raleway;
-              font-size: 14px;
+              font-size: 11px;
               font-style: normal;
               font-weight: 600;
               line-height: 25px;
@@ -2247,4 +2322,24 @@ article {
 
 li {
   list-style: none;
+}
+
+
+
+#tab_decade__grid__row--1 > div > span {
+
+}
+
+#resp-tab-content--4 {
+  padding: 20px !important;
+}
+
+@media (max-width: 1000px) {
+  .tab_decade__selector {
+    justify-content: center;
+  }
+  .tab_decade__grid__item {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
 }
