@@ -4,10 +4,7 @@ var i;
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
 
-    for (let index = 0; index < array.length; index++) {
-      const element = array[index];
-      
-    }
+    
 /* 
     document.querySelectorAll('.accordion')
     .forEach( acc =>{
