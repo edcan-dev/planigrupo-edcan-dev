@@ -3299,7 +3299,7 @@ MAIN TABS MARGIN
         color: #fff !important;
     }
 }
-.e-next > button:hover {
+.e-previous > button:hover {
     transform: scale(1.1);
 }
 .e-next > button {
