@@ -1831,7 +1831,7 @@ MAIN TABS MARGIN
     position: absolute;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 1000px) {
 
     #sidebar-container {
         display: flex;
@@ -2603,6 +2603,13 @@ MAIN TABS MARGIN
     padding: 0 5%;
 }
 
+
+@media(max-width: 2200px) {
+   
+    .e-carousel.e-partial .e-carousel-slide-container {
+        padding: 0 30%;
+    }
+}
 @media(max-width: 2000px) {
    
     .e-carousel.e-partial .e-carousel-slide-container {
