@@ -1348,8 +1348,9 @@
     padding: 0px 20px;
     font-family: 'Raleway';
     font-size: 14px;
-    text-align: justify;
-    line-height: 50px;
+    text-align: left;
+
+    margin: 0px;
 }
 
 hr {
@@ -2862,7 +2863,7 @@ MAIN TABS MARGIN
             font-style: normal;
             font-weight: 500;
             letter-spacing: 1px;
-            text-transform: capitalize;
+            text-transform: lowercase;
           }
         }
       }
