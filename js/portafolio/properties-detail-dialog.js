@@ -57,7 +57,7 @@ export function renderIndexDetail(propertyDetail) {
         </div>
         <div>
           <b>Web</b>
-          <a target="_BLANK" href="${ propertyDetail.webSite }" >${ propertyDetail.webSite }</a>
+          <a target="_BLANK" href="${ propertyDetail.webSite }" >${ propertyDetail.webSite.toLowerCase() }</a>
         </div>
         
       </div>

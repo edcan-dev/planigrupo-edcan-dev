@@ -32,7 +32,7 @@
 }
 
 .historia__card__item__img {
-  height: 250px;
+  height: 200px;
   background-size: cover;
 }
 
@@ -395,7 +395,7 @@ body > main > section.historia__section > div.historia__card.historia__card--tab
 
 .carousel-cell {
   width: 100%; /* full width */
-  height: 400px; /* height of carousel */
+  height: 300px; /* height of carousel */
   margin-right: 10px;
 }
 .carousel-cell--last > .carousel-cell__content__item {
@@ -421,7 +421,7 @@ body > main > section.historia__section > div.historia__card.historia__card--tab
 }
 
 .historia__card__item {
-  height:400px;
+  height:300px;
   width: 50%;
   max-width: 30%;
 }

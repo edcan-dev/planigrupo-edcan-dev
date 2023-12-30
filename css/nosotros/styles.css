@@ -273,6 +273,7 @@ body {
     font-weight: 400;
     line-height: 50px; /* 277.778% */
     letter-spacing: 1px;
+
     text-transform: uppercase;
 }
 .lo_que_hacemos_info__item--2 > ul > img {
@@ -298,8 +299,8 @@ body {
     background-position-y: bottom;
 }
 .lo-que-hacemos-card__text {
-    width: 40%;
-    padding: 0px 0px 0px 40px;
+    width: 45%;
+    padding: 0px 0px 0px 0px;
 }
 .lo-que-hacemos-card__text > p {
     color: #727272;
