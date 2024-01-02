@@ -1,11 +1,11 @@
 ej.base.enableRipple(true);
 
-let dialogHeigth = '1000px'
-let dialogWidth = '1000px';
-if(window.innerWidth <= 1300) {
+let dialogHeigth = '1200px'
+let dialogWidth = '1200px';
+if(window.innerWidth <= 1200) {
 /*     console.log(window.innerWidth);
  */ dialogWidth = '90%'
-    dialogHeigth = "600px"
+    dialogHeigth = "1200px"
 }
 
 // Initialize Dialog component

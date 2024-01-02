@@ -3,28 +3,35 @@ import { activitiesASGModal } from "./ActivitiesASGModal.js";
 
 const ASG_ACTIVITIES_DIRECTORY_URL = 'https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/imagenes-asg/';
 
-let activities = activitiesReaderService.getActivities();
+
+export let activities = activitiesReaderService.getActivities();
 
 
-activities.forEach((activity) => {
-  const activityGridItem = getDialogGridItem(activity);
-  document.querySelector(".forthSection__grid").innerHTML += activityGridItem;
+// activities.forEach((activity) => {
+//   const activityGridItem = getDialogGridItem(activity);
+//   document.querySelector(".forthSection__grid").innerHTML += activityGridItem;
 
-});
+// });
 
-document.querySelectorAll('.actividades__grid__item__a')
+export function addDialogEventListener() {
+   
+  document.querySelectorAll('.actividades__grid__item__a')
   .forEach(activityAnchor => {
     activityAnchor.addEventListener('click',(ev) => {
       const activityId = ev.target.parentElement.nextElementSibling.innerHTML;
       const activity = activitiesReaderService.getActivityById(activityId);
-
+      
       const dialogContent = getDialogContent(activity);
-
+      
       activitiesASGModal.renderASGActivityModal(dialogContent);
+    })
   })
-})
+}
 
-export function renderGrid(category) {
+renderPagination(6, [...activities]);
+
+
+export function renderGridByCategory(category) {
 
     activities = activitiesReaderService.getActivities();
     
@@ -40,22 +47,8 @@ export function renderGrid(category) {
         
     document.querySelector(".forthSection__grid").innerHTML = ''
 
-    activities.forEach((activity) => {
-        const activityGridItem = getDialogGridItem(activity);
-        document.querySelector(".forthSection__grid").innerHTML += activityGridItem;
-    });
 
-    document.querySelectorAll('.actividades__grid__item__a')
-  .forEach(activityAnchor => {
-    activityAnchor.addEventListener('click',(ev) => {
-      const activityId = ev.target.parentElement.nextElementSibling.innerHTML;
-      const activity = activitiesReaderService.getActivityById(activityId);
-
-      const dialogContent = getDialogContent(activity);
-
-      activitiesASGModal.renderASGActivityModal(dialogContent);
-    })
-    })
+    renderPagination(6, [...activities]); 
 
 }
 
@@ -73,21 +66,22 @@ export function renderGridByYear(year) {
         
     document.querySelector(".forthSection__grid").innerHTML = ''
 
-    activities.forEach((activity) => {
-        const activityGridItem = getDialogGridItem(activity);
-        document.querySelector(".forthSection__grid").innerHTML += activityGridItem;
-    });
+    renderPagination(6, [...activities])
+    // activities.forEach((activity) => {
+    //     const activityGridItem = getDialogGridItem(activity);
+    //     document.querySelector(".forthSection__grid").innerHTML += activityGridItem;
+    // });
 
-    document.querySelectorAll('.actividades__grid__item__a')
-        .forEach(activityAnchor => {
-            activityAnchor.addEventListener('click',(ev) => {
-        const activityId = ev.target.parentElement.nextElementSibling.innerHTML;
-        const activity = activitiesReaderService.getActivityById(activityId);
+    // document.querySelectorAll('.actividades__grid__item__a')
+    //     .forEach(activityAnchor => {
+    //         activityAnchor.addEventListener('click',(ev) => {
+    //     const activityId = ev.target.parentElement.nextElementSibling.innerHTML;
+    //     const activity = activitiesReaderService.getActivityById(activityId);
 
-        const dialogContent = getDialogContent(activity);
-            activitiesASGModal.renderASGActivityModal(dialogContent);
-    })
-    })
+    //     const dialogContent = getDialogContent(activity);
+    //         activitiesASGModal.renderASGActivityModal(dialogContent);
+    // })
+    // })
 
 }
 
@@ -156,7 +150,7 @@ function getDialogContent({ title, dateString, category, description, imageUrl, 
 function getImageContent(title, specification, quantity, imageUrl, id) {
 
   console.log(id);
-
+  renderPagination
   let content = '';
 
   if(specification == 'Imágenes') {
@@ -196,5 +190,75 @@ function getImageContent(title, specification, quantity, imageUrl, id) {
   }
 
   return content;
+
+}
+
+
+/**
+ * 
+ * @param { number } itemsPerPage
+ * @param { Array } activities 
+ */
+export function renderPagination(itemsPerPage, activities) {
+
+  const pagesNumber = Math.floor(activities.length / itemsPerPage)
+
+  for (let index = 1; index <= pagesNumber; index++) {
+
+    const gridPage = document.createElement('div');
+    gridPage.classList.add('grid_page');
+    gridPage.id = 'grid_page--' + index;
+
+    const pageItems = activities
+      .splice(0, itemsPerPage)
+      .map(activity => getDialogGridItem(activity))
+      .join('');
+
+//     console.log(pageItems);
+
+    gridPage.innerHTML = pageItems;
+    document.querySelector('.forthSection__grid').appendChild(gridPage);
+
+  }
+  document.querySelectorAll('.grid_page')
+    .forEach(item => item.classList.add('inactive'))
+  
+  document.querySelector('#grid_page--1').classList.remove('inactive')
+
+  addDialogEventListener()
+
+
+  // const pages = Math.floor((activities.length / itemsPerPage))
+
+  // const grid = document.querySelector('.forthSection__grid');
+  // grid.innerHTML = ''
+
+
+  // for (let index = 1; index < pages; index++) {
+
+  //   const gridPage = document.createElement('div');
+  //   gridPage.classList.add('grid_page');
+  //   gridPage.id = 'grid_page--' + index;
+
+  //   gridPage.style.display = 'grid';
+  //   gridPage.style.gridTemplateColumns = 'repeat(3, 1fr)'
+  //   gridPage.style.rowGap = '20px';
+            
+
+
+
+  //   var removed = [...activities].splice(0, 6).map(item => getDialogGridItem(item));
+
+  //   gridPage.innerHTML = removed.join('')
+
+  //   grid.appendChild(gridPage);
+  // }
+
+  // document.querySelectorAll('.grid_page').forEach((page, list, index) => {
+  //   page.classList.add('inactive')
+  // })
+
+  // document.querySelector('#grid_page--1').classList.remove('inactive')
+
 
 }
