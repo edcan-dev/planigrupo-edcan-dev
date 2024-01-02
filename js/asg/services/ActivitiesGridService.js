@@ -47,7 +47,6 @@ export function renderGridByCategory(category) {
         
     document.querySelector(".forthSection__grid").innerHTML = ''
 
-
     renderPagination(6, [...activities]); 
 
 }
@@ -67,21 +66,6 @@ export function renderGridByYear(year) {
     document.querySelector(".forthSection__grid").innerHTML = ''
 
     renderPagination(6, [...activities])
-    // activities.forEach((activity) => {
-    //     const activityGridItem = getDialogGridItem(activity);
-    //     document.querySelector(".forthSection__grid").innerHTML += activityGridItem;
-    // });
-
-    // document.querySelectorAll('.actividades__grid__item__a')
-    //     .forEach(activityAnchor => {
-    //         activityAnchor.addEventListener('click',(ev) => {
-    //     const activityId = ev.target.parentElement.nextElementSibling.innerHTML;
-    //     const activity = activitiesReaderService.getActivityById(activityId);
-
-    //     const dialogContent = getDialogContent(activity);
-    //         activitiesASGModal.renderASGActivityModal(dialogContent);
-    // })
-    // })
 
 }
 

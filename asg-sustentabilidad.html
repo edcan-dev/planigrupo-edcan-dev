@@ -58,6 +58,10 @@
   <script defer type="module" src="./js/asg/sustentabilidad/services/ActivitiesGridService.js"></script>
 
 
+  <!-- Gauge Graph -->
+  <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script type="module" src="./js/asg/sustentabilidad/services/GaugeGraphService.js"></script> 
+
 </head>
 
 <body>
@@ -220,7 +224,7 @@
             MATRIZ ASG 2022
           </li>
           <li class="splitter">|</li>
-          <li id="gober_asg_selector--2" class="gober_asg_selector">
+          <li id="gober_asg_selector--2" class="gober_asg_selector selected">
             GRUPOS DE INTERÉS
           </li>
           <li class="splitter">|</li>
@@ -234,7 +238,7 @@
         </ul>
       </div>
 
-      <div id="gober_asg_content--1" class="gober_asg_content">
+      <div id="gober_asg_content--1" class="gober_asg_content inactive">
 
         <div class="contentOne">
 
@@ -274,7 +278,7 @@
 
       </div>
 
-      <div id="gober_asg_content--2" class="gober_asg_content inactive">
+      <div id="gober_asg_content--2" class="gober_asg_content ">
 
         <div class="susAsg_cont2__text">
           <p>
@@ -719,6 +723,60 @@
 
           </div>
 
+          <div class="sus_charts">
+
+            <span>Encuesta por grupos de interés</span>
+
+            <div class="grafica-container">
+              <div class="grafica-item">
+                  <canvas id="graficaDirectores"></canvas>
+                  <p class="leyenda" id="leyendaDirectores"></p>
+              </div>
+              <div class="grafica-item">
+                  <canvas id="graficaInquilinos"></canvas>
+                  <p class="leyenda" id="leyendaInquilinos"></p>
+              </div>
+              <div class="grafica-item">
+                  <canvas id="graficaInversionistas"></canvas>
+                  <p class="leyenda" id="leyendaInversionistas"></p>
+              </div>
+              <div class="grafica-item">
+                  <canvas id="graficaProveedores"></canvas>
+                  <p class="leyenda" id="leyendaProveedores"></p>
+              </div>
+              <div class="grafica-item">
+                  <canvas id="graficaBancos"></canvas>
+                  <p class="leyenda" id="leyendaBancos"></p>
+              </div>
+              <div class="grafica-item">
+                  <canvas id="graficaColaboradores"></canvas>
+                  <p class="leyenda" id="leyendaColaboradores"></p>
+              </div>
+              <div class="grafica-item">
+                  <canvas id="graficaConsejo"></canvas>
+                  <p class="leyenda" id="leyendaConsejo"></p>
+              </div>
+              <div class="grafica-item">
+                  <canvas id="graficaOtros"></canvas>
+                  <p class="leyenda" id="leyendaOtros"></p>
+              </div>
+            </div>
+
+            <span>Encuesta por grupos de interés</span>
+
+            <div class="grafica-container">
+              <div class="grafica-item">
+                  <canvas id="graficaInterno"></canvas>
+                  <p class="leyenda" id="leyendaInterno"></p>
+              </div>
+              <div class="grafica-item">
+                <canvas id="graficaExterno"></canvas>
+                <p class="leyenda" id="leyendaExterno"></p>
+            </div>
+            </div>
+
+
+          </div>
 
 
         </div>
