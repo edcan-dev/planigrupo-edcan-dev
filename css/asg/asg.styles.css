@@ -829,3 +829,9 @@ background: #EFEFED;
   object-fit: cover;
   width: 100%;
 }
+
+
+.grid_page {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
