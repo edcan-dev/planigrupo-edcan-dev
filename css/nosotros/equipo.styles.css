@@ -125,6 +125,9 @@ text-transform: uppercase;
         column-gap: 50px;
         height: 1400px;
     }
+    .equipo__card__item__img {
+    height: 250px;
+    }
 
     
     .footer {

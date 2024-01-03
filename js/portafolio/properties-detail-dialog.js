@@ -50,6 +50,33 @@ export function renderIndexDetail(propertyDetail) {
           <p>${ propertyDetail.location }</p>
         </div>
       </div>
+
+      ${
+        ( !propertyDetail.phoneNumber.includes('NA') &&!propertyDetail.phoneNumber.includes('error') ) &&
+        ( !propertyDetail.webSite.includes('NA') && !propertyDetail.webSite.includes('error') )
+        ? 
+        `<div class="detail__hero__info--gray">
+        <div>
+          <b>Teléfono</b>
+          <p>${ propertyDetail.phoneNumber }</p>
+        </div>
+        <div>
+          <b>Web</b>
+          <a target="_BLANK" href="${ propertyDetail.webSite }" >
+          ${
+
+            propertyDetail.webSite.toLowerCase()
+
+          }</a>
+        </div>
+        
+      </div>`
+        
+        : 
+        ''
+      }
+
+      <!--
       <div class="detail__hero__info--gray">
         <div>
           <b>Teléfono</b>
@@ -57,10 +84,17 @@ export function renderIndexDetail(propertyDetail) {
         </div>
         <div>
           <b>Web</b>
-          <a target="_BLANK" href="${ propertyDetail.webSite }" >${ propertyDetail.webSite.toLowerCase() }</a>
+          <a target="_BLANK" href="${ propertyDetail.webSite }" >
+          ${
+
+            propertyDetail.webSite.toLowerCase()
+
+          }</a>
         </div>
         
       </div>
+      -->
+
     </div>
 
     <div class="detail__hero__close">
@@ -261,6 +295,33 @@ export async function initializeDetailDialog(keyName) {
               <p>${ propertyDetail.location }</p>
             </div>
           </div>
+          
+      ${
+        ( !propertyDetail.phoneNumber.includes('NA') &&!propertyDetail.phoneNumber.includes('error') ) &&
+        ( !propertyDetail.webSite.includes('NA') && !propertyDetail.webSite.includes('error') )
+        ? 
+        `<div class="detail__hero__info--gray">
+        <div>
+          <b>Teléfono</b>
+          <p>${ propertyDetail.phoneNumber }</p>
+        </div>
+        <div>
+          <b>Web</b>
+          <a target="_BLANK" href="${ propertyDetail.webSite }" >
+          ${
+
+            propertyDetail.webSite.toLowerCase()
+
+          }</a>
+        </div>
+        
+      </div>`
+        
+        : 
+        ''
+      }
+
+          <!--
           <div class="detail__hero__info--gray">
             <div>
               <b>Teléfono</b>
@@ -272,6 +333,7 @@ export async function initializeDetailDialog(keyName) {
             </div>
             
           </div>
+          -->
         </div>
     
         <div class="detail__hero__close">

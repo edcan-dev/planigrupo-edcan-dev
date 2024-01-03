@@ -34,4 +34,6 @@ document.querySelector('.inver_select_list__selector')
 document.querySelectorAll('.resp-carousel-selector')
   .forEach(selector => selector.addEventListener('click',() => {
     document.querySelector('.inver_select_list__content').classList.toggle('active')
+    document.querySelector('.inver_select_list__selector').classList.toggle('selected')
+
   }))

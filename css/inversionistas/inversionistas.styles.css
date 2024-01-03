@@ -42,7 +42,7 @@
       position: relative;
       color: #545859;
       font-family: Barlow;
-      font-size: 18px;
+      font-size: 17px;
       font-style: normal;
       font-weight: 600;
       line-height: 25px;
@@ -938,11 +938,14 @@ article {
     letter-spacing: 1px;
     text-transform: uppercase;
     display: inline-block;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
   }
 
   & p {
-    color: #000;
+    color: #727272;
     text-align: justify;
     font-family: Raleway;
     font-size: 14px;
@@ -1430,6 +1433,150 @@ article {
   }
 }
 
+& .title-container {
+
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 20px;
+  margin-bottom: 40px;
+
+  & span {
+    color: #C04D00;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19.8px;
+    /* 110% */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+
+  & p {
+    color: #727272;
+    text-align: left;
+    font-family: Raleway;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 142.857% */
+    letter-spacing: 1px;
+  }
+
+}
+
+& .grid-container {
+  width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 3fr 7fr;
+  padding-bottom: 40px;
+
+  & .grid_tab_selector {
+
+    padding-right: 80px;
+    border-right: #DADAD8 solid 1px;
+
+    & span {
+      color: #C04D00;
+      font-family: Raleway;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 19.8px;
+      /* 132% */
+      letter-spacing: 1px;
+      text-transform: uppercase;
+
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    & ul {
+      width: 100%;
+
+      & .selected {
+        background-color: rgba(178, 180, 178, 0.20);
+        ;
+      }
+
+      & li {
+
+        height: 50px;
+        color: #53575A;
+        text-align: justify;
+        font-family: Raleway;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 50px;
+        /* 133.333% */
+        letter-spacing: 1px;
+
+        padding-left: 20px;
+
+      }
+    }
+
+
+
+  }
+
+  & .grid_tab_content {
+    padding-left: 80px;
+    padding-top: 40px;
+
+    & ul {
+      & li {
+        height: 50px;
+        display: flex;
+        padding: 0px 20px;
+
+        justify-content: space-between;
+
+        background-color: #DADAD8;
+        color: #53575A;
+        text-align: justify;
+        font-family: Raleway;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        /* 142.857% */
+        letter-spacing: 1px;
+        text-transform: capitalize;
+
+        & p {
+          line-height: 50px;
+        }
+
+        & a {
+          font-size: 10px;
+          line-height: 50px;
+          color: #53575A;
+        }
+
+      }
+
+      & .secondary {
+        background-color: #F5F3F1;
+      }
+    }
+
+
+  }
+
+
+}
+
+& .contact__cotainer {
+  background-color: #FFF;
+  padding: 120px 0 40px;
+
+}
 
 .dropbtn--comunicados {
   padding: 0px !important;
@@ -1578,6 +1725,10 @@ article {
       & .selected {
         background-color: #C04D00;
         color: #FFF;
+
+        & i::before {
+          content: "\f107";
+        }
 
         & li {
           font-family: 'Courier New', Courier, monospace;
@@ -1947,7 +2098,7 @@ article {
       padding: 0px 40px;
       padding-top: 40px;
 
-      & span { text-align: start; }
+      & span { text-align: center; }
     }
 
     & .gobierno__tab__selector {
@@ -2301,12 +2452,12 @@ article {
 
   display: inline-block;
   padding: 0px 10px;
-  height: 30px;
+  min-height: 30px;
   width: 100%;
   border-top: 1px solid #dadada;
 
   color: #53575A;
-  text-align: justify;
+  text-align: left;
   font-family: Raleway;
   font-size: 12px;
   font-style: normal;
@@ -2324,12 +2475,6 @@ li {
   list-style: none;
 }
 
-
-
-#tab_decade__grid__row--1 > div > span {
-
-}
-
 #resp-tab-content--4 {
   padding: 20px !important;
 }
@@ -2342,4 +2487,67 @@ li {
     padding: 20px;
     margin-bottom: 20px;
   }
+
+
+  .inversionistas__tabs__tab--content__text {
+    padding: 40px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title-container {
+    width: 100%;
+    margin-bottom: 0px;
+  }
+
+  .grid-container {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    padding-bottom: 0px;
+  }
+  .grid_tab_selector {
+    padding-right: 0px !important;
+    padding: 20px !important;
+  }
+
+  .grid_tab_content {
+    padding-left: 0px !important;
+    padding: 20px !important;
+  }
+  .grid_tab_content > ul > li {
+    padding: 0px 10px !important;
+    align-items: start;
+  }
+
+  .grid_tab_content > ul > li > p {
+    display: flex;
+    align-items: center;
+    line-height: 20px !important;
+    margin-right: 20px;
+    margin-top: 5px;
+  }
+  .grid_tab_content > ul > li > a {
+    display: flex;
+    align-items: center;
+    line-height: 20px !important;
+    margin-top: 5px;
+  }
+
+  .inversionistas__tabs__tab--content__contact {
+    width: 100%;
+    margin-top: 40px;
+  }
+  .inversionistas__tabs__tab--content__contact__card {
+    width: 80%;
+    max-width: 600px;
+  }
+  .inversionistas__tabs__tab--content__contact__card > div {
+    padding: 10px !important;
+  }
+
 }
