@@ -52,7 +52,7 @@ const renderGridItemsFromRows = (rows) => {
     const descriptionContainer = document.createElement("div");
     descriptionContainer.classList.add("actividades__grid__item__description");
     const descriptionContainerP = document.createElement("p");
-    descriptionContainerP.innerHTML = row[9];
+    descriptionContainerP.innerHTML = row[9].substring(0,20);
     descriptionContainer.appendChild(descriptionContainerP);
 
     const anchorContainer = document.createElement("div");

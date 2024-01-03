@@ -373,26 +373,32 @@
 .gober_asg_content--3__imgText__img {
   align-self: flex-end;
   width: 40%;
-  height: 350px;
+  height: 450px;
   background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/gobernanza/section3.png');
   background-size: cover;
   background-position-x: -80px;
 }
 .gober_asg_content--3__imgText__text {
   width: 60%;
-  background: #B2B4B2;
-  padding: 40px 80px 40px 160px;
+  background: #F5F3F1;
+  padding: 40px 80px 40px 40px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   
   & span {
-    color: #FFF;
+    color: #53575A;
     font-family: Barlow;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
-    line-height: 35px; /* 194.444% */
+    line-height: 30px; /* 194.444% */
+    display: inline-block;
+    margin-bottom: 20px;
   }
   & p {
-    color: #FFF;
+    color: #53575A;
     font-family: Raleway;
     text-align: justify;
     font-size: 13px;

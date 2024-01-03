@@ -424,7 +424,7 @@ article {
   }
 
   & div>p>b {
-    color: #000;
+    color: #545859;
     font-family: Barlow;
     font-size: 14px;
     font-style: normal;
@@ -2462,7 +2462,7 @@ article {
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
-  line-height: 30px; /* 222.222% */
+  line-height: 20px; /* 222.222% */
   letter-spacing: 1px;
   text-decoration: none;
 }

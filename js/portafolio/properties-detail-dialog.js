@@ -310,7 +310,7 @@ export async function initializeDetailDialog(keyName) {
           <a target="_BLANK" href="${ propertyDetail.webSite }" >
           ${
 
-            propertyDetail.webSite.toLowerCase()
+            propertyDetail.webSite.toLowerCase().substring(0,40)
 
           }</a>
         </div>
