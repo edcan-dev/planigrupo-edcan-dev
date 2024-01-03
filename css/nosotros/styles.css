@@ -299,8 +299,11 @@ body {
     background-position-y: bottom;
 }
 .lo-que-hacemos-card__text {
-    width: 45%;
+    width: 44%;
     padding: 0px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .lo-que-hacemos-card__text > p {
     color: #727272;
