@@ -184,8 +184,8 @@
     grid-template-columns: 1fr;
     width: 100%;
     height: max-content;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     ;
   }
 
@@ -451,5 +451,31 @@ body > main > section.historia__section > div.historia__card.historia__card--tab
     font-weight: bold;
     line-height: 45.71px;
     letter-spacing: 1px;
+  }
+}
+
+
+@media (max-width: 1000px ) {
+  .historia__card__item {
+    max-width: 100% !important;
+    width: 100% !important;
+    height: 200px;
+    align-items: center;
+  }
+
+  .historia__card--resp__item__img {
+    width: 200px;
+    height: 200px;
+  }
+
+}
+@media (max-width: 500px ) {
+  
+  .historia__card--resp__item__img {
+    width: 200px;
+    height: 200px;
+
+  }.historia__card--resp__item__text {
+    max-width: 50%;
   }
 }
