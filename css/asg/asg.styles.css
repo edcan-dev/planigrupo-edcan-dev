@@ -164,7 +164,7 @@
 
 .tabs__imgs {
   grid-area: 2 / 11 / 7 / 13;
-  background-image: url("https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/asg_que_estamos.PNG");
+  background-image: url("https://planiesg.herokuapp.com/static/images/corazones_rosas.jpg");
   background-position-x: center;
   background-position-y: center;
   background-size: cover;
@@ -843,6 +843,7 @@ background: #EFEFED;
     width: 95%;
   }
   .grid_page {
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     width: 90%;

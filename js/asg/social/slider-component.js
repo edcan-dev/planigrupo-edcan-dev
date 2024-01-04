@@ -10,7 +10,7 @@ class SliderComponent {
 
     initialize() {
         const cards = document.querySelectorAll(this.selector)
-        const cardsNodeListLength = cards.length;
+        const cardsNodeListLength = cards.length - 1;
         let visibleIndex;
 
         cards.forEach((card, index) => {
