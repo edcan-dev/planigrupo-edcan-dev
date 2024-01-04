@@ -1,7 +1,7 @@
 /* import  * as propertyDetailDialogService  from "../../services/PropertDetailDialogService.js";
 import  { getPropertyDetailById }  from "../../portafolio/xlsx-reader.js"; */
-const response = await fetch('https://edcan-dev.github.io/planigrupo-edcan-dev/data/oportunidades.carousel.properties.json')
-//const response = await fetch('../data/oportunidades.carousel.properties.json')
+//const response = await fetch('https://edcan-dev.github.io/planigrupo-edcan-dev/data/oportunidades.carousel.properties.json')
+const response = await fetch('../data/oportunidades.carousel.properties.json')
 const jsonDatasource = await response.json();
 
 const PropertyCard = (
@@ -25,6 +25,15 @@ const PropertyCard = (
   const item = document.createElement('div');
   item.classList.add('oportunidades__carousel__item');
   item.style.backgroundImage = "url(" + propertyImageUrl + ")";
+
+  if(
+    propertyTitle == 'GRAN PLAZA CANCÚN'
+  ) item.style.backgroundPositionY = 'bottom';
+  
+  if(
+    propertyTitle == 'PLAZA BELLA MEXIQUENSE'
+  ) item.style.backgroundPositionY = 'center';
+
 
   if(propertyTitle == 'PLAZA PALMIRA') item.style.backgroundPositionY = '';
 

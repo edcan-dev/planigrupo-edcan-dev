@@ -3276,6 +3276,10 @@ MAIN TABS MARGIN
     .main__tabs {
         margin-top: 600px !important;
     }
+
+    .e-carousel-navigators {
+        display: none !important;
+    }
 }
 @media(max-width: 1000px) {
 

@@ -689,3 +689,7 @@
     letter-spacing: 1px;
   }
 }
+
+.hero__img {
+  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/sustentabilidad/plani-materialidad.png');
+}
