@@ -1176,7 +1176,10 @@ article {
   transition: 0.4s;
   position: relative;
 
+  display: flex;
+  flex-direction: column;
   & p {
+    display: inline-block;
     color: #53575A;
     text-align: justify;
     font-family: Raleway;

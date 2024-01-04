@@ -223,7 +223,7 @@
 }
 
 .thirdSection__carousel__container {
-    width: calc(100% - 200px);
+    width: calc(100%);
     height: 100%;
     position: relative;
     
@@ -231,15 +231,14 @@
 
 .thirdSection__carousel__container__content {
     display: flex;
+    justify-content: space-between;
     height: 100%;
     width: 100%;
     position: absolute;
 }
 
 .thirdSection__carousel__container__content__item {
-    max-width: 500px;
-    width: 50%;
-    padding: 0px 25px;
+    width: 280px;
 }
 .thirdSection__carousel__container__content__item__title {
     display: inline-block;

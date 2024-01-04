@@ -878,3 +878,25 @@ li {
         left: 0px;
     }
 }
+
+.flex-container-contacto {
+    display: flex;
+    justify-content: space-between;
+}
+.flex-container-contacto > div {
+    padding: 0px !important;
+}
+
+@media (max-width: 1000px) {
+    
+    .flex-container-contacto {
+        display: flex;
+        flex-direction: column ;
+        justify-content: space-between;
+    }
+
+    .flex-container-contacto > div:nth-child(2) {
+        margin-top: 40px !important;
+    }
+    
+}

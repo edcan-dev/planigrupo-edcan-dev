@@ -307,11 +307,9 @@ export async function initializeDetailDialog(keyName) {
         </div>
         <div>
           <b>Web</b>
-          <a target="_BLANK" href="${ propertyDetail.webSite }" >
+          <a target="_BLANK" href="${ propertyDetail.webSite }">
           ${
-
-            propertyDetail.webSite.toLowerCase().substring(0,40)
-
+            getWebsite(propertyDetail.webSite)
           }</a>
         </div>
         
@@ -719,4 +717,14 @@ function getFormattedTentants(tenants) {
 function pickRandomElements(arr, count) {
   const shuffledArray = arr.sort(() => Math.random() - 0.5); // Shuffle the array
   return shuffledArray.slice(0, count); // Take the first 'count' elements
+}
+
+function getWebsite(webSite) {
+  console.log(webSite);
+  
+  return webSite.includes('ERROR') ?
+  'N/A'
+  :
+  webSite.toLowerCase().substring(0,40)
+
 }
