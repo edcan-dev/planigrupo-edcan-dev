@@ -126,7 +126,10 @@ text-transform: uppercase;
         height: 1400px;
     }
     .equipo__card__item__img {
-    height: 250px;
+    height: 300px;
+    }
+    .equipo__card__item__text {
+    height: 30%;
     }
 
     

@@ -346,6 +346,7 @@ hr {
 
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .section--3 .actividades > .actividades__title {
@@ -834,4 +835,17 @@ background: #EFEFED;
 .grid_page {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 1000px) {
+
+  .tabs__imgs {
+    width: 95%;
+  }
+  .grid_page {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 90%;
+    max-width: 400px;
+  } 
 }
