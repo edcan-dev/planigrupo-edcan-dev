@@ -195,24 +195,39 @@ export function getPropertyDetailById(id) {
 }
 
 async function configureTenantCombo(props) {
+  
   document.querySelector('#tenant-selector')
-    .addEventListener('change',async (ev)=> {
+    .addEventListener('click', (ev)=> {
 
-      const matchedIds =  [];
-      const value = ev.target.value;
+      console.log(ev.target.value);
+
+      const filtered = propertiesArray.filter(prop => prop.tenants.includes(ev.target.value))
+
+      console.log(filtered);
+
+      propertiesGrid.filterByTenant(filtered, ev.target.value)
+
+    })
 
 
-       await propertiesArray.forEach( async(promise) => {
-        await promise.then(
-          data => {
-            if(data.tenants.includes(value)) {
-              matchedIds.push(data);
-            }
-          }
-        )
-      })
+  // document.querySelector('#tenant-selector')
+  //   .addEventListener('change',async (ev)=> {
 
-      propertiesGrid.filterByTenant(matchedIds, value)
+  //     const matchedIds =  [];
+  //     const value = ev.target.value;
 
-  })
+
+  //      await propertiesArray.forEach( async(promise) => {
+  //       await promise.then(
+  //         data => {
+  //           if(data.tenants.includes(value)) {
+  //             matchedIds.push(data);
+  //           }
+  //         }
+  //       )
+  //     })
+
+  //     propertiesGrid.filterByTenant(matchedIds, value)
+
+  // })
 }
