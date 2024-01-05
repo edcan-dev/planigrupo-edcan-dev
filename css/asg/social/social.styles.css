@@ -32,7 +32,7 @@
     background-color: #F0F0F0;    
 }
 .social_section--3 > div {
-    width: 100%;
+    width: 90%;
     max-width: 1200px;    
     margin: 0 auto;
     padding: 40px 0px;
@@ -155,15 +155,21 @@
     display: flex;
     height: 300px;
 }
-.social_section--6 > .social_tab__selectors {
-    width: 50%;
+.social_section--6 > div> .social_tab__selectors {
+    width: 40%;
+    flex-grow: 1;
     background-color: #d9d9d9;
+    background-color: #EFEFED;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
-.social_section--6 > .social_tab__selectors > .social_tab__selector > span {
+.social_section--6 > div > .social_tab__selectors > .social_tab__selector {
+    cursor: pointer;
+}
+
+.social_section--6 > div > .social_tab__selectors > .social_tab__selector {
     color: #D7282F;
     text-align: center;
     font-family: Barlow;
@@ -175,34 +181,47 @@
     text-transform: uppercase;
 }
 
-.social_section--6 > .social_tab__selectors > .social_tab__selector {
+.social_section--6 > div > .social_tab__selectors > .social_tab__selector {
     height: 65px;
-    padding-left: calc((100svw - 1200px) / 2 );
     display: flex;
     align-items: center; 
+    padding-left: 40px;
 }
 
-.social_section--6 > .social_tab__selectors > .selected {
-    background-color: #EFEFED;
+.social_section--6 > div > .social_tab__selectors > .selected {
+    background-color: #d9d9d9;
+    width: 100%;
 }
 
-.social_section--6 > .social_tab__contents {
-    width: 50%;
-    background-color: #EFEFED;
+.social_section--6 > div > .social_tab__contents {
+    width: 500px !important;
+    background-color: #d9d9d9;
     display: flex;
     justify-content: center;
-    padding: 20px;
 }
 
-.social_tab__content {
-
-}
 .social_tab__content > img {
     object-fit: contain;
     height: 100%;
 }
 
 @media (max-width: 1000px) {
+
+    .social_section--6 {
+        height: 600px;
+    }
+    .social_section--6 > div {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .social_tab__selectors {
+        width: 100% !important;
+        height: 300px;
+    }    
+    .social_tab__contents {
+        height: 300px;
+    }
     
     .hero__img {
         height: 400px;
