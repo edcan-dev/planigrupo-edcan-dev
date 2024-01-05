@@ -200,6 +200,9 @@ class PropertiesGrid {
 
         if(tenant == 'all') {
             this.render(this.#properties)
+
+            const stateValue = document.querySelector('#state-selector').value
+            this.filterByState(stateValue)
             return;
         }
         

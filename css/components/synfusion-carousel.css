@@ -163,7 +163,8 @@
     }
 
     .oportunidades__carousel__div {
-        width: 350px;
+        min-width: 350px;
+        width: 70%;
         height: 280px;
         margin: 100px auto;
         cursor: pointer;
@@ -179,5 +180,9 @@
         margin-top: -50px;
         position: relative;
         z-index: -1;
+    }
+
+    .main__all-properties {
+        margin-top: 40PX;
     }
 }
