@@ -75,6 +75,8 @@
   <script src="https://cdn.syncfusion.com/ej2/24.1.41/dist/ej2.min.js" type="text/javascript"></script>
   <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type="text/javascript"></script>
 
+  <script defer type="module" src="./js/asg/social/services/DiversidadInclusionXLSXReader.js"></script>
+
 
 </head>
 
@@ -400,41 +402,75 @@
 
 
       <section class="social_section--6">
-        <div class="social_tab__selectors">
 
-          <div id="social_tab__selector--1" class="social_tab__selector selected">
-            <span>Distribución de personal por tipo de puesto</span>
+        <div style="
+        max-width: 1200px;
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        ">
+
+          <div class="social_tab__selectors">
+            
+            <div id="social_tab__selector--1" class="social_tab__selector selected">
+              Distribución de personal por tipo de puesto
+            </div>
+            
+            <div id="social_tab__selector--2" class="social_tab__selector">
+              Junta Directiva por género
+            </div>
+            
+            <div id="social_tab__selector--3" class="social_tab__selector">
+              Nuevas contrataciones por género
+            </div>
           </div>
+          
+          
+          <div class="social_tab__contents">
+            
+            
+            <div id="social_tab__content--1" class="social_tab__content">
 
-          <div id="social_tab__selector--2" class="social_tab__selector">
-            <span>Junta Directiva por género</span>
-          </div>
+              <span id="cont1__title"> Distribución de personal por tipo de puesto </span>
 
-          <div id="social_tab__selector--3" class="social_tab__selector">
-            <span>Nuevas contrataciones por género</span>
-          </div>
-        </div>
+              <div id="cont1__globes">
+
+              </div>
 
 
-        <div class="social_tab__contents">
+            </div>
 
+            <style>
 
-          <div id="social_tab__content--1" class="social_tab__content">
-            <img
-              src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/social/imageedit_2_7650408939.jpg"
-              alt="">
-          </div>
+            #social_tab__content--1 {
+              padding: 20px;
+              width: 100%;
+            }
+            #cont1__title {
+              height: 30px;
+              width: 100%;
+              border-radius: 10px;
+              background-color: #0096A9;
 
-          <div id="social_tab__content--2" class="social_tab__content inactive">
-            <img
-              src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/social/imageedit_5_6199888935.png"
-              alt="">
-          </div>
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: #FFF;
 
-          <div id="social_tab__content--3" class="social_tab__content inactive">
-            <img
-              src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/social/imageedit_11_7515015442.png"
-              alt="">
+              font-family: 'Raleway';
+
+            }
+            
+            </style>
+            
+            <div id="social_tab__content--2" class="social_tab__content inactive">
+              
+            </div>
+            
+            <div id="social_tab__content--3" class="social_tab__content inactive">
+              
+            </div>
+            
           </div>
 
         </div>
