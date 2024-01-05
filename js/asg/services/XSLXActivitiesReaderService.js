@@ -1,11 +1,10 @@
-//const xslxPath = 
+//const xslxPath =
 
 console.log(window.location.href);
 
-const xslxPath = window.location.href.startsWith('https')
+const xslxPath = window.location.href.startsWith("https")
   ? "https://edcan-dev.github.io/planigrupo-edcan-dev/data/asg/actividades-final.xlsx"
-  : '../../../data/asg/actividades-final.xlsx';
-
+  : "../../../data/asg/actividades-final.xlsx";
 
 const response = await fetch(xslxPath);
 const xlsx = await response.blob();
@@ -17,6 +16,7 @@ class Activity {
   title;
   imageUrl;
   description;
+  intro;
   category;
   dateString;
   year;
@@ -25,14 +25,17 @@ class Activity {
   quantity;
 }
 
-await readXlsxFile(xlsx, { sheet: 1 }).then(function (rows) {
+class FeaturedActivity {
+  description;
+  image;
+}
 
-  rows.shift()
+await readXlsxFile(xlsx, { sheet: 1 }).then(function (rows) {
+  rows.shift();
 
   for (let index = 0; index < rows.length; index++) {
-
     const element = rows[index];
-//    console.log(element);
+    //    console.log(element);
 
     const activity = new Activity();
 
@@ -45,25 +48,21 @@ await readXlsxFile(xlsx, { sheet: 1 }).then(function (rows) {
 
     activity.specification = element[6];
     activity.quantity = element[7];
-    
-    activity.description = element[10]
 
-    activity.year = element[5]
-    
+    activity.description = element[10];
+    activity.intro = element[11];
+
+    activity.year = element[5];
+
     activities.push(activity);
   }
-  
-  console.log('[READ XLSX]');
-
+  console.log("[READ XLSX SHEET 01]");
 });
 
-
-
 class ActivitiesReaderService {
-
   #activities = [];
 
-  constructor( reader ) {
+  constructor(reader) {
     this.#activities = activities;
   }
 
@@ -72,10 +71,51 @@ class ActivitiesReaderService {
   }
 
   getActivitiesByCategory(category) {
-    return this.#activities.filter(activity => activity.category == category)
+    return this.#activities.filter((activity) => activity.category == category);
   }
   getActivityById(id) {
-    return this.#activities.find(activity => activity.id == id)
+    return this.#activities.find((activity) => activity.id == id);
+  }
+
+  async getSocialFeaturedActivities() {
+    const socialFeaturedActivities = [];
+
+    await readXlsxFile(xlsx, { sheet: 3 }).then(function (rows) {
+      rows.shift();
+
+      for (let index = 0; index < rows.length; index++) {
+        const element = rows[index];
+
+        const featuredActivity = new FeaturedActivity();
+        featuredActivity.description = element[0];
+        featuredActivity.image = element[1];
+        socialFeaturedActivities.push(featuredActivity);
+      }
+    });
+    return new Promise((res, rej)=> {
+      res(socialFeaturedActivities.reverse()),
+      rej([])
+    });
+  }
+  async getAmbientalFeaturedActivities() {
+    const socialFeaturedActivities = [];
+
+    await readXlsxFile(xlsx, { sheet: 2 }).then(function (rows) {
+      rows.shift();
+
+      for (let index = 0; index < rows.length; index++) {
+        const element = rows[index];
+
+        const featuredActivity = new FeaturedActivity();
+        featuredActivity.description = element[0];
+        featuredActivity.image = element[1];
+        socialFeaturedActivities.push(featuredActivity);
+      }
+    });
+    return new Promise((res, rej)=> {
+      res(socialFeaturedActivities.reverse()),
+      rej([])
+    });
   }
 }
 

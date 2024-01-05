@@ -40,11 +40,29 @@
     <script defer type="module" src="./js/asg/services/ActivitiesASGModal.js"></script>`
     <!-- Activities Service -->
     <script defer type="module" src="./js/asg/sustentabilidad/services/ActivitiesGridService.js"></script>
+    <script defer type="module" src="./js/asg/ambiental/ActivitiesGridService.js"></script>`
 
     <!-- Dialog Custom Script -->
     <link rel="stylesheet" href="./css/asg/gobernanza/gobernanza.styles.css">
-    <link rel="stylesheet" href="./css/asg/sustentabilidad/sustentabilidad.styles.css">
     <link rel="stylesheet" href="./css/asg/ambiental/ambiental.styles.css">
+
+
+
+    <script defer type="module" src="./js/asg/services/ActivitiesGridService.js"></script>
+    <script defer type="module" src="./js/asg/services/ActivitiesPagingAndSortingService.js"></script>
+    
+    <link href="https://cdn.syncfusion.com/ej2/24.1.41/ej2-base/styles/material.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/24.1.41/ej2-grids/styles/material.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/24.1.41/ej2-buttons/styles/material.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/24.1.41/ej2-popups/styles/material.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/24.1.41/ej2-navigations/styles/material.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/24.1.41/ej2-dropdowns/styles/material.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/24.1.41/ej2-lists/styles/material.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/24.1.41/ej2-inputs/styles/material.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/24.1.41/ej2-calendars/styles/material.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/24.1.41/ej2-splitbuttons/styles/material.css" rel="stylesheet">
+    <script src="https://cdn.syncfusion.com/ej2/24.1.41/dist/ej2.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type="text/javascript"></script>
 
 
 
@@ -287,50 +305,88 @@
           <div class="thirdSection__title">
             <span>ACTIVIDADES RELEVANTES</span>
           </div>
-  
-          <div class="thirdSection__carousel">
+          
+          <div class="featuredProperties_grid">
 
-            
+            <div class="featuredProperties_grid_item">
   
-            <div class="thirdSection__carousel__prev thirdSection__carousel__selector" id="prev">
-            </div>
-  
-            <div class="thirdSection__carousel__container">
-              <div class="thirdSection__carousel__container__content">
-                
-                <div class="thirdSection__carousel__container__content__item">
-                  <div class="thirdSection__carousel__container__content__item__title">
-                    <p>RECICLAJE DE 3.2  TONELADAS DE PLASTICO</p>
-                  </div>
-                  <div class="thirdSection__carousel__container__content__item__image" style="background-image: url('https://infinitoverde.com/wp-content/uploads/2023/06/volunteer-putting-plastic-bottles-bin.jpg');">
-                  </div>
-                  <div class="thirdSection__carousel__container__content__item__description">
-                    En Santa Catarina, Garza Sada y Plaza Real Saltillo a través de máquinas reclicladoras.
-                    Logrando una reducción de 56 tonaledas de emisiones de CO2
-                  </div>
-                  
-                </div>
-              
-                <div class="thirdSection__carousel__container__content__item">
-                  <div class="thirdSection__carousel__container__content__item__title">
-                    <p>RECAUDACIÓN DE 11 TONELADAS DE TAPITAS </p>
-                  </div>
-                  <div class="thirdSection__carousel__container__content__item__image" style="background-image: url('https://www.ucr.ac.cr/medios/fotos/2018/15bf5fcf50597d.jpg');">
-                  </div>
-                  <div class="thirdSection__carousel__container__content__item__description">
-                    Que equivalen a 19 toneladas de C02, que se dejaron de emitir al ambiente durante los últimos 14 meses.
-                  </div>
-                  
-                </div>
-              
+              <div class="featuredProperties_grid_item_img" id="featuredProperties_grid_item_img--1" style="background-image: url('https://www.cepal.org/sites/default/files/news/images/fotomujeres2.jpg?timestamp=1421156225');">
               </div>
-              
+  
+              <div class="featuredProperties_grid_item_text">
+                <p>{{ description }}</p>
+              </div>
+  
             </div>
   
-            <div class="thirdSection__carousel__next thirdSection__carousel__selector" id="next">
+            <div class="featuredProperties_grid_item">
+  
+              <div class="featuredProperties_grid_item_img" id="featuredProperties_grid_item_img--2" style="background-image: url('https://www.cepal.org/sites/default/files/news/images/fotomujeres2.jpg?timestamp=1421156225');">
+              </div>
+  
+              <div class="featuredProperties_grid_item_text">
+                <p>{{ description }}</p>
+              </div>
+  
             </div>
   
           </div>
+
+          <style>
+
+            .section--3 {
+              height: max-content;
+            }
+    
+            .featuredProperties_grid {
+              width: 100%;
+              max-width: 1200px;
+              display: grid;
+              margin: 0 auto;
+              grid-template-columns: repeat(2, 250px);
+              justify-content: space-evenly;
+            }
+            .featuredProperties_grid_item {
+             min-height: 350px;
+              
+            }
+    
+            .featuredProperties_grid_item_img {
+              height: 250px;
+              width: 100%;
+              background-size: cover;
+              background-position-x: center;
+              background-position-y: top;
+            }
+            .featuredProperties_grid_item_text {
+              color: #727272;
+              font-family: Raleway;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 20px;
+              letter-spacing: 1px;
+              text-align: left;
+              padding: 10px 0px;
+            }
+    
+            @media (max-width: 1200px) {
+              .featuredProperties_grid {
+                width: 90%;
+                justify-content: space-evenly;
+                grid-template-columns: repeat(2, 250px);
+                grid-template-rows: repeat(1, 1fr);
+              }
+            }
+            @media (max-width: 750px) {
+              .featuredProperties_grid {
+                width: 90%;
+                justify-content: space-evenly;
+                grid-template-columns: repeat(1, 250px);
+                grid-template-rows: repeat(2, 1fr);
+              }
+            }
+            </style>
   
   
         </section>
@@ -338,11 +394,103 @@
 
       </div>
 
-      <div class="ambi_asg_content inactive" id="ambi_asg_content--2">        
+      <section class="section--3 ambi_asg_content inactive" id="ambi_asg_content--2">
 
-        <div class="forthSection__grid"></div>
-
-      </div>
+        <div class="actividades">
+  
+          <div class="actividades__title">
+            <span>ACTIVIDADES</span>
+          </div>
+  
+  
+          <div class="forthSection__grid">
+          </div>
+  
+        </div>
+  
+        <div class="actividades__grid__tab__selectors">
+          <ul>
+          </ul>
+        </div>
+  
+        <div id="pagingContainer">
+          <div id="Pager">
+          </div>
+        </div>
+  
+        <style>
+          .asg__paging {
+            width: 1200px;
+            max-width: 90%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: end;
+  
+            & span {
+              display: inline-block;
+              margin-right: 10px;
+              color: #97928A;
+              text-align: center;
+              font-family: Barlow;
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 14.29px;
+              /* 79.389% */
+              letter-spacing: 1px;
+              text-transform: uppercase;
+            }
+  
+            & .selected {
+              color: #0096A9;
+              font-weight: bolder;
+  
+            }
+          }
+  
+          .e-pager .e-currentitem {
+            background-color: #0096A9
+          }
+  
+          .e-pager .e-focused {
+            background-color: #0096A9;
+          }
+  
+          .e-pager .e-currentitem.e-numericitem.e-focused {
+            background-color: #0096A9;
+          }
+  
+          .e-pager .e-link {
+  
+            display: inline-block;
+            margin-right: 10px;
+            color: #000;
+            text-align: center;
+            font-family: Barlow;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 14.29px;
+            /* 79.389% */
+            letter-spacing: 1px;
+            text-transform: uppercase;
+          }
+  
+          #Pager {
+            display: flex;
+            border: none;
+          }
+  
+          #Pager>div.e-parentmsgbar {
+            display: none;
+          }
+  
+          .e-pager .e-pagercontainer {
+            margin: 0 auto;
+          }
+        </style>
+  
+      </section>
 
       
       <section>

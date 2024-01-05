@@ -4,6 +4,7 @@
 
 .hero__img {
     background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/gobernanza/responsabilidad_social.png') !important;
+    width: 100% !important;
 }
 .amb_section--2 > .grid {
     display: grid;

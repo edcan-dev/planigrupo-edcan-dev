@@ -16,7 +16,7 @@
     // Configuración común para las gráficas
     var configuracionComun = {
         type: 'doughnut',
-        cutoutPercentage: 85,
+        cutoutPercentage: 75,
         rotation: -Math.PI,
         circumference: Math.PI,
         legend: {
@@ -68,7 +68,11 @@
 
         // Agregar leyenda
         var leyendaElement = document.getElementById('leyenda' + leyenda);
-        leyendaElement.innerText = leyenda + ': ' + porcentaje + '%';
+        leyendaElement.innerText = leyenda;
+
+
+        var leyendaElement = document.getElementById('percent' + leyenda);
+        leyendaElement.innerText = porcentaje + '%';
 
         return chart;
     }

@@ -28,7 +28,17 @@ export function addDialogEventListener() {
   })
 }
 
-renderPagination(6, [...activities]);
+
+if(window.location.href.includes('asg.html')) {
+  renderPagination(6, [...activities]);
+} else 
+if(window.location.href.includes('asg-social.html')) {
+  renderSocialPagination(6, [...activities]);
+} else
+if(window.location.href.includes('asg-ambiental.html')) {
+  renderAmbientalPagination(6, [...activities]);
+}
+
 
 
 export function renderGridByCategory(category) {
@@ -70,7 +80,7 @@ export function renderGridByYear(year) {
 }
 
 
-function getDialogGridItem({ title, description, id, imageUrl }) { 
+function getDialogGridItem({ title, id, imageUrl, intro }) { 
   return `
   <div class="actividades__grid__item">
       <div class="actividades__grid__item__title">
@@ -81,7 +91,7 @@ function getDialogGridItem({ title, description, id, imageUrl }) {
       "></div>
       <div class="actividades__grid__item__description">
           <p>
-          ${ description == undefined ? "" : description }
+          ${ intro == undefined ? "" : intro }
           </p>
       </div>
       <div class="actividades__grid__item__a">
@@ -208,41 +218,81 @@ export function renderPagination(itemsPerPage, activities) {
     .forEach(item => item.classList.add('inactive'))
   
   document.querySelector('#grid_page--1').classList.remove('inactive')
-
   addDialogEventListener()
 
 
-  // const pages = Math.floor((activities.length / itemsPerPage))
+}
 
-  // const grid = document.querySelector('.forthSection__grid');
-  // grid.innerHTML = ''
+/**
+ * 
+ * @param { number } itemsPerPage
+ * @param { Array } activities 
+ */
+export function renderSocialPagination(itemsPerPage, activities) {
 
+  activities = activities.filter(act => act.category == 'Social');
 
-  // for (let index = 1; index < pages; index++) {
+  console.log(activities);
 
-  //   const gridPage = document.createElement('div');
-  //   gridPage.classList.add('grid_page');
-  //   gridPage.id = 'grid_page--' + index;
+  const pagesNumber = Math.floor(activities.length / itemsPerPage)
 
-  //   gridPage.style.display = 'grid';
-  //   gridPage.style.gridTemplateColumns = 'repeat(3, 1fr)'
-  //   gridPage.style.rowGap = '20px';
-            
+  for (let index = 1; index <= pagesNumber; index++) {
 
+    const gridPage = document.createElement('div');
+    gridPage.classList.add('grid_page');
+    gridPage.id = 'grid_page--' + index;
 
+    const pageItems = activities
+      .splice(0, itemsPerPage)
+      .map(activity => getDialogGridItem(activity))
+      .join('');
 
-  //   var removed = [...activities].splice(0, 6).map(item => getDialogGridItem(item));
+//     console.log(pageItems);
 
-  //   gridPage.innerHTML = removed.join('')
+    gridPage.innerHTML = pageItems;
+    document.querySelector('.forthSection__grid').appendChild(gridPage);
 
-  //   grid.appendChild(gridPage);
-  // }
+  }
+  document.querySelectorAll('.grid_page')
+    .forEach(item => item.classList.add('inactive'))
+  
+  document.querySelector('#grid_page--1').classList.remove('inactive')
+  addDialogEventListener()
+}
 
-  // document.querySelectorAll('.grid_page').forEach((page, list, index) => {
-  //   page.classList.add('inactive')
-  // })
+/**
+ * 
+ * @param { number } itemsPerPage
+ * @param { Array } activities 
+ */
+export function renderAmbientalPagination(itemsPerPage, activities) {
 
-  // document.querySelector('#grid_page--1').classList.remove('inactive')
+  activities = activities.filter(act => act.category == 'Ambiental');
 
+  console.log(activities);
 
+  const pagesNumber = Math.floor(activities.length / itemsPerPage)
+
+  for (let index = 1; index <= pagesNumber; index++) {
+
+    const gridPage = document.createElement('div');
+    gridPage.classList.add('grid_page');
+    gridPage.id = 'grid_page--' + index;
+
+    const pageItems = activities
+      .splice(0, itemsPerPage)
+      .map(activity => getDialogGridItem(activity))
+      .join('');
+
+//     console.log(pageItems);
+
+    gridPage.innerHTML = pageItems;
+    document.querySelector('.forthSection__grid').appendChild(gridPage);
+
+  }
+  document.querySelectorAll('.grid_page')
+    .forEach(item => item.classList.add('inactive'))
+  
+  document.querySelector('#grid_page--1').classList.remove('inactive')
+  addDialogEventListener()
 }
