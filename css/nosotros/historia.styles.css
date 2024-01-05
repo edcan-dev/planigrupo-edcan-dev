@@ -8,7 +8,8 @@
 .historia__timeline {
   margin: 40px 0px 0px 0px;
   height: 100px;
-  width: 60%;
+  width: 95%;
+  max-width: 1200px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   row-gap: 30px;
@@ -18,12 +19,30 @@
 .historia__card {
   margin: 40px 0px;
   height: 700px;
-  width: 60%;
+  max-width: 1200px;
+  width: 95%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  row-gap: 30px;
-  column-gap: 30px;
+  row-gap: 40px;
+  column-gap: 40px;
+}
+
+@media (max-width: 1300px) {
+  .historia__timeline {
+    max-width: 900px;
+    width: 100%;  
+  }
+  .historia__card {
+    height: 600px;
+    width: 100%;
+    max-width: 900px;
+    column-gap: 20px;
+  }
+
+  .main__hero_downbar__text {
+    padding-left: 5%;
+  }
 }
 
 .historia__card__item {
@@ -32,7 +51,7 @@
 }
 
 .historia__card__item__img {
-  height: 200px;
+  height: 70%; /* height: 200px; */
   background-size: cover;
 }
 
@@ -169,6 +188,7 @@
   .historia__section--resp {
     margin-top: 100px;
     display: flex;
+    height: 100vh;
   }
 
   .historia__timeline {
@@ -341,7 +361,7 @@
   background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia_optimized/2016.png');
 }
 .historia__card__item__img--22 {
-  background-image: url('https://planigrupo.com.mx/wp-content/uploads/2018/09/2016.jpg');
+  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia_optimized/2017.png');/* background-image: url('https://planigrupo.com.mx/wp-content/uploads/2018/09/2016.jpg'); */
 }
 .historia__card__item__img--23 {
   background-image: url('https://planigrupo.com.mx/wp-content/uploads/2018/09/2017.jpg');
@@ -349,16 +369,23 @@
 .historia__card__item__img--24 {
   background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia_optimized/2023.png');
   background-position-y:center ;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
 }
 .historia__card__item__img--25 {
   background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia_optimized/gmi.jpg');
   border: 1px solid #c0c0c0;
   background-position-y:center ;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  /* 
 }
 .historia__card__item__img--26 {
   background-image: url('https://planigrupo.com.mx/wp-content/uploads/2019/01/location-hero-paseo-alcalde-full.jpg');
   border: 1px solid #c0c0c0;
-  background-position-y:center ;
+  background-position-y:center ; */
 }
 
 
@@ -370,7 +397,7 @@ body > main > section.historia__section > div.historia__card.historia__card--tab
 }
 body > main > section.historia__section > div.historia__card.historia__card--tab5.active > div:nth-child(4) > div.historia__card__item__text > p {
   font-size: 10px;
-}
+/* }
 
 @media (max-width: 1300px) {
   .footer {
@@ -394,8 +421,8 @@ body > main > section.historia__section > div.historia__card.historia__card--tab
 }
 
 .carousel-cell {
-  width: 100%; /* full width */
-  height: 300px; /* height of carousel */
+  width: 100%;
+  height: 300px; 
   margin-right: 10px;
 }
 .carousel-cell--last > .carousel-cell__content__item {
@@ -423,7 +450,7 @@ body > main > section.historia__section > div.historia__card.historia__card--tab
 .historia__card__item {
   height:300px;
   width: 50%;
-  max-width: 30%;
+  max-width: 30%; */
 }
 
 .footer {
