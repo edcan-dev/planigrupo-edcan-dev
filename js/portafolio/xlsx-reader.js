@@ -76,7 +76,7 @@ if(localStorage.getItem('propertiesArray') != null) {
 
 
   propertiesArray = Array.from(parsedArr)
-
+  console.info('[LOADED XLSX]')
 
 } else {
 
