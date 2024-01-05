@@ -678,7 +678,7 @@ background: #EFEFED;
 }
 .detail__dialog__img > img{
   width: 100%;
-  height: 600px;
+  height: 450px;
   object-fit: cover;
 }
 .detail__dialog__img > a {
@@ -825,6 +825,7 @@ background: #EFEFED;
   width: 100%;
   height: 500px;
   object-fit: cover;
+  overflow-y: scroll;
 }
 .carousel-cell > img {
   object-fit: cover;
@@ -851,3 +852,73 @@ background: #EFEFED;
     max-width: 400px;
   } 
 }
+
+@media(max-width: 769px) {
+
+  #Pager {
+    justify-content: center;
+  }
+
+}
+          .asg__paging {
+            width: 1200px;
+            max-width: 90%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: end;
+  
+            & span {
+              display: inline-block;
+              margin-right: 10px;
+              color: #97928A;
+              text-align: center;
+              font-family: Barlow;
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 14.29px; /* 79.389% */
+              letter-spacing: 1px;
+              text-transform: uppercase;
+            }
+            & .selected {
+              color:#0096A9;
+              font-weight: bolder;
+  
+            }
+          }
+          
+          .e-pager .e-currentitem {
+            background-color: #0096A9
+          }
+          .e-pager .e-focused {
+            background-color: #0096A9;
+          }
+          .e-pager .e-currentitem.e-numericitem.e-focused {
+            background-color: #0096A9;
+          }
+          .e-pager .e-link {
+  
+            display: inline-block;
+            margin-right: 10px;
+            color: #000;
+            text-align: center;
+            font-family: Barlow;
+            font-size: 18px;
+            font-style: normal;            
+            font-weight: 500;
+            line-height: 14.29px; /* 79.389% */
+            letter-spacing: 1px;
+            text-transform: uppercase;
+          }
+  
+          #Pager {
+            display: flex;
+            border: none;
+          }
+          #Pager > div.e-parentmsgbar {
+            display: none;
+          }
+  
+          .e-pager .e-pagercontainer {
+            margin: 0 auto;
+          }

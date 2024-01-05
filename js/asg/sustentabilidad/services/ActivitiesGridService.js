@@ -5,11 +5,11 @@ const ASG_ACTIVITIES_DIRECTORY_URL = 'https://planigrupo.blob.core.windows.net/p
 
 let activities = activitiesReaderService.getActivitiesByCategory("Ambiental");
 
-activities.forEach((activity) => {
-  const activityGridItem = getDialogGridItem(activity);
-  document.querySelector(".forthSection__grid").innerHTML += activityGridItem;
+// activities.forEach((activity) => {
+//   const activityGridItem = getDialogGridItem(activity);
+//   document.querySelector(".forthSection__grid").innerHTML += activityGridItem;
 
-});
+// });
 
 document.querySelectorAll('.actividades__grid__item__a')
   .forEach(activityAnchor => {
