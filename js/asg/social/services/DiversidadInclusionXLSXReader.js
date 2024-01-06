@@ -61,6 +61,31 @@ await readXlsxFile(xlsx, { sheet: 3 }).then(function (rows) {
 
 })
 
+
+const contentOneElements = document.querySelectorAll('#cont1__grid__item');
+
+contentOneElements[0].firstElementChild.innerHTML = contentOne.womenValues[0]
+contentOneElements[1].firstElementChild.innerHTML = contentOne.womenValues[1]
+contentOneElements[2].firstElementChild.innerHTML = contentOne.womenValues[2]
+contentOneElements[3].firstElementChild.innerHTML = '= ' + contentOne.womenValues[3]
+
+contentOneElements[4].firstElementChild.innerHTML = contentOne.menValues[0]
+
+contentOneElements[5].firstElementChild.innerHTML = contentOne.menValues[1]
+contentOneElements[6].firstElementChild.innerHTML = contentOne.menValues[2]
+contentOneElements[7].firstElementChild.innerHTML = '= ' + contentOne.menValues[3]
+
+
+document.querySelector('#cont2__grid__item').firstElementChild.innerHTML = contentTwo.values
+
+document.querySelector('.cont2__grid__item--result').firstElementChild.innerHTML = '= ' + contentTwo.result
+
+
+document.querySelector('#cont3__grid__item').firstElementChild.innerHTML = contentThree.values
+
+document.querySelector('.cont3__grid__item--result').firstElementChild.innerHTML = '= ' + contentThree.result
+
+
 console.log(contentOne);
 console.log(contentTwo);
 console.log(contentThree);
