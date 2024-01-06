@@ -207,6 +207,11 @@
 
 @media (max-width: 1000px) {
 
+    .social_section--6 > div > .social_tab__selectors > .social_tab__selector {
+        padding-left: 0px;
+        justify-content: center;
+    }
+
     .social_section--6 {
         height: 600px;
     }
