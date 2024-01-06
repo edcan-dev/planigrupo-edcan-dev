@@ -41,8 +41,8 @@
 
   <!-- Actividades Grid -->
   <script defer type="module" src="./js/asg/read-excel-file.min.js"></script>
-  <script defer type="module" src="./js/asg/services/XSLXActivitiesReaderService.js"></script>`
-  <script defer type="module" src="./js/asg/social/services/ActivitiesGridService.js"></script>`
+  <script defer type="module" src="./js/asg/services/XSLXActivitiesReaderService.js"></script>
+  <script defer type="module" src="./js/asg/social/services/ActivitiesGridService.js"></script>
   <script defer type="module" src="./js/asg/services/ActivitiesASGModal.js"></script>
   <!-- Dialog Custom Script -->
 
@@ -51,7 +51,7 @@
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
 
-  <script defer type="module" src="./js/asg/social/generic-tab-component.js"></script>`
+  <script defer type="module" src="./js/asg/social/generic-tab-component.js"></script>
 
   <link rel="stylesheet" href="./css/asg/gobernanza/gobernanza.styles.css">
   <!-- <link rel="stylesheet" href="./css/asg/sustentabilidad/sustentabilidad.styles.css"> -->
@@ -429,45 +429,261 @@
           <div class="social_tab__contents">
             
             
-            <div id="social_tab__content--1" class="social_tab__content">
+            <div id="social_tab__content--1" class="social_tab__content inactive">
+ 
+              <div id="cont1__grid__headers">
+                <span>OPPERACION</span>
+                <span>GERENCIAS</span>
+                <span>DIRECCIÓN</span>
+              </div>
 
-              <span id="cont1__title"> Distribución de personal por tipo de puesto </span>
 
-              <div id="cont1__globes">
+              <div id="cont1__grid">
+                <div id="cont1__grid__item">
+                  <p>102 – 46.4%</p>
+                  <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/social/ASG-Mujer.png" alt="">
+                </div>
+                <div id="cont1__grid__item">
+                  <p>102 – 46.4%</p>
+                  <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/social/ASG-Mujer.png" alt="">
+                </div><div id="cont1__grid__item">
+                  <p>102 – 46.4%</p>
+                  <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/social/ASG-Mujer.png" alt="">
+                </div>
+
+                <div id="cont1__grid__item" class="cont1__grid__item--result">
+                  <p>result</p>
+                </div>
+                
+                <div id="cont1__grid__item">
+                  <p>102 – 46.4%</p>
+                  <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/social/ASG-Hombre.png" alt="">
+                </div>
+                <div id="cont1__grid__item">
+                  <p>102 – 46.4%</p>
+                  <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/social/ASG-Hombre.png" alt="">
+                </div><div id="cont1__grid__item">
+                  <p>102 – 46.4%</p>
+                  <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/social/ASG-Hombre.png" alt="">
+                </div>
+
+                <div id="cont1__grid__item" class="cont1__grid__item--result">
+                  <p>result</p>
+                </div>
 
               </div>
 
 
             </div>
+            
+            
+            <div id="social_tab__content--2" class="social_tab__content">
+
+              <!-- <div class="contentTwo__header__title">
+                <span>
+                  Junta Directiva por género
+                </span>
+              </div> -->
+
+              <div id="cont2__grid__item">
+                <p>102 – 46.4%</p>
+                <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/social/ASG-Ambosgeneros.png" alt="">
+              </div>
+
+              <div id="cont2__grid__item" class="cont2__grid__item--result">
+                <p>result</p>
+              </div>
+
+
+            </div>
+
+
 
             <style>
+            
+            #social_tab__content--2 {
 
-            #social_tab__content--1 {
-              padding: 20px;
+              padding: 15px 0px;
               width: 100%;
-            }
-            #cont1__title {
-              height: 30px;
-              width: 100%;
-              border-radius: 10px;
-              background-color: #0096A9;
+              height: 100%;
 
               display: flex;
               justify-content: center;
               align-items: center;
-              color: #FFF;
 
-              font-family: 'Raleway';
+              & #cont2__grid__item {
 
+                margin-right: 20px;
+
+                & img {
+                  height: 200px;
+                  width: 190px;
+                }
+
+                & p {
+                  font-size: 26px;
+                  font-family: Raleway;
+                  color: #c04d00;
+                  margin-bottom: 5px;
+                  text-align: center;
+                }
+
+
+              }
+              & .cont2__grid__item--result {
+                margin-right: 0px !important;
+              }
+              & .cont2__grid__item--result > p {
+                font-weight: bolder;
+                font-size: 30px !important;
+              }
+
+
+            }
+
+            #social_tab__content--3 {
+
+padding: 15px 0px;
+width: 100%;
+height: 100%;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+& #cont3__grid__item {
+
+  margin-right: 20px;
+
+  & img {
+    height: 200px;
+    width: 190px;
+  }
+
+  & p {
+    font-size: 26px;
+    font-family: Raleway;
+    color: #c04d00;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+
+}
+& .cont3__grid__item--result {
+  margin-right: 0px !important;
+}
+& .cont3__grid__item--result > p {
+  font-weight: bolder;
+  font-size: 30px !important;
+}
+
+
+}
+
+
+
+            #social_tab__content--1 {
+              width: 100%;
+              display: flex;
+              align-content: center;
+              flex-direction: column;
+
+              padding: 15px 0px;
+
+            }
+            
+            #cont1__grid__headers {
+              width: 100%;
+              height: 40px;
+              background-color: #EFEFED;
+              
+              display: grid;
+              grid-template-columns: repeat(4, 1fr);
+              justify-content: start;
+              align-items: center;
+            }
+
+            #cont2__grid__headers {
+
+
+            }
+
+
+            #cont1__grid__headers > span {
+              font-family: Barlow;
+              color: #0096A9;
+              font-weight: 600;
+              text-align: center;
+            }
+
+            #cont1__grid {
+              flex: 1;
+              display: grid;
+
+              width: 100%;
+
+              grid-template-columns: repeat(4, 1fr);
+              grid-template-rows: 1fr 1fr;
+
+              justify-content: space-around;
+            }
+
+            .cont1__grid__item--result > p {
+              font-weight: bolder;
+              font-size: 20px;
+            }
+
+            #cont1__grid__item {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              margin-top: 10px;
+
+            }
+            #cont1__grid__item > p {
+              font-family: Raleway;
+              color: #c04d00;
+              display: inline-block;
+              margin-bottom: 5px;
+            }
+            #cont1__grid__item > img {
+
+              height: 80px;
+              width: 80px;
+              
+              -webkit-user-drag: none;
+              user-select: none;
+              -moz-user-select: none;
+              -webkit-user-select: none;
+              -ms-user-select: none;
             }
             
             </style>
             
-            <div id="social_tab__content--2" class="social_tab__content inactive">
-              
-            </div>
-            
             <div id="social_tab__content--3" class="social_tab__content inactive">
+
+              
+            <div id="social_tab__content--3" class="social_tab__content">
+
+              <!-- <div class="contentTwo__header__title">
+                <span>
+                  Junta Directiva por género
+                </span>
+              </div> -->
+
+              <div id="cont3__grid__item">
+                <p>102 – 46.4%</p>
+                <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/social/ASG-Ambosgeneros.png" alt="">
+              </div>
+
+              <div id="cont3__grid__item" class="cont3__grid__item--result">
+                <p>result</p>
+              </div>
+
+
+            </div>
               
             </div>
             
