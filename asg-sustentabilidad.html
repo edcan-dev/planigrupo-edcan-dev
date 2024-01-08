@@ -54,13 +54,16 @@
   
   <script defer type="module" src="./js/asg/services/XSLXActivitiesReaderService.js"></script>`
   <script defer type="module" src="./js/asg/services/ActivitiesASGModal.js"></script>`
-  <!-- Activities Service -->
-  <script defer type="module" src="./js/asg/sustentabilidad/services/ActivitiesGridService.js"></script>
+  <!-- <script defer type="module" src="./js/asg/sustentabilidad/services/ActivitiesGridService.js"></script> -->
 
 
   <!-- Gauge Graph -->
   <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script type="module" src="./js/asg/sustentabilidad/services/GaugeGraphService.js"></script> 
+
+  
+  <script defer type="module" src="./js/asg/services/ActivitiesGridService.js"></script>
+  <script defer type="module" src="./js/asg/services/ActivitiesPagingAndSortingService.js"></script>
 
 </head>
 
@@ -1025,37 +1028,98 @@
 
       <div id="gober_asg_content--4" class="gober_asg_content inactive">
 
-        <div class="forthSection__text">
-          <p>
-            En GMInmobiliaria estamos comprometidos con el desarrollo sostenible de las comunidades, empresas y países en los que operamos, y para ello nos hemos enfocado en los Objetivos de Desarrollo Sostenible (ODS) de las Naciones Unidas.
-          </p>
-        </div>
-
-        <div class="forthSection__grid">
-
-          <!-- <div>
-            <div class="forthSection__grid__title">
-              <span>{{ TÍTULO }}</span>
-            </div>
-
-            <div class="forthSection__grid__image">
-
-            </div>
-            
-            <div class="forthSection__grid__description">
-              <p>{{ DESCIRPTION }}</p>
-            </div>
-
-            <div class="forthSection__grid__button">
-              
-              <button>
-                Ver más
-              </button>
-            </div>
-
+        <div class="actividades">
+  
+          <!-- <div class="actividades__title">
+            <span>ACTIVIDADES</span>
           </div> -->
-
+  
+          <div class="forthSection__grid"></div>
+  
         </div>
+  
+        <div class="actividades__grid__tab__selectors">
+          <ul>
+          </ul>
+        </div>
+  
+        <div id="pagingContainer">
+          <div id="Pager">
+          </div>
+        </div>
+  
+        <style>
+          .asg__paging {
+            width: 1200px;
+            max-width: 90%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: end;
+  
+            & span {
+              display: inline-block;
+              margin-right: 10px;
+              color: #97928A;
+              text-align: center;
+              font-family: Barlow;
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 14.29px;
+              /* 79.389% */
+              letter-spacing: 1px;
+              text-transform: uppercase;
+            }
+  
+            & .selected {
+              color: #0096A9;
+              font-weight: bolder;
+  
+            }
+          }
+  
+          .e-pager .e-currentitem {
+            background-color: #0096A9
+          }
+  
+          .e-pager .e-focused {
+            background-color: #0096A9;
+          }
+  
+          .e-pager .e-currentitem.e-numericitem.e-focused {
+            background-color: #0096A9;
+          }
+  
+          .e-pager .e-link {
+  
+            display: inline-block;
+            margin-right: 10px;
+            color: #000;
+            text-align: center;
+            font-family: Barlow;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 14.29px;
+            /* 79.389% */
+            letter-spacing: 1px;
+            text-transform: uppercase;
+          }
+  
+          #Pager {
+            display: flex;
+            border: none;
+          }
+  
+          #Pager>div.e-parentmsgbar {
+            display: none;
+          }
+  
+          .e-pager .e-pagercontainer {
+            margin: 0 auto;
+          }
+        </style>
+
 
       </div>
 
