@@ -13,7 +13,7 @@ if(href.includes('asg.html')) {
 if(href.includes('asg-social.html')) {
   socialPagination();
 }
-if(href.includes('asg-ambiental.html')) {
+if(href.includes('asg-ambiental.html') || href.includes('asg-sustentabilidad.html')) {
   ambientalPagination();
 }
 

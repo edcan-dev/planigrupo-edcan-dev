@@ -35,7 +35,7 @@ if(window.location.href.includes('asg.html')) {
 if(window.location.href.includes('asg-social.html')) {
   renderSocialPagination(6, [...activities]);
 } else
-if(window.location.href.includes('asg-ambiental.html')) {
+if(window.location.href.includes('asg-ambiental.html') || window.location.href.includes('asg-sustentabilidad')) {
   renderAmbientalPagination(6, [...activities]);
 }
 
