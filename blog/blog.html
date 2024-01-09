@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="https://planigrupo.blob.core.windows.net/planigrupo/assets/favicon.png" type="image/x-icon"/>
+  
+  <script defer src="https://kit.fontawesome.com/c4df7659ff.js" crossorigin="anonymous"></script>
+
+  <!-- XLSX Library --> <script defer type="module" src="./js/libs/read-excel-file.min.js"></script>
+  <!-- Sidebar JS -->
+  <script defer type="module" src="../js/sidebar.js"></script>
+  <!-- GenericTabs Service -->
+  <script defer type="module" src="./js/services/GenericTabsService.js"></script>
+
+  <!-- Global Styles --> <link rel="stylesheet" href="../css/styles.css"><link rel="stylesheet" href="../css/nosotros/styles.css">
+  <!-- Blog Styles --> <link rel="stylesheet" href="./css/blog.css">
+
+  <!-- JS -->
+  <script defer type="module" src="./js/services/XLSXReaderService.js"></script>
+
+
+  <title>Blog - GMInmobiliaria</title>
+
+</head>
+
+<body>
+  <div class="languaje--selector">
+    <li>
+      <b>
+        <a style="text-decoration: none;" href="">Esp</a>
+      </b>
+      /
+      <a style="text-decoration: none;" href="./en-blog.html">Eng</a>
+    </li>
+  </div>
+  <div id="sidebar-container">
+    <aside id="default-sidebar">
+
+      <nav class="navbar__responsive">
+        <ul class="navbar__responsive__list">
+
+          <li>
+            <input class="navbar__responsive__search" type="search" placeholder="Buscar...">
+            <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/svgs/magnifying.svg">
+          </li>
+          <li class="header__nav__item" id="nav__item--nosotros">
+            <a class="">Nosotros</a>
+          </li>
+          <li class="header__nav__item">
+            <a href="../portafolio.html">Portafolio</a>
+          </li>
+          <li class="header__nav__item" id="nav__item--comer">
+            <a>Comercialización</a>
+          </li>
+          <li class="header__nav__item"><a href="../inversionistas.html">Inversionistas</a></li>
+
+          <li class="header__nav__item" id="nav__item--asg">
+            <a class="">ASG</a>
+          </li>
+
+          <li class="header__nav__item"><a
+              href="https://portaldeclientes.planigrupo.com/auth/realms/master/protocol/openid-connect/auth?client_id=estados-de-cuenta-id&redirect_uri=https%3A%2F%2Fportaldeclientes.planigrupo.com%2Fhome&state=a536db1e-fa15-48e7-91b4-f885b5c6791b&response_mode=fragment&response_type=code&scope=openid&nonce=7ad26bbc-8cfc-4064-a337-1cb175cc69f7">Clientes</a>
+          </li>
+          <li class="header__nav__item">
+            <a href="../contacto.html">Contacto</a>
+          </li>
+
+        </ul>
+
+        <ul class="navbar__responsive__list--second">
+          <div>
+            <li class="header__nav__item"><a href="../nosotros.html">Nosotros</a></li>
+            <li class="header__nav__item"><a href="../lo-que-hacemos.html">Lo que hacemos</a></li>
+            <li class="header__nav__item"><a href="../equipo-ejecutivo.html">Equipo Ejecutivo</a></li>
+            <li class="header__nav__item"><a href="../historia.html">Historia</a></li>
+        </ul>
+        <ul class="navbar__responsive__list--second--comer">
+          <div>
+            <li class="header__nav__item"><a href="../comercializacion.html">Comercialización</a></li>
+            <li class="header__nav__item"><a href="../oportunidades.html">Oportunidades</a></li>
+        </ul>
+
+        <ul class="navbar__responsive__list--second--asg">
+          <div>
+            <li class="header__nav__item">
+              <a href="../asg.html">ASG</a>
+            </li>
+            <li class="header__nav__item">
+              <a href="../asg-sustentabilidad.html">Sustentabilidad</a>
+            </li>
+            <li class="header__nav__item">
+              <a href="../asg-ambiental.html">Ambiental</a>
+            </li>
+            <li class="header__nav__item">
+              <a href="../asg-social.html">Social</a>
+            </li>
+            <li class="header__nav__item">
+              <a href="../asg-gobernanza.html">Gobernanza</a>
+            </li>
+            <li class="header__nav__item">
+              <a href="../asg-contacto.html">Contacto</a>
+            </li>
+        </ul>
+
+      </nav>
+    </aside>
+  </div>
+  <header class="header">
+    <div class="header__bars">
+      <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/bars-solid.svg" height="40px" />
+    </div>
+    <a href="../index.html">
+      <img class="svg__logo" src="https://planigrupo.blob.core.windows.net/planigrupo/assets/logo.svg" alt="" />
+    </a>
+    <nav>
+      <ul class="header__nav">
+        <li class="header__nav__item dropdown">
+          <a href="../nosotros.html" class="dropbtn">Nosotros</a>
+          <div class="dropdown-content">
+            <a href="../nosotros.html">Nosotros</a>
+            <a href="../lo-que-hacemos.html">Lo que hacemos</a>
+            <a href="../equipo-ejecutivo.html">Equipo Ejecutivo</a>
+            <a href="../historia.html">Historia</a>
+          </div>
+        </li>
+        <li class="header__nav__item">
+          <a href="../portafolio.html">Portafolio</a>
+        </li>
+        <li class="header__nav__item dropdown">
+          <a href="../comercializacion.html" class="dropbtn">Comercialización</a>
+          <div class="dropdown-content">
+            <a href="../comercializacion.html">Comercialización</a>
+            <a href="../oportunidades.html">Oportunidades</a>
+          </div>
+        </li>
+        <li class="header__nav__item"><a href="../inversionistas.html">Inversionistas</a></li>
+        <!-- <li class="header__nav__item"><a href="./asg.html">Asg</a></li> -->
+
+        <li class="header__nav__item dropdown">
+          <a class="dropbtn" href="../asg.html">ASG</a>
+          <div class="dropdown-content">
+            <a href="../asg.html">ASG</a>
+            <a href="../asg-sustentabilidad.html">Sustentabilidad</a>
+            <a href="../asg-ambiental.html">Ambiental</a>
+            <a href="../asg-social.html">Social</a>
+            <a href="../asg-gobernanza.html">Gobernanza</a>
+            <a href="../asg-contacto.html">Contacto</a>
+          </div>
+        </li>
+        <li class="header__nav__item"><a
+            href="https://portaldeclientes.planigrupo.com/auth/realms/master/protocol/openid-connect/auth?client_id=estados-de-cuenta-id&redirect_uri=https%3A%2F%2Fportaldeclientes.planigrupo.com%2Fhome&state=a536db1e-fa15-48e7-91b4-f885b5c6791b&response_mode=fragment&response_type=code&scope=openid&nonce=7ad26bbc-8cfc-4064-a337-1cb175cc69f7">Clientes</a>
+        </li>
+        <li class="header__nav__item">
+          <a href="./contacto.html">Contacto</a>
+        </li>
+        <li class="header__nav__item header__nav__item--search">
+          <input type="text" placeholder="Buscar..." />
+          <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/svgs/magnifying.svg">
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main>
+    <blog-hero-image></blog-hero-image>
+    
+    <div class="main__hero__downbar ">
+      <div class="main__hero_downbar__text">
+        <h2>Blog</h2>
+      </div>
+
+      <div class="main__hero_downbar__title">
+        <span>Nuestros</span>
+        <p>CENTROS</p>
+        <p>COMERCIALES</p>
+    
+      </div>
+    </div>
+
+    
+
+    <blog-tab-selector>
+
+      <ul>
+
+        <li
+        class="blog-tabs-selector selected"
+        id="blog-tabs-selector--1"
+        >BLOG DE PLANIGRUPO</li>
+        
+        <li>|</li>
+        <li
+        class="blog-tabs-selector"
+        id="blog-tabs-selector--2"
+        >GALERÍA</li>
+        <li>|</li>
+        <li
+        class="blog-tabs-selector"
+        id="blog-tabs-selector--3"
+        >VIDEOS</li>
+        <li>|</li>
+        <li
+        class="blog-tabs-selector"
+        id="blog-tabs-selector--4"
+        >PRENSA</li>
+      </ul>
+
+    </blog-tab-selector>
+
+    <blog-tab-contents>
+
+      <blog-tag-content
+      class="blog-tabs-content"
+      id="blog-tabs-content--1"
+      >
+      
+        <blog-recent class="recientes-content">
+          
+          <span>RECIENTES</span>
+          
+          <blog-recent-grid>
+
+          <blog-recent-item>
+
+            <img src="https://media.istockphoto.com/id/1198931639/photo/writing-a-blog-blogger-influencer-reading-text-on-screen.jpg?s=612x612&w=0&k=20&c=4FJ_fzzZYqBoGG-RY8fcohpaOKKwnnI-ik58cPy6t-g=" alt="Imagen de blog">
+
+            <div class="text">
+
+              <p class="description">
+                Los mejores consejos para promocionar tus tiendas minoristas durante las fiestas
+              </p>
+
+              <small class="date">
+                Dec 5, 2023 | Blog Planigrupo
+              </small>
+
+            </div>
+
+
+          </blog-recent-item>
+
+
+          <blog-recent-item>
+
+            <img src="https://media.istockphoto.com/id/1198931639/photo/writing-a-blog-blogger-influencer-reading-text-on-screen.jpg?s=612x612&w=0&k=20&c=4FJ_fzzZYqBoGG-RY8fcohpaOKKwnnI-ik58cPy6t-g=" alt="Imagen de blog">
+
+            <div class="text">
+
+              <p class="description">
+                Los mejores consejos para promocionar tus tiendas minoristas durante las fiestas
+              </p>
+
+              <small class="date">
+                Dec 5, 2023 | Blog Planigrupo
+              </small>
+
+            </div>
+
+
+          </blog-recent-item>
+
+
+          <blog-recent-item>
+
+            <img src="https://media.istockphoto.com/id/1198931639/photo/writing-a-blog-blogger-influencer-reading-text-on-screen.jpg?s=612x612&w=0&k=20&c=4FJ_fzzZYqBoGG-RY8fcohpaOKKwnnI-ik58cPy6t-g=" alt="Imagen de blog">
+
+            <div class="text">
+
+              <p class="description">
+                Los mejores consejos para promocionar tus tiendas minoristas durante las fiestas
+              </p>
+
+              <small class="date">
+                Dec 5, 2023 | Blog Planigrupo
+              </small>
+
+            </div>
+
+
+          </blog-recent-item>
+
+          </blog-recent-grid>
+
+        </blog-recent>
+
+
+        <blog-featured>
+
+          <span>DESTACADOS</span>
+
+
+          <blog-featured-grid>
+            
+            
+            
+            <blog-featured-grid-item>
+            <img src="https://media.istockphoto.com/id/1198931639/photo/writing-a-blog-blogger-influencer-reading-text-on-screen.jpg?s=612x612&w=0&k=20&c=4FJ_fzzZYqBoGG-RY8fcohpaOKKwnnI-ik58cPy6t-g=" alt="Imagen de blog">
+            
+            <div class="text">
+              
+              <p class="description">
+                Los mejores consejos para promocionar tus tiendas minoristas durante las fiestas
+              </p>
+              
+              <small class="date">
+                Dec 5, 2023 | Blog Planigrupo
+              </small>
+              
+            </div>
+          </blog-featured-grid-item>    
+          
+          <blog-featured-grid-item>
+            <img src="https://media.istockphoto.com/id/1198931639/photo/writing-a-blog-blogger-influencer-reading-text-on-screen.jpg?s=612x612&w=0&k=20&c=4FJ_fzzZYqBoGG-RY8fcohpaOKKwnnI-ik58cPy6t-g=" alt="Imagen de blog">
+            
+            <div class="text">
+              
+              <p class="description">
+                Los mejores consejos para promocionar tus tiendas minoristas durante las fiestas
+              </p>
+              
+              <small class="date">
+                Dec 5, 2023 | Blog Planigrupo
+              </small>
+              
+            </div>
+          </blog-featured-grid-item>
+
+          <blog-featured-grid-arrows>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="56" viewBox="0 0 8 56" fill="none">
+              <path d="M7 55.0076L1.03402 28L7.06803 1.00761" stroke="black"/>
+            </svg>
+  
+            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="56" viewBox="0 0 8 56" fill="none">
+              <path d="M1 1.00366L7 28.0037L1 55.0037" stroke="black"/>
+            </svg>
+  
+          </blog-featured-grid-arrows> 
+        
+
+      
+        </blog-featured-grid>
+        
+          
+          <!-- <blog-featured-grid-item>je</blog-featured-grid-item>
+          <blog-featured-grid-item>je</blog-featured-grid-item>
+          <blog-featured-grid-item>je</blog-featured-grid-item> -->
+
+        </blog-featured>
+
+
+
+        <blog-posts-carousel>
+          
+        <blog-posts-carousel-grid>
+
+
+          <blog-posts-carousel-grid-item>
+
+            <img src="https://media.istockphoto.com/id/1198931639/photo/writing-a-blog-blogger-influencer-reading-text-on-screen.jpg?s=612x612&w=0&k=20&c=4FJ_fzzZYqBoGG-RY8fcohpaOKKwnnI-ik58cPy6t-g=" alt="Imagen de blog">
+
+            <div class="text">
+
+              <p class="description">
+                Los mejores consejos para promocionar tus tiendas minoristas durante las fiestas
+              </p>
+
+              <small class="date">
+                Dec 5, 2023 | Blog Planigrupo
+              </small>
+
+            </div>
+
+
+          </blog-posts-carousel-grid-item>
+
+
+          <blog-posts-carousel-grid-item>
+
+            <img src="https://media.istockphoto.com/id/1198931639/photo/writing-a-blog-blogger-influencer-reading-text-on-screen.jpg?s=612x612&w=0&k=20&c=4FJ_fzzZYqBoGG-RY8fcohpaOKKwnnI-ik58cPy6t-g=" alt="Imagen de blog">
+
+            <div class="text">
+
+              <p class="description">
+                Los mejores consejos para promocionar tus tiendas minoristas durante las fiestas
+              </p>
+
+              <small class="date">
+                Dec 5, 2023 | Blog Planigrupo
+              </small>
+
+            </div>
+
+
+          </blog-posts-carousel-grid-item>
+
+
+          <blog-posts-carousel-grid-item>
+
+            <img src="https://media.istockphoto.com/id/1198931639/photo/writing-a-blog-blogger-influencer-reading-text-on-screen.jpg?s=612x612&w=0&k=20&c=4FJ_fzzZYqBoGG-RY8fcohpaOKKwnnI-ik58cPy6t-g=" alt="Imagen de blog">
+
+            <div class="text">
+
+              <p class="description">
+                Los mejores consejos para promocionar tus tiendas minoristas durante las fiestas
+              </p>
+
+              <small class="date">
+                Dec 5, 2023 | Blog Planigrupo
+              </small>
+
+            </div>
+
+
+          </blog-posts-carousel-grid-item>
+
+
+        </blog-posts-carousel-grid>
+
+
+          <blog-posts-selectors>
+
+            <ul>
+              <li class="first"><</li>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+              <li>5</li>
+              <li class="last">></li>
+
+            </ul>
+          </blog-posts-selectors>
+
+        </blog-posts-carousel>
+
+
+
+      
+      </blog-tag-content>
+
+
+
+      <blog-tag-content
+      class="blog-tabs-content inactive"
+      id="blog-tabs-content--2"
+      >
+        Content 2
+      </blog-tag-content>
+      
+      
+      
+      <blog-tag-content
+      class="blog-tabs-content inactive"
+      id="blog-tabs-content--3"
+      >
+        Content 3
+      </blog-tag-content>
+      
+      
+      
+      <blog-tag-content
+      class="blog-tabs-content inactive"
+      id="blog-tabs-content--4"
+      >
+        Content 4
+      </blog-tag-content>
+
+
+    </blog-tab-contents>
+
+
+
+  </main>
+
+
+
+
+
+  <footer class="footer">
+  
+    <div class="social__container">
+  
+      <span style="margin-bottom: 10px;">
+        Síguenos en<br />
+        nuestras redes
+      </span>
+  
+      <div class="social__container__icons">
+  
+        <a href="https://www.youtube.com/@grupomexico8955" class="social__container__icons__icon">
+          <i class="social__container__icons__icon__li fa-brands fa-youtube" style="color: #000000; line-height: 20px;
+            "></i>
+        </a>
+  
+        <a href="https://twitter.com/GMexico_oficial" class="social__container__icons__icon">
+          <i class="social__container__icons__icon__li fa-brands fa-twitter" style="color: #000000; line-height: 20px;
+            "></i>
+        </a>
+        <a href="https://www.linkedin.com/company/grupo-mexico/" class="social__container__icons__icon">
+          <li class="social__container__icons__icon__li fa-brands fa-linkedin-in" style="color: #000000; line-height: 20px;"></li>
+        </a>
+        <a href="https://www.facebook.com/gmexico.oficial" class="social__container__icons__icon">
+          <i class="social__container__icons__icon__li fa-brands fa-facebook-f" style="color: #000000; line-height: 20px;"></i>
+        </a>
+        <a href="https://www.instagram.com/gmexico_oficial" class="social__container__icons__icon">
+          <li class="social__container__icons__icon__li fa-brands fa-instagram" style="color: #000000; line-height: 20px;"></li>
+        </a>
+      </div>
+    </div>
+  
+    <div>
+      <a href=".">Nosotros</a>
+      <a href=".">Comercialización</a>
+      <a href="./blog/blog.html">Blog</a>
+      <a href=".">Contacto</a>
+      <a href=".">Inversionistas</a>
+      <a href=".">Asg</a>
+      <a href=".">Portafolio</a>
+      <a href=".">Ofertas de Empleo</a>
+    </div>
+    <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/bolsamexicana-grey.png.png"
+      class="footer__img" />
+  </footer>
+  <div id="container">
+    <div id="dialog"></div>
+  </div>
+  <script>
+  var ele = document.getElementById('container');
+  if(ele) {
+    ele.style.visibility = "visible";
+  }   
+  </script>
+</body>
+
+
+
+
+</html>
