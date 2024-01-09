@@ -57,3 +57,20 @@ const susSection3Subtabs = new GenericTabsComponent(
   '.thirdSection__slider__selector',
   '.thirdSection__slider__content'
 ).initializeWithPreviousAndNext();
+
+console.log(
+  
+  );
+
+
+  if(window.location.search) {
+
+    document.querySelectorAll('.gober_asg_selector').item(0).classList.remove('selected')
+    document.querySelectorAll('.gober_asg_selector').item(1).classList.add('selected')
+
+    document.querySelectorAll('.gober_asg_content').item(0).classList.add('inactive')
+    document.querySelectorAll('.gober_asg_content').item(1).classList.remove('inactive')
+
+  } else {
+    console.log('asdasdasd');
+  }
