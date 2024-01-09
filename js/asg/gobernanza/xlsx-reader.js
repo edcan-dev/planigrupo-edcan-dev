@@ -32,7 +32,7 @@ if(gobernanzaActivities.length == 0) {
   document.querySelector('.actividades').innerHTML =
   `
     <div class="actividades__notFound">
-      <span>NO HAY ACTIVIDADES PARA LA CATEGORÍA ${ searchedCategory }</span>
+      <span>No hay actividades para la categoría ${ searchedCategory }</span>
     </div>
   `
 }

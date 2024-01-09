@@ -281,19 +281,26 @@
 
 
 .amb_section--2 > .grid > .grid_item > .grid_item__img--1 {
-    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/png-icons/asg_icons/iconos%20asg%20amb-social/S_dryer.png');
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/social/icons/social-icon-1.png') !important;
+    background-size: contain !important;
+    background-repeat: no-repeat;
 }
 .amb_section--2 > .grid > .grid_item > .grid_item__img--2 {
-    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/png-icons/asg_icons/iconos%20asg%20amb-social/S_igualdad-de-genero.png');
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/social/icons/social-icon-2.png') !important;
+    background-size: contain !important;
+    background-repeat: no-repeat;
 }
 .amb_section--2 > .grid > .grid_item > .grid_item__img--3 {
-    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/png-icons/asg_icons/iconos%20asg%20amb-social/S_reporte-de-negocios.png');
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/social/icons/social-icon-3.png') !important;
+    background-size: 40px !important;
+    background-repeat: no-repeat;
 }
 .amb_section--2 > .grid > .grid_item > .grid_item__img--4 {
-    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/png-icons/asg_icons/iconos%20asg%20amb-social/S_informacion.png');
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/social/icons/social-icon-4.png') !important;
+
 }
 .amb_section--2 > .grid > .grid_item > .grid_item__img--5 {
-    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/png-icons/asg_icons/iconos%20asg%20amb-social/S_marketplace-Comunity.png');
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/social/icons/social-icon-5.png') !important
 }
 
 .section--3 {
