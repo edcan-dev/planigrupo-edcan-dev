@@ -70,8 +70,10 @@ blog-hero-image {
   position: relative;
   top: 5px;
 
-  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/blog/blog-hero-img.jpeg');
+  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/blog/blog.hero-1.png');
+  filter: brightness(.5);
   background-position-x: center;
+  background-position-y: center;
   background-size: cover;
 }
 
