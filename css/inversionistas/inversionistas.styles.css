@@ -906,7 +906,17 @@ article {
           /* 142.857% */
           letter-spacing: 1px;
           text-transform: capitalize;
-          text-decoration: none;
+
+          color: #53575A;
+    text-align: justify;
+    font-family: Raleway;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 900;
+    text-decoration: noneb;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
         }
       }
 
@@ -1411,9 +1421,14 @@ article {
           }
 
           & a {
-            font-size: 10px;
-            line-height: 50px;
             color: #53575A;
+    text-align: justify;
+    font-family: Raleway;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: capitalize;
           }
 
         }
