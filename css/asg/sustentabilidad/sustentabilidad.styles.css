@@ -101,22 +101,22 @@
   margin: 0 auto;
 }
 .susAsg_cont2__icons__item__img--1 {
-  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/sustentabilidad/Identificacion.png');
+  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/sustentabilidad/icons/sustentabilidad02.png');
   background-size: 50px;
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-Y: center;
 }
 .susAsg_cont2__icons__item__img--2 {
-  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/sustentabilidad/Priorizacion.png');
-  background-size: 50px;
+  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/sustentabilidad/icons/sustentabilidad01.png');
+  background-size: 45px;
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-Y: center;
 }
 .susAsg_cont2__icons__item__img--3 {
-  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/sustentabilidad/Validacion.png');
-  background-size: 50px;
+  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/sustentabilidad/icons/sustentabilidad03.png');
+  background-size: 40px;
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-Y: center;
@@ -297,14 +297,15 @@
 
 .susAsg_contSecond_topics__tabs__contents__logo {
   width: 240px;
-  background-color: #0096a9;
+  background-color: #fff;
   height: 300px;
   display: flex;
 }
 .susAsg_contSecond_topics__tabs__contents__logo > img {
-  width: 240px;
-  height: 240px;
-  align-self: end;
+  width: 200px;
+  height: 200px;
+  padding: 50px;
+  align-self: center;
 }
 .susAsg_contSecond_topics__tabs__contents__table {
   width: 100% !important;
@@ -728,3 +729,5 @@
 .hero__img {
   background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/sustentabilidad/plani-materialidad.png');
 }
+
+
