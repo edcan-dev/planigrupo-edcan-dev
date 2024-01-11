@@ -49,9 +49,33 @@ document.querySelector('.inver_select_list__selector')
     ev.target.classList.toggle('selected');
     ev.target.nextElementSibling.classList.toggle('active');
   })
+
 document.querySelectorAll('.resp-carousel-selector')
   .forEach(selector => selector.addEventListener('click',() => {
+    
+    const selectedValue = selector.innerHTML;
+
     document.querySelector('.inver_select_list__content').classList.toggle('active')
-    document.querySelector('.inver_select_list__selector').classList.toggle('selected')
+    document.querySelector('.inver_select_list__selector').classList.toggle('selected');;
+
+    const accordion =
+    document.querySelector('.inver_select_list__selector');
+
+    const accArray = accordion.innerHTML.split('')
+
+    let currentContentTitle = ''
+
+    for (let index = 0; index < accArray.length; index++) {
+      const element = accArray[index];
+      if(element != '<') {
+        currentContentTitle += element
+      } else {
+        break;
+      }
+    }
+
+    let newAccordionContent = accordion.innerHTML.replace(currentContentTitle, selectedValue)
+
+    accordion.innerHTML = newAccordionContent
 
   }))
