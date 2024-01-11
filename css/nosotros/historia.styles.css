@@ -120,24 +120,24 @@
 .historia__timeline__selector>img {
   width: 12px;
   filter: brightness(0) saturate(100%) invert(69%) sepia(69%) saturate(6%) hue-rotate(49deg) brightness(91%) contrast(93%);
-  transition: all 0.2s;
+  
 }
 
 .historia__timeline__selector>p:hover {
   color: #0096a9;
 }
 
-.historia__timeline__selector>img:hover {
+/* .historia__timeline__selector>img:hover {
   width: 18px;
   filter: brightness(0) saturate(100%) invert(41%) sepia(46%) saturate(7145%) hue-rotate(165deg) brightness(99%) contrast(101%);
-}
+} */
 
 .historia__timeline__selector--selected>p {
   color: #0096a9;
 }
 
 .historia__timeline__selector--selected>img {
-  width: 24px;
+  width: 18px;
   filter: brightness(0) saturate(100%) invert(41%) sepia(46%) saturate(7145%) hue-rotate(165deg) brightness(99%) contrast(101%) opacity();
 }
 
@@ -372,6 +372,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position-x: center;
+  background-color: #D92530;
 }
 .historia__card__item__img--25 {
   background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia_optimized/gmi.jpg');
