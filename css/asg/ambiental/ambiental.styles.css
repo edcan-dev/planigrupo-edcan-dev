@@ -71,7 +71,9 @@
 .amb_section--2 > .grid > .grid_item > .grid_item__img {
     height: 50px;
     width: 50px;
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: contain;background-position-x: center;
+    background-size: contain;background-position-y: center;
     margin-bottom: 20px;
 }
 
