@@ -331,7 +331,7 @@ var accordion = new ej.navigations.Accordion({
     ` },
 
     {
-      header: 'INICIO',
+      header: 'Inicios',
       expanded: false,
       content: `
             <div class="historia__card historia__card--tab1 historia__card--resp">
