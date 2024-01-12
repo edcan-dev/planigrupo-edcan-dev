@@ -66,6 +66,8 @@ function socialPagination() {
   }
 
   const socialActivities = activities.filter(act => act.category === 'Social');
+
+  console.log(socialActivities.length);
   
   var pager = new ej.grids.Pager({
     pageSize: Math.floor(socialActivities.length / 6),
@@ -98,10 +100,12 @@ function ambientalPagination() {
 
   const socialActivities = activities.filter(act => act.category === 'Ambiental');
 
+  console.log(socialActivities.length);
+
   var pager = new ej.grids.Pager({
     pageSize: Math.floor(socialActivities.length / 6),
     pageCount: 5,
-    totalRecordsCount: socialActivities.length,
+    totalRecordsCount: 24,
   });
   
   pager.appendTo("#Pager");
