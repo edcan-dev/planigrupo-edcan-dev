@@ -463,3 +463,14 @@ li {
 .section--3 {
   margin-top: 40px;
 }
+
+.qoute {
+  margin-bottom: 40px;
+  
+}
+.qoute > div {
+  width: 100%;
+}
+.qoute > div > img {
+  filter: brightness(0) saturate(100%) invert(38%) sepia(100%) saturate(6405%) hue-rotate(347deg) brightness(89%) contrast(86%);
+}

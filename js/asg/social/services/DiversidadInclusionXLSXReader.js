@@ -1,6 +1,6 @@
 // data/asg/social/social_diversidad_inclusion.xlsx
 
-const xslxPath = window.location.href.startsWith("https")
+const xslxPath = window.location.href.includes('github')
   ? "https://edcan-dev.github.io/planigrupo-edcan-dev/data/asg/social/social_diversidad_inclusion.xlsx"
   : "../../../data/asg/social/social_diversidad_inclusion.xlsx";
 

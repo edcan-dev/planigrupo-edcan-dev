@@ -1,4 +1,4 @@
-const xslxPath = window.location.href.startsWith("http:")
+const xslxPath = !window.location.href.includes('github')
   ? "../../data/indicadores_relevantes.xlsx"
   : "https://edcan-dev.github.io/planigrupo-edcan-devdata/indicadores_relevantes.xlsx";
 
