@@ -20,8 +20,8 @@ const contentTwo = {
 }
 const contentThree = {
     title: '',
-    values: '',
-    result: '' 
+    menValues: '',
+    womenValues: '' 
 }
 
 await readXlsxFile(xlsx, { sheet: 1 }).then(function (rows) {
@@ -56,8 +56,8 @@ await readXlsxFile(xlsx, { sheet: 2 }).then(function (rows) {
 await readXlsxFile(xlsx, { sheet: 3 }).then(function (rows) {
     
     contentThree.title = rows[0][0];
-    contentThree.values = rows[1][0]
-    contentThree.result = rows[1][1]
+    contentThree.menValues = rows[1][0]
+    contentThree.womenValues = rows[2][0]
 
 })
 
@@ -81,9 +81,12 @@ document.querySelector('#cont2__grid__item').firstElementChild.innerHTML = conte
 document.querySelector('.cont2__grid__item--result').firstElementChild.innerHTML = '= ' + contentTwo.result
 
 
-document.querySelector('#cont3__grid__item').firstElementChild.innerHTML = contentThree.values
+document.querySelector('#cont3__grid__item').firstElementChild.innerHTML = contentThree.menValues
 
-document.querySelector('.cont3__grid__item--result').firstElementChild.innerHTML = '= ' + contentThree.result
+document.querySelector('.cont3__grid__item--women')
+.firstElementChild
+.innerHTML = contentThree.womenValues
+// document.querySelector('.cont3__grid__item').firstElementChild.innerHTML = '= ' + contentThree.result
 
 
 console.log(contentOne);

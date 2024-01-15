@@ -11,53 +11,86 @@ if (window.location.href.includes("github")) {
 let xlsx = null;
 
 await fetch(fileURL)
-  .then(response => response.blob())
-  .then(blob => xlsx = blob);
-  
+  .then((response) => response.blob())
+  .then((blob) => (xlsx = blob));
+
 const _blogPosts = [];
 
- await readXlsxFile(xlsx).then(async function(rows) {
-  
-  rows.shift();
+try {
+  for (let index = 1; true; index++) {
+    await readXlsxFile(xlsx, { sheet: index }).then(async (rows) => {
+      
+      let currentPost = new BlogPost();
+
+      for (let index = 0; index < rows.length; index++) {
+        const row = rows[index];
 
 
-  const numberOfPost = rows.filter(row => row[5] == 'T').length;
+        if (row[5] == "T") {
 
-  //console.log('{ POST NUMBER } - ' + numberOfPost);
+          currentPost.title = row[6];
+          
+          const activeValue = row[7].toLowerCase();
 
-  let currentPost;
+          console.log(activeValue);
+          currentPost.active =  (row[7].toLowerCase() == 'sí' || row[7].toLowerCase() == 'si') ? true : false;
+ 
+          currentPost.date.setDate(row[1]);
+          currentPost.date.setMonth(row[2] - 1);
+          currentPost.date.setFullYear(row[3]);
 
-  for (let index = 0; index < rows.length; index++) {
-    const row = rows[index];
-
-    if(row[5] == null) {
-      _blogPosts.push(currentPost);
-      currentPost = undefined;
-      continue;
-    }
-
-    if(row[5] == 'T') {
-
-      currentPost = new BlogPost();
-
-      currentPost.title = row[6]
-
-      currentPost.date.setDate(row[1]);
-      currentPost.date.setMonth(row[2] - 1);
-      currentPost.date.setFullYear(row[3]);
-
-      currentPost.author = row[4];
-
-    } else {
-
-      const currentContent = {
-        type: row[5],
-        content: row[6]
+          currentPost.author = row[4];
+        } else {
+          const currentContent = {
+            type: row[5],
+            content: row[6],
+          };
+          
+          currentPost.contents.push(currentContent);
+        }
       }
-      currentPost.contents.push(currentContent)
-    }
-
+      _blogPosts.push(currentPost);
+    });
   }
+} catch (e) {
+  console.log(e);
+}
 
-})
+// await readXlsxFile(xlsx).then(async function (rows) {
+//   console.log(rows);
+
+//   rows.shift();
+
+//   //  const numberOfPost = rows.filter(row => row[5] == 'T').length;
+
+//   //console.log('{ POST NUMBER } - ' + numberOfPost);
+
+//   let currentPost;
+
+//   for (let index = 0; index < rows.length; index++) {
+    
+//     const row = rows[index];
+
+
+//     if (row[5] == "T") {
+//       currentPost = new BlogPost();
+
+//       currentPost.title = row[6];
+//       currentPost.active = row[7];
+
+//       currentPost.date.setDate(row[1]);
+//       currentPost.date.setMonth(row[2] - 1);
+//       currentPost.date.setFullYear(row[3]);
+
+//       currentPost.author = row[4];
+//     } else {
+//       const currentContent = {
+//         type: row[5],
+//         content: row[6],
+//       };
+//       currentPost.contents.push(currentContent);
+//     }
+//   }
+// });
+
 export const blogPosts = _blogPosts;
