@@ -4,9 +4,10 @@ export class BlogPost {
     date = new Date();
     author = '';
     contents = [
-        {
-            type: '',
-            content: ''
-        }
-    ]
+        // {
+        //     type: '',
+        //     content: ''
+        // }
+    ];
+    active = ''; 
 }
