@@ -105,9 +105,9 @@
 
 .asg_banner_component > .asg_banner_component__img {
 /*     background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/contacto/contacto_conoce.jpg');
- */    background-image: url('https://play-lh.googleusercontent.com/ghh1cy-DOpjcm0rBhI1Fkj34VrhegXp4vt5cycc7Prq4--i_CHFUcoxpc-dsFJrsIg');
+ */    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/Planigrupo-struggling-communities.png');
     width: 30%;
-    background-size: contain;
+    background-size: cover;
 
 }
 

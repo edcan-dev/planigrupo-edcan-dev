@@ -87,7 +87,7 @@ blog-tab-selector {
 blog-tab-selector > ul {
   display: flex;
   flex-wrap: wrap;
-  min-height: 50px;
+  min-height: 40px;
   background-color: #545859;
   justify-content: space-evenly;
 
@@ -109,6 +109,7 @@ blog-tab-selector  > ul > li {
   padding: 0px 5px;
   
   height: 45px;
+  padding-top: 5px;
 }
 blog-tab-selector > ul > li:nth-child(odd) {
   cursor: pointer;
@@ -211,7 +212,7 @@ blog-recent-item:hover::after {
 
 
 blog-recent-item > div > p {
-  padding: 10px 20px;
+  padding: 5px 10px;
   color: #53575A;
   font-family: Barlow;
   font-size: 14px;
@@ -221,7 +222,7 @@ blog-recent-item > div > p {
   letter-spacing: 1px; 
 }
 blog-recent-item > div > small  {
-  padding: 10px 20px;
+  padding: 5px 10px;
   color: #BE4D00;
   font-family: Raleway;
   font-size: 12px;
