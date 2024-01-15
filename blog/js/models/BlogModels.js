@@ -1,5 +1,6 @@
 export class BlogPost {
 
+    id = 0;
     title = ''
     date = new Date();
     author = '';

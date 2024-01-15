@@ -28,18 +28,17 @@ try {
 
         if (row[5] == "T") {
 
-          currentPost.title = row[6];
-          
-          const activeValue = row[7].toLowerCase();
+          currentPost.title = row[6]; 
+          currentPost.id = row[0];         
 
-          console.log(activeValue);
           currentPost.active =  (row[7].toLowerCase() == 'sí' || row[7].toLowerCase() == 'si') ? true : false;
  
           currentPost.date.setDate(row[1]);
           currentPost.date.setMonth(row[2] - 1);
           currentPost.date.setFullYear(row[3]);
-
           currentPost.author = row[4];
+
+
         } else {
           const currentContent = {
             type: row[5],
