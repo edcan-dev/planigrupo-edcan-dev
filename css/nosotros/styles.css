@@ -580,7 +580,7 @@ body {
 }
 
 .main__row {
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 
