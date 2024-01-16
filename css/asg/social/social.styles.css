@@ -51,7 +51,7 @@
 }
 .social_section--3 > div > span {
     color: #0096A9;
-    font-family: Barlow;
+    font-family: Barlow Condensed;
     font-size: 18px;
     font-style: normal;
     font-weight: bold;
@@ -139,7 +139,7 @@
 }
 .social_section--5 > span {
     color: #0096A9;
-    font-family: Barlow;
+    font-family: Barlow Condensed;
     font-size: 18px;
     font-style: normal;
     font-weight: bold;
@@ -173,7 +173,7 @@
 .social_section--6 > div > .social_tab__selectors > .social_tab__selector {
     color: #D7282F;
     text-align: center;
-    font-family: Barlow;
+    font-family: Barlow Condensed;
     font-size: 16px;
     font-style: normal;
     font-weight: bold;

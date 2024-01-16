@@ -73,7 +73,7 @@
 
 .susAsg_cont2__icons__item__text > span {
   color: #d7282f;
-  font-family: Barlow;
+  font-family: Barlow Condensed;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -397,7 +397,7 @@
 }
 .thirdSection__slider__selectors > ul > li {
   color: #545859;
-  font-family: Barlow;
+  font-family: Barlow Condensed;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -434,7 +434,7 @@
   justify-content: start;
   & span {
     color: #0096a9;
-    font-family: Barlow;
+    font-family: Barlow Condensed;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;

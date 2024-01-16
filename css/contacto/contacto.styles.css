@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Fjalla+One&family=Fredoka&family=Fresca&family=Raleway:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow Condensed&family=Fjalla+One&family=Fredoka&family=Fresca&family=Raleway:wght@400;600&display=swap');
 
 
 .main__hero {
@@ -99,8 +99,8 @@
 }
 
 .nosotros_info__grid__item--square > span {
-    color: #C04D00;
-    font-family: Barlow;
+    color: #d7282f;
+    font-family: Barlow Condensed;
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
@@ -132,7 +132,7 @@
     content: '';
     width: 1px;
     height: 100px;
-    background: #C04D00;
+    background: #d7282f;
     position: absolute;
     top: 120px;
     right: 0;
@@ -142,7 +142,7 @@
     content: '';
     width: 1px;
     height: 100px;
-    background: #C04D00;
+    background: #d7282f;
     position: absolute;
     top: 120px;
     right: 0;
@@ -468,7 +468,7 @@ li {
         align-items: center;
     }
     .loque__list--responsive > div > span {
-        color: #C04D00;
+        color: #d7282f;
         text-align: center;
         font-family: Raleway;
         font-size: 32px;
@@ -483,7 +483,7 @@ li {
     .loque__list--responsive > div > p {
         color: #97928A;
         text-align: center;
-        font-family: Barlow;
+        font-family: Barlow Condensed;
         font-size: 11px;
         font-style: normal;
         font-weight: 500;
@@ -544,7 +544,7 @@ li {
 }
 
 .selected__tab {
-    color: #C04D00 !important;
+    color: #d7282f !important;
 }
 
 .main__row {
@@ -660,7 +660,7 @@ li {
     padding-right: 40px ;
 }
 .contacto__form__card__form__container > label {
-    font-family: 'Barlow';
+    font-family: 'Barlow Condensed';
     font-size: 16px;
     letter-spacing: 2px;
     text-transform: uppercase; 
@@ -786,7 +786,7 @@ li {
     }   
 /* } */
 .contacto__form__card__form--portfolio--email > label {
-    font-family: 'Barlow';
+    font-family: 'Barlow Condensed';
     font-size: 16px;
     letter-spacing: 2px;
     text-transform: uppercase; 
@@ -795,7 +795,7 @@ li {
     margin-bottom: 5px;
 }
 .contacto__form__card__form--portfolio--personalidad > label {
-    font-family: 'Barlow';
+    font-family: 'Barlow Condensed';
     font-size: 16px;
     letter-spacing: 2px;
     text-transform: uppercase; 
@@ -804,7 +804,7 @@ li {
     margin-bottom: 5px;
 }
 .contacto__form__card__form--portfolio--comentarios > label {
-    font-family: 'Barlow';
+    font-family: 'Barlow Condensed';
     font-size: 16px;
     letter-spacing: 2px;
     text-transform: uppercase; 

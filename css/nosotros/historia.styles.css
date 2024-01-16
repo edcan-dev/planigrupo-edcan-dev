@@ -65,7 +65,7 @@
 }
 
 .historia__card__item__text>span {
-  color: #be4d00;
+  color: #d7282f;
   font-family: Raleway;
   font-size: 32px;
   font-style: normal;
@@ -393,13 +393,13 @@
 
 
 body > main > section.historia__section > div.historia__card.historia__card--tab5.active > div:nth-child(2) > div.historia__card__item__text > p {
-  font-size: 10px;
+  /* font-size: 10px; */
 }
 body > main > section.historia__section > div.historia__card.historia__card--tab5.active > div:nth-child(3) > div.historia__card__item__text > p {
-  font-size: 10px;
+  /* font-size: 10px; */
 }
 body > main > section.historia__section > div.historia__card.historia__card--tab5.active > div:nth-child(4) > div.historia__card__item__text > p {
-  font-size: 10px;
+  /* font-size: 10px; */
 /* }
 
 @media (max-width: 1300px) {
@@ -474,8 +474,8 @@ body > main > section.historia__section > div.historia__card.historia__card--tab
     display: inline-block;
     width: 100%;
     text-align: center;
-    color: #be4d00;
-    font-family:  Barlow;
+    color: #d7282f;
+    font-family:  Barlow Condensed;
     font-size: 32px;
     font-style: normal;
     font-weight: bold;

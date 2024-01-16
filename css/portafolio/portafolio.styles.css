@@ -62,7 +62,7 @@
   padding-right: 40px;
 }
 .contacto__form__card__form__container > label {
-  font-family: "Barlow";
+  font-family: "Barlow Condensed";
   font-size: 16px;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -151,7 +151,7 @@
 }
 
 .contacto__form__card__form--portfolio--email > label {
-  font-family: "Barlow";
+  font-family: "Barlow Condensed";
   font-size: 16px;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -160,7 +160,7 @@
   margin-bottom: 5px;
 }
 .contacto__form__card__form--portfolio--personalidad > label {
-  font-family: "Barlow";
+  font-family: "Barlow Condensed";
   font-size: 16px;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -169,7 +169,7 @@
   margin-bottom: 5px;
 }
 .contacto__form__card__form--portfolio--comentarios > label {
-  font-family: "Barlow";
+  font-family: "Barlow Condensed";
   font-size: 16px;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -286,7 +286,7 @@
 }
 .featured_properties__grid__item__text > span {
   color: #fff;
-  font-family: Barlow;
+  font-family: Barlow Condensed;
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
@@ -309,7 +309,7 @@
 .featured_properties__title > span {
   color: #0096a9;
   text-align: justify;
-  font-family: Barlow;
+  font-family: Barlow Condensed;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -341,7 +341,7 @@
 .featured_properties__responsive-combo > span {
   color: #0096a9;
   text-align: justify;
-  font-family: Barlow;
+  font-family: Barlow Condensed;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -417,7 +417,7 @@
   .featured_properties__responsive-combo > span {
     color: #0096a9;
     text-align: justify;
-    font-family: Barlow;
+    font-family: Barlow Condensed;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
@@ -464,7 +464,7 @@
   margin: 0;
   color: #0096a9;
   text-align: justify;
-  font-family: Barlow;
+  font-family: Barlow Condensed;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -916,7 +916,7 @@
     & span {
       display: inline-block;
       margin-bottom: 20px;
-      color: #c04d00;
+      color: #d7282f;
       font-family: Raleway;
       font-size: 18px;
       font-style: normal;
@@ -983,7 +983,7 @@
 
       & li {
         color: #545859;
-        font-family: Barlow;
+        font-family: Barlow Condensed;
         font-size: 18px;
         font-style: normal;
         font-weight: 500;
@@ -995,7 +995,7 @@
       }
       & .selected {
         font-weight: bolder;
-        color: #c04d00;
+        color: #d7282f;
       }
     }
   }
@@ -1023,7 +1023,7 @@
           padding-left: 20px;
 
           & span {
-            color: #c04d00;
+            color: #d7282f;
             font-family: Raleway;
             font-size: 18px;
             font-style: normal;
@@ -1170,7 +1170,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   & span {
-    color: #c04d00;
+    color: #d7282f;
     text-align: center;
     font-family: Raleway;
     font-size: 32px;
@@ -1184,7 +1184,7 @@
   & p {
     color: #97928a;
     text-align: center;
-    font-family: Barlow;
+    font-family: Barlow Condensed;
     font-size: 11px;
     font-style: normal;
     font-weight: 500;
@@ -1484,7 +1484,7 @@
 
 
 .swal2-title {
-  color: #C04D00;
+  color: #d7282f;
   font-family: Raleway;
   font-size: 18px;
   font-style: normal;
