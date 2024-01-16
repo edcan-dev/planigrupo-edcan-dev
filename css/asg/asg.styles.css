@@ -23,9 +23,9 @@
 }
 
 .hero__text > span {
-  color: #c04d00;
+  color: #d7282f;
   text-align: center;
-  font-family: Barlow;
+  font-family: Barlow Condensed;
   font-size: 18px;
   font-style: normal;
   font-weight: bolder;
@@ -94,7 +94,7 @@
   padding: 0px 20px;
   color: #545859;
   text-align: center;
-  font-family: Barlow;
+  font-family: Barlow Condensed;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -109,7 +109,7 @@
 .tabs > .tabs__selectors > ul > .selected {
   background-color: #f5f3f1;
   border-left: 1px;
-  color: #c04d00;
+  color: #d7282f;
   font-weight: bolder;
   border-left: #c9c8c7 1px solid;
   border-right: #c9c8c7 1px solid;
@@ -149,7 +149,7 @@
 }
 .tab__contents > .asg_tab_content > .asg_tab_content__anchor > a {
   color: #d7282f;
-  font-family: Barlow;
+  font-family: Barlow Condensed;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -215,7 +215,7 @@
   > span {
   color: #d7282f;
   text-align: center;
-  font-family: Barlow;
+  font-family: Barlow Condensed;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -282,7 +282,7 @@
   > .reports__item__reports
   > .reports__item__reports__report
   > span {
-  color: #c04d00;
+  color: #d7282f;
   text-align: center;
   font-family: Raleway;
   font-size: 32px;
@@ -317,7 +317,7 @@
   height: 30px;
   margin-bottom: 10px;
 
-  background-color: #C04D00;
+  background-color: #d7282f;
 }
 
 hr {
@@ -365,7 +365,7 @@ hr {
   margin: 0 auto 20px;
   color: #d7282f;
   text-align: center;
-  font-family: Barlow;
+  font-family: Barlow Condensed;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -452,7 +452,7 @@ hr {
 }
 
 .actividades__grid__item__title > p {
-  color: #BE4D00;
+  color: #d7282f;
   font-family: Raleway;
   font-size: 13px;
   font-style: normal;
@@ -708,7 +708,7 @@ background: #EFEFED;
   margin-bottom: 10px;
 }
 .detail__dialog__title > h5 {
-  color: #C04D00;
+  color: #d7282f;
   font-family: Raleway;
   font-size: 18px;
   font-style: normal;
@@ -879,7 +879,7 @@ background: #EFEFED;
               margin-right: 10px;
               color: #97928A;
               text-align: center;
-              font-family: Barlow;
+              font-family: Barlow Condensed;
               font-size: 18px;
               font-style: normal;
               font-weight: 500;
@@ -909,7 +909,7 @@ background: #EFEFED;
             margin-right: 10px;
             color: #000;
             text-align: center;
-            font-family: Barlow;
+            font-family: Barlow Condensed;
             font-size: 18px;
             font-style: normal;            
             font-weight: 500;

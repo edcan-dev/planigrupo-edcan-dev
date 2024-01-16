@@ -1,6 +1,6 @@
 :root {
   --brigth-red: #D7282F;
-  --brown-red: #c04d00;
+  --brown-red: #d7282f;
 }
 
 .hero__img {
@@ -30,7 +30,7 @@
 
 .gobernanza_section--1 > div > ul > li {
   color: #53575a;
-  font-family: Barlow;
+  font-family: Barlow Condensed;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -119,7 +119,7 @@
 }
 .section--1__splitter > span {
   color: #fff;
-  font-family: Barlow;
+  font-family: Barlow Condensed;
   font-size: 15px;
   font-style: normal;
   font-weight: 600;
@@ -172,7 +172,7 @@
 }
 .section--1__grid--2__item__name > p {
   color: #0096a9;
-  font-family: Barlow;
+  font-family: Barlow Condensed;
   font-size: 16px;
   font-style: normal;
   font-weight: bold;
@@ -212,7 +212,7 @@
 .gober_asg_content--second__tabs__selector__item {
   color: #545859;
   text-align: center;
-  font-family: Barlow;
+  font-family: Barlow Condensed;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -230,7 +230,7 @@
   color: var(--brigth-red);
   background-color: #f0f0f0;
   text-align: center;
-  font-family: Barlow;
+  font-family: Barlow Condensed;
   font-size: 16px;
   font-style: normal;
   font-weight: bold;
@@ -266,7 +266,7 @@
 .gober_asg_content--2__tabs__content--1__text > span {
   color: #0096A9;
   text-align: center;
-  font-family: Barlow;
+  font-family: Barlow Condensed;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -278,7 +278,7 @@
 .gober_asg_content--2__tabs__content--1__text--bottom > p {
   color: #0096A9;
   text-align: center;
-  font-family: Barlow;
+  font-family: Barlow Condensed;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -392,7 +392,7 @@
   
   & span {
     color: #53575A;
-    font-family: Barlow;
+    font-family: Barlow Condensed;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
@@ -444,7 +444,7 @@
     width: 100%;
     text-align: center;
     color: #FFF;
-    font-family: Barlow;
+    font-family: Barlow Condensed;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;

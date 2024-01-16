@@ -98,7 +98,7 @@ blog-tab-selector > ul {
 blog-tab-selector  > ul > li {
   list-style: none;
   color: #FFF;
-  font-family: Barlow;
+  font-family: Barlow Condensed;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -214,7 +214,7 @@ blog-recent-item:hover::after {
 blog-recent-item > div > p {
   padding: 5px 10px;
   color: #53575A;
-  font-family: Barlow;
+  font-family: Barlow Condensed;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -223,7 +223,7 @@ blog-recent-item > div > p {
 }
 blog-recent-item > div > small  {
   padding: 5px 10px;
-  color: #BE4D00;
+  color: #d7282f;
   font-family: Raleway;
   font-size: 12px;
   font-style: normal;
@@ -320,7 +320,7 @@ blog-featured-grid-item > div {
 
 blog-featured-grid-item > div > p {
   color: #53575A;
-  font-family: Barlow;
+  font-family: Barlow Condensed;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -328,7 +328,7 @@ blog-featured-grid-item > div > p {
   letter-spacing: 1px; 
 }
 blog-featured-grid-item > div > small  {
-  color: #BE4D00;
+  color: #d7282f;
   font-family: Raleway;
   font-size: 12px;
   font-style: normal;
@@ -445,7 +445,7 @@ blog-posts-carousel-grid-item:hover::after {
 blog-posts-carousel-grid-item > div > p {
   padding: 10px 20px;
   color: #53575A;
-  font-family: Barlow;
+  font-family: Barlow Condensed;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -454,7 +454,7 @@ blog-posts-carousel-grid-item > div > p {
 }
 blog-posts-carousel-grid-item > div > small  {
   padding: 10px 20px;
-  color: #BE4D00;
+  color: #d7282f;
   font-family: Raleway;
   font-size: 12px;
   font-style: normal;
@@ -476,7 +476,7 @@ blog-posts-selectors > ul > li {
   list-style: none;
   color: #97928A;
   text-align: center;
-  font-family: Barlow;
+  font-family: Barlow Condensed;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -489,7 +489,7 @@ blog-posts-selectors > ul > li {
 }
 blog-posts-selectors > ul > .first,blog-posts-selectors > ul > .last {
 
-  color: #BE4D00 !important;
+  color: #d7282f !important;
 
 }
 
@@ -589,7 +589,7 @@ blog-videos-title {
 }
 blog-videos-title > h4 {
   color: #53575A;
-  font-family: Barlow;
+  font-family: Barlow Condensed;
   font-size: 19px;
   font-style: normal;
   font-weight: bold;
@@ -672,7 +672,7 @@ blog-journal-title {
 }
 blog-journal-title > h4 {
   color: #53575A;
-  font-family: Barlow;
+  font-family: Barlow Condensed;
   font-size: 19px;
   font-style: normal;
   font-weight: bold;

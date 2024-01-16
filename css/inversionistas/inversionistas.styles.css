@@ -41,7 +41,7 @@
     & li {
       position: relative;
       color: #545859;
-      font-family: Barlow;
+      font-family: Barlow Condensed;
       font-size: 17px;
       font-style: normal;
       font-weight: 600;
@@ -52,10 +52,10 @@
       list-style: none;
       cursor: pointer;
 
-      /*             background-color: #C04D00;
+      /*             background-color: #d7282f;
  */
 
-      border-right: #C04D00;
+      border-right: #d7282f;
     }
 
 
@@ -75,7 +75,7 @@
   margin: 0 auto 40px;
 
   & span {
-    color: #C04D00;
+    color: #d7282f;
     font-family: Raleway;
     font-size: 18px;
     font-style: normal;
@@ -119,7 +119,7 @@
   }
 
   & .inversionistas__tabs__tab--content__row__item>span {
-    color: #C04D00;
+    color: #d7282f;
     text-align: center;
     font-family: Raleway;
     font-size: 32px;
@@ -134,7 +134,7 @@
   & .inversionistas__tabs__tab--content__row__item>p {
     color: #97928A;
     text-align: center;
-    font-family: Barlow;
+    font-family: Barlow Condensed;
     font-size: 11px;
     font-style: normal;
     font-weight: 500;
@@ -179,7 +179,7 @@
   width: 380px;
 
   & span {
-    color: #C04D00;
+    color: #d7282f;
     font-family: Raleway;
     font-size: 18px;
     font-style: normal;
@@ -238,7 +238,7 @@
   margin: 0 auto;
 
   & span {
-    color: #C04D00;
+    color: #d7282f;
     font-family: Raleway;
     font-size: 18px;
     font-style: normal;
@@ -261,7 +261,7 @@
       padding: 15px 20px;
       color: #545859;
       text-align: center;
-      font-family: Barlow;
+      font-family: Barlow Condensed;
       font-size: 14px;
       font-style: normal;
       font-weight: 500;
@@ -322,9 +322,9 @@ article {
     & span {
       display: flex;
       margin-bottom: 20px;
-      color: #C04D00;
+      color: #d7282f;
       text-align: center;
-      font-family: Barlow;
+      font-family: Barlow Condensed;
       font-size: 14px;
       font-style: normal;
       font-weight: 500;
@@ -425,7 +425,7 @@ article {
 
   & div>p>b {
     color: #545859;
-    font-family: Barlow;
+    font-family: Barlow Condensed;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
@@ -448,7 +448,7 @@ article {
   }
 
   & div>.number {
-    color: #C04D00;
+    color: #d7282f;
   }
 
   & .text__container {
@@ -463,7 +463,7 @@ article {
 }
 
 .inversionistas__tabs__tab--content__contact__card--second {
-  background-color: #C04D00;
+  background-color: #d7282f;
   width: 100%;
   display: flex;
 }
@@ -479,7 +479,7 @@ article {
     width: 1200px;
 
     & span {
-      color: #C04D00;
+      color: #d7282f;
       font-family: Raleway;
       font-size: 18px;
       font-style: normal;
@@ -517,7 +517,7 @@ article {
 
 
     & span {
-      color: #C04D00;
+      color: #d7282f;
       font-family: Raleway;
       font-size: 19px;
       font-style: normal;
@@ -622,7 +622,7 @@ article {
 
 
         & span {
-          color: #C04D00;
+          color: #d7282f;
           font-family: Raleway;
           font-size: 18px;
           font-style: normal;
@@ -760,7 +760,7 @@ article {
     margin: 40px auto;
 
     & span {
-      color: #C04D00;
+      color: #d7282f;
       font-family: Raleway;
       font-size: 18px;
       font-style: normal;
@@ -789,7 +789,7 @@ article {
   }
 
   & span {
-    color: #C04D00;
+    color: #d7282f;
     font-family: Raleway;
     font-size: 15px;
     font-style: normal;
@@ -938,7 +938,7 @@ article {
   margin: 0 auto 40px;
 
   & span {
-    color: #C04D00;
+    color: #d7282f;
     font-family: Raleway;
     font-size: 18px;
     font-style: normal;
@@ -994,7 +994,7 @@ article {
 }
 
 & .tab_decade__grid__item__title {
-  color: #C04D00;
+  color: #d7282f;
   text-align: center;
   font-family: Raleway;
   font-size: 32px;
@@ -1020,7 +1020,7 @@ article {
     margin: 0 auto 40px;
 
     & span {
-      color: #C04D00;
+      color: #d7282f;
       font-family: Raleway;
       font-size: 18px;
       font-style: normal;
@@ -1149,7 +1149,7 @@ article {
       }
 
       & .tab_decade__grid__item__title {
-        color: #C04D00;
+        color: #d7282f;
         text-align: center;
         font-family: Raleway;
         font-size: 32px;
@@ -1308,7 +1308,7 @@ article {
     margin-bottom: 40px;
 
     & span {
-      color: #C04D00;
+      color: #d7282f;
       font-family: Raleway;
       font-size: 18px;
       font-style: normal;
@@ -1348,7 +1348,7 @@ article {
       border-right: #DADAD8 solid 1px;
 
       & span {
-        color: #C04D00;
+        color: #d7282f;
         font-family: Raleway;
         font-size: 15px;
         font-style: normal;
@@ -1459,7 +1459,7 @@ article {
   margin-bottom: 40px;
 
   & span {
-    color: #C04D00;
+    color: #d7282f;
     font-family: Raleway;
     font-size: 18px;
     font-style: normal;
@@ -1499,7 +1499,7 @@ article {
     border-right: #DADAD8 solid 1px;
 
     & span {
-      color: #C04D00;
+      color: #d7282f;
       font-family: Raleway;
       font-size: 15px;
       font-style: normal;
@@ -1627,7 +1627,7 @@ article {
 }
 
 .span_title_text {
-  color: #C04D00;
+  color: #d7282f;
   font-family: Raleway;
   font-size: 18px;
   font-style: normal;
@@ -1657,7 +1657,7 @@ article {
 .p_body_text--3 {
   color: #53575A;
   text-align: center;
-  font-family: Barlow;
+  font-family: Barlow Condensed;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -1669,7 +1669,7 @@ article {
 .p_body_text--2 {
   color: #97928A;
   text-align: center;
-  font-family: Barlow;
+  font-family: Barlow Condensed;
   font-size: 11px;
   font-style: normal;
   font-weight: 500;
@@ -1741,7 +1741,7 @@ article {
       position: relative;
 
       & .selected {
-        background-color: #C04D00;
+        background-color: #d7282f;
         color: #FFF;
 
         & i::before {
@@ -1765,8 +1765,8 @@ article {
         justify-content: space-around;
         background-color: #EFEFED;
         position: relative;
-        color: #C04D00;
-        font-family: Barlow;
+        color: #d7282f;
+        font-family: Barlow Condensed;
         font-size: 20px;
         font-style: normal;
         font-weight: 700;
@@ -1814,7 +1814,7 @@ article {
         }
 
         & .selected {
-          color: #C04D00;
+          color: #d7282f;
           font-weight: bold;
         }
       }
@@ -1880,7 +1880,7 @@ article {
         border-right: 1px solid #DADAD8;
         border-left: 1px solid #DADAD8;
         font-weight: bold;
-        color: #C04D00;
+        color: #d7282f;
       }
     }
 
@@ -1896,7 +1896,7 @@ article {
         & span {
           display: inline-block;
           margin-bottom: 10px;
-          color: #C04D00;
+          color: #d7282f;
         }
 
         & a {
@@ -2306,7 +2306,7 @@ article {
 
 
 .event-info-component-title > span {
-  color: #C04D00;
+  color: #d7282f;
   font-family: Raleway;
   font-size: 18px;
   font-style: normal;

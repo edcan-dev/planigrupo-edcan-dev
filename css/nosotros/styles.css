@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Fjalla+One&family=Fredoka&family=Fresca&family=Raleway:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow Condensed&family=Fjalla+One&family=Fredoka&family=Fresca&family=Raleway:wght@400;600&display=swap');
 
 
 .main__hero {
@@ -102,8 +102,8 @@
 }
 
 .nosotros_info__grid__item--square > span {
-    color: #C04D00;
-    font-family: Barlow;
+    color: #d7282f;
+    font-family: Barlow Condensed;
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
@@ -135,7 +135,7 @@
     content: '';
     width: 1px;
     height: 100px;
-    background: #C04D00;
+    background: #d7282f;
     position: absolute;
     top: 90px;
     right: 0;
@@ -145,7 +145,7 @@
     content: '';
     width: 1px;
     height: 100px;
-    background: #C04D00;
+    background: #d7282f;
     position: absolute;
     top: 90px;
     right: 0;
@@ -511,7 +511,7 @@ body {
         align-items: center;
     }
     .loque__list--responsive > div > span {
-        color: #C04D00;
+        color: #d7282f;
         text-align: center;
         font-family: Raleway;
         font-size: 32px;
@@ -526,7 +526,7 @@ body {
     .loque__list--responsive > div > p {
         color: #97928A;
         text-align: center;
-        font-family: Barlow;
+        font-family: Barlow Condensed;
         font-size: 11px;
         font-style: normal;
         font-weight: 500;
@@ -576,7 +576,7 @@ body {
 }
 
 .selected__tab {
-    color: #C04D00 !important;
+    color: #d7282f !important;
 }
 
 .main__row {

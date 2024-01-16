@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Fjalla+One&family=Fredoka&family=Fresca&family=Raleway:wght@400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow Condensed&family=Fjalla+One&family=Fredoka&family=Fresca&family=Raleway:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow Condensed+Condensed&display=swap');
 
 * {
     box-sizing: border-box;
@@ -173,7 +173,7 @@
 .main__row__item>p {
     color: #97928A;
     text-align: center;
-    font-family: Barlow;
+    font-family: Barlow Condensed;
     font-family: 'Barlow Condensed';
     font-size: 11px;
     font-style: normal;
@@ -185,7 +185,7 @@
 }
 
 .main__row__item>b {
-    color: #C04D00;
+    color: #d7282f;
     color: #d7282f;
     text-align: center;
     font-family: Raleway;
@@ -210,7 +210,7 @@
 
 .main__spliter__p {
     color: #333;
-    font-family: Barlow;
+    font-family: Barlow Condensed;
     font-size: 15px;
     font-style: normal;
     font-weight: 500;
@@ -472,9 +472,9 @@
 .main__compromise__grid__item__text--primary {}
 
 .main__compromise__grid__item__text>span {
-    color: #C04D00;
+    color: #d7282f;
     text-align: justify;
-    font-family: Barlow;
+    font-family: Barlow Condensed;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
@@ -509,7 +509,7 @@
 
 .tab__selector {
     color: #545859;
-    font-family: Barlow;
+    font-family: Barlow Condensed;
     font-size: 28px;
     font-style: normal;
     font-weight: bold;
@@ -542,9 +542,10 @@
 }
 
 .tab__card__text>span {
-    color: #C04D00;
+    color: #d7282f;
+    color: #d7282f;
     text-align: justify;
-    font-family: Barlow;
+    font-family: Barlow Condensed;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
@@ -606,7 +607,7 @@
 
 .footer>div>span {
     color: #333;
-    font-family: Barlow;
+    font-family: Barlow Condensed;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -1437,6 +1438,12 @@ hr {
     font-size: 16px;
     letter-spacing: 6px;
 }
+body > main > section.main__databursatil__container--mobile > div > div.main__hero__databursatil__item.main__hero__databursatil__item--2 > span.main__hero__databursatil__item__text {
+    font-weight: bolder;
+}
+body > main > section.main__databursatil__container--mobile > div > div.main__hero__databursatil__item.main__hero__databursatil__item--3 > span.main__hero__databursatil__item__text {
+    font-weight: bolder;
+}
 
 #actionDecimalValue {
     font-size: 20px !important;
@@ -1971,7 +1978,7 @@ MAIN TABS MARGIN
 }
 
 /* .main__plani__info__text {
-    background-color: #C04D00;
+    background-color: #d7282f;
     width: 70%;
     padding: 40px;
     transition: all 1s;
@@ -2096,9 +2103,9 @@ MAIN TABS MARGIN
     padding: 0px 15px;
 
     & span {
-        color: #C04D00;
+        color: #d7282f;
         text-align: justify;
-        font-family: Barlow;
+        font-family: Barlow Condensed;
         font-size: 18px;
         font-style: normal;
         font-weight: 600;
@@ -2109,7 +2116,7 @@ MAIN TABS MARGIN
     & p {
         color: #000;
         text-align: justify;
-        font-family: Barlow;
+        font-family: Barlow Condensed;
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
@@ -2230,10 +2237,10 @@ MAIN TABS MARGIN
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    color: #C04D00;
+    color: #d7282f;
     color: #d7282f;
     text-align: justify;
-    font-family: Barlow;
+    font-family: Barlow Condensed;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
@@ -2383,7 +2390,7 @@ MAIN TABS MARGIN
             }
             & span {
                 color: #1f1a18;
-                font-family: Barlow;
+                font-family: Barlow Condensed;
                 font-size: 18px;
                 font-style: normal;
                 font-weight: 700;
@@ -2564,7 +2571,7 @@ MAIN TABS MARGIN
     }
     & p {
         color: #FFF;
-        font-family: Barlow;
+        font-family: Barlow Condensed;
         font-size: 14px;
         font-style: normal;
         font-weight: 500;
@@ -2929,7 +2936,7 @@ MAIN TABS MARGIN
       & span {
         display: inline-block;
         margin-bottom: 20px;
-        color: #c04d00;
+        color: #d7282f;
         font-family: Raleway;
         font-size: 18px;
         font-style: normal;
@@ -2996,7 +3003,7 @@ MAIN TABS MARGIN
   
         & li {
           color: #545859;
-          font-family: Barlow;
+          font-family: Barlow Condensed;
           font-size: 18px;
           font-style: normal;
           font-weight: 500;
@@ -3008,7 +3015,7 @@ MAIN TABS MARGIN
         }
         & .selected {
           font-weight: bolder;
-          color: #c04d00;
+          color: #d7282f;
         }
       }
     }
@@ -3036,7 +3043,7 @@ MAIN TABS MARGIN
             padding-left: 20px;
   
             & span {
-              color: #c04d00;
+              color: #d7282f;
               font-family: Raleway;
               font-size: 18px;
               font-style: normal;
@@ -3155,7 +3162,7 @@ MAIN TABS MARGIN
     flex-direction: column;
     justify-content: space-evenly;
     & span {
-      color: #c04d00;
+      color: #d7282f;
       text-align: center;
       font-family: Raleway;
       font-size: 32px;
@@ -3169,7 +3176,7 @@ MAIN TABS MARGIN
     & p {
       color: #97928a;
       text-align: center;
-      font-family: Barlow;
+      font-family: Barlow Condensed;
       font-size: 11px;
       font-style: normal;
       font-weight: 500;
@@ -3206,7 +3213,7 @@ MAIN TABS MARGIN
 .main__plani__info__selector {
 
     position: relative;
-    color: #C04D00;
+    color: #d7282f;
     color: #d7282f;
     font-size: 35px;
     margin: 0px;
@@ -3328,7 +3335,7 @@ MAIN TABS MARGIN
 
 
 .e-previous > button {
-    background-color: #C04D00 !important;
+    background-color: #d7282f !important;
     background-color: #d7282f !important;
     height: 50px !important;
     width: 50px !important;
@@ -3341,7 +3348,7 @@ MAIN TABS MARGIN
     transform: scale(1.1);
 }
 .e-next > button {
-    background-color: #C04D00 !important;
+    background-color: #d7282f !important;
     background-color: #d7282f !important;
     height: 50px !important;
     width: 50px !important;

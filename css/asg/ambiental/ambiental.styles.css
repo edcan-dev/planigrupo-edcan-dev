@@ -26,7 +26,7 @@
 }
 .amb_section--2 > div > span {
     color: #FFF;
-    font-family: Barlow;
+    font-family: Barlow Condensed;
     font-size: 15px;
     font-style: normal;
     font-weight: 500;
@@ -117,7 +117,7 @@
 }
 .asg_banner_component > .asg_banner_component__txt > p {
     color: #FFF;
-    font-family: Barlow;
+    font-family: Barlow Condensed;
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
@@ -179,7 +179,7 @@
     margin: 0 auto 40px;
     color: #D7282F;
     text-align: center;
-    font-family: Barlow;
+    font-family: Barlow Condensed;
     font-size: 16px;
     font-style: normal;
     font-weight: bold;
@@ -247,7 +247,7 @@
     height: 40px;
     display: flex;
     align-items: center;
-    color: #BE4D00;
+    color: #d7282f;
     font-family: Raleway;
     font-size: 13px;
     font-style: normal;

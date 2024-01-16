@@ -5,7 +5,7 @@
 }
 .section--1 > span {
   color: #d7282f;
-  font-family: Barlow;
+  font-family: Barlow Condensed;
   font-size: 18px;
   font-style: normal;
   font-weight: bold;
@@ -32,7 +32,7 @@
 }
 .section--2 > span {
   color: #d7282f;
-  font-family: Barlow;
+  font-family: Barlow Condensed;
   font-size: 18px;
   font-style: normal;
   font-weight: bold;
@@ -112,7 +112,7 @@
 }
 .section--3 > .card > .card__text > span {
   color: #D7282F;
-  font-family: Barlow;
+  font-family: Barlow Condensed;
   font-size: 16px;
   font-style: normal;
   font-weight: bold;
@@ -153,7 +153,7 @@
 }
 .section--4 > span {
   color: #D7282F;
-  font-family: Barlow;
+  font-family: Barlow Condensed;
   font-size: 16px;
   font-style: normal;
   font-weight: bolder;
@@ -179,7 +179,7 @@
 }
 .section--4 > form > .form__nombre > label {
   color: #D7282F;
-  font-family: Barlow;
+  font-family: Barlow Condensed;
   font-size: 14px;
   font-style: normal;
   font-weight: bold;
@@ -201,7 +201,7 @@
 }
 .section--4 > form > .form__puesto > label {
   color: #D7282F;
-  font-family: Barlow;
+  font-family: Barlow Condensed;
   font-size: 14px;
   font-style: normal;
   font-weight: bold;
@@ -245,7 +245,7 @@
 }
 .section--4 > form > .form__telefono > label {
   color: #D7282F;
-  font-family: Barlow;
+  font-family: Barlow Condensed;
   font-size: 14px;
   font-style: normal;
   font-weight: bold;
@@ -269,7 +269,7 @@
 }
 .section--4 > form > .form__cv > label {
   color: #D7282F;
-  font-family: Barlow;
+  font-family: Barlow Condensed;
   font-size: 14px;
   font-style: normal;
   font-weight: bold;
@@ -299,7 +299,7 @@ input[type="file"] {
 }
 .section--4 > form > .form__email > label {
   color: #D7282F;
-  font-family: Barlow;
+  font-family: Barlow Condensed;
   font-size: 14px;
   font-style: normal;
   font-weight: bold;
@@ -322,7 +322,7 @@ input[type="file"] {
 }
 .section--4 > form > .form__mensaje > label {
   color: #D7282F;
-  font-family: Barlow;
+  font-family: Barlow Condensed;
   font-size: 14px;
   font-style: normal;
   font-weight: bold;

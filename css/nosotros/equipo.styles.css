@@ -63,7 +63,7 @@
 }
 .equipo__card__item__text__name > span {
     color: #FFF;
-    font-family: Barlow;
+    font-family: Barlow Condensed;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
@@ -87,7 +87,7 @@ text-transform: uppercase;
     padding: 0px 5px;
 }
 .equipo__card__item__text__info > p {
-    color: #C04D00;
+    color: #d7282f;
 font-family: Fredoka;
 font-size: 11px;
 font-style: normal;

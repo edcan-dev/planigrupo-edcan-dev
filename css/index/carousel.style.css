@@ -1,7 +1,7 @@
 .e-carousel .e-carousel-navigators .e-next .e-btn:not(:disabled) .e-btn-icon,
 .e-carousel .e-carousel-navigators .e-previous .e-btn:not(:disabled) .e-btn-icon
 {
-    color: #C04D00;
+    color: #d7282f;
     font-size: 25px ;
     margin: 0px;
 }
@@ -16,7 +16,7 @@
  }
 
  .e-carousel .e-carousel-indicators.e-default .e-indicator-bar.e-active .e-indicator div {
-    background-color: #C04D00;
+    background-color: #d7282f;
     color: #0096A9;
     border: none;
  }
@@ -71,7 +71,7 @@
 
 .properties-carousel__item__text__location-date {
     color: #000;
-    font-family: Barlow;
+    font-family: Barlow Condensed;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -81,7 +81,7 @@
 }
 .properties-carousel__item__text__location-date :nth-child(2) {
     color: #000;
-    font-family: Barlow;
+    font-family: Barlow Condensed;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
@@ -118,7 +118,7 @@
 
 .properties-carousel__item__text__contact > span {
     color: #000;
-    font-family: Barlow;
+    font-family: Barlow Condensed;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
