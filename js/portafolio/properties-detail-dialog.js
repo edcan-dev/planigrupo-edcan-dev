@@ -116,7 +116,7 @@ export function renderIndexDetail(propertyDetail) {
           <span>${
             (propertyDetail.usedRate * 100) ==  100 ? (propertyDetail.usedRate * 100) + '%' : (propertyDetail.usedRate * 100).toPrecision(4) + '%'     
           }</span>
-          <p>PORCENTAJE DE USO</p>
+          <p>PORCENTAJE DE OCUPACIÓN</p>
         </div>
       </div>
 
@@ -353,7 +353,7 @@ export async function initializeDetailDialog(keyName) {
               <span>${
                 (propertyDetail.usedRate * 100) ==  100 ? (propertyDetail.usedRate * 100) + '%' : (propertyDetail.usedRate * 100).toPrecision(4) + '%'     
               }</span>
-              <p>PORCENTAJE DE USO</p>
+              <p>PORCENTAJE DE OCUPACIÓN</p>
             </div>
           </div>
     
@@ -696,7 +696,7 @@ export const renderContact = async (keyName) => {
 
 function getFormattedUsableArea( usableArea ) {
   const arr = usableArea.toString().split('');
-  arr.splice(2,0 , ',')
+  arr.splice(-3,0,',')
   return arr.join('');
 }
 

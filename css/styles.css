@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Fjalla+One&family=Fredoka&family=Fresca&family=Raleway:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
 
 * {
     box-sizing: border-box;
@@ -141,6 +142,8 @@
 
 .main__hero__text__p-blue {
     background-color: #0095a9AA;
+    background-color: #9cdbd9;
+    color: #545859;
     margin-left: 100px;
     padding-left: 100px;
 
@@ -171,6 +174,7 @@
     color: #97928A;
     text-align: center;
     font-family: Barlow;
+    font-family: 'Barlow Condensed';
     font-size: 11px;
     font-style: normal;
     font-weight: 500;
@@ -182,6 +186,7 @@
 
 .main__row__item>b {
     color: #C04D00;
+    color: #d7282f;
     text-align: center;
     font-family: Raleway;
     font-size: 32px;
@@ -344,6 +349,7 @@
 
 .main__all-properties>a {
     color: #FFF;
+    color: #545859;
     font-family: Fjalla One;
     font-size: 20px;
     font-style: normal;
@@ -353,6 +359,7 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     background-color: #0096A9;
+    background-color: #9cdbd9;
     text-decoration: none;
 
     display: inline-block;
@@ -1366,6 +1373,7 @@ hr {
     width: 500px;
     height: 150px;
     background-color: #0095a9AA;
+    background-color: #9cdbd9;
     right: 0px;
     top: 480px;
     padding: 5px;
@@ -1375,6 +1383,10 @@ hr {
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+
+    & img {
+        filter: brightness(.3);
+    }
 }
 
 .main__hero__databursatil__item {
@@ -1394,6 +1406,7 @@ hr {
     width: 1px;
     height: 80%;
     background: #ffffff;
+    background: #545859;
     position: absolute;
     bottom: 10px;
     left: 33%;
@@ -1411,6 +1424,7 @@ hr {
     width: 1px;
     height: 80%;
     background: #fff;
+    background: #545859;
     position: absolute;
     bottom: 10px;
     left: 66%;
@@ -1418,6 +1432,7 @@ hr {
 
 .main__hero__databursatil__item--2>span {
     color: #FFF;
+    color: #545859;
     font-family: Fjalla One;
     font-size: 16px;
     letter-spacing: 6px;
@@ -1450,6 +1465,7 @@ hr {
 
 .main__hero__databursatil__item--3>span {
     color: #FFF;
+    color: #545859;
     font-family: Fjalla One;
     font-size: 16px;
     letter-spacing: 6px;
@@ -2215,6 +2231,7 @@ MAIN TABS MARGIN
     padding: 0;
     margin: 0;
     color: #C04D00;
+    color: #d7282f;
     text-align: justify;
     font-family: Barlow;
     font-size: 18px;
@@ -2553,7 +2570,7 @@ MAIN TABS MARGIN
         font-weight: 500;
         line-height: 30px;
         letter-spacing: 1px;
-        text-transform: uppercase;
+        /* text-transform: uppercase; */
         position: absolute;
     }
     & .contact {
@@ -3190,6 +3207,7 @@ MAIN TABS MARGIN
 
     position: relative;
     color: #C04D00;
+    color: #d7282f;
     font-size: 35px;
     margin: 0px;
     width: 500px;
@@ -3311,6 +3329,7 @@ MAIN TABS MARGIN
 
 .e-previous > button {
     background-color: #C04D00 !important;
+    background-color: #d7282f !important;
     height: 50px !important;
     width: 50px !important;
 
@@ -3323,6 +3342,7 @@ MAIN TABS MARGIN
 }
 .e-next > button {
     background-color: #C04D00 !important;
+    background-color: #d7282f !important;
     height: 50px !important;
     width: 50px !important;
 

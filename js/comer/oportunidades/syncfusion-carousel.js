@@ -53,13 +53,13 @@ const PropertyCard = (
           <span class="title">${ propertyTitle }</span>    
           <span class="comercializacion">${ propertyContactEmail }</span>
           <span class="date">${ propertyStartDate }</span>    
-          <span class="area">${ propertyArea }</span>    
+          <span class="area">${ propertyArea } m2</span>    
         </div>  
         <div class="oportunidades__carousel__item__text__title__item oportunidades__carousel__item__text__title__item--desc">
           <p class="name">${ propertyLocation }</p>    
           <p class="contact">${ 'Contacto para comercialización' }</p>                
           <p class="date">${ 'Inauguración' }</p>   
-          <p class="area">${ 'Espacio M2' }</p>    
+          <p class="area">${ 'Espacio comercial' }</p>    
         </div>
       </div>
 

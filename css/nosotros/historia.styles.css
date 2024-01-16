@@ -358,14 +358,16 @@
   background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia_optimized/2015.png');
 }
 .historia__card__item__img--22 {
-  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia_optimized/2016.png');
-}
-.historia__card__item__img--22 {
-  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia_optimized/2017.png');/* background-image: url('https://planigrupo.com.mx/wp-content/uploads/2018/09/2016.jpg'); */
+  background-position-y: bottom;
+  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia_optimized/Garza%20Sada.jpg');/* background-image: url('https://planigrupo.com.mx/wp-content/uploads/2018/09/2016.jpg'); */
 }
 .historia__card__item__img--23 {
-  background-image: url('https://planigrupo.com.mx/wp-content/uploads/2018/09/2017.jpg');
+  background-image: url("https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia_optimized/A%20Punto%20Oriente%20GDL%20aVAF_4470%2015_Q.png");
 }
+.historia__card__item__img--27 {
+  background-image: url("https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia_optimized/DJI_0214_.jpg");
+}
+
 .historia__card__item__img--24 {
   background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/nosotros/historia_optimized/2023.png');
   background-position-y:center ;

@@ -26,6 +26,7 @@
     height: 70px;
     width: 950px;
     background-color: #0096A999;
+    background-color: #9cdbd9;
     justify-content: space-between; }
 .oportunidades__carousel__item__text__title__item--title {
     padding: 0px 20px;
@@ -46,6 +47,7 @@
 
     & span {
         color: #FFF;
+        color: #545454;
         font-family: Fjalla One;
         font-size: 20px;
         font-style: normal;
@@ -77,14 +79,14 @@
     }
     & .contact {
         left: 295px;
-        text-transform: lowercase;
+        /* text-transform: lowercase; */
     }
     & .date {
         left: 612px;
     }
     & .area {
         left: 800px;
-        text-transform: lowercase !important;
+        /* text-transform: lowercase !important; */
     }
 }
 
@@ -111,6 +113,7 @@
         color: #454545;
         text-align: justify;
         font-family: Raleway;
+        font-family: 'Barlow COndensed';
         font-size: 12px;
         font-style: normal;
         font-weight: 500;
