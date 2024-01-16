@@ -233,12 +233,17 @@
   padding-right: 40px;
 }
 .contacto__form__card__form--submit {
-  align-items: end;
-  justify-content: end;
+  align-content: space-between;
+  justify-content: space-between;
   padding-right: 40px;
 }
 .contacto__form__card__form--submit > input {
   height: 40px;
+}
+.contacto__form__card__form--submit > label {
+  font-family: "Raleway";
+  font-size: 14px !important;
+  margin-top: 20px;
 }
 
 .featured_properties {
@@ -1447,7 +1452,6 @@
   }
   .contacto__form__card__form--submit {
     padding: 0px;
-    justify-content: center;
   }
 
   .detail__about {
