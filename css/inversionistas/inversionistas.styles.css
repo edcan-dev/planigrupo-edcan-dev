@@ -1189,6 +1189,8 @@ article {
   display: flex;
   flex-direction: column;
   & p {
+
+    position: absolute;
     display: inline-block;
     color: #53575A;
     text-align: justify;
@@ -1200,9 +1202,12 @@ article {
     /* 142.857% */
     letter-spacing: 1px;
     text-transform: capitalize;
+    height: 1px;
+    top: 0px;
   }
 
   & small {
+    position: absolute;
     color: #53575A;
     text-align: justify;
     font-family: Raleway;
@@ -1213,6 +1218,8 @@ article {
     /* 200% */
     letter-spacing: 1px;
     text-transform: capitalize;
+    height: 1px;
+    top: 20px;
   }
 
   & li {
