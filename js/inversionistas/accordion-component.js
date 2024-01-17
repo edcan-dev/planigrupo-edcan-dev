@@ -5,8 +5,15 @@ var i;
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function(ev) {
 
-    const element = ev.target;
-    console.log(ev.target);
+    //const element = ev.target;
+    let element;
+
+    if(ev.target.type == 'submit') {
+      element = ev.target
+    } else {
+      element = ev.target.parentElement
+    }
+    
 
 
     if(! element.classList.contains('active')) {
@@ -79,3 +86,12 @@ document.querySelectorAll('.resp-carousel-selector')
     accordion.innerHTML = newAccordionContent
 
   }))
+
+
+
+  try {
+
+    document.querySelectorAll('.accordion > p').forEach(p => p.addEventListener('click',(ev)=> ev.preventDefault()))
+    document.querySelectorAll('.accordion > small').forEach(small => small.addEventListener('click',(ev)=> ev.preventDefault()))
+
+  } catch(e) { }
