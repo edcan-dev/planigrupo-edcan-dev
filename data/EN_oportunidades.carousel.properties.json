@@ -1,0 +1,192 @@
+{
+    "properties": [
+        {
+            "propertyId":"P119",
+            "propertyTitle": "GRAN PLAZA CANCÚN",
+            "propertyLocation": "Cancún, Quintana Roo",
+            "propertyStartDate": "OCTOBER, 2013",
+            "propertyDescription": "At this shopping center you will find a wide variety of stores for the whole family. It’s the perfect place to spend a nice day with friends. You can stroll through its corridors where you will find gastronomic diversity and make all the necessary purchases in one place – in tranquil ambience and family atmosphere.",
+            "propertyContactName": "Contact",
+            "propertyContactEmail": "comercial@Gminmobiliaria.com",
+            "propertyImageUrl":"https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/Cncnfoto.png",
+            "propertyArea": "26,643",
+            "propertyFeaturedTenants": [
+                {
+                    "tenantName":"Walmart",
+                    "tenantImageUrl":"https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/walmart.png"
+                },
+                {
+                    "tenantName":"Cinepolis",
+                    "tenantImageUrl":"https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/cinepolis.png"
+                },
+                {
+                    "tenantName":"Suburbia",
+                    "tenantImageUrl":"https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/suburbia.png"
+                }
+            ]
+        },
+        {
+            "propertyId":"P131",
+            "propertyTitle": "CIUDADELA URBAN VILLAGE",
+            "propertyLocation": "Guadalajara, Jalisco",
+            "propertyStartDate": "DECEMBER, 2014",
+            "propertyDescription": "This shopping center is different from the rest. It offers a wide variety of high quality stores of all types. It is located in a strategic neighborhood of the city. Ciudadela has several distinct areas with a fresh and natural ambiance, both indoors and outdoors.",
+            "propertyContactName": "Contact",
+            "propertyContactEmail": "comercial@Gminmobiliaria.com",
+            "propertyImageUrl":"https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/oportunidades-properties/Ciudadela4.jpg",
+            "propertyArea": "51,979",
+            "propertyFeaturedTenants": [
+                {
+                    "tenantName":"Walmart",
+                    "tenantImageUrl":"https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/walmart.png"
+                },
+                {
+                    "tenantName":"Cinepolis",
+                    "tenantImageUrl":"https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/cinepolis.png"
+                }
+            ]
+        },
+        {
+            "propertyId":"P125",
+            "propertyTitle": "URBAN VILLAGE GARZA SADA",
+            "propertyLocation": "Monterrey, Nuevo León",
+            "propertyStartDate": "NOVEMBER, 2017",
+            "propertyDescription": "Shopping center with sophisticated architecture where you can shop or eat at one of its restaurants. A modern place where you can find everything, including clothing stores, restaurants, supermarket, coffee shops and a playgroud for the kids. It has a terrace that will make want to spend all day with your friends.",
+            "propertyContactName": "Contact",
+            "propertyContactEmail": "comercial@Gminmobiliaria.com",
+            "propertyImageUrl":"https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/oportunidades-properties/uvgs.jpg",
+            "propertyArea": "26,643",
+            "propertyFeaturedTenants": [
+                {
+                    "tenantName":"HEB",
+                    "tenantImageUrl":"https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/heb.png"
+                },
+                {
+                    "tenantName":"Petco",
+                    "tenantImageUrl":"https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/petco.png"
+                }
+            ]
+        },
+        {
+            "propertyId":"P123",
+            "propertyTitle": "PASEO HIPÓDROMO",
+            "propertyLocation": "Metropolitan Mexico City, Mexico City",
+            "propertyStartDate": "DECEMBER, 2017",
+            "propertyDescription": "Paseo Hipódromo is a shopping center with a cozy design, on one of the busiest avenues in the area. It has Cinemex Platino, the perfect entertainment option for the whole family. Additionally, the plaza features several gastronomic options. If that weren’t enough, it is ideal for pet lovers as it also has a Petco.",
+            "propertyContactName": "Contact",
+            "propertyContactEmail": "comercial@Gminmobiliaria.com",
+            "propertyImageUrl":"https://planigrupo.blob.core.windows.net/planigrupo/assets/images/propiedades-destacadas/location-hero-plaza-bella-mexiquense-full.jpg",
+            "propertyArea": "7,500",
+            "propertyFeaturedTenants": [
+                {
+                    "tenantName":"Cinemex",
+                    "tenantImageUrl":"https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/cinemex.png"
+                },
+                {
+                    "tenantName":"Petco",
+                    "tenantImageUrl":"https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/petco.png"
+                }
+            ]
+        },
+        {
+            "propertyId":"P118",
+            "propertyTitle": "PLAZA PALMIRA",
+            "propertyLocation": "Campeche, Cd. Del Carmen",
+            "propertyStartDate": "SEPTIEMBRE 2009",
+            "propertyDescription": "Regional Center where you can do your shopping for the week, enjoy some food or any craving you have. It is in the best location in the city, where you can find a wide variety of stores for all ages and you can enjoy a good experience when coming with family or friends.",
+            "propertyContactName": "Contact",
+            "propertyContactEmail": "comercial@Gminmobiliaria.com",
+            "propertyImageUrl":"https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/oportunidades-properties/sasd.jpg",
+            "propertyArea": "29,785",
+            "propertyFeaturedTenants": [
+                {
+                    "tenantName":"Chedraui",
+                    "tenantImageUrl":"https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/chedraui.png"
+                },
+                {
+                    "tenantName":"Cinemex",
+                    "tenantImageUrl":"https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/cinemex.png"
+                },
+                {
+                    "tenantName":"Dico",
+                    "tenantImageUrl":"https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/dico.png"
+                }
+            ]
+        },
+        {
+            "propertyId":"P107",
+            "propertyTitle": "MALL PLAZA LINCOLN",
+            "propertyLocation": "Monterrey, Nuevo León",
+            "propertyStartDate": "FEBRUARY, 2007",
+            "propertyDescription": "Community Center with great attractions for the whole family, here you can shop, find entertainment, banks and other stores of interest to make your stay excellent. All this in an excellent location.",
+            "propertyContactName": "Contact",
+            "propertyContactEmail": "comercial@Gminmobiliaria.com",
+            "propertyImageUrl":"https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/oportunidades-properties/location-hero-mall-plaza-lincoln-1.jpg",
+            "propertyArea": "28,167 ",
+            "propertyFeaturedTenants": [
+                {
+                    "tenantName":"HEB",
+                    "tenantImageUrl":"https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/heb.png"
+                },
+                {
+                    "tenantName":"Cinemex",
+                    "tenantImageUrl":"https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/cinemex.png"
+                },
+                {
+                    "tenantName":"Suburbia",
+                    "tenantImageUrl":"https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/suburbia.png"
+                }
+            ]
+        },
+        {
+            "propertyId":"P119",
+            "propertyTitle": "PLAZA BELLA MEXIQUENSE",
+            "propertyLocation": "Estate of México, Tecamac",
+            "propertyStartDate": "SEPTEMBER, 2006",
+            "propertyDescription": "Community center with a design that will make you feel at home, where you can find the essentials for the home and also do your daily shopping with your family.",
+            "propertyContactName": "Contact",
+            "propertyContactEmail": "comercial@Gminmobiliaria.com",
+            "propertyImageUrl":"https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/oportunidades-properties/location-hero-plaza-bella-mexiquense-1.jpg",
+            "propertyArea": "18,774",
+            "propertyFeaturedTenants": [
+                {
+                    "tenantName":"HEB",
+                    "tenantImageUrl":"https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/bodega-aurrera.png"
+                },
+                {
+                    "tenantName":"Cinemex",
+                    "tenantImageUrl":"https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/coppel.png"
+                },
+                {
+                    "tenantName":"Suburbia",
+                    "tenantImageUrl":"https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/elektra.png"
+                }
+            ]
+        },
+        {
+            "propertyId":"P105",
+            "propertyTitle": "PLAZA BELLA HUINALÁ",
+            "propertyLocation": "Nuevo León, Apodaca",
+            "propertyStartDate": "AUGUST, 2009",
+            "propertyDescription": "Community Center located in the fastest growing area of ​​Apodaca where you will find a wide variety of places to eat with family or friends. Where you will find stores to make your purchases nearby since it is located in an excellent location.",
+            "propertyContactName": "Contact",
+            "propertyContactEmail": "comercial@Gminmobiliaria.com",
+            "propertyImageUrl":"https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/oportunidades-properties/location-hero-plaza-bella-huinala-1.jpg",
+            "propertyArea": "15,577 ",
+            "propertyFeaturedTenants": [
+                {
+                    "tenantName":"Mi tienda",
+                    "tenantImageUrl":"https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/mi-tienda-del-ahorro.png"
+                },
+                {
+                    "tenantName":"Cinemex",
+                    "tenantImageUrl":"https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/coppel.png"
+                },
+                {
+                    "tenantName":"Famsa",
+                    "tenantImageUrl":"https://planigrupo.blob.core.windows.net/planigrupo/assets/images/comer/oportunidades/logos/famsa.png"
+                }
+            ]
+        }
+    ]
+}

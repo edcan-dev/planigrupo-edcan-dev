@@ -1,7 +1,24 @@
 /* import  * as propertyDetailDialogService  from "../../services/PropertDetailDialogService.js";
 import  { getPropertyDetailById }  from "../../portafolio/xlsx-reader.js"; */
-const response = await fetch('https://edcan-dev.github.io/planigrupo-edcan-dev/data/oportunidades.carousel.properties.json')
 //const response = await fetch('../data/oportunidades.carousel.properties.json')
+
+const language = document.head.querySelector("[property~=language][content]").content;
+
+const urlPrefix = window.location.href.includes('github')
+? 'https://edcan-dev.github.io/planigrupo-edcan-dev/'
+: '../../../'
+
+const url  = language == 'english'
+? urlPrefix + 'data/EN_oportunidades.carousel.properties.json'
+: urlPrefix + 'data/oportunidades.carousel.properties.json';
+
+console.log(url);
+
+const response = await fetch(url)
+
+console.log(language);
+
+
 const jsonDatasource = await response.json();
 
 const PropertyCard = (
@@ -57,9 +74,23 @@ const PropertyCard = (
         </div>  
         <div class="oportunidades__carousel__item__text__title__item oportunidades__carousel__item__text__title__item--desc">
           <p class="name">${ propertyLocation }</p>    
-          <p class="contact">${ 'Contacto para comercialización' }</p>                
-          <p class="date">${ 'Inauguración' }</p>   
-          <p class="area">${ 'Espacio comercial' }</p>    
+          <p class="contact">${ 
+            language == 'english'
+            ? 'Leasing Contact Mail'
+            : 'Contacto para comercialización'
+          
+          }</p>                
+          <p class="date">${ 
+            language == 'english'
+            ? 'Start of Operation'
+            : 'Inauguración'
+          }</p>   
+          <p class="area">${
+          
+            language == 'english'
+            ? 'Commercial Space'
+            : 'Espacio comercial'
+          }</p>    
         </div>
       </div>
 
