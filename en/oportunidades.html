@@ -3,12 +3,12 @@
 
 <head>
 
-  <meta property="language" content="spanish" />
+  <meta property="language" content="english" />
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./css/styles.css" />
-  <title>Home - Planigrupo</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <title>Opportunities - GMInmobiliaria</title>
 
   <!-- Syncfusion Carousel -->
   <link href="https://cdn.syncfusion.com/ej2/23.1.36/ej2-base/styles/material.css" rel="stylesheet" type="text/css" />
@@ -25,21 +25,21 @@
   <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type="text/javascript"></script>
   <link rel="shortcut icon" href="https://planigrupo.blob.core.windows.net/planigrupo/assets/favicon.png"
     type="image/x-icon" />
-  <script defer src="./js/hero-start-anim.js"></script>
-  <script defer src="./js/index/data-bursatil-api-client.js"></script>
+  <script defer src="../js/hero-start-anim.js"></script>
+  <script defer src="../js/index/data-bursatil-api-client.js"></script>
 
   <!-- Synfusion Carousel-->
-  <script defer type="module" src="./js/comer/oportunidades/syncfusion-carousel.js"></script>
+  <script defer type="module" src="../js/comer/oportunidades/syncfusion-carousel.js"></script>
   <!-- Synfusion Carousel-->
-  <link href="./css/index/carousel.style.css" rel="stylesheet" />
+  <link href="../css/index/carousel.style.css" rel="stylesheet" />
 
-  <script defer src="./js/sidebar.js"></script>
-  <script defer type="module" src="./js/index/plani-info-slider.js"></script>
-  <script defer src="./js/index/home-tabs.js"></script>
+  <script defer src="../js/sidebar.js"></script>
+  <script defer type="module" src="../js/index/plani-info-slider.js"></script>
+  <script defer src="../js/index/home-tabs.js"></script>
 
-  <link rel="stylesheet" href="./css/contacto/contacto.styles.css">
-  <link href="./css/comercializacion/oportunidades.styles.css" rel="stylesheet" />
-  <link href="./css/components/synfusion-carousel.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/contacto/contacto.styles.css">
+  <link href="../css/comercializacion/oportunidades.styles.css" rel="stylesheet" />
+  <link href="../css/components/synfusion-carousel.css" rel="stylesheet" />
   <script defer src="https://kit.fontawesome.com/c4df7659ff.js" crossorigin="anonymous"></script>
 
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
@@ -52,10 +52,19 @@
  -->
   <script src="https://cdn.syncfusion.com/ej2/23.2.4/dist/ej2.min.js" type="text/javascript"></script>
   <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type ="text/javascript"></script>
-  <script defer type="module" src="./js/comer/oportunidades/syncfusion-carousel.js"></script>
+  <script defer type="module" src="../js/comer/oportunidades/syncfusion-carousel.js"></script>
 </head>
 
 <body>
+  <div class="languaje--selector">
+    <li>
+      <a href="../oportunidades.html">Esp</a>
+      /
+      <b>
+        <a href="">Eng</a>
+      </b>
+    </li>
+  </div>
   <div id="sidebar-container">
     <aside id="default-sidebar">
 
@@ -67,25 +76,25 @@
             <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/svgs/magnifying.svg">
           </li>
           <li class="header__nav__item" id="nav__item--nosotros">
-            <a class="">Nosotros</a>
+            <a class="">About Us</a>
           </li>
           <li class="header__nav__item">
-            <a href="./portafolio.html">Portafolio</a>
+            <a href="./portafolio.html">Our Portfolio</a>
           </li>
           <li class="header__nav__item" id="nav__item--comer">
-            <a>Comercialización</a>
+            <a>Leasing</a>
           </li>
-          <li class="header__nav__item"><a href="./inversionistas.html">Inversionistas</a></li>
+          <li class="header__nav__item"><a href="./inversionistas.html">Investors</a></li>
 
           <li class="header__nav__item" id="nav__item--asg">
-            <a class="">ASG</a>
+            <a class="">ESG</a>
           </li>
 
           <li class="header__nav__item"><a
-              href="https://portaldeclientes.planigrupo.com/auth/realms/master/protocol/openid-connect/auth?client_id=estados-de-cuenta-id&redirect_uri=https%3A%2F%2Fportaldeclientes.planigrupo.com%2Fhome&state=a536db1e-fa15-48e7-91b4-f885b5c6791b&response_mode=fragment&response_type=code&scope=openid&nonce=7ad26bbc-8cfc-4064-a337-1cb175cc69f7">Clientes</a>
+              href="https://portaldeclientes.planigrupo.com/auth/realms/master/protocol/openid-connect/auth?client_id=estados-de-cuenta-id&redirect_uri=https%3A%2F%2Fportaldeclientes.planigrupo.com%2Fhome&state=a536db1e-fa15-48e7-91b4-f885b5c6791b&response_mode=fragment&response_type=code&scope=openid&nonce=7ad26bbc-8cfc-4064-a337-1cb175cc69f7">Clients</a>
           </li>
           <li class="header__nav__item">
-            <a href="./contacto.html">Contacto</a>
+            <a href="./contacto.html">Contact</a>
           </li>
 
         </ul>
@@ -93,36 +102,36 @@
         <ul class="navbar__responsive__list--second">
           <div>
             <li class="header__nav__item"><a href="./nosotros.html">Nosotros</a></li>
-            <li class="header__nav__item"><a href="./lo-que-hacemos.html">Lo que hacemos</a></li>
-            <li class="header__nav__item"><a href="./equipo-ejecutivo.html">Equipo Ejecutivo</a></li>
+            <li class="header__nav__item"><a href="./lo-que-hacemos.html">What we do</a></li>
+            <li class="header__nav__item"><a href="./equipo-ejecutivo.html">Executive Team</a></li>
             <li class="header__nav__item"><a href="./historia.html">Historia</a></li>
         </ul>
         <ul class="navbar__responsive__list--second--comer">
           <div>
-            <li class="header__nav__item"><a href="./comercializacion.html">Comercialización</a></li>
-            <li class="header__nav__item"><a href="./oportunidades.html">Oportunidades</a></li>
+            <li class="header__nav__item"><a href="./comercializacion.html">Leasing</a></li>
+            <li class="header__nav__item"><a href="./oportunidades.html">Opportunities</a></li>
         </ul>
-        
+
         <ul class="navbar__responsive__list--second--asg">
           <div>
             <li class="header__nav__item">
-              <a href="./asg.html">ASG</a>
+              <a href="./asg.html">ESG</a>
             </li>
             <li class="header__nav__item">
-              <a href="./asg-sustentabilidad.html">Sustentabilidad</a>
+              <a href="./asg-sustentabilidad.html">Sustentability</a>
             </li>
             <li class="header__nav__item">
-              <a href="./asg-ambiental.html">Ambiental</a>
+              <a href="./asg-ambiental.html">Enviromental</a>
             </li>
             <li class="header__nav__item">
-              <a href="./asg-social.html">Social</a>
+              <a href="./asg-social.html">Social Capital</a>
             </li>
             <li class="header__nav__item">
-              <a href="./asg-gobernanza.html">Gobernanza</a>
+              <a href="./asg-gobernanza.html">Governance</a>
             </li>
-            <!--<li class="header__nav__item">
-  <!--            <a href="./asg-contacto.html">Contacto</a>
--->            </li>-->
+            <!-- <li class="header__nav__item">
+              <a href="./asg-contacto.html">Contact</a>
+            </li> -->
         </ul>
 
       </nav>
@@ -132,57 +141,57 @@
     <div class="header__bars">
       <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/bars-solid.svg" height="40px" />
     </div>
-    <a href="./index.html">
+    <a href="./index-en.html">
       <img class="svg__logo" src="https://planigrupo.blob.core.windows.net/planigrupo/assets/logo.svg" alt="" />
     </a>
     <nav>
       <ul class="header__nav">
         <li class="header__nav__item dropdown">
-          <a href="./nosotros.html" class="dropbtn">Nosotros</a>
+          <a href="./nosotros.html" class="dropbtn">About Us</a>
           <div class="dropdown-content">
-            <a href="./nosotros.html">Nosotros</a>
-            <a href="./lo-que-hacemos.html">Lo que hacemos</a>
-            <a href="./equipo-ejecutivo.html">Equipo Ejecutivo</a>
-            <a href="./historia.html">Historia</a>
+            <a href="./nosotros.html">About Us</a>
+            <a href="./lo-que-hacemos.html">What we do best</a>
+            <a href="./equipo-ejecutivo.html">Executive Team</a>
+            <a href="./historia.html">History</a>
           </div>
         </li>
         <li class="header__nav__item">
-          <a href="./portafolio.html">Portafolio</a>
+          <a href="./portafolio.html">Our Portfolio</a>
         </li>
         <li class="header__nav__item dropdown">
-          <a href="./comercializacion.html" class="dropbtn">Comercialización</a>
+          <a href="./comercializacion.html" class="dropbtn">Leasing</a>
           <div class="dropdown-content">
-            <a href="./comercializacion.html">Comercialización</a>
-            <a href="./oportunidades.html">Oportunidades</a>
+            <a href="./comercializacion.html">Leasing</a>
+            <a href="./oportunidades.html">Opportunities</a>
           </div>
         </li>
-        <li class="header__nav__item"><a href="./inversionistas.html">Inversionistas</a></li>
+        <li class="header__nav__item"><a href="./inversionistas.html">Investors</a></li>
         <!-- <li class="header__nav__item"><a href="./asg.html">Asg</a></li> -->
-        
+
         <li class="header__nav__item dropdown">
-          <a class="dropbtn" href="./asg.html">ASG</a>
+          <a class="dropbtn" href="./asg.html">ESG</a>
           <div class="dropdown-content">
-            <a href="./asg.html">ASG</a>
-            <a href="./asg-sustentabilidad.html">Sustentabilidad</a>
-            <a href="./asg-ambiental.html">Ambiental</a>
+            <a href="./asg.html">ESG</a>
+            <a href="./asg-sustentabilidad.html">Sustentability</a>
+            <a href="./asg-ambiental.html">Enviromental</a>
             <a href="./asg-social.html">Social</a>
-            <a href="./asg-gobernanza.html">Gobernanza</a>
-<!--            <a href="./asg-contacto.html">Contacto</a>
--->          </div>
+            <a href="./asg-gobernanza.html">Governance</a>
+          </div>
         </li>
         <li class="header__nav__item"><a
-            href="https://portaldeclientes.planigrupo.com/auth/realms/master/protocol/openid-connect/auth?client_id=estados-de-cuenta-id&redirect_uri=https%3A%2F%2Fportaldeclientes.planigrupo.com%2Fhome&state=a536db1e-fa15-48e7-91b4-f885b5c6791b&response_mode=fragment&response_type=code&scope=openid&nonce=7ad26bbc-8cfc-4064-a337-1cb175cc69f7">Clientes</a>
+            href="https://portaldeclientes.planigrupo.com/auth/realms/master/protocol/openid-connect/auth?client_id=estados-de-cuenta-id&redirect_uri=https%3A%2F%2Fportaldeclientes.planigrupo.com%2Fhome&state=a536db1e-fa15-48e7-91b4-f885b5c6791b&response_mode=fragment&response_type=code&scope=openid&nonce=7ad26bbc-8cfc-4064-a337-1cb175cc69f7">Clients</a>
         </li>
         <li class="header__nav__item">
-          <a href="./contacto.html">Contacto</a>
+          <a href="./contacto.html">Contact</a>
         </li>
         <li class="header__nav__item header__nav__item--search">
-          <input type="text" placeholder="Buscar..." />
+          <input type="text" placeholder="Search..." />
           <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/svgs/magnifying.svg">
         </li>
       </ul>
     </nav>
   </header>
+
   <main class="main">
     <section class="main__hero">
       <div class="main__hero__text">
@@ -193,18 +202,18 @@
           CONTAMOS CON MÁS DE 48 AÑOS
         </p> -->
         <p class="main__hero__text__p-bar main__hero__text__p-blue">
-          Los espacios disponibles que ofrece GMInmobiliaria 
+          AVAILABLE SPACES OFFERED BY GMINMOBILIARIA
         </p>
         <p class="main__hero__text__p-bar main__hero__text__p-gray">
-          son la mejor opción para comercializar
+          ARE THE BEST OPTION TO MARKET
         </p>
       </div>
 
       <div class="main__hero__downbar" style=" position: relative; bottom: 0px !important;">
 
         <div>
-          <small>CONOCE</small>
-          <span>OPORTUNIDADES DE COMERCIALIZACIÓN</span>
+          <small>MEET</small>
+          <span>LEASING OPPORTUNITIES</span>
         </div>
       </div>
 
@@ -311,11 +320,9 @@
     <hr>
 
     <section class="main__oportunities__text">
-      <span>Conoce a Nuestros Inquilinos</span>
+      <span>Meet Our Tenants</span>
       <p>
-        Nuestros centros comerciales cuentan con más de 1,200 clientes de renombre, tanto nacionales como
-        internacionales, entre los que destacan Walmart, HEB, The Home Depot, Cinemex y Cinépolis. Algunos de los cuales
-        llevan comercializando con Planigrupo por más de 40 años.
+        Our shopping centers have over 1,200 renowned tenants, both national and international, including Walmart, HEB, The Home Depot, Cinemex, and Cinepolis. Some of which have been leasing with Planigrupo for over 40 years.
       </p>
 
     </section>
@@ -567,148 +574,147 @@
 
 
       <div class="contacto__form__card">
+
         <div class="contacto__form__card__text">
-          <span>Pregúntenos sobre oportunidades de arrendamiento
-          </span>
-
-          <div class="contacto__form__card__address__phone">
-
-            <p>
-              <b>Dirección</b>
-              <br>
-              
-            Av. Eugenio Garza Sada #3431
-            Urban Village Garza Sada, P1, local SA012,
-            Col. Arroyo Seco CP. 64740
-            Monterrey, Nuevo León.
-            </br>
-            O bien, escribe sobre el tema de tu interés aquí:
-          </p>
-
-          <p>
-            <b>
-              Contacto:</b>
-            <br>
-            (+52 81) 8335-1631
-            <br>
-            O bien, escribe sobre el tema de tu interés aquí:
-          </p>
-        </div>
+          <!--        
+          <span style="font-size: 30px !important;">${propertyDetail.email}
+                  </span>
+                  -->
+                  <span>Ask Us About Leasing Opportunities</span>
+        
+                  <p class="first">
+                    <b>Address:</b>
+                    <br>
+  
+                    Av. Eugenio Garza Sada #3431
+  Urban Village Garza Sada, P1, local SA012,
+  Col. Arroyo Seco CP. 64740
+  Monterrey, Nuevo León.
+                    </br></p>
           
-          <div class="cfcSocial">
-            <div class="socialIconTwitter">
-              <a href="https://twitter.com/planigrupo"></a>
-            </div>
-            <div class="socialIconFacebook">
-              <a href=""></a>
-            </div>
-            <div class="socialIconLinkdin">
-              <a href="https://www.linkedin.com/company/planigrupo"></a>
-            </div>
-          </div>
-        </div>
-
-        <form action="">
-
-          <div class="contacto__form__card__form">
-            <div class="contacto__form__card__form__container contacto__form__card__form__container--nombre">
-              <label for="nombre">*nombre</label>
-              <input type="text" name="nombre" id="nombre">
-            </div>
-
-            <div class="contacto__form__card__form__container contacto__form__card__form__container--compania">
-              <label for="compania">*compañía</label>
-              <input type="text" name="compania" id="compania">
-            </div>
-          </div>
-
-          <div class="contacto__form__card__form">
-            <div class="contacto__form__card__form__container contacto__form__card__form__container--apellido">
-              <label for="apellido">*apellido</label>
-              <input type="text" name="apellido" id="apellido">
-            </div>
-
-            <div class="contacto__form__card__form__container contacto__form__card__form__container--email">
-              <label for="telefono">*telefono</label>
-              <input type="text" name="telefono" id="telefono">
-            </div>
-          </div>
-
-          <div class="contacto__form__card__form contacto__form__card__form--portfolio">
-
-            <div class="contacto__form__card__form--portfolio--email">
-              <label for="email">*email</label>
-              <input type="email" name="telefono" id="email">
-            </div>
-
-            <div class="contacto__form__card__form--portfolio--personalidad">
-              <label for="personalidad-juridica">*personalidad juridica</label>
-
-              <select name="persona" id="persona">
-                <option value="Persona Fisica">Persona Fisica</option>
-                <option value="Persona Fisica">Persona Moral</option>
-              </select>
-            </div>
-
-            <div class="contacto__form__card__form--portfolio--comentarios">
-              <label for="comentarios">*comentarios</label>
-              <input type="comentarios" name="telcomentarios" id="comentarios">
-            </div>
-
-          </div>
-
-          <div class="contacto__form__card__form contacto__form__card__form--portfolio--propiedad">
-
-            <div class="contacto__form__card__form--portfolio--personalidad">
-              <label for="personalidad-juridica">*propiedad</label>
-
-              <select name="persona" id="persona">
-                <option disabled="" selected="" value="">Propiedad</option>
-                <option value="P119"> Gran Plaza</option>
-                <option value="P130">Centro Comercial Lopez Mateos</option>
-                <option value="P131">Ciudadela UV</option>
-                <option value="P101">El Paseo Santa Catarina</option>
-                <option value="P109">La Nogalera</option>
-                <option value="P134">Lago Real Centro Comercial</option>
-                <option value="P133">Macroplaza Del Valle</option>
-                <option value="2102">Macroplaza Estadio</option>
-                <option value="P121">Macroplaza Insurgentes</option>
-                <option value="P126">Macroplaza Oaxaca</option>
-                <option value="P129">Macroplaza San Luis</option>
-                <option value="P107">Mall Plaza Lincoln</option>
-                <option value="P118">Palmira Plaza Comercial</option>
-                <option value="P122">Paseo Alcalde</option>
-                <option value="P123">Paseo Hipodromo</option>
-                <option value="P103">Paseo Puebla</option>
-                <option value="P135">Paseo Reforma</option>
-                <option value="P138">Paseo San Juan</option>
-                <option value="P110">Paseo Solidaridad</option>
-                <option value="P106">Plaza Bella Anáhuac</option>
-                <option value="P102">Plaza Bella Frontera</option>
-                <option value="P105">Plaza Bella Huinala</option>
-                <option value="P115">Plaza Bella Mexiquense</option>
-                <option value="P111">Plaza Bella Ramos Arizpe</option>
-                <option value="P113">Plaza Monumental</option>
-                <option value="P112">Plaza Real Reynosa</option>
-                <option value="P108">Plaza Real Saltillo</option>
-                <option value="P117">Plaza Universidad</option>
-                <option value="P132">Puerta de Hierro</option>
-                <option value="P140">Punto Oriente</option>
-                <option value="P139">Punto San Isidro</option>
-                <option value="P136">Reynosa II</option>
-                <option value="P114">Super Plaza las Haciendas</option>
-                <option value="P125">Urban Village Garza Sada</option>
-                <option value="P127">Walmart Ensenada</option>
-                <option value="P128">Walmart San Jose del Cabo</option>
-              </select>
-            </div>
-
-            <div class="contacto__form__card__form contacto__form__card__form--submit">
-              <input type="submit" value="Enviar">
-            </div>
-          </div>
-
-        </form>
+                    <p>
+                      <b>
+                      Contact:</b>
+                      <br>      
+                      (+52 81) 8335-1631
+                      <br>
+                    </p>
+        
+                    <div class="cfcSocial">
+                      
+                      <a href="https://twitter.com/planigrupo" target="_blank">
+                        <i class="fa-brands fa-x-twitter fa-lg" style="color: #0096a9;"></i>
+                      </a>
+  
+                      <a href="https://www.facebook.com/gmexico.oficial" target="_blank">
+                        <i class="fa-brands fa-facebook fa-lg" style="color: #0096a9;"></i>
+                      </a>
+  
+                      <a
+                        href="https://www.linkedin.com/company/grupo-mexico/"
+                        target="_blank">
+                        <i class="fa-brands fa-linkedin fa-xl" style="color: #0096a9;"></i>
+                      </a>
+  
+                      <!-- <div class="socialIconTwitter">
+                        <a href="https://twitter.com/planigrupo"></a>
+                      </div>
+                      <div class="socialIconFacebook">
+                        <a href=""></a>
+                      </div>
+                      <div class="socialIconLinkdin">
+                        <a href="https://www.linkedin.com/company/planigrupo"></a>
+                      </div>
+                     -->
+                    </div>
+                  </div>
+          
+                  <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" class="portfolioContactForm">
+                    <input type="hidden" name="oid" value="00Di0000000cSTi">
+  
+                    <input type="hidden" name="retURL" value="https://edcan-dev.github.io/planigrupo-edcan-dev/portafolio.html">
+                    
+                    <div class="contacto__form__card__form">
+                      <div class="contacto__form__card__form__container contacto__form__card__form__container--nombre">
+                        <label for="nombre">*name</label>
+                        <!-- <input type="text" name="nombre" id="nombre">
+                         -->
+                        <input id="first_name" type="text" tabindex="0" name="first_name" required>
+                      </div>
+        
+                      <div class="contacto__form__card__form__container contacto__form__card__form__container--compania">
+                        <label for="compania">*company</label>
+                        <input id="company" type="text" tabindex="1" name="company" required>
+                      </div>
+                    </div>
+                    
+                    <div class="contacto__form__card__form">
+                      <div class="contacto__form__card__form__container contacto__form__card__form__container--apellido">
+                        <label for="apellido">*lastname</label>
+                        <input id="last_name" type="text" tabindex="0" name="last_name" required>
+                      </div>
+        
+                      <div class="contacto__form__card__form__container contacto__form__card__form__container--email">
+                        <label for="telefono">*phone number</label>
+                        <input id="phone" type="tel" 
+                        
+                  pattern="^(\d{10}|\(\d{3}\)\s?\d{3}-\d{4}|(\+\d{2}\s?)?(\d{2}\s?)?\d{4}\s?\d{4})$"                        
+                        
+                        tabindex="3" name="phone" title="Debe tener 10 dígitos y parentesis." placeholder="1234512345" required>
+                      </div>
+                    </div>
+        
+                    <div class="contacto__form__card__form contacto__form__card__form--portfolio">
+                      
+                      <div class="contacto__form__card__form--portfolio--email">
+                        <label for="email">*email</label>
+                        <input id="email" type="email" tabindex="2" name="email" required>
+                      </div>
+  <!-- 
+                      <div 
+                      id="responsive_comments"
+                      class="contacto__form__card__form--portfolio--email">
+                        <label for="email">*comentarios</label>
+                        <input type="email" name="telefono" id="email">
+                      </div> -->
+        
+                      <div class="contacto__form__card__form--portfolio--personalidad">
+                        <label for="personalidad-juridica">*legal entity</label>
+                        <select id="00N5A00000HQFp4" name="00N5A00000HQFp4" tabindex="4" required>
+                          <option disabled selected value="">Legal Entity</option>
+                          <option value="Persona Física">Natural Entity</option>
+                          <option value="Persona Moral">Legal entity</option>
+                        </select>
+                      </div>
+        
+                      <div class="contacto__form__card__form--portfolio--comentarios">
+                        <label for="comentarios">*comments</label>
+                        <textarea id="00Ni000000Dwzjf" tabindex="6" name="00Ni000000Dwzjf" cols="21" placeholder=""></textarea>
+                      </div>
+        
+                    </div>
+        
+                    <div class="contacto__form__card__form contacto__form__card__form--portfolio--propiedad">
+                      
+                      <div class="contacto__form__card__form--portfolio--personalidad">
+                        <label for="personalidad-juridica">*property</label>
+  
+                        <select id="00Ni000000Ekl2M" name="00Ni000000Ekl2M" tabindex="5" required="">
+                          <option disabled selected value>Select a property</option>
+                          <option value="P119">Cancun Gran Plaza</option><option value="P130">Centro Comercial Lopez Mateos</option><option value="P131">Ciudadela UV</option><option value="P101">El Paseo Santa Catarina</option><option value="P109">La Nogalera</option><option value="P134">Lago Real Centro Comercial</option><option value="P133">Macroplaza Del Valle</option><option value="2102">Macroplaza Estadio</option><option value="P121">Macroplaza Insurgentes</option><option value="P126">Macroplaza Oaxaca</option><option value="P129">Macroplaza San Luis</option><option value="P107">Mall Plaza Lincoln</option><option value="P118">Palmira Plaza Comercial</option><option value="P122">Paseo Alcalde</option><option value="P123">Paseo Hipodromo</option><option value="P103">Paseo Puebla</option><option value="P135">Paseo Reforma</option><option value="P138">Paseo San Juan</option><option value="P110">Paseo Solidaridad</option><option value="P106">Plaza Bella Anáhuac</option><option value="P102">Plaza Bella Frontera</option><option value="P105">Plaza Bella Huinala</option><option value="P115">Plaza Bella Mexiquense</option><option value="P111">Plaza Bella Ramos Arizpe</option><option value="P113">Plaza Monumental</option><option value="P112">Plaza Real Reynosa</option><option value="P108">Plaza Real Saltillo</option><option value="P117">Plaza Universidad</option><option value="P132">Puerta de Hierro</option><option value="P140">Punto Oriente</option><option value="P139">Punto San Isidro</option><option value="P136">Reynosa II</option><option value="P114">Super Plaza las Haciendas</option><option value="P125">Urban Village Garza Sada</option><option value="P127">Walmart Ensenada</option><option value="P128">Walmart San Jose del Cabo</option>						</select>
+                          
+                      </div>
+        
+                      <div class="contacto__form__card__form contacto__form__card__form--submit">
+                        <input type="hidden"  id="external" name="external" value="1" />
+                        <label for="">
+                          <b style="font-size: 30px; line-height: 10px; ">* </b>Indicates Required Field
+                        </label>
+                        <input type="submit" name="submit" value="Send" id="submitButton">
+                      </div>
+                    </div>
+        
+                </form>
       </div>
 
 
@@ -721,12 +727,11 @@
   </main>
 
   <footer class="footer">
-
     <div class="social__container">
 
       <span style="margin-bottom: 10px;">
-        SÍGUENOS EN<br />
-        NUESTRAS REDES
+        FOLLOW US<br />
+        ON SOCIAL MEDIA
       </span>
 
       <div class="social__container__icons">
@@ -760,14 +765,14 @@
     </div>
 
     <div>
-      <a href=".">Nosotros</a>
-      <a href=".">Comercialización</a>
+      <a href=".">aBOUT US</a>
+      <a href=".">LEASING</a>
       <a href="./blog/blog.html">Blog</a>
-      <a href=".">Contacto</a>
-      <a href=".">Inversionistas</a>
-      <a href=".">Asg</a>
-      <a href=".">Portafolio</a>
-      <a href=".">Ofertas de Empleo</a>
+      <a href=".">CONTACT</a>
+      <a href=".">investors</a>
+      <a href=".">ESG</a>
+      <a href=".">Portfolio</a>
+      <a href=".">Careers</a>
     </div>
     <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/bolsamexicana-grey.png"
       class="footer__img" />

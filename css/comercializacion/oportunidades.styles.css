@@ -372,3 +372,41 @@
 .main__hero__text__p-blue {
     font-size: 38px !important; 
 }
+
+
+.cfcSocial {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 20px;
+    margin-top: 6px;
+    justify-content: flex-end;
+    cursor: pointer;
+    padding-right: 50px;
+  
+    & a {
+      margin-left: 10px;
+  
+      & i {
+        height: 20px;
+      }
+    }
+  }
+
+.contacto__form__card__form--portfolio--email {
+    padding-right: 40px;
+}
+.contacto__form__card__form--portfolio--personalidad {
+    padding-right: 40px;
+    margin-top: 20px;
+}
+.contacto__form__card__form--portfolio--comentarios {
+    padding-right: 40px;
+    margin-top: 20px;
+}
+.contacto__form__card__form.contacto__form__card__form--portfolio--propiedad {
+    flex-direction: column;
+}
+textarea {
+    resize: none;
+}
