@@ -3,6 +3,9 @@ const response = await fetch('https://edcan-dev.github.io/planigrupo-edcan-dev/d
 //const response = await fetch('./../../data/portfolio.properties.json')
 const jsonDatasource = await response.json();
 
+const language = document.head.querySelector("[property~=language][content]").content;
+console.log(language);
+
 class PropertiesGrid {
     #properties;
     constructor(properties) {
@@ -101,7 +104,10 @@ class PropertiesGrid {
 
         const headerLi = document.createElement('li')
         const pHeader = document.createElement('p');
-        pHeader.innerHTML = 'Centros Comerciales';
+        pHeader.innerHTML = language == 'english'
+        ? ' Malls'
+        : 'Centros Comerciales'
+        
         pHeader.classList.add('tenant__name')
         headerLi.appendChild(pHeader);
         tenantsContainer.appendChild(headerLi);
@@ -171,7 +177,9 @@ class PropertiesGrid {
 
         const footerLi = document.createElement('li');
         footerLi.classList.add('tenant__container__footer')
-        footerLi.innerHTML ='Más Información';
+        footerLi.innerHTML = language == 'english'
+        ? 'More Info'
+        : 'Más Información';
         const img = document.createElement('img')
         img.src = 'https://planigrupo.blob.core.windows.net/planigrupo/assets/svgs/carousel-icon.svg'
         footerLi.appendChild(img)

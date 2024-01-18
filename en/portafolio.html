@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta property="language" content="english" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/nosotros/styles.css" />
+    <link rel="stylesheet" href="../css/portafolio/portafolio.styles.css" />
+    <link
+      rel="shortcut icon"
+      href="https://planigrupo.blob.core.windows.net/planigrupo/assets/favicon.png"
+      type="image/x-icon"
+    />
+    <title>Portfolio</title>
+    <script defer src="../js/hero-start-anim.js"></script>
+
+    <script defer src="../js/portafolio/screen.js" type="module"></script>
+    <!-- XSLS READER -->
+    <script defer src="../js/portafolio/read-excel-file.min.js"></script>
+    <script defer type="module" src="../js/portafolio/xlsx-reader.js"></script>
+    
+    <script defer type="module" src="../js/portafolio/properties-grid.js"></script>
+    <script src="../js/portafolio/syncfusion-map.js" type="module"></script>
+
+    <script  src="https://cdn.syncfusion.com/ej2/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
+    <script  src="https://cdn.syncfusion.com/ej2/ej2-svg-base/dist/global/ej2-svg-base.min.js"
+    type="text/javascript"></script>
+    <script  src="https://cdn.syncfusion.com/ej2/ej2-data/dist/global/ej2-data.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/ej2-maps/dist/global/ej2-maps.min.js"></script>
+
+    <script defer src="../js/sidebar.js"></script>
+
+    <link href="https://cdn.syncfusion.com/ej2/23.1.36/ej2-base/styles/material.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/23.1.36/ej2-buttons/styles/material.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/23.1.36/ej2-popups/styles/material.css" rel="stylesheet">
+
+    <script src="https://cdn.syncfusion.com/ej2/23.1.36/dist/ej2.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type ="text/javascript"></script>
+
+    <script type="module" defer src="../js/portafolio/properties-detail-dialog.js"></script>
+    <script type="module" defer src="../js/portafolio/form-sender.js"></script>
+
+    <script defer src="https://kit.fontawesome.com/c4df7659ff.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+
+  <body>
+    <div class="languaje--selector">
+      <li>
+        <a href="../portafolio.html">Esp</a>
+        /
+        <b>
+          <a href="">Eng</a>
+        </b>
+      </li>
+    </div>
+    <div id="sidebar-container">
+      <aside id="default-sidebar">
+  
+        <nav class="navbar__responsive">
+          <ul class="navbar__responsive__list">
+  
+            <li>
+              <input class="navbar__responsive__search" type="search" placeholder="Buscar...">
+              <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/svgs/magnifying.svg">
+            </li>
+            <li class="header__nav__item" id="nav__item--nosotros">
+              <a class="">About Us</a>
+            </li>
+            <li class="header__nav__item">
+              <a href="./portafolio.html">Our Portfolio</a>
+            </li>
+            <li class="header__nav__item" id="nav__item--comer">
+              <a>Leasing</a>
+            </li>
+            <li class="header__nav__item"><a href="./inversionistas.html">Investors</a></li>
+  
+            <li class="header__nav__item" id="nav__item--asg">
+              <a class="">ESG</a>
+            </li>
+  
+            <li class="header__nav__item"><a
+                href="https://portaldeclientes.planigrupo.com/auth/realms/master/protocol/openid-connect/auth?client_id=estados-de-cuenta-id&redirect_uri=https%3A%2F%2Fportaldeclientes.planigrupo.com%2Fhome&state=a536db1e-fa15-48e7-91b4-f885b5c6791b&response_mode=fragment&response_type=code&scope=openid&nonce=7ad26bbc-8cfc-4064-a337-1cb175cc69f7">Clients</a>
+            </li>
+            <li class="header__nav__item">
+              <a href="./contacto.html">Contact</a>
+            </li>
+  
+          </ul>
+  
+          <ul class="navbar__responsive__list--second">
+            <div>
+              <li class="header__nav__item"><a href="./nosotros.html">Nosotros</a></li>
+              <li class="header__nav__item"><a href="./lo-que-hacemos.html">What we do</a></li>
+              <li class="header__nav__item"><a href="./equipo-ejecutivo.html">Executive Team</a></li>
+              <li class="header__nav__item"><a href="./historia.html">Historia</a></li>
+          </ul>
+          <ul class="navbar__responsive__list--second--comer">
+            <div>
+              <li class="header__nav__item"><a href="./comercializacion.html">Leasing</a></li>
+              <li class="header__nav__item"><a href="./oportunidades.html">Opportunities</a></li>
+          </ul>
+  
+          <ul class="navbar__responsive__list--second--asg">
+            <div>
+              <li class="header__nav__item">
+                <a href="./asg.html">ESG</a>
+              </li>
+              <li class="header__nav__item">
+                <a href="./asg-sustentabilidad.html">Sustentability</a>
+              </li>
+              <li class="header__nav__item">
+                <a href="./asg-ambiental.html">Enviromental</a>
+              </li>
+              <li class="header__nav__item">
+                <a href="./asg-social.html">Social Capital</a>
+              </li>
+              <li class="header__nav__item">
+                <a href="./asg-gobernanza.html">Governance</a>
+              </li>
+              <!-- <li class="header__nav__item">
+                <a href="./asg-contacto.html">Contact</a>
+              </li> -->
+          </ul>
+  
+        </nav>
+      </aside>
+    </div>
+    <header class="header">
+      <div class="header__bars">
+        <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/bars-solid.svg" height="40px" />
+      </div>
+      <a href="./index-en.html">
+        <img class="svg__logo" src="https://planigrupo.blob.core.windows.net/planigrupo/assets/logo.svg" alt="" />
+      </a>
+      <nav>
+        <ul class="header__nav">
+          <li class="header__nav__item dropdown">
+            <a href="./nosotros.html" class="dropbtn">About Us</a>
+            <div class="dropdown-content">
+              <a href="./nosotros.html">About Us</a>
+              <a href="./lo-que-hacemos.html">What we do best</a>
+              <a href="./equipo-ejecutivo.html">Executive Team</a>
+              <a href="./historia.html">History</a>
+            </div>
+          </li>
+          <li class="header__nav__item">
+            <a href="./portafolio.html">Our Portfolio</a>
+          </li>
+          <li class="header__nav__item dropdown">
+            <a href="./comercializacion.html" class="dropbtn">Leasing</a>
+            <div class="dropdown-content">
+              <a href="./comercializacion.html">Leasing</a>
+              <a href="./oportunidades.html">Opportunities</a>
+            </div>
+          </li>
+          <li class="header__nav__item"><a href="./inversionistas.html">Investors</a></li>
+          <!-- <li class="header__nav__item"><a href="./asg.html">Asg</a></li> -->
+  
+          <li class="header__nav__item dropdown">
+            <a class="dropbtn" href="./asg.html">ESG</a>
+            <div class="dropdown-content">
+              <a href="./asg.html">ESG</a>
+              <a href="./asg-sustentabilidad.html">Sustentability</a>
+              <a href="./asg-ambiental.html">Enviromental</a>
+              <a href="./asg-social.html">Social</a>
+              <a href="./asg-gobernanza.html">Governance</a>
+            </div>
+          </li>
+          <li class="header__nav__item"><a
+              href="https://portaldeclientes.planigrupo.com/auth/realms/master/protocol/openid-connect/auth?client_id=estados-de-cuenta-id&redirect_uri=https%3A%2F%2Fportaldeclientes.planigrupo.com%2Fhome&state=a536db1e-fa15-48e7-91b4-f885b5c6791b&response_mode=fragment&response_type=code&scope=openid&nonce=7ad26bbc-8cfc-4064-a337-1cb175cc69f7">Clients</a>
+          </li>
+          <li class="header__nav__item">
+            <a href="./contacto.html">Contact</a>
+          </li>
+          <li class="header__nav__item header__nav__item--search">
+            <input type="text" placeholder="Search..." />
+            <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/svgs/magnifying.svg">
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- <section class="main__hero">
+        <video id="background-video" autoplay loop muted></video>
+        <div class="main__hero__text">
+          <p class="main__hero__text__p main__hero__text__p-exp">
+            <b>EXPERIENCIA</b>
+          </p>
+          <p class="main__hero__text__p-bar main__hero__text__p-gray">
+            UTILIZAMOS MATERIALES DE LA MÁS ALTA
+          </p>
+          <p class="main__hero__text__p-bar main__hero__text__p-blue">
+            CALIDAD PARA OFRECER A CLIENTES E INVERSIONISTAS
+          </p>
+          <p class="main__hero__text__p-bar main__hero__text__p-gray">
+            UN PRODUCTO FINAL INCOMPARABLE
+          </p>
+        </div>
+
+      </section> -->
+      <div class="main__hero__downbar main__hero__downbar--red">
+        <div class="main__hero_downbar__text">
+          <span>Meet our</span>
+          <p>MALLS</p>
+          <!-- <p>CENTERS</p> -->
+        </div>
+        <div class="main__hero_downbar__title">
+          <h2>Portafolio</h2>
+        </div>
+      </div>
+
+      <section class="portfolio__title">
+        
+        <div class="properties__counter">
+          <span class="properties__counter__span">
+            PROPERTY PORTFOLIO
+          </span>
+
+          <ul>
+            <li>
+              <p class="properties__counter__props__value">36</p>
+              <span>Properties</span>
+            </li>
+            <li class="splitter">
+              <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/svgs/vertical-white-line.svg" alt="">
+            </li>
+            <li>
+              <p class="properties__counter__states__value">18</p>
+              <span>Estates</span>
+            </li>
+          </ul>
+
+        </div>
+        
+        <div>
+          <!-- <span>Portafolio</span> -->
+          <p>
+            Our shopping centers are strategically located in the country’s northern, central, and southern regions, and have a presence throughout 18 states. Each property’s location has been carefully chosen to maximize exposure to a population with increasing purchasing power.
+          </p>
+        </div>
+
+      </section>
+
+      <section class="map_section">
+        <div id="container">
+
+          
+      <div class="screen">
+        <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/svgs/oval.svg" alt="">
+      </div>
+            <div id="element">
+                <div class="tenants_container">
+                  <ul>
+
+                  </ul>
+                </div>
+            </div>
+          </div>
+      </section>
+
+
+      <section class="featured_properties">
+        <div class="featured_properties__title">
+          <span>Featured Properties</span>
+        </div>
+        <div class="featured_properties__text">
+          <p>
+            We have strategically-located properties on the most important retail areas throughout the country. We offer the Planigrupo quality from Baja California to Quintana Roo.
+          </p>
+        </div>
+
+        <div class="featured_properties__responsive-combo">
+          <span>Filter by</span>
+          
+          <div>
+            <select name="" id="state-selector">
+              <option value="">States</option>
+              <option value="all">- All -</option>
+              <option value="Baja California">Baja California</option>
+              <option value="Baja California Sur">Baja California Sur</option>
+              <option value="Campeche">Campeche</option>
+              <option value="Chihuahua">Chihuahua</option>
+              <option value="Coahuila">Coahuila</option>
+              <option value="Hidalgo">Hidalgo</option>
+              <option value="Jalisco">Jalisco</option>
+              <option value="Mexico">México</option>
+              <option value="Michoacan">Michoacán</option>
+              <option value="Nayarit">Nayarit</option>
+              <option value="Nuevo Leon">Nuevo León</option>
+              <option value="Oaxaca">Oaxaca</option>
+              <option value="Puebla">Puebla</option>
+              <option value="Sonora">Sonora</option>
+              <option value="San Luis Potosi">San Luis Potosí</option>
+              <option value="Tamaulipas">Tamaulipas</option>
+              <option value="Quintana Roo">Quintana Roo</option>
+              <option value="Queretaro">Querétaro</option>
+            </select>  
+          </div>
+          <div>
+            <select name="" id="tenant-selector">
+                <option disabled="" selected="" value="">Tenants</option>
+                Tenants										
+                <option value="all">- All -</option>
+                <option value="5asec">5a Sec</option>
+                <option value="az">A&amp;Z</option>
+                <option value="abuelitas-pizza">Abuelitas Pizza</option>
+                <option value="after">After</option>
+                <option value="agacy-tallas-extras">Agacy Tallas Extras</option>
+                <option value="aguakan">Aguakan</option>
+                <option value="aldo-conti-italia">Aldo Conti Italia</option>
+                <option value="alexan">Alexan</option>
+                <option value="american-collection">American Collection</option>
+                <option value="amway">Amway</option>
+                <option value="andry">Andry</option>
+                <option value="andrea">Andrea</option>
+                <option value="antica-fabrica-de-pan">Antica Fabrica de Pan</option>
+                <option value="anytime-fitness">Anytime Fitness</option>
+                <option value="applebees">Applebees</option><option value="Artesanos">Artesanos</option>
+                <option value="att">AT&amp;T</option>
+                <option value="auto-zone">Auto Zone</option>
+                <option value="b-fashion">B Fashion</option>
+                <option value="b-hermanos">B Hermanos</option>
+                <option value="banamex">Banamex</option>
+                <option value="banco-azteca">Banco Azteca</option>
+                <option value="banjos">Banjos</option>
+                <option value="banorte">Banorte</option>
+                <option value="bbva">BBVA Bancomer</option>
+                <option value="beautiskin">Beautiskin</option>
+                <option value="beauty-foot">Beauty Foot</option>
+                <option value="bellisima">Bellísima</option>
+                <option value="bio-analisis-pasteur">Bio Analisis Pasteur</option>
+                <option value="blitzer">Blitzer</option>
+                <option value="bodega-aurrera">Bodega Aurrera</option>
+                <option value="bodega-caban-spa">Bodega Caban Spa</option>
+                <option value="bolerama-ilusion">Bolerama Ilusion</option>
+                <option value="bostons-restaurant">Bostons Restaurant</option>
+                <option value="boxers">Boxers</option>
+                <option value="bubble-waffle-co">Bubble Waffle Co</option>
+                <option value="buchakas">Buchakas</option>
+                <option value="burger-king">Burger King</option>
+                <option value="ca">C&amp;A</option>
+                <option value="caban-spa">Caban Spa</option>
+                <option value="cafe-riviera">Café Riviera</option>
+                <option value="caliente-casino">Caliente Casino</option>
+
+                <option value="canasta-de-remacri">Canasta de Remacri</option>
+                <option value="capa-de-ozono">Capa de Ozono</option>
+                <option value="carljr">Carl's Jr</option>
+                <option value="carnitas-michoacanas">Carnitas Michoacanas</option>
+                <option value="centro-botanico-el-girasol">Centro Botanico El Girasol</option>
+                <option value="centro-optico-prefess">Centro Optico Prefess</option>
+                <option value="chedraui">Chedraui</option><option value="Chili" s'="">Chili's</option>
+                <option value="churchs-chicken">Church's Chicken</option>
+                <option value="churros-las-vias">Churros las Vías</option>
+                <option value="cinemex">Cinemex</option>
+                <option value="cinemex-platino">Cinemex Platino</option>
+                <option value="cinepolis">Cinépolis</option>
+                <option value="citibanemex">Citibanemex</option>
+                <option value="clinica-de-ojos-cancun">Clínica de Ojos Cancún</option>
+                <option value="co">Co</option>
+                <option value="colcholandya">Colcholandya</option>
+                <option value="colchones-atlas">Colchones Atlas</option>
+                <option value="comex">Comex</option>
+                <option value="compurepair">Compurepair</option>
+                <option value="coppel">Coppel</option>
+                <option value="costanzo-chocolateria">Costanzo Chocolateria</option>
+                <option value="crazy-prices">Crazy Prices</option>
+                <option value="d-uñas-beauty">D-Uñas Nails &amp; Beauty</option>
+                <option value="dgales">DGales</option>
+                <option value="dairy-queen">Dairy Queen</option>
+                <option value="danny-yo">Danny Yo</option>
+                <option value="dante">Dante</option>
+                <option value="daylu">Daylu</option>
+                <option value="dc-laser">DC Laser</option>
+                <option value="del-sol">Del Sol</option>
+                <option value="dental-natura">Dental Natura</option>
+                <option value="dentalia">Dentalia</option>
+                <option value="dentimas">Denti + Mas</option>
+                <option value="derma-los-angeles">Derma Los Angeles</option>
+                <option value="destroyer">Destroyer</option>
+                <option value="detail">Detail</option>
+                <option value="diva-fashion-forever">Diva Fashion Forever</option>
+                <option value="divenza">Divenza</option>
+                <option value="dominos">Dominos</option>
+                <option value="donaire">Donaire</option>
+                <option value="el-agasajo">El Agasajo</option>
+                <option value="el-jaripeo">El Jaripeo</option>
+                <option value="el-porton">El Porton</option>
+                <option value="elektra">Elektra</option>
+                <option value="elite-lockers">Elite Lockers</option>
+                <option value="europiel">Europiel</option>
+                <option value="fajas-colombianas">Fajas Colombianas</option>
+                <option value="famsa">Famsa</option>
+                <option value="fantasias-miguel">Fantasías Miguel</option>
+                <option value="farmville">Farmville</option>
+                <option value="feet-for-fit">Feet for Fit</option>
+                <option value="felipe-fernandez">Felipe Fernandez</option>
+                <option value="filipe-fernandez">Filipe Fernandez</option>
+                <option value="first-cash">First Cash</option>
+                <option value="fitness-24-horas">Fitness 24 Horas</option>
+                <option value="flyers-mexico">Flyers México</option>
+                <option value="fonda-china">Fonda China</option>
+                <option value="galex">GALEX</option>
+                <option value="game-fix">Game Fix</option>
+                <option value="gamers">Gamers</option>
+                <option value="generation-store">Generation Store</option>
+                <option value="gnc">GNC</option>
+                <option value="gobierno-del-estado-de-hidalgo">Gobierno Del Estado de Hidalgo</option>
+                <option value="goc">GOC</option>
+                <option value="gogame">Gogame</option>
+                <option value="gorditas-doña-maria">Gorditas Doña Maria</option>
+                <option value="grupo-autofin-monterrey">Grupo Autofin Monterrey</option>
+                <option value="h-hamburguesas">H Hamburgesas</option>
+                <option value="hang-ten">Hang Ten</option>
+                <option value="harmon-hall">Harmon Hall</option>
+                <option value="heb">HEB</option>
+                <option value="home-depot">Home Depot</option>
+                
+                <option value="hong-kong-restaurante-chino">Hong Kong Restaurante Chino</option>
+                <option value="hsbc">HSBC</option>
+                <option value="icon">Icon</option>
+                <option value="ihop">IHOP</option>
+                <option value="ilusion-bowl">Ilusion Bowl</option>
+                <option value="impuls">Impuls</option>
+                <option value="inbursa">Inbursa</option>
+                <option value="incubo">Incubo</option>
+                <option value="ine">INE</option>
+                <option value="innova-sport">Innova Sport</option>
+                <option value="instituto-fonacot">Instituto Fonacot</option>
+                <option value="inter-mobel">Inter Mobel</option>
+                <option value="interlingua">Interlingua</option>
+                <option value="italian-coffe">Italian Coffee</option>
+                <option value="italika">Italika</option>
+                <option value="izzi">Izzi</option>
+                <option value="jack-bricks-food-hall">Jack Bricks Food Hall</option>
+                <option value="jcon">JCON</option>
+                <option value="jcv-fitness">JCV Fitness</option>
+                <option value="johny-rockets">Johnny Rockets</option>
+                <option value="joyeria-karval">Joyeria Karval</option>
+                <option value="juegajugueteria">Juega + Jugueteria</option>
+                <option value="julio-cepeda">Julio Cepeda</option>
+                <option value="kedaki">Kedaki</option>
+                <option value="kfc">KFC</option>
+                <option value="kids-in-motion">Kids In Motion</option>
+                <option value="kidz-n-kidz">Kidz n Kidz</option>
+                <option value="kraken-barber-club">Kraken Barber Club</option>
+                <option value="krispy-kreme">Krispy Kreme</option>
+                <option value="la-barberia">La Barberia</option>
+                <option value="la-capital-del-empeño">La Capital del Empeño</option>
+                <option value="la-casa-de-los-abuelos">La Casa de los Abuelos</option>
+                <option value="la-creperia">La Creperia</option>
+                <option value="la-cueva-de-chucho">La Cueva de Chucho</option>
+                <option value="la-cupula-mebleria">La Cupula Mebleria</option>
+                <option value="la-michoacana-natural">La Michoacana Natural</option>
+                <option value="la-parrilla-taquito">La Parrilla Taquito</option>
+                <option value="la-silla-tours">La Silla Tours</option>
+                <option value="la-tostada">La Tostada</option>
+                <option value="la-trattoria">La Trattoria</option>
+                <option value="las-alitas">Las Alitas</option>
+                <option value="las-quekas">Las Quekas</option>
+                <option value="le-petit-paris">Le Petit Paris</option>
+                <option value="ley">Ley</option>
+                <option value="libertad-servicios-financieros">Libertad Servicios Financieros</option>
+                <option value="little-ceasars">Little Ceasars</option>
+                <option value="locura">Locura</option>
+                <option value="loretta-joyas">Loretta Joyas</option>
+                <option value="luxis-joyeria">Luxis Joyeria</option>
+                <option value="macro-cell">Macro Cell</option>
+                <option value="macrocel">Macrocel</option>
+                <option value="marie">Marie</option>
+                <option value="marti-outlet">Marti Outlet</option>
+                <option value="más-vision">Más Vision</option>
+                <option value="maxcell-reparation">Maxcell Reparation</option>
+                <option value="mazarik">Mazarik</option>
+                <option value="mcdonalds">McDonald's</option>
+                <option value="meik">Meik</option>
+                <option value="men-hong">Men Hong</option>
+                <option value="mensfactory">Men's Factory</option>
+                <option value="mensfashion">Men's Fashion</option>
+                <option value="Mexican Food">Mexican Food</option>
+                <option value="méxico-crea">México Crea</option>
+                <option value="mi-gusto-es">Mi Gusto Es</option>
+                <option value="mi-tienda-del-ahorro">Mi Tienda del Ahorro</option>
+                <option value="michelle">MICHELLE</option>
+                <option value="miniso">Miniso</option>
+                <option value="mirage-restaurantes">Mirage Restaurantes</option>
+                <option value="mobilia-home">Mobilia Home</option>
+                <option value="mobo-shop">Mobo Shop</option>
+                <option value="modatelas">Modatelas</option>
+                <option value="movistar">Movistar</option>
+                <option value="mrfish">Mr. Fish</option>
+                <option value="muebles-dico">Muebles Dico</option>
+                <option value="multimarcas-promoda">Multimarcas Promoda</option>
+                <option value="multiservicios-emporio">Multiservicios Emporio</option>
+                <option value="mundo-joven">Mundo Joven</option>
+                <option value="mundo-mágico">Mundo Mágico</option>
+
+                <option value="nail-bar-beauty-lounge">Nail Bar Beauty Lounge</option>
+                <option value="nikkori-sushi">Nikkori Sushi</option>
+                <option value="nueve-lunas">Nueve Lunas</option>
+                <option value="nutrisa">Nutrisa</option>
+                <option value="office-max">Office Max</option>
+                <option value="oh-my-beauty">Oh My Beauty</option>
+                <option value="opps-jeans">Opp's Jeans</option>
+                <option value="óptica-americana">Optica Americana</option>
+                <option value="óptica-espadas">Óptica Espadas</option>
+                <option value="óptica-full-vision">Optica Full Vision</option>
+                <option value="óptica-kristel">Optica Kristel</option>
+                <option value="óptica-platino">Optica Platino</option>
+                <option value="ópticas-devlyn">Opticas Devlyn</option>
+                <option value="oriental-wok">Oriental Wok</option>
+                <option value="oxxo">OXXO</option>
+                <option value="pago-de-tráfico-y-servicios">Pago de tráfico y servicios</option>
+                <option value="palax-restaurante">Palax Restaurante</option>
+                <option value="paleteria-y-neveria-tocumbo">Paleteria y Neveria Tocumbo</option>
+                <option value="parisina">Parisina</option>
+                <option value="pensionissste">Pensionissste</option>
+                <option value="perfumes-y-esencias">Perfumes y Esencias</option>
+                <option value="perugia">Perugia</option>
+                <option value="petco">Petco</option>
+                <option value="peter-piper-pizza">Peter Piper Pizza</option>
+                <option value="petsmania">Petsmania</option>
+                <option value="piel-de-roble">Piel de Roble</option>
+                <option value="pinal-zuazo">Pinal &amp; Zuazo</option>
+                <option value="pizza-hut">Pizza Hut</option>
+                <option value="pizzas-plaza">Pizzas Plaza</option>
+                <option value="planet-gim">Planet gim</option>
+                <option value="planigrupo">Planigrupo</option>
+                <option value="pockets-billiards-fun">Pockets Billiards &amp; Fun</option>
+                <option value="prenda-mex">Prenda Mex</option>
+                <option value="price-travel">Price Travel</option>
+                <option value="pro1-wash">Pro1 Wash</option>
+                <option value="promueve">Promueve</option>
+                <option value="purofresco">Purofresco</option>
+                <option value="quarry-jeans-fashion">Quarry Jeans &amp; Fashion</option>
+                <option value="radio-shack">Radio Shack</option>
+                <option value="regalos-mexico">Regalos Mexico</option>
+                <option value="renatta-cosmético">Renatta Cosmético</option>
+                <option value="rent-a-center">Rent A Center</option>
+                <option value="restaurante-palax">Restaurante Palax</option>
+                <option value="rockland">Rockland</option>
+                <option value="sally-beauty-supply">Sally Beauty Supply</option>
+                <option value="samsclub">Sam's Club</option>
+                <option value="sanborn" s'="">Sanborn's</option>
+                <option value="sancho-panza-restaurante">Sancho Panza restaurante</option>
+                <option value="santa-clara">Santa Clara</option>
+                <option value="santander-serfin">Santander Serfin</option>
+                <option value="saxs-accessories">Saxs Accessories</option>
+                <option value="scotiabank">Scotiabank</option>
+                <option value="secrets-boutique">Secrets Boutique</option>
+                <option value="shasa">Shasa</option>
+                <option value="sierra-madre-brewing-co">Sierra Madre Brewing Co.</option>
+                <option value="silvia-carnevali">Silvia Carnevali</option>
+                <option value="soriana">Soriana</option>
+                <option value="sport-world-cell">Sport World Cell</option>
+                <option value="sporttenis">Sporttenis</option>
+                <option value="starbucks-coffee">Starbucks Coffee</option>
+                <option value="steren">Steren</option>
+                <option value="suburbia">Suburbia</option>
+                <option value="subway">Subway</option>
+                <option value="sun-city">Sun City</option>
+                <option value="super-colchones">Super Colchones</option>
+                <option value="super-fitness">Super Fitness</option>
+                <option value="super-salads">Super Salads</option>
+                <option value="superama">Superama</option>
+                <option value="surtidora">Surtidora</option>
+                <option value="sweet-little">Sweet Little</option>
+                <option value="swim-store">Swim Store</option>
+                <option value="tapioca-go">Tapioca Go</option>
+                <option value="telcel">Telcel</option>
+                <option value="tgi-fridays">TGI Fridays</option>
+                <option value="thrifty-ice-cream">Thrifty Ice Cream</option>
+                <option value="tienda-ley">Tienda Ley</option>
+                <option value="tintorería-max">Tintorería Max</option>
+                <option value="todo-para-su-pies">Todo para sus Pies</option>
+                <option value="todomoda">Todomoda</option>
+                <option value="toks-restaurante">Toks Restaurante</option>
+                <option value="tropic">Tropic</option>
+                <option value="tu-tu-play">Tu-tu Play</option>
+                <option value="ultrahogar">Ultrahogar</option>
+                <option value="universidad-metropolitana-de-monterrey">Universidad Metropolitana de Monterrey</option>
+                <option value="usa-shoes">USA Shoes</option>
+                <option value="victorinox">Victorinox</option>
+                <option value="vida-fitness">Vida Fitness</option>
+                <option value="villarreal">Villarreal</option>
+                <option value="vips">VIPS</option>
+                <option value="viva-pizza">Viva Pizza</option>
+                <option value="vivo-47">Vivo 47</option>
+                <option value="walmart">Walmart</option>
+                <option value="win-fa">Win Fa</option>
+                <option value="woolworth">Woolworth</option>
+                <option value="yak">YAK</option>
+                <option value="zapateria-la-joya">Zapateria La Joya</option>
+                <option value="zapatería-pequeños">Zapatería Pequeños</option>
+                <option value="zapopan-unido">Zapopan Unido</option>
+                <option value="zona-divertida">Zona Divertida</option>                
+
+            </select>          
+          </div>
+
+        </div>
+       
+
+
+        <div class="featured_properties__grid">
+        </div>
+      </section>
+
+      <div class="contacto__form__card">
+        <div class="contacto__form__card__text">
+        <!--        
+        <span style="font-size: 30px !important;">${propertyDetail.email}
+                </span>
+                -->
+                <span>Ask Us About Leasing Opportunities</span>
+      
+                <p class="first">
+                  <b>Address:</b>
+                  <br>
+
+                  Av. Eugenio Garza Sada #3431
+Urban Village Garza Sada, P1, local SA012,
+Col. Arroyo Seco CP. 64740
+Monterrey, Nuevo León.
+                  </br></p>
+        
+                  <p>
+                    <b>
+                    Contact:</b>
+                    <br>      
+                    (+52 81) 8335-1631
+                    <br>
+                  </p>
+      
+                  <div class="cfcSocial">
+                    
+                    <a href="https://twitter.com/planigrupo" target="_blank">
+                      <i class="fa-brands fa-x-twitter fa-lg" style="color: #0096a9;"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/gmexico.oficial" target="_blank">
+                      <i class="fa-brands fa-facebook fa-lg" style="color: #0096a9;"></i>
+                    </a>
+
+                    <a
+                      href="https://www.linkedin.com/company/grupo-mexico/"
+                      target="_blank">
+                      <i class="fa-brands fa-linkedin fa-xl" style="color: #0096a9;"></i>
+                    </a>
+
+                    <!-- <div class="socialIconTwitter">
+                      <a href="https://twitter.com/planigrupo"></a>
+                    </div>
+                    <div class="socialIconFacebook">
+                      <a href=""></a>
+                    </div>
+                    <div class="socialIconLinkdin">
+                      <a href="https://www.linkedin.com/company/planigrupo"></a>
+                    </div>
+                   -->
+                  </div>
+                </div>
+        
+                <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" class="portfolioContactForm">
+                  <input type="hidden" name="oid" value="00Di0000000cSTi">
+
+                  <input type="hidden" name="retURL" value="https://edcan-dev.github.io/planigrupo-edcan-dev/portafolio.html">
+                  
+                  <div class="contacto__form__card__form">
+                    <div class="contacto__form__card__form__container contacto__form__card__form__container--nombre">
+                      <label for="nombre">*name</label>
+                      <!-- <input type="text" name="nombre" id="nombre">
+                       -->
+                      <input id="first_name" type="text" tabindex="0" name="first_name" required>
+                    </div>
+      
+                    <div class="contacto__form__card__form__container contacto__form__card__form__container--compania">
+                      <label for="compania">*company</label>
+                      <input id="company" type="text" tabindex="1" name="company" required>
+                    </div>
+                  </div>
+                  
+                  <div class="contacto__form__card__form">
+                    <div class="contacto__form__card__form__container contacto__form__card__form__container--apellido">
+                      <label for="apellido">*lastname</label>
+                      <input id="last_name" type="text" tabindex="0" name="last_name" required>
+                    </div>
+      
+                    <div class="contacto__form__card__form__container contacto__form__card__form__container--email">
+                      <label for="telefono">*phone number</label>
+                      <input id="phone" type="tel" 
+                      
+                pattern="^(\d{10}|\(\d{3}\)\s?\d{3}-\d{4}|(\+\d{2}\s?)?(\d{2}\s?)?\d{4}\s?\d{4})$"                        
+                      
+                      tabindex="3" name="phone" title="Debe tener 10 dígitos y parentesis." placeholder="1234512345" required>
+                    </div>
+                  </div>
+      
+                  <div class="contacto__form__card__form contacto__form__card__form--portfolio">
+                    
+                    <div class="contacto__form__card__form--portfolio--email">
+                      <label for="email">*email</label>
+                      <input id="email" type="email" tabindex="2" name="email" required>
+                    </div>
+<!-- 
+                    <div 
+                    id="responsive_comments"
+                    class="contacto__form__card__form--portfolio--email">
+                      <label for="email">*comentarios</label>
+                      <input type="email" name="telefono" id="email">
+                    </div> -->
+      
+                    <div class="contacto__form__card__form--portfolio--personalidad">
+                      <label for="personalidad-juridica">*legal entity</label>
+                      <select id="00N5A00000HQFp4" name="00N5A00000HQFp4" tabindex="4" required>
+                        <option disabled selected value="">Legal Entity</option>
+                        <option value="Persona Física">Natural Entity</option>
+                        <option value="Persona Moral">Legal entity</option>
+                      </select>
+                    </div>
+      
+                    <div class="contacto__form__card__form--portfolio--comentarios">
+                      <label for="comentarios">*comments</label>
+                      <textarea id="00Ni000000Dwzjf" tabindex="6" name="00Ni000000Dwzjf" cols="21" placeholder=""></textarea>
+                    </div>
+      
+                  </div>
+      
+                  <div class="contacto__form__card__form contacto__form__card__form--portfolio--propiedad">
+                    
+                    <div class="contacto__form__card__form--portfolio--personalidad">
+                      <label for="personalidad-juridica">*property</label>
+
+                      <select id="00Ni000000Ekl2M" name="00Ni000000Ekl2M" tabindex="5" required="">
+                        <option disabled selected value>Select a property</option>
+                        <option value="P119">Cancun Gran Plaza</option><option value="P130">Centro Comercial Lopez Mateos</option><option value="P131">Ciudadela UV</option><option value="P101">El Paseo Santa Catarina</option><option value="P109">La Nogalera</option><option value="P134">Lago Real Centro Comercial</option><option value="P133">Macroplaza Del Valle</option><option value="2102">Macroplaza Estadio</option><option value="P121">Macroplaza Insurgentes</option><option value="P126">Macroplaza Oaxaca</option><option value="P129">Macroplaza San Luis</option><option value="P107">Mall Plaza Lincoln</option><option value="P118">Palmira Plaza Comercial</option><option value="P122">Paseo Alcalde</option><option value="P123">Paseo Hipodromo</option><option value="P103">Paseo Puebla</option><option value="P135">Paseo Reforma</option><option value="P138">Paseo San Juan</option><option value="P110">Paseo Solidaridad</option><option value="P106">Plaza Bella Anáhuac</option><option value="P102">Plaza Bella Frontera</option><option value="P105">Plaza Bella Huinala</option><option value="P115">Plaza Bella Mexiquense</option><option value="P111">Plaza Bella Ramos Arizpe</option><option value="P113">Plaza Monumental</option><option value="P112">Plaza Real Reynosa</option><option value="P108">Plaza Real Saltillo</option><option value="P117">Plaza Universidad</option><option value="P132">Puerta de Hierro</option><option value="P140">Punto Oriente</option><option value="P139">Punto San Isidro</option><option value="P136">Reynosa II</option><option value="P114">Super Plaza las Haciendas</option><option value="P125">Urban Village Garza Sada</option><option value="P127">Walmart Ensenada</option><option value="P128">Walmart San Jose del Cabo</option>						</select>
+                        
+                    </div>
+      
+                    <div class="contacto__form__card__form contacto__form__card__form--submit">
+                      <input type="hidden"  id="external" name="external" value="1" />
+                      <label for="">
+                        <b style="font-size: 30px; line-height: 10px; ">* </b>Indicates Required Field
+                      </label>
+                      <input type="submit" name="submit" value="Send" id="submitButton">
+                    </div>
+                  </div>
+      
+              </form></div>
+
+      <div id="dialog_container">
+        <button class="e-control e-btn" id="targetButton" role="button" e-ripple="true" style="position: absolute;">Open Modal Dialog</button>
+        <div id="dialog"></div>
+      </div>
+
+    </main>
+
+    <footer class="footer footer--portfolio">
+      <div class="social__container">
+
+        <span style="margin-bottom: 10px;">
+          FOLLOW US<br />
+          ON SOCIAL MEDIA
+        </span>
+  
+        <div class="social__container__icons">
+  
+          <a href="https://www.youtube.com/@grupomexico8955" class="social__container__icons__icon">
+            <i class="social__container__icons__icon__li fa-brands fa-youtube" style="color: #000000; line-height: 20px;
+            "></i>
+          </a>
+  
+          <a href="https://twitter.com/GMexico_oficial" class="social__container__icons__icon">
+            <i class="social__container__icons__icon__li fa-brands fa-x-twitter" style="color: #000000; line-height: 20px;
+            "></i>
+          </a>
+          <a href="https://www.linkedin.com/company/grupo-mexico/" class="social__container__icons__icon">
+            <li class="social__container__icons__icon__li fa-brands fa-linkedin-in" style="color: #000000; line-height: 20px;
+  "></li>
+          </a>
+          <a href="https://www.facebook.com/gmexico.oficial" class="social__container__icons__icon">
+            <i class="social__container__icons__icon__li fa-brands fa-facebook-f" style="color: #000000; line-height: 20px;
+  "></i>
+          </a>
+          <a href="https://www.instagram.com/gmexico_oficial" class="social__container__icons__icon">
+            <li class="social__container__icons__icon__li fa-brands fa-instagram" style="color: #000000; line-height: 20px;
+  "></li>
+          </a>
+        </div>
+  
+  
+        <!--   <li class="fa-brands fa-linkedin-in" style="color: #000000;"></li>    
+       -->
+      </div>
+  
+      <div>
+        <a href=".">aBOUT US</a>
+        <a href=".">LEASING</a>
+        <a href="./blog/blog.html">Blog</a>
+        <a href=".">CONTACT</a>
+        <a href=".">investors</a>
+        <a href=".">ESG</a>
+        <a href=".">Portfolio</a>
+        <a href=".">Careers</a>
+      </div>
+      <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/bolsamexicana-grey.png"
+        class="footer__img" />
+      </footer>
+
+  </body>
+</html>
