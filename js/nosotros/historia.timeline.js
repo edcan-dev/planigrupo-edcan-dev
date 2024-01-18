@@ -1,3 +1,6 @@
+const language = document.head.querySelector("[property~=language][content]").content;
+console.log(language);
+
 document.querySelectorAll('.historia__timeline__selector')
   .forEach((selector, index, list) => {
     selector
@@ -71,26 +74,44 @@ var accordion = new ej.navigations.Accordion({
       expanded: false,
       content: `
       <div class="historia__card historia__card--tab6 historia__card--resp ">
-
+      
+      <div class="historia__card__item historia__card--resp__item">
+        <div class="historia__card__item__img historia__card--resp__item__img historia__card__item__img--27">
+        </div>
+        <div class="historia__card__item__text historia__card--resp__item__text">
+          <span>2022</span>
+          <p>
+          ${
+            language == 'english'
+            ? 'Grupo Mexico, through Grupo Inmobiliario UPAS, S.A. de C.V., acquires 95.47% of the shares of Planigrupo.'
+            : '  Grupo México a través de Grupo Inmobiliario UPAS, S.A. de C.V. Adquiere el 95.47% de las Acciones de Planigrupo.'
+          }
+          </p>
+        </div>
+      </div>
         <div class="historia__card__item historia__card--resp__item">
           <div class="historia__card__item__img historia__card--resp__item__img historia__card__item__img--24">
           </div>  
           <div class="historia__card__item__text historia__card--resp__item__text">
-            <span>2023</span>
+            <span>2022</span>
             <p>
-              Se realiza la desinversión de activos PLANICK 12 -CKD y la adquisición del 100% de 11 propiedades.
+              ${
+                language == 'english'
+                ? 'PLANICK 12 -CKD assets divested and 100% of 11 properties acquired'
+                : 'Se realiza la desinversión de activos PLANICK 12 -CKD y la adquisición del 100% de 11 propiedades.'
+              }
             </p>
           </div>
         </div>
 
+
         <div class="historia__card__item historia__card--resp__item">
           <div class="historia__card__item__img historia__card--resp__item__img historia__card__item__img--25">
-          </div>
+          </div>  
           <div class="historia__card__item__text historia__card--resp__item__text">
             <span>2023</span>
             <p>
-              Grupo México a través de Grupo Inmobiliario UPAS, S.A. de C.V. Adquiere el 95.47% de las Acciones de
-              Planigrupo.
+              GMInmobiliaria.
             </p>
           </div>
         </div>
@@ -107,7 +128,13 @@ var accordion = new ej.navigations.Accordion({
           </div>
           <div class="historia__card__item__text historia__card--resp__item__text">
             <span>2011</span>
-            <p>Se construyen Plaza Bella Los Almendros, Macroplaza Estadio y Plaza Bella Frontera.</p>
+            <p>
+            ${
+              language == 'english'
+              ? 'Plaza Bella Los Almendros, Macroplaza Stadium and Plaza Bella Frontera are built.'
+              : 'Se construyen Plaza Bella Los Almendros, Macroplaza Estadio y Plaza Bella Frontera.'
+            }
+            </p>
           </div>
         </div>
 
@@ -116,8 +143,13 @@ var accordion = new ej.navigations.Accordion({
           </div>
           <div class="historia__card__item__text historia__card--resp__item__text">
             <span>2012</span>
-            <p>Colocación de un programa de certificados de desarrollo (CKD). Se adquiere Paseo Santa Catarina y se
-              comienza a administrar Mall Plaza Lincoln.</p>
+            <p>
+              ${
+                language == 'english'
+                ? 'Placement of a certificate of development program (CKD). Paseo Santa Catarina is acquired and Mall Plaza Lincoln begins to be managed.'
+                : 'Colocación de un programa de certificados de desarrollo (CKD). Se adquiere Paseo Santa Catarina y se comienza a administrar Mall Plaza Lincoln.'
+              } 
+            </p>
           </div>
         </div>
 
@@ -126,8 +158,13 @@ var accordion = new ej.navigations.Accordion({
           </div>
           <div class="historia__card__item__text historia__card--resp__item__text">
             <span>2013</span>
-            <p>Se construye Paseo Puebla, Suburbia Santa Catarina y Macroplaza Oaxaca. Se adquieren dos portafolios: uno
-              de 9 centros comerciales y uno de 4 centros comerciales.</p>
+            <p>
+            ${
+              language == 'english'
+              ? 'Paseo Puebla Suburbia Santa Catarina and Macroplaza Oaxaca are built. Two portfolios are acquired: one of 9 shopping centers and one of 4 shopping centers.'
+              : 'Se construye Paseo Puebla, Suburbia Santa Catarina y Macroplaza Oaxaca. Se adquieren dos portafolios: uno de 9 centros comerciales y uno de 4 centros comerciales.'
+            }
+            </p>
           </div>
         </div>
 
@@ -137,8 +174,11 @@ var accordion = new ej.navigations.Accordion({
           <div class="historia__card__item__text historia__card--resp__item__text">
             <span>2014</span>
             <p>
-              Se construyen Macroplaza San Luis y Paseo Alcalde. Se adquieren las propiedades de Ensenada y Los Cabos y
-              un portafolio de 9 centros comerciales.
+            ${
+              language == 'english'
+              ? 'Macroplaza San Luis and Paseo Alcalde are built. The properties of Ensenada and Los Cabos and a portfolio of 9 shopping centers are acquired.'
+              : 'Se construyen Macroplaza San Luis y Paseo Alcalde. Se adquieren las propiedades de Ensenada y Los Cabos y un portafolio de 9 centros comerciales.'
+            }
             </p>
           </div>
         </div>
@@ -149,7 +189,11 @@ var accordion = new ej.navigations.Accordion({
           <div class="historia__card__item__text historia__card--resp__item__text">
             <span>2015</span>
             <p>
-              Se construyen Paso Hipódromo y Paseo Solidaridad.
+              ${
+                language == 'english'
+                ? 'Paso Hipódromo and Paseo Solidaridad are built.'
+                : 'Se construyen Paso Hipódromo y Paseo Solidaridad.'
+              }
             </p>
           </div>
         </div>
@@ -160,7 +204,11 @@ var accordion = new ej.navigations.Accordion({
           <div class="historia__card__item__text historia__card--resp__item__text">
             <span>2016</span>
             <p>
-              Se construye Urban Village Garza Sada.
+            ${
+              language == 'english'
+              ? 'Urban Village Garza Sada is built.'
+              : 'Se construye Urban Village Garza Sada.'
+            }  
             </p>
           </div>
         </div>
@@ -171,7 +219,11 @@ var accordion = new ej.navigations.Accordion({
           <div class="historia__card__item__text historia__card--resp__item__text">
             <span>2017</span>
             <p>
-              Se adquieren las propiedades de Punto San Isidro y Punto Oriente.
+            ${
+              language == 'english'
+              ? 'The properties of Punto San Isidro and Punto Oriente are acquired.'
+              : 'Se adquieren las propiedades de Punto San Isidro y Punto Oriente.'
+            }
             </p>
           </div>
         </div>
@@ -188,7 +240,13 @@ var accordion = new ej.navigations.Accordion({
           </div>
           <div class="historia__card__item__text historia__card--resp__item__text">
             <span>2000</span>
-            <p>Se construyen 5 HEBs más.</p>
+            <p>
+            ${
+              language == 'english'
+              ? '5 more HEBs are built.'
+              : 'Se construyen 5 HEBs más.'
+            }
+            </p>
           </div>
         </div>
 
@@ -197,7 +255,13 @@ var accordion = new ej.navigations.Accordion({
           </div>
           <div class="historia__card__item__text historia__card--resp__item__text">
             <span>2001</span>
-            <p>Se construyen 4 HEBs más.</p>
+            <p>
+            ${
+              language == 'english'
+              ? '4 more HEBs are built.'
+              : 'Se construyen 4 HEBs más.'
+            }
+            </p>
           </div>
         </div>
 
@@ -206,7 +270,13 @@ var accordion = new ej.navigations.Accordion({
           </div>
           <div class="historia__card__item__text historia__card--resp__item__text">
             <span>2002</span>
-            <p>Se construye Plaza Real Monterrey y Plaza Bella Anáhuac</p>
+            <p>
+            ${
+              language == 'english'
+              ? 'Plaza Real Monterrey and Plaza Bella Anahuac are built.'
+              : 'Se construye Plaza Real Monterrey y Plaza Bella Anáhuac.'
+            }
+            </p>
           </div>
         </div>
 
@@ -215,7 +285,13 @@ var accordion = new ej.navigations.Accordion({
           </div>
           <div class="historia__card__item__text historia__card--resp__item__text">
             <span>2005</span>
-            <p>Se construyen Plaza Real Reynosa, Plaza Universidad y Super Plaza Las Haciendas.</p>
+            <p>
+            ${
+              language == 'english'
+              ? 'Plaza Real Reynosa, Plaza Universidad and Super Plaza Las Haciendas are built.'
+              : 'Se construyen Plaza Real Reynosa, Plaza Universidad y Super Plaza Las Haciendas.'
+            }
+            </p>
           </div>
         </div>
 
@@ -224,7 +300,13 @@ var accordion = new ej.navigations.Accordion({
           </div>
           <div class="historia__card__item__text historia__card--resp__item__text">
             <span>2006</span>
-            <p>Se construyen Plaza Real San Luis, La Nogalera, Macroplaza Insurgentes y Plaza Bella Mexiquense.</p>
+            <p>
+            ${
+              language == 'english'
+              ? 'Plaza Real San Luis, La Nogalera, Macroplaza Insurgentes and Plaza Bella Mexiquense are built.'
+              : 'Se construyen Plaza Real San Luis, La Nogalera, Macroplaza Insurgentes y Plaza Bella Mexiquense.'
+            }
+            </p>
           </div>
         </div>
 
@@ -233,7 +315,13 @@ var accordion = new ej.navigations.Accordion({
           </div>
           <div class="historia__card__item__text historia__card--resp__item__text">
             <span>2007</span>
-            <p>Se construyen Pabellón Reforma Querétaro, Mérida y Plaza Monumental</p>
+            <p>
+            ${
+              language == 'english'
+              ? 'Pabellon Reforma Querétaro, Mérida and Plaza Monumental are built.'
+              : 'Se construyen Pabellón Reforma Querétaro, Mérida y Plaza Monumental'
+            }
+            </p>
           </div>
         </div>
 
@@ -242,8 +330,13 @@ var accordion = new ej.navigations.Accordion({
           </div>
           <div class="historia__card__item__text historia__card--resp__item__text">
             <span>2008</span>
-            <p>Se construyen Plaza Bella Valladolid, Rio Bravo, Plaza Bella Ramos Arizpe. Se comienzan a administrar
-              Gran Plaza Cancún y Plaza Palmira.</p>
+            <p>
+            ${
+              language == 'english'
+              ? 'Plaza Bella Valladolid, Rio Bravo, Plaza Bella Ramos Arizpe are built. They begin to administer Gran Plaza Cancun and Plaza Palmira.'
+              : 'Se construyen Plaza Bella Valladolid, Rio Bravo, Plaza Bella Ramos Arizpe. Se comienzan a administrar Gran Plaza Cancún y Plaza Palmira.'
+            }
+            </p>
           </div>
         </div>
 
@@ -252,8 +345,13 @@ var accordion = new ej.navigations.Accordion({
           </div>
           <div class="historia__card__item__text historia__card--resp__item__text">
             <span>2009</span>
-            <p class="historia__card__item__text--overflow">Se construyen Plaza Bella Oaxaca, Plaza Bella San Gaspar, Plaza Bella Huinalá, Plaza Bella Acuña, Plaza
-              Bella La Palma, Macroplaza Los Héroes y Macroplaza Puerto Vallarta.</p>
+            <p class="historia__card__item__text--overflow">
+            ${
+              language == 'english'
+              ? 'Plaza Bella Valladolid, Rio Bravo, Plaza Bella Ramos Arizpe are built. They begin to administer Gran Plaza Cancun and Plaza Palmira.'
+              : 'Se construyen Plaza Bella Oaxaca, Plaza Bella San Gaspar, Plaza Bella Huinalá, Plaza Bella Acuña, Plaza Bella La Palma, Macroplaza Los Héroes y Macroplaza Puerto Vallarta.'
+            }
+            </p>
           </div>
         </div>
       </div>
@@ -268,7 +366,13 @@ var accordion = new ej.navigations.Accordion({
           </div>
           <div class="historia__card__item__text historia__card--resp__item__text">
             <span>1992</span>
-            <p>Se construye Plaza Bella Pachuca</p>
+            <p>
+            ${
+              language == 'english'
+              ? 'Plaza Bella Pachuca is built.              '
+              : 'Se construye Plaza Bella Pachuca.'
+            }
+            </p>
           </div>
         </div>
 
@@ -276,7 +380,13 @@ var accordion = new ej.navigations.Accordion({
           <div class="historia__card__item__img historia__card--resp__item__img historia__card__item__img--7"></div>
           <div class="historia__card__item__text historia__card--resp__item__text">  
             <span>1998</span>
-          <p>Se abren las oficinas en la ciudad de Monterrey.</p>
+          <p>
+          ${
+            language == 'english'
+            ? 'Offices are opened in the City of Monterrey.'
+            : 'Se abren las oficinas en la ciudad de Monterrey.'
+          }
+          </p>
         </div>
       </div>
 
@@ -286,7 +396,13 @@ var accordion = new ej.navigations.Accordion({
         </div>
         <div class="historia__card__item__text historia__card--resp__item__text">
           <span>1999</span>
-          <p>Se construyen 5 HEBs Plaza Real Saltillo.</p>
+          <p>
+          ${
+            language == 'english'
+            ? '5 HEBs Plaza Real Saltillo are built.'
+            : 'Se construyen 5 HEBs Plaza Real Saltillo.'
+          }
+          </p>
         </div>
       </div>
 
@@ -303,7 +419,13 @@ var accordion = new ej.navigations.Accordion({
           </div>
           <div class="historia__card__item__text historia__card--resp__item__text">
             <span>1982</span>
-            <p>Se construye la primera plaza de Planigrupo Fiesta Arboledas.</p>
+            <p>
+            ${
+              language == 'english'
+              ? 'Plaza Bella Pachuca is built.'
+              : 'Se construye la primera plaza de Planigrupo Fiesta Arboledas.'
+            }
+            </p>
           </div>
         </div>
 
@@ -313,7 +435,13 @@ var accordion = new ej.navigations.Accordion({
           </div>
           <div class="historia__card__item__text historia__card--resp__item__text">
             <span>1988</span>
-            <p>Se construye la plaza Fiesta Camelinas.</p>
+            <p>
+            ${
+              language == 'english'
+              ? 'The Camelinas Fiesta square is built.'
+              : 'Se construye la plaza Fiesta Camelinas.'
+            }
+            </p>
           </div>
         </div>
 
@@ -323,7 +451,13 @@ var accordion = new ej.navigations.Accordion({
           </div>
           <div class="historia__card__item__text historia__card--resp__item__text">
             <span>1989</span>
-            <p>Se abren las oficinas en la Ciudad de México.</p>
+            <p>
+            ${
+              language == 'english'
+              ? 'Offices are opened in Mexico City.'
+              : 'Se abren las oficinas en la Ciudad de México.'
+            }
+            </p>
           </div>
         </div>
 
@@ -340,7 +474,13 @@ var accordion = new ej.navigations.Accordion({
                 </div>
                 <div class="historia__card__item__text historia__card--resp__item__text">
                   <span>1975</span>
-                  <p>Planigrupo fue fundada por Eduardo Bross Tatz.</p>
+                  <p>
+                  ${
+                    language == 'english'
+                    ? 'Planigrupo was founded by Eduardo Bross Tatz'
+                    : 'Planigrupo fue fundada por Eduardo Bross Tatz.'
+                  }
+                  </p>
                 </div>
               </div>
 
@@ -349,7 +489,13 @@ var accordion = new ej.navigations.Accordion({
                 </div>
                 <div class="historia__card__item__text historia__card--resp__item__text">
                   <span>1978</span>
-                  <p>Se construye la primera plaza para el municipio de Zapopan.</p>
+                  <p>
+                  ${
+                    language == 'english'
+                    ? 'The first plaza for the Municipality of Zapopan is built.'
+                    : 'Se construye la primera plaza para el municipio de Zapopan.'
+                  }
+                  </p>
                 </div>
               </div>
             </div>

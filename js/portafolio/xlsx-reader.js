@@ -9,7 +9,7 @@ let results;
 
 const HERO_IMG_FOLDER = 'https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/property_hero/';
 
-class PropertyDetail {
+export class PropertyDetail {
 
   id;
   name;
@@ -26,6 +26,7 @@ class PropertyDetail {
   portfolioPercentage
 
   description;
+  englishDescription;
     /**string[]*/
   tenants;
     /**string[]*/
@@ -116,6 +117,7 @@ if(localStorage.getItem('propertiesArray') != null) {
       await readXlsxFile(xlsx, { sheet: 2 }).then(function(secondPageRows) {
         const matchedRow = secondPageRows.find(row =>  row[0] === detail.id);
         detail.description = matchedRow[2];
+        detail.englishDescription = matchedRow[4];
         detail.storesNumber = matchedRow[3];
       })
   
