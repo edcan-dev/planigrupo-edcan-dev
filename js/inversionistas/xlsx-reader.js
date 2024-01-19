@@ -1,10 +1,18 @@
 //const xslxPath = './../../data/inversionistas_input.xlsx';
-const xslxPath = 'https://edcan-dev.github.io/planigrupo-edcan-dev/data/inversionistas_input.xlsx';
+//let xslxPath;
+
+// if(window.location.href.includes('github')) {
+//   xslxPath = 'https://edcan-dev.github.io/planigrupo-edcan-dev/data/inversionistas_input.xlsx';
+// } else {
+//   xslxPath = './../../data/inversionistas_input.xlsx'
+// }
+const xslxPath = 'https://edcan-dev.github.io/planigrupo-edcan-dev/data/inversionistas_input.xlsx'
+
 const response = await fetch(xslxPath);
 
 const xlsx = await response.blob();
 
-readXlsxFile(xlsx, { sheet: 1 }).then(function(rows) {
+await readXlsxFile(xlsx, { sheet: 1 }).then(function(rows) {
 
   window.innerWidth < 1000 ? 
     populateInformacionFinancieraResponsiveTable(rows) :
@@ -56,3 +64,21 @@ function populateInformacionFinancieraResponsiveTable( rows ) {
   )
   
 }
+
+
+try {
+  const language = document.head.querySelector("[property~=language][content]").content;
+  console.log(language);
+
+  document.querySelector('#inversionistas__tabs__tab--content--2 > div.section--table > div > table > tbody > tr:nth-child(1) > td.tr--body__th.col-1st').innerHTML = 'Net Income';
+  document.querySelector('#inversionistas__tabs__tab--content--2 > div.section--table > div > table > tbody > tr:nth-child(2) > td.tr--body__th.col-1st').innerHTML = 'Estimate for uncollectible accounts[4]';
+  document.querySelector('#inversionistas__tabs__tab--content--2 > div.section--table > div > table > tbody > tr:nth-child(3) > td.tr--body__th.col-1st').innerHTML = 'Total Net Income';
+  document.querySelector('#inversionistas__tabs__tab--content--2 > div.section--table > div > table > tbody > tr:nth-child(5) > td.tr--body__th.col-1st').innerHTML = 'NOI Margin[2]';
+  document.querySelector('#inversionistas__tabs__tab--content--2 > div.section--table > div > table > tbody > tr:nth-child(7) > td.tr--body__th.col-1st').innerHTML = 'EBITDA Margin[2]';
+  document.querySelector('#inversionistas__tabs__tab--content--2 > div.section--table > div > table > tbody > tr:nth-child(8) > td.tr--body__th.col-1st').innerHTML = 'FFO[3]';
+  document.querySelector('#inversionistas__tabs__tab--content--2 > div.section--table > div > table > tbody > tr:nth-child(9) > td.tr--body__th.col-1st').innerHTML = 'Adjusted FFO';
+  document.querySelector('#inversionistas__tabs__tab--content--2 > div.section--table > div > table > tbody > tr:nth-child(10) > td.tr--body__th.col-1st').innerHTML = 'Total Debt (Millons)';
+
+
+
+} catch(e) {}
