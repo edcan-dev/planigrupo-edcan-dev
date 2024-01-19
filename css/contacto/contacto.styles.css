@@ -660,7 +660,7 @@ li {
     padding-right: 40px ;
 }
 .contacto__form__card__form__container > label {
-    font-family: 'Barlow Condensed';
+    font-family: 'Barlow Condensed'; text-rendering:optimizeLegibility;
     font-size: 16px;
     letter-spacing: 2px;
     text-transform: uppercase; 
@@ -786,7 +786,7 @@ li {
     }   
 /* } */
 .contacto__form__card__form--portfolio--email > label {
-    font-family: 'Barlow Condensed';
+    font-family: 'Barlow Condensed'; text-rendering:optimizeLegibility;
     font-size: 16px;
     letter-spacing: 2px;
     text-transform: uppercase; 
@@ -795,7 +795,7 @@ li {
     margin-bottom: 5px;
 }
 .contacto__form__card__form--portfolio--personalidad > label {
-    font-family: 'Barlow Condensed';
+    font-family: 'Barlow Condensed'; text-rendering:optimizeLegibility;
     font-size: 16px;
     letter-spacing: 2px;
     text-transform: uppercase; 
@@ -804,7 +804,7 @@ li {
     margin-bottom: 5px;
 }
 .contacto__form__card__form--portfolio--comentarios > label {
-    font-family: 'Barlow Condensed';
+    font-family: 'Barlow Condensed'; text-rendering:optimizeLegibility;
     font-size: 16px;
     letter-spacing: 2px;
     text-transform: uppercase; 

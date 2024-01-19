@@ -174,7 +174,8 @@
     color: #97928A;
     text-align: center;
     font-family: Barlow Condensed;
-    font-family: 'Barlow Condensed';
+    font-family: 'Barlow Condensed'; 
+    text-rendering: optimizeLegibility;
     font-size: 11px;
     font-style: normal;
     font-weight: 500;
@@ -2390,7 +2391,7 @@ MAIN TABS MARGIN
                 width: 50px;
             }
             & span {
-                color: #1f1a18;
+                color: #454545;
                 font-family: Barlow Condensed;
                 font-size: 18px;
                 font-style: normal;
