@@ -2,9 +2,9 @@
   "properties":
   [
     {
-      "propertyTitle": "Cancun Gran Plaza",
+      "propertyTitle": "Cancún Gran Plaza",
       "propertyKeyName": "P119",
-      "propertyLocation": "Cancun, Quintana Roo",
+      "propertyLocation": "Cancún, Quintana Roo",
       "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/Cncnfoto.png",
       "propertyState":"Quintana Roo",
       "propertyTenants": [
@@ -17,7 +17,7 @@
     {
       "propertyTitle": "Centro Comercial Lopez Mateos",
       "propertyKeyName": "P130",
-      "propertyLocation": "Cd. Juarez, Chihuahua",
+      "propertyLocation": "Cd. Juárez, Chihuahua",
       "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-centro-comercial-lopez-mateos.jpg",
       "propertyState":"Chihuahua",
       "propertyTenants": []
@@ -49,7 +49,7 @@
   {
       "propertyTitle": "LAGO REAL CENTRO COMERCIAL",
       "propertyKeyName": "P134",
-      "propertyLocation": "Bahia de Banderas, Nayarit",
+      "propertyLocation": "Bahía de Banderas, Nayarit",
       "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-lago-real-centro-comercial.jpg",
       "propertyState": "Nayarit",
       "propertyTenants": []
@@ -65,9 +65,9 @@
   {
       "propertyTitle": "MACROPLAZA ESTADIO",
       "propertyKeyName": "2102",
-      "propertyLocation": "Morelia, Michoacan",
+      "propertyLocation": "Morelia, Michoacán",
       "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-macroplaza-estadio.jpg",
-      "propertyState": "Michoacan",
+      "propertyState": "Michoacán",
       "propertyTenants": []
   },
   {
@@ -201,7 +201,7 @@
   {
       "propertyTitle": "PLAZA MONUMENTAL",
       "propertyKeyName": "P113",
-      "propertyLocation": "Cd. Juarez, Chihuahua",
+      "propertyLocation": "Cd. Juárez, Chihuahua",
       "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/location-hero-card-plaza-monumental.jpg",
       "propertyState": "Chihuahua",
       "propertyTenants": []
@@ -273,7 +273,7 @@
   {
       "propertyTitle": "Urban Village Garza Sada",
       "propertyKeyName": "P125",
-      "propertyLocation": "Monterrey, Nuevo Leon",
+      "propertyLocation": "Monterrey, Nuevo León",
       "propertyImageUrl": "https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/WEB.png",
       "propertyState": "Nuevo Leon",
       "propertyTenants": []
