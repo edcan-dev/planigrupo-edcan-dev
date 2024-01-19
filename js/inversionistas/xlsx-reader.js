@@ -22,24 +22,42 @@ await readXlsxFile(xlsx, { sheet: 1 }).then(function(rows) {
 
 function populateInformacionFinancieraTable( rows ) {
 
+
   document.querySelectorAll('.tr--head__th').forEach((th, i) => {
     th.innerHTML = rows[0][i]
   })
 
   const bodyTr = document.querySelectorAll('.tr--body');
 
-  rows.forEach((row, i) => {
 
-    if(i === 0) return;
+  for (let i = 0; i < rows.length; i++) {
     
-    const child  = bodyTr[i - 1].children 
+    if(i === 0) continue;
 
-    row.forEach((cell, i) => {
+    const row = rows[i];
 
-      child.item(i).innerHTML = cell
+    
+    const children  = bodyTr[i - 1].children 
+
+    for (let i = 0; i < children.length; i++) {
+      const element = children[i];
+      element.innerHTML = row[i]
+    }
+
+  }
+
+  // rows.forEach((row, i) => {
+
+  //   if(i === 0) return;
+    
+  //   const child  = bodyTr[i - 1].children 
+
+  //   row.forEach((cell, i) => {
+
+  //     child.item(i).innerHTML = cell
       
-    });
-  });
+  //   });
+  // });
 }
 
 function populateInformacionFinancieraResponsiveTable( rows ) {
@@ -78,7 +96,4 @@ try {
   document.querySelector('#inversionistas__tabs__tab--content--2 > div.section--table > div > table > tbody > tr:nth-child(8) > td.tr--body__th.col-1st').innerHTML = 'FFO[3]';
   document.querySelector('#inversionistas__tabs__tab--content--2 > div.section--table > div > table > tbody > tr:nth-child(9) > td.tr--body__th.col-1st').innerHTML = 'Adjusted FFO';
   document.querySelector('#inversionistas__tabs__tab--content--2 > div.section--table > div > table > tbody > tr:nth-child(10) > td.tr--body__th.col-1st').innerHTML = 'Total Debt (Millons)';
-
-
-
 } catch(e) {}

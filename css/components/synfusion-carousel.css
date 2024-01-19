@@ -113,7 +113,7 @@
         color: #454545;
         text-align: justify;
         font-family: Raleway;
-        font-family: 'Barlow Condensed';
+        font-family: 'Barlow Condensed'; text-rendering:optimizeLegibility;
         font-size: 12px;
         font-style: normal;
         font-weight: 500;
