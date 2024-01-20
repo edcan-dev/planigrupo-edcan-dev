@@ -66,7 +66,7 @@
 .social_section--4 {
     background-color: #EFEFED;
     position: relative;
-    height: 300px;
+    height: 340px;
     display: flex;
     justify-content: center;
 }
@@ -103,7 +103,7 @@
     background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/social/asg_social_recicla.jpg');
 }
 .social_section--4 > .card__content > .card__content__img--3 {
-    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/social/asg_social-cubrebocas.jpg');
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/social/1cb6b721-538b-4708-94d4-c4351cd542a5.jpeg');
     background-position-y: top;
 }
 .social_section--4 > .card__content > .card__content__img--4 {
@@ -311,3 +311,14 @@
 .gobernanza_section--1 > div > ul {
     width: 400px !important;
 }
+
+
+.asg_banner_component > .asg_banner_component__img {
+    /*     background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/contacto/contacto_conoce.jpg');
+     */    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/nueva.jpeg');
+        background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/social/Construction-Delays-Demystified-Strategies-for-Keeping-Your-Shopping-Center-Project-on-Schedule-980x613.jpg');
+        width: 30%;
+        background-size: cover;
+        background-position-y: -120px;
+    
+    }

@@ -457,3 +457,77 @@ input[type="file"] {
 .footer {
   margin-top: 40px !important;
 }
+
+
+.inversionistas__tabs__tab--content__contact__card {
+  background-color: #EFEFED;
+
+  & .title__container {
+    background-color: #0096A9;
+    padding-left: 10px;
+  }
+
+  & .title__container--second {
+    background-color: #FFF;
+    padding-left: 10px;
+  }
+
+  & div {
+    padding: 10px 20px;
+  }
+
+  & div>span {
+    color: #FFF;
+    font-family: Fjalla One;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    /* 178.571% */
+    letter-spacing: 1px;
+  }
+
+  & div>p>b {
+    color: #545859;
+    font-family: Barlow Condensed;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+    /* 178.571% */
+    letter-spacing: 1px;
+    text-transform: capitalize;
+  }
+
+  & div>p {
+    color: #000;
+    text-align: justify;
+    font-family: Raleway;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 208.333% */
+    letter-spacing: 1px;
+  }
+
+  & div>.number {
+    color: #d7282f;
+  }
+
+  & .text__container {
+    background-color: #FFF;
+    padding-left: 40px;
+
+    & .email {
+      text-transform: lowercase;
+    }
+  }
+
+}
+
+.inversionistas__tabs__tab--content__contact__card--second {
+  background-color: #d7282f;
+  width: 100%;
+  display: flex;
+}
