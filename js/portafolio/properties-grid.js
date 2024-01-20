@@ -80,7 +80,11 @@ class PropertiesGrid {
      */
     filterByStateFromMap(stateFromMap) {
 
-        const clearedStateFromMap = this.#clearStateName(stateFromMap);
+        let clearedStateFromMap = this.#clearStateName(stateFromMap);
+
+        if(clearedStateFromMap == 'Michoacan') clearedStateFromMap = 'Michoacán'
+
+        console.log(clearedStateFromMap);
 
         const filteredProperties = clearedStateFromMap !== 'all'
         ? this.#properties.filter(property => property.propertyState == clearedStateFromMap)

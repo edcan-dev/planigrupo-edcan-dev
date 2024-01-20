@@ -431,7 +431,7 @@
   padding: 0px 10px;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: center;
   & span {
     color: #0096a9;
     font-family: Barlow Condensed;

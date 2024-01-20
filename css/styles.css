@@ -76,7 +76,7 @@
     top: 80px;
     bottom: 0;
     z-index: -1;
-    filter: brightness(.7)
+    filter: brightness(.65)
 }
 
 .main__hero {
@@ -129,7 +129,7 @@
 }
 
 .main__hero__text__p-gray {
-    background-color: #8C827AAA;
+    background-color: #8c827a00;
     padding-left: 200px;
     margin-right: 40vw;
     transition: all .5s;
