@@ -111,7 +111,7 @@ var accordion = new ej.navigations.Accordion({
           <div class="historia__card__item__text historia__card--resp__item__text">
             <span>2023</span>
             <p>
-              GMInmobiliaria.
+              GM Inmobiliaria.
             </p>
           </div>
         </div>
