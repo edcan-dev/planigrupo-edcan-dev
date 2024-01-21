@@ -17,7 +17,7 @@
 
 
 .contentOne {
-  height: 50vh;
+  /* height: 50vh; */
   /* max-height: 600px; */
   margin-bottom: 80px !important;
   }
@@ -190,7 +190,7 @@
   font-style: normal;
   font-weight: 700; /* 110% */
   letter-spacing: 1px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   height: 50px;
 
   padding-left: 20px;
@@ -201,10 +201,10 @@
   font-family: Raleway;
   font-size: 16px;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 19.8px; /* 123.75% */
   letter-spacing: 1px;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   min-height: 75px;
   text-align: justify;
   display: flex;

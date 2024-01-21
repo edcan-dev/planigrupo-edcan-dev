@@ -105,6 +105,7 @@
 .social_section--4 > .card__content > .card__content__img--3 {
     background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/social/1cb6b721-538b-4708-94d4-c4351cd542a5.jpeg');
     background-position-y: top;
+    background-size: cover;
 }
 .social_section--4 > .card__content > .card__content__img--4 {
     background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/social/asg_social_teleton.jpg');

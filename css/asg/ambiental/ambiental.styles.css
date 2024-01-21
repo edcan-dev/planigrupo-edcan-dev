@@ -104,8 +104,8 @@
 }
 
 .asg_banner_component > .asg_banner_component__img {
-/*     background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/contacto/contacto_conoce.jpg');
- */    background-image: url('');
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/contacto/contacto_conoce.jpg');
+    background-image: url('');
     width: 30%;
     background-size: cover;
     background-position-y: -120px;
@@ -308,4 +308,9 @@
 
 .gobernanza_section--1 > div > ul {
     width: 300px;
+}
+
+.asg_banner_component__img {
+    background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/social/Construction-Delays-Demystified-Strategies-for-Keeping-Your-Shopping-Center-Project-on-Schedule-980x613.jpg') !important;
+    background-position-y: center !important
 }

@@ -23,6 +23,7 @@
     width: 40%;
     height: 100px;
     padding-left: 25%;
+    margin-right: 40px;
 }
 .main__hero_downbar__text > span {
     color: #FFF;
@@ -33,9 +34,10 @@
     line-height: 12px; /* 100% */
     letter-spacing: 1px;
     text-transform: uppercase;
+    text-align: end;
 
 }
-.main__hero_downbar__text > p{
+.main__hero_downbar__text > p {
     color: #FFF;
     font-family: Raleway;
     font-size: 18px;
@@ -44,6 +46,17 @@
     line-height: 19.8px; /* 110% */
     letter-spacing: 1px;
     text-transform: uppercase;
+    text-align: end;
+}
+.main__hero_downbar__text > small {
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19.8px; /* 110% */
+    letter-spacing: 1px;
+    text-align: end;
 }
 .main__hero_downbar__title {
     display: flex;

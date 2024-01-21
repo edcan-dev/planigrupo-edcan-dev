@@ -158,7 +158,7 @@
 .main__row {
     margin-top: 10px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .main__row__item {
@@ -167,7 +167,7 @@
     align-items: center;
     justify-items: center;
     height: 100px;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .main__row__item>p {
@@ -183,6 +183,7 @@
     /* 142.818% */
     letter-spacing: 1px;
     text-transform: uppercase;
+    margin-bottom: 0px;
 }
 
 .main__row__item>b {
@@ -197,6 +198,7 @@
     /* 61.875% */
     letter-spacing: 1px;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .main__spliter {
