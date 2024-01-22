@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow Condensed&family=Fjalla+One&family=Fredoka&family=Fresca&family=Raleway:wght@400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow Condensed+Condensed');
 
 * {
     box-sizing: border-box;
@@ -219,6 +218,7 @@
     line-height: 21.43px;
     /* 142.867% */
     letter-spacing: 1px;
+    margin-bottom: 0px;
 }
 
 .main__featured_properties {
@@ -514,7 +514,7 @@
     font-family: Barlow Condensed;
     font-size: 28px;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 500;
     line-height: 50px;
     /* 178.571% */
     letter-spacing: 1px;
@@ -2246,7 +2246,7 @@ MAIN TABS MARGIN
     font-family: Barlow Condensed;
     font-size: 18px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 25px;
     letter-spacing: 1px;
     /* text-transform: uppercase; */
@@ -2400,7 +2400,7 @@ MAIN TABS MARGIN
                 font-family: Barlow Condensed;
                 font-size: 18px;
                 font-style: normal;
-                font-weight: 700;
+                font-weight: 500;
                 line-height: 25px; /* 138.889% */
                 letter-spacing: 1px;
                 text-transform: uppercase;  
