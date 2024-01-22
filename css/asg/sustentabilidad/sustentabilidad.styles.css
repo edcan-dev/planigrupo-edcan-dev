@@ -388,7 +388,7 @@
 .thirdSection__slider__selectors {
   position: absolute;
   bottom: 10px;
-  left: 120px;
+  left: 140px;
   z-index: 1;
 }
 
@@ -437,7 +437,7 @@
     font-family: Barlow Condensed;
     font-size: 16px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 20px; /* 125% */
     letter-spacing: 1px;
     display: inline-block;
