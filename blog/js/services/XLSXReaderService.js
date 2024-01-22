@@ -52,44 +52,8 @@ try {
     });
   }
 } catch (e) {
-  console.log(e);
+  // console.log(e);
 }
 
-// await readXlsxFile(xlsx).then(async function (rows) {
-//   console.log(rows);
-
-//   rows.shift();
-
-//   //  const numberOfPost = rows.filter(row => row[5] == 'T').length;
-
-//   //console.log('{ POST NUMBER } - ' + numberOfPost);
-
-//   let currentPost;
-
-//   for (let index = 0; index < rows.length; index++) {
-    
-//     const row = rows[index];
-
-
-//     if (row[5] == "T") {
-//       currentPost = new BlogPost();
-
-//       currentPost.title = row[6];
-//       currentPost.active = row[7];
-
-//       currentPost.date.setDate(row[1]);
-//       currentPost.date.setMonth(row[2] - 1);
-//       currentPost.date.setFullYear(row[3]);
-
-//       currentPost.author = row[4];
-//     } else {
-//       const currentContent = {
-//         type: row[5],
-//         content: row[6],
-//       };
-//       currentPost.contents.push(currentContent);
-//     }
-//   }
-// });
 
 export const blogPosts = _blogPosts;

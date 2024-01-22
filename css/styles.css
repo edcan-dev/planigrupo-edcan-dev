@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow Condensed&family=Fjalla+One&family=Fredoka&family=Fresca&family=Raleway:wght@400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow Condensed+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow Condensed+Condensed');
 
 * {
     box-sizing: border-box;
@@ -171,9 +171,8 @@
 }
 
 .main__row__item>p {
-    color: #97928A;
-    text-align: center;
-    font-family: Barlow Condensed;
+    color: #97928a;
+    text-align: center; 
     font-family: 'Barlow Condensed'; 
     text-rendering: optimizeLegibility;
     font-size: 11px;

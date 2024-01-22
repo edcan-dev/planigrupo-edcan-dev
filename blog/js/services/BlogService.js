@@ -46,6 +46,10 @@ function renderFeaturedPosts(posts) {
   document.querySelectorAll('blog-featured-grid-arrows > svg').forEach((arrow, arrowIndex) => {
     arrow.addEventListener('click', (ev) => {
 
+      removeDialogListener(
+        document.querySelectorAll('blog-featured-grid-item')
+      );
+
       if(arrowIndex == 0) {
         console.log('prev' + currentStartedIndex);
 
@@ -101,6 +105,26 @@ function renderGridItem(post, elementId) {
 
 
   // TODO: Append modal listener
+  appendDialogListener(element, post.id);
+}
+/**
+ * 
+ * @param { HTMLElement } element 
+ * @param { number } postId 
+ */
+function appendDialogListener(element, postId) {
+  element.addEventListener('click', showModalDialog
+  );
+}
+function showModalDialog() {
+  console.log('clicked');
+}
+/**
+ * 
+ * @param { NodeList } elements
+ */
+function removeDialogListener(elements) {
+  elements.forEach(element => element.removeEventListener('click', showModalDialog))
 }
 
 /**
