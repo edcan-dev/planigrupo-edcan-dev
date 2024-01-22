@@ -39,7 +39,16 @@
     font-style: normal;
     font-weight: 700;
     line-height: 19.8px; /* 110% */
-    letter-spacing: 4px;
+    letter-spacing: 1px;
+}
+.main__hero_downbar__text > p > small {
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19.8px; /* 110% */
+    letter-spacing: 1px;
     text-transform: uppercase;
 }
 .main__hero_downbar__title {
@@ -574,6 +583,7 @@ li {
 .main__hero__downbar--contacto {
     position: static;
     height: 200px;
+    background-color: #545859 !important;
 }
 .main__hero__downbar--contacto > .main__hero_downbar__text {
     height: 100%;

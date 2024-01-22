@@ -474,25 +474,22 @@
   background-image: url('https://planiesg.herokuapp.com/static/images/ODS_8.png'); 
 }
 #thirdSection__slider__content--4 > div.thirdSection__slider__content__img {
-  background-image: url('https://planiesg.herokuapp.com/static/images/ODS_10.png'); 
+  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/sustentabilidad/objetivos/10%20Reduccion%20de%20desiigualdades.png'); 
 }
 #thirdSection__slider__content--5 > div.thirdSection__slider__content__img {
-  background-image: url('https://planiesg.herokuapp.com/static/images/ODS_11.png'); 
+  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/sustentabilidad/objetivos/11%20ciudades%20y%20comunidades.png'); 
 }
 #thirdSection__slider__content--6 > div.thirdSection__slider__content__img {
   background-image: url('https://planiesg.herokuapp.com/static/images/ODS_16.png'); 
 }
 #thirdSection__slider__content--7 > div.thirdSection__slider__content__img {
-  background-image: url('https://planiesg.herokuapp.com/static/images/ODS_17.png'); 
+  background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/sustentabilidad/objetivos/17%20Alianzas.png'); 
 }
 
 .actividades__title {
   display: flex;
   justify-content: center;
 
-  & span {
-    
-  }
 }
 
 .forthSection__grid {
