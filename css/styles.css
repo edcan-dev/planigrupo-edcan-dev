@@ -2250,8 +2250,12 @@ MAIN TABS MARGIN
     font-weight: 700;
     line-height: 25px;
     letter-spacing: 1px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     text-align: center;     
+}
+.main__plani__info__text > span > small {
+    text-transform: uppercase;
+    font-size: 18px;
 }
 .main__plani__info__text > p {
     box-sizing: border-box;
