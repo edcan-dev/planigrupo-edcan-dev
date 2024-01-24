@@ -685,7 +685,7 @@ background: #EFEFED;
 }
 .detail__dialog__img > img{
   width: 100%;
-  height: 450px;
+  height: 600px;
   object-fit: cover;
 }
 .detail__dialog__img > a {

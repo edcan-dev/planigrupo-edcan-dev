@@ -87,8 +87,12 @@ function getDialogGridItem({ title, id, imageUrl, intro }) {
           <p>${ title }</p>
       </div>
       <div class="actividades__grid__item__img"
-          style="background-image: url('${ imageUrl }');
-      "></div>
+          style="background-image: url('${ imageUrl }'); 
+      ${
+        id == 20 ? 'background-position-x: -55px;': ''
+      }
+      
+          "></div>
       <div class="actividades__grid__item__description">
           <p>
           ${ intro == undefined ? "" : intro }

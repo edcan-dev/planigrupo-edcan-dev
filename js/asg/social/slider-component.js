@@ -44,4 +44,4 @@ class SliderComponent {
 
 }
 
-const card = new SliderComponent('.card__content', 3000).initialize();
+const card = new SliderComponent('.card__content', 10000).initialize();
