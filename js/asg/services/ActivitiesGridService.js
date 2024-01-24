@@ -20,7 +20,7 @@ export function addDialogEventListener() {
     activityAnchor.addEventListener('click',(ev) => {
       const activityId = ev.target.parentElement.nextElementSibling.innerHTML;
       const activity = activitiesReaderService.getActivityById(activityId);
-      
+
       const dialogContent = getDialogContent(activity);
       
       activitiesASGModal.renderASGActivityModal(dialogContent);
