@@ -80,11 +80,11 @@ export function renderGridByYear(year) {
 }
 
 
-function getDialogGridItem({ title, id, imageUrl, intro }) { 
+function getDialogGridItem({ shortTitle, id, imageUrl, intro }) { 
   return `
   <div class="actividades__grid__item">
       <div class="actividades__grid__item__title">
-          <p>${ title }</p>
+          <p>${ shortTitle }</p>
       </div>
       <div class="actividades__grid__item__img"
           style="background-image: url('${ imageUrl }'); 

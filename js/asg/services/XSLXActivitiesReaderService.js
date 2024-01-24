@@ -16,6 +16,7 @@ class Activity {
   title;
   imageUrl;
   description;
+  shortTitle;
   intro;
   category;
   dateString;
@@ -50,6 +51,7 @@ await readXlsxFile(xlsx, { sheet: 1 }).then(function (rows) {
     activity.quantity = element[7];
 
     activity.description = element[10];
+    activity.shortTitle = element[12];
     activity.intro = element[11];
 
     activity.year = element[5];
