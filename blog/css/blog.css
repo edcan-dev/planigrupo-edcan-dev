@@ -34,7 +34,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  background-color: #0096A9;
+  background: none;
 
   & span {
     text-align: start;
@@ -46,7 +46,6 @@
     line-height: 12px;
     letter-spacing: 1px;
     text-transform: uppercase;
-
   }
 
   & p {
@@ -125,6 +124,8 @@ blog-tag-content {
   width: 100%;
   background-color: #F5F3F1;
   padding-bottom: 40px;
+  opacity: 1;
+  transition: all .2s;
 }
 
 .recientes-content {
@@ -774,11 +775,11 @@ blog-journal-selector-selectors > i:hover {
   cursor: pointer;
 }
 
-#blog-tabs-content--5{
+#blog-tabs-content--5 {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  padding-bottom: 0px;
+  padding-bottom: 40px;
 }
 blog-post {
   /* display: flex; */
@@ -857,6 +858,8 @@ recent-posts {
   width: 25%;
   border-left: solid 1px #53575A;
   padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
 }
 recent-posts > span {
   color: #53575A;
@@ -870,7 +873,7 @@ recent-posts > span {
   display: block;
   margin-bottom: 20px;
 }
-recent-posts > p {
+recent-posts > a {
   color: #53575A;
   font-family: Raleway;
   font-size: 16px;
@@ -879,6 +882,11 @@ recent-posts > p {
   line-height: 30px; /* 187.5% */
   letter-spacing: 1px;
   margin-bottom: 10px;
+}
+recent-posts > a:hover{
+  color: #0096A9;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 @media (max-width: 1000px) {
@@ -944,4 +952,32 @@ recent-posts > p {
 
 
 
+}
+
+
+back-to-top {
+  position: fixed;
+  bottom: 80px;
+  right: 80px;
+  height: 80px;
+  width: 80px;
+}
+back-to-top > button {
+  height: 80px;
+  width: 80px;
+  background-color: #0096A9; 
+  cursor: pointer;
+  border: none;
+  border-radius: 15px;
+  transition: .3s all;
+  opacity: 0;
+}
+back-to-top > button:hover {
+  background-color: #0b8191; 
+}
+back-to-top > button > i {
+  color: #FFF !important;
+}
+back-to-top > button > i::before {
+  font-size: 1em;
 }
