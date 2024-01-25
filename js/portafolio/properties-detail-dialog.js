@@ -667,8 +667,6 @@ const getTenantsElements = (tenants) => {
 };
 
 export const renderContact = async (keyName) => {
-  // const res = await fetch(`https://edcan-dev.github.io/planigrupo-edcan-dev/data/property_detail/${keyName}.json`);
-  //const propertyDetail = await res.json();
 
   console.log(keyName);
   const propertyDetail = await getPropertyDetailByKey(keyName);
@@ -752,7 +750,7 @@ export const renderContact = async (keyName) => {
         class="portfolioContactForm">
         <input type="hidden" name="oid" value="00Di0000000cSTi">
 
-        <input type="hidden" name="retURL" value="https://edcan-dev.github.io/planigrupo-edcan-dev/portafolio.html">
+        <input type="hidden" name="retURL" value="https://thankful-meadow-071303510.4.azurestaticapps.net/portafolio.html">
 
         <div class="contacto__form__card__form">
           <div class="contacto__form__card__form__container contacto__form__card__form__container--nombre">
@@ -893,7 +891,7 @@ Monterrey, Nuevo León.
             <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" class="portfolioContactForm">
               <input type="hidden" name="oid" value="00Di0000000cSTi">
 
-              <input type="hidden" name="retURL" value="https://edcan-dev.github.io/planigrupo-edcan-dev/portafolio.html">
+              <input type="hidden" name="retURL" value="https://thankful-meadow-071303510.4.azurestaticapps.net/portafolio.html">
               
               <div class="contacto__form__card__form">
                 <div class="contacto__form__card__form__container contacto__form__card__form__container--nombre">

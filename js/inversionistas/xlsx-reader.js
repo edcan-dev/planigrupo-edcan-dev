@@ -1,12 +1,4 @@
-//const xslxPath = './../../data/inversionistas_input.xlsx';
-//let xslxPath;
-
-// if(window.location.href.includes('github')) {
-//   xslxPath = 'https://edcan-dev.github.io/planigrupo-edcan-dev/data/inversionistas_input.xlsx';
-// } else {
-//   xslxPath = './../../data/inversionistas_input.xlsx'
-// }
-const xslxPath = 'https://edcan-dev.github.io/planigrupo-edcan-dev/data/inversionistas_input.xlsx'
+const xslxPath = '../../data/inversionistas_input.xlsx';
 
 const response = await fetch(xslxPath);
 
