@@ -9,6 +9,12 @@ renderRecentPosts(posts);
 renderFeaturedPosts(posts);
 renderCarouselPosts(posts);
 
+
+document.querySelector('back-to-top > button')
+  .addEventListener('click',() => {
+    window.scrollTo({top: 0, behavior: "smooth"})
+  });
+
 /**
  * @param { BlogPost[] } posts
  */
@@ -95,52 +101,7 @@ function renderCarouselPosts(posts) {
     renderGridItem(pagesArray[0][index], htmlElement.id);
   });
 
-  // for (let index = 2; index <= pagesArray.length; index++) {
-  //   const blogPost = document.createElement("blog-posts-carousel-page");
-  //   blogPost.id = `blog-posts-carousel--page--${index}`;
-  //   blogPost.classList.add("blog-posts-carousel-page");
-  //   blogPost.classList.add("inactive");
-
-  //   blogPost.innerHTML = `
-  //   <blog-posts-carousel-grid>
-  //             <blog-posts-carousel-grid-item id="blog-posts-carousel-grid-item--1">
-  //               <img
-  //                 src=""
-  //                 alt="Imagen de blog">
-  //               <div class="text">
-  //                 <p class="description">
-  //                 </p>
-  //                 <small class="date">
-  //                 </small>
-  //               </div>
-  //             </blog-posts-carousel-grid-item>
-  //             <blog-posts-carousel-grid-item id="blog-posts-carousel-grid-item--2">
-  //               <img
-  //                 src=""
-  //                 alt="Imagen de blog">
-  //               <div class="text">
-  //                 <p class="description">
-  //                 </p>
-  //                 <small class="date">
-  //                 </small>
-  //               </div>
-  //             </blog-posts-carousel-grid-item>
-  //             <blog-posts-carousel-grid-item id="blog-posts-carousel-grid-item--3">
-  //               <img
-  //                 src=""
-  //                 alt="Imagen de blog">
-  //               <div class="text">
-  //                 <p class="description"></p>
-  //                 <small class="date"></small>
-  //               </div>
-  //             </blog-posts-carousel-grid-item>     
-  //           </blog-posts-carousel-grid>
-  //   `;
-
-  //   document.querySelector("blog-posts-carousel").appendChild(blogPost);
-  // }
-
-  console.log(pagesArray);
+  //console.log(pagesArray);
 
   var pager = new ej.grids.Pager({
     pageSize: 3,
@@ -153,14 +114,6 @@ function renderCarouselPosts(posts) {
     const newPage = ev.currentPage;
     let newPageElement = document.querySelector('#blog-posts-carousel-page--1')
     console.log(newPage);
-
-    // document.querySelectorAll("blog-posts-carousel-page").forEach((page) => {
-    //   page.classList.add("inactive");
-    //   if (page.id.includes(newPage)) {
-    //     page.classList.remove("inactive");
-    //     newPageElement = page;
-    //   }
-    // });
 
     newPageElement.innerHTML = `
       <blog-posts-carousel-grid>
@@ -213,25 +166,6 @@ function renderCarouselPosts(posts) {
       }
     });
 
-    // document.querySelectorAll('blog-posts-carousel-page')
-    //   .forEach(page => {
-    //     page.classList.add('inactive');
-    //     if(page.id.includes(newPage)) {
-    //       page.classList.remove('inactive')
-    //       newPageElement = page;
-    //     }
-    //   })
-
-    // console.log(newPageElement);
-
-    // const currentCarouselItems = newPageElement.firstElementChild.children;
-
-    // console.log(currentCarouselItems);
-
-    // for (let index = 0; index < currentCarouselItems.length; index++) {
-    //   const item = currentCarouselItems.item(index);
-    //   renderGridItem(pagesArray[0][index], item.id)
-    // }
   });
 }
 
@@ -264,21 +198,79 @@ function renderGridItem(post, elementId) {
  * @param { number } postId
  */
 function appendDialogListener(element, post) {
-  element.addEventListener("click", () => showPostEntry(post));
+  element.addEventListener("click", () => showDetailedPost(post));
 }
 
 /**
  * @param { BlogPost } post
  */
-function showPostEntry(post) {
-  console.log("clicked - " + post.title);
+function showDetailedPost({title, author, date, contents}) {
 
-  document
-    .querySelectorAll(".blog-tabs-content")
-    .forEach((content) => content.classList.add("inactive"));
-  document.getElementById("blog-tabs-content--5").classList.remove("inactive");
+  window.scrollTo({top: 390, behavior: "smooth"})
 
-  console.log();
+  console.log("clicked - " + title);
+  
+  document.querySelectorAll(".blog-tabs-content").forEach((content) => content.classList.add("inactive"));
+  const content = document.getElementById("blog-tabs-content--5");
+  content.classList.remove("inactive");
+
+  content.firstElementChild.firstElementChild.firstElementChild.innerHTML = title;
+  content.firstElementChild.firstElementChild.lastElementChild.innerHTML = `POR ${ author }, ${getFormattedDate(date)}`;
+  
+  content.firstElementChild.children.item(1).firstElementChild.src =
+  contents.find(content => content.type == 'I').content;
+
+  const blogText = content.firstElementChild.lastElementChild;
+
+  const textContentHtmlStr = contents.map(({type, content }) => {
+
+    if(type == 'S') return `<span>${ content }</span>`;
+    if(type == 'P') return `<p>${ content }</p>`;
+    return '';
+  
+  }).join('')
+  blogText.innerHTML = textContentHtmlStr;
+
+
+  const _recentPosts = [...posts].sort((a, b) => {
+    var dateA = a.date.getTime();
+    var dateB = b.date.getTime();
+    return dateA > dateB ? 1 : -1;
+  });
+
+  const recentPosts = _recentPosts.splice(0,5)
+
+  const recentPostHtmlStr = recentPosts.map(recentPost => {
+    return `<a id="${ recentPost.id }" >${ recentPost.title }</a>`
+  }).join('');
+
+  document.querySelector('recent-posts').innerHTML = recentPostHtmlStr
+
+  document.querySelectorAll('recent-posts > a')
+    .forEach( a => {
+      const post = posts.find(post => post.id == a.id);
+      a.addEventListener('click', () => showDetailedPost(post));
+    })
+
+    // setInterval(() => {
+    //   console.log(window.scrollY);
+
+    // }, 2000)
+
+    addEventListener("scroll", (event) => {
+
+      if(window.scrollY < 1000) {
+        document.querySelector('back-to-top > button').style.opacity = '0';
+      } else {
+
+        document.querySelector('back-to-top > button').style.opacity = '1';
+      }
+
+    });
+
+
+
+  
 }
 /**
  *
@@ -286,7 +278,7 @@ function showPostEntry(post) {
  */
 function removeDialogListener(elements) {
   elements.forEach((element) =>
-    element.removeEventListener("click", showPostEntry)
+    element.removeEventListener("click", showDetailedPost)
   );
 }
 
