@@ -726,7 +726,7 @@ article {
                 font-size: 10px;
                 font-style: normal;
                 font-weight: 900;
-                text-decoration: noneb;
+                text-decoration: none;
                 line-height: 20px;
                 /* 200% */
                 letter-spacing: 1px;
@@ -2576,4 +2576,264 @@ li {
     padding: 10px !important;
   }
 
+}
+
+
+calendar {
+  display: flex;
+  width: 100%;
+  min-height: 200px;
+  flex-direction: column;
+  padding-right: 40px;
+  padding-bottom: 40px;
+}
+
+calendar-filters {
+  height: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 40px;
+}
+calendar-filter-item > label {
+  color: #97928A;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px; /* 102.071% */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+calendar-filter-item > select {
+  height: 30px;
+  width: 150px;
+  background-color: #EFEFED;
+  border: solid 1px #DADAD8;
+  color: #97928A;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px; /* 102.071% */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+calendar-filter-item > option {
+  height: 40px;
+  width: 150px;
+  background-color: #EFEFED;
+  border: solid 1px #DADAD8;
+  color: #97928A;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px; /* 102.071% */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+calendar-title {
+
+  background-color: #f0f0f0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  height: 30px;
+
+  color: #D7282F;
+  text-align: start;
+  font-family: 'Barlow Condensed';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+calendar-events {
+  margin-bottom: 40px;
+}
+
+calendar-events > calendar-event-item {
+  display: flex;
+  height: 60px;
+  background-color: #f0f0f0;
+  justify-content: space-between;
+  padding: 5px 15px;
+}
+calendar-events > calendar-event-item:nth-child(even) {
+  background: #DADAD8;
+}
+
+calendar-events > calendar-event-item > calendar-event-item-date {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: space-around;
+}
+calendar-events > calendar-event-item > calendar-event-item-date > span {
+  color: #D7282F;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19.8px; /* 61.875% */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+calendar-events > calendar-event-item > calendar-event-item-date > small {
+  color: #53575A;
+  text-align: justify;
+  font-family: Raleway;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 200% */
+  letter-spacing: 1px;
+}
+
+calendar-events > calendar-event-item > calendar-event-item-title {
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-around;
+  flex: 1;
+  padding: 0px 15px;
+}
+calendar-events > calendar-event-item > calendar-event-item-title > span {
+  color: #53575A;
+  text-align: justify;
+  font-family: Raleway;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 1px;
+}
+calendar-events > calendar-event-item > calendar-event-item-title > small {
+  color: #53575A;
+  text-align: justify;
+  font-family: Raleway;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 200% */
+  letter-spacing: 1px;
+}
+
+calendar-event-item-icons {
+  display: flex;
+  align-items: center;
+}
+calendar-event-item-icons > span {
+  display: flex;
+  margin-left: 15px;
+  height: 25px;
+}
+calendar-event-item-icons > span:hover {
+  & i {
+    color: #D7282F !important;
+    cursor: pointer;
+  }
+}
+calendar-event-item-icons > span > i::before {
+  font-size: 25px;
+}
+
+
+calendar-event-detail {
+  width: 100%;
+}
+
+
+calendar-event-detail > calendar-event-detail-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #D7282F;
+  background-color: #0096A9;
+  padding: 5px 15px;
+  min-height: 60px;
+}
+
+calendar-event-detail > calendar-event-detail-title > h3 {
+  color: #FFF;
+  text-align: justify;
+  font-family: Raleway;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+calendar-event-detail > calendar-event-detail-title > span {
+  color: #FFF;
+  text-align: end;
+  font-family: Raleway;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+calendar-event-detail > calendar-event-detail-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 60px;
+  background-color: #f0f0f0;
+  padding: 5px 15px;
+}
+
+calendar-event-detail > calendar-event-detail-content > calendar-event-detail-content-resource {
+  margin-bottom: 10px;
+}
+
+calendar-event-detail > calendar-event-detail-content > calendar-event-detail-content-resource > p {
+  color: #53575A;
+  text-align: justify;
+  font-family: Raleway;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+calendar-event-detail > calendar-event-detail-content > calendar-event-detail-content-resource > a {
+  color: #D7282F;
+  text-align: justify;
+  font-family: Raleway;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+calendar-event-detail > calendar-event-detail-content > calendar-event-detail-content-link {
+  margin-bottom: 10px;
+}
+
+calendar-event-detail > calendar-event-detail-content > calendar-event-detail-content-link > p {
+  color: #53575A;
+  text-align: justify;
+  font-family: Raleway;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+calendar-event-detail > calendar-event-detail-content > calendar-event-detail-content-link > a {
+  color: #D7282F;
+  text-align: justify;
+  font-family: Raleway;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 1px;
 }

@@ -1,36 +1,3 @@
-// const gobernanzaActivities = [];
-// try {
-//   const xslxPath = "https://edcan-dev.github.io/planigrupo-edcan-dev/data/asg/asg_actividades.xlsx";
-
-// const response = await fetch(xslxPath);
-// const xlsx = await response.blob();
-
-// class ActivityDetail {
-//   id;  
-//   title;
-//   imgUrl;
-//   description;
-//   category;
-//   dateString;
-// }
-
-
-// await readXlsxFile(xlsx, { sheet: 1 }).then(function (rows) {
-  
-  //   for (let i = 0; i < rows.length; i++) {
-    //     const element = rows[i];
-    // //    console.log(element);
-    //     if(element[0] == searchedCategory) {
-      //       gobernanzaActivities.push(element)
-      //     }
-      //   }
-      // });
-      // } catch(e) {
-        
-        // }
-        
-        
-        
 if (true) {
   const searchedCategory = "Gobernanza";
   console.warn(`[NOT FOUND ACTIVITIES FOR ${searchedCategory} CATEGORY]`);

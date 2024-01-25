@@ -46,17 +46,23 @@
   <script defer type="module" src="js/inversionistas/accordion-component.js"></script>
   <script defer src="https://kit.fontawesome.com/c4df7659ff.js" crossorigin="anonymous"></script>
 
-  <!--style reference from the Calendar component-->
-    <link href="https://cdn.syncfusion.com/ej2/23.2.4/ej2-base/styles/material.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/23.2.4/ej2-buttons/styles/material.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/23.2.4/ej2-calendars/styles/material.css" rel="stylesheet">
-    <script src="https://cdn.syncfusion.com/ej2/23.2.4/dist/ej2.min.js" type="text/javascript"></script>
-    <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type ="text/javascript"></script>
+  <!-- ICS Syncfusion -->
+  <link href="https://cdn.syncfusion.com/ej2/24.1.41/ej2-base/styles/material.css" rel="stylesheet">
+  <link href="https://cdn.syncfusion.com/ej2/24.1.41/ej2-buttons/styles/material.css" rel="stylesheet">
+  <link href="https://cdn.syncfusion.com/ej2/24.1.41/ej2-calendars/styles/material.css" rel="stylesheet">
+  <link href="https://cdn.syncfusion.com/ej2/24.1.41/ej2-dropdowns/styles/material.css" rel="stylesheet">
+  <link href="https://cdn.syncfusion.com/ej2/24.1.41/ej2-inputs/styles/material.css" rel="stylesheet">
+  <link href="https://cdn.syncfusion.com/ej2/24.1.41/ej2-navigations/styles/material.css" rel="stylesheet">
+  <link href="https://cdn.syncfusion.com/ej2/24.1.41/ej2-popups/styles/material.css" rel="stylesheet"> 
+  <link href="https://cdn.syncfusion.com/ej2/24.1.41/ej2-schedule/styles/material.css" rel="stylesheet">
+  <script src="https://cdn.syncfusion.com/ej2/24.1.41/dist/ej2.min.js" type="text/javascript"></script>
+  <!-- <script src="es5-datasource.js" type="text/javascript"></script> -->
+  <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type ="text/javascript"></script>
+  <!-- ICS Syncfusion -->
 
-    <script type="module" src="./js/components/calendar-syncfusion/calendar-syncfusion.js"></script>
-    <link rel="stylesheet" href="./css/components/calendar-syncfusion.css">
-
-    <script defer type="module" src="js/inversionistas/comunicadosComponent.js"></script>
+  <script defer type="module" src="./js/inversionistas/comunicadosComponent.js"></script>
+  <script defer type="module" src="./js/inversionistas/calendar/calendarService.js"></script>
+  <script defer type="module" src="./js/inversionistas/calendar/xlsxReaderService.js"></script>
 
 </head>
 
@@ -1063,8 +1069,152 @@
 
               <div id="tab_content--5" class="tab_content inactive">
 
-               jewjeje
+                <calendar>
 
+                  <calendar-filters>
+                    <calendar-filter-item>
+                      <label>MES</label>
+                      <select id="month">
+                        <option value="jan">Enero</option>
+                        <option value="feb">Febrero</option>
+                        <option value="mar">Marzo</option>
+                        <option value="apr">Abril</option>
+                        <option value="may">Mayo</option>
+                        <option value="jun">Junio</option>
+                        <option value="jul">Julio</option>
+                        <option value="aug">Agosto</option>
+                        <option value="sep">Septiembre</option>
+                        <option value="oct">Octubre</option>
+                        <option value="nov">Noviembre</option>
+                        <option value="dec">Diciembre</option>
+                      </select>
+                    </calendar-filter-item>
+                    <calendar-filter-item>
+                      <label>AÑO</label>
+                      <select id="year">
+
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                        <option value="2028">2028</option>
+                        <option value="2029">2029</option>
+                        <option value="2030">2030</option>
+                        <option value="2031">2031</option>
+                        <option value="2032">2032</option>
+                        <option value="2033">2033</option>
+
+                      </select>
+                    </calendar-filter-item>
+
+                  </calendar-filters>
+
+                  <calendar-title>
+                    <span>ACTIVIDADES</span>
+                  </calendar-title>
+
+                  <calendar-events>
+
+                  
+                    <calendar-event-item>
+
+                      <calendar-event-item-date>
+                        <span></span>
+                        <small></small>
+                      </calendar-event-item-date>
+
+                      <calendar-event-item-title>
+                        <span></span>
+                        <small></small>
+                      </calendar-event-item-title>
+
+                      <!-- 
+                      <calendar-event-item-icons>
+                        <span>
+                          <i class="fa-regular fa-newspaper " style="color: #545859;"></i>
+                        </span>
+                        <span>
+                          <i class="fa-regular fa-calendar " style="color: #545859;"></i>
+                        </span>
+                      </calendar-event-item-icons>
+                      -->
+
+                    </calendar-event-item>
+                    <!-- <calendar-event-item>
+
+                      <calendar-event-item-date>
+                        <span>24</span>
+                        <small>ENERO</small>
+                      </calendar-event-item-date>
+
+                      <calendar-event-item-title>
+                        <span>Nombre Evento</span>
+                        <small>PARTICIPANTES</small>
+                      </calendar-event-item-title>
+
+                      <calendar-event-item-icons>
+                        <span>
+                          <i class="fa-regular fa-newspaper " style="color: #545859;"></i>
+                        </span>
+                        <span>
+                          <i class="fa-regular fa-calendar " style="color: #545859;"></i>
+                        </span>
+                      </calendar-event-item-icons>
+
+                    </calendar-event-item> -->
+
+                 
+                  </calendar-events>
+
+
+                  <calendar-event-detail class="inactive">
+                    <calendar-event-detail-title>
+                      <h3>
+                        Titulo Evento
+                        Titulo Evento
+                        Titulo Evento
+                        Titulo Evento
+                        Titulo Evento
+                        Titulo Evento
+                        Titulo Evento
+                        Titulo Evento
+                        Titulo Evento
+                        Titulo Evento
+                      </h3>
+                        <span>1 JUNIO, 2023</span>
+
+                    </calendar-event-detail-title>
+
+                    <calendar-event-detail-content>
+                      <calendar-event-detail-content-resource>
+                        <p>
+                          Recurso:
+                        </p>
+                        <a href="">Recurso Recurso Recurso</a>
+                      </calendar-event-detail-content-resource>
+
+                      <calendar-event-detail-content-link>
+                        <p>
+                          Enlace:
+                        </p>
+                        <a href="">Enlace enlace</a>
+                      </calendar-event-detail-content-link>
+
+
+                    </calendar-event-detail-content>
+
+                  </calendar-event-detail>
+
+                </calendar>
+
+                <!-- Semantic Element for ICS Generation -->
+                <div id="container">
+                  <!-- <input id="ics-export" type="button" value="Export"> -->
+                  <div id="Schedule" style="display: none;"></div>
+                </div>
+              
               </div>
              <!--  <div id="tab_content--5" class="tab_content inactive">
               </div> -->
