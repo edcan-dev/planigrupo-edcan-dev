@@ -1,5 +1,6 @@
 import { events, Event, monthDictionary } from "./xlsxReaderService.js";
 
+const language = document.head.querySelector("[property~=language][content]").content;
 // var scheduleData = [
 //   {
 //     Id: 1,
@@ -93,7 +94,12 @@ function renderEventElementsByYearAndMonth(year, month) {
   document.querySelector('calendar-event-detail').innerHTML = '';
 
   if(filteredEvent.length == 0) {
-    document.querySelector('calendar-title > span').innerHTML = 'NO HAY ACTIVIDADES EN ESTE MES';
+
+    const activitiesTitle = language == 'english'
+    ? 'NO ACTIVITIES FOUND FOR THIS MONTH'
+    : 'NO HAY ACTIVIDADES EN ESTE MES';
+
+    document.querySelector('calendar-title > span').innerHTML = activitiesTitle;
   }
 
   filteredEvent.forEach(appendEventItem);
@@ -114,7 +120,11 @@ function appendEventItem(event) {
   const { name, day, qoute } = event;
   const container = document.querySelector('calendar-events');
 
-  document.querySelector('calendar-title > span').innerHTML = 'ACTIVIDADES';
+  const activitiesTitle = language == 'english'
+  ? 'ACTIVITIES'
+  : 'ACTIVIDADES';
+
+  document.querySelector('calendar-title > span').innerHTML = activitiesTitle;
   
   container.innerHTML += `
   <calendar-event-item>
