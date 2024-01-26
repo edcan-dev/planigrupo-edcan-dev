@@ -72,5 +72,4 @@ console.log(
     document.querySelectorAll('.gober_asg_content').item(1).classList.remove('inactive')
 
   } else {
-    console.log('asdasdasd');
   }
