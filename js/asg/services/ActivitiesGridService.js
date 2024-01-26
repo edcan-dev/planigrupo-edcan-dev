@@ -3,7 +3,7 @@ import { activitiesASGModal } from "./ActivitiesASGModal.js";
 
 const ASG_ACTIVITIES_DIRECTORY_URL = 'https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/imagenes-asg/';
 
-
+const language = document.head.querySelector("[property~=language][content]").content;
 export let activities = activitiesReaderService.getActivities();
 
 
@@ -99,7 +99,11 @@ function getDialogGridItem({ shortTitle, id, imageUrl, intro }) {
           </p>
       </div>
       <div class="actividades__grid__item__a">
-          <a>VER MÁS</a>
+      ${
+        language == 'english'
+        ? `<a>MORE</a>`
+        : `<a>VER MÁS</a>`
+      }
       </div>
       <small class="inactive">${ id }</small>
   </div>
@@ -138,7 +142,12 @@ function getDialogContent({ title, dateString, category, description, imageUrl, 
     </div>
 
     <div class="detail__dialog__close">
-      <button>Cerrar</button>
+      <button>
+      ${
+        language == 'english'
+        ? 'Close' : 'Cerrar' 
+      }
+      </button>
     </div>
   </section>
   `;

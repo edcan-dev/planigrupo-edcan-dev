@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta property="language" content="spanish"/>
+    <meta property="language" content="english"/>
     <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:100,200,300,400,500,600,700,800,900|Fjalla+One|Raleway:100,200,300,400,500,600,700,800,900&amp;display=swap" rel="stylesheet">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/nosotros/styles.css" />
-    <link rel="stylesheet" href="./css/portafolio/portafolio.styles.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/nosotros/styles.css" />
+    <link rel="stylesheet" href="../css/portafolio/portafolio.styles.css" />
     <link
       rel="shortcut icon"
       href="https://planigrupo.blob.core.windows.net/planigrupo/assets/favicon.png"
       type="image/x-icon"
     />
-    <title>ASG - Inicio - GM Inmobiliaria</title>
-    <script defer src="./js/hero-start-anim.js"></script>
+    <title>ESG - Home - GM Inmobiliaria</title>
+    <script defer src="../js/hero-start-anim.js"></script>
 
     <script  src="https://cdn.syncfusion.com/ej2/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
     <script  src="https://cdn.syncfusion.com/ej2/ej2-svg-base/dist/global/ej2-svg-base.min.js"
@@ -22,7 +22,7 @@
     <script  src="https://cdn.syncfusion.com/ej2/ej2-data/dist/global/ej2-data.min.js" type="text/javascript"></script>
     <script src="https://cdn.syncfusion.com/ej2/ej2-maps/dist/global/ej2-maps.min.js"></script>
 
-    <script defer src="./js/sidebar.js"></script>
+    <script defer src="../js/sidebar.js"></script>
 
     <link href="https://cdn.syncfusion.com/ej2/23.1.36/ej2-base/styles/material.css" rel="stylesheet">
     <link href="https://cdn.syncfusion.com/ej2/23.1.36/ej2-buttons/styles/material.css" rel="stylesheet">
@@ -34,27 +34,27 @@
     <script defer src="https://kit.fontawesome.com/c4df7659ff.js" crossorigin="anonymous"></script>
 
     <!-- ASG CUSTOM FILES -->
-    <link rel="stylesheet" href="./css/asg/asg.styles.css">
-    <script defer src="./js/asg/slider-component.js"></script>
+    <link rel="stylesheet" href="../css/asg/asg.styles.css">
+    <script defer src="../js/asg/slider-component.js"></script>
     
-    <!--style reference from the Calendar component-->
+    <!--style reference from the Calendar component
     <link href="https://cdn.syncfusion.com/ej2/23.1.36/ej2-base/styles/material.css" rel="stylesheet">
     <link href="https://cdn.syncfusion.com/ej2/23.1.36/ej2-buttons/styles/material.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/23.1.36/ej2-calendars/styles/material.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/23.1.36/ej2-calendars/styles/material.css" rel="stylesheet">-->
 
     <!-- ASG CAROUSEL -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <script defer src="./js/libs/flickity.pkgd.min.js"></script>
+    <script defer src="../js/libs/flickity.pkgd.min.js"></script>
     <!-- Actividades Grid -->
-    <script defer type="module" src="./js/asg/read-excel-file.min.js"></script>
-    <script defer type="module" src="./js/asg/services/XSLXActivitiesReaderService.js"></script>
-    <script defer type="module" src="./js/asg/services/ActivitiesASGModal.js"></script>
-    <script defer type="module" src="./js/asg/services/ActivitiesGridService.js"></script>
-    <script defer type="module" src="./js/asg/services/ActivitiesPagingAndSortingService.js"></script>
+    <script defer type="module" src="../js/asg/read-excel-file.min.js"></script>
+    <script defer type="module" src="../js/asg/services/XSLXActivitiesReaderService.js"></script>
+    <script defer type="module" src="../js/asg/services/ActivitiesASGModal.js"></script>
+    <script defer type="module" src="../js/asg/services/ActivitiesGridService.js"></script>
+    <script defer type="module" src="../js/asg/services/ActivitiesPagingAndSortingService.js"></script>
     
     
     <!-- Dialog Custom Script -->
-    <script defer src="./js/asg/generic-tab-component.js"></script>
+    <script defer src="../js/asg/generic-tab-component.js"></script>
 
     <link href="https://cdn.syncfusion.com/ej2/24.1.41/ej2-base/styles/material.css" rel="stylesheet">
     <link href="https://cdn.syncfusion.com/ej2/24.1.41/ej2-grids/styles/material.css" rel="stylesheet">
@@ -65,7 +65,6 @@
     <link href="https://cdn.syncfusion.com/ej2/24.1.41/ej2-lists/styles/material.css" rel="stylesheet">
     <link href="https://cdn.syncfusion.com/ej2/24.1.41/ej2-inputs/styles/material.css" rel="stylesheet">
     <link href="https://cdn.syncfusion.com/ej2/24.1.41/ej2-calendars/styles/material.css" rel="stylesheet">
-    
     
     
     <link href="https://cdn.syncfusion.com/ej2/24.1.41/ej2-splitbuttons/styles/material.css" rel="stylesheet">
@@ -79,6 +78,15 @@
   </head>
 
   <body>
+    <div class="languaje--selector">
+      <li>
+        <a href="../asg.html">Esp</a>
+        /
+        <b>
+          <a href="">Eng</a>
+        </b>
+      </li>
+    </div>
     <div id="sidebar-container">
       <aside id="default-sidebar">
   
@@ -90,25 +98,25 @@
               <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/svgs/magnifying.svg">
             </li>
             <li class="header__nav__item" id="nav__item--nosotros">
-              <a class="">Nosotros</a>
+              <a class="">About Us</a>
             </li>
             <li class="header__nav__item">
-              <a href="./portafolio.html">Portafolio</a>
+              <a href="./portafolio.html">Our Portfolio</a>
             </li>
             <li class="header__nav__item" id="nav__item--comer">
-              <a>Comercialización</a>
+              <a>Leasing</a>
             </li>
-            <li class="header__nav__item"><a href="./inversionistas.html">Inversionistas</a></li>
+            <li class="header__nav__item"><a href="./inversionistas.html">Investors</a></li>
   
             <li class="header__nav__item" id="nav__item--asg">
-              <a class="">ASG</a>
+              <a class="">ESG</a>
             </li>
   
             <li class="header__nav__item"><a
-                href="https://portaldeclientes.planigrupo.com/auth/realms/master/protocol/openid-connect/auth?client_id=estados-de-cuenta-id&redirect_uri=https%3A%2F%2Fportaldeclientes.planigrupo.com%2Fhome&state=a536db1e-fa15-48e7-91b4-f885b5c6791b&response_mode=fragment&response_type=code&scope=openid&nonce=7ad26bbc-8cfc-4064-a337-1cb175cc69f7">Clientes</a>
+                href="https://portaldeclientes.planigrupo.com/auth/realms/master/protocol/openid-connect/auth?client_id=estados-de-cuenta-id&redirect_uri=https%3A%2F%2Fportaldeclientes.planigrupo.com%2Fhome&state=a536db1e-fa15-48e7-91b4-f885b5c6791b&response_mode=fragment&response_type=code&scope=openid&nonce=7ad26bbc-8cfc-4064-a337-1cb175cc69f7">Clients</a>
             </li>
             <li class="header__nav__item">
-              <a href="./contacto.html">Contacto</a>
+              <a href="./contacto.html">Contact</a>
             </li>
   
           </ul>
@@ -116,36 +124,36 @@
           <ul class="navbar__responsive__list--second">
             <div>
               <li class="header__nav__item"><a href="./nosotros.html">Nosotros</a></li>
-              <li class="header__nav__item"><a href="./lo-que-hacemos.html">Lo que hacemos</a></li>
-              <li class="header__nav__item"><a href="./equipo-ejecutivo.html">Equipo Ejecutivo</a></li>
+              <li class="header__nav__item"><a href="./lo-que-hacemos.html">What we do</a></li>
+              <li class="header__nav__item"><a href="./equipo-ejecutivo.html">Executive Team</a></li>
               <li class="header__nav__item"><a href="./historia.html">Historia</a></li>
           </ul>
           <ul class="navbar__responsive__list--second--comer">
             <div>
-              <li class="header__nav__item"><a href="./comercializacion.html">Comercialización</a></li>
-              <li class="header__nav__item"><a href="./oportunidades.html">Oportunidades</a></li>
+              <li class="header__nav__item"><a href="./comercializacion.html">Leasing</a></li>
+              <li class="header__nav__item"><a href="./oportunidades.html">Opportunities</a></li>
           </ul>
-          
+  
           <ul class="navbar__responsive__list--second--asg">
             <div>
               <li class="header__nav__item">
-                <a href="./asg.html">ASG</a>
+                <a href="./asg.html">ESG</a>
               </li>
               <li class="header__nav__item">
-                <a href="./asg-sustentabilidad.html">Sustentabilidad</a>
+                <a href="./asg-sustentabilidad.html">Sustentability</a>
               </li>
               <li class="header__nav__item">
-                <a href="./asg-ambiental.html">Ambiental</a>
+                <a href="./asg-ambiental.html">Enviromental</a>
               </li>
               <li class="header__nav__item">
-                <a href="./asg-social.html">Social</a>
+                <a href="./asg-social.html">Social Capital</a>
               </li>
               <li class="header__nav__item">
-                <a href="./asg-gobernanza.html">Gobernanza</a>
+                <a href="./asg-gobernanza.html">Governance</a>
               </li>
-              <li class="header__nav__item">
-    <!--            <a href="./asg-contacto.html">Contacto</a>
--->              </li>
+              <!-- <li class="header__nav__item">
+                <a href="./asg-contacto.html">Contact</a>
+              </li> -->
           </ul>
   
         </nav>
@@ -155,58 +163,56 @@
       <div class="header__bars">
         <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/bars-solid.svg" height="40px" />
       </div>
-      <a href="./index.html">
+      <a href="./index-en.html">
         <img class="svg__logo" src="https://planigrupo.blob.core.windows.net/planigrupo/assets/logo.svg" alt="" />
       </a>
       <nav>
         <ul class="header__nav">
           <li class="header__nav__item dropdown">
-            <a href="./nosotros.html" class="dropbtn">Nosotros</a>
+            <a href="./nosotros.html" class="dropbtn">About Us</a>
             <div class="dropdown-content">
-              <a href="./nosotros.html">Nosotros</a>
-              <a href="./lo-que-hacemos.html">Lo que hacemos</a>
-              <a href="./equipo-ejecutivo.html">Equipo Ejecutivo</a>
-              <a href="./historia.html">Historia</a>
+              <a href="./nosotros.html">About Us</a>
+              <a href="./lo-que-hacemos.html">What we do best</a>
+              <a href="./equipo-ejecutivo.html">Executive Team</a>
+              <a href="./historia.html">History</a>
             </div>
           </li>
           <li class="header__nav__item">
-            <a href="./portafolio.html">Portafolio</a>
+            <a href="./portafolio.html">Our Portfolio</a>
           </li>
           <li class="header__nav__item dropdown">
-            <a href="./comercializacion.html" class="dropbtn">Comercialización</a>
+            <a href="./comercializacion.html" class="dropbtn">Leasing</a>
             <div class="dropdown-content">
-              <a href="./comercializacion.html">Comercialización</a>
-              <a href="./oportunidades.html">Oportunidades</a>
+              <a href="./comercializacion.html">Leasing</a>
+              <a href="./oportunidades.html">Opportunities</a>
             </div>
           </li>
-          <li class="header__nav__item"><a href="./inversionistas.html">Inversionistas</a></li>
+          <li class="header__nav__item"><a href="./inversionistas.html">Investors</a></li>
           <!-- <li class="header__nav__item"><a href="./asg.html">Asg</a></li> -->
-          
+  
           <li class="header__nav__item dropdown">
-            <a class="dropbtn" href="./asg.html">ASG</a>
+            <a class="dropbtn" href="./asg.html">ESG</a>
             <div class="dropdown-content">
-              <a href="./asg.html">ASG</a>
-              <a href="./asg-sustentabilidad.html">Sustentabilidad</a>
-              <a href="./asg-ambiental.html">Ambiental</a>
+              <a href="./asg.html">ESG</a>
+              <a href="./asg-sustentabilidad.html">Sustentability</a>
+              <a href="./asg-ambiental.html">Enviromental</a>
               <a href="./asg-social.html">Social</a>
-              <a href="./asg-gobernanza.html">Gobernanza</a>
-  <!--            <a href="./asg-contacto.html">Contacto</a>
--->            </div>
+              <a href="./asg-gobernanza.html">Governance</a>
+            </div>
           </li>
           <li class="header__nav__item"><a
-              href="https://portaldeclientes.planigrupo.com/auth/realms/master/protocol/openid-connect/auth?client_id=estados-de-cuenta-id&redirect_uri=https%3A%2F%2Fportaldeclientes.planigrupo.com%2Fhome&state=a536db1e-fa15-48e7-91b4-f885b5c6791b&response_mode=fragment&response_type=code&scope=openid&nonce=7ad26bbc-8cfc-4064-a337-1cb175cc69f7">Clientes</a>
+              href="https://portaldeclientes.planigrupo.com/auth/realms/master/protocol/openid-connect/auth?client_id=estados-de-cuenta-id&redirect_uri=https%3A%2F%2Fportaldeclientes.planigrupo.com%2Fhome&state=a536db1e-fa15-48e7-91b4-f885b5c6791b&response_mode=fragment&response_type=code&scope=openid&nonce=7ad26bbc-8cfc-4064-a337-1cb175cc69f7">Clients</a>
           </li>
           <li class="header__nav__item">
-            <a href="./contacto.html">Contacto</a>
+            <a href="./contacto.html">Contact</a>
           </li>
           <li class="header__nav__item header__nav__item--search">
-            <input type="text" placeholder="Buscar..." />
+            <input type="text" placeholder="Search..." />
             <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/svgs/magnifying.svg">
           </li>
         </ul>
       </nav>
     </header>
-  
     <main>
 
       <div class="hero">
@@ -249,15 +255,16 @@
             <i class="fa-solid fa-angle-right slider__info" id="slider__info__next" aria-hidden="true"></i>
           </div> -->
 
-          <span>EN GM Inmobiliaria</span>
+          <span>IN GM Inmobiliaria</span>
 
           <div class="hero__text__content">
 
             <p class="hero__text__content__p">
-              Nos comprometemos a generar valor sostenible y de largo plazo.
+              We are committed to generating sustainable and long-term value.
             </p>
             <p class="hero__text__content__p invisible">
-              Establecemos vínculos sólidos con nuestros grupos de interés para impulsar el crecimiento sostenible.
+              
+              We established solid links with our stakeholders to improve sustainable growth.
             </p>
           </div>
         </div>
@@ -265,12 +272,12 @@
 
       <div class="main__hero__downbar main__hero__downbar--red">
         <div class="main__hero_downbar__text">
-          <span>CONOCE</span>
-          <p>ASG</p>
+          <span>MEET</span>
+          <p>ESG</p>
           <!--<p>EMPRESA</p>-->        
         </div>
         <div class="main__hero_downbar__title">
-          <h2>INICIO</h2>
+          <h2>HOME</h2>
         </div>
       </div>
 
@@ -285,10 +292,10 @@
 
             <div class="tabs__selectors">
               <ul>
-                <li id="asg_tab_selector--1" class="asg_tab_selector selected">¿QUÉ ESTAMOS HACIENDO?</li>
-                <li id="asg_tab_selector--2" class="asg_tab_selector" >¿PARA QUÉ?</li>
-                <li id="asg_tab_selector--3" class="asg_tab_selector" >¿QUIÉNES PARTICIPARON?</li>
-                <li id="asg_tab_selector--4" class="asg_tab_selector" >MATERIALIDAD Y ESTRATEGIA ASG</li>
+                <li id="asg_tab_selector--1" class="asg_tab_selector selected">WHAT WE ARE DOING?</li>
+                <li id="asg_tab_selector--2" class="asg_tab_selector">WHY?</li>
+                <li id="asg_tab_selector--3" class="asg_tab_selector" >WHO PARTICIPATED?</li>
+                <li id="asg_tab_selector--4" class="asg_tab_selector" >MATERIALITY AND ESG STRATEGY</li>
               </ul>
             </div>
 
@@ -302,7 +309,7 @@
             <div id="asg_tab_content--1" class="asg_tab_content">
               <div class="asg_tab_content__p">
                 <p>
-                  En GM Inmobiliaria somos conscientes de los impactos que tenemos en el medio ambiente y la sociedad, así como el impacto que provocamos con todos nuestros grupos de interés. Por ello, durante 2021 decidimos reforzar nuestra estrategia de sustentabilidad, haciendo nuestro primer análisis de materialidad para guiar nuevas iniciativas y fortalecer las existentes.
+                  At GM Inmobiliaria we are aware of the impacts we have on the environment and society, as well as the impact we have on all our stakeholders. Therefore, during 2021 we suggest reinforcing our sustainability strategy, conducting our first materiality analysis to guide new initiatives and strengthen existing ones.
                 </p>
               </div>
               <div class="asg_tab_content__anchor">
@@ -312,7 +319,8 @@
             
             <div id="asg_tab_content--2" class="asg_tab_content inactive">
               <div class="asg_tab_content__p">
-                <p>El objetivo de este ejercicio fue definir cuáles eran los temas materiales para la organización y sus grupos de interés. Con ello, esperamos poder optimizar los recursos en estrategias que generen el mayor beneficio para todos así como reconocer riesgos potenciales en la operación.
+                <p>
+                  The objective of this exercise was to define what were the material issues for the organization and its interest groups. With this, we hope to be able to optimize resources in strategies that generate the greatest benefit for everyone as well as recognize potential risks in the operation.
                 </p>
               </div>
               <div class="asg_tab_content__anchor">
@@ -323,11 +331,11 @@
             <div id="asg_tab_content--3" class="asg_tab_content inactive">
               <div class="asg_tab_content__p">
                 <p>
-                  La base para identificar y seleccionar a los grupos de interés participantes fue todo aquel grupo que esté directamente involucrado en procesos operativos tradicionales del negocio de acuerdo con nuestro objeto social.
+                  The basis for identifying and selecting the participating interest groups was all those groups that are directly involved in traditional operational processes of the business in accordance with our corporate purpose.
                 </p>
               </div>
               <div class="asg_tab_content__anchor">
-                <a href="./asg-sustentabilidad.html?groups=true">Conoce nuestros grupos de interés</a>
+                <a href="./asg-sustentabilidad.html?groups=true">Meet our interest groups</a>
               </div>
             </div>
             
@@ -335,11 +343,11 @@
             <div id="asg_tab_content--4" class="asg_tab_content inactive">
               <div class="asg_tab_content__p">
                 <p>
-                  Durante el 2021 llevamos a cabo nuestro primer análisis de materialidad para formular una estrategia ASG (Ambiental, Social y Gobierno Corporativo).
+                  During 2021 we carried out our first materiality analysis to formulate an ESG (Environmental, Social and Corporate Governance) strategy.
                 </p>
               </div>
               <div class="asg_tab_content__anchor">
-                <a href="./asg-sustentabilidad.html">Ver más</a>
+                <a href="./asg-sustentabilidad.html">More Info</a>
               </div>
             </div>
 
@@ -355,7 +363,7 @@
           <div class="reports__item reports__item--1">
             
             <div class="reports__item__title_container">
-              <span>DESCARGAR REPORTE ANUAL</span>
+              <span>DOWNLOAD ANNUAL REPORT</span>
             </div>
 
             <div class="reports__item__reports">
@@ -364,13 +372,13 @@
               </div>
               <div class="reports__item__reports__report">
                 <span>2022</span>
-                <a href="https://cdn.investorcloud.net/plani/InformacionFinanciera/InformesAnuales/2022-Anual.pdf" target="_blank">VER</a>
+                <a href="https://cdn.investorcloud.net/plani/InformacionFinanciera/InformesAnuales/2022-Anual.pdf" target="_blank">GO</a>
                 <hr>
               </div>
 
               <div class="reports__item__reports__report">
                 <span>2021</span>
-                <a href="https://cdn.investorcloud.net/plani/InformacionFinanciera/InformesAnuales/2021-Anual.pdf" target="_blank">VER</a>
+                <a href="https://cdn.investorcloud.net/plani/InformacionFinanciera/InformesAnuales/2021-Anual.pdf" target="_blank">GO</a>
                 <hr>
               </div>
 
@@ -408,20 +416,20 @@
         <div class="actividades">
           
           <div class="actividades__title">
-            <span>ACTIVIDADES</span>
+            <span>ACTIVITIES</span>
           </div>
 
           <div class="actividades__filters">
             <div class="actividades__filters__filter">
               <span>
-                Filtrar por:
+                Filter by:
               </span>
 
               <select id="category_select">
-                <option value="all">Todas</option>
-                <option value="Social">Sociales</option>
-                <option value="Ambiental">Ambientales</option>
-                <option value="Corporativa">Corporativas</option>
+                <option value="all">All</option>
+                <option value="Social">Social</option>
+                <option value="Ambiental">Enviromental</option>
+                <option value="Corporativa">Corporative</option>
               </select>
             </div>
 
@@ -431,7 +439,7 @@
               </span>
 
               <select id="year_select">
-                <option value="all">Todas</option>
+                <option value="all">All</option>
                 <option value="2023">2023</option>
                 <option value="2022">2022</option>
                 <option value="2021">2021</option>
@@ -534,20 +542,20 @@
 
 
     <footer class="footer">
-    
       <div class="social__container">
   
         <span style="margin-bottom: 10px;">
-          SÍGUENOS EN<br/>
-          NUESTRAS REDES    
+          FOLLOW US<br />
+          ON SOCIAL MEDIA
         </span>
   
         <div class="social__container__icons">
-          
-          <a href="https://www.youtube.com/@grupomexico8955" class="">
-          <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/icon-youtube-grey.png" height="24px">
-        </a>
-          
+  
+          <a href="https://www.youtube.com/@grupomexico8955" class="social__container__icons__icon">
+            <i class="social__container__icons__icon__li fa-brands fa-youtube" style="color: #000000; line-height: 20px;
+            "></i>
+          </a>
+  
           <a href="https://twitter.com/GMexico_oficial" class="social__container__icons__icon">
             <i class="social__container__icons__icon__li fa-brands fa-x-twitter" style="color: #000000; line-height: 20px;
             "></i>
@@ -567,20 +575,20 @@
         </div>
   
   
-      <!--   <li class="fa-brands fa-linkedin-in" style="color: #000000;"></li>    
+        <!--   <li class="fa-brands fa-linkedin-in" style="color: #000000;"></li>    
        -->
       </div>
   
       <div>
-      <a href="./nosotros.html">Nosotros</a>
-      <a href="./comercializacion.html">Comercialización</a>
-      <a href="./blog/blog.html">Blog</a>
-      <a href="./contacto.html">Contacto</a>
-      <a href="./inversionistas.html">Inversionistas</a>
-      <a href="./asg.html">Asg</a>
-      <a href="./portafolio.html">Portafolio</a>
-      <a href="./carreras.html">Ofertas de Empleo</a>
-    </div>
+        <a href=".">aBOUT US</a>
+        <a href=".">LEASING</a>
+        <a href="./blog/blog.html">Blog</a>
+        <a href=".">CONTACT</a>
+        <a href=".">investors</a>
+        <a href=".">ESG</a>
+        <a href=".">Portfolio</a>
+        <a href=".">Careers</a>
+      </div>
       <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/bolsamexicana-grey.png"
         class="footer__img" />
     </footer>
