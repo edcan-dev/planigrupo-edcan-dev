@@ -1,4 +1,6 @@
 export class Event {
+  
+  id;
   day;
   month;
   year;
@@ -15,6 +17,24 @@ export class Event {
 
   get date() {  
     return new Date(this.year, this.month - 1, this.day, this.hour, this.minute);
+  }
+  
+  getShortMonth() {
+    const monthValues = {
+      1: 'Enero',
+      2: 'Febrero',
+      3: 'Marzo',
+      4: 'Abril',
+      5: 'Mayo',
+      6: 'Junio',
+      7: 'Julio',
+      8: 'Agosto',
+      9: 'Septiembre',
+      10: 'Octubre',
+      11: 'Noviembre',
+      12: 'Diciembre'
+    }
+    return monthValues[this.month];
   }
 }
 
@@ -53,6 +73,7 @@ await readXlsxFile(xlsx, { sheet: 1 }).then(function(rows) {
 
     const event = new Event();
 
+    event.id = index + 1;
     event.day = row[0];
     event.month = row[1];
     event.year = row[2]
