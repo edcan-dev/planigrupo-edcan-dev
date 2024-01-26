@@ -1,9 +1,8 @@
 //const xslxPath =
 
-console.log(window.location.href);
-
-const xslxPath = window.location.href.includes("github")
-  ? "https://edcan-dev.github.io/planigrupo-edcan-dev/data/asg/actividades-final.xlsx"
+const language = document.head.querySelector("[property~=language][content]").content;
+const xslxPath = language == 'english'
+  ? "../../../data/asg/ENG_actividades-final.xlsx"
   : "../../../data/asg/actividades-final.xlsx";
 
 const response = await fetch(xslxPath);

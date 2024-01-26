@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:100,200,300,400,500,600,700,800,900|Fjalla+One|Raleway:100,200,300,400,500,600,700,800,900&amp;display=swap" rel="stylesheet">
+    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/nosotros/styles.css" />
+  <link rel="stylesheet" href="../css/portafolio/portafolio.styles.css" />
+  <link rel="shortcut icon" href="https://planigrupo.blob.core.windows.net/planigrupo/assets/favicon.png"
+    type="image/x-icon" />
+  <title>ASG - Inicio - GM Inmobiliaria</title>
+  <script defer src="../js/hero-start-anim.js"></script>
+
+  <script src="https://cdn.syncfusion.com/ej2/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
+  <script src="https://cdn.syncfusion.com/ej2/ej2-svg-base/dist/global/ej2-svg-base.min.js"
+    type="text/javascript"></script>
+  <script src="https://cdn.syncfusion.com/ej2/ej2-data/dist/global/ej2-data.min.js" type="text/javascript"></script>
+  <script src="https://cdn.syncfusion.com/ej2/ej2-maps/dist/global/ej2-maps.min.js"></script>
+
+  <script defer src="../js/sidebar.js"></script>
+
+  <link href="https://cdn.syncfusion.com/ej2/23.1.36/ej2-base/styles/material.css" rel="stylesheet">
+  <link href="https://cdn.syncfusion.com/ej2/23.1.36/ej2-buttons/styles/material.css" rel="stylesheet">
+  <link href="https://cdn.syncfusion.com/ej2/23.1.36/ej2-popups/styles/material.css" rel="stylesheet">
+
+  <script src="https://cdn.syncfusion.com/ej2/23.1.36/dist/ej2.min.js" type="text/javascript"></script>
+  <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type="text/javascript"></script>
+
+  <script defer src="https://kit.fontawesome.com/c4df7659ff.js" crossorigin="anonymous"></script>
+
+  <!-- ASG CUSTOM FILES -->
+  <link rel="stylesheet" href="../css/asg/asg.styles.css">
+  <script defer src="../js/asg/gobernanza/generic-tab-component.js"></script>
+
+  <!--style reference from the Calendar component-->
+  <link href="https://cdn.syncfusion.com/ej2/23.1.36/ej2-base/styles/material.css" rel="stylesheet">
+  <link href="https://cdn.syncfusion.com/ej2/23.1.36/ej2-buttons/styles/material.css" rel="stylesheet">
+  <link href="https://cdn.syncfusion.com/ej2/23.1.36/ej2-calendars/styles/material.css" rel="stylesheet">
+  <script defer src="../js/asg/calendar.js"></script>
+
+  <!-- Gobernanza Custom Files -->
+
+  <link rel="stylesheet" href="../css/asg/ambiental/ambiental.styles.css">
+  <link rel="stylesheet" href="../css/asg/gobernanza/gobernanza.styles.css">
+
+  <!-- Actividades Grid -->
+  <script defer type="module" src="../js/asg/read-excel-file.min.js"></script>
+  <script defer type="module" src="../js/asg/gobernanza/xlsx-reader.js"></script>
+  <script defer type="module" src="../js/asg/gobernanza/actividades-grid.js"></script>
+  
+  <!-- Dialog Custom Script -->
+  <!-- <script defer type="module" src="./js/asg/asg-detail-dialog.js"></script> -->  
+
+</head>
+
+<body>
+  <div class="languaje--selector">
+    <li>
+      <a href="../asg-ambiental.html">Esp</a>
+      /
+      <b>
+        <a href="">Eng</a>
+      </b>
+    </li>
+  </div>
+  <div id="sidebar-container">
+    <aside id="default-sidebar">
+
+      <nav class="navbar__responsive">
+        <ul class="navbar__responsive__list">
+
+          <li>
+            <input class="navbar__responsive__search" type="search" placeholder="Buscar...">
+            <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/svgs/magnifying.svg">
+          </li>
+          <li class="header__nav__item" id="nav__item--nosotros">
+            <a class="">About Us</a>
+          </li>
+          <li class="header__nav__item">
+            <a href="./portafolio.html">Our Portfolio</a>
+          </li>
+          <li class="header__nav__item" id="nav__item--comer">
+            <a>Leasing</a>
+          </li>
+          <li class="header__nav__item"><a href="./inversionistas.html">Investors</a></li>
+
+          <li class="header__nav__item" id="nav__item--asg">
+            <a class="">ESG</a>
+          </li>
+
+          <li class="header__nav__item"><a
+              href="https://portaldeclientes.planigrupo.com/auth/realms/master/protocol/openid-connect/auth?client_id=estados-de-cuenta-id&redirect_uri=https%3A%2F%2Fportaldeclientes.planigrupo.com%2Fhome&state=a536db1e-fa15-48e7-91b4-f885b5c6791b&response_mode=fragment&response_type=code&scope=openid&nonce=7ad26bbc-8cfc-4064-a337-1cb175cc69f7">Clients</a>
+          </li>
+          <li class="header__nav__item">
+            <a href="./contacto.html">Contact</a>
+          </li>
+
+        </ul>
+
+        <ul class="navbar__responsive__list--second">
+          <div>
+            <li class="header__nav__item"><a href="./nosotros.html">Nosotros</a></li>
+            <li class="header__nav__item"><a href="./lo-que-hacemos.html">What we do</a></li>
+            <li class="header__nav__item"><a href="./equipo-ejecutivo.html">Executive Team</a></li>
+            <li class="header__nav__item"><a href="./historia.html">Historia</a></li>
+        </ul>
+        <ul class="navbar__responsive__list--second--comer">
+          <div>
+            <li class="header__nav__item"><a href="./comercializacion.html">Leasing</a></li>
+            <li class="header__nav__item"><a href="./oportunidades.html">Opportunities</a></li>
+        </ul>
+
+        <ul class="navbar__responsive__list--second--asg">
+          <div>
+            <li class="header__nav__item">
+              <a href="./asg.html">ESG</a>
+            </li>
+            <li class="header__nav__item">
+              <a href="./asg-sustentabilidad.html">Sustentability</a>
+            </li>
+            <li class="header__nav__item">
+              <a href="./asg-ambiental.html">Enviromental</a>
+            </li>
+            <li class="header__nav__item">
+              <a href="./asg-social.html">Social Capital</a>
+            </li>
+            <li class="header__nav__item">
+              <a href="./asg-gobernanza.html">Governance</a>
+            </li>
+            <!-- <li class="header__nav__item">
+              <a href="./asg-contacto.html">Contact</a>
+            </li> -->
+        </ul>
+
+      </nav>
+    </aside>
+  </div>
+  <header class="header">
+    <div class="header__bars">
+      <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/bars-solid.svg" height="40px" />
+    </div>
+    <a href="./index-en.html">
+      <img class="svg__logo" src="https://planigrupo.blob.core.windows.net/planigrupo/assets/logo.svg" alt="" />
+    </a>
+    <nav>
+      <ul class="header__nav">
+        <li class="header__nav__item dropdown">
+          <a href="./nosotros.html" class="dropbtn">About Us</a>
+          <div class="dropdown-content">
+            <a href="./nosotros.html">About Us</a>
+            <a href="./lo-que-hacemos.html">What we do best</a>
+            <a href="./equipo-ejecutivo.html">Executive Team</a>
+            <a href="./historia.html">History</a>
+          </div>
+        </li>
+        <li class="header__nav__item">
+          <a href="./portafolio.html">Our Portfolio</a>
+        </li>
+        <li class="header__nav__item dropdown">
+          <a href="./comercializacion.html" class="dropbtn">Leasing</a>
+          <div class="dropdown-content">
+            <a href="./comercializacion.html">Leasing</a>
+            <a href="./oportunidades.html">Opportunities</a>
+          </div>
+        </li>
+        <li class="header__nav__item"><a href="./inversionistas.html">Investors</a></li>
+        <!-- <li class="header__nav__item"><a href="./asg.html">Asg</a></li> -->
+
+        <li class="header__nav__item dropdown">
+          <a class="dropbtn" href="./asg.html">ESG</a>
+          <div class="dropdown-content">
+            <a href="./asg.html">ESG</a>
+            <a href="./asg-sustentabilidad.html">Sustentability</a>
+            <a href="./asg-ambiental.html">Enviromental</a>
+            <a href="./asg-social.html">Social</a>
+            <a href="./asg-gobernanza.html">Governance</a>
+          </div>
+        </li>
+        <li class="header__nav__item"><a
+            href="https://portaldeclientes.planigrupo.com/auth/realms/master/protocol/openid-connect/auth?client_id=estados-de-cuenta-id&redirect_uri=https%3A%2F%2Fportaldeclientes.planigrupo.com%2Fhome&state=a536db1e-fa15-48e7-91b4-f885b5c6791b&response_mode=fragment&response_type=code&scope=openid&nonce=7ad26bbc-8cfc-4064-a337-1cb175cc69f7">Clients</a>
+        </li>
+        <li class="header__nav__item">
+          <a href="./contacto.html">Contact</a>
+        </li>
+        <li class="header__nav__item header__nav__item--search">
+          <input type="text" placeholder="Search..." />
+          <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/svgs/magnifying.svg">
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+    <div class="hero">
+      <div class="hero__img">
+
+      </div>
+    </div>
+
+    <div class="main__hero__downbar main__hero__downbar">
+      <div class="main__hero_downbar__text">
+        <span>MEET</span>
+        <p>ESG</p>
+        <!--<p>EMPRESA</p>-->
+      </div>
+      <div class="main__hero_downbar__title">
+        <h2>Governance</h2>
+      </div>
+    </div>
+
+    <section class="amb_section--1">
+      <div class="text">
+        <p>
+          At GM Inmobiliaria we understand that solid governance is essential to ensure proper functioning
+          efficient and ethical of our organization. Throughout our history, we have distinguished ourselves by being
+          leaders in the adoption and execution of the best corporate governance practices with the purpose of
+          generate value sustainably through the company, prioritizing transparency, responsibility,
+          performance and information dissemination.
+        </p>
+
+
+      </div>
+    </section>
+
+    <section class="gobernanza_section--1">
+
+      <div class="gobernanza_section--1__selectors">
+        <ul>
+          <li id="gober_asg_selector--1" class="gober_asg_selector selected">government system</li>
+          <li>|</li>
+          <li id="gober_asg_selector--2" class="gober_asg_selector">committees</li>
+          <li>|</li>
+          <li id="gober_asg_selector--3" class="gober_asg_selector">guidelines and policies</li>
+          <li>|</li>
+          <li id="gober_asg_selector--4" class="gober_asg_selector">activities</li>
+        </ul>
+      </div>
+
+      <div id="gober_asg_content--1" class="gober_asg_content">
+
+        <div>
+          <!-- <p>
+                        A lo largo de nuestra trayectoria, nos hemos distinguido por ser líderes en la adopción y ejecución de las mejores prácticas de Gobierno corporativo teniendo como prioridad garantizar los intereses de todos nuestros grupos de interés; con la finalidad de generar valor de forma sostenible a través de la empresa, priorizando la transparencia, la responsabilidad, el desempeño y la divulgación de la información.
+                    </p> -->
+          <br>
+          <!-- <p>
+                        Una gobernanza sólida es un elemento clave para salvaguardar nuestros objetivos, siendo el eje rector y base de nuestra integridad, a través de la transparencia, representatividad, uso de mejores prácticas, resolución de conflictos de intereses y cuidado de la información asimétrica en la toma de decisiones.
+                        
+                    </p> -->
+          <p>
+            Our corporate governance is focused on:
+          </p>
+        </div>
+
+        <div id="section--1__grid">
+
+          <div class="section--1__grid__item">
+            <img
+              src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/gobernanza/Menu%20Sistema%20Gobierno/Gob-SistemaGob-MitigarConflictos.png"
+              height="40px" style="margin-bottom: 50px;">
+            <p>Mitigate any potential conflict of interest.</p>
+          </div>
+          <div class="section--1__grid__item">
+            <img
+              src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/gobernanza/Menu%20Sistema%20Gobierno/Gob-SistemaGob-FomentarCultura.png"
+              height="50px" width="50px">
+            <p>Foster a disciplined reporting culture
+              reporting and monitoring.</p>
+          </div>
+
+          <div class="section--1__grid__item">
+            <img
+              src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/gobernanza/Menu%20Sistema%20Gobierno/Gob-SistemaGob-TomarDecisiones.png"
+              width="50px" height="50px">
+            <p>Make decisions that maximize
+              the value of the company.</p>
+          </div>
+
+          <div class="section--1__grid__item">
+            <img
+              src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/gobernanza/Menu%20Sistema%20Gobierno/Gob-SistemaGob-Mejorar-Interaccion.png"
+              height="50px" width="50px">
+            <p>Improve the interaction between the Board of Directors, the Committees and the
+              Administration.</p>
+          </div>
+
+          <div class="section--1__grid__item">
+            <img
+              src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/gobernanza/Menu%20Sistema%20Gobierno/Gob-SistemaGob-Ser-Transparentes.png"
+              height="50px" width="50px">
+            <p>Be totally transparent in your operations.
+            </p>
+          </div>
+
+          <div class="section--1__grid__item">
+            <img
+              src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/gobernanza/Menu%20Sistema%20Gobierno/Gob-SistemaGob-Estructura-Practicas.png"
+              height="50px" width="50px">
+            <p>The solid corporate governance structure and practices aligned with the industry.
+            </p>
+          </div>
+
+          <div class="section--1__grid__item">
+            <img
+              src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/gobernanza/Menu%20Sistema%20Gobierno/Gob-SistemaGob-La-Divulgacion.png"
+              height="50px">
+            <p>Full disclosure of transactions in appropriate financial reports.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="section--1__splitter">
+          <span>BOARD OF DIRECTORS</span>
+        </div>
+
+        <div class="section--1__grid--2">
+
+          <div>
+
+
+
+            <div class="section--1__grid--2__item">
+              <div class="section--1__grid--2__item__number">
+                <span>01</span>
+                <p>PRESIDENT</p>
+              </div>
+              <div class="section--1__grid--2__item__name">
+                <p>
+                  Francisco Javier
+                  García de
+                  Quevedo Topete
+                </p>
+              </div>
+            </div>
+
+            <div class="section--1__grid--2__item">
+              <div class="section--1__grid--2__item__number">
+                <span>02</span>
+                <p>ADVISER</p>
+              </div>
+              <div class="section--1__grid--2__item__name">
+                <p>
+                  Francisco Manuel Zinser González
+                </p>
+              </div>
+            </div>
+
+            <div class="section--1__grid--2__item">
+              <div class="section--1__grid--2__item__number">
+                <span>03</span>
+                <p>ADVISER</p>
+              </div>
+              <div class="section--1__grid--2__item__name">
+                <p>
+                  Ricardo Arce Castellanos
+                </p>
+              </div>
+            </div>
+
+            <div class="section--1__grid--2__item">
+              <div class="section--1__grid--2__item__number">
+                <span>04</span>
+                <p>ADVISER</p>
+              </div>
+              <div class="section--1__grid--2__item__name">
+                <p>
+                  Mario Fernando
+                  Chávez Galas
+                </p>
+              </div>
+            </div>
+
+            <div class="section--1__grid--2__item">
+              <div class="section--1__grid--2__item__number">
+                <span>05</span>
+                <p>INDEPENDENT DIRECTOR</p>
+              </div>
+              <div class="section--1__grid--2__item__name">
+                <p>
+                  Manuel Romano Mijares
+                </p>
+              </div>
+            </div>
+
+            <div class="section--1__grid--2__item">
+              <div class="section--1__grid--2__item__number">
+                <span>06</span>
+                <p>INDEPENDENT DIRECTOR</p>
+              </div>
+              <div class="section--1__grid--2__item__name">
+                <p>
+                  José Mauricio Castilla Martínez
+                </p>
+              </div>
+            </div>
+
+            <div class="section--1__grid--2__item">
+              <div class="section--1__grid--2__item__number">
+                <span>07</span>
+                <p>INDEPENDENT DIRECTOR</p>
+              </div>
+              <div class="section--1__grid--2__item__name">
+                <p>
+                  Yair Kershenovich Tavel
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+      <div id="gober_asg_content--2" class="gober_asg_content inactive">
+
+        <div class="gober_asg_content--2__tabs">
+          <ul class="gober_asg_content--2__tabs__selector">
+            <li id="gober_asg_content--second__tabs__selector__item--1"
+              class="gober_asg_content--second__tabs__selector__item selected">
+              EXECUTIVE AND INVESTMENT COMMITTEE            </li>
+            <li id="gober_asg_content--second__tabs__selector__item--2" class="gober_asg_content--second__tabs__selector__item">
+              AUDIT AND CORPORATE PRACTICES COMMITTEE            </li>
+            <li id="gober_asg_content--second__tabs__selector__item--3" class="gober_asg_content--second__tabs__selector__item">
+              MATERIALITY AND ESG STRATEGY            </li>
+          </ul>
+        </div>
+
+
+        <div id="gober_asg_content--second__tabs__content--1" class="gober_asg_content--second__tabs__content">
+
+          <div class="gober_asg_content--2__tabs__content--1--up">
+            <div class="gober_asg_content--2__tabs__content--1__text">
+              <p>Made up of administrative staff and 3 independent directors - Meets monthly</p>
+              <span>MAIN FUNCTIONS</span>
+            </div>
+
+            <div class="gober_asg_content--2__tabs__content--1__icons">
+
+              <div class="
+              gober_asg_content--2__tabs__content--1__icons__item gober_asg_content--2__tabs__content--1__icons__item">
+                <img
+                  src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/gobernanza/Comites/Ejecutivo%20Inversiones/Comites-Seguimiento-estrategia.png"
+                  alt="">
+                <p>
+                  Follow up on the strategy approved by the
+                  highest governing body.
+                </p>
+              </div>
+
+              <div
+                class="gober_asg_content--2__tabs__content--1__icons__item gober_asg_content--2__tabs__content--1__icons__item">
+                <img
+                  src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/gobernanza/Comites/Ejecutivo%20Inversiones/Comites_Apoyar-equipo.png"
+                  alt="">
+                <p>
+                  Support the management team in the analysis and discussion of strategic or high-level issues.
+                  relevance, mainly in periods when the highest governing body is not in session.
+                </p>
+              </div>
+
+
+              <div
+                class="gober_asg_content--2__tabs__content--1__icons__item gober_asg_content--2__tabs__content--1__icons__item">
+                <img
+                  src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/gobernanza/Comites/Ejecutivo%20Inversiones/Comites-Evaluar-opciones.png"
+
+                >
+                <p>
+                  Evaluate new business options and follow up on the negotiation.                </p>
+              </div>
+            </div>
+
+            <div
+              class="gober_asg_content--2__tabs__content--1__text gober_asg_content--2__tabs__content--1__text--bottom">
+              <span>EXECUTIVE INVESTMENT COMMITTEE</span>
+              <p>Monthly</p>
+            </div>
+          </div>
+
+          <div class="section--1__grid--2">
+            <div>
+              <div class="section--1__grid--2__item">
+                <div class="section--1__grid--2__item__number">
+                  <span>01</span>
+                  <p>CEO</p>
+                </div>
+                <div class="section--1__grid--2__item__name">
+                  <p>
+                    Ricardo Arce Castellanos
+                  </p>
+                </div>
+              </div>
+              <div class="section--1__grid--2__item">
+                <div class="section--1__grid--2__item__number">
+                  <span>02</span>
+                  <p>ADVISER</p>
+                </div>
+                <div class="section--1__grid--2__item__name">
+                  <p>
+                    Francisco Manuel Zinser González
+                  </p>
+                </div>
+              </div>
+              <div class="section--1__grid--2__item">
+                <div class="section--1__grid--2__item__number">
+                  <span>03</span>
+                  <p>ADVISER</p>
+                </div>
+                <div class="section--1__grid--2__item__name">
+                  <p>
+                    Mario Fernando Chávez Galas
+                  </p>
+                </div>
+              </div>
+              <div class="section--1__grid--2__item">
+                <div class="section--1__grid--2__item__number">
+                  <span>04</span>
+                  <p>FINANCE DIRECTOR</p>
+                </div>
+                <div class="section--1__grid--2__item__name">
+                  <p>
+                    Fernando Villarreal
+                  </p>
+                </div>
+              </div>
+              <div class="section--1__grid--2__item">
+                <div class="section--1__grid--2__item__number">
+                  <span>05</span>
+                  <p>MEMBER</p>
+                </div>
+                <div class="section--1__grid--2__item__name">
+                  <p>
+                    Julio Ricaud
+                  </p>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+        </div>
+
+
+        <div id="gober_asg_content--second__tabs__content--2" class="gober_asg_content--second__tabs__content inactive">
+
+
+          <div class="gober_asg_content--2__tabs__content--1--up">
+            
+            <div class="gober_asg_content--2__tabs__content--1__text">
+              <p>Conformado por 3 consejeros independientes - Se reúne trimestralmente</p>
+              <span>PRINCIPALES FUNCIONES</span>
+            </div>
+
+            <div class="gober_asg_content--2__tabs__content--1__icons">
+
+              <div class="
+              gober_asg_content--2__tabs__content--1__icons__item gober_asg_content--2__tabs__content--1__icons__item">
+                <img
+                  src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/gobernanza/Comites/Comite%20Auditoria/CAuditoria-Revisar-Integridad.png"
+                  alt="">
+                <p>
+                  Revisar la integridad de los estados y reportes financieros, así como los criterios, prácticas contables y fiscales aplicadas.
+                </p>
+              </div>
+
+              <div
+                class="gober_asg_content--2__tabs__content--1__icons__item gober_asg_content--2__tabs__content--1__icons__item">
+                <img
+                  src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/gobernanza/Comites/Comite%20Auditoria/CAuditoria-Monitorear-sistema.png"
+                >
+                <p>
+                  Monitorear el sistema de control interno y la ejecución y seguimiento de los procesos operativos que lo integran.
+                </p>
+              </div>
+
+
+              <div
+                class="gober_asg_content--2__tabs__content--1__icons__item gober_asg_content--2__tabs__content--1__icons__item">
+                <img
+                  src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/gobernanza/Comites/Comite%20Auditoria/CAuditoria-Vigilar-Funcion.png"
+                >
+                <p>
+                  Vigilar que la función de auditoría interna y externa se realice con la mayor objetividad e independencia.
+                </p>
+              </div>
+
+              <div
+                class="gober_asg_content--2__tabs__content--1__icons__item gober_asg_content--2__tabs__content--1__icons__item">
+                <img
+                  src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/gobernanza/Comites/Comite%20Auditoria/CAuditoria-Elaborar_Probar.png"
+                  alt="">
+                <p>
+                  Elaborar y aprobar políticas en materia de desarrollo de talento y tablas de sucesión, y de así disponerlo la Asamblea
+                  General de Accionistas.
+                </p>
+              </div>
+
+            </div>
+
+            <div
+              class="gober_asg_content--2__tabs__content--1__text gober_asg_content--2__tabs__content--1__text--bottom">
+              <span>COMITÉ DE AUDITORÍA Y PRÁCTICAS SOCIETARIAS</span>
+              <p>Periodicidad mensual</p>
+            </div>
+          </div>
+
+          <div class="section--1__grid--2">
+            <div>
+              <div class="section--1__grid--2__item">
+                <div class="section--1__grid--2__item__number">
+                  <span>01</span>
+                  <p>ADVISER
+                    INDEPENDIENTE</p>
+                </div>
+                <div class="section--1__grid--2__item__name">
+                  <p>
+                    Manuel Romano Mijares
+                  </p>
+                </div>
+              </div>
+              <div class="section--1__grid--2__item">
+                <div class="section--1__grid--2__item__number">
+                  <span>02</span>
+                  <p>ADVISER
+                    INDEPENDIENTE</p>
+                </div>
+                <div class="section--1__grid--2__item__name">
+                  <p>
+                    José Mauricio Costilla Martínez</p>
+                </div>
+              </div>
+              <div class="section--1__grid--2__item">
+                <div class="section--1__grid--2__item__number">
+                  <span>03</span>
+                  <p>ADVISER
+                    INDEPENDIENTE</p>
+                </div>
+                <div class="section--1__grid--2__item__name">
+                  <p>
+                    Yair Kershenovich Tavael
+                  </p>
+                </div>
+              </div>
+              
+
+
+            </div>
+          </div>
+
+
+        </div>
+
+        <div id="gober_asg_content--second__tabs__content--3" class="gober_asg_content--second__tabs__content inactive">
+
+
+          <div class="gober_asg_content--2__tabs__content--1--up">
+            
+            <div class="gober_asg_content--2__tabs__content--1__text">
+              <p>
+                Conformado por 3 consejeros Independientes - Se reúne anualmente
+              </p>
+              <span>PRINCIPALES FUNCIONES</span>
+            </div>
+
+            <div class="gober_asg_content--2__tabs__content--1__icons">
+
+              <div
+                class="
+                gober_asg_content--2__tabs__content--1__icons__item gober_asg_content--2__tabs__content--1__icons__item--alone">
+                
+                <!-- <img
+                  src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/Planigrupo-struggling-communities.png"
+                  alt="">
+                -->
+
+                <section class="qoute">
+                  <div>
+                    <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/quote-left-solid.svg" width="25px"/>
+                    <p>
+                      Nos enfocamos en desarrollar, diseñar y construir centros comerciales con la más alta calidad para que nuestros inversionistas se sientan seguros, y nuestros visitantes se sientan como en casa.
+                    </p>
+                    <img
+                      src="https://planigrupo.blob.core.windows.net/planigrupo/assets/quote-left-solid.svg"
+                      width="25px"
+                      style="transform: rotate(180deg);"  
+                    />
+                  </div>
+                </section>
+                <p>
+                  Participar en la supervisión, retención, evaluación y compensación del Director General y del equipo directivo.
+                </p>
+
+              </div>
+
+            </div>
+
+            <div
+              class="gober_asg_content--2__tabs__content--1__text gober_asg_content--2__tabs__content--1__text--bottom">
+              <span>COMITÉ DE COMPENSACIÓN</span>
+              <p>Periodicidad mensual</p>
+            </div>
+          </div>
+
+          <div class="section--1__grid--2">
+            <div>
+              <div class="section--1__grid--2__item">
+                <div class="section--1__grid--2__item__number">
+                  <span>01</span>
+                  <p>ADVISER
+                    INDEPENDIENTE</p>
+                </div>
+                <div class="section--1__grid--2__item__name">
+                  <p>
+                    Francisco Javier García de Quevedo Topete
+                  </p>
+                </div>
+              </div>
+              <div class="section--1__grid--2__item">
+                <div class="section--1__grid--2__item__number">
+                  <span>02</span>
+                  <p>MEMBER</p>
+                </div>
+                <div class="section--1__grid--2__item__name">
+                  <p>
+                    Francisco Manuel Zinser González
+                  </p>
+                </div>
+              </div>
+              <div class="section--1__grid--2__item">
+                <div class="section--1__grid--2__item__number">
+                  <span>03</span>
+                  <p>MEMBER</p>
+                </div>
+                <div class="section--1__grid--2__item__name">
+                  <p>
+                    Ricardo Arce Castellanos
+                  </p>
+                </div>
+              </div>
+              <div class="section--1__grid--2__item">
+                <div class="section--1__grid--2__item__number">
+                  <span>04</span>
+                  <p>MEMBER</p>
+                </div>
+                <div class="section--1__grid--2__item__name">
+                  <p>
+                    Mario Fernando Chávez Galas
+                  </p>
+                </div>
+              </div>
+              
+
+
+            </div>
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+      <div id="gober_asg_content--3" class="gober_asg_content inactive">
+
+        <div class="gober_asg_content--3__download">
+          <div class="gober_asg_content--3__download__item">
+            <span>Ethics code</span>
+            <a href="" target="_blank">DOWNLOAD</a>
+          </div>
+
+          <div class="gober_asg_content--3__download__item">
+            <span>Ethics code</span>
+            <a href="" target="_blank">DOWNLOAD</a>
+          </div>  
+        </div>
+
+        <div class="gober_asg_content--3__imgText">
+
+          <div class="gober_asg_content--3__imgText__img">
+          </div>
+
+          <div class="gober_asg_content--3__imgText__text">
+
+            <span>CONFLICTS OF INTEREST</span>
+            <p>
+              The highest governing body of Planigrupo is governed by procedures based on the Securities Market Law with the objective of avoiding and managing conflicts of interest. Independent directors are carefully selected based on their experience, capacity and professional prestige, ensuring that they can perform their duties without compromising the interests of the company.
+              Restrictions are established to avoid the appointment of people with direct links to the company, significant influence or command power, as well as those shareholders who are part of the company's control group. Furthermore, it is considered important to avoid any conflict of interest with clients, suppliers and other parties involved in important transactions. These measures seek to safeguard the integrity and impartiality in the decision-making of Planigrupo's governing body.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div id="gober_asg_content--4" class="gober_asg_content inactive">
+
+
+        <section class="section--3">
+
+          <div class="actividades">
+            
+            <div class="actividades__grid">
+
+              
+    
+            <!-- 
+              <div class="actividades__grid__item">
+                <div class="actividades__grid__item__title">
+                  <p>
+                    Máquinas de Reciclaje-AIEn
+                  </p>
+                </div>
+
+                <div class="actividades__grid__item__img">
+                </div>
+  
+                <div class="actividades__grid__item__description">
+                  <p>
+                    De enero-abril 2022 se reciclaron más de 300 mil botellas de plástico equivalentes a una reducción de 17,642 kg de CO2
+                  </p>
+                </div>
+                
+                <div class="actividades__grid__item__a">
+                  <a>VER MÁS</a>
+                </div>
+              </div>
+            -->
+
+            </div>
+            
+          </div>
+
+        </section>
+
+      </div>
+
+
+
+
+    </section>
+
+  </main>
+
+
+  <footer class="footer">
+    <div class="social__container">
+
+      <span style="margin-bottom: 10px;">
+        FOLLOW US<br />
+        ON SOCIAL MEDIA
+      </span>
+
+      <div class="social__container__icons">
+
+        <a href="https://www.youtube.com/@grupomexico8955" class="social__container__icons__icon">
+          <i class="social__container__icons__icon__li fa-brands fa-youtube" style="color: #000000; line-height: 20px;
+        "></i>
+        </a>
+
+        <a href="https://twitter.com/GMexico_oficial" class="social__container__icons__icon">
+          <i class="social__container__icons__icon__li fa-brands fa-x-twitter" style="color: #000000; line-height: 20px;
+        "></i>
+        </a>
+        <a href="https://www.linkedin.com/company/grupo-mexico/" class="social__container__icons__icon">
+          <li class="social__container__icons__icon__li fa-brands fa-linkedin-in" style="color: #000000; line-height: 20px;
+"></li>
+        </a>
+        <a href="https://www.facebook.com/gmexico.oficial" class="social__container__icons__icon">
+          <i class="social__container__icons__icon__li fa-brands fa-facebook-f" style="color: #000000; line-height: 20px;
+"></i>
+        </a>
+        <a href="https://www.instagram.com/gmexico_oficial" class="social__container__icons__icon">
+          <li class="social__container__icons__icon__li fa-brands fa-instagram" style="color: #000000; line-height: 20px;
+"></li>
+        </a>
+      </div>
+
+
+      <!--   <li class="fa-brands fa-linkedin-in" style="color: #000000;"></li>    
+   -->
+    </div>
+
+    <div>
+      <a href=".">aBOUT US</a>
+      <a href=".">LEASING</a>
+      <a href="./blog/blog.html">Blog</a>
+      <a href=".">CONTACT</a>
+      <a href=".">investors</a>
+      <a href=".">ESG</a>
+      <a href=".">Portfolio</a>
+      <a href=".">Careers</a>
+    </div>
+    <img src="https://planigrupo.blob.core.windows.net/planigrupo/assets/images/bolsamexicana-grey.png"
+      class="footer__img" />
+  </footer>
+
+</body>
+
+</html>

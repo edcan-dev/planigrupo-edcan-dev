@@ -13,49 +13,46 @@
       href="https://planigrupo.blob.core.windows.net/planigrupo/assets/favicon.png"
       type="image/x-icon"
     />
-    <title>ESG - Home - GM Inmobiliaria</title>
+    <title>ESG - Ambiental - GM Inmobiliaria</title>
     <script defer src="../js/hero-start-anim.js"></script>
 
-    <script  src="https://cdn.syncfusion.com/ej2/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
-    <script  src="https://cdn.syncfusion.com/ej2/ej2-svg-base/dist/global/ej2-svg-base.min.js"
-    type="text/javascript"></script>
-    <script  src="https://cdn.syncfusion.com/ej2/ej2-data/dist/global/ej2-data.min.js" type="text/javascript"></script>
-    <script src="https://cdn.syncfusion.com/ej2/ej2-maps/dist/global/ej2-maps.min.js"></script>
+
+    <!-- SYNCFUSION -->
+    <link href="https://cdn.syncfusion.com/ej2/23.2.4/ej2-base/styles/material.css" rel="stylesheet" type="text/css"/>
+    <link href="https://cdn.syncfusion.com/ej2/23.2.4/ej2-navigations/styles/material.css" rel="stylesheet" type="text/css"/>
+    <script src="https://cdn.syncfusion.com/ej2/23.2.4/dist/ej2.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type ="text/javascript"></script>
+    <!-- SYNCFUSION -->
 
     <script defer src="../js/sidebar.js"></script>
-
-    <link href="https://cdn.syncfusion.com/ej2/23.1.36/ej2-base/styles/material.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/23.1.36/ej2-buttons/styles/material.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/23.1.36/ej2-popups/styles/material.css" rel="stylesheet">
-
-    <script src="https://cdn.syncfusion.com/ej2/23.1.36/dist/ej2.min.js" type="text/javascript"></script>
-    <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type ="text/javascript"></script>
-
     <script defer src="https://kit.fontawesome.com/c4df7659ff.js" crossorigin="anonymous"></script>
-
     <!-- ASG CUSTOM FILES -->
     <link rel="stylesheet" href="../css/asg/asg.styles.css">
-    <script defer src="../js/asg/slider-component.js"></script>
+    <script defer src="../js/asg/generic-tab-component.js"></script>
     
-    <!--style reference from the Calendar component
-    <link href="https://cdn.syncfusion.com/ej2/23.1.36/ej2-base/styles/material.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/23.1.36/ej2-buttons/styles/material.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/23.1.36/ej2-calendars/styles/material.css" rel="stylesheet">-->
+<!-- ASG CAROUSEL -->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <script src="../js/libs/flickity.pkgd.min.js"></script>
 
-    <!-- ASG CAROUSEL -->
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <script defer src="../js/libs/flickity.pkgd.min.js"></script>
     <!-- Actividades Grid -->
     <script defer type="module" src="../js/asg/read-excel-file.min.js"></script>
+    <script defer type="module" src="../js/asg/ambiental/generic-tab-component.js"></script>
+
     <script defer type="module" src="../js/asg/services/XSLXActivitiesReaderService.js"></script>
     <script defer type="module" src="../js/asg/services/ActivitiesASGModal.js"></script>
+    <!-- Activities Service -->
+    <script defer type="module" src="../js/asg/sustentabilidad/services/ActivitiesGridService.js"></script>
+    <script defer type="module" src="../js/asg/ambiental/ActivitiesGridService.js"></script>
+
+    <!-- Dialog Custom Script -->
+    <link rel="stylesheet" href="../css/asg/gobernanza/gobernanza.styles.css">
+    <link rel="stylesheet" href="../css/asg/ambiental/ambiental.styles.css">
+
+
+
     <script defer type="module" src="../js/asg/services/ActivitiesGridService.js"></script>
     <script defer type="module" src="../js/asg/services/ActivitiesPagingAndSortingService.js"></script>
     
-    
-    <!-- Dialog Custom Script -->
-    <script defer src="../js/asg/generic-tab-component.js"></script>
-
     <link href="https://cdn.syncfusion.com/ej2/24.1.41/ej2-base/styles/material.css" rel="stylesheet">
     <link href="https://cdn.syncfusion.com/ej2/24.1.41/ej2-grids/styles/material.css" rel="stylesheet">
     <link href="https://cdn.syncfusion.com/ej2/24.1.41/ej2-buttons/styles/material.css" rel="stylesheet">
@@ -65,22 +62,16 @@
     <link href="https://cdn.syncfusion.com/ej2/24.1.41/ej2-lists/styles/material.css" rel="stylesheet">
     <link href="https://cdn.syncfusion.com/ej2/24.1.41/ej2-inputs/styles/material.css" rel="stylesheet">
     <link href="https://cdn.syncfusion.com/ej2/24.1.41/ej2-calendars/styles/material.css" rel="stylesheet">
-    
-    
     <link href="https://cdn.syncfusion.com/ej2/24.1.41/ej2-splitbuttons/styles/material.css" rel="stylesheet">
+    <script src="https://cdn.syncfusion.com/ej2/24.1.41/dist/ej2.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type="text/javascript"></script>
 
-    <!-- Essential JS 2 Pager's dependent global script -->
-    <script src="http://cdn.syncfusion.com/ej2/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
-    <!-- Essential JS 2 Pager's global script -->
-    <script src="http://cdn.syncfusion.com/ej2/ej2-grids/dist/global/ej2-grids.min.js" type="text/javascript"></script>
-
-    
   </head>
 
   <body>
     <div class="languaje--selector">
       <li>
-        <a href="../asg.html">Esp</a>
+        <a href="../asg-ambiental.html">Esp</a>
         /
         <b>
           <a href="">Eng</a>
@@ -219,332 +210,319 @@
         <div class="hero__img">
           
         </div>
-        <div class="hero__text">
-
-          <div class="hero__text__arrows">
-            
-            <i
-            class="fa-solid fa-angle-left hero__text__arrows--arrow"
-           id="hero__text__arrows--prev" aria-hidden="true"></i>
-            <i
-            class="fa-solid fa-angle-right hero__text__arrows--arrow" id="hero__text__arrows--next" aria-hidden="true"></i>
-
-          </div>
-          
-          <style>
-          .hero__text__arrows {
-            display: flex;
-            width: 100%;
-            position: absolute;
-            z-index: 1;
-            justify-content: space-between;
-            padding: 0px 10px;          
-          }
-          .hero__text__arrows > i {
-            font-size: 35px;
-            color:#d7282f;
-            cursor: pointer;
-          }
-          .hero__text__arrows > i:hover {
-            font-size: 40px;
-          }
- 
-          </style>
-
-          <!-- <div class="main__plani__info__selector">
-            <i class="fa-solid fa-angle-right slider__info" id="slider__info__next" aria-hidden="true"></i>
-          </div> -->
-
-          <span>IN GM Inmobiliaria</span>
-
-          <div class="hero__text__content">
-
-            <p class="hero__text__content__p">
-              We are committed to generating sustainable and long-term value.
-            </p>
-            <p class="hero__text__content__p invisible">
-              
-              We established solid links with our stakeholders to improve sustainable growth.
-            </p>
-          </div>
-        </div>
       </div>
 
-      <div class="main__hero__downbar main__hero__downbar--red">
+      <div class="main__hero__downbar main__hero__downbar">
         <div class="main__hero_downbar__text">
           <span>MEET</span>
           <p>ESG</p>
           <!--<p>EMPRESA</p>-->        
         </div>
         <div class="main__hero_downbar__title">
-          <h2>HOME</h2>
+          <h2>AMBIENTAL</h2>
         </div>
       </div>
 
-
-      <section class="section--1">
-
-        
-        <div class="section--1__area--1">
+      <section class="amb_section--1">
+        <div class="text">
+          <p>
+            At GM Inmobiliaria we are aware that we can make a difference with the creation of environmental value, which is why we will implement various campaigns that promote the circular economy: the reuse, savings and awareness of resources within our plazas and corporate offices, of materials such as paper , cardboard, PET, glass, electronics, and even energy and water.
+          </p>
         </div>
-
-          <div class="tabs">
-
-            <div class="tabs__selectors">
-              <ul>
-                <li id="asg_tab_selector--1" class="asg_tab_selector selected">WHAT WE ARE DOING?</li>
-                <li id="asg_tab_selector--2" class="asg_tab_selector">WHY?</li>
-                <li id="asg_tab_selector--3" class="asg_tab_selector" >WHO PARTICIPATED?</li>
-                <li id="asg_tab_selector--4" class="asg_tab_selector" >MATERIALITY AND ESG STRATEGY</li>
-              </ul>
-            </div>
-
-
-          </div>
-
-
-          <div class="tab__contents">
-
-
-            <div id="asg_tab_content--1" class="asg_tab_content">
-              <div class="asg_tab_content__p">
-                <p>
-                  At GM Inmobiliaria we are aware of the impacts we have on the environment and society, as well as the impact we have on all our stakeholders. Therefore, during 2021 we suggest reinforcing our sustainability strategy, conducting our first materiality analysis to guide new initiatives and strengthen existing ones.
-                </p>
-              </div>
-              <div class="asg_tab_content__anchor">
-              </div>
-            </div>
-            
-            
-            <div id="asg_tab_content--2" class="asg_tab_content inactive">
-              <div class="asg_tab_content__p">
-                <p>
-                  The objective of this exercise was to define what were the material issues for the organization and its interest groups. With this, we hope to be able to optimize resources in strategies that generate the greatest benefit for everyone as well as recognize potential risks in the operation.
-                </p>
-              </div>
-              <div class="asg_tab_content__anchor">
-              </div>
-            </div>
-
-
-            <div id="asg_tab_content--3" class="asg_tab_content inactive">
-              <div class="asg_tab_content__p">
-                <p>
-                  The basis for identifying and selecting the participating interest groups was all those groups that are directly involved in traditional operational processes of the business in accordance with our corporate purpose.
-                </p>
-              </div>
-              <div class="asg_tab_content__anchor">
-                <a href="./asg-sustentabilidad.html?groups=true">Meet our interest groups</a>
-              </div>
-            </div>
-            
-            
-            <div id="asg_tab_content--4" class="asg_tab_content inactive">
-              <div class="asg_tab_content__p">
-                <p>
-                  During 2021 we carried out our first materiality analysis to formulate an ESG (Environmental, Social and Corporate Governance) strategy.
-                </p>
-              </div>
-              <div class="asg_tab_content__anchor">
-                <a href="./asg-sustentabilidad.html">More Info</a>
-              </div>
-            </div>
-
-          </div>
-          
-          <div id="tabs__img" class="tabs__imgs">
-          </div>
-
       </section>
 
-      <section class="section--2">
-        <div class="reports__container">
-          <div class="reports__item reports__item--1">
+      <section class="gobernanza_section--1">
+
+        <div class="gobernanza_section--1__selectors">
+          <ul>
+            <li id="gober_asg_selector--1" class="gober_asg_selector selected">
+              2023 GOALS
+            </li>
+            <li class="splitter">|</li>
+            <li id="gober_asg_selector--2" class="gober_asg_selector">
+              ACTIVITIES
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="ambi_asg_content" id="ambi_asg_content--1">
+        <section class="amb_section--2">
+        
+  
+          <div class="grid">
+            <div class="grid_item">
+  
+              <div class="grid_item__img grid_item__img--1">
+              </div>
+              <p>
+                Implementation of resource optimization campaigns for clients, collaborators and suppliers.
+            </p>
+            </div>
+  
+            <div class="grid_item">
+              <div class="grid_item__img grid_item__img--2">
+              </div>
+              <p>Optimize energy and water consumption in
+                our properties.</p>
+            </div>
             
-            <div class="reports__item__title_container">
-              <span>DOWNLOAD ANNUAL REPORT</span>
+            <div class="grid_item">
+              <div class="grid_item__img grid_item__img--3">
+              </div>
+              <p>
+                Provide workshops and talks on environmental awareness to collaborators.
+              </p>
             </div>
-
-            <div class="reports__item__reports">
-
-              <div class="reports__item__reports__arrow">
+            
+            <div class="grid_item">
+              <div class="grid_item__img grid_item__img--4">
               </div>
-              <div class="reports__item__reports__report">
-                <span>2022</span>
-                <a href="https://cdn.investorcloud.net/plani/InformacionFinanciera/InformesAnuales/2022-Anual.pdf" target="_blank">GO</a>
-                <hr>
-              </div>
-
-              <div class="reports__item__reports__report">
-                <span>2021</span>
-                <a href="https://cdn.investorcloud.net/plani/InformacionFinanciera/InformesAnuales/2021-Anual.pdf" target="_blank">GO</a>
-                <hr>
-              </div>
-
-              <div class="reports__item__reports__arrow reports__item__reports__arrow--reversed">
-              </div>
-
+              <p>Strengthen the division of waste according to type.</p>
             </div>
+            
+            <div class="grid_item">
+              <div class="grid_item__img grid_item__img--5">
+              </div>
+              <p>
+                Make alliances with various organizations that pursue environmental care to provide financial and/or volunteer support.
+              </p>
+            </div>
+            
+            <div class="grid_item">
+              <div class="grid_item__img grid_item__img--6">
+              </div>
+              <p>
+                Increase the percentage of Wastewater Treatment Plants on our properties.
+              </p>
+            </div>
+  
+  
+  
+          </div>
+  
+        </section>
+  
+        <section class="section--3">
+  
+          <div class="thirdSection__title">
+            <span>RELEVANT ACTIVITIES 2022</span>
+          </div>
           
+          <div class="featuredProperties_grid">
+
+            <div class="featuredProperties_grid_item">
+  
+              <div class="featuredProperties_grid_item_img" id="featuredProperties_grid_item_img--1" style="background-image: url('https://www.cepal.org/sites/default/files/news/images/fotomujeres2.jpg?timestamp=1421156225');">
+              </div>
+  
+              <div class="featuredProperties_grid_item_text">
+                <p>{{ description }}</p>
+              </div>
+  
+            </div>
+  
+            <div class="featuredProperties_grid_item">
+  
+              <div class="featuredProperties_grid_item_img" id="featuredProperties_grid_item_img--2" style="background-image: url('https://www.cepal.org/sites/default/files/news/images/fotomujeres2.jpg?timestamp=1421156225');">
+              </div>
+  
+              <div class="featuredProperties_grid_item_text">
+                <p>{{ description }}</p>
+              </div>
+  
+            </div>
+  
+          </div>
+
+          <style>
+
+            .section--3 {
+              height: max-content;
+            }
+    
+            .featuredProperties_grid {
+              width: 100%;
+              max-width: 1200px;
+              display: grid;
+              margin: 0 auto;
+              grid-template-columns: repeat(2, 250px);
+              justify-content: space-evenly;
+            }
+            .featuredProperties_grid_item {
+             min-height: 350px;
               
-          
-          </div>
-          <!-- 
-          <div class="reports__item reports__item--2">
-            <div class="reports__item__title_container">
-              <span>CALENDARIO</span>
-            </div>
+            }
+    
+            .featuredProperties_grid_item_img {
+              height: 250px;
+              width: 100%;
+              background-size: cover;
+              background-position-x: center;
+              background-position-y: top;
 
-            <div class="reports__item__calendar">
-              <div class="calendar">
-              </div>
+              border-radius: 25px;
+            }
+            .featuredProperties_grid_item_text {
+              color: #727272;
+              font-family: Raleway;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 20px;
+              letter-spacing: 1px;
+              text-align: left;
+              padding: 10px 0px;
+            }
+    
+            @media (max-width: 1200px) {
+              .featuredProperties_grid {
+                width: 90%;
+                justify-content: space-evenly;
+                grid-template-columns: repeat(2, 250px);
+                grid-template-rows: repeat(1, 1fr);
+              }
+            }
+            @media (max-width: 750px) {
+              .featuredProperties_grid {
+                width: 90%;
+                justify-content: space-evenly;
+                grid-template-columns: repeat(1, 250px);
+                grid-template-rows: repeat(2, 1fr);
+              }
+            }
+            </style>
+  
+  
+        </section>
+  
 
-              <div id="container">
-                <div id="element"></div>
-              </div>
+      </div>
 
-            </div>
+      <section class="section--3 ambi_asg_content inactive" id="ambi_asg_content--2">
 
-          </div>
-        -->        
-</div>
-      </section>
-
-
-      <section class="section--3">
         <div class="actividades">
-          
+  
           <div class="actividades__title">
             <span>ACTIVITIES</span>
           </div>
-
-          <div class="actividades__filters">
-            <div class="actividades__filters__filter">
-              <span>
-                Filter by:
-              </span>
-
-              <select id="category_select">
-                <option value="all">All</option>
-                <option value="Social">Social</option>
-                <option value="Ambiental">Enviromental</option>
-                <option value="Corporativa">Corporative</option>
-              </select>
-            </div>
-
-            <div class="actividades__filters__filter">
-              <span>
-                Year
-              </span>
-
-              <select id="year_select">
-                <option value="all">All</option>
-                <option value="2023">2023</option>
-                <option value="2022">2022</option>
-                <option value="2021">2021</option>
-                <option value="2020">2020</option>
-                <option value="2019">2019</option>
-                <option value="2018">2018</option>
-                <option value="2017">2017</option>
-              </select>
-            </div>
-            
+  
+  
+          <div class="forthSection__grid">
           </div>
-
-          <div
-            class="forthSection__grid"
-          >
-         </div>
-
+  
         </div>
-
+  
         <div class="actividades__grid__tab__selectors">
           <ul>
           </ul>
         </div>
-
-
+  
         <div id="pagingContainer">
           <div id="Pager">
           </div>
         </div>
-
-        
+  
         <style>
-        .asg__paging {
-          width: 1200px;
-          max-width: 90%;
-          margin: 0 auto;
-          display: flex;
-          justify-content: end;
-
-          & span {
+          .asg__paging {
+            width: 1200px;
+            max-width: 90%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: end;
+  
+            & span {
+              display: inline-block;
+              margin-right: 10px;
+              color: #97928A;
+              text-align: center;
+              font-family: Barlow Condensed;
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 14.29px;
+              /* 79.389% */
+              letter-spacing: 1px;
+              text-transform: uppercase;
+            }
+  
+            & .selected {
+              color: #0096A9;
+              font-weight: bolder;
+  
+            }
+          }
+  
+          .e-pager .e-currentitem {
+            background-color: #0096A9
+          }
+  
+          .e-pager .e-focused {
+            background-color: #0096A9;
+          }
+  
+          .e-pager .e-currentitem.e-numericitem.e-focused {
+            background-color: #0096A9;
+          }
+  
+          .e-pager .e-link {
+  
             display: inline-block;
             margin-right: 10px;
-            color: #97928A;
+            color: #000;
             text-align: center;
             font-family: Barlow Condensed;
             font-size: 18px;
             font-style: normal;
             font-weight: 500;
-            line-height: 14.29px; /* 79.389% */
+            line-height: 14.29px;
+            /* 79.389% */
             letter-spacing: 1px;
             text-transform: uppercase;
           }
-          & .selected {
-            color:#0096A9;
-            font-weight: bolder;
-
+          .e-pager .e-currentitem.e-numericitem.e-focused {
+            background-color: #0096A9;
+            color: #fff;
           }
-        }
-        .e-pager .e-currentitem {
-          background-color: #0096A9
-        }
-        .e-pager .e-focused {
-          background-color: #0096A9;
-        }
-        .e-pager .e-currentitem.e-numericitem.e-focused {
-          background-color: #0096A9;
-          color: #fff;
-        }
-        .e-pager .e-currentitem.e-numericitem {
-          background-color: #0096A9;
-          color: #fff;
-        }
-        .e-pager .e-link {
-
-          display: inline-block;
-          margin-right: 10px;
-          color: #000;
-          text-align: center;
-          font-family: Barlow Condensed;
-          font-size: 18px;
-          font-style: normal;            
-          font-weight: 500;
-          line-height: 14.29px; /* 79.389% */
-          letter-spacing: 1px;
-          text-transform: uppercase;
-        }
-        #Pager {
-          display: flex;
-          border: none;
-        }
-        #Pager > div.e-parentmsgbar {
-          display: none;
-        }
-
-        .e-pager .e-pagercontainer {
-          margin: 0 auto;
-        }
+          .e-pager .e-currentitem.e-numericitem {
+            background-color: #0096A9;
+            color: #fff;
+          }
+          #Pager {
+            display: flex;
+            border: none;
+          }
+  
+          #Pager>div.e-parentmsgbar {
+            display: none;
+          }
+  
+          .e-pager .e-pagercontainer {
+            margin: 0 auto;
+          }
         </style>
-
+  
       </section>
+
+      
+      <section>
+        <div class="asg_banner_component">
+          <div class="asg_banner_component__img" style="background-image: url('https://planigrupo.blob.core.windows.net/planigrupo/assets/images/asg/ambiental/452be076-de05-4a83-b2cc-0c4cfb709e5d.jpeg') !important;">
+          </div>
+          <div class="asg_banner_component__txt">
+            
+            <p>
+              For GM Inmobiliaria, the optimal use of resources is of utmost importance since it is one of the most tangible ways to contribute to the SDG objectives and in turn boost its economic performance or the generation of value.
+            </p>
+
+          </div>
+        </div>
+      </section>
+
 
       <!-- DIALOG BUTTON --><div id="container"><button class="e-control e-btn" id="targetButton" role="button" e-ripple="true">Open Modal Dialog</button><div id="dialog"></div></div>
 
-    </main>
-
+    </main>    
 
     <footer class="footer">
       <div class="social__container">
@@ -558,12 +536,12 @@
   
           <a href="https://www.youtube.com/@grupomexico8955" class="social__container__icons__icon">
             <i class="social__container__icons__icon__li fa-brands fa-youtube" style="color: #000000; line-height: 20px;
-            "></i>
+          "></i>
           </a>
   
           <a href="https://twitter.com/GMexico_oficial" class="social__container__icons__icon">
             <i class="social__container__icons__icon__li fa-brands fa-x-twitter" style="color: #000000; line-height: 20px;
-            "></i>
+          "></i>
           </a>
           <a href="https://www.linkedin.com/company/grupo-mexico/" class="social__container__icons__icon">
             <li class="social__container__icons__icon__li fa-brands fa-linkedin-in" style="color: #000000; line-height: 20px;
@@ -581,7 +559,7 @@
   
   
         <!--   <li class="fa-brands fa-linkedin-in" style="color: #000000;"></li>    
-       -->
+     -->
       </div>
   
       <div>
