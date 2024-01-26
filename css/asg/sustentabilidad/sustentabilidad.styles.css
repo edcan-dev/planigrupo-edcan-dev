@@ -410,8 +410,7 @@
   margin-right: 10px;
 }
 .thirdSection__slider__selectors > ul > li.selected {
-  font-weight: bold;
-  color: #53575a;
+  color: #FFF;
   background-color: #0096a9;
   border-radius: 50%;
   
