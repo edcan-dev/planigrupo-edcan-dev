@@ -139,7 +139,7 @@ if(localStorage.getItem('propertiesArray') != null) {
             if(thirdPageRows[index][0].startsWith('P1')) {
               tenantsFilled = true;
             } else {
-              foundTenants.push(thirdPageRows[index][1])
+              foundTenants.push(thirdPageRows[index][2])
             }
           }
         }

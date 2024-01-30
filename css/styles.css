@@ -135,10 +135,10 @@
     transition: all .5s;
 }
 
-.main__hero__text__p-gray:hover {
+/* .main__hero__text__p-gray:hover {
     margin-right: 0px;
     padding-left: 200px;
-}
+} */
 
 .main__hero__text__p-blue {
     background-color: #0095a9AA;
@@ -150,10 +150,10 @@
     transition: all .5s;
 }
 
-.main__hero__text__p-blue:hover {
+/* .main__hero__text__p-blue:hover {
     margin-left: 0px;
     padding-left: 200px;
-}
+} */
 
 .main__row {
     margin-top: 10px;
@@ -925,19 +925,19 @@
         transition: all .3s;
     }
 
-    .main__hero__text__p-gray:hover {
+    /* .main__hero__text__p-gray:hover {
         padding-left: 50px;
         margin-right: 0vw;
-    }
+    } */
 
     .main__hero__text__p-blue {
         margin-left: 0;
         padding-left: 50px;
     }
 
-    .main__hero__text__p-blue:hover {
+    /* .main__hero__text__p-blue:hover {
         padding-left: 50px;
-    }
+    } */
 
     .main__row {
         margin-top: 50px;
@@ -1839,15 +1839,15 @@ MAIN TABS MARGIN
         margin-right: -100vw;
     }
 
-    .main__hero__text__p-gray:hover {
+    /* .main__hero__text__p-gray:hover {
         margin-right: 0px !important;
         padding-left: 200px !important;
-    }
+    } */
 
-    .main__hero__text__p-blue:hover {
+    /* .main__hero__text__p-blue:hover {
         margin-left: 0px !important;
         padding-left: 200px !important;
-    }
+    } */
 
     .restored--bar {
         transition: all .5s !important;
@@ -2180,7 +2180,7 @@ MAIN TABS MARGIN
     
     .oportunidades__carousel__item {   
 /*         width: 80% !important;
- */    }
+ */ }
 
     .main__hero__plani_info {
         display: none !important;
@@ -3267,8 +3267,11 @@ MAIN TABS MARGIN
 
     & li > b > a {
         color: #9b9999 !important;  
+        font-size: 13px;
+        text-decoration: none;
     }
     & li  > a {
+        text-decoration: none;
         color: #9b9999 !important;  
     }
 
@@ -3367,4 +3370,45 @@ MAIN TABS MARGIN
 }
 .e-next > button:hover {
     transform: scale(1.1);
+}
+
+
+@keyframes gray__hero_anim {
+    from {
+    }
+    to {
+        margin: 0px;
+        margin-right: 40vw;
+        margin-bottom: 10px;   
+    }
+}
+@keyframes blue__hero_anim  {
+    from {
+    }
+    to
+    {
+    
+        margin: 0px;
+        margin-left: 100px;
+        margin-bottom: 10px;   
+    }
+}
+
+
+.main__hero__text__p-gray {
+    animation-name: gray__hero_anim;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+    animation-duration: 2s;
+    margin-bottom: 10px;   
+
+}
+.main__hero__text__p-blue {
+    animation-name: blue__hero_anim; 
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+    animation-duration: 2s;
+    margin-bottom: 10px;
 }

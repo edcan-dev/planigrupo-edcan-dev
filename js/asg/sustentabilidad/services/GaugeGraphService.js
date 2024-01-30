@@ -1,4 +1,5 @@
-    // Datos de ejemplo (reemplázalos con tus datos)
+const language = document.head.querySelector("[property~=language][content]").content;
+// Datos de ejemplo (reemplázalos con tus datos)
     var datos = {
         directores: 8,
         inquilinos: 8,
@@ -77,7 +78,6 @@
         return chart;
     }
 
-    // Crear gráficas con los datos proporcionados
     crearGrafica('graficaDirectores', datos.directores, 'Directores');
     crearGrafica('graficaInquilinos', datos.inquilinos, 'Inquilinos');
     crearGrafica('graficaInversionistas', datos.inversionistas, 'Inversionistas');
@@ -88,3 +88,45 @@
     crearGrafica('graficaOtros', datos.otros, 'Otros');
     crearGrafica('graficaInterno', datos.interno, 'Interno');
     crearGrafica('graficaExterno', datos.externo, 'Externo');
+
+if(language == 'english')
+    document.querySelectorAll('.grafica-item > p')
+        .forEach(p => {
+
+            let newValue;
+            console.log(p.innerHTML);
+            switch(p.innerHTML) {
+
+                case 'Directores':
+                    newValue = 'Directors';
+                    break;
+                case 'Inquilinos':
+                    newValue = 'Tenants';
+                    break;
+                case 'Inversionistas':
+                    newValue = 'Investors';
+                    break;
+                case 'Proveedores':
+                    newValue = 'Providers';
+                    break;
+                case 'Bancos':
+                    newValue = 'Banks';
+                    break;
+                case 'Colaboradores':
+                    newValue = 'Collaborators';
+                    break;
+                case 'Consejo':
+                    newValue = 'Counsel';
+                    break;
+                case 'Otros':
+                    newValue = 'Others';
+                    break;
+                case 'Interno':
+                    newValue = 'Internal';
+                    break;
+                case 'Externo':
+                    newValue = 'External';
+                    break;
+            }
+            p.innerHTML = newValue;
+        })

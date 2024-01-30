@@ -3,7 +3,7 @@
 
 // document.querySelectorAll('.main__hero__text__p-gray')
 //     .forEach(bar => {
-//         bar.style.marginRight = '30vw';
+//         bar.style.marginRight = '0vw';
 //         bar.style.marginLeft = '0px';
 //     })
     
