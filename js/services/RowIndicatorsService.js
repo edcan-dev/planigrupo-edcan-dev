@@ -2,6 +2,9 @@ const xslxPath = !window.location.href.includes('github')
   ? "../../data/indicadores_relevantes.xlsx"
   : "https://edcan-dev.github.io/planigrupo-edcan-devdata/indicadores_relevantes.xlsx";
 
+
+  const language = document.head.querySelector("[property~=language][content]").content;
+
 let xlsx;
 await fetch(xslxPath)
   .then((response) => {
@@ -56,3 +59,8 @@ await readXlsxFile(xlsx, { sheet: 1 }).then(async function (rows) {
 
   })
 });
+
+
+if(language == 'english') {
+  // TODO: Eng Row
+}
