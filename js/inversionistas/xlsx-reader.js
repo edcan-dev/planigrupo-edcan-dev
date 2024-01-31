@@ -1,4 +1,5 @@
 const xslxPath = '../../data/inversionistas_input.xlsx';
+const language = document.head.querySelector("[property~=language][content]").content;
 
 const response = await fetch(xslxPath);
 
@@ -76,10 +77,7 @@ function populateInformacionFinancieraResponsiveTable( rows ) {
 }
 
 
-try {
-  const language = document.head.querySelector("[property~=language][content]").content;
-  console.log(language);
-
+if(language == 'english') {
   document.querySelector('#inversionistas__tabs__tab--content--2 > div.section--table > div > table > tbody > tr:nth-child(1) > td.tr--body__th.col-1st').innerHTML = 'Net Income';
   document.querySelector('#inversionistas__tabs__tab--content--2 > div.section--table > div > table > tbody > tr:nth-child(2) > td.tr--body__th.col-1st').innerHTML = 'Estimate for uncollectible accounts[4]';
   document.querySelector('#inversionistas__tabs__tab--content--2 > div.section--table > div > table > tbody > tr:nth-child(3) > td.tr--body__th.col-1st').innerHTML = 'Total Net Income';
@@ -88,4 +86,4 @@ try {
   document.querySelector('#inversionistas__tabs__tab--content--2 > div.section--table > div > table > tbody > tr:nth-child(8) > td.tr--body__th.col-1st').innerHTML = 'FFO[3]';
   document.querySelector('#inversionistas__tabs__tab--content--2 > div.section--table > div > table > tbody > tr:nth-child(9) > td.tr--body__th.col-1st').innerHTML = 'Adjusted FFO';
   document.querySelector('#inversionistas__tabs__tab--content--2 > div.section--table > div > table > tbody > tr:nth-child(10) > td.tr--body__th.col-1st').innerHTML = 'Total Debt (Millons)';
-} catch(e) {}
+} 
