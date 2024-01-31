@@ -5,6 +5,13 @@ const response = await fetch(xslxPath);
 const xlsx = await response.blob();
 let results;
 
+let xlsxBinData;
+  
+await xlsx.stream().getReader().read().then(e => {
+  xlsxBinData = e.value.join('').substring(0, 1000);
+})
+
+
 const HERO_IMG_FOLDER = 'https://planigrupo.blob.core.windows.net/planigrupo/assets/images/portafolio/property_hero/';
 
 export class PropertyDetail {
@@ -66,7 +73,14 @@ export class PropertyDetail {
 
 let propertiesArray = [];
 
-if(localStorage.getItem('propertiesArray') != null) {
+
+if(localStorage.getItem('xlsxBinData') == xlsxBinData) 
+console.log('igual');
+
+if(
+  localStorage.getItem('propertiesArray') != null &&
+  localStorage.getItem('xlsxBinData') == xlsxBinData
+) {
   
   const arr = localStorage.getItem('propertiesArray');
 
@@ -172,6 +186,7 @@ if(localStorage.getItem('propertiesArray') != null) {
   })
 
   localStorage.setItem('propertiesArray', JSON.stringify(propertiesArray));
+  localStorage.setItem('xlsxBinData', xlsxBinData);
   console.info('[READ XLSX]')
 
 }
