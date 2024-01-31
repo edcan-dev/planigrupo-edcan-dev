@@ -249,7 +249,15 @@ export async function renderIndexDetail(propertyDetail) {
               :  'Kids Playground'
             }
             </small>
-              <p> ${ propertyDetail.playground }</p>
+              <p>
+              ${ 
+                propertyDetail.playground.includes("S")
+                ? language == 'english'
+                  ? 'Yes'
+                  : 'Sí'
+                : propertyDetail.playground
+              }
+              </p>
             </div>
             <div>
               <small>
@@ -259,7 +267,13 @@ export async function renderIndexDetail(propertyDetail) {
                 :  'Type'
               }
               </small>
-              <p> ${ propertyDetail.type }</p>
+              <p>
+              ${ 
+               language == 'english'
+               ? 'Community Center'
+               : propertyDetail.type
+              }
+              </p>
             </div>
           </div>
 
@@ -284,7 +298,15 @@ export async function renderIndexDetail(propertyDetail) {
                 : 'Parking'
               }
               </small>
-              <p>${propertyDetail.parking }</p>
+              <p>
+              ${ 
+                propertyDetail.parking.includes("S")
+                ? language == 'english'
+                  ? 'Yes'
+                  : 'Sí'
+                : propertyDetail.parking
+              }
+              </p>
             </div>
           </div>
 
@@ -354,7 +376,15 @@ export async function renderIndexDetail(propertyDetail) {
               : 'Cinema Complex'
             }
             </small>
-            <p>${ propertyDetail.cinema }</p>
+            <p>
+            ${ 
+              propertyDetail.cinema.includes("S")
+              ? language == 'english'
+                ? 'Yes'
+                : 'Sí'
+              : propertyDetail.cinema
+            }
+            </p>
             </div>
           </div>
 
