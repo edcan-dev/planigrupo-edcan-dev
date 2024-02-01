@@ -981,3 +981,54 @@ back-to-top > button > i {
 back-to-top > button > i::before {
   font-size: 1em;
 }
+
+blog-journal-list {
+  max-width: 800px;
+  width: 90%;
+  margin: 40px auto;
+}
+blog-journal-list-item {
+  display: flex;
+  width: 100%;
+  height: 200px;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid black;
+}
+blog-journal-list-item-img {
+  display: flex;
+  width: 300px;
+  height: 100%;
+  background-color: #D9D9D9;
+  margin-right: 20px;
+}
+blog-journal-list-item-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 500px;
+}
+blog-journal-list-item-text > h3 {
+  font-family: Raleway;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #BE4D00;  
+}
+blog-journal-list-item-text > p {
+  font-family: 'Barlow Condensed';
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #53575A;
+
+}
+blog-journal-list-item-text > button {
+  height: 30px;
+  width: 180px;
+  border: 1px solid gray;
+  transition: all .2s;
+  cursor: pointer;
+}
+blog-journal-list-item-text > button:hover {
+  border: 1px solid #BE4D00;
+}
+
