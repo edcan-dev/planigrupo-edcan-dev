@@ -13,6 +13,11 @@ export class BlogPost {
     active = ''; 
 }
 
+export class BlogImage {
+    title = ''
+    url = ''
+}
+
 export const datesDictionary = {
     1: 'Enero',
     2: 'Febrero',

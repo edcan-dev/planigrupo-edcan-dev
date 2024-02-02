@@ -1,14 +1,17 @@
-import { BlogPost, datesDictionary } from "../models/BlogModels.js";
-import { blogPosts } from "../services/XLSXReaderService.js";
+import { BlogImage, BlogPost, datesDictionary } from "../models/BlogModels.js";
+import { blogPosts, blogImages } from "../services/XLSXReaderService.js";
 
 // TODO : Render BLogs
 
 const posts = [...blogPosts].filter((post) => post.active);
 
+
+let currentGalleryStartIndex = 0;
+
 renderRecentPosts(posts);
 renderFeaturedPosts(posts);
 renderCarouselPosts(posts);
-
+renderBlogGallery([...blogImages])
 
 document.querySelector('back-to-top > button')
   .addEventListener('click',() => {
@@ -225,7 +228,8 @@ function showDetailedPost({title, author, date, contents}) {
   const textContentHtmlStr = contents.map(({type, content }) => {
 
     if(type == 'S') return `<span>${ content }</span>`;
-    if(type == 'P') return `<p>${ content }</p>`;
+    if(type == 'P'
+    ) return `<p>${ content }</p>`;
     return '';
   
   }).join('')
@@ -272,6 +276,42 @@ function showDetailedPost({title, author, date, contents}) {
 
   
 }
+
+
+/**
+ * 
+ * @param { BlogImage[] } blogImages 
+ * @param { number } currentIndex
+ */
+function renderBlogGallery(blogImages, currentIndex = 0) {
+
+  const currentImages = blogImages.splice(currentIndex, 4);
+  console.log(currentImages);
+
+  document.querySelector('blog-gallery-grid > img').src = currentImages[0].url;
+  
+  document.querySelectorAll('blog-gallery-selector-imgs > img')
+    .forEach((img, index) => {
+
+      console.log(img);
+      img.src = currentImages[index + 1].url;
+      img.alt = currentImages[index + 1].title;
+    })
+}
+
+document.querySelector('.fa-chevron-left')
+  .addEventListener('click', () => {
+    if(currentGalleryStartIndex == 0) return;
+    currentGalleryStartIndex--;
+    renderBlogGallery([...blogImages], currentGalleryStartIndex);
+  })
+
+document.querySelector('.fa-chevron-right')
+  .addEventListener('click', () => {
+    currentGalleryStartIndex++;
+    renderBlogGallery([...blogImages], currentGalleryStartIndex);
+  })
+
 /**
  *
  * @param { NodeList } elements

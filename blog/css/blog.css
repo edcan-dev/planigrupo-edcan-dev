@@ -103,7 +103,6 @@ blog-tab-selector  > ul > li {
   font-weight: 500;
   line-height: 40px; /* 263.158% */
   letter-spacing: 1px;
-  text-transform: uppercase;
 
   padding: 0px 5px;
   
@@ -584,6 +583,7 @@ blog-gallery-selector-imgs {
 blog-gallery-selector-imgs > img {
   width: 100%;
   cursor: pointer;
+  height: 100%;
   -webkit-user-drag: none;  
 }
 blog-gallery-selector-imgs > img:hover {

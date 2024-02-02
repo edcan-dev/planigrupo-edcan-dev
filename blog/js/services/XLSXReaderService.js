@@ -1,11 +1,17 @@
-import { BlogPost } from "../models/BlogModels.js";
+import { BlogImage, BlogPost } from "../models/BlogModels.js";
+const language = document.head.querySelector("[property~=language][content]").content;
+
+const postFileName = language != 'english' ? 'blog_layout.xlsx' : 'ENG_blog_layout.xlsx';
+const imagesVideosJournalFileName = language != 'english'
+  ? 'blog_gallery_videos_journal.xlsx'
+  : 'ENG_blog_gallery_videos_journal.xlsx';
 
 let fileURL = null;
 if (window.location.href.includes("github")) {
   fileURL =
     "https://edcan-dev.github.io/planigrupo-edcan-dev/data/blog_layout.xlsx";
 } else {
-  fileURL = "../../../data/blog_layout.xlsx";
+  fileURL = `../../../data/${ postFileName }`;
 }
 
 let xlsx = null;
@@ -56,4 +62,33 @@ try {
 }
 
 
-export const blogPosts = _blogPosts;
+const _blogImages = [];
+
+let secondXlsx;
+const secondFileURL = `./../../../data/${ imagesVideosJournalFileName }`;
+await fetch(secondFileURL)
+  .then((response) => response.blob())
+  .then((blob) => (secondXlsx = blob));
+  
+// Images Sheet
+await readXlsxFile(secondXlsx, { sheet: 1 }).then(async (rows) => {
+  rows.shift();
+
+  const IMAGES_PATH_PREFIX = 'https://planigrupo.mx/wp-content/uploads/planigrupo-org/sites/369/';
+
+  for(let i = 0; i < rows.length; i++) {
+    const row = rows[i];
+    const image = new BlogImage();
+    image.title = row[0]
+    image.url = IMAGES_PATH_PREFIX + row[1];
+    _blogImages.push(image);
+  }
+});
+
+const blogPosts = _blogPosts;
+const blogImages = [..._blogImages, ..._blogImages, ..._blogImages];
+
+export {
+  blogPosts,
+  blogImages
+}
