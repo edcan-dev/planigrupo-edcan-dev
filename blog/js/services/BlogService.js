@@ -1,5 +1,5 @@
-import { BlogImage, BlogPost, datesDictionary } from "../models/BlogModels.js";
-import { blogPosts, blogImages } from "../services/XLSXReaderService.js";
+import { BlogImage, BlogPost, BlogVideo, datesDictionary } from "../models/BlogModels.js";
+import { blogPosts, blogImages, blogVideos } from "../services/XLSXReaderService.js";
 
 // TODO : Render BLogs
 
@@ -7,11 +7,13 @@ const posts = [...blogPosts].filter((post) => post.active);
 
 
 let currentGalleryStartIndex = 0;
+let currentVideosStartIndex = 0;
 
 renderRecentPosts(posts);
 renderFeaturedPosts(posts);
 renderCarouselPosts(posts);
 renderBlogGallery([...blogImages])
+renderBlogVideos([...blogVideos])
 
 document.querySelector('back-to-top > button')
   .addEventListener('click',() => {
@@ -286,17 +288,39 @@ function showDetailedPost({title, author, date, contents}) {
 function renderBlogGallery(blogImages, currentIndex = 0) {
 
   const currentImages = blogImages.splice(currentIndex, 4);
-  console.log(currentImages);
+  // console.log(currentImages);
 
   document.querySelector('blog-gallery-grid > img').src = currentImages[0].url;
   
   document.querySelectorAll('blog-gallery-selector-imgs > img')
     .forEach((img, index) => {
-
-      console.log(img);
+      
       img.src = currentImages[index + 1].url;
       img.alt = currentImages[index + 1].title;
     })
+}
+/**
+ * 
+ * @param { BlogVideo[] } blogVideo 
+ * @param { number } currentIndex
+ */
+function renderBlogVideos(blogVideo, currentIndex = 0) {
+
+  const currentVideos = blogVideo.splice(currentIndex, 4);
+
+  console.log(currentVideos);
+
+  document.querySelector('blog-videos-grid').innerHTML = currentVideos[0].iFrame;
+
+  let innerSelectorContent = '';
+
+  for(let  i = 1; i < currentVideos.length; i++) { 
+    innerSelectorContent += currentVideos[i].iFrame;
+  }
+
+  console.log(innerSelectorContent);
+  document.querySelector('blog-videos-selector-imgs').innerHTML = innerSelectorContent;
+
 }
 
 document.querySelector('.fa-chevron-left')
@@ -311,6 +335,23 @@ document.querySelector('.fa-chevron-right')
     currentGalleryStartIndex++;
     renderBlogGallery([...blogImages], currentGalleryStartIndex);
   })
+
+
+document.querySelector('.next-video')
+  .addEventListener('click', () => {
+    currentVideosStartIndex++;
+    renderBlogVideos([...blogVideos], currentVideosStartIndex);
+  })
+
+document.querySelector('.prev-video')
+  .addEventListener('click', () => {
+    if(currentVideosStartIndex == 0) return;
+    currentVideosStartIndex--;
+    renderBlogVideos([...blogVideos], currentVideosStartIndex);
+  })
+
+
+
 
 /**
  *

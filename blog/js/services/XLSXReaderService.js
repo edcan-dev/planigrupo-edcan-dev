@@ -1,4 +1,4 @@
-import { BlogImage, BlogPost } from "../models/BlogModels.js";
+import { BlogImage, BlogPost, BlogVideo } from "../models/BlogModels.js";
 const language = document.head.querySelector("[property~=language][content]").content;
 
 const postFileName = language != 'english' ? 'blog_layout.xlsx' : 'ENG_blog_layout.xlsx';
@@ -63,6 +63,7 @@ try {
 
 
 const _blogImages = [];
+const _blogVideos = [];
 
 let secondXlsx;
 const secondFileURL = `./../../../data/${ imagesVideosJournalFileName }`;
@@ -85,10 +86,25 @@ await readXlsxFile(secondXlsx, { sheet: 1 }).then(async (rows) => {
   }
 });
 
+// Videos Sheet
+await readXlsxFile(secondXlsx, { sheet: 2 }).then(async (rows) => {
+  rows.shift();
+
+  for(let i = 0; i < rows.length; i++) {
+    const row = rows[i];
+    const video = new BlogVideo();
+    video.title = row[0]
+    video.iFrame = row[1];
+    _blogVideos.push(video);
+  }
+});
+
 const blogPosts = _blogPosts;
 const blogImages = [..._blogImages, ..._blogImages, ..._blogImages];
+const blogVideos = [..._blogVideos, ..._blogVideos, ..._blogVideos];
 
 export {
   blogPosts,
-  blogImages
+  blogImages,
+  blogVideos
 }

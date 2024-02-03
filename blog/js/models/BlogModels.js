@@ -17,6 +17,10 @@ export class BlogImage {
     title = ''
     url = ''
 }
+export class BlogVideo {
+    title = ''
+    iFrame = ''
+}
 
 export const datesDictionary = {
     1: 'Enero',
