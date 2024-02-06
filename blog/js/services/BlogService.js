@@ -313,6 +313,8 @@ function renderBlogVideos(blogVideo, currentIndex = 0) {
 
   document.querySelector('blog-videos-grid').innerHTML = currentVideos[0].iFrame;
 
+  document.querySelector('blog-videos-title > h4').innerHTML = currentVideos[0].title;
+
   let innerSelectorContent = '';
 
   for(let  i = 1; i < currentVideos.length; i++) { 
