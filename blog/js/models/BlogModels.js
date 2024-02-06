@@ -21,6 +21,12 @@ export class BlogVideo {
     title = ''
     iFrame = ''
 }
+export class BlogJournal {
+    title = ''
+    description = ''
+    link = ''
+    buttonText = ''
+}
 
 export const datesDictionary = {
     1: 'Enero',

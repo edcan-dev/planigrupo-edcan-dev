@@ -1,4 +1,4 @@
-import { BlogImage, BlogPost, BlogVideo } from "../models/BlogModels.js";
+import { BlogImage, BlogJournal, BlogPost, BlogVideo } from "../models/BlogModels.js";
 const language = document.head.querySelector("[property~=language][content]").content;
 
 const postFileName = language != 'english' ? 'blog_layout.xlsx' : 'ENG_blog_layout.xlsx';
@@ -64,6 +64,7 @@ try {
 
 const _blogImages = [];
 const _blogVideos = [];
+const _blogJournal = [];
 
 let secondXlsx;
 const secondFileURL = `./../../../data/${ imagesVideosJournalFileName }`;
@@ -99,12 +100,28 @@ await readXlsxFile(secondXlsx, { sheet: 2 }).then(async (rows) => {
   }
 });
 
+// Videos Sheet
+await readXlsxFile(secondXlsx, { sheet: 3 }).then(async (rows) => {
+  rows.shift();
+  for(let i = 0; i < rows.length; i++) {
+    const row = rows[i];
+    const journal = new BlogJournal();
+    journal.title = row[0];
+    journal.description = row[1];
+    journal.link = row[2];
+    journal.buttonText = row[3];
+    _blogJournal.push(journal);
+  }
+});
+
 const blogPosts = _blogPosts;
-const blogImages = [..._blogImages, ..._blogImages, ..._blogImages];
+const blogImages = [..._blogImages, ..._blogImages, ..._blogImages, ..._blogImages, ..._blogImages, ..._blogImages, ..._blogImages, ..._blogImages, ..._blogImages, ..._blogImages, ..._blogImages, ..._blogImages, ..._blogImages, ..._blogImages, ..._blogImages, ..._blogImages, ..._blogImages, ..._blogImages, ..._blogImages, ..._blogImages];
 const blogVideos = [..._blogVideos, ..._blogVideos, ..._blogVideos];
+const blogJournal = [..._blogJournal];
 
 export {
   blogPosts,
   blogImages,
-  blogVideos
+  blogVideos,
+  blogJournal
 }

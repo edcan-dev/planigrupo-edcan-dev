@@ -1,5 +1,5 @@
-import { BlogImage, BlogPost, BlogVideo, datesDictionary } from "../models/BlogModels.js";
-import { blogPosts, blogImages, blogVideos } from "../services/XLSXReaderService.js";
+import { BlogImage, BlogJournal, BlogPost, BlogVideo, datesDictionary } from "../models/BlogModels.js";
+import { blogPosts, blogImages, blogVideos, blogJournal } from "../services/XLSXReaderService.js";
 
 // TODO : Render BLogs
 
@@ -12,8 +12,9 @@ let currentVideosStartIndex = 0;
 renderRecentPosts(posts);
 renderFeaturedPosts(posts);
 renderCarouselPosts(posts);
-renderBlogGallery([...blogImages])
-renderBlogVideos([...blogVideos])
+renderBlogGallery([...blogImages]);
+renderBlogVideos([...blogVideos]);
+renderBlogJournal([...blogJournal]);
 
 document.querySelector('back-to-top > button')
   .addEventListener('click',() => {
@@ -21,7 +22,7 @@ document.querySelector('back-to-top > button')
   });
 
 /**
- * @param { BlogPost[] } posts
+ * @param { BlogPost[] } posts  
  */
 function renderRecentPosts(posts) {
   const recentPosts = [...posts].sort((a, b) => {
@@ -308,7 +309,7 @@ function renderBlogVideos(blogVideo, currentIndex = 0) {
 
   const currentVideos = blogVideo.splice(currentIndex, 4);
 
-  console.log(currentVideos);
+  // console.log(currentVideos);
 
   document.querySelector('blog-videos-grid').innerHTML = currentVideos[0].iFrame;
 
@@ -318,10 +319,48 @@ function renderBlogVideos(blogVideo, currentIndex = 0) {
     innerSelectorContent += currentVideos[i].iFrame;
   }
 
-  console.log(innerSelectorContent);
+  // console.log(innerSelectorContent);
   document.querySelector('blog-videos-selector-imgs').innerHTML = innerSelectorContent;
 
 }
+
+/**
+ * @param { BlogJournal[] } blogJournals
+ */
+function renderBlogJournal(blogJournals) {
+
+  // console.log(blogJournals);
+  const blogJournalList = document.querySelector('blog-journal-list');
+  blogJournalList.innerHTML = '';
+
+  const listItemsHtml = blogJournals
+    .map(journal => `
+      <blog-journal-list-item>
+        <blog-journal-list-item-text>
+          <h3>${ journal.title }</h3>
+          <p>${ journal.description }</p>
+          <a href="${ journal.link }" target="_BLANK">${ journal.buttonText }</a>
+        </blog-journal-list-item-text>
+      </blog-journal-list-item>`
+    ).join('');
+    blogJournalList.innerHTML = listItemsHtml;
+
+}
+
+document.querySelectorAll('.blog-tabs-selector')
+  .forEach( selector => selector.addEventListener('click', () => {
+
+    // console.log(selector);
+
+    if(selector.id != 'blog-tabs-selector--3') {
+      document.querySelector('blog-videos-grid').innerHTML = '';
+
+    } else {
+      renderBlogVideos([...blogVideos]);
+    }
+
+  }))
+
 
 document.querySelector('.fa-chevron-left')
   .addEventListener('click', () => {
@@ -337,13 +376,13 @@ document.querySelector('.fa-chevron-right')
   })
 
 
-document.querySelector('.next-video')
+document.querySelector('.prev-video')
   .addEventListener('click', () => {
     currentVideosStartIndex++;
     renderBlogVideos([...blogVideos], currentVideosStartIndex);
   })
 
-document.querySelector('.prev-video')
+document.querySelector('.next-video')
   .addEventListener('click', () => {
     if(currentVideosStartIndex == 0) return;
     currentVideosStartIndex--;
