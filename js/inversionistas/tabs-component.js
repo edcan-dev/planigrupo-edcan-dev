@@ -1,5 +1,5 @@
-const response = await fetch('./../../data/inversionistas.vision.tab-contents.json')
-const json = await response.json();
+// const response = await fetch('./../../data/inversionistas.vision.tab-contents.json')
+// const json = await response.json();
 
 // class TabsComponent {
 //     constructor(

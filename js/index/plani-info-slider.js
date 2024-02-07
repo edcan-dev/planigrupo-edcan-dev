@@ -1,13 +1,10 @@
-const response = await fetch('../../data/index.plan-info.slider.json');
-const slides = response.json();
-
 class InfoSlider {
 	#data;
 	#interval
 
 	currentText = 1;
 	
-	constructor({ data, interval }) {
+	constructor({ data = [], interval }) {
 		this.#data = data;
 		this.#interval = interval;
 	}
@@ -99,7 +96,7 @@ class InfoSlider {
 
 const infoSlider = new InfoSlider(
 	{
-		data: slides.slides,
+		// data: slides.slides,
 		interval: 10000
 	}
 );
