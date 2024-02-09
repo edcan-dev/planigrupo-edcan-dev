@@ -49,6 +49,7 @@ try {
           const currentContent = {
             type: row[5],
             content: row[6],
+            links: row[8]
           };
           
           currentPost.contents.push(currentContent);

@@ -840,6 +840,13 @@ blog-post > blog-post-text > p {
   letter-spacing: 1px;
   margin-bottom: 10px;
 }
+blog-post > blog-post-text > p > a {
+  color: #0096A9;
+}
+blog-post > blog-post-text > p > a:visited {
+  color: #0096A9;
+}
+
 blog-post > blog-post-text > span {
   color: #53575A;
   font-family: Raleway;

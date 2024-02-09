@@ -228,11 +228,46 @@ function showDetailedPost({title, author, date, contents}) {
 
   const blogText = content.firstElementChild.lastElementChild;
 
-  const textContentHtmlStr = contents.map(({type, content }) => {
+  const textContentHtmlStr = contents.map(({type, content, links}) => {
+
+    const getAnchorHref = () => {
+
+    }
+
+    const getParagraphContent = (content, links) => {
+
+      if(!content.includes('**')) return content;
+
+      const splittedLinks = links.split('https').map(link => 'https' + link);
+      splittedLinks.shift();
+
+      const mutableContent = content.slice(0);
+
+      console.log(mutableContent.split('*'));
+      const formattedContent = mutableContent.split('*').map((section, index, arr) => {
+
+        console.log(arr.length);
+
+        if(index != 0 && index != arr.length - 1) {
+
+          if(section.length == 0) return section
+
+          if(arr[index - 1].length == 0 && arr[index + 1].length == 0) {
+            return `<a target="_BLANK" href="${ splittedLinks.shift() }">${ section }</a>`
+          }
+        }
+        return section
+      }).join('')
+
+      // console.log(formattedContent);
+      // console.log(mutableContent);
+
+      return formattedContent
+
+    }
 
     if(type == 'S') return `<span>${ content }</span>`;
-    if(type == 'P'
-    ) return `<p>${ content }</p>`;
+    if(type == 'P') return `<p>${ getParagraphContent(content, links) }</p>`;
     return '';
   
   }).join('')
