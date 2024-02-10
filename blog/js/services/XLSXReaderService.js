@@ -43,7 +43,7 @@ try {
           currentPost.date.setMonth(row[2] - 1);
           currentPost.date.setFullYear(row[3]);
           currentPost.author = row[4];
-
+          currentPost.url = row[9]
 
         } else {
           const currentContent = {

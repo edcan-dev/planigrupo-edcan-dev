@@ -178,7 +178,7 @@ blog-recent-item > div {
   background-color: #EAE9E8;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 blog-recent-item::after {
   content: '';

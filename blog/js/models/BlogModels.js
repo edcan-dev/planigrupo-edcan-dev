@@ -10,7 +10,8 @@ export class BlogPost {
         //     content: ''
         // }
     ];
-    active = ''; 
+    active = '';
+    url = '';
 }
 
 export class BlogImage {

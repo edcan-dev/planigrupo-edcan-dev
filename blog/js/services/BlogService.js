@@ -15,6 +15,7 @@ renderCarouselPosts(posts);
 renderBlogGallery([...blogImages]);
 renderBlogVideos([...blogVideos]);
 renderBlogJournal([...blogJournal]);
+configurePostRedirect(posts);
 
 document.querySelector('back-to-top > button')
   .addEventListener('click',() => {
@@ -182,18 +183,18 @@ function renderCarouselPosts(posts) {
 function renderGridItem(post, elementId) {
   const element = document.getElementById(elementId);
 
-  element.lastElementChild.lastElementChild.innerHTML = `${getFormattedDate(
-    post.date
-  )} | ${post.title.substring(0, 50)}...`;
+  element.lastElementChild.firstElementChild.innerHTML =
+  `${post.title.substring(0, 100)}`;
 
   element.firstElementChild.src = post.contents.find(
     (content) => content.type == "I"
   ).content;
 
-  element.lastElementChild.firstElementChild.innerHTML =
-    post.contents
-      .find((content) => content.type == "P")
-      .content.substring(0, 80) + "...";
+  element.lastElementChild.lastElementChild.innerHTML =
+    getFormattedDate(post.date)
+    //post.contents
+    //.find((content) => content.type == "P")
+    //.content.substring(0, 100) + "...";
 
   // TODO: Append modal listener
   appendDialogListener(element, post);
@@ -201,9 +202,10 @@ function renderGridItem(post, elementId) {
 /**
  *
  * @param { HTMLElement } element
- * @param { number } postId
+ * @param { BlogPost } post
  */
 function appendDialogListener(element, post) {
+
   element.addEventListener("click", () => showDetailedPost(post));
 }
 
@@ -211,6 +213,31 @@ function appendDialogListener(element, post) {
  * @param { BlogPost } post
  */
 function showDetailedPost({title, author, date, contents}) {
+
+  const url = getUrlTitle(title);
+
+  const returnBlogHomeEvent = (event) => {
+
+    document.querySelectorAll('.blog-tabs-content')
+      .forEach(content => {
+        content.classList.add('inactive');
+        if(content.id.includes('1')) content.classList.remove('inactive')
+      })
+  
+      // console.log(window.location);
+      history.pushState(null, 'Blog - GM Inmobiliaria', window.location.origin + '/blog/blog.html');
+  
+    window.removeEventListener('popstate', returnBlogHomeEvent)
+  }
+
+
+  history.pushState(null,title, '?post=' + url);
+
+  window.addEventListener('popstate', returnBlogHomeEvent);
+
+  document.querySelectorAll('.blog-tabs-selector')
+    .item(0)
+    .addEventListener('click', () => returnBlogHomeEvent())
 
   window.scrollTo({top: 390, behavior: "smooth"})
 
@@ -243,10 +270,9 @@ function showDetailedPost({title, author, date, contents}) {
 
       const mutableContent = content.slice(0);
 
-      console.log(mutableContent.split('*'));
+      // console.log(mutableContent.split('*'));
       const formattedContent = mutableContent.split('*').map((section, index, arr) => {
 
-        console.log(arr.length);
 
         if(index != 0 && index != arr.length - 1) {
 
@@ -447,4 +473,46 @@ function getFormattedDate(date) {
     0,
     3
   )} ${date.getDate()}, ${date.getFullYear()}`;
+}
+
+/**
+ * 
+ * @param { string } title 
+ * @returns 
+ */
+function getUrlTitle(title) {
+
+  const aRegex = new RegExp('á', 'g');
+  const eRegex = new RegExp('é', 'g');
+  const iRegex = new RegExp('í', 'g');
+  const oRegex = new RegExp('ó', 'g');
+  const uRegex = new RegExp('ú', 'g');
+
+  return title
+    .toLowerCase()
+    .replace('?','')
+    .replace('¿','')
+    .replace(aRegex,'a')
+    .replace(eRegex,'e')
+    .replace(iRegex,'i')
+    .replace(oRegex,'o')
+    .replace(uRegex,'u')
+    .split(' ')
+    .join('-');
+}
+
+/**
+ * 
+ * @param { BlogPost[] } blogPosts
+ */
+function configurePostRedirect(blogPosts) {
+
+  const urlSearchParams = new URLSearchParams(window.location.search);
+  if(urlSearchParams.get('post')) {
+
+    const post = blogPosts.find(post => post.url == urlSearchParams.get('post'));
+
+    console.log(post);
+    showDetailedPost(post);
+  }
 }
