@@ -341,7 +341,7 @@ function showDetailedPost({title, author, date, contents}) {
   
 }
 
-
+const _blogImages = [...blogImages];
 /**
  * 
  * @param { BlogImage[] } blogImages 
@@ -349,17 +349,26 @@ function showDetailedPost({title, author, date, contents}) {
  */
 function renderBlogGallery(blogImages, currentIndex = 0) {
 
+  const renderByClick = (imageIndex) => {
+    renderBlogGallery([..._blogImages], imageIndex)
+  }
+
   const currentImages = blogImages.splice(currentIndex, 4);
   // console.log(currentImages);
 
   document.querySelector('blog-gallery-grid > img').src = currentImages[0].url;
+  document.querySelector('blog-gallery-grid > img').setAttribute('image-index', currentIndex)
   
   document.querySelectorAll('blog-gallery-selector-imgs > img')
     .forEach((img, index) => {
       
       img.src = currentImages[index + 1].url;
       img.alt = currentImages[index + 1].title;
+      img.setAttribute('image-index', currentIndex + index + 1)
+      img.addEventListener('click', () => renderByClick(currentIndex + index + 1));
+
     })
+
 }
 /**
  * 
@@ -383,7 +392,7 @@ function renderBlogVideos(blogVideo, currentIndex = 0) {
   }
 
   // console.log(innerSelectorContent);
-  document.querySelector('blog-videos-selector-imgs').innerHTML = innerSelectorContent;
+  /* document.querySelector('blog-videos-selector-imgs').innerHTML = innerSelectorContent; */
 
 }
 
@@ -425,27 +434,27 @@ document.querySelectorAll('.blog-tabs-selector')
   }))
 
 
-document.querySelector('.fa-chevron-left')
+document.querySelector('#prev-image')
   .addEventListener('click', () => {
     if(currentGalleryStartIndex == 0) return;
     currentGalleryStartIndex--;
     renderBlogGallery([...blogImages], currentGalleryStartIndex);
   })
 
-document.querySelector('.fa-chevron-right')
+document.querySelector('#next-image')
   .addEventListener('click', () => {
     currentGalleryStartIndex++;
     renderBlogGallery([...blogImages], currentGalleryStartIndex);
   })
 
 
-document.querySelector('.prev-video')
+document.querySelector('#next-video')
   .addEventListener('click', () => {
     currentVideosStartIndex++;
     renderBlogVideos([...blogVideos], currentVideosStartIndex);
   })
 
-document.querySelector('.next-video')
+document.querySelector('#prev-video')
   .addEventListener('click', () => {
     if(currentVideosStartIndex == 0) return;
     currentVideosStartIndex--;
