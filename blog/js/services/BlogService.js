@@ -30,7 +30,7 @@ function renderRecentPosts(posts) {
     var dateA = a.date.getTime();
     var dateB = b.date.getTime();
     return dateA > dateB ? 1 : -1;
-  });
+  }).reverse();
 
   const recentElements = document.querySelectorAll("blog-recent-item");
 
@@ -292,7 +292,7 @@ function showDetailedPost({title, author, date, contents}) {
 
     }
 
-    if(type == 'S') return `<span>${ content }</span>`;
+    if(type == 'S' || type == 'ST') return `<span>${ content }</span>`;
     if(type == 'P') return `<p>${ getParagraphContent(content, links) }</p>`;
     return '';
   
