@@ -113,6 +113,12 @@ await readXlsxFile(secondXlsx, { sheet: 3 }).then(async (rows) => {
     journal.buttonText = row[3];
     _blogJournal.push(journal);
   }
+
+  document.querySelector('.screen').classList.add('screen-loaded')
+  setTimeout(()=> {
+    document.querySelector('.screen').style.display = 'none';
+  }, 500)
+
 });
 
 const blogPosts = _blogPosts;

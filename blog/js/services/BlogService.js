@@ -292,8 +292,9 @@ function showDetailedPost({title, author, date, contents}) {
 
     }
 
-    if(type == 'S' || type == 'ST') return `<span>${ content }</span>`;
-    if(type == 'P') return `<p>${ getParagraphContent(content, links) }</p>`;
+    if(type.toUpperCase() == 'S') return `<span>${ content }</span>`;
+    if(type.toUpperCase() == 'ST') return `<h3>${ content }</h3>`;
+    if(type.toUpperCase() == 'P') return `<p>${ getParagraphContent(content, links) }</p>`;
     return '';
   
   }).join('')

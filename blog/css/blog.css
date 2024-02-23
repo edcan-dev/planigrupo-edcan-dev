@@ -878,6 +878,19 @@ blog-post > blog-post-text > span {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+blog-post > blog-post-text > h3 {
+  color: #53575A;
+  font-family: Raleway;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 30px; /* 166.667% */
+  letter-spacing: 1px;
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: block;
+}
 
 
 
@@ -1073,3 +1086,25 @@ blog-journal-list-item-text > a:hover,blog-journal-list-item-text > a:visited:ho
   color: #BE4D00;
 }
 
+
+.screen {
+  position: absolute;
+  height: 2000px;
+  width: 100vw;
+  background-color: #FFF;
+  z-index: 10001;
+  opacity: 1;
+
+  transition: all .3s;
+
+  & div {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.screen-loaded {
+  opacity: 0;
+}

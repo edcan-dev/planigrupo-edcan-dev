@@ -3412,3 +3412,95 @@ MAIN TABS MARGIN
     animation-duration: 2s;
     margin-bottom: 10px;
 }
+
+.alert {
+    position: fixed;
+    opacity: 1;
+    z-index: 10001;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    width: 100vw;
+    background-color: #55555566;
+
+    transition: all .3s;
+}
+.alert-clicked {
+    opacity: 0;
+}
+
+.alert > .alert_container {
+    width: 90%;
+    max-width: 900px;
+    min-height: 300px;
+    background-color: #F5F3F1;
+    border-radius: 25px;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    padding: 30px 60px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.alert > .alert_container > h3 {
+
+    font-family: Fjalla One;
+    font-size: 36px;
+    color: #727272;
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+.alert > .alert_container > .alert-images_container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.alert > .alert_container > .alert-images_container > .plani-logo {
+    max-width: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 150px;
+    flex: 1;
+}
+.alert > .alert_container > .alert-images_container > .gmi-logo {
+    max-width: 250px;
+    height: 150px;
+    flex: 1;
+}
+.alert > .alert_container > .alert-images_container > i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+.alert > .alert_container > .alert-button_container {
+    display: flex;
+    justify-content: center;
+}
+.alert > .alert_container > .alert-button_container > button {
+    background-color: #0095a9;
+    height: 50px;
+    width: 200px;
+    font-family: Fjalla One;
+    color: #FFF;
+    font-size: 20px;
+
+}
+
+@media (max-width: 600px) {
+    .alert-images_container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .alert-images_container > img {
+        margin: 20px;
+    }
+    
+}
