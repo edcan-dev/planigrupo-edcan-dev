@@ -1543,3 +1543,8 @@
     padding-left: 5%;
   }
 }
+
+
+.main__hero__downbar--red {
+  background-color: #BE4D00;
+}

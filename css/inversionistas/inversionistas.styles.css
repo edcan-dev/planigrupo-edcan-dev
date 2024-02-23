@@ -4,6 +4,10 @@
   background-position-x: center;
 }
 
+:root {
+  --light-blue: #9CDBD9
+}
+
 .main__hero_downbar__text {
   padding-left: 40px;
 }
@@ -2836,4 +2840,9 @@ calendar-event-detail > calendar-event-detail-content > calendar-event-detail-co
   font-weight: 500;
   line-height: 20px;
   letter-spacing: 1px;
+}
+
+
+.title__container {
+  background-color: var(--light-blue) !important;
 }
