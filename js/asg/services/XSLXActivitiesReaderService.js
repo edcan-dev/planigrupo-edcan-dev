@@ -64,7 +64,7 @@ class ActivitiesReaderService {
   #activities = [];
 
   constructor(reader) {
-    this.#activities = activities;
+    this.#activities = activities.reverse();
   }
 
   getActivities() {
