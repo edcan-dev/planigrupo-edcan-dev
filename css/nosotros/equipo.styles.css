@@ -5,7 +5,6 @@
 
 .equipo__card__container {
     margin: 60px 0px;
-    height: 700px;
     width: 90%;
     max-width: 1000px;
     display: grid;
@@ -23,7 +22,7 @@
 
 }
 .equipo__card__item__img {
-    height: 200px;
+    /* height: 200px; */
     background-size: cover;
 }
 .equipo__card__item__img--2 {
@@ -114,7 +113,6 @@ text-transform: uppercase;
 
     .equipo__card__container {
         margin-top: 140px;
-        height: 900px;
         width: 61%;
         display: grid;
         grid-template-columns: 350px;
@@ -123,11 +121,8 @@ text-transform: uppercase;
         row-gap: 50px;
         justify-content: center;
         column-gap: 50px;
-        height: 1400px;
     }
-    .equipo__card__item__img {
-    height: 300px;
-    }
+    
     .equipo__card__item__text {
     height: 30%;
     }
@@ -147,9 +142,7 @@ text-transform: uppercase;
 
 @media (max-width: 1150px) {
 
-    .equipo__card__item {
-        height: 400px;
-    }
+    
 
     .footer {
         margin-top: 1250px !important;
